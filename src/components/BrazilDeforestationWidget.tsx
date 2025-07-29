@@ -179,13 +179,13 @@ const generateBrazilPoints = useMemo(() => {
   }, [isDragging]);
 
   return (
-    <div className="bg-green-800 mx-4 mb-4 rounded-3xl p-16 relative" style={{ marginTop: "50px" }}>
+    <div className=" mx-4 mb-4 rounded-3xl p-16 relative" style={{ marginTop: "50px", backgroundColor: "#19471A"}}>
       <div className="flex items-center justify-between">
         {/* Map Section */}
         <div className="flex-1 pr-8">
           <div className="relative">
             {/* SVG Map */}
-            <svg viewBox="0 0 400 280" className="w-96 h-72">
+            <svg viewBox="0 0 400 280" className=" " style={{ height: "70%", width: "90%" }}>
               {generateBrazilPoints.map((point) => (
                 <circle
                   key={point.id}
@@ -200,7 +200,7 @@ const generateBrazilPoints = useMemo(() => {
             </svg>
             
             {/* Legend */}
-            <div className="absolute bottom-0 left-0 space-y-2 text-xs">
+            <div className="absolute top-90 left-20 space-y-2 text-s">
               <div className="flex items-center space-x-2">
                 <div className="w-3 h-3 rounded-full bg-red-500"></div>
                 <span className="text-white">no deforestation present</span>
@@ -222,8 +222,8 @@ const generateBrazilPoints = useMemo(() => {
         </div>
         
         {/* Statistics Section */}
-        <div className="flex-1 text-right">
-          <h2 className="text-8xl font-bold text-white mb-4 transition-all duration-500">
+        <div className="flex-1 text-right " style={{ marginRight: "5%", fontFamily: "Space Grotesk, sans-serif" }}>
+          <h2 className="text-9xl font-bold text-white mb-4 transition-all duration-500">
             {getDeforestationPercentage()}%
           </h2>
           <p className="text-2xl text-white mb-6 font-medium">
@@ -238,7 +238,7 @@ const generateBrazilPoints = useMemo(() => {
       </div>
       
       {/* Interactive Timeline */}
-      <div className="mt-12 flex items-center justify-center">
+      <div className="mt-12 flex items-center justify-center" >
         <div className="flex items-center space-x-8 w-full max-w-2xl">
           <span className="text-white/60 text-sm w-16 text-center">before</span>
           
@@ -277,6 +277,8 @@ const generateBrazilPoints = useMemo(() => {
           {getTimelineLabel()}
         </span>
       </div>
+
+      <div style={{ paddingBottom: "100px"  }} ></div>
     </div>
   );
 };

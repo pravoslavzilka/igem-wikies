@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import BrazilDeforestationWidget from '../components/BrazilDeforestationWidget';
+import BrazilSoybeanWidget from '../components/BrazilSoybeanWidget';
 
 
 const Home = () => {
@@ -171,6 +172,8 @@ const Home = () => {
 
        {/* Second Section with Map */}           
       <BrazilDeforestationWidget />
+
+
 
       
       
