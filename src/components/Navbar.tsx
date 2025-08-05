@@ -21,20 +21,20 @@ const Navbar = () => {
       
     ],
     toolbox: [
-      { label: 'Why plants suck ', path: '/toolbox/tools' },
-      { label: 'Deep dive on duckweed', path: '/toolbox/resources' },
-      { label: 'Programmable duckweed', path: '/toolbox/downloads' }
+      { label: 'Why plants suck ', path: '/toolbox/why-plants-suck' },
+      { label: 'Deep dive on duckweed', path: '/toolbox/deep-dive-on-duckweed' },
+      { label: 'Programmable duckweed', path: '/toolbox/programmable-duckweed' }
     ],
     engagement: [
-      { label: 'Human practices', path: '/engagement/community' },
-      { label: 'Entrepreneurship', path: '/engagement/events' },
-      { label: 'Outreach', path: '/engagement/impact' }
+      { label: 'Human practices', path: '/engagement/human-practices' },
+      { label: 'Entrepreneurship', path: '/engagement/entrepreneurship' },
+      { label: 'Outreach', path: '/engagement/Outreach' }
     ],
     'duckweed-mafia': [
       { label: 'Team', path: '/duckweed-mafia/team' },
-      { label: 'Sponsors and partners', path: '/duckweed-mafia/mission' },
-      { label: 'Cool statistics', path: '/duckweed-mafia/culture' },
-      { label: 'Attributions', path: '/duckweed-mafia/culture' }
+      { label: 'Sponsors and partners', path: '/duckweed-mafia/sponsors-and-partners' },
+      { label: 'Cool statistics', path: '/duckweed-mafia/cool-statistics' },
+      { label: 'Attributions', path: '/duckweed-mafia/cool-statistics' }
     ]
   };
 
@@ -45,15 +45,15 @@ const Navbar = () => {
     setDropdownVisible(menu);
   };
 
-  // Handles mouse leave: delay hiding dropdown for animation
+  // Handles mouse leave: delay hiding dropdown for 500ms
   const handleMouseLeave = () => {
     setHoveredMenu(null);
     timeoutRef.current = setTimeout(() => {
       setDropdownVisible(null);
-    }, 600); // match animation duration
+    }, 200);
   };
 
-  // Toggle dropdown on click
+  // Toggle dropdown on click (mobile only)
   const handleDropdownClick = (menu: string) => {
     setOpenDropdown(openDropdown === menu ? null : menu);
   };
@@ -79,19 +79,22 @@ const Navbar = () => {
       {/* Desktop menu */}
       <div className="hidden md:flex items-center space-x-4">
         {/* Project Main Link */}
-        <div className="relative">
+        <div 
+          className="relative"
+          onMouseEnter={() => handleMouseEnter('project')}
+          onMouseLeave={handleMouseLeave}
+        >
           <button
             className={`flex items-center space-x-1 text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer
               ${isActiveGroup(['/project']) ? 'bg-green-100 text-green-800' : 'bg-gray-50 hover:bg-gray-100'}`}
-            onClick={() => handleDropdownClick('project')}
           >
             <span>Project</span>
             <ChevronDown className="w-4 h-4" />
           </button>
-          {openDropdown === 'project' && (
+          {dropdownVisible === 'project' && (
             <div
               className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2
-                transition-all duration-600 ease-in-out overflow-hidden origin-top"
+                transition-all duration-300 ease-in-out overflow-hidden origin-top"
               style={{ transformOrigin: 'top' }}
             >
               {menuItems.project.map((item) => (
@@ -99,7 +102,6 @@ const Navbar = () => {
                   key={item.path}
                   to={item.path}
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
-                  onClick={() => setOpenDropdown(null)}
                 >
                   {item.label}
                 </Link>
@@ -109,19 +111,22 @@ const Navbar = () => {
         </div>
 
         {/* Toolbox Main Link */}
-        <div className="relative">
+        <div 
+          className="relative"
+          onMouseEnter={() => handleMouseEnter('toolbox')}
+          onMouseLeave={handleMouseLeave}
+        >
           <button
             className={`flex items-center space-x-1 text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer
               ${isActiveGroup(['/toolbox']) ? 'bg-green-100 text-green-800' : 'bg-gray-50 hover:bg-gray-100'}`}
-            onClick={() => handleDropdownClick('toolbox')}
           >
             <span>Toolbox</span>
             <ChevronDown className="w-4 h-4" />
           </button>
-          {openDropdown === 'toolbox' && (
+          {dropdownVisible === 'toolbox' && (
             <div
               className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2
-                transition-all duration-600 ease-in-out overflow-hidden origin-top"
+                transition-all duration-300 ease-in-out overflow-hidden origin-top"
               style={{ transformOrigin: 'top' }}
             >
               {menuItems.toolbox.map((item) => (
@@ -129,7 +134,6 @@ const Navbar = () => {
                   key={item.path}
                   to={item.path}
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
-                  onClick={() => setOpenDropdown(null)}
                 >
                   {item.label}
                 </Link>
@@ -139,19 +143,22 @@ const Navbar = () => {
         </div>
 
         {/* Engagement Main Link */}
-        <div className="relative">
+        <div 
+          className="relative"
+          onMouseEnter={() => handleMouseEnter('engagement')}
+          onMouseLeave={handleMouseLeave}
+        >
           <button
             className={`flex items-center space-x-1 text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer
               ${isActiveGroup(['/engagement']) ? 'bg-green-100 text-green-800' : 'bg-gray-50 hover:bg-gray-100'}`}
-            onClick={() => handleDropdownClick('engagement')}
           >
             <span>Engagement</span>
             <ChevronDown className="w-4 h-4" />
           </button>
-          {openDropdown === 'engagement' && (
+          {dropdownVisible === 'engagement' && (
             <div
               className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2
-                transition-all duration-600 ease-in-out overflow-hidden origin-top"
+                transition-all duration-300 ease-in-out overflow-hidden origin-top"
               style={{ transformOrigin: 'top' }}
             >
               {menuItems.engagement.map((item) => (
@@ -159,7 +166,6 @@ const Navbar = () => {
                   key={item.path}
                   to={item.path}
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
-                  onClick={() => setOpenDropdown(null)}
                 >
                   {item.label}
                 </Link>
@@ -169,19 +175,22 @@ const Navbar = () => {
         </div>
 
         {/* Duckweed Mafia Main Link */}
-        <div className="relative">
+        <div 
+          className="relative"
+          onMouseEnter={() => handleMouseEnter('duckweed-mafia')}
+          onMouseLeave={handleMouseLeave}
+        >
           <button
             className={`flex items-center space-x-1 text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer
               ${isActiveGroup(['/duckweed-mafia']) ? 'bg-green-100 text-green-800' : 'bg-gray-50 hover:bg-gray-100'}`}
-            onClick={() => handleDropdownClick('duckweed-mafia')}
           >
             <span>Duckweed mafia</span>
             <ChevronDown className="w-4 h-4" />
           </button>
-          {openDropdown === 'duckweed-mafia' && (
+          {dropdownVisible === 'duckweed-mafia' && (
             <div
               className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2
-                transition-all duration-600 ease-in-out overflow-hidden origin-top"
+                transition-all duration-300 ease-in-out overflow-hidden origin-top"
               style={{ transformOrigin: 'top' }}
             >
               {menuItems['duckweed-mafia'].map((item) => (
@@ -189,7 +198,6 @@ const Navbar = () => {
                   key={item.path}
                   to={item.path}
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
-                  onClick={() => setOpenDropdown(null)}
                 >
                   {item.label}
                 </Link>
