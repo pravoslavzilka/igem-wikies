@@ -173,7 +173,7 @@ const Home = () => {
        {/* Second Section with Map */}           
       <BrazilDeforestationWidget />
 
-
+      
 
       
       
