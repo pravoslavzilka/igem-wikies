@@ -1,286 +1,208 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
+import Slider from './Slider';
 
-const BrazilDeforestationWidget = () => {
-  const [timelinePosition, setTimelinePosition] = useState(50); // 0-100, where 50 is "now"
-  const [isDragging, setIsDragging] = useState(false);
+interface GridPoint {
+  x: number;
+  y: number;
+  id: string;
+  baseDeforestation: number;
+}
 
-  // Generate accurate Brazilian outline points based on the reference image
-  // Modified generateBrazilPoints function
-const generateBrazilPoints = useMemo(() => {
-  // More precise Brazil outline based on your reference image
-  const brazilOutline = [
-    // Northern border - more accurate spacing
-    [0.16, 0.08], [0.20, 0.06], [0.24, 0.05], [0.28, 0.04], [0.32, 0.03], 
-    [0.36, 0.03], [0.40, 0.04], [0.44, 0.05], [0.48, 0.04], [0.52, 0.03], 
-    [0.56, 0.04], [0.60, 0.06], [0.64, 0.08], [0.68, 0.10], [0.72, 0.12],
-    
-    // Northeast distinctive bulge - following your image pattern
-    [0.74, 0.15], [0.76, 0.18], [0.78, 0.22], [0.80, 0.26], [0.82, 0.30], 
-    [0.84, 0.34], [0.86, 0.38], [0.87, 0.42], [0.88, 0.46], [0.89, 0.50], 
-    [0.90, 0.54], [0.89, 0.58], [0.88, 0.62],
-    
-    // Eastern coastline
-    [0.86, 0.66], [0.84, 0.69], [0.81, 0.72], [0.78, 0.75], [0.75, 0.77], 
-    [0.72, 0.79], [0.69, 0.81], [0.66, 0.83], [0.63, 0.84], [0.60, 0.85], 
-    [0.57, 0.86], [0.54, 0.87],
-    
-    // Southern curve - matching the image
-    [0.51, 0.88], [0.48, 0.89], [0.45, 0.90], [0.42, 0.91], [0.39, 0.90], 
-    [0.36, 0.89], [0.33, 0.88], [0.30, 0.86], [0.27, 0.84], [0.24, 0.82],
-    
-    // Western border
-    [0.21, 0.79], [0.18, 0.76], [0.16, 0.73], [0.14, 0.70], [0.13, 0.67], 
-    [0.12, 0.64], [0.11, 0.61], [0.10, 0.58], [0.09, 0.55], [0.08, 0.52], 
-    [0.07, 0.49], [0.06, 0.46], [0.07, 0.43], [0.08, 0.40], [0.09, 0.37], 
-    [0.10, 0.34], [0.11, 0.31], [0.12, 0.28], [0.13, 0.25], [0.14, 0.22], 
-    [0.15, 0.19], [0.16, 0.16], [0.17, 0.13], [0.18, 0.10]
-  ];
-
-  // Generate interior dots with more regular spacing like your image
-  const interiorPoints = [];
-  const dotSpacing = 0.025; // Adjust this to match your dot density
-  
-  for (let y = 0.08; y <= 0.92; y += dotSpacing) {
-    for (let x = 0.06; x <= 0.92; x += dotSpacing) {
-      if (isInsideBrazilBounds(x, y)) {
-        // Add some randomness to avoid perfect grid
-        const offsetX = (Math.random() - 0.5) * 0.008;
-        const offsetY = (Math.random() - 0.5) * 0.008;
-        interiorPoints.push([x + offsetX, y + offsetY]);
-      }
-    }
+export const CONFIG = {
+  map: {
+    viewBox: { width: 600, height: 600 },
+    bounds: { x: 0, y: 0, width: 600, height: 600 },
+    dotRadius: 2.7,
+    opacity: 1,
+    maxPoints: 10000
+  },
+  colors: {
+    background: '#19471A',
+    healthy: '#9DD019',
+    moderate: '#95D5B2',
+    severe: '#F4A460',
+    critical: '#e75151ff',
+    white: '#FFFFFF',
+    accent: '#74C69D'
   }
+};
 
-  // Improved boundary detection function
-  function isInsideBrazilBounds(x, y) {
-    // More accurate Brazil shape detection
-    if (y < 0.08 || y > 0.92 || x < 0.06 || x > 0.92) return false;
-    
-    // Northern Amazon region
-    if (y < 0.15) {
-      return x >= 0.16 && x <= 0.72;
-    }
-    
-    // Upper middle region
-    if (y < 0.35) {
-      const leftBound = 0.08 + (y - 0.15) * 0.1;
-      const rightBound = 0.89 - (y - 0.15) * 0.3;
-      return x >= leftBound && x <= rightBound;
-    }
-    
-    // Middle region (widest part)
-    if (y < 0.65) {
-      const leftBound = 0.07 + (y - 0.35) * 0.05;
-      const rightBound = 0.90 - (y - 0.35) * 0.1;
-      return x >= leftBound && x <= rightBound;
-    }
-    
-    // Southern region (narrowing)
-    const leftBound = 0.15 + (y - 0.65) * 0.4;
-    const rightBound = 0.85 - (y - 0.65) * 0.3;
-    return x >= leftBound && x <= rightBound;
-  }
+const BrazilDeforestationTracker = () => {
+  const [timelinePosition, setTimelinePosition] = useState(50);
+  const [gridPoints, setGridPoints] = useState<GridPoint[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
-  const allPoints = [...brazilOutline, ...interiorPoints];
+  // Load data
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        setLoading(true);
+        setError(null);
 
-  return allPoints.map((coord, index) => {
-    // Your existing deforestation calculation logic
-    const baseDeforestation = Math.random() * 0.6 + 0.2;
-    const timeEffect = (timelinePosition - 50) / 100;
-    
-    const isAmazon = coord[0] < 0.5 && coord[1] < 0.4;
-    const isCerrado = coord[0] >= 0.3 && coord[0] <= 0.7 && coord[1] >= 0.3 && coord[1] <= 0.7;
-    
-    let regionalEffect = 0;
-    if (isAmazon) regionalEffect = -0.2;
-    if (isCerrado) regionalEffect = 0.3;
-    
-    let deforestationLevel = baseDeforestation + timeEffect + regionalEffect;
-    deforestationLevel = Math.max(0, Math.min(1, deforestationLevel));
-
-    return {
-      x: coord[0] * 320 + 40,
-      y: coord[1] * 240 + 20,
-      deforestation: deforestationLevel,
-      id: index
-    };
-  });
-}, [timelinePosition]);
-
-  const getPointColor = (deforestationLevel) => {
-    if (deforestationLevel < 0.25) return '#10b981'; // Green - returning ecosystem
-    if (deforestationLevel < 0.5) return '#ef4444'; // Red - no deforestation present
-    if (deforestationLevel < 0.75) return '#f97316'; // Orange - mild deforestation
-    return '#9ca3af'; // Gray - significant deforestation
-  };
-
-  const getTimelineLabel = () => {
-    if (timelinePosition < 33) return 'before';
-    if (timelinePosition > 67) return 'future';
-    return 'now';
-  };
-
-  const getDeforestationPercentage = () => {
-    const avgDeforestation = generateBrazilPoints.reduce((acc, point) => acc + point.deforestation, 0) / generateBrazilPoints.length;
-    return Math.round(40 + avgDeforestation * 48); // Range from ~40% to ~88%
-  };
-
-  const handleSliderChange = (e) => {
-    setTimelinePosition(Number(e.target.value));
-  };
-
-  const handleSliderClick = (e) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const clickPosition = (e.clientX - rect.left) / rect.width;
-    setTimelinePosition(Math.round(clickPosition * 100));
-  };
-
-  const handleMouseDown = (e) => {
-    setIsDragging(true);
-    e.preventDefault();
-  };
-
-  const handleMouseMove = (e) => {
-    if (isDragging) {
-      const rect = e.currentTarget.getBoundingClientRect();
-      const newPosition = ((e.clientX - rect.left) / rect.width) * 100;
-      setTimelinePosition(Math.max(0, Math.min(100, Math.round(newPosition))));
-      e.preventDefault();
-    }
-  };
-
-  const handleMouseUp = () => {
-    setIsDragging(false);
-  };
-
-  // Add global mouse up listener
-  React.useEffect(() => {
-    const handleGlobalMouseUp = () => setIsDragging(false);
-    const handleGlobalMouseMove = (e) => {
-      if (isDragging) {
-        const slider = document.querySelector('[data-slider="true"]');
-        if (slider) {
-          const rect = slider.getBoundingClientRect();
-          const newPosition = ((e.clientX - rect.left) / rect.width) * 100;
-          setTimelinePosition(Math.max(0, Math.min(100, Math.round(newPosition))));
+        // Try to load the JSON file
+        const response = await fetch('/brazil_deforestation_huemap.json');
+        if (!response.ok) {
+          throw new Error(`Failed to load data: ${response.status} ${response.statusText}`);
         }
+
+        const data: GridPoint[] = await response.json();
+        
+        if (!Array.isArray(data) || data.length === 0) {
+          throw new Error('Invalid or empty data file');
+        }
+
+        console.log(`Loaded ${data.length} points`);
+        setGridPoints(data);
+
+      } catch (err) {
+        console.error('Error loading data:', err);
+        setError('Unable to load deforestation data. Make sure brazil_deforestation_huemap.json is in the public folder.');
+      } finally {
+        setLoading(false);
       }
     };
 
-    if (isDragging) {
-      document.addEventListener('mousemove', handleGlobalMouseMove);
-      document.addEventListener('mouseup', handleGlobalMouseUp);
-    }
+    loadData();
+  }, []);
 
-    return () => {
-      document.removeEventListener('mousemove', handleGlobalMouseMove);
-      document.removeEventListener('mouseup', handleGlobalMouseUp);
-    };
-  }, [isDragging]);
+  // Calculate current deforestation for each point based on time position
+  const processedPoints = useMemo(() => {
+    const timeOffset = (timelinePosition - 50) / 50; // -1 to 1
+    
+    return gridPoints.map(point => {
+      let currentDeforestation = point.baseDeforestation;
+      
+      if (timelinePosition < 50) {
+        // Past: reduce deforestation (was better before)
+        const pastReduction = Math.abs(timeOffset) * 0.6; // Max 60% reduction
+        currentDeforestation = Math.max(0, point.baseDeforestation - pastReduction);
+      } else if (timelinePosition > 50) {
+        // Future: increase deforestation (gets worse)
+        const futureIncrease = timeOffset * 0.5; // Max 50% increase
+        currentDeforestation = Math.min(1, point.baseDeforestation + futureIncrease);
+      }
+      
+      return {
+        ...point,
+        currentDeforestation
+      };
+    });
+  }, [gridPoints, timelinePosition]);
+
+  // Get color based on deforestation level
+  const getDeforestationColor = (level: number): string => {
+    if (level < 0.2) return CONFIG.colors.healthy;
+    if (level < 0.4) return CONFIG.colors.moderate;
+    if (level < 0.7) return CONFIG.colors.severe;
+    return CONFIG.colors.critical;
+  };
+
+  const handleSliderChange = (newPosition: number) => {
+    setTimelinePosition(Math.max(0, Math.min(100, newPosition)));
+  };
+
+  if (loading) {
+    return (
+      <div className="w-full min-h-screen flex items-center justify-center" style={{ backgroundColor: CONFIG.colors.background }}>
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-16 w-16 border-4 border-white/30 border-t-white mx-auto mb-4"></div>
+          <p className="text-white text-lg font-medium">Loading Deforestation Data</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
-    <div className=" mx-4 mb-4 rounded-3xl p-16 relative" style={{ marginTop: "50px", backgroundColor: "#19471A"}}>
-      <div className="flex items-center justify-between">
-        {/* Map Section */}
-        <div className="flex-1 pr-8">
-          <div className="relative">
-            {/* SVG Map */}
-            <svg viewBox="0 0 400 280" className=" " style={{ height: "70%", width: "90%" }}>
-              {generateBrazilPoints.map((point) => (
-                <circle
-                  key={point.id}
-                  cx={point.x}
-                  cy={point.y}
-                  r="2.5"
-                  fill={getPointColor(point.deforestation)}
-                  opacity={0.9}
-                  className="transition-all duration-500 ease-in-out"
-                />
-              ))}
-            </svg>
-            
-            {/* Legend */}
-            <div className="absolute top-90 left-20 space-y-2 text-s">
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                <span className="text-white">no deforestation present</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 rounded-full bg-orange-500"></div>
-                <span className="text-white">mild deforestation</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 rounded-full bg-gray-400"></div>
-                <span className="text-white">significant deforestation</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                <span className="text-white">returning ecosystem</span>
-              </div>
+    <div className="w-full min-h-screen bg-gray-100 p-8 lg:p-4">
+      <div className="w-full mx-auto rounded-2xl p-8 lg:p-16 shadow-xl"
+           style={{ backgroundColor: CONFIG.colors.background }}>
+        {error && (
+          <div className="mb-6 p-4 rounded-lg border border-yellow-500/30" style={{ backgroundColor: 'rgba(255, 193, 7, 0.1)' }}>
+            <div className="flex items-center">
+              <div className="w-5 h-5 rounded-full bg-yellow-500 mr-3 flex-shrink-0"></div>
+              <p className="text-yellow-200 text-sm">{error}</p>
             </div>
           </div>
-        </div>
+        )}
         
-        {/* Statistics Section */}
-        <div className="flex-1 text-right " style={{ marginRight: "5%", fontFamily: "Space Grotesk, sans-serif" }}>
-          <h2 className="text-9xl font-bold text-white mb-4 transition-all duration-500">
-            {getDeforestationPercentage()}%
-          </h2>
-          <p className="text-2xl text-white mb-6 font-medium">
-            of natural ecosystem<br />
-            is destroyed by soybean.
-          </p>
-          <p className="text-white/80 max-w-md ml-auto leading-relaxed text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <p className="text-white/60 text-xs mt-4">[source: Brazil, trade.earth]</p>
-        </div>
-      </div>
-      
-      {/* Interactive Timeline */}
-      <div className="mt-12 flex items-center justify-center" >
-        <div className="flex items-center space-x-8 w-full max-w-2xl">
-          <span className="text-white/60 text-sm w-16 text-center">before</span>
-          
-          <div className="flex-1 relative">
-            <div 
-              className="h-2 bg-white/30 rounded-full relative cursor-pointer"
-              onClick={handleSliderClick}
-            >
-              <div 
-                className="h-2 bg-white rounded-full transition-all duration-300 ease-out"
-                style={{ width: `${timelinePosition}%` }}
-              ></div>
-              <div 
-                className="absolute top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-4 h-4 bg-white rounded-full cursor-grab active:cursor-grabbing shadow-lg transition-all duration-200 hover:scale-110 active:scale-95"
-                style={{ left: `${timelinePosition}%` }}
-              ></div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="space-y-6">
+            <div className="relative">
+              <svg 
+                viewBox={`0 0 ${CONFIG.map.viewBox.width} ${CONFIG.map.viewBox.height}`}
+                className="w-full"
+              >
+                {processedPoints.map((point: GridPoint & { currentDeforestation: number }) => (
+                  <circle
+                    key={point.id}
+                    cx={point.x}
+                    cy={point.y}
+                    r={CONFIG.map.dotRadius}
+                    fill={getDeforestationColor(point.currentDeforestation)}
+                    opacity={CONFIG.map.opacity}
+                  />
+                ))}
+              </svg>
+              
+              <div className="absolute bottom-40 left-6 space-y-3">
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 rounded-full bg-white"></div>
+                  <span className="text-white text-sm">no destruction present</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 rounded-full border border-white"></div>
+                  <span className="text-white text-sm">ecosystem destruction</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 rounded-full" style={{ backgroundColor: CONFIG.colors.healthy }}></div>
+                  <span className="text-white text-sm">natural ecosystem</span>
+                </div>
+              </div>
             </div>
-            <input
-              type="range"
-              min="0"
-              max="100"
-              value={timelinePosition}
-              onChange={handleSliderChange}
-              className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-              style={{ zIndex: 10 }}
+
+            <Slider 
+              timelinePosition={timelinePosition}
+              onSliderChange={handleSliderChange}
             />
           </div>
-          
-          <span className="text-white/60 text-sm w-16 text-center">future</span>
+
+          <div className="text-left space-y-8">
+            <div>
+              <div className="mb-6">
+                <div className="text-sm font-medium tracking-wider mb-4" style={{ color: CONFIG.colors.accent }}>
+                  OUR DEFORESTATION SOLUTION
+                </div>
+                <h1 className="text-4xl lg:text-5xl font-light leading-tight text-white mb-8">
+                  Headline about returning<br />
+                  natural ecosystems.
+                </h1>
+              </div>
+              
+              <div className="border-t border-white/20 pt-8">
+                <div className="flex items-start space-x-4">
+                  <div className="text-6xl text-white/20 font-serif">"</div>
+                  <div>
+                    <p className="text-lg text-white mb-4 leading-relaxed">
+                      Every hectare we save from soy can be<br />
+                      a hectare of forest reborn.
+                    </p>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-10 h-10 rounded-full bg-gray-400 flex-shrink-0"></div>
+                      <div>
+                        <div className="font-medium text-white">Dr. Helena Silva</div>
+                        <div className="text-sm text-white/70">Amazon Conservation Biologist</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      
-      {/* Current Time Label */}
-      <div className="text-center mt-4">
-        <span className="text-white font-medium text-lg capitalize transition-all duration-300">
-          {getTimelineLabel()}
-        </span>
-      </div>
-
-      <div style={{ paddingBottom: "100px"  }} ></div>
     </div>
   );
 };
 
-export default BrazilDeforestationWidget;
+export default BrazilDeforestationTracker;
