@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer'; // <-- import Footer
 import Home from './pages/Home';
 import Handbook from './pages/Handbook';
 
@@ -14,8 +15,6 @@ import ToolboxTools from './pages/toolbox/Tools';
 import ToolboxResources from './pages/toolbox/Resources';
 import ToolboxDownloads from './pages/toolbox/Downloads';
 
-
-
 // Engagement pages 
 // import Engagement from './pages/Engagement';
 // import EngagementCommunity from './pages/engagement/Community';
@@ -23,45 +22,46 @@ import ToolboxDownloads from './pages/toolbox/Downloads';
 // import EngagementImpact from './pages/engagement/Impact';
 
 // Duckweed Mafia pages
-//import DuckweedMafia from './pages/DuckweedMafia';
-//import DuckweedMafiaTeam from './pages/duckweed-mafia/Team';
-//import DuckweedMafiaMission from './pages/duckweed-mafia/Mission';
+// import DuckweedMafia from './pages/DuckweedMafia';
+// import DuckweedMafiaTeam from './pages/duckweed-mafia/Team';
+// import DuckweedMafiaMission from './pages/duckweed-mafia/Mission';
 // import DuckweedMafiaCulture from './pages/duckweed-mafia/Culture';
-
-
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-gray-50 flex flex-col">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          
-          {/* Project Routes */}
-          <Route path="/project/what" element={<ProjectWhat />} />
-          <Route path="/project/why" element={<ProjectWhy />} />
-          <Route path="/project/how" element={<ProjectHow />} />
-          
-          {/* Toolbox Routes */}
-          <Route path="/toolbox/tools" element={<ToolboxTools />} />
-          <Route path="/toolbox/resources" element={<ToolboxResources />} />
-          <Route path="/toolbox/downloads" element={<ToolboxDownloads />} />
-          
-          {/* Engagement Routes 
-          <Route path="/engagement" element={<Engagement />} />
-          <Route path="/engagement/community" element={<EngagementCommunity />} />
-          <Route path="/engagement/events" element={<EngagementEvents />} />
-          <Route path="/engagement/impact" element={<EngagementImpact />} />
-          
-          
-          <Route path="/duckweed-mafia" element={<DuckweedMafia />} />
-          <Route path="/duckweed-mafia/team" element={<DuckweedMafiaTeam />} />
-          <Route path="/duckweed-mafia/mission" element={<DuckweedMafiaMission />} />
-          <Route path="/duckweed-mafia/culture" element={<DuckweedMafiaCulture />} />
-          */}   {/* Duckweed Mafia Routes */}
-          <Route path="/handbook" element={<Handbook />} />
-        </Routes>
+        <div className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            
+            {/* Project Routes */}
+            <Route path="/project/what" element={<ProjectWhat />} />
+            <Route path="/project/why" element={<ProjectWhy />} />
+            <Route path="/project/how" element={<ProjectHow />} />
+            
+            {/* Toolbox Routes */}
+            <Route path="/toolbox/tools" element={<ToolboxTools />} />
+            <Route path="/toolbox/resources" element={<ToolboxResources />} />
+            <Route path="/toolbox/downloads" element={<ToolboxDownloads />} />
+            
+            {/* Engagement Routes 
+            <Route path="/engagement" element={<Engagement />} />
+            <Route path="/engagement/community" element={<EngagementCommunity />} />
+            <Route path="/engagement/events" element={<EngagementEvents />} />
+            <Route path="/engagement/impact" element={<EngagementImpact />} />
+            
+            
+            <Route path="/duckweed-mafia" element={<DuckweedMafia />} />
+            <Route path="/duckweed-mafia/team" element={<DuckweedMafiaTeam />} />
+            <Route path="/duckweed-mafia/mission" element={<DuckweedMafiaMission />} />
+            <Route path="/duckweed-mafia/culture" element={<DuckweedMafiaCulture />} />
+            */}   {/* Duckweed Mafia Routes */}
+            <Route path="/handbook" element={<Handbook />} />
+          </Routes>
+        </div>
+        <Footer /> {/* <-- Footer always at the bottom */}
       </div>
     </Router>
   );
