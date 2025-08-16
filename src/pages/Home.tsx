@@ -81,7 +81,7 @@ const Home = () => {
                       onMouseEnter={e => setIconHover({ idx, x: e.clientX, y: e.clientY })}
                       onMouseMove={e => setIconHover({ idx, x: e.clientX, y: e.clientY })}
                       onMouseLeave={() => setIconHover(null)}
-                      style={{ fontSize: "0.3em", lineHeight: "1" }}
+                      style={{ fontSize: "0.3em", lineHeight: "1", paddingBottom: "10%" }}
                     >
                       {item.icon}
                     </span>
@@ -106,7 +106,7 @@ const Home = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <div className="w-32 h-32 bg-green-500/80 rounded-full flex items-center justify-center backdrop-blur-sm border-2 border-white/30">
-                    <div className="text-center">
+                    <div className="text-center"> 
                       <div className="w-6 h-6 mx-auto mb-2">
                         <svg viewBox="0 0 24 24" fill="white" className="w-6 h-6">
                           <path d="M12 2L10 8L4 6L8 12L2 14L8 20L10 14L16 16L12 10L18 8L12 2Z"/>
