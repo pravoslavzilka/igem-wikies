@@ -5,10 +5,12 @@ import { useState, useEffect } from 'react';
 
 
 const fadeHeadline = [
-  { text: "Duckweed is just a weed", color: "black" },
-  { text: " - to make it a crop,", color: "gray-400" },
-  { text: "without evolution, we need ", color: "gray-400" },
-  { text: "synbio.", color: "green-300" }
+  { text: "Duckweed ", color: "#171F16" },
+  { text: "is just ", color: "#171F16" },
+  { text: " a weed", color: "#171F16" },
+  { text: " - to make it a crop,", color: "#171F16" },
+  { text: "without evolution, we need ", color: "#171F16" },
+  { text: "synbio.", color: "#9DD019" } // example hex color for green
 ];
 
 
@@ -70,16 +72,13 @@ const [headlineOpacity, setHeadlineOpacity] = useState(0.25);
           <span key={i}>
             {frag.text.split('').map((char, j) => {
               const isColored = letterIdx < fadeCount;
-              let colorClass = frag.color === "black"
-                ? (isColored ? "text-black" : "text-gray-400")
-                : (isColored ? `text-${frag.color}` : "text-gray-400");
-              // Special for "synbio." fragment
-              if (frag.color === "green-300") {
-                colorClass = isColored ? "text-green-300" : "text-gray-400";
-              }
+              // Use hex color if isColored, else gray
+              const style = isColored
+                ? { color: frag.color, transition: "color 0.2s" }
+                : { color: "#9CA3AF", transition: "color 0.2s" }; // Tailwind gray-400 hex
               letterIdx++;
               return (
-                <span key={j} className={colorClass} style={{ transition: "color 0.2s" }}>
+                <span key={j} style={style}>
                   {char}
                 </span>
               );
@@ -98,7 +97,7 @@ const [headlineOpacity, setHeadlineOpacity] = useState(0.25);
         <div id="headline-fade-card" className="bg-[#FAFAFA] rounded-3xl p-10 relative shadow-none">
           <div className="text-center" style={{ fontFamily: "Space Grotesk, sans-serif", }}>
             <div className="text-2xl md:text-3xl font-bold mb-8">
-              Duckweed is set to <span className="text-green-500">end soybean dominance!</span> So, why are we still<br />
+              Duckweed is set to <span style={{ color: "#9DD019"}} >end soybean dominance!</span> So, why are we still<br />
               feeding cows with soybean?
             </div>
             <div className="text-2xl md:text-3xl font-bold mb-2">

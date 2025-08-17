@@ -24,7 +24,7 @@ const Home = () => {
 
 
       <Hero />     
-      
+
       <BrazilDeforestationWidget />
 
       <VideoComp />
@@ -33,6 +33,10 @@ const Home = () => {
       <FeaturesWidget />
 
       <FadeCard />
+
+      <VideoComp />
+
+      <VideoComp />
       
 
     </div>
