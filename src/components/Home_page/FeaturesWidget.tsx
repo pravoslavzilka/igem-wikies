@@ -2,9 +2,9 @@
 
 const FeaturesWidget = () => {
   return (
-    <div className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="bg-white rounded-2xl shadow-lg p-8">
+    <div className="py-16 bg-white">
+        
+          
             <div className="flex flex-wrap justify-between items-start gap-8">
               
               {/* Feature 1 - Water Growth */}
@@ -109,8 +109,8 @@ const FeaturesWidget = () => {
 
             </div>
           </div>
-        </div>
-      </div>
+       
+      
   );
 }
 
