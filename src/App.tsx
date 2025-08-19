@@ -14,6 +14,8 @@ import ToolboxTools from './pages/toolbox/Tools';
 import ToolboxResources from './pages/toolbox/Resources';
 import ToolboxDownloads from './pages/toolbox/Downloads';
 
+import SustainabilityDocument from './pages/project/why/sustainability';
+
 
 
 // Engagement pages 
@@ -42,6 +44,10 @@ function App() {
           <Route path="/project/what" element={<ProjectWhat />} />
           <Route path="/project/why" element={<ProjectWhy />} />
           <Route path="/project/how" element={<ProjectHow />} />
+
+          <Route path="/project/why/sustainability" element={<SustainabilityDocument />} />
+          
+          {/* Handbook Route */}
           
           {/* Toolbox Routes */}
           <Route path="/toolbox/tools" element={<ToolboxTools />} />
