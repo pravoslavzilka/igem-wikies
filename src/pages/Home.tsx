@@ -3,7 +3,7 @@ import Hero from '../components/Home_page/Hero';
 import FeaturesWidget from '../components/Home_page/FeaturesWidget';
 import FadeCard from '../components/Home_page/FadeCard';
 import Comparison from '../components/Home_page/Comparison';
-import BrazilDeforestationWidget from '../components/BrazilDeforestationWidget';
+import BrazilDeforestationWidget from '../components/Brazil/BrazilDeforestationWidget';
 import VideoComp from '../components/VideoComp';
 import "@fontsource/urbanist";
 import "@fontsource/space-grotesk";
