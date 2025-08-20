@@ -3,9 +3,7 @@ import React from 'react';
 
 
 
-
-
-export default function DeepDiveDocument() {
+export default function DuckweedDocument() {
   return (
     <div className="max-w-6xl mx-auto p-8 bg-white text-gray-900 leading-relaxed">
       {/* Header */}
@@ -45,8 +43,8 @@ export default function DeepDiveDocument() {
           <div className="bg-gray-200 border-2 border-dashed border-gray-400 w-64 h-48 flex items-center justify-center rounded-lg">
             <div className="text-center text-gray-600">
               <div className="text-sm mb-2">🔬 DIAGRAM PLACEHOLDER</div>
-              <div className="text-xs italic">Illustrated anatomy</div>
-              <div className="text-xs italic">of plant body</div>
+              <div className="text-xs italic">*kreslené schema anatomie těla rostliny na styl tohoto obrázku:</div>
+              <div className="text-xs italic">(Illustrated anatomy diagram of plant body in the style of this image)</div>
             </div>
           </div>
         </div>
@@ -83,73 +81,126 @@ export default function DeepDiveDocument() {
         </p>
       </div>
 
+      
+
+
       {/* Genus Sections */}
       <div className="space-y-8">
         {/* Spirodela */}
         <div className="border-l-4 border-blue-500 pl-6">
           <h2 className="text-2xl font-bold text-blue-700 mb-2">Spirodela (2 species)</h2>
-          <p>
-            Spirodela occupies a basal position within the Lemnoidae. Despite having the largest body plan among 
-            duckweeds, it is characterised by a remarkably small genome size and one of the most reduced gene 
-            repertoires of any known plant. <em>S. polyrrhiza</em> possesses a genome of approximately 158 Mb, 
-            comprising 19,623 protein-coding genes [13], which is roughly 30% less than reported for 
-            <em>Arabidopsis thaliana</em>. As a result, Spirodela serves as an excellent model for genomic research 
-            and the study of highly conserved core pathways in plants.
-          </p>
+          <div className="flex gap-6 items-start">
+            <div className="flex-1">
+              <p>
+                Spirodela occupies a basal position within the Lemnoidae. Despite having the largest body plan among 
+                duckweeds, it is characterised by a remarkably small genome size and one of the most reduced gene 
+                repertoires of any known plant. <em>S. polyrrhiza</em> possesses a genome of approximately 158 Mb, 
+                comprising 19,623 protein-coding genes [13], which is roughly 30% less than reported for 
+                <em>Arabidopsis thaliana</em>. As a result, Spirodela serves as an excellent model for genomic research 
+                and the study of highly conserved core pathways in plants.
+              </p>
+            </div>
+            <div className="bg-gray-200 border-2 border-dashed border-gray-400 w-48 h-32 flex items-center justify-center rounded-lg">
+              <div className="text-center text-gray-600">
+                <div className="text-sm mb-1">📸 Spirodela</div>
+                <div className="text-xs italic">Species image</div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Landoltia */}
         <div className="border-l-4 border-green-500 pl-6">
           <h2 className="text-2xl font-bold text-green-700 mb-2">Landoltia (1 species)</h2>
-          <p>
-            <em>Landoltia punctata</em> is the sole representative of the genus Landoltia. It has shown remarkable 
-            ability to rapidly accumulate a high starch content (about 45 – 60 % of dry weight) under optimised 
-            cultivation conditions [14], [15], making it a promising candidate for bioethanol production.
-          </p>
+          <div className="flex gap-6 items-start">
+            <div className="flex-1">
+              <p>
+                <em>Landoltia punctata</em> is the sole representative of the genus Landoltia. It has shown remarkable 
+                ability to rapidly accumulate a high starch content (about 45 – 60 % of dry weight) under optimised 
+                cultivation conditions [14], [15], making it a promising candidate for bioethanol production.
+              </p>
+            </div>
+            <div className="bg-gray-200 border-2 border-dashed border-gray-400 w-48 h-32 flex items-center justify-center rounded-lg">
+              <div className="text-center text-gray-600">
+                <div className="text-sm mb-1">📸 Landoltia</div>
+                <div className="text-xs italic">Species image</div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Lemna */}
         <div className="border-l-4 border-yellow-500 pl-6">
           <h2 className="text-2xl font-bold text-yellow-700 mb-2">Lemna (12 species)</h2>
-          <p>
-            Lemna is the most widely distributed duckweed genus worldwide. Some species colonise new areas so 
-            successfully that they are considered invasive. The most notorious of them is <em>L. minuta</em> [4]. 
-            This very ubiquity has ensured that members of this genus, particularly <em>L. minor</em> and 
-            <em>L. gibba</em>, are already used in a range of practical applications. Examples include their use 
-            in the phytoremediation of polluted water bodies [16] and as model organisms in ecotoxicological 
-            testing [17].
-          </p>
+          <div className="flex gap-6 items-start">
+            <div className="flex-1">
+              <p>
+                Lemna is the most widely distributed duckweed genus worldwide. Some species colonise new areas so 
+                successfully that they are considered invasive. The most notorious of them is <em>L. minuta</em> [4]. 
+                This very ubiquity has ensured that members of this genus, particularly <em>L. minor</em> and 
+                <em>L. gibba</em>, are already used in a range of practical applications. Examples include their use 
+                in the phytoremediation of polluted water bodies [16] and as model organisms in ecotoxicological 
+                testing [17].
+              </p>
+            </div>
+            <div className="bg-gray-200 border-2 border-dashed border-gray-400 w-48 h-32 flex items-center justify-center rounded-lg">
+              <div className="text-center text-gray-600">
+                <div className="text-sm mb-1">📸 Lemna</div>
+                <div className="text-xs italic">Species image</div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Wolffia */}
         <div className="border-l-4 border-red-500 pl-6">
           <h2 className="text-2xl font-bold text-red-700 mb-2">Wolffia (11 species)</h2>
-          <p className="mb-4">
-            Members of the genus Wolffia are known for their use as animal feed. In Northern Thailand, Laos, and 
-            Myanmar, <em>W. globosa</em> is even a part of traditional diet of local people [18], [19]. Their 
-            suitability for human consumption is further supported by their excellent protein composition, rich 
-            phytosterol content [20], and the fact that, unlike other duckweed genera, Wolffia species do not 
-            accumulate oxalates as calcium oxalate crystals, which may pose health risks [21]. Top-scoring specie 
-            is however <em>W. microscopica</em> (clone 2005) with its optimal amino acid profile, dietary 
-            stearidonic acid presence [20] and record doubling time of 29.3 hours, gaining it a title of a 
-            fastest-growing angiosperm. Similarly rapid propagation is observed in <em>Wolffia globosa</em> clone 
-            9498 exhibiting a doubling time of 29.8 hours [8].
-          </p>
-          <p>
-            Another interesting specie is <em>W. australiana</em>, which has the smallest genome within the genus 
-            (354 Mb) and even greater reduction in the number of predicted protein-coding genes (~15 thousand). 
-            This genetic simplification correlates with the minimal tissue complexity and absence of roots [22].
-          </p>
+          <div className="flex gap-6 items-start">
+            <div className="flex-1">
+              <p className="mb-4">
+                Members of the genus Wolffia are known for their use as animal feed. In Northern Thailand, Laos, and 
+                Myanmar, <em>W. globosa</em> is even a part of traditional diet of local people [18], [19]. Their 
+                suitability for human consumption is further supported by their excellent protein composition, rich 
+                phytosterol content [20], and the fact that, unlike other duckweed genera, Wolffia species do not 
+                accumulate oxalates as calcium oxalate crystals, which may pose health risks [21]. Top-scoring specie 
+                is however <em>W. microscopica</em> (clone 2005) with its optimal amino acid profile, dietary 
+                stearidonic acid presence [20] and record doubling time of 29.3 hours, gaining it a title of a 
+                fastest-growing angiosperm. Similarly rapid propagation is observed in <em>Wolffia globosa</em> clone 
+                9498 exhibiting a doubling time of 29.8 hours [8].
+              </p>
+              <p>
+                Another interesting specie is <em>W. australiana</em>, which has the smallest genome within the genus 
+                (354 Mb) and even greater reduction in the number of predicted protein-coding genes (~15 thousand). 
+                This genetic simplification correlates with the minimal tissue complexity and absence of roots [22].
+              </p>
+            </div>
+            <div className="bg-gray-200 border-2 border-dashed border-gray-400 w-48 h-32 flex items-center justify-center rounded-lg">
+              <div className="text-center text-gray-600">
+                <div className="text-sm mb-1">📸 Wolffia</div>
+                <div className="text-xs italic">Species image</div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Wolffiella */}
         <div className="border-l-4 border-purple-500 pl-6">
           <h2 className="text-2xl font-bold text-purple-700 mb-2">Wolffiella (10 species)</h2>
-          <p>
-            Wolffiella shares several characteristics with the genus Wolffia. The plant forms extremely small fronds, 
-            lacks roots, and certain species, in particular <em>W. hyalina</em>, have been proposed as a potential 
-            food source for humans due to their high protein content (35%) and favourable amino acid composition [19].
-          </p>
+          <div className="flex gap-6 items-start">
+            <div className="flex-1">
+              <p>
+                Wolffiella shares several characteristics with the genus Wolffia. The plant forms extremely small fronds, 
+                lacks roots, and certain species, in particular <em>W. hyalina</em>, have been proposed as a potential 
+                food source for humans due to their high protein content (35%) and favourable amino acid composition [19].
+              </p>
+            </div>
+            <div className="bg-gray-200 border-2 border-dashed border-gray-400 w-48 h-32 flex items-center justify-center rounded-lg">
+              <div className="text-center text-gray-600">
+                <div className="text-sm mb-1">📸 Wolffiella</div>
+                <div className="text-xs italic">Species image</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -224,4 +275,3 @@ export default function DeepDiveDocument() {
     </div>
   );
 }
-
