@@ -7,7 +7,7 @@ const ProjectWhat = () => {
       {/* Hero Section */}
       <div className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-20">
         <div className="max-w-6xl mx-auto px-8">
-          <h1 className="text-5xl font-bold mb-6">What We're Building</h1>
+          <h1 className="text-5xl font-bold mb-6">We wanted to solve a real, BIG problem with synthetic biology</h1>
           <p className="text-xl text-blue-100 max-w-3xl">
             Programmable duckweed engineered to produce high-quality protein as a sustainable 
             alternative to traditional animal feed sources.
@@ -23,13 +23,12 @@ const ProjectWhat = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <p className="text-gray-600 mb-4">
-                Our project focuses on genetically modifying Lemna minor (common duckweed) to enhance 
-                its protein content and nutritional profile. Through synthetic biology approaches, we're 
-                creating a sustainable protein source that can replace expensive soybean meal in livestock feed.
+                We’re a team of Czechs and Slovaks. In both our countries, agricultural land takes up around half of all territory. 
+
               </p>
               <p className="text-gray-600">
-                The engineered duckweed will be optimized for rapid growth, high protein yield, and 
-                improved digestibility, making it an economically viable solution for farmers worldwide.
+                A lot of us grew up in villages, surrounded by farms, fields, livestock and farmers. We saw the challenges around us and realized that they are a part of much bigger, global issues:
+
               </p>
             </div>
             <div>

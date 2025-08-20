@@ -7,7 +7,7 @@ const ProjectWhy = () => {
       {/* Hero Section */}
       <div className="bg-gradient-to-br from-red-600 to-red-800 text-white py-20">
         <div className="max-w-6xl mx-auto px-8">
-          <h1 className="text-5xl font-bold mb-6">Why This Matters</h1>
+          <h1 className="text-5xl font-bold mb-6">Forgetting Arabidopsis or soybean and bracing ourselves for duckweed</h1>
           <p className="text-xl text-red-100 max-w-3xl">
             The global food system faces unprecedented challenges. Our solution addresses 
             critical issues in sustainability, economics, and food security.
@@ -45,6 +45,10 @@ const ProjectWhy = () => {
           </div>
         </div>
 
+
+
+
+        
         {/* Key Issues */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           <div className="bg-white rounded-2xl p-6 shadow-lg text-center">
@@ -171,6 +175,83 @@ const ProjectWhy = () => {
             Programmable duckweed offers a sustainable, cost-effective alternative that addresses 
             all major challenges in the current protein supply chain.
           </p>
+        </div>
+
+        {/* PDF Structure Section */}
+        <div className="bg-white rounded-2xl p-8 shadow-lg mb-16">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Why Duckweed?</h2>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-2xl font-semibold text-gray-800 mb-4">Duckweed vs Soybean</h3>
+              <p className="text-gray-600 mb-6">
+                Duckweed is the fastest growing plant on Earth, with a doubling time of 36-48 hours. Unlike soybean, it requires minimal land and water, and can be cultivated locally, reducing transportation costs and carbon footprint.
+              </p>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h4 className="font-semibold text-green-800 mb-2">Key Advantages:</h4>
+                <ul className="text-green-700 text-sm space-y-1">
+                  <li>• 20-45% protein content (dry weight)</li>
+                  <li>• Thrives on water surface, no arable land needed</li>
+                  <li>• High nutrient uptake, excellent for phytoremediation</li>
+                  <li>• Can be programmed for desired traits using synthetic biology</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <img 
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=compress&fit=crop&w=600&q=80" 
+                alt="Duckweed"
+                className="w-full h-64 object-cover rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Comparison Table */}
+        <div className="bg-white rounded-2xl p-8 shadow-lg mb-16">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Comparison: Duckweed vs Soybean</h2>
+          <div className="overflow-x-auto">
+            <table className="min-w-full text-left border-separate border-spacing-y-2">
+              <thead>
+                <tr>
+                  <th className="px-4 py-2 text-gray-700 font-semibold">Parameter</th>
+                  <th className="px-4 py-2 text-green-700 font-semibold">Duckweed</th>
+                  <th className="px-4 py-2 text-red-700 font-semibold">Soybean</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="px-4 py-2 text-gray-600">Protein Content</td>
+                  <td className="px-4 py-2 text-green-800 font-bold">20-45%</td>
+                  <td className="px-4 py-2 text-red-800 font-bold">35-40%</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2 text-gray-600">Doubling Time</td>
+                  <td className="px-4 py-2 text-green-800 font-bold">36-48h</td>
+                  <td className="px-4 py-2 text-red-800 font-bold">7-10 days</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2 text-gray-600">Land Usage</td>
+                  <td className="px-4 py-2 text-green-800 font-bold">Minimal (water surface)</td>
+                  <td className="px-4 py-2 text-red-800 font-bold">High (arable land)</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2 text-gray-600">Water Usage</td>
+                  <td className="px-4 py-2 text-green-800 font-bold">Low</td>
+                  <td className="px-4 py-2 text-red-800 font-bold">High</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2 text-gray-600">Carbon Footprint</td>
+                  <td className="px-4 py-2 text-green-800 font-bold">Low</td>
+                  <td className="px-4 py-2 text-red-800 font-bold">High</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2 text-gray-600">Programmability</td>
+                  <td className="px-4 py-2 text-green-800 font-bold">Yes (synbio)</td>
+                  <td className="px-4 py-2 text-red-800 font-bold">Limited</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
