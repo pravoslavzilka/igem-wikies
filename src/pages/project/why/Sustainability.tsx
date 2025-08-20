@@ -2,7 +2,7 @@ import React from 'react';
 
 const SustainabilityDocument = () => {
   return (
-    <div className="max-w-4xl mx-auto p-8 bg-white font-sans">
+    <div className="max-w-6xl mx-auto p-8 bg-white font-sans">
       {/* Header */}
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold text-gray-900 mb-4">Sustainability</h1>
