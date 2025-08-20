@@ -10,11 +10,14 @@ import ProjectWhy from './pages/project/Why';
 import ProjectHow from './pages/project/How';
 
 // Toolbox pages
+import DeepDiveDocument from './pages/toolbox/DeepDive';
 import ToolboxTools from './pages/toolbox/Tools';
 import ToolboxResources from './pages/toolbox/Resources';
 import ToolboxDownloads from './pages/toolbox/Downloads';
 
 import SustainabilityDocument from './pages/project/why/Sustainability';
+
+import LivingLayersDocument from './pages/project/how/Cultivator';
 
 
 
@@ -46,10 +49,16 @@ function App() {
           <Route path="/project/how" element={<ProjectHow />} />
 
           <Route path="/project/why/sustainability" element={<SustainabilityDocument />} />
+
+          <Route path="/project/how/cultivator" element={<LivingLayersDocument />} />
+
+
+
           
           {/* Handbook Route */}
           
           {/* Toolbox Routes */}
+          <Route path="/toolbox/deep-dive-on-duckweed" element={<DeepDiveDocument />} />
           <Route path="/toolbox/tools" element={<ToolboxTools />} />
           <Route path="/toolbox/resources" element={<ToolboxResources />} />
           <Route path="/toolbox/downloads" element={<ToolboxDownloads />} />
