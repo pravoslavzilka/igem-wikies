@@ -1,50 +1,66 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import "@fontsource/space-grotesk";
 
-// Simple SVG cow icon
-const CowIcon = ({ color = "#BDBDBD" }) => (
-  <svg width="32" height="20" viewBox="0 0 32 20" fill="none">
-    <path
-      d="M2 16V12C2 8 6 6 10 6H22C26 6 30 8 30 12V16"
-      stroke={color}
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <circle cx="8" cy="16" r="2" fill={color} />
-    <circle cx="24" cy="16" r="2" fill={color} />
-  </svg>
+// Cow image components
+const CowIcon = ({ src }: { src: string }) => (
+  <img src={src} alt="cow" width={32} height={20} style={{ display: "inline-block" }} />
 );
 
+const getCowCols = (width: number) => {
+  if (width < 480) return 3;
+  if (width < 768) return 5;
+  if (width < 1024) return 7;
+  return 10;
+};
+
 const Comparison = () => {
-  // 10 cows per group, 6 green, 4 gray
+  const [cols, setCols] = useState(getCowCols(window.innerWidth));
+
+  useEffect(() => {
+    const handleResize = () => setCols(getCowCols(window.innerWidth));
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // 10 cows per group, 6 green, 4 gray for soy; 8 green, 2 gray for duckweed
   const cowsSoy = Array.from({ length: 10 }, (_, i) =>
-    i < 6 ? <CowIcon key={i} color="#8BC34A" /> : <CowIcon key={i} color="#BDBDBD" />
+    i < 5
+      ? <CowIcon key={i} src="https://static.igem.wiki/teams/5642/icons/vector.webp" />
+      : <CowIcon key={i} src="https://static.igem.wiki/teams/5642/icons/vector-f.webp" />
   );
   const cowsDuckweed = Array.from({ length: 10 }, (_, i) =>
-    i < 8 ? <CowIcon key={i} color="#8BC34A" /> : <CowIcon key={i} color="#BDBDBD" />
+    i < 8
+      ? <CowIcon key={i} src="https://static.igem.wiki/teams/5642/icons/vector.webp" />
+      : <CowIcon key={i} src="https://static.igem.wiki/teams/5642/icons/vector-f.webp" />
   );
 
   return (
     <div className="bg-white " style={{ padding: "5rem", paddingBottom: "12rem" }}>
-      <h2 className="text-3xl font-bold mb-8 text-center">Nadpis</h2>
+      <h2 className="text-4xl font-bold mb-8 text-center" style={{ fontFamily: "Space Grotesk" }} >Nadpis</h2>
       <div className="flex flex-row gap-16 justify-center items-end">
         {/* Soybean group */}
-        <div className="flex flex-col items-center">
-          <div className="grid grid-cols-10 gap-2 mb-4">
+        <div className="flex flex-col items-center" style={{paddingTop: "4rem"}}>
+          <div
+            className="grid gap-2 mb-4"
+            style={{ gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))` }}
+          >
             {cowsSoy}
           </div>
-          <div className="text-center text-sm text-gray-700 mt-4">
+          <div style={{ fontFamily: "Space Grotesk" }} className="text-center text-sm text-black-700 mt-4">
             Tol'koto kravičiek vieme za XY času
             <br />
             nakŕmiť soybeanom
           </div>
         </div>
         {/* Duckweed group */}
-        <div className="flex flex-col items-center">
-          <div className="grid grid-cols-10 gap-2 mb-4">
+        <div style={{ fontFamily: "Space Grotesk" }} className="flex flex-col items-center">
+          <div
+            className="grid gap-2 mb-4"
+            style={{ gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))` }}
+          >
             {cowsDuckweed}
           </div>
-          <div className="text-center text-sm text-gray-700 mt-4">
+          <div className="text-center text-sm text-black-700 mt-4">
             Tol'koto kravičiek vieme za XY času
             <br />
             nakŕmiť duckweedom
