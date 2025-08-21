@@ -1,5 +1,7 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import { motion, AnimatePresence, Easing, Variants } from 'framer-motion';
+import "@fontsource/space-grotesk";
+import "@fontsource/space-grotesk/700.css";
 
 interface ContentPanelProps {
   timelinePosition: number;
@@ -15,7 +17,7 @@ interface DynamicContent {
 
 const CONFIG = {
   colors: {
-    accent: '#74C69D'
+    accent: '#9DD019'
   }
 };
 
@@ -183,9 +185,10 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ timelinePosition }) => {
           exit="exit"
         >
           <div className="mb-4 sm:mb-6">
+            {/* Headline */}
             <motion.div 
-              className="text-xs sm:text-sm font-medium tracking-wider mb-3 sm:mb-4" 
-              style={{ color: CONFIG.colors.accent }}
+              className="text-2xl sm:text-2xl font-medium tracking-wider mb-3 sm:mb-4 center" 
+              style={{ color: CONFIG.colors.accent, fontFamily: "Space Grotesk, sans-serif", fontWeight: 700, letterSpacing: "4px", textAlign: 'center', }}
               variants={taglineVariants}
             >
               <motion.span
@@ -203,8 +206,8 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ timelinePosition }) => {
             </motion.div>
             
             <motion.h1 
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-4xl 2xl:text-5xl font-light leading-tight text-white mb-6 sm:mb-8"
-              variants={headlineVariants}
+              className="text-2xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-4xl 2xl:text-5xl font-light leading-tight text-white mb-6 sm:mb-8"
+              variants={headlineVariants} style={{marginTop:'40px', textAlign: 'center', fontFamily: "Space Grotesk, sans-serif", fontWeight: 700, letterSpacing: "0px"}}
             >
               {displayContent.headline}
             </motion.h1>
