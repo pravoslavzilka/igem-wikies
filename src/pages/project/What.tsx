@@ -53,15 +53,12 @@ const ProjectWhat = () => {
               </p>
             </div>
             <div className="flex-shrink-0">
-              <div className="w-96 h-56 bg-gradient-to-br from-blue-100 to-blue-50 rounded-xl flex items-center justify-center border-2 border-blue-200 shadow-lg">
-                <svg className="w-80 h-40 text-blue-600" viewBox="0 0 400 200" fill="none">
-                  <path d="M50 100 Q80 80 120 90 Q160 85 200 95 Q240 90 280 85 Q320 90 360 100 Q340 130 300 135 Q260 140 220 135 Q180 130 140 135 Q100 130 50 100" 
-                        stroke="currentColor" strokeWidth="3" fill="rgba(34, 197, 94, 0.1)"/>
-                  <path d="M200 95 Q240 105 280 100 Q320 105 350 115 Q330 145 290 150 Q250 155 210 150 Q200 125 200 95" 
-                        stroke="currentColor" strokeWidth="3" fill="rgba(34, 197, 94, 0.1)"/>
-                  <text x="120" y="115" className="fill-blue-700 text-sm font-semibold">Czech Republic</text>
-                  <text x="260" y="130" className="fill-blue-700 text-sm font-semibold">Slovakia</text>
-                </svg>
+              <div className="">
+                <img
+                  src="https://domalenka.cz/uploads/_cache/uploads-images-atrakcie-hrady-zamky-zrucaniny-zvolen-hrad-jpg-crop-1216x684.jpg"
+                  alt="Czech Flag"
+                  className="w-96 h-56 bg-gradient-to-br from-blue-100 to-blue-50 rounded-xl flex items-center justify-center border-2 border-blue-200 shadow-lg"
+                />
               </div>
             </div>
           </div>
@@ -99,7 +96,12 @@ const ProjectWhat = () => {
                   {problem.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-6 text-sm">
-                  {problem.description}
+                  <div style={{ marginTop: "20px"}} className="bg-gray-200 border-2 border-dashed border-gray-400 w-full md:w-64 h-48 flex items-center justify-center rounded-lg">
+                  <div className="text-center text-gray-600">
+                    <div className="text-sm mb-2">🔬 IMAGE PLACEHOLDER</div>
+                    
+                  </div>
+                </div>
                 </p>
                 
                 {/* Quote Section */}
@@ -122,6 +124,122 @@ const ProjectWhat = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+
+      {/* Economic Impact Section */}
+      <section className="bg-white py-20">
+        <div className="max-w-7xl mx-auto px-5">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="bg-green-100 rounded-full p-4 w-16 h-16 flex items-center justify-content-center mb-6 lg:hidden">
+              <svg className="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+              </svg>
+            </div>
+            <div className="order-2 lg:order-1">
+              <div className="bg-green-100 rounded-full p-4 w-16 h-16 flex items-center justify-center mb-6 hidden lg:flex">
+                <svg className="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b-2 border-green-200 inline-block">
+                Running a farm is less and less profitable
+              </h3>
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>
+                  Czech - and more broadly - European livestock production today heavily reliant on imported high-protein feeds: <span className="font-semibold">80% of the EU's high-protein animal feed is imported</span>, and the most widely used source - soybean - accounts for <span className="font-semibold">68% of it</span>. That is roughly 33 million tons of soy products, at the cost of costing around 14 billion euros.
+                </p>
+                <p>
+                  Rising feed costs are hitting farmers hard—<span className="font-semibold">feed makes up 65% of the production cost in poultry, 35% in pigs, and over 14% in cattle</span>. Even though meat and milk prices are high, livestock producers continue to see shrinking profit margins.
+                </p>
+                <p className="font-medium text-green-700">
+                  Quality protein feed is becoming less affordable.
+                  <a href="#" className="text-green-600 hover:text-green-800 underline ml-2">
+                    Read more on the farmers' burden - farmer HF link
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div className="order-1 lg:order-2">
+              <div className="w-full h-64 bg-amber-100 rounded-xl flex items-center justify-center shadow-lg">
+                <div className="text-8xl">🌾</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Environmental Impact Section */}
+      <section className="bg-gray-50 py-20">
+        <div className="max-w-7xl mx-auto px-5">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="order-1">
+              <div className="w-full h-64 bg-green-100 rounded-xl flex items-center justify-center shadow-lg">
+                <div className="text-8xl">🌿</div>
+              </div>
+            </div>
+            <div className="order-2">
+              <div className="bg-green-100 rounded-full p-4 w-16 h-16 flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-800 mb-4 pb-2 border-b-2 border-green-200 inline-block">
+                And the costs go far beyond just money
+              </h3>
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>
+                  Conservationists emphasised that Europe's demand for animal feed is a major driver of deforestation abroad. Approximately <span className="font-semibold">75% of global soybean production is used for animal feed</span>, and its cultivation has been directly linked to large-scale environmental degradation. In Brazil alone, over 5 million hectares of Key Biodiversity Areas – home to species found nowhere else in the world – have been cleared to make way for soybean monocultures.
+                </p>
+                <p>
+                  These vast soybean plantations not only threaten biodiversity but also contribute to the displacement of Indigenous communities, destruction of soil through long-term soil erosion. Our soy-based animal feed fuels deforestation and biodiversity losses.
+                </p>
+                <p className="font-medium text-green-700">
+                  <a href="#" className="text-green-600 hover:text-green-800 underline">
+                    Read more on the environmental toll - conservationist HF link
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Waste Management Section */}
+      <section className="bg-green-700 text-white py-20">
+        <div className="max-w-7xl mx-auto px-5">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              The whole value chain is linear – it should be a cycle
+            </h2>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <div className="bg-white bg-opacity-10 rounded-xl p-8 backdrop-blur-sm border border-white border-opacity-20">
+                <div className="space-y-4 text-white leading-relaxed">
+                  <p>
+                    Most nitrogen excreted in manure is lost because it's too concentrated to use efficiently – <span className="font-semibold">only 20-50% of the nitrogen from livestock production never returns to the soil</span>. Instead, it's washed away by the rain, polluting rivers, lakes, and coastal zones.
+                  </p>
+                  <p>
+                    This drives eutrophication and contributes to greenhouse gas emissions. In Europe alone, nitrogen pollution from agriculture causes losses of <span className="font-semibold">€70 billion annually</span>.
+                  </p>
+                  <div className="mt-6 p-4 bg-white bg-opacity-20 rounded-lg">
+                    <p className="font-semibold text-lg">
+                      Manure - a potentially valuable resource is being mishandled.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="order-1 lg:order-2">
+              <div className="w-full h-64 bg-white bg-opacity-10 rounded-xl flex items-center justify-center shadow-lg backdrop-blur-sm">
+                <div className="text-8xl">🔄</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
