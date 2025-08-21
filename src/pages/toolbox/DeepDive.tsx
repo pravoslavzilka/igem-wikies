@@ -29,7 +29,7 @@ export default function DuckweedDocument() {
           </div>
         </div>
 
-        <div className="flex items-start gap-6 mb-6">
+        <div className="flex flex-col md:flex-row items-start gap-6 mb-6">
           <div className="flex-1">
             <div className="bg-green-50 border-l-4 border-green-500 p-4 mb-4">
               <p className="text-sm italic">
@@ -40,7 +40,7 @@ export default function DuckweedDocument() {
           </div>
           
           {/* Anatomy diagram placeholder */}
-          <div className="bg-gray-200 border-2 border-dashed border-gray-400 w-64 h-48 flex items-center justify-center rounded-lg">
+          <div className="bg-gray-200 border-2 border-dashed border-gray-400 w-full md:w-64 h-48 flex items-center justify-center rounded-lg">
             <div className="text-center text-gray-600">
               <div className="text-sm mb-2">🔬 DIAGRAM PLACEHOLDER</div>
               <div className="text-xs italic">*kreslené schema anatomie těla rostliny na styl tohoto obrázku:</div>
@@ -85,11 +85,11 @@ export default function DuckweedDocument() {
 
 
       {/* Genus Sections */}
-      <div className="space-y-8">
+      <div className="space-y-8"> 
         {/* Spirodela */}
         <div className="border-l-4 border-blue-500 pl-6">
           <h2 className="text-2xl font-bold text-blue-700 mb-2">Spirodela (2 species)</h2>
-          <div className="flex gap-6 items-start">
+          <div className="flex flex-col md:flex-row gap-6 items-start">
             <div className="flex-1">
               <p>
                 Spirodela occupies a basal position within the Lemnoidae. Despite having the largest body plan among 
@@ -100,7 +100,7 @@ export default function DuckweedDocument() {
                 and the study of highly conserved core pathways in plants.
               </p>
             </div>
-            <div className="bg-gray-200 border-2 border-dashed border-gray-400 w-48 h-32 flex items-center justify-center rounded-lg">
+            <div className="bg-gray-200 border-2 border-dashed border-gray-400 w-full md:w-48 h-32 flex items-center justify-center rounded-lg">
               <div className="text-center text-gray-600">
                 <div className="text-sm mb-1">📸 Spirodela</div>
                 <div className="text-xs italic">Species image</div>
@@ -112,7 +112,7 @@ export default function DuckweedDocument() {
         {/* Landoltia */}
         <div className="border-l-4 border-green-500 pl-6">
           <h2 className="text-2xl font-bold text-green-700 mb-2">Landoltia (1 species)</h2>
-          <div className="flex gap-6 items-start">
+          <div className="flex flex-col md:flex-row gap-6 items-start">
             <div className="flex-1">
               <p>
                 <em>Landoltia punctata</em> is the sole representative of the genus Landoltia. It has shown remarkable 
@@ -120,7 +120,7 @@ export default function DuckweedDocument() {
                 cultivation conditions [14], [15], making it a promising candidate for bioethanol production.
               </p>
             </div>
-            <div className="bg-gray-200 border-2 border-dashed border-gray-400 w-48 h-32 flex items-center justify-center rounded-lg">
+            <div className="bg-gray-200 border-2 border-dashed border-gray-400 w-full md:w-48 h-32 flex items-center justify-center rounded-lg">
               <div className="text-center text-gray-600">
                 <div className="text-sm mb-1">📸 Landoltia</div>
                 <div className="text-xs italic">Species image</div>
@@ -132,7 +132,7 @@ export default function DuckweedDocument() {
         {/* Lemna */}
         <div className="border-l-4 border-yellow-500 pl-6">
           <h2 className="text-2xl font-bold text-yellow-700 mb-2">Lemna (12 species)</h2>
-          <div className="flex gap-6 items-start">
+          <div className="flex flex-col md:flex-row gap-6 items-start">
             <div className="flex-1">
               <p>
                 Lemna is the most widely distributed duckweed genus worldwide. Some species colonise new areas so 
@@ -143,7 +143,7 @@ export default function DuckweedDocument() {
                 testing [17].
               </p>
             </div>
-            <div className="bg-gray-200 border-2 border-dashed border-gray-400 w-48 h-32 flex items-center justify-center rounded-lg">
+            <div className="bg-gray-200 border-2 border-dashed border-gray-400 w-full md:w-48 h-32 flex items-center justify-center rounded-lg">
               <div className="text-center text-gray-600">
                 <div className="text-sm mb-1">📸 Lemna</div>
                 <div className="text-xs italic">Species image</div>
@@ -155,7 +155,7 @@ export default function DuckweedDocument() {
         {/* Wolffia */}
         <div className="border-l-4 border-red-500 pl-6">
           <h2 className="text-2xl font-bold text-red-700 mb-2">Wolffia (11 species)</h2>
-          <div className="flex gap-6 items-start">
+          <div className="flex flex-col md:flex-row gap-6 items-start">
             <div className="flex-1">
               <p className="mb-4">
                 Members of the genus Wolffia are known for their use as animal feed. In Northern Thailand, Laos, and 
@@ -174,7 +174,7 @@ export default function DuckweedDocument() {
                 This genetic simplification correlates with the minimal tissue complexity and absence of roots [22].
               </p>
             </div>
-            <div className="bg-gray-200 border-2 border-dashed border-gray-400 w-48 h-32 flex items-center justify-center rounded-lg">
+            <div className="bg-gray-200 border-2 border-dashed border-gray-400 w-full md:w-48 h-32 flex items-center justify-center rounded-lg">
               <div className="text-center text-gray-600">
                 <div className="text-sm mb-1">📸 Wolffia</div>
                 <div className="text-xs italic">Species image</div>
@@ -186,7 +186,7 @@ export default function DuckweedDocument() {
         {/* Wolffiella */}
         <div className="border-l-4 border-purple-500 pl-6">
           <h2 className="text-2xl font-bold text-purple-700 mb-2">Wolffiella (10 species)</h2>
-          <div className="flex gap-6 items-start">
+          <div className="flex flex-col md:flex-row gap-6 items-start">
             <div className="flex-1">
               <p>
                 Wolffiella shares several characteristics with the genus Wolffia. The plant forms extremely small fronds, 
@@ -194,7 +194,7 @@ export default function DuckweedDocument() {
                 food source for humans due to their high protein content (35%) and favourable amino acid composition [19].
               </p>
             </div>
-            <div className="bg-gray-200 border-2 border-dashed border-gray-400 w-48 h-32 flex items-center justify-center rounded-lg">
+            <div className="bg-gray-200 border-2 border-dashed border-gray-400 w-full md:w-48 h-32 flex items-center justify-center rounded-lg">
               <div className="text-center text-gray-600">
                 <div className="text-sm mb-1">📸 Wolffiella</div>
                 <div className="text-xs italic">Species image</div>
