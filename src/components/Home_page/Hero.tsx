@@ -5,21 +5,21 @@ import React, { useState, useEffect } from 'react';
 
 
 const headlineWords = [
-    { word: "Affordable", icon: "🟩", tooltip: "Low cost for everyone", color: "#9DD019" },
+    { word: "Affordable", icon: "https://static.igem.wiki/teams/5642/icons/fi-45165.webp", tooltip: "Low cost for everyone", color: "#9DD019" },
   
       { word: "local", icon: "", tooltip: "" },
   
-    { word: "protein", icon: "❇️", tooltip: "High nutritional value", color: "#FFB2FF" },
+    { word: "protein", icon: "https://static.igem.wiki/teams/5642/icons/fi-11618743.webp", tooltip: "High nutritional value", color: "#FFB2FF" },
   
     { word: "for", icon: "", tooltip: ""},
   
     { word: "every", icon: "", tooltip: "" },
   
-    { word: "farm", icon: "🟦", tooltip: "For farmers", color:"#7363F4"  },
+    { word: "farm", icon: "https://static.igem.wiki/teams/5642/icons/fi-7830224.webp", tooltip: "For farmers", color:"#7363F4"  },
   
     { word: "by", icon: "", tooltip: "" },
   
-    { word: "programmable", icon: "🟫", tooltip: "Customizable", color: "#D07519"},
+    { word: "programmable", icon: "https://static.igem.wiki/teams/5642/icons/fi-5870724.webp", tooltip: "Customizable", color: "#D07519"},
   
     { word: "duckweed", icon: "", tooltip: "" },
     
@@ -88,7 +88,8 @@ const Hero = () => {
                       onMouseLeave={() => setIconHover(null)}
                       style={{ fontSize: "0.3em", lineHeight: "1", paddingBottom: "10%" }}
                     >
-                      {item.icon}
+                      
+                      <img src={item.icon} />
                     </span>
                   </span>
                 ))}
@@ -103,6 +104,7 @@ const Hero = () => {
               <p className="text-white/90 text-sm leading-relaxed">
                 To empower farmers with innovative tools and technology that enhance productivity, sustainability, and efficiency, shaping the future of farming.
               </p>
+              
             </div>
           </div>
         </div>
