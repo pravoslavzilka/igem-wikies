@@ -34,7 +34,9 @@ const Home = () => {
 
       <FeaturesWidget />
 
-      <FadeCard />
+      <div className="mx-4 mt-8  rounded-3xl overflow-hidden">
+        <FadeCard />
+      </div>
 
       <VideoComp />
 
