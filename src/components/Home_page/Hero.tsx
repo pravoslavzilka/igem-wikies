@@ -55,7 +55,7 @@ const Hero = () => {
       {/* Hero Section */}
       <div className="relative">
         <div 
-          className="h-screen bg-cover bg-center relative overflow-hidden rounded-3 xl mx-4 mt-4"
+          className="h-screen bg-cover bg-center rounded-3xl relative overflow-hidden rounded-3 xl mx-4 mt-4"
           style={{
             backgroundImage: "url('images/photo.png')",
           }}
@@ -94,38 +94,7 @@ const Hero = () => {
                 ))}
               </h1>
               
-              {/* Interactive Duckweed Element */}
-              <div 
-                className="absolute"
-                style={{
-                  top: "90%",    // Adjust as needed for your image
-                  left: "48%",   // Adjust as needed for your image
-                  transform: "translate(-50%, -50%)",
-                  zIndex: 20
-                }}
-              >
-                <div 
-                  className="relative cursor-pointer transform hover:scale-110 transition-transform duration-300"
-                  onMouseEnter={handleMouseEnter}
-                  onMouseMove={handleMouseMove}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <div className="w-32 h-32 bg-green-500/80 rounded-full flex items-center justify-center backdrop-blur-sm border-2 border-white/30">
-                    <div className="text-center"> 
-                      <div className="w-6 h-6 mx-auto mb-2">
-                        <svg viewBox="0 0 24 24" fill="white" className="w-6 h-6">
-                          <path d="M12 2L10 8L4 6L8 12L2 14L8 20L10 14L16 16L12 10L18 8L12 2Z"/>
-                        </svg>
-                      </div>
-                      <div className="text-white text-sm font-medium">
-                        Uncover<br />
-                        the solution
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
-            </div>
 
             
             {/* Mission Card */}

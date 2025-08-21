@@ -18,20 +18,19 @@ const Home = () => {
 
 
   return (
-    
-
     <div className="min-h-screen bg-gray-50">
-      
+
+        <Hero />
 
 
-      <Hero />     
-
-      <BrazilDeforestationWidget />
+      {/* BrazilDeforestationWidget with rounded corners */}
+      <div className="mx-4 mt-8 rounded-3xl overflow-hidden">
+        <BrazilDeforestationWidget />
+      </div>
 
       <VideoComp />
 
       <Comparison />
-
 
       <FeaturesWidget />
 
@@ -40,8 +39,6 @@ const Home = () => {
       <VideoComp />
 
       <VideoComp />
-      
-
     </div>
   );
 };
