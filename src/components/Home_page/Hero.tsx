@@ -57,7 +57,7 @@ const Hero = () => {
         <div 
           className="h-screen bg-cover bg-center rounded-3xl relative overflow-hidden rounded-3 xl mx-4 mt-4"
           style={{
-            backgroundImage: "url('images/photo.png')",
+            backgroundImage: "url('https://static.igem.wiki/teams/5642/images/photo.webp')",
           }}
         >
           {/* Blue Gradient Overlay */}

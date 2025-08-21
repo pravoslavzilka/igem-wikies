@@ -44,13 +44,13 @@ function App() {
           <Route path="/" element={<Home />} />
           
           {/* Project Routes */}
-          <Route path="/project/what" element={<ProjectWhat />} />
-          <Route path="/project/why" element={<ProjectWhy />} />
-          <Route path="/project/how" element={<ProjectHow />} />
+          <Route path="/project/what/" element={<ProjectWhat />} />
+          <Route path="/project/why/" element={<ProjectWhy />} />
+          <Route path="/project/how/" element={<ProjectHow />} />
 
-          <Route path="/project/why/sustainability" element={<SustainabilityDocument />} />
+          <Route path="/project/why/sustainability/" element={<SustainabilityDocument />} />
 
-          <Route path="/project/how/cultivator" element={<LivingLayersDocument />} />
+          <Route path="/project/how/cultivator/" element={<LivingLayersDocument />} />
 
 
 
@@ -58,7 +58,7 @@ function App() {
           {/* Handbook Route */}
           
           {/* Toolbox Routes */}
-          <Route path="/toolbox/deep-dive-on-duckweed" element={<DeepDiveDocument />} />
+          <Route path="/toolbox/deep-dive-on-duckweed/" element={<DeepDiveDocument />} />
           <Route path="/toolbox/tools" element={<ToolboxTools />} />
           <Route path="/toolbox/resources" element={<ToolboxResources />} />
           <Route path="/toolbox/downloads" element={<ToolboxDownloads />} />
