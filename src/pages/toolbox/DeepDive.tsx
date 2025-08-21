@@ -38,7 +38,19 @@ export default function DuckweedDocument() {
               </p>
             </div>
           </div>
-          
+        </div>
+
+        {/* Move diagram placeholder next to paragraph starting with "All of them..." */}
+        <div className="flex flex-col md:flex-row items-start gap-6 mb-6">
+          <div className="flex-1">
+            <p className="mb-4">
+              All of them share a common, highly reduced and simplified body plan. Instead of the stems and true 
+              leaves, duckweeds are growing as one or a few flat bodies called fronds, measuring from under 1 mm in 
+              <em>W. angusta</em> to around 15 mm in <em>S. polyrrhiza</em> in diameter. Frond shape is genus-specific, 
+              ranging from oval to hemispherical, boat-shaped, or tongue-shaped [4]. While <em>Wolffiella</em> and 
+              <em>Wolffia</em> species are often rootless, others produce adventitious roots [5].
+            </p>
+          </div>
           {/* Anatomy diagram placeholder */}
           <div className="bg-gray-200 border-2 border-dashed border-gray-400 w-full md:w-64 h-48 flex items-center justify-center rounded-lg">
             <div className="text-center text-gray-600">
@@ -48,14 +60,6 @@ export default function DuckweedDocument() {
             </div>
           </div>
         </div>
-
-        <p className="mb-4">
-          All of them share a common, highly reduced and simplified body plan. Instead of the stems and true 
-          leaves, duckweeds are growing as one or a few flat bodies called fronds, measuring from under 1 mm in 
-          <em>W. angusta</em> to around 15 mm in <em>S. polyrrhiza</em> in diameter. Frond shape is genus-specific, 
-          ranging from oval to hemispherical, boat-shaped, or tongue-shaped [4]. While <em>Wolffiella</em> and 
-          <em>Wolffia</em> species are often rootless, others produce adventitious roots [5].
-        </p>
 
         <p className="mb-4">
           Duckweeds primarily reproduce vegetatively with daughter fronds emerging from lateral budding 
