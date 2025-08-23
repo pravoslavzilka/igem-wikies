@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const ProjectWhat = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -265,7 +266,7 @@ const ProjectWhat = () => {
               <p className="text-2xl text-gray-700 leading-relaxed mb-4">
                 ...but that would only reinforce the unsustainable status quo
               </p>
-              <p className="text-3xl font-bold text-green-700">
+              <p className="text-3xl font-bold text-blue-700">
                 We wanted to uproot it!
               </p>
             </div>
@@ -370,8 +371,8 @@ const ProjectWhat = () => {
                 {/* Expert Photo */}
                 <div className="flex-shrink-0">
                   <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-gray-200 to-gray-300 overflow-hidden shadow-lg">
-                    <div className="w-full h-full bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center">
-                      <svg className="w-16 h-16 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                    <div className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+                      <svg className="w-16 h-16 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                       </svg>
                     </div>
@@ -384,18 +385,18 @@ const ProjectWhat = () => {
                     <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-2">
                       Julia-Eva Fortmueller
                     </h3>
-                    <p className="text-green-600 font-medium">
+                    <p className="text-blue-600 font-medium">
                       Weizmann Institute of Science
                     </p>
                   </div>
                   
                   {/* Quote */}
                   <div className="relative">
-                    <div className="absolute -top-4 -left-4 text-6xl text-green-200 font-serif">"</div>
+                    <div className="absolute -top-4 -left-4 text-6xl text-blue-200 font-serif">"</div>
                     <blockquote className="text-lg md:text-xl text-gray-700 leading-relaxed italic pl-8">
                       Transient expression works very well in duckweeds. But getting stable lines is an extremely laborious, lengthy and often unpredictable process. Also, a number of duckweed species have never been transformed at all.
                     </blockquote>
-                    <div className="absolute -bottom-4 -right-4 text-6xl text-green-200 font-serif">"</div>
+                    <div className="absolute -bottom-4 -right-4 text-6xl text-blue-200 font-serif">"</div>
                   </div>
                 </div>
               </div>
@@ -403,9 +404,9 @@ const ProjectWhat = () => {
               {/* Decorative Elements */}
               <div className="flex justify-center mt-8">
                 <div className="flex space-x-2">
-                  <div className="w-3 h-3 bg-green-300 rounded-full"></div>
-                  <div className="w-3 h-3 bg-green-400 rounded-full"></div>
-                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                  <div className="w-3 h-3 bg-blue-300 rounded-full"></div>
+                  <div className="w-3 h-3 bg-blue-400 rounded-full"></div>
+                  <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
                 </div>
               </div>
             </div>
@@ -484,8 +485,8 @@ const ProjectWhat = () => {
                 {/* Expert Photo */}
                 <div className="flex-shrink-0">
                   <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-gray-200 to-gray-300 overflow-hidden shadow-lg">
-                    <div className="w-full h-full bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center">
-                      <svg className="w-16 h-16 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                    <div className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+                      <svg className="w-16 h-16 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                       </svg>
                     </div>
@@ -498,18 +499,18 @@ const ProjectWhat = () => {
                     <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-2">
                       Django Mangalam
                     </h3>
-                    <p className="text-green-600 font-medium">
+                    <p className="text-blue-600 font-medium">
                       Plantible
                     </p>
                   </div>
                   
                   {/* Quote */}
                   <div className="relative">
-                    <div className="absolute -top-4 -left-4 text-6xl text-green-200 font-serif">"</div>
+                    <div className="absolute -top-4 -left-4 text-6xl text-blue-200 font-serif">"</div>
                     <blockquote className="text-lg md:text-xl text-gray-700 leading-relaxed italic pl-8">
                       Duckweed cultivation is very hard to get right, they’re quite tricky to work with. There’s a million parameters to fine-tune. At PlantibleFoods, we have been perfecting it in ponds for almost ten years.   
                     </blockquote>
-                    <div className="absolute -bottom-4 -right-4 text-6xl text-green-200 font-serif">"</div>
+                    <div className="absolute -bottom-4 -right-4 text-6xl text-blue-200 font-serif">"</div>
                   </div>
                 </div>
               </div>
@@ -517,9 +518,9 @@ const ProjectWhat = () => {
               {/* Decorative Elements */}
               <div className="flex justify-center mt-8">
                 <div className="flex space-x-2">
-                  <div className="w-3 h-3 bg-green-300 rounded-full"></div>
-                  <div className="w-3 h-3 bg-green-400 rounded-full"></div>
-                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                  <div className="w-3 h-3 bg-blue-300 rounded-full"></div>
+                  <div className="w-3 h-3 bg-blue-400 rounded-full"></div>
+                  <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
                 </div>
               </div>
             </div>
@@ -543,8 +544,8 @@ const ProjectWhat = () => {
                 Duckweed has the potential to became a novel crop, but a lot of pieces are missing
 
               </p>
-              <p className="text-3xl font-bold text-green-700">
-                See how we filled the gaps! - link to How
+              <p className="text-3xl font-bold text-red-700">
+                 <Link to="/project/how/">See how we filled the gaps! </Link>
               </p>
             </div>
           </div>
@@ -564,7 +565,7 @@ const ProjectWhat = () => {
             <div className="bg-gray-50 rounded-2xl p-8 md:p-12 shadow-lg">
               <ol className="space-y-6 text-gray-700">
                 <li className="flex gap-4 leading-relaxed">
-                  <span className="text-green-600 font-semibold flex-shrink-0">1.</span>
+                  <span className="text-blue-600 font-semibold flex-shrink-0">1.</span>
                   <div>
                     <a 
                       href="https://publications.jrc.ec.europa.eu/repository/bitstream/JRC137180/JRC137180_01.pdf" 
@@ -578,7 +579,7 @@ const ProjectWhat = () => {
                 </li>
                 
                 <li className="flex gap-4 leading-relaxed">
-                  <span className="text-green-600 font-semibold flex-shrink-0">2.</span>
+                  <span className="text-blue-600 font-semibold flex-shrink-0">2.</span>
                   <div>
                     <a 
                       href="https://www.europarl.europa.eu/RegData/etudes/BRIE/2023/739328/EPRS_BRI%282023%29739328_EN" 
@@ -592,7 +593,7 @@ const ProjectWhat = () => {
                 </li>
                 
                 <li className="flex gap-4 leading-relaxed">
-                  <span className="text-green-600 font-semibold flex-shrink-0">3.</span>
+                  <span className="text-blue-600 font-semibold flex-shrink-0">3.</span>
                   <div>
                     <a 
                       href="https://www.nature.com/articles/s41598-024-57522-z" 
@@ -606,7 +607,7 @@ const ProjectWhat = () => {
                 </li>
                 
                 <li className="flex gap-4 leading-relaxed">
-                  <span className="text-green-600 font-semibold flex-shrink-0">4.</span>
+                  <span className="text-blue-600 font-semibold flex-shrink-0">4.</span>
                   <div>
                     <a 
                       href="https://www.thecattlesite.com/articles/weekly-global-protein-digest-usdas-eu-annual-and-us-monthly-livestock-reports" 
@@ -620,7 +621,7 @@ const ProjectWhat = () => {
                 </li>
                 
                 <li className="flex gap-4 leading-relaxed">
-                  <span className="text-green-600 font-semibold flex-shrink-0">5.</span>
+                  <span className="text-blue-600 font-semibold flex-shrink-0">5.</span>
                   <div>
                     <a 
                       href="https://wwf.panda.org/discover/our_focus/food_practice/sustainable_production/soy/" 
@@ -634,7 +635,7 @@ const ProjectWhat = () => {
                 </li>
                 
                 <li className="flex gap-4 leading-relaxed">
-                  <span className="text-green-600 font-semibold flex-shrink-0">6.</span>
+                  <span className="text-blue-600 font-semibold flex-shrink-0">6.</span>
                   <div>
                     <a 
                       href="https://trase.earth/explore/spatial-data/map?country=brazil&node_type_slug=municipality&indicatorName=SOY_DEFORESTATION_5_YEAR_TOTAL&indicatorYear=2023" 
@@ -648,7 +649,7 @@ const ProjectWhat = () => {
                 </li>
                 
                 <li className="flex gap-4 leading-relaxed">
-                  <span className="text-green-600 font-semibold flex-shrink-0">7.</span>
+                  <span className="text-blue-600 font-semibold flex-shrink-0">7.</span>
                   <div>
                     <a 
                       href="https://www.earthsight.org.uk/secret-ingredient#group-section-Introduction-kxgLd" 
@@ -662,7 +663,7 @@ const ProjectWhat = () => {
                 </li>
                 
                 <li className="flex gap-4 leading-relaxed">
-                  <span className="text-green-600 font-semibold flex-shrink-0">8.</span>
+                  <span className="text-blue-600 font-semibold flex-shrink-0">8.</span>
                   <div>
                     <a 
                       href="https://www.fairr.org/resources/reports/index-2021-how-animal-waste-mismanagement-drives-biodiversity-loss-and-accelerates-climate-risk" 
@@ -676,7 +677,7 @@ const ProjectWhat = () => {
                 </li>
                 
                 <li className="flex gap-4 leading-relaxed">
-                  <span className="text-green-600 font-semibold flex-shrink-0">9.</span>
+                  <span className="text-blue-600 font-semibold flex-shrink-0">9.</span>
                   <div>
                     <a 
                       href="https://environment.ec.europa.eu/topics/water/nitrates_en" 
@@ -690,7 +691,7 @@ const ProjectWhat = () => {
                 </li>
                 
                 <li className="flex gap-4 leading-relaxed">
-                  <span className="text-green-600 font-semibold flex-shrink-0">10.</span>
+                  <span className="text-blue-600 font-semibold flex-shrink-0">10.</span>
                   <div>
                     <a 
                       href="https://www.unep.org/interactives/beat-nitrogen-pollution/" 

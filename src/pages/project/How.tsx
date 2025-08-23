@@ -43,10 +43,10 @@ const ProjectHow = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-green-600 to-green-800 text-white py-20">
+      <div className="bg-gradient-to-br from-red-600 to-red-800 text-white py-20">
         <div className="max-w-6xl mx-auto px-8">
           <h1 className="text-5xl font-bold mb-6">How We Do It</h1>
-          <p className="text-xl text-green-100 max-w-3xl">
+          <p className="text-xl text-red-100 max-w-3xl">
             Our systematic approach combines cutting-edge synthetic biology with practical 
             engineering to create a scalable solution for sustainable protein production.
           </p>
@@ -68,8 +68,8 @@ const ProjectHow = () => {
           </div>
           
           <div className="bg-white rounded-2xl p-6 shadow-lg text-center">
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Cog className="w-8 h-8 text-green-600" />
+            <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Cog className="w-8 h-8 text-red-600" />
             </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-3">Bioprocessing</h3>
             <p className="text-gray-600 text-sm">
@@ -105,7 +105,7 @@ const ProjectHow = () => {
             {steps.map((step, index) => (
               <div key={index} className="flex items-start space-x-6">
                 <div className={`w-12 h-12 rounded-full flex items-center justify-center text-white font-bold ${
-                  step.status === 'completed' ? 'bg-green-500' :
+                  step.status === 'completed' ? 'bg-red-500' :
                   step.status === 'in-progress' ? 'bg-blue-500' : 'bg-gray-300'
                 }`}>
                   {step.status === 'completed' ? <CheckCircle className="w-6 h-6" /> : index + 1}
@@ -118,7 +118,7 @@ const ProjectHow = () => {
                     </div>
                     <div className="text-right">
                       <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                        step.status === 'completed' ? 'bg-green-100 text-green-800' :
+                        step.status === 'completed' ? 'bg-red-100 text-red-800' :
                         step.status === 'in-progress' ? 'bg-blue-100 text-blue-800' : 
                         'bg-gray-100 text-gray-600'
                       }`}>
@@ -145,9 +145,9 @@ const ProjectHow = () => {
                   Introduction of high-value protein genes from legumes and algae
                 </p>
               </div>
-              <div className="p-4 bg-green-50 rounded-lg">
-                <h4 className="font-semibold text-green-800 mb-2">Growth Optimization</h4>
-                <p className="text-green-700 text-sm">
+              <div className="p-4 bg-red-50 rounded-lg">
+                <h4 className="font-semibold text-red-800 mb-2">Growth Optimization</h4>
+                <p className="text-red-700 text-sm">
                   Modified metabolic pathways for faster growth and higher biomass
                 </p>
               </div>
