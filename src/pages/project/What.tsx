@@ -230,7 +230,7 @@ const ProjectWhat = () => {
               </h3>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  Most nitrogen excreted in manure is lost because it’s too concentrated for plants to absorb efficiently (8). As a result, over 50 % of nitrogen from livestock production never returns to the soil (9). Instead, it’s washed away by the rain, polluting rivers, lakes, and coastal zones. This drives eutrophication and contributes to greenhouse gas emissions. In Europe alone, nitrogen pollution from agriculture causes losses of €70 billion annually (10).
+                  Most nitrogen excreted in manure is lost because it’s too concentrated for plants to absorb efficiently (8). As a result, over 50 % of nitrogen from livestock production never returns to the soil (9). Instead, it’s washed away by the rain, polluting rivers, lakes, and coastal zones. This drives eutrophication and contributes to bluehouse gas emissions. In Europe alone, nitrogen pollution from agriculture causes losses of €70 billion annually (10).
                 </p>
                 <p>
                     <span className="font-semibold"> Manure - a potentially valuable resource is being mishandled.</span>
@@ -248,89 +248,469 @@ const ProjectWhat = () => {
       </section>
 
 
-
-
-
-      {/* Waste Management Section */}
-      <section className="bg-blue-700 text-white py-20">
+      <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-5">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              The whole value chain is linear – it should be a cycle
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
+              Some SynBio solutions came to mind immediately:
+            </h2>
+            
+            <div className="max-w-3xl mx-auto space-y-4 text-xl text-gray-600 leading-relaxed mb-12">
+              <p>engineering bacteria to fix nitrogen faster</p>
+              <p>engineering soybean for enhanced protein content</p>
+              <p>or drought resistance...</p>
+            </div>
+            
+            <div className="bg-gray-50 rounded-xl p-8 max-w-4xl mx-auto mb-8">
+              <p className="text-2xl text-gray-700 leading-relaxed mb-4">
+                ...but that would only reinforce the unsustainable status quo
+              </p>
+              <p className="text-3xl font-bold text-green-700">
+                We wanted to uproot it!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section className="bg-gradient-to-br from-blue-50 to-blue-100 py-20">
+        <div className="max-w-7xl mx-auto px-5">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-black-800 mb-8">
+              This is the superior plant - duckweed
             </h2>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1">
-              <div className="bg-white bg-opacity-10 rounded-xl p-8 backdrop-blur-sm border border-white border-opacity-20">
-                <div className="space-y-4 text-white leading-relaxed">
-                  <p>
-                    Most nitrogen excreted in manure is lost because it's too concentrated to use efficiently – <span className="font-semibold">only 20-50% of the nitrogen from livestock production never returns to the soil</span>. Instead, it's washed away by the rain, polluting rivers, lakes, and coastal zones.
-                  </p>
-                  <p>
-                    This drives eutrophication and contributes to bluehouse gas emissions. In Europe alone, nitrogen pollution from agriculture causes losses of <span className="font-semibold">€70 billion annually</span>.
-                  </p>
-                  <div className="mt-6 p-4 bg-white bg-opacity-20 rounded-lg">
-                    <p className="font-semibold text-lg">
-                      Manure - a potentially valuable resource is being mishandled.
-                    </p>
-                  </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+            {/* Left benefits */}
+            <div className="space-y-8">
+              <div className="text-right lg:text-right">
+                <div className="inline-block bg-white rounded-xl p-6 shadow-lg max-w-xs">
+                  <h3 className="font-semibold text-gray-800 mb-2">Protein Powerhouse</h3>
+                  <p className="text-gray-600">as much protein as soybean</p>
+                </div>
+              </div>
+              <div className="text-right lg:text-right">
+                <div className="inline-block bg-white rounded-xl p-6 shadow-lg max-w-xs">
+                  <h3 className="font-semibold text-gray-800 mb-2">Rapid Growth</h3>
+                  <p className="text-gray-600">48 hour doubling time</p>
                 </div>
               </div>
             </div>
-            <div className="order-1 lg:order-2">
-              <div className="w-full h-64 bg-white bg-opacity-10 rounded-xl flex items-center justify-center shadow-lg backdrop-blur-sm">
-                <div className="text-8xl">🔄</div>
+            
+            {/* Center - Duckweed image */}
+            <div className="flex flex-col items-center">
+              <div className="w-80 h-80 bg-blue-200 rounded-2xl flex items-center justify-center shadow-2xl mb-6 relative overflow-hidden">
+                <div className="text-9xl">🌿</div>
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-300/20 to-transparent"></div>
+              </div>
+              <div className="text-center">
+                <p className="text-gray-700 mb-2">Dive deeper 
+                  <a href="#" className="text-blue-600 hover:text-blue-800 underline font-semibold ml-1">
+                    here!
+                  </a>
+                </p>
+              </div>
+            </div>
+            
+            {/* Right benefits */}
+            <div className="space-y-8">
+              <div className="text-left lg:text-left">
+                <div className="inline-block bg-white rounded-xl p-6 shadow-lg max-w-xs">
+                  <h3 className="font-semibold text-gray-800 mb-2">Nitrogen Absorption</h3>
+                  <p className="text-gray-600">absorbs excess nitrogen in manure quickly</p>
+                </div>
+              </div>
+              <div className="text-left lg:text-left">
+                <div className="inline-block bg-white rounded-xl p-6 shadow-lg max-w-xs">
+                  <h3 className="font-semibold text-gray-800 mb-2">Versatile Growth</h3>
+                  <p className="text-gray-600">thrives in a wide range of conditions</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Impact Section */}
-      <section className="bg-blue-700 text-white py-20">
+
+      <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-5">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              The Global Impact
-            </h2>
-            <p className="text-xl opacity-90 max-w-3xl mx-auto">
-              These local challenges reflect worldwide agricultural sustainability issues that demand innovative solutions
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white bg-opacity-10 rounded-xl p-8 backdrop-blur-sm border border-white border-opacity-20 text-center">
-              <div className="text-4xl font-bold mb-2">50%</div>
-              <div className="text-white text-opacity-90">Agricultural land coverage in Central Europe</div>
-            </div>
-            <div className="bg-white bg-opacity-10 rounded-xl p-8 backdrop-blur-sm border border-white border-opacity-20 text-center">
-              <div className="text-4xl font-bold mb-2">Rising</div>
-              <div className="text-white text-opacity-90">Feed costs impacting farmers</div>
-            </div>
-            <div className="bg-white bg-opacity-10 rounded-xl p-8 backdrop-blur-sm border border-white border-opacity-20 text-center">
-              <div className="text-4xl font-bold mb-2">Critical</div>
-              <div className="text-white text-opacity-90">Environmental impact from current practices</div>
+          <div className=" mb-16">
+            
+            
+            <div className="max-w-3xl mx-auto space-y-4 text-xl text-gray-600 leading-relaxed mb-12">
+              <p>We had ideas on what to do with duckweed, like engineering it to 
+                uptake ammonium faster for manure remediation- nitroduck link or 
+                  to grow faster and bigger - hanson bbd hp link.</p>
+              <p>But we realized we just wouldn’t be able to do it. 
+              Duckweeds are very hard to engineer.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-gradient-to-br from-blue-700 to-blue-600 text-white py-20 text-center">
+
+      <section className="bg-gray-50 py-20">
+        <div className="bg-gray-50 rounded-xl p-8 max-w-4xl mx-auto mb-8">
+              <p className="text-2xl text-gray-700 leading-relaxed mb-4">
+               And we were not the only ones struggling. World-class experts do, too:
+              </p>
+              
+            </div>
+       
         <div className="max-w-7xl mx-auto px-5">
-          <h2 className="text-4xl md:text-5xl font-bold mb-5">
-            Ready for Solutions?
-          </h2>
-          <p className="text-xl mb-10 opacity-90 max-w-3xl mx-auto leading-relaxed">
-            These challenges inspired us to explore synthetic biology solutions that could transform agriculture sustainably.
-          </p>
-          <button className="inline-block bg-white text-blue-700 px-8 py-4 rounded-lg font-semibold text-lg hover:transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 shadow-lg">
-            Discover Our Solution
-          </button>
+          
+          <div className="max-w-5xl mx-auto">
+            
+            <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+              
+              <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+                {/* Expert Photo */}
+                <div className="flex-shrink-0">
+                  <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-gray-200 to-gray-300 overflow-hidden shadow-lg">
+                    <div className="w-full h-full bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center">
+                      <svg className="w-16 h-16 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Quote Content */}
+                <div className="flex-1 text-center md:text-left">
+                  <div className="mb-4">
+                    <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-2">
+                      Julia-Eva Fortmueller
+                    </h3>
+                    <p className="text-green-600 font-medium">
+                      Weizmann Institute of Science
+                    </p>
+                  </div>
+                  
+                  {/* Quote */}
+                  <div className="relative">
+                    <div className="absolute -top-4 -left-4 text-6xl text-green-200 font-serif">"</div>
+                    <blockquote className="text-lg md:text-xl text-gray-700 leading-relaxed italic pl-8">
+                      Transient expression works very well in duckweeds. But getting stable lines is an extremely laborious, lengthy and often unpredictable process. Also, a number of duckweed species have never been transformed at all.
+                    </blockquote>
+                    <div className="absolute -bottom-4 -right-4 text-6xl text-green-200 font-serif">"</div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Decorative Elements */}
+              <div className="flex justify-center mt-8">
+                <div className="flex space-x-2">
+                  <div className="w-3 h-3 bg-green-300 rounded-full"></div>
+                  <div className="w-3 h-3 bg-green-400 rounded-full"></div>
+                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                </div>
+              </div>
+            </div>
+
+            
+
+
+          </div>
         </div>
       </section>
-    </div>
+
+
+      <section className="bg-white py-20">
+        <div className="max-w-7xl mx-auto px-5">
+          <div className="max-w-5xl mx-auto">
+            <div className="bg-gray-50 rounded-2xl shadow-xl p-8 md:p-12 border border-gray-200">
+              <div className="flex flex-col md:flex-row-reverse items-center md:items-start gap-8">
+                {/* Expert Photo - Now on the right */}
+                <div className="flex-shrink-0">
+                  <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-gray-200 to-gray-300 overflow-hidden shadow-lg">
+                    <div className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+                      <svg className="w-16 h-16 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Quote Content - Now on the left */}
+                <div className="flex-1 text-center md:text-right">
+                  <div className="mb-4">
+                    <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-2">
+                      Arturo Mari Ordoñez
+                    </h3>
+                    <p className="text-blue-600 font-medium">
+                      GMI Institute
+                    </p>
+                  </div>
+                  
+                  {/* Quote */}
+                  <div className="relative">
+                    <div className="absolute -top-4 -left-4 text-6xl text-blue-200 font-serif">"</div>
+                    <blockquote className="text-lg md:text-xl text-gray-700 leading-relaxed italic pl-8 md:pr-8 md:pl-0">
+                      Duckweeds are monocotyledonous plants. Most available tools and parts are designed for dicotyledons and often don't work in duckweeds. There's a general shortage of working duckweed parts.
+                    </blockquote>
+                    <div className="absolute -bottom-4 -right-4 text-6xl text-blue-200 font-serif">"</div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Decorative Elements */}
+              <div className="flex justify-center mt-8">
+                <div className="flex space-x-2">
+                  <div className="w-3 h-3 bg-blue-300 rounded-full"></div>
+                  <div className="w-3 h-3 bg-blue-400 rounded-full"></div>
+                  <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section className="bg-gray-50 py-20">
+        
+       
+        <div className="max-w-7xl mx-auto px-5">
+          
+          <div className="max-w-5xl mx-auto">
+            
+            <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+              
+              <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+                {/* Expert Photo */}
+                <div className="flex-shrink-0">
+                  <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-gray-200 to-gray-300 overflow-hidden shadow-lg">
+                    <div className="w-full h-full bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center">
+                      <svg className="w-16 h-16 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Quote Content */}
+                <div className="flex-1 text-center md:text-left">
+                  <div className="mb-4">
+                    <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-2">
+                      Django Mangalam
+                    </h3>
+                    <p className="text-green-600 font-medium">
+                      Plantible
+                    </p>
+                  </div>
+                  
+                  {/* Quote */}
+                  <div className="relative">
+                    <div className="absolute -top-4 -left-4 text-6xl text-green-200 font-serif">"</div>
+                    <blockquote className="text-lg md:text-xl text-gray-700 leading-relaxed italic pl-8">
+                      Duckweed cultivation is very hard to get right, they’re quite tricky to work with. There’s a million parameters to fine-tune. At PlantibleFoods, we have been perfecting it in ponds for almost ten years.   
+                    </blockquote>
+                    <div className="absolute -bottom-4 -right-4 text-6xl text-green-200 font-serif">"</div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Decorative Elements */}
+              <div className="flex justify-center mt-8">
+                <div className="flex space-x-2">
+                  <div className="w-3 h-3 bg-green-300 rounded-full"></div>
+                  <div className="w-3 h-3 bg-green-400 rounded-full"></div>
+                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                </div>
+              </div>
+            </div>
+
+            
+
+
+          </div>
+        </div>
+      </section>
+
+
+
+      <section className="bg-white py-20">
+        <div className="max-w-7xl mx-auto px-5">
+          <div className="text-center mb-16">
+           
+            
+            <div className="bg-gray-50 rounded-xl p-8 max-w-4xl mx-auto mb-8">
+              <p className="text-2xl text-gray-700 leading-relaxed mb-4">
+                Duckweed has the potential to became a novel crop, but a lot of pieces are missing
+
+              </p>
+              <p className="text-3xl font-bold text-green-700">
+                See how we filled the gaps! - link to How
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section className="bg-white">
+        <div className="max-w-7xl mx-auto px-5">
+          <div className="max-w-5xl mx-auto">
+            <div className="mb-12">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-8 text-center">
+                References
+              </h2>
+            </div>
+            
+            <div className="bg-gray-50 rounded-2xl p-8 md:p-12 shadow-lg">
+              <ol className="space-y-6 text-gray-700">
+                <li className="flex gap-4 leading-relaxed">
+                  <span className="text-green-600 font-semibold flex-shrink-0">1.</span>
+                  <div>
+                    <a 
+                      href="https://publications.jrc.ec.europa.eu/repository/bitstream/JRC137180/JRC137180_01.pdf" 
+                      className="text-blue-600 hover:text-blue-800 underline break-all"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      https://publications.jrc.ec.europa.eu/repository/bitstream/JRC137180/JRC137180_01.pdf
+                    </a>
+                  </div>
+                </li>
+                
+                <li className="flex gap-4 leading-relaxed">
+                  <span className="text-green-600 font-semibold flex-shrink-0">2.</span>
+                  <div>
+                    <a 
+                      href="https://www.europarl.europa.eu/RegData/etudes/BRIE/2023/739328/EPRS_BRI%282023%29739328_EN" 
+                      className="text-blue-600 hover:text-blue-800 underline break-all"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      https://www.europarl.europa.eu/RegData/etudes/BRIE/2023/739328/EPRS_BRI%282023%29739328_EN
+                    </a>
+                  </div>
+                </li>
+                
+                <li className="flex gap-4 leading-relaxed">
+                  <span className="text-green-600 font-semibold flex-shrink-0">3.</span>
+                  <div>
+                    <a 
+                      href="https://www.nature.com/articles/s41598-024-57522-z" 
+                      className="text-blue-600 hover:text-blue-800 underline break-all"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      https://www.nature.com/articles/s41598-024-57522-z
+                    </a>
+                  </div>
+                </li>
+                
+                <li className="flex gap-4 leading-relaxed">
+                  <span className="text-green-600 font-semibold flex-shrink-0">4.</span>
+                  <div>
+                    <a 
+                      href="https://www.thecattlesite.com/articles/weekly-global-protein-digest-usdas-eu-annual-and-us-monthly-livestock-reports" 
+                      className="text-blue-600 hover:text-blue-800 underline break-all"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      https://www.thecattlesite.com/articles/weekly-global-protein-digest-usdas-eu-annual-and-us-monthly-livestock-reports
+                    </a>
+                  </div>
+                </li>
+                
+                <li className="flex gap-4 leading-relaxed">
+                  <span className="text-green-600 font-semibold flex-shrink-0">5.</span>
+                  <div>
+                    <a 
+                      href="https://wwf.panda.org/discover/our_focus/food_practice/sustainable_production/soy/" 
+                      className="text-blue-600 hover:text-blue-800 underline break-all"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      https://wwf.panda.org/discover/our_focus/food_practice/sustainable_production/soy/
+                    </a>
+                  </div>
+                </li>
+                
+                <li className="flex gap-4 leading-relaxed">
+                  <span className="text-green-600 font-semibold flex-shrink-0">6.</span>
+                  <div>
+                    <a 
+                      href="https://trase.earth/explore/spatial-data/map?country=brazil&node_type_slug=municipality&indicatorName=SOY_DEFORESTATION_5_YEAR_TOTAL&indicatorYear=2023" 
+                      className="text-blue-600 hover:text-blue-800 underline break-all"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      https://trase.earth/explore/spatial-data/map?country=brazil&node_type_slug=municipality&indicatorName=SOY_DEFORESTATION_5_YEAR_TOTAL&indicatorYear=2023
+                    </a>
+                  </div>
+                </li>
+                
+                <li className="flex gap-4 leading-relaxed">
+                  <span className="text-green-600 font-semibold flex-shrink-0">7.</span>
+                  <div>
+                    <a 
+                      href="https://www.earthsight.org.uk/secret-ingredient#group-section-Introduction-kxgLd" 
+                      className="text-blue-600 hover:text-blue-800 underline break-all"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      https://www.earthsight.org.uk/secret-ingredient#group-section-Introduction-kxgLdnqSpx
+                    </a>
+                  </div>
+                </li>
+                
+                <li className="flex gap-4 leading-relaxed">
+                  <span className="text-green-600 font-semibold flex-shrink-0">8.</span>
+                  <div>
+                    <a 
+                      href="https://www.fairr.org/resources/reports/index-2021-how-animal-waste-mismanagement-drives-biodiversity-loss-and-accelerates-climate-risk" 
+                      className="text-blue-600 hover:text-blue-800 underline break-all"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      https://www.fairr.org/resources/reports/index-2021-how-animal-waste-mismanagement-drives-biodiversity-loss-and-accelerates-climate-risk
+                    </a>
+                  </div>
+                </li>
+                
+                <li className="flex gap-4 leading-relaxed">
+                  <span className="text-green-600 font-semibold flex-shrink-0">9.</span>
+                  <div>
+                    <a 
+                      href="https://environment.ec.europa.eu/topics/water/nitrates_en" 
+                      className="text-blue-600 hover:text-blue-800 underline break-all"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      https://environment.ec.europa.eu/topics/water/nitrates_en
+                    </a>
+                  </div>
+                </li>
+                
+                <li className="flex gap-4 leading-relaxed">
+                  <span className="text-green-600 font-semibold flex-shrink-0">10.</span>
+                  <div>
+                    <a 
+                      href="https://www.unep.org/interactives/beat-nitrogen-pollution/" 
+                      className="text-blue-600 hover:text-blue-800 underline break-all"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      https://www.unep.org/interactives/beat-nitrogen-pollution/
+                    </a>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+  </div>          
+      
   );
 };
 
