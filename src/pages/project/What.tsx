@@ -178,7 +178,7 @@ const ProjectWhat = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-1">
               <div className="w-full h-64 bg-blue-100 rounded-xl flex items-center justify-center shadow-lg">
-                <div className="text-8xl">🌿</div>
+                <img className='rounded-xl' src="https://static.igem.wiki/teams/5642/images/what/problem-deforestation.webp" alt="" />
               </div>
             </div>
             <div className="order-2">
@@ -240,7 +240,7 @@ const ProjectWhat = () => {
             </div>
             <div className="order-1 lg:order-2">
               <div className="w-full h-64 bg-amber-100 rounded-xl flex items-center justify-center shadow-lg">
-                <div className="text-8xl">🌾</div>
+                <img className='rounded-xl' src="https://static.igem.wiki/teams/5642/images/what/problem-nitrogen.webp" alt="" />
               </div>
             </div>
           </div>
@@ -371,9 +371,7 @@ const ProjectWhat = () => {
                 <div className="flex-shrink-0">
                   <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-gray-200 to-gray-300 overflow-hidden shadow-lg">
                     <div className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
-                      <svg className="w-16 h-16 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                      </svg>
+                      <img src="https://static.igem.wiki/teams/5642/images/what/julia-eva-fortmueller.webp" alt="" />
                     </div>
                   </div>
                 </div>
@@ -427,9 +425,7 @@ const ProjectWhat = () => {
                 <div className="flex-shrink-0">
                   <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-gray-200 to-gray-300 overflow-hidden shadow-lg">
                     <div className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
-                      <svg className="w-16 h-16 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                      </svg>
+                      <img src="https://static.igem.wiki/teams/5642/images/what/arturo-mari-ordonez.webp" alt="" />
                     </div>
                   </div>
                 </div>
@@ -485,9 +481,7 @@ const ProjectWhat = () => {
                 <div className="flex-shrink-0">
                   <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-gray-200 to-gray-300 overflow-hidden shadow-lg">
                     <div className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
-                      <svg className="w-16 h-16 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                      </svg>
+                      <img src="https://static.igem.wiki/teams/5642/images/what/django.webp" alt="" />
                     </div>
                   </div>
                 </div>
