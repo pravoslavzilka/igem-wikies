@@ -8,7 +8,7 @@ const ProjectWhat = () => {
     {
       id: 1,
       title: "High protein feed costs and reliance on import:",
-      icon: "🌾",
+      icon: "https://static.igem.wiki/teams/5642/images/what/problem-soybean-feed.webp",
       quote: "Soybean is an amazing source of protein. I wish I could afford more!",
       author: "Štefan Strhársky",
       description: "Rising feed costs impact livestock farmers across Central Europe, forcing dependence on expensive imported protein sources."
@@ -16,7 +16,7 @@ const ProjectWhat = () => {
     {
       id: 2,
       title: "Deforestation caused by protein crops",
-      icon: "🌿",
+      icon: "https://static.igem.wiki/teams/5642/images/what/problem-nitrogen.webp",
       quote: "Our land was taken from us and turned into a one giant soy field",
       author: "Ms. Conservationist",
       description: "Large-scale monoculture farming destroys natural ecosystems and biodiversity for protein crop production."
@@ -24,7 +24,7 @@ const ProjectWhat = () => {
     {
       id: 3,
       title: "Nitrogen runoffs and manure utilization",
-      icon: "🚜",
+      icon: "https://static.igem.wiki/teams/5642/images/what/problem-deforestation.webp",
       quote: "We tend to think manure is free fertilizer, but in reality, much of the nitrogen just disappears into the air or water. It's money and nutrients lost.",
       author: "Ing. Jakub Neužil",
       description: "Agricultural waste creates environmental challenges through nutrient loss and water contamination."
@@ -97,11 +97,10 @@ const ProjectWhat = () => {
                   {problem.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-6 text-sm">
-                  <div style={{ marginTop: "20px"}} className="bg-gray-200 border-2 border-dashed border-gray-400 w-full md:w-64 h-48 flex items-center justify-center rounded-lg">
-                  <div className="text-center text-gray-600">
-                    <div className="text-sm mb-2">🔬 IMAGE PLACEHOLDER</div>
-                    
-                  </div>
+                  <div style={{ marginTop: "20px"}} className="w-full md:w-64 h-48 flex items-center justify-center rounded-lg">
+                  
+                    <img src={problem.icon} alt={problem.title} className="w-full h-full rounded-lg object-cover" />
+                  
                 </div>
                 </p>
                 
@@ -165,7 +164,7 @@ const ProjectWhat = () => {
             </div>
             <div className="order-1 lg:order-2">
               <div className="w-full h-64 bg-amber-100 rounded-xl flex items-center justify-center shadow-lg">
-                <div className="text-8xl">🌾</div>
+                <img className='rounded-xl' src="https://static.igem.wiki/teams/5642/images/what/problem-soybean-feed.webp" alt="" />
               </div>
             </div>
           </div>
