@@ -1,16 +1,15 @@
 const TaifrComparison = () => {
   return (
-    <div className=" p-10 min-h-screen">
+    <div className=" p-10 min-h-screen mt-60">
       <div className="max-w-7xl mx-auto">
         {/* Top image placeholder */}
-        <div className="w-full h-80 bg-gray-200 rounded-lg flex items-center justify-center mb-8">
-          <div className="text-center">
-            <div className="w-16 h-16 bg-gray-300 rounded mx-auto mb-2 flex items-center justify-center">
-              <svg className="w-8 h-8 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-              </svg>
-            </div>
-            <p className="text-gray-500 text-sm">Image Placeholder</p>
+        <div className="w-full h-80  rounded-lg flex items-center justify-center mb-5">
+          <div className="text-center mb-60">
+            <img
+              src="https://static.igem.wiki/teams/5642/images/homepage/taifr-1.webp"
+              alt="Dr. Arturo Marí-Ordóñez"
+              className="rounded-lg w-full max-w-full sm:max-w-6xl md:max-w-6xl lg:max-w-5xl h-auto mx-auto"
+            />
           </div>
         </div>
 
@@ -27,19 +26,17 @@ const TaifrComparison = () => {
           </div>
 
           {/* Right side - Researcher profile and paragraph */}
-          <div className="flex flex-col items-start justify-center lg:justify-start lg:col-span-3">
+          <div className="flex flex-col items-center justify-center lg:col-span-3">
             <div className="text-base text-center text-gray-600 leading-relaxed mb-8 ml-10 mr-10">
-              <p className="mb-4">
+              <p className="mb-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
                 I study gene silencing using duckweed as a unique model system. However, my lab faces challenges in knocking out target genes, since current transformation protocols are slow, genotype-limited, and often introduce unwanted variation. A universal, direct frond transformation method would be a breakthrough to fully realize duckweed’s potential as a model organism and biotechnological platform.
               </p>
             </div>
             <div className="flex items-center space-x-4 ">
-              <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
-                <svg className="w-8 h-8 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                </svg>
+              <div className="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
+                <img src="https://static.igem.wiki/teams/5642/images/what/arturo-mari-ordonez.webp" alt="Dr. Arturo Marí-Ordóñez" className="rounded-full" />
               </div>
-              <div  >
+              <div style={{fontFamily: 'Space Grotesk, sans-serif' }}>
                 <div className="font-bold text-xl text-gray-800">Dr. Arturo Marí-Ordóñez</div>
                 <div className="text-gray-600 mt-1">Principal Investigator</div>
                 <div className="text-gray-600">at the Gregor Mendel Institute in Vienna</div>
