@@ -5,6 +5,7 @@ import FadeCard from '../components/Home_page/FadeCard';
 import Comparison from '../components/Home_page/Comparison';
 import BrazilDeforestationWidget from '../components/Brazil/BrazilDeforestationWidget';
 import VideoComp from '../components/VideoComp';
+import TaifrComparison from '../components/Home_page/TaifrComparison';
 import "@fontsource/urbanist";
 import "@fontsource/space-grotesk";
 
@@ -38,7 +39,7 @@ const Home = () => {
         <FadeCard />
       </div>
 
-      <VideoComp />
+      <TaifrComparison />
 
       <VideoComp />
     </div>
