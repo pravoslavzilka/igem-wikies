@@ -7,6 +7,7 @@ import BrazilDeforestationWidget from '../components/Brazil/BrazilDeforestationW
 import VideoComp from '../components/VideoComp';
 import TaifrComparison from '../components/Home_page/TaifrComparison';  
 import CultivatorShow from '../components/Home_page/CultivatorShow';
+import ModelShow from '../components/Home_page/ModelShow';
 import "@fontsource/urbanist";
 import "@fontsource/space-grotesk";
 import Tools from '../components/Home_page/Tools';
@@ -47,6 +48,8 @@ const Home = () => {
 
 
       <CultivatorShow />
+
+      <ModelShow />
 
       <VideoComp />
     </div>
