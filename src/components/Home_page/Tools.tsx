@@ -1,6 +1,6 @@
 const Tools = () => {
     return (
-    <div className="bg-gray-50 p-8 min-h-screen">
+    <div className=" p-8 min-h-screen">
       <div className="max-w-6xl mx-auto">
         
 
@@ -19,14 +19,7 @@ const Tools = () => {
             {/* Microscopy image placeholder */}
             <div className="w-full h-64 bg-black rounded-lg flex items-center justify-center relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-radial from-green-400/30 via-green-500/20 to-transparent"></div>
-              <div className="text-center z-10">
-                <div className="w-12 h-12 bg-green-500/50 rounded-full mx-auto mb-2 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-green-300" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M10 2L3 7v11a1 1 0 001 1h12a1 1 0 001-1V7l-7-5zM10 4.236L15 8v9H5V8l5-3.764z"/>
-                  </svg>
-                </div>
-                <p className="text-green-300 text-xs">Microscopy Image</p>
-              </div>
+              <img src="https://static.igem.wiki/teams/5642/images/homepage/sp162-egfp.webp" alt="Microscopy" className="w-full h-full object-cover" />
               {/* Simulated fluorescent spots */}
               <div className="absolute top-1/4 left-1/3 w-3 h-3 bg-green-400 rounded-full blur-sm"></div>
               <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-green-300 rounded-full blur-sm"></div>
