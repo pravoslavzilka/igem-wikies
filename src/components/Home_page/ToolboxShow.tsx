@@ -1,9 +1,6 @@
-
-
-
 const ToolboxShow = () => {
     return (
-    <div className="bg-gray-50 p-8 min-h-screen">
+    <div className=" p-8 min-h-screen">
       <div className="max-w-6xl mx-auto">
         {/* Header section */}
         <div className="text-center mb-12">
@@ -17,17 +14,23 @@ const ToolboxShow = () => {
         {/* Steps timeline */}
         <div className="mb-16">
           {/* Timeline line with circles */}
-          <div className="flex items-center justify-center mb-8">
-            <div className="flex items-center space-x-4">
+          <div className="relative mb-8">
+            {/* Dotted lines between circles */}
+            <div className="absolute top-1/2 left-0 w-full h-0 pointer-events-none z-0" style={{ transform: 'translateY(-50%)' }}>
+              {/* 1st line */}
+              <div className="absolute left-[14.5%] w-[19%] border-t-2 border-dotted border-gray-300"></div>
+              {/* 2nd line */}
+              <div className="absolute left-[39.5%] w-[19%] border-t-2 border-dotted border-gray-300"></div>
+              {/* 3rd line */}
+              <div className="absolute left-[64.5%] w-[19%] border-t-2 border-dotted border-gray-300"></div>
+            </div>
+            <div className="grid grid-cols-4 gap-x-16 items-center justify-center relative z-10">
               {/* Step 1 */}
               <div className="flex flex-col items-center">
                 <div className="w-12 h-12 bg-green-100 border-2 border-green-500 rounded-full flex items-center justify-center text-green-700 font-bold text-lg">
                   1
                 </div>
               </div>
-              
-              {/* Dotted line */}
-              <div className="flex-1 border-t-2 border-dotted border-gray-300 w-32"></div>
               
               {/* Step 2 */}
               <div className="flex flex-col items-center">
@@ -36,18 +39,12 @@ const ToolboxShow = () => {
                 </div>
               </div>
               
-              {/* Dotted line */}
-              <div className="flex-1 border-t-2 border-dotted border-gray-300 w-32"></div>
-              
               {/* Step 3 */}
               <div className="flex flex-col items-center">
                 <div className="w-12 h-12 bg-green-100 border-2 border-green-500 rounded-full flex items-center justify-center text-green-700 font-bold text-lg">
                   3
                 </div>
               </div>
-              
-              {/* Dotted line */}
-              <div className="flex-1 border-t-2 border-dotted border-gray-300 w-32"></div>
               
               {/* Step 4 */}
               <div className="flex flex-col items-center">
@@ -59,7 +56,7 @@ const ToolboxShow = () => {
           </div>
 
           {/* Step descriptions */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-x-16 text-center">
             {/* Step 1 description */}
             <div className="space-y-2">
               <p className="text-sm text-gray-700 leading-tight">
@@ -92,15 +89,8 @@ const ToolboxShow = () => {
 
         {/* Bottom image placeholder */}
         <div className="w-full h-80 bg-gray-200 rounded-lg flex items-center justify-center">
-          <div className="text-center">
-            <div className="w-16 h-16 bg-gray-300 rounded mx-auto mb-2 flex items-center justify-center">
-              <svg className="w-8 h-8 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-              </svg>
-            </div>
-            <p className="text-gray-500 text-sm">Farm/Cow Image Placeholder</p>
-          </div>
-        </div>
+          <img src="https://static.igem.wiki/teams/5642/images/homepage/nitroduck.webp" alt="Farm/Cow" className="w-full h-full object-cover rounded-lg" />
+      </div>
       </div>
     </div>
   );
