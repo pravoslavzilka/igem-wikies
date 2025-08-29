@@ -51,7 +51,6 @@ function App() {
           <Route path="/project/why/" element={<ProjectWhy />} />
           <Route path="/project/how/" element={<ProjectHow />} />
 
-          <Route path="/project/why/sustainability/" element={<SustainabilityDocument />} />
 
           <Route path="/project/how/cultivator/" element={<LivingLayersDocument />} />
 
@@ -65,6 +64,9 @@ function App() {
           <Route path="/toolbox/tools" element={<ToolboxTools />} />
           <Route path="/toolbox/resources" element={<ToolboxResources />} />
           <Route path="/toolbox/downloads" element={<ToolboxDownloads />} />
+
+
+          <Route path="/engagement/sustainability" element={<SustainabilityDocument />} />
           
           {/* Engagement Routes 
           <Route path="/engagement" element={<Engagement />} />

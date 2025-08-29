@@ -28,7 +28,8 @@ const Navbar = () => {
     engagement: [
       { label: 'Human practices', path: '/engagement/human-practices' },
       { label: 'Entrepreneurship', path: '/engagement/entrepreneurship' },
-      { label: 'Outreach', path: '/engagement/Outreach' }
+      { label: 'Outreach', path: '/engagement/Outreach' },
+      { label: 'Sustainability', path: '/engagement/sustainability' }
     ],
     'duckweed-mafia': [
       { label: 'Team', path: '/duckweed-mafia/team' },
