@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import Handbook from './pages/Handbook';
 
@@ -77,6 +78,9 @@ function App() {
           */}   {/* Duckweed Mafia Routes */}
           <Route path="/handbook" element={<Handbook />} />
         </Routes>
+
+        <Footer />
+
       </div>
     </Router>
   );
