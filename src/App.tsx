@@ -10,6 +10,8 @@ import ProjectWhat from './pages/project/What';
 import ProjectWhy from './pages/project/Why';
 import ProjectHow from './pages/project/How';
 
+import Taifr from './pages/project/how/Taifr';
+
 // Toolbox pages
 import DeepDiveDocument from './pages/toolbox/DeepDive';
 import ToolboxTools from './pages/toolbox/Tools';
@@ -53,7 +55,7 @@ function App() {
 
           <Route path="/project/how/cultivator/" element={<LivingLayersDocument />} />
 
-
+          <Route path="/project/how/taifr/" element={<Taifr />} />
 
           
           {/* Handbook Route */}
@@ -79,8 +81,9 @@ function App() {
           <Route path="/handbook" element={<Handbook />} />
         </Routes>
 
-        <Footer />
-
+        <div style={{ marginTop: '5rem' }}>
+          <Footer />
+        </div>       
       </div>
     </Router>
   );

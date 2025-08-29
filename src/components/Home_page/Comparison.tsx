@@ -36,7 +36,7 @@ const Comparison = () => {
 
   return (
     <div className="bg-white " style={{ padding: "5rem", paddingBottom: "12rem" }}>
-      <h2 className="text-4xl font-bold mb-8 text-center" style={{ fontFamily: "Space Grotesk" }} >Nadpis</h2>
+      <h2 className="text-4xl font-bold mb-8 text-center" style={{ fontFamily: "Space Grotesk" }} >Duckweeds could save farmers money and protect Cerrado ecosystems</h2>
       <div className="flex flex-row gap-16 justify-center items-end">
         {/* Soybean group */}
         <div className="flex flex-col items-center" style={{paddingTop: "4rem"}}>
@@ -46,11 +46,7 @@ const Comparison = () => {
           >
             {cowsSoy}
           </div>
-          <div style={{ fontFamily: "Space Grotesk" }} className="text-center text-sm text-black-700 mt-4">
-            Tol'koto kravičiek vieme za XY času
-            <br />
-            nakŕmiť soybeanom
-          </div>
+          
         </div>
         {/* Duckweed group */}
         <div style={{ fontFamily: "Space Grotesk" }} className="flex flex-col items-center">
@@ -60,13 +56,12 @@ const Comparison = () => {
           >
             {cowsDuckweed}
           </div>
-          <div className="text-center text-sm text-black-700 mt-4">
-            Tol'koto kravičiek vieme za XY času
-            <br />
-            nakŕmiť duckweedom
-          </div>
+          
         </div>
       </div>
+      <div style={{ fontFamily: "Space Grotesk" }} className="text-center text-sm text-black-700 mt-4">
+            Feeding 100 cows for a week requires three times less land with duckweed than with soybean.
+          </div>
     </div>
   );
 };

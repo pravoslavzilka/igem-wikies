@@ -6,7 +6,7 @@ const VideoComp = () => {
     <div className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4" style={{ fontFamily: "Space Grotesk" }}>Nadpis</h2>
+            <h2 className="text-4xl font-bold text-gray-800 mb-4" style={{ fontFamily: "Space Grotesk" }}> Luckily, we have duckweeds -plants that are (almost) superior!</h2>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
@@ -27,7 +27,7 @@ const VideoComp = () => {
                   </div>
                 </video>
               </div>
-              <p className="text-center text-gray-600 font-medium">Soybean timelapse, xyz</p>
+              <p className="text-center text-gray-600 font-medium">Soybean </p>
             </div>
 
             {/* Duckweed timelapse video */}
@@ -47,7 +47,7 @@ const VideoComp = () => {
                   </div>
                 </video>
               </div>
-              <p className="text-center text-gray-600 font-medium">Duckweed timelapse, xyz</p>
+              <p className="text-center text-gray-600 font-medium">Duckweed </p>
             </div>
           </div>
         </div>

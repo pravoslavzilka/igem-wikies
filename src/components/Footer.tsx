@@ -9,14 +9,7 @@ const Footer = () => {
           <div className="flex items-center space-x-4">
             {/* Main logo placeholder */}
             <div className="flex items-center space-x-2">
-              <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center relative">
-                <div className="w-8 h-8 bg-green-400 rounded-full"></div>
-                <div className="absolute top-1 right-1 w-3 h-3 bg-green-300 rounded-full"></div>
-              </div>
-              <div className="text-2xl font-bold text-gray-800">
-                <span className="text-green-600">BEM</span>
-                <div className="text-xs text-gray-600 -mt-1">ultra</div>
-              </div>
+              <img src="https://static.igem.wiki/teams/5642/icons/igem-brno-final-transparent.webp" alt="iGEM BRNO 2025 Logo" className=" h-20"/>
             </div>
             
             {/* Dividing line */}
