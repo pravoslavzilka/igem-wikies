@@ -27,7 +27,7 @@ const Features = [
 const FeaturesWidget = () => {
   return (
     <div>
-      <div className="py-16 bg-white" style={{paddingBottom: "9rem" }}>
+      <div className="py-16 p-10 bg-white" style={{paddingBottom: "6rem", marginTop: "-70px"}}>
         <div className="flex flex-wrap justify-between items-start gap-8">
           {Features.map((item, idx) => (
             <div className="group flex-1 min-w-40 text-center cursor-pointer relative" key={idx}>
@@ -80,20 +80,7 @@ const FeaturesWidget = () => {
               </div>
 
               {/* Hover content */}
-              <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 pointer-events-none">
-                <div
-                  className="bg-gray-800 text-white p-3 rounded-lg text-xs whitespace-nowrap"
-                  style={{
-                    fontFamily: "Space Grotesk, sans-serif",
-                    fontWeight: 500,
-                    lineHeight: "140%",
-                    fontSize: "1rem",
-                  }}
-                >
-                  Floats naturally on water
-                </div>
-                <div className="w-2 h-2 bg-gray-800 transform rotate-45 mx-auto -mt-1"></div>
-              </div>
+              
             </div>
           ))}
         </div>
