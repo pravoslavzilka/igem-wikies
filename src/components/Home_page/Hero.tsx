@@ -86,7 +86,7 @@ const Hero = () => {
           <div className="relative z-10 h-full flex items-center justify-center px-2 md:px-8">
             <div className="text-center max-w-6xl w-full">
               <h1
-                className="absolute text-3xl md:text-7xl font-bold text-white mb-20 px-2 md:px-16 w-[98vw] md:w-[80vw] max-w-full md:max-w-7xl flex flex-wrap justify-center items-center gap-x-1 gap-y-2 md:gap-x-2 md:gap-y-4"
+                className="absolute text-3xl sm:text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-20 px-2 md:px-16 w-[98vw] md:w-[80vw] max-w-full md:max-w-7xl flex flex-wrap justify-center items-center gap-x-1 gap-y-2 md:gap-x-2 md:gap-y-4"
                 style={{
                   top: "13%",
                   left: "50%",
