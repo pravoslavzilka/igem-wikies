@@ -1,4 +1,6 @@
 import React from 'react';
+import MapSVG from '../../components/DeepDive/MapSVG';
+import { LOCATIONS } from '../../components/DeepDive/locations';
 
 
 
@@ -212,20 +214,7 @@ export default function DuckweedDocument() {
       <div className="mt-12 mb-8">
         <h2 className="text-2xl font-bold text-gray-800 mb-4">Our peers in the field of duckweed</h2>
         <div className="bg-gray-50 p-4 rounded-lg">
-          <table className="w-full">
-            <thead>
-              <tr className="border-b">
-                <th className="text-left py-2">Company</th>
-                <th className="text-left py-2">Research group</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="py-2">Fyto (link)</td>
-                <td className="py-2"></td>
-              </tr>
-            </tbody>
-          </table>
+          <MapSVG locations={LOCATIONS} isInView={true} />
         </div>
       </div>
 

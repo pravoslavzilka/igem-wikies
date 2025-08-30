@@ -21,11 +21,9 @@ export const CONFIG = {
   },
   colors: {
     background: '#19471A',
-    healthy: '#9DD019',
-    moderate: '#95D5B2',
-    severe: '#F4A460',
-    critical: '#e75151ff',
-    white: '#FFFFFF',
+    natural: '#9DD019',        // Green for recovered areas
+    white: '#FFFFFF',          // White for untouched/no-data areas
+    noData: '#888888',         // Gray for actual no-data
     accent: '#74C69D'
   }
 };
@@ -69,8 +67,10 @@ const loadingVariants: Variants = {
 };
 
 const BrazilDeforestationWidget = () => {
-  const [timelinePosition, setTimelinePosition] = useState(50);
+  const [timelinePosition, setTimelinePosition] = useState(0); // Start at 0
   const [gridPoints, setGridPoints] = useState<GridPoint[]>([]);
+  const [minBase, setMinBase] = useState(0);
+  const [maxBase, setMaxBase] = useState(1);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -80,7 +80,7 @@ const BrazilDeforestationWidget = () => {
         setLoading(true);
         setError(null);
 
-        const response = await fetch('/brazil_deforestation_huemap.json');
+        const response = await fetch('https://static.igem.wiki/teams/5642/files/brazil-deforestation-huemap4.json');
         if (!response.ok) {
           throw new Error(`Failed to load data: ${response.status} ${response.statusText}`);
         }
@@ -94,6 +94,17 @@ const BrazilDeforestationWidget = () => {
         console.log(`Loaded ${data.length} points`);
         setGridPoints(data);
 
+        // Compute min and max baseDeforestation excluding no-data (1.0)
+        const filtered = data.filter(p => Math.abs(p.baseDeforestation - 1.0) >= 0.001);
+        if (filtered.length > 0) {
+          const bases = filtered.map(p => p.baseDeforestation);
+          setMinBase(Math.min(...bases));
+          setMaxBase(Math.max(...bases));
+        } else {
+          setMinBase(0);
+          setMaxBase(1);
+        }
+
       } catch (err) {
         console.error('Error loading data:', err);
         setError('Unable to load deforestation data. Make sure brazil_deforestation_huemap.json is in the public folder.');
@@ -106,34 +117,70 @@ const BrazilDeforestationWidget = () => {
   }, []);
 
   const processedPoints = useMemo(() => {
-    const timeOffset = (timelinePosition - 50) / 50;
-    const NEAR_ZERO_THRESHOLD = 0.05;
-    const NON_FOREST_THRESHOLD = 0.95;
-
     return gridPoints.map(point => {
-      let currentDeforestation = point.baseDeforestation;
+      // Special case: if baseDeforestation is exactly 1.0, it means "no data" - always gray
+      if (Math.abs(point.baseDeforestation - 1.0) < 0.001) {
+        return {
+          ...point,
+          currentState: 'noData' as const,
+          opacity: 1.0
+        };
+      }
 
-      if (point.baseDeforestation >= NON_FOREST_THRESHOLD) {
-        currentDeforestation = 1;
-      }
-      else if (point.baseDeforestation <= NEAR_ZERO_THRESHOLD) {
-        currentDeforestation = 0;
-      }
-      else if (timelinePosition < 50) {
-        const pastReduction = Math.abs(timeOffset) * 0.6;
-        currentDeforestation = Math.max(0, point.baseDeforestation - pastReduction);
-      }
-      else if (timelinePosition > 50) {
-        const futureIncrease = timeOffset * (point.baseDeforestation < 0.2 ? 0.05 : 0.2);
-        currentDeforestation = Math.min(1, point.baseDeforestation + futureIncrease);
+      let currentState: 'visible' | 'hidden' | 'green';
+      let opacity: number;
+
+      if (timelinePosition <= 25) {
+        // PAST: All dots are white (visible)
+        currentState = 'visible';
+        opacity = 1.0;
+      } else if (timelinePosition <= 65) {
+        // PRESENT: Dots start disappearing based on deforestation level
+        const presentProgress = (timelinePosition - 25) / 40; // Adjusted to 25-65 range
+        
+        // Normalize baseDeforestation to [0,1] based on actual min/max
+        const range = maxBase - minBase;
+        const normalizedDef = range > 0 ? (point.baseDeforestation - minBase) / range : 0;
+        
+        // Higher normalized def means earlier disappearance
+        const disappearThreshold = 1 - normalizedDef;
+        
+        if (presentProgress > disappearThreshold) {
+          currentState = 'hidden';
+          opacity = 0;
+        } else {
+          // Gradual fade out as we approach the threshold
+          const fadeProgress = disappearThreshold > 0 ? presentProgress / disappearThreshold : 0;
+          currentState = 'visible';
+          opacity = Math.max(0, 1 - fadeProgress * 1.5); // Fade faster
+        }
+      } else {
+        // FUTURE: Previously hidden dots become green
+        const futureProgress = (timelinePosition - 65) / 35; // Adjusted to start at 65
+        // Check if this dot would have disappeared in the present phase
+        const range = maxBase - minBase;
+        const normalizedDef = range > 0 ? (point.baseDeforestation - minBase) / range : 0;
+        const disappearThreshold = 1 - normalizedDef;
+        const wouldHaveDisappeared = 1 > disappearThreshold; // Since full progress=1
+        
+        if (wouldHaveDisappeared) {
+          // This dot was hidden, now it becomes green
+          currentState = 'green';
+          opacity = Math.min(1, futureProgress * 2); // Gradually appear as green
+        } else {
+          // This dot never disappeared, stays white
+          currentState = 'visible';
+          opacity = 1.0;
+        }
       }
 
       return {
         ...point,
-        currentDeforestation
+        currentState,
+        opacity
       };
     });
-  }, [gridPoints, timelinePosition]);
+  }, [gridPoints, timelinePosition, minBase, maxBase]);
 
   const handleSliderChange = (newPosition: number) => {
     setTimelinePosition(Math.max(0, Math.min(100, newPosition)));

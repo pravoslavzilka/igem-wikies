@@ -115,39 +115,34 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ timelinePosition }) => {
   const [displayContent, setDisplayContent] = useState<DynamicContent | null>(null);
   const [contentKey, setContentKey] = useState(0);
 
-  // Dynamic content based on slider position
+  // Dynamic content based on slider position - updated for new logic
   const getDynamicContent = useMemo((): DynamicContent => {
     if (timelinePosition <= 25) {
+      // PAST: Pristine state
       return {
-        tagline: "HISTORICAL DATA",
-        headline: "Brazil's forests in 2000: A time of abundance.",
-        quote: "The Amazon was home to 80% more wildlife species than today, with pristine ecosystems spanning millions of hectares.",
-        author: "Dr. Maria Santos",
-        title: "Environmental Historian"
+        tagline: "PRISTINE PERIOD",
+        headline: "Brazil's forests in their natural state.",
+        quote: "The Amazon rainforest existed in perfect balance, with pristine ecosystems covering vast areas of Brazil.",
+        author: "Dr. Elena Rodriguez",
+        title: "Forest Ecology Specialist"
       };
-    } else if (timelinePosition <= 50) {
+    } else if (timelinePosition <= 60) {
+      // PRESENT: Deforestation phase - areas disappearing
       return {
-        tagline: "THE CRISIS EMERGES",
-        headline: "Rapid deforestation transforms the landscape.",
-        quote: "We lost an area the size of Belgium every year to soy expansion and cattle ranching between 2010-2020.",
-        author: "Prof. João Silva",
-        title: "Deforestation Researcher"
-      };
-    } else if (timelinePosition <= 75) {
-      return {
-        tagline: "CURRENT SOLUTIONS",
-        headline: "Innovation meets conservation in real-time.",
-        quote: "Advanced monitoring systems now detect illegal clearing within hours, not months.",
-        author: "Dr. Ana Rodriguez",
-        title: "Conservation Technology Lead"
+        tagline: "DEFORESTATION CRISIS",
+        headline: "Forest areas are vanishing rapidly.",
+        quote: "We're witnessing unprecedented rates of forest loss as ecosystems disappear from the landscape entirely.",
+        author: "Prof. Marcus Silva",
+        title: "Deforestation Research Lead"
       };
     } else {
+      // FUTURE: Recovery through duckweed solution - green areas appearing
       return {
-        tagline: "OUR DUCKWEED SOLUTION",
-        headline: "Returning natural ecosystems through innovation.",
-        quote: "Every hectare we save from soy can be a hectare of forest reborn.",
-        author: "Dr. Helena Silva",
-        title: "Amazon Conservation Biologist"
+        tagline: "DUCKWEED REVOLUTION",
+        headline: "Lost forests are being reborn green.",
+        quote: "Our innovative duckweed technology is bringing life back to areas that were completely lost, creating thriving green ecosystems.",
+        author: "Dr. Helena Santos",
+        title: "Ecological Recovery Pioneer"
       };
     }
   }, [timelinePosition]);
@@ -185,7 +180,7 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ timelinePosition }) => {
           exit="exit"
         >
           <div className="mb-4 sm:mb-6">
-            {/* Headline */}
+            {/* Tagline */}
             <motion.div 
               className="text-2xl sm:text-2xl font-medium tracking-wider mb-3 sm:mb-4 center" 
               style={{ color: CONFIG.colors.accent, fontFamily: "Space Grotesk, sans-serif", fontWeight: 700, letterSpacing: "4px", textAlign: 'center', }}

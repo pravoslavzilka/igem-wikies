@@ -62,7 +62,7 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between px-4 py-4 bg-white relative z-50">
       <Link to="/" className="flex items-center space-x-2">
-        <img style={{  height: '60px', marginLeft: '12px' }} src="https://static.igem.wiki/teams/5642/icons/igem-brno-1.webp" />
+        <img style={{  height: '60px', marginLeft: '12px' }} src="https://static.igem.wiki/teams/5642/icons/igem-brno-final-transparent.webp" />
       </Link>
 
       {/* Mobile menu button */}

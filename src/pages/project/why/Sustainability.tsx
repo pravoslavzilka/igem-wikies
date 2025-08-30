@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SustainabilityDocument = () => {
   return (
@@ -129,19 +130,19 @@ const SustainabilityDocument = () => {
         <h3 className="text-lg font-bold text-gray-900 mb-4" style={{ fontFamily: "Space Grotesk, sans-serif" }}>References</h3>
         <div className="space-y-3 text-sm text-gray-700">
           <p className="leading-relaxed">
-            [1] United Nations, Department of Economic and Social Affairs Sustainable Development, 'THE 17 GOALS | Sustainable Development'. Accessed: May 29, 2025. [Online]. Available: https://sdgs.un.org/goals
+            [1] United Nations, Department of Economic and Social Affairs Sustainable Development, 'THE 17 GOALS | Sustainable Development'. Accessed: May 29, 2025. [Online]. Available: <Link className='text-blue-500 hover:underline' target='_blank' to="https://sdgs.un.org/goals">https://sdgs.un.org/goals</Link>
           </p>
           <p className="leading-relaxed">
-            [2] 'Per capita sources of protein', Our World in Data. Accessed: Jun. 01, 2025. [Online]. Available: https://ourworldindata.org/grapher/per-capita-sources-of-protein
+            [2] 'Per capita sources of protein', Our World in Data. Accessed: Jun. 01, 2025. [Online]. Available: <Link className='text-blue-500 hover:underline' target='_blank' to="https://ourworldindata.org/grapher/per-capita-sources-of-protein">https://ourworldindata.org/grapher/per-capita-sources-of-protein</Link>
           </p>
           <p className="leading-relaxed">
-            [3] World Wide Fund for Nature, 'Soy'. Accessed: Jun. 04, 2025. [Online]. Available: https://wwf.panda.org/discover/our_focus/food_practice/sustainable_production/soy/
+            [3] World Wide Fund for Nature, 'Soy'. Accessed: Jun. 04, 2025. [Online]. Available: <Link className='text-blue-500 hover:underline' target='_blank' to="https://wwf.panda.org/discover/our_focus/food_practice/sustainable_production/soy/">https://wwf.panda.org/discover/our_focus/food_practice/sustainable_production/soy/</Link>
           </p>
           <p className="leading-relaxed">
             [4] P. V. Femeena and R. A. Brennan, 'Lemnaceae as a resilient crop to improve food security under climate extremes: global warming and post-catastrophic cooling scenarios', Agric & Food Secur, vol. 14, no. 1, p. 8, May 2025, doi: 10.1186/s40066-025-00527-2.
           </p>
           <p className="leading-relaxed">
-            [5] European Environmental Agency, 'Cross-cutting story 4: Nutrients', European Environment Agency. Accessed: Jun. 01, 2025. [Online]. Available: https://www.eea.europa.eu/publications/zero-pollution/cross-cutting-stories/nutrients
+            [5] European Environmental Agency, 'Cross-cutting story 4: Nutrients', European Environment Agency. Accessed: Jun. 01, 2025. [Online]. Available: <Link className='text-blue-500 hover:underline' target='_blank' to="https://www.eea.europa.eu/publications/zero-pollution/cross-cutting-stories/nutrients">https://www.eea.europa.eu/publications/zero-pollution/cross-cutting-stories/nutrients</Link>
           </p>
           <p className="leading-relaxed">
             [6] J. Xu and G. Shen, 'Growing duckweed in swine wastewater for nutrient recovery and biomass production', Bioresource Technology, vol. 102, no. 2, pp. 848–853, Jan. 2011, doi: 10.1016/j.biortech.2010.09.003.
@@ -150,7 +151,7 @@ const SustainabilityDocument = () => {
             [7] J. Kirchherr, D. Reike, and M. Hekkert, 'Conceptualizing the circular economy: An analysis of 114 definitions', Resources, Conservation and Recycling, vol. 127, pp. 221–232, Dec. 2017, doi: 10.1016/j.resconrec.2017.09.005.
           </p>
           <p className="leading-relaxed">
-            [8] R. Parajuli, Q. Langford, D. Tong, E. Moberg, and G. Thoma, 'Measuring and Mitigating GHGs: Soy | Publications | WWF', World Wildlife Fund. Accessed: Jun. 05, 2025. [Online]. Available: https://www.worldwildlife.org/publications/measuring-and-mitigating-ghgs-soy
+            [8] R. Parajuli, Q. Langford, D. Tong, E. Moberg, and G. Thoma, 'Measuring and Mitigating GHGs: Soy | Publications | WWF', World Wildlife Fund. Accessed: Jun. 05, 2025. [Online]. Available: <Link className='text-blue-500 hover:underline' target='_blank' to="https://www.worldwildlife.org/publications/measuring-and-mitigating-ghgs-soy">https://www.worldwildlife.org/publications/measuring-and-mitigating-ghgs-soy</Link>
           </p>
         </div>
       </div>

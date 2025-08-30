@@ -60,8 +60,9 @@ const Slider = ({ timelinePosition, onSliderChange }: SliderProps) => {
         </div>
       </div>
       
+      {/* Updated timeline labels to reflect new logic */}
       <div className="flex justify-between text-white text-sm mt-4 opacity-75">
-        <span>before</span>
+        <span>past</span>
         <span>now</span>
         <span>future</span>
       </div>
