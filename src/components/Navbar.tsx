@@ -1,6 +1,9 @@
 import React, { useState, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Leaf, ChevronDown } from 'lucide-react';
+import "@fontsource/urbanist";
+import "@fontsource/urbanist/600.css";
+import "@fontsource/space-grotesk";
 
 const Navbar = () => {
   const location = useLocation();
@@ -75,7 +78,7 @@ const Navbar = () => {
       </button>
 
       {/* Desktop menu */}
-      <div className="hidden md:flex items-center space-x-4">
+      <div className="hidden md:flex items-center space-x-4 mr-2">
         {/* Project Main Link */}
         <div 
           className="relative"
@@ -83,8 +86,9 @@ const Navbar = () => {
           onMouseLeave={handleMouseLeave}
         >
           <button
-            className={`flex items-center space-x-1 text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer
+            className={`flex items-center space-x-1 border text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer
               ${isActiveGroup(['/project']) ? 'bg-green-100 text-green-800' : 'bg-gray-50 hover:bg-gray-100'}`}
+              style={{ borderColor: '#779E45', fontFamily: 'Urbanist, sans-serif', borderWidth: '2px', color: '#1B1B1B', lineHeight: '140%', fontSize: '16px', fontWeight: '600' }}
           >
             <span>Project</span>
             <ChevronDown className="w-4 h-4" />
@@ -117,6 +121,7 @@ const Navbar = () => {
           <button
             className={`flex items-center space-x-1 text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer
               ${isActiveGroup(['/toolbox']) ? 'bg-green-100 text-green-800' : 'bg-gray-50 hover:bg-gray-100'}`}
+              style={{ borderColor: '#779E45', fontFamily: 'Urbanist, sans-serif', borderWidth: '2px', color: '#1B1B1B', lineHeight: '140%', fontSize: '16px', fontWeight: '600' }}
           >
             <span>Toolbox</span>
             <ChevronDown className="w-4 h-4" />
@@ -149,6 +154,7 @@ const Navbar = () => {
           <button
             className={`flex items-center space-x-1 text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer
               ${isActiveGroup(['/engagement']) ? 'bg-green-100 text-green-800' : 'bg-gray-50 hover:bg-gray-100'}`}
+              style={{ borderColor: '#779E45', fontFamily: 'Urbanist, sans-serif', borderWidth: '2px', color: '#1B1B1B', lineHeight: '140%', fontSize: '16px', fontWeight: '600' }}
           >
             <span>Engagement</span>
             <ChevronDown className="w-4 h-4" />
@@ -181,6 +187,7 @@ const Navbar = () => {
           <button
             className={`flex items-center space-x-1 text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer
               ${isActiveGroup(['/duckweed-mafia']) ? 'bg-green-100 text-green-800' : 'bg-gray-50 hover:bg-gray-100'}`}
+              style={{ borderColor: '#779E45', fontFamily: 'Urbanist, sans-serif', borderWidth: '2px', color: '#1B1B1B', lineHeight: '140%', fontSize: '16px', fontWeight: '600' }}
           >
             <span>Duckweed mafia</span>
             <ChevronDown className="w-4 h-4" />
@@ -302,13 +309,7 @@ const Navbar = () => {
         </div>
       )}
 
-      {/* Handbook desktop */}
-      <Link 
-        to="/handbook" 
-        className="hidden md:block bg-green-700 hover:bg-green-800 text-white px-6 py-2 rounded-full transition-colors"
-      >
-        Handbook
-      </Link>
+      
     </nav>
   );
 };
