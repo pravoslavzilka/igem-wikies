@@ -70,11 +70,13 @@ const Navbar = () => {
 
       {/* Mobile menu button */}
       <button
-        className="md:hidden flex items-center px-2 py-2 rounded-full bg-green-100 text-green-800"
+        className="md:hidden flex items-center px-2 py-2 rounded-full bg-white-100 text-green-800"
         onClick={() => setMobileOpen((open) => !open)}
         aria-label="Toggle menu"
+        style={{ borderColor: '#779E45', fontFamily: 'Urbanist, sans-serif', borderWidth: '2px', color: '#1B1B1B', lineHeight: '140%', fontSize: '16px', fontWeight: '600' }}
       >
-        <ChevronDown className={`w-6 h-6 transform transition-transform ${mobileOpen ? 'rotate-180' : ''}`} />
+        <ChevronDown className={`w-6 h-6 transform transition-transform ${mobileOpen ? 'rotate-180' : ''}`} 
+        />
       </button>
 
       {/* Desktop menu */}
@@ -214,7 +216,9 @@ const Navbar = () => {
       
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-200 md:hidden animate-slide-down z-40">
+        <div className="absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-200 md:hidden animate-slide-down z-40"
+        style={{ fontFamily: 'Urbanist, sans-serif', color: '#1B1B1B', lineHeight: '140%', fontSize: '16px', fontWeight: '600' }}
+        >
           <div className="flex flex-col py-2">
             {/* Only main links visible */}
             <button
@@ -297,14 +301,7 @@ const Navbar = () => {
                 ))}
               </div>
             )}
-            {/* Handbook */}
-            <Link 
-              to="/handbook" 
-              className="block px-4 py-2 mt-2 bg-green-700 hover:bg-green-800 text-white rounded-full transition-colors text-center"
-              onClick={() => setMobileOpen(false)}
-            >
-              Handbook
-            </Link>
+            
           </div>
         </div>
       )}
