@@ -213,7 +213,7 @@ const Hero = () => {
         </div>
       )}
       {/* Mobile Mission Card */}
-      <div className="md:hidden w-full flex justify-center mt-4">
+      <div className="md:hidden w-full flex justify-center mt-4" style={{ marginBottom: '-30px' }}>
         <div className="bg-[#4B463F]/90 backdrop-blur-md rounded-2xl p-4 shadow-lg w-full mx-2"
           style={{
             boxShadow: "0 4px 24px 0 rgba(0,0,0,0.12)",
