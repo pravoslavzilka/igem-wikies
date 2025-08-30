@@ -13,6 +13,7 @@ import VideoShow from '../components/Home_page/VideoShow';
 import "@fontsource/urbanist";
 import "@fontsource/urbanist/400.css";
 import "@fontsource/space-grotesk";
+import "@fontsource/space-grotesk/400.css";
 import Tools from '../components/Home_page/Tools';
 
 
