@@ -24,22 +24,22 @@ const Comparison = () => {
 
   // 10 cows per group, 6 green, 4 gray for soy; 8 green, 2 gray for duckweed
   const cowsSoy = Array.from({ length: 10 }, (_, i) =>
-    i < 5
+    i < 3
       ? <CowIcon key={i} src="https://static.igem.wiki/teams/5642/icons/vector.webp" />
       : <CowIcon key={i} src="https://static.igem.wiki/teams/5642/icons/vector-f.webp" />
   );
   const cowsDuckweed = Array.from({ length: 10 }, (_, i) =>
-    i < 8
+    i < 9
       ? <CowIcon key={i} src="https://static.igem.wiki/teams/5642/icons/vector.webp" />
       : <CowIcon key={i} src="https://static.igem.wiki/teams/5642/icons/vector-f.webp" />
   );
 
   return (
     <div className="bg-white " style={{ padding: "5rem", paddingBottom: "12rem" }}>
-      <h2 className="text-4xl font-bold mb-8 text-center" style={{ fontFamily: "Space Grotesk" }} >Duckweeds could save farmers money and protect Cerrado ecosystems</h2>
+      <h2 className="text-4xl font-bold mb-8 text-center" style={{ fontFamily: "Space Grotesk" }} >Duckweeds could save <span style={{ color: "#779E45" }}>farmers money </span> and protect <span style={{ color: "#779E45" }}>Cerrado ecosystems</span></h2>
       <div className="flex flex-row gap-16 justify-center items-end">
         {/* Soybean group */}
-        <div className="flex flex-col items-center" style={{paddingTop: "4rem"}}>
+        <div className="flex flex-col items-center" style={{paddingTop: "4rem"}}> 
           <div
             className="grid gap-2 mb-4"
             style={{ gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))` }}
@@ -59,7 +59,7 @@ const Comparison = () => {
           
         </div>
       </div>
-      <div style={{ fontFamily: "Space Grotesk" }} className="text-center text-sm text-black-700 mt-4">
+      <div style={{ fontFamily: "Space Grotesk" }} className="text-center text-md text-black-700 mt-12">
             Feeding 100 cows for a week requires three times less land with duckweed than with soybean.
           </div>
     </div>
