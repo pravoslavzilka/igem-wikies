@@ -1,6 +1,6 @@
 const Tools = () => {
     return (
-    <div className="p-10 min-h-screen mx-auto    md:mt-[-200px]">
+    <div className="p-10 min-h-screen mx-auto    md:mt-[-150px]">
       <div className="max-w-7xl mx-auto">
         
 
