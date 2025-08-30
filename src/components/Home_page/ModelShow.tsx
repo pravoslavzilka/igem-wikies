@@ -1,8 +1,6 @@
-
-
 const ModelShow = () => {
     return (
-    <div className="bg-white p-8 min-h-screen">
+    <div className="bg-white p-8 min-h-screen md:mb-[-200px]">
       <div className="max-w-6xl mx-auto  mt-20" >
         {/* Top image placeholder */}
         
@@ -12,9 +10,11 @@ const ModelShow = () => {
           {/* Left side - Chart placeholder */}
           <div className="space-y-4">
             {/* Heatmap chart placeholder */}
-            
-              <img src="https://static.igem.wiki/teams/5642/images/homepage/image.webp" alt="Heatmap Chart" className="w-full h-full object-cover rounded-lg" />
-            
+            <img
+              src="https://static.igem.wiki/teams/5642/images/homepage/image.webp"
+              alt="Heatmap Chart"
+              className="w-full h-full object-cover rounded-lg max-w-full max-w-[350px] md:max-w-[100%] mx-auto"
+            />
           </div>
 
           {/* Right side - Content */}
