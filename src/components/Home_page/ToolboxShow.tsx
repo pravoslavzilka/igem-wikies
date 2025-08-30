@@ -27,7 +27,7 @@ const ToolboxShow = () => {
   const [activeStep, setActiveStep] = useState(0);
 
   return (
-    <div className=" p-8 min-h-screen">
+    <div className=" p-8 min-h-screen mt-[100px] md:mt-[-100px]">
       <div className="max-w-8xl mx-auto">
         {/* Header section */}
         <div className="text-center mb-12  mx-auto max-w-6xl">

@@ -1,11 +1,11 @@
 const VideoShow = () => {
     return (
-    <div className="bg-white p-5 min-h-screen">
+    <div className="bg-white p-5 mt-[100px] min-h-screen">
       <div className="max-w-6xl mx-auto">
         {/* Main headline */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold  leading-tight" style={{ fontFamily: 'Space Grotesk, sans-serif', lineHeight: '140%' }}>
-            Duckweed will save farmers’ money while reducing emissions and protecting the planet’s natural ecosystems.
+            Duckweed will save <span style={{ color: '#779E45' }}>farmers’ money</span> while reducing emissions <br /> and protecting the <span style={{ color: '#779E45' }}>planet’s natural ecosystems</span>.
           </h1>
         </div>
 
@@ -22,10 +22,10 @@ const VideoShow = () => {
         </div>
 
         {/* Bottom call-to-action text */}
-        <div className="text-center">
-          <p className="text-xl text-gray-700 font-medium" style={{ fontFamily: 'Space Grotesk, sans-serif', lineHeight: '140%' }}>
-            What will YOUR next step be - powered by the Duckweed Toolbox?
-          </p>
+        <div className="text-center mt-[100px] mb-[100px]">
+          <h1 className="text-4xl font-bold  leading-tight" style={{ fontFamily: 'Space Grotesk, sans-serif', lineHeight: '140%' }}>
+            What will <span style={{ color: '#779E45' }}>YOUR</span> next step be - <br /> powered by the <span style={{ color: '#779E45' }}>Duckweed Toolbox</span>?
+          </h1>
         </div>
       </div>
     </div>
