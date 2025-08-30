@@ -36,12 +36,18 @@ const Hero = () => {
   // Mobile: Hide tooltip on outside click
   useEffect(() => {
     if (window.innerWidth < 500) {
-      const handleClick = () => setIconHover(null);
-      window.addEventListener('touchstart', handleClick);
-      window.addEventListener('mousedown', handleClick);
+      const handleClick = (e: MouseEvent | TouchEvent) => {
+        // Only hide if click/touch is outside the tooltip
+        const tooltip = document.getElementById('mobile-tooltip');
+        if (tooltip && !tooltip.contains(e.target as Node)) {
+          setIconHover(null);
+        }
+      };
+      document.addEventListener('mousedown', handleClick);
+      document.addEventListener('touchstart', handleClick);
       return () => {
-        window.removeEventListener('touchstart', handleClick);
-        window.removeEventListener('mousedown', handleClick);
+        document.removeEventListener('mousedown', handleClick);
+        document.removeEventListener('touchstart', handleClick);
       };
     }
   }, []);
@@ -151,6 +157,7 @@ const Hero = () => {
       {/* Icon hover card */}
       {iconHover && (
         <div
+          id="mobile-tooltip"
           className="fixed z-50 pointer-events-none md:pointer-events-auto transform -translate-x-1/2"
           style={{
             left: window.innerWidth < 500 ? iconHover.x -40 : iconHover.x,
