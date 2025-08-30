@@ -1,7 +1,7 @@
 import "@fontsource/urbanist";
 import "@fontsource/space-grotesk";
 import React, { useState, useEffect } from 'react';
-import { image } from "framer-motion/client";
+
 
 
 
@@ -33,6 +33,18 @@ const Hero = () => {
   const [hoverPosition, setHoverPosition] = useState({ x: 0, y: 0 });
   const [iconHover, setIconHover] = useState<{ idx: number, x: number, y: number } | null>(null);
 
+  // Mobile: Hide tooltip on outside click
+  useEffect(() => {
+    if (window.innerWidth < 500) {
+      const handleClick = () => setIconHover(null);
+      window.addEventListener('touchstart', handleClick);
+      window.addEventListener('mousedown', handleClick);
+      return () => {
+        window.removeEventListener('touchstart', handleClick);
+        window.removeEventListener('mousedown', handleClick);
+      };
+    }
+  }, []);
 
   const handleMouseEnter = (e: React.MouseEvent) => {
     setShowHoverCard(true);
@@ -56,21 +68,21 @@ const Hero = () => {
       {/* Hero Section */}
       <div className="relative">
         <div 
-          className="h-screen bg-cover bg-center rounded-3xl relative overflow-hidden rounded-3 xl mx-4 mt-4"
+          className="h-[70vh] md:h-screen bg-cover bg-center rounded-3xl relative overflow-hidden mx-2 md:mx-4 mt-4"
           style={{
             backgroundImage: "url('https://static.igem.wiki/teams/5642/images/homepage/photo.webp')",
           }}
         >
           {/* Blue Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-br "></div>
+          <div className="absolute inset-0 bg-gradient-to-br"></div>
           
           {/* Content */}
-          <div className="relative z-10 h-full flex items-center justify-center px-8">
-            <div className="text-center max-w-6xl">
+          <div className="relative z-10 h-full flex items-center justify-center px-2 md:px-8">
+            <div className="text-center max-w-6xl w-full">
               <h1
-                className="absolute text-7xl font-bold text-white mb-20 px-16 w-[80vw] max-w-7xl flex flex-wrap justify-center items-center gap-x-2 gap-y-4"
+                className="absolute text-3xl md:text-7xl font-bold text-white mb-20 px-2 md:px-16 w-[98vw] md:w-[80vw] max-w-full md:max-w-7xl flex flex-wrap justify-center items-center gap-x-1 gap-y-2 md:gap-x-2 md:gap-y-4"
                 style={{
-                  top: "15%",
+                  top: "13%",
                   left: "50%",
                   transform: "translate(-50%, -50%)",
                   zIndex: 10,
@@ -80,27 +92,38 @@ const Hero = () => {
                 {headlineWords.map((item, idx) => (
                   <span key={idx} className="relative inline-flex items-center mx-1">
                     <span 
-                    style={{ fontSize: "0.85em", lineHeight: "1" }}>
-                      {item.word}</span>
-                    <span
-                      className="ml-1 cursor-pointer inline-block align-middle"
-                      onMouseEnter={e => setIconHover({ idx, x: e.clientX, y: e.clientY })}
-                      onMouseMove={e => setIconHover({ idx, x: e.clientX, y: e.clientY })}
-                      onMouseLeave={() => setIconHover(null)}
-                      style={{ fontSize: "0.3em", lineHeight: "1", paddingBottom: "10%" }}
-                    >
-                      
-                      <img src={item.icon} />
+                      style={{ fontSize: "0.85em", lineHeight: "1" }}>
+                      {item.word}
                     </span>
+                    {item.icon && (
+                      <span
+                        className="ml-1 cursor-pointer inline-block align-middle"
+                        onMouseEnter={e => setIconHover({ idx, x: e.clientX, y: e.clientY })}
+                        onMouseMove={e => setIconHover({ idx, x: e.clientX, y: e.clientY })}
+                        onMouseLeave={() => setIconHover(null)}
+                        onClick={e => {
+                          if (window.innerWidth < 500) {
+                            // Position tooltip under icon, centered
+                            const rect = (e.target as HTMLElement).getBoundingClientRect();
+                            setIconHover({
+                              idx,
+                              x: rect.left + rect.width / 2,
+                              y: rect.bottom
+                            });
+                          }
+                        }}
+                        style={{ fontSize: "0.3em", lineHeight: "1", paddingBottom: "10%" }}
+                      >
+                        <img src={item.icon} className="w-5 h-5 md:w-7 md:h-7" />
+                      </span>
+                    )}
                   </span>
                 ))}
               </h1>
-              
-              </div>
+            </div>
 
-            
             {/* Mission Card */}
-            <div className="absolute bottom-8 right-8 bg-[#4B463F]/90 backdrop-blur-md rounded-2xl p-6 max-w-sm shadow-lg" style={{boxShadow: "0 4px 24px 0 rgba(0,0,0,0.12)"}}>
+            <div className="hidden md:block absolute bottom-8 right-8 bg-[#4B463F]/90 backdrop-blur-md rounded-2xl p-6 max-w-sm shadow-lg" style={{boxShadow: "0 4px 24px 0 rgba(0,0,0,0.12)"}}>
               <h3 className="text-white text-2xl font-bold mb-3" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
                 Running a farm is less and less profitable
               </h3>
@@ -125,31 +148,30 @@ const Hero = () => {
         </div>
       </div>
 
-
+      {/* Icon hover card */}
       {iconHover && (
         <div
-          className="fixed z-50 pointer-events-none transform -translate-x-1/2 -translate-y-full"
+          className="fixed z-50 pointer-events-none md:pointer-events-auto transform -translate-x-1/2"
           style={{
-            left: iconHover.x,
-            top: iconHover.y + 350,
+            left: window.innerWidth < 500 ? iconHover.x -40 : iconHover.x,
+            top: window.innerWidth < 500 ? iconHover.y + 8 : iconHover.y + (window.innerWidth < 768 ? 120 : 20),
             fontFamily: 'Urbanist, sans-serif',
+            width: window.innerWidth < 500 ? '80vw' : undefined,
+            maxWidth: window.innerWidth < 500 ? '40vw' : '20rem',
+            pointerEvents: window.innerWidth < 500 ? 'auto' : 'none',
           }}
         >
-          <div className="bg-white rounded-2xl p-6 shadow-2xl max-w-sm animate-in border fade-in duration-200" style={{ borderColor: headlineWords[iconHover.idx].color, borderWidth: "3px" }}>
-            <div className="mb-4">
+          <div className={`bg-white rounded-2xl ${window.innerWidth < 500 ? 'p-2' : 'p-4 md:p-6'} shadow-2xl animate-in border fade-in duration-200`} style={{ borderColor: headlineWords[iconHover.idx].color, borderWidth: "3px" }}>
+            <div className="mb-2">
               <img 
                 src={headlineWords[iconHover.idx].image} 
                 alt=" "
-                className="w-full h-32 object-cover rounded-lg"
+                className={`w-full ${window.innerWidth < 500 ? 'h-16' : 'h-24 md:h-32'} object-cover rounded-lg`}
               />
             </div>
-            <div className="">
-              <h3 className="text-2xl font-bold mb-2">{headlineWords[iconHover.idx].word}</h3>
-              <p className="text-lg font-medium mb-3">{headlineWords[iconHover.idx].tooltip}</p>
-              <p className="text-sm  leading-relaxed">
-                {/* Optional: add more info or keep it simple */}
-                Duckweed enables new possibilities for {headlineWords[iconHover.idx].word.toLowerCase()}.
-              </p>
+            <div>
+              <h3 className={`font-bold mb-2 ${window.innerWidth < 500 ? 'text-base' : 'text-lg md:text-2xl'}`}>{headlineWords[iconHover.idx].word}</h3>
+              <p className={`font-medium mb-3 ${window.innerWidth < 500 ? 'text-xs' : 'text-base md:text-lg'}`}>{headlineWords[iconHover.idx].tooltip}</p>
             </div>
           </div>
         </div>
@@ -161,28 +183,59 @@ const Hero = () => {
           className="fixed z-50 pointer-events-none transform -translate-x-1/2 -translate-y-full"
           style={{ 
             left: hoverPosition.x, 
-            top: hoverPosition.y - 20,
+            top: window.innerWidth < 500 ? hoverPosition.y + 40 : hoverPosition.y - 20,
+            width: window.innerWidth < 500 ? '80vw' : undefined,
+            maxWidth: window.innerWidth < 500 ? '80vw' : '20rem',
           }}
         >
-          <div className="bg-green-800 rounded-2xl p-6 shadow-2xl max-w-sm animate-in fade-in duration-200">
-            <div className="mb-4">
+          <div className={`bg-green-800 rounded-2xl ${window.innerWidth < 500 ? 'p-2' : 'p-4 md:p-6'} shadow-2xl animate-in fade-in duration-200`}>
+            <div className="mb-2">
               <img 
                 src="https://images.pexels.com/photos/422218/pexels-photo-422218.jpeg?auto=compress&cs=tinysrgb&w=300" 
-                
-                className="w-full h-32 object-cover rounded-lg"
+                className={`w-full ${window.innerWidth < 500 ? 'h-16' : 'h-24 md:h-32'} object-cover rounded-lg`}
               />
             </div>
             <div className="text-white">
-              <h3 className="text-4xl font-bold mb-2">75%</h3>
-              <p className="text-lg font-medium mb-3">of all farm operation costs is just feed.</p>
-              <p className="text-sm text-white/90 leading-relaxed">
+              <h3 className={`font-bold mb-2 ${window.innerWidth < 500 ? 'text-lg' : 'text-2xl md:text-4xl'}`}>75%</h3>
+              <p className={`font-medium mb-3 ${window.innerWidth < 500 ? 'text-xs' : 'text-base md:text-lg'}`}>of all farm operation costs is just feed.</p>
+              <p className={`leading-relaxed ${window.innerWidth < 500 ? 'text-xs' : 'text-xs md:text-sm'} text-white/90`}>
                 The most expensive part? Protein-rich soybean. Its price has tripled in the last 30 years. Now, over 15% of beef price is just soybean - which is usually more than the farmer's profit margin.
               </p>
             </div>
           </div>
         </div>
       )}
+      {/* Mobile Mission Card */}
+      <div className="md:hidden w-full flex justify-center mt-4">
+        <div className="bg-[#4B463F]/90 backdrop-blur-md rounded-2xl p-4 shadow-lg w-full mx-2"
+          style={{
+            boxShadow: "0 4px 24px 0 rgba(0,0,0,0.12)",
+            maxWidth: "100%",
+            width: "100%",
+          }}
+        >
+          <h3 className="text-white text-lg font-bold mb-3" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+            Running a farm is less and less profitable
+          </h3>
+          <p className="text-white/90 text-sm mb-4" style={{ fontFamily: 'Urbanist, sans-serif', lineHeight: '140%', fontWeight: '400' }}>
+            "With crop prices soaring, my feed costs have jumped 35 % - making farming less profitable every day."
+          </p>
+          <div className="flex items-center gap-3 mt-2">
+            <div className="w-8 h-8 rounded-full overflow-hidden border-2 border-white">
+              <img
+                src="https://static.igem.wiki/teams/5642/images/homepage/farmer.webp"
+                alt="Rudolf Repiský"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div style={{ fontFamily: 'Urbanist, sans-serif' }}>
+              <div className="text-white font-bold text-sm leading-tight">Rudolf Repiský</div>
+              <div className="text-white/80 text-xs leading-tight">farmer from Eastern Slovakia</div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
 
 
 

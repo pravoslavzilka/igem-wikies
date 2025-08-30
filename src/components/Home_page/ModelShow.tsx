@@ -13,7 +13,7 @@ const ModelShow = () => {
           <div className="space-y-4">
             {/* Heatmap chart placeholder */}
             
-              <img src="https://static.igem.wiki/teams/5642/images/homepage/predictor.webp" alt="Heatmap Chart" className="w-full h-full object-cover rounded-lg" />
+              <img src="https://static.igem.wiki/teams/5642/images/homepage/image.webp" alt="Heatmap Chart" className="w-full h-full object-cover rounded-lg" />
             
           </div>
 
