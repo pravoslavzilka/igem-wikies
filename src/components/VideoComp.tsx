@@ -6,7 +6,7 @@ const VideoComp = () => {
     <div className="py-16 bg-white md:mt-20">
       <div className="max-w-7xl mx-auto px-8">
         <div className="text-center mb-12 ">
-          <h2 className="text-4xl justify-center items-center font-bold text-gray-800 mb-4" style={{ fontFamily: "Space Grotesk"}}> Luckily, we have <span style={{ color: "#779E45" }}>duckweeds</span> -plants that are (almost) superior!</h2>
+          <h2 className="text-4xl justify-center items-center font-bold text-gray-800 mb-4" style={{ fontFamily: "Space Grotesk"}}> Luckily, we have <span style={{ color: "#779E45" }}>duckweeds</span> - plants that are (almost) superior!</h2>
         </div>
         
         <div className="grid md:grid-cols-2 gap-8">

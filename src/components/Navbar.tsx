@@ -68,6 +68,143 @@ const Navbar = () => {
         <img style={{  height: '60px', marginLeft: '12px' }} src="https://static.igem.wiki/teams/5642/icons/igem-brno-final-transparent.webp" />
       </Link>
 
+      {/* Desktop menu centered */}
+      <div className="hidden md:flex flex-1 justify-center">
+        <div className="flex items-center space-x-4 mr-2">
+          {/* Project Main Link */}
+          <div 
+            className="relative"
+            onMouseEnter={() => handleMouseEnter('project')}
+            onMouseLeave={handleMouseLeave}
+          >
+            <button
+              className={`flex items-center space-x-1 border text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer
+                ${isActiveGroup(['/project']) ? 'bg-green-100 text-green-800' : 'bg-gray-50 hover:bg-gray-100'}`}
+                style={{ borderColor: '#779E45', fontFamily: 'Urbanist, sans-serif', borderWidth: '2px', color: '#1B1B1B', lineHeight: '140%', fontSize: '16px', fontWeight: '600' }}
+            >
+              <span>Project</span>
+              <ChevronDown className="w-4 h-4" />
+            </button>
+            {dropdownVisible === 'project' && (
+              <div
+                className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2
+                  transition-all duration-300 ease-in-out overflow-hidden origin-top"
+                style={{ transformOrigin: 'top' }}
+              >
+                {menuItems.project.map((item) => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Toolbox Main Link */}
+          <div 
+            className="relative"
+            onMouseEnter={() => handleMouseEnter('toolbox')}
+            onMouseLeave={handleMouseLeave}
+          >
+            <button
+              className={`flex items-center space-x-1 text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer
+                ${isActiveGroup(['/toolbox']) ? 'bg-green-100 text-green-800' : 'bg-gray-50 hover:bg-gray-100'}`}
+                style={{ borderColor: '#779E45', fontFamily: 'Urbanist, sans-serif', borderWidth: '2px', color: '#1B1B1B', lineHeight: '140%', fontSize: '16px', fontWeight: '600' }}
+            >
+              <span>Toolbox</span>
+              <ChevronDown className="w-4 h-4" />
+            </button>
+            {dropdownVisible === 'toolbox' && (
+              <div
+                className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2
+                  transition-all duration-300 ease-in-out overflow-hidden origin-top"
+                style={{ transformOrigin: 'top' }}
+              >
+                {menuItems.toolbox.map((item) => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Engagement Main Link */}
+          <div 
+            className="relative"
+            onMouseEnter={() => handleMouseEnter('engagement')}
+            onMouseLeave={handleMouseLeave}
+          >
+            <button
+              className={`flex items-center space-x-1 text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer
+                ${isActiveGroup(['/engagement']) ? 'bg-green-100 text-green-800' : 'bg-gray-50 hover:bg-gray-100'}`}
+                style={{ borderColor: '#779E45', fontFamily: 'Urbanist, sans-serif', borderWidth: '2px', color: '#1B1B1B', lineHeight: '140%', fontSize: '16px', fontWeight: '600' }}
+            >
+              <span>Engagement</span>
+              <ChevronDown className="w-4 h-4" />
+            </button>
+            {dropdownVisible === 'engagement' && (
+              <div
+                className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2
+                  transition-all duration-300 ease-in-out overflow-hidden origin-top"
+                style={{ transformOrigin: 'top' }}
+              >
+                {menuItems.engagement.map((item) => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Duckweed Mafia Main Link */}
+          <div 
+            className="relative"
+            onMouseEnter={() => handleMouseEnter('duckweed-mafia')}
+            onMouseLeave={handleMouseLeave}
+          >
+            <button
+              className={`flex items-center space-x-1 text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer
+                ${isActiveGroup(['/duckweed-mafia']) ? 'bg-green-100 text-green-800' : 'bg-gray-50 hover:bg-gray-100'}`}
+                style={{ borderColor: '#779E45', fontFamily: 'Urbanist, sans-serif', borderWidth: '2px', color: '#1B1B1B', lineHeight: '140%', fontSize: '16px', fontWeight: '600' }}
+            >
+              <span>Duckweed mafia</span>
+              <ChevronDown className="w-4 h-4" />
+            </button>
+            {dropdownVisible === 'duckweed-mafia' && (
+              <div
+                className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2
+                  transition-all duration-300 ease-in-out overflow-hidden origin-top"
+                style={{ transformOrigin: 'top' }}
+              >
+                {menuItems['duckweed-mafia'].map((item) => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+
       {/* Mobile menu button */}
       <button
         className="md:hidden flex items-center px-2 py-2 rounded-full bg-white-100 text-green-800"
@@ -79,141 +216,6 @@ const Navbar = () => {
         />
       </button>
 
-      {/* Desktop menu */}
-      <div className="hidden md:flex items-center space-x-4 mr-2">
-        {/* Project Main Link */}
-        <div 
-          className="relative"
-          onMouseEnter={() => handleMouseEnter('project')}
-          onMouseLeave={handleMouseLeave}
-        >
-          <button
-            className={`flex items-center space-x-1 border text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer
-              ${isActiveGroup(['/project']) ? 'bg-green-100 text-green-800' : 'bg-gray-50 hover:bg-gray-100'}`}
-              style={{ borderColor: '#779E45', fontFamily: 'Urbanist, sans-serif', borderWidth: '2px', color: '#1B1B1B', lineHeight: '140%', fontSize: '16px', fontWeight: '600' }}
-          >
-            <span>Project</span>
-            <ChevronDown className="w-4 h-4" />
-          </button>
-          {dropdownVisible === 'project' && (
-            <div
-              className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2
-                transition-all duration-300 ease-in-out overflow-hidden origin-top"
-              style={{ transformOrigin: 'top' }}
-            >
-              {menuItems.project.map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </div>
-          )}
-        </div>
-
-        {/* Toolbox Main Link */}
-        <div 
-          className="relative"
-          onMouseEnter={() => handleMouseEnter('toolbox')}
-          onMouseLeave={handleMouseLeave}
-        >
-          <button
-            className={`flex items-center space-x-1 text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer
-              ${isActiveGroup(['/toolbox']) ? 'bg-green-100 text-green-800' : 'bg-gray-50 hover:bg-gray-100'}`}
-              style={{ borderColor: '#779E45', fontFamily: 'Urbanist, sans-serif', borderWidth: '2px', color: '#1B1B1B', lineHeight: '140%', fontSize: '16px', fontWeight: '600' }}
-          >
-            <span>Toolbox</span>
-            <ChevronDown className="w-4 h-4" />
-          </button>
-          {dropdownVisible === 'toolbox' && (
-            <div
-              className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2
-                transition-all duration-300 ease-in-out overflow-hidden origin-top"
-              style={{ transformOrigin: 'top' }}
-            >
-              {menuItems.toolbox.map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </div>
-          )}
-        </div>
-
-        {/* Engagement Main Link */}
-        <div 
-          className="relative"
-          onMouseEnter={() => handleMouseEnter('engagement')}
-          onMouseLeave={handleMouseLeave}
-        >
-          <button
-            className={`flex items-center space-x-1 text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer
-              ${isActiveGroup(['/engagement']) ? 'bg-green-100 text-green-800' : 'bg-gray-50 hover:bg-gray-100'}`}
-              style={{ borderColor: '#779E45', fontFamily: 'Urbanist, sans-serif', borderWidth: '2px', color: '#1B1B1B', lineHeight: '140%', fontSize: '16px', fontWeight: '600' }}
-          >
-            <span>Engagement</span>
-            <ChevronDown className="w-4 h-4" />
-          </button>
-          {dropdownVisible === 'engagement' && (
-            <div
-              className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2
-                transition-all duration-300 ease-in-out overflow-hidden origin-top"
-              style={{ transformOrigin: 'top' }}
-            >
-              {menuItems.engagement.map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </div>
-          )}
-        </div>
-
-        {/* Duckweed Mafia Main Link */}
-        <div 
-          className="relative"
-          onMouseEnter={() => handleMouseEnter('duckweed-mafia')}
-          onMouseLeave={handleMouseLeave}
-        >
-          <button
-            className={`flex items-center space-x-1 text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer
-              ${isActiveGroup(['/duckweed-mafia']) ? 'bg-green-100 text-green-800' : 'bg-gray-50 hover:bg-gray-100'}`}
-              style={{ borderColor: '#779E45', fontFamily: 'Urbanist, sans-serif', borderWidth: '2px', color: '#1B1B1B', lineHeight: '140%', fontSize: '16px', fontWeight: '600' }}
-          >
-            <span>Duckweed mafia</span>
-            <ChevronDown className="w-4 h-4" />
-          </button>
-          {dropdownVisible === 'duckweed-mafia' && (
-            <div
-              className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2
-                transition-all duration-300 ease-in-out overflow-hidden origin-top"
-              style={{ transformOrigin: 'top' }}
-            >
-              {menuItems['duckweed-mafia'].map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </div>
-          )}
-        </div>
-      </div>
-      
       {/* Mobile menu */}
       {mobileOpen && (
         <div className="absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-200 md:hidden animate-slide-down z-40"
