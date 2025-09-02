@@ -16,11 +16,11 @@ const headlineWords = [
   
     { word: "every", icon: "", tooltip: "" },
   
-    { word: "farm", icon: "https://static.igem.wiki/teams/5642/icons/fi-7830224.webp", image:"https://static.igem.wiki/teams/5642/images/homepage/taifr-1.webp", tooltip: "We are developing a genetic engineering platform that cuts the time needed for stable insertion of new trait to duckweed - the world’s fastest-growing plant - from five months down to just one.", color:"#7363F4"  },
+    { word: "farm", icon: "https://static.igem.wiki/teams/5642/icons/fi-7830224.webp", image:"https://static.igem.wiki/teams/5642/images/homepage/iconshover/container.webp", tooltip: "Soybean production is concentrated in just a handful of countries, leaving farmers everywhere else dependent on imports. Our modular, autonomous cultivation unit lets any farm produce its own protein-rich duckweed, ensuring a steady, local alternative to soy. ", color:"#7363F4"  },
   
     { word: "by", icon: "", tooltip: "" },
   
-    { word: "programmable", icon: "https://static.igem.wiki/teams/5642/icons/fi-5870724.webp", image:"https://static.igem.wiki/teams/5642/images/homepage/iconshover/container.webp", tooltip: "Soybean production is concentrated in just a handful of countries, leaving farmers everywhere else dependent on imports. Our modular, autonomous cultivation unit lets any farm produce its own protein-rich duckweed, ensuring a steady, local alternative to soy. ", color: "#D07519"},
+    { word: "programmable", icon: "https://static.igem.wiki/teams/5642/icons/fi-5870724.webp", image:"https://static.igem.wiki/teams/5642/images/homepage/taifr-1.webp", tooltip: "We are developing a genetic engineering platform that cuts the time needed for stable insertion of new trait to duckweed - the world’s fastest-growing plant - from five months down to just one." , color: "#D07519"},
   
     { word: "duckweed", icon: "", tooltip: "" },
     
