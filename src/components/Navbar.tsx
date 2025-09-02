@@ -24,7 +24,7 @@ const Navbar = () => {
       
     ],
     toolbox: [
-      { label: 'Why plants suck ', path: '/toolbox/why-plants-suck' },
+      { label: 'Why plants suck ', path: '/toolbox/why-plants-suck/' },
       { label: 'Deep dive on duckweed', path: '/toolbox/deep-dive-on-duckweed' },
       { label: 'Programmable duckweed', path: '/toolbox/programmable-duckweed' }
     ],

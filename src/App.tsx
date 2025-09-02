@@ -14,6 +14,7 @@ import Taifr from './pages/project/how/Taifr';
 
 // Toolbox pages
 import DeepDiveDocument from './pages/toolbox/DeepDive';
+
 import ToolboxTools from './pages/toolbox/Tools';
 import ToolboxResources from './pages/toolbox/Resources';
 import ToolboxDownloads from './pages/toolbox/Downloads';
@@ -21,6 +22,7 @@ import ToolboxDownloads from './pages/toolbox/Downloads';
 import SustainabilityDocument from './pages/project/why/Sustainability';
 
 import LivingLayersDocument from './pages/project/how/Cultivator';
+import WhyPlantsSuck from './pages/toolbox/WhyPlantsSuck';
 
 
 
@@ -31,7 +33,7 @@ import LivingLayersDocument from './pages/project/how/Cultivator';
 // import EngagementImpact from './pages/engagement/Impact';
 
 // Duckweed Mafia pages
-//import DuckweedMafia from './pages/DuckweedMafia';
+//import DuckweedMafia from './pages/DuckweedMafia';  
 //import DuckweedMafiaTeam from './pages/duckweed-mafia/Team';
 //import DuckweedMafiaMission from './pages/duckweed-mafia/Mission';
 // import DuckweedMafiaCulture from './pages/duckweed-mafia/Culture';
@@ -61,6 +63,7 @@ function App() {
           
           {/* Toolbox Routes */}
           <Route path="/toolbox/deep-dive-on-duckweed/" element={<DeepDiveDocument />} />
+          <Route path="/toolbox/why-plants-suck/" element={<WhyPlantsSuck />} />
           <Route path="/toolbox/tools" element={<ToolboxTools />} />
           <Route path="/toolbox/resources" element={<ToolboxResources />} />
           <Route path="/toolbox/downloads" element={<ToolboxDownloads />} />
