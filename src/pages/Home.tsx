@@ -10,6 +10,9 @@ import CultivatorShow from '../components/Home_page/CultivatorShow';
 import ModelShow from '../components/Home_page/ModelShow';
 import ToolboxShow from '../components/Home_page/ToolboxShow';
 import VideoShow from '../components/Home_page/VideoShow';
+import Transition from '../components/Home_page/Transition';
+
+
 import "@fontsource/urbanist";
 import "@fontsource/urbanist/400.css";
 import "@fontsource/urbanist/500.css";
@@ -38,9 +41,9 @@ const Home = () => {
         <BrazilDeforestationWidget />
       </div>
 
-      <VideoComp />
+      <Transition />
 
-      <Comparison />
+     
 
       <FeaturesWidget />
 

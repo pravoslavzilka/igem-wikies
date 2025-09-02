@@ -46,15 +46,15 @@ const Comparison = () => {
       : <CowIcon key={i} src="https://static.igem.wiki/teams/5642/icons/vector-f.webp" />
   );
 
-  const colGap = "30px";
-  const rowGap = "50px";
+  const colGap = "20px";
+  const rowGap = "40px";
 
   // Set gap between tables: smaller on mobile, larger on desktop
   const tablesGap = cols === 10 ? "8rem" : "2rem";
 
   return (
-    <div className="bg-white " style={{ padding: "5rem", paddingBottom: "12rem" }}>
-      <h2 className="text-4xl font-bold mb-8 text-center" style={{ fontFamily: "Space Grotesk" }} >
+    <div className="bg-white " style={{ padding: "5rem", paddingBottom: "6rem" }}>
+      <h2 className="text-4xl font-bold  text-center" style={{ fontFamily: "Space Grotesk" }} >
         Duckweeds could save <span style={{ color: "#779E45" }}>farmers money </span> and protect <span style={{ color: "#779E45" }}>Cerrado ecosystems</span>
       </h2>
       <div

@@ -20,12 +20,11 @@ const WhyPlantsSuck = () => {
 
   // Map vertical scroll progress (0 → 1) into horizontal X
   // At 0 → show first comp, at 1 → shift fully to second comp
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
 
   return (
     <>
-      <Hero />
-      <BrazilDeforestationWidget />
+      
 
       <section ref={targetRef} className="relative h-[200vh] ">
         <div className="sticky top-0 flex h-screen items-center overflow-hidden">
