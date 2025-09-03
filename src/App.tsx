@@ -14,6 +14,7 @@ import Taifr from './pages/project/how/Taifr';
 
 // Toolbox pages
 import DeepDiveDocument from './pages/toolbox/DeepDive';
+import PromotersSilico from './pages/toolbox/PromotersSilico'
 
 import ToolboxTools from './pages/toolbox/Tools';
 import ToolboxResources from './pages/toolbox/Resources';
@@ -68,6 +69,8 @@ function App() {
           <Route path="/toolbox/resources" element={<ToolboxResources />} />
           <Route path="/toolbox/downloads" element={<ToolboxDownloads />} />
 
+          <Route path="/toolbox/promoters-in-silico" element={<PromotersSilico />} />
+          
 
           <Route path="/engagement/sustainability" element={<SustainabilityDocument />} />
           

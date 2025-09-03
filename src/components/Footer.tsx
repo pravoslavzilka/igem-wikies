@@ -138,7 +138,7 @@ const PARTNERS_DATA = {
     {
       company: {
         name: "strojLAB",
-        logo: "https://static.igem.wiki/teams/5642/images/homepage/footer/strojlab-logo.webp/images/partners/strojlab-logo.png",
+        logo: "https://static.igem.wiki/teams/5642/images/homepage/footer/strojlab-logo.webp",
         alt: "strojLAB Logo",
         url: "https://www.strojlab.cz/",
         category: "Enablement Partner"
