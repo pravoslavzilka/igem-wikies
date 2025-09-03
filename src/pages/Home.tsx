@@ -16,7 +16,7 @@ import Transition from '../components/Home_page/Transition';
 import "@fontsource/urbanist";
 import "@fontsource/urbanist/400.css";
 import "@fontsource/urbanist/500.css";
-import "@fontsource/space-grotesk";
+import "@fontsource/space-grotesk"; 
 import "@fontsource/space-grotesk/400.css";
 import "@fontsource/space-grotesk/700.css";
 import Tools from '../components/Home_page/Tools';
@@ -41,7 +41,12 @@ const Home = () => {
         <BrazilDeforestationWidget />
       </div>
 
-      <Transition />
+      
+      {/* <Transition /> */}
+
+      <VideoComp />
+
+      <Comparison />
 
      
 
