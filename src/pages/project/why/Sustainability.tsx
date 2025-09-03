@@ -36,9 +36,9 @@ const SustainabilityDocument = () => {
       {/* Main flex layout for image and SDGs */}
       <div className="flex flex-row items-start min-h-[calc(100vh-4rem)]">
         {/* Main SDG content */}
-        <div className="flex-1">
+        <div className="flex-1 min-w-0"> {/* add min-w-0 to prevent overflow */}
           {/* SDG 2: Zero Hunger */}
-          <div className="mb-6 bg-white border border-gray-200 rounded-lg shadow-sm border-l-4" style={{ borderLeftColor: "#DDA63A" }}>
+          <div className="mb-6 bg-white border border-gray-200 rounded-lg shadow-sm border-l-4 w-full" style={{ borderLeftColor: "#DDA63A" }}> {/* add w-full */}
             <div className="p-6">
               <div className="flex items-center gap-3 mb-4">
                 <span className="px-3 py-1 border rounded-md text-sm font-medium" style={{ backgroundColor: "#FFF6E0", color: "#DDA63A", borderColor: "#DDA63A" }}>
@@ -56,7 +56,7 @@ const SustainabilityDocument = () => {
           </div>
 
           {/* SDG 6: Clean Water and Sanitation */}
-          <div className="mb-6 bg-white border border-gray-200 rounded-lg shadow-sm border-l-4" style={{ borderLeftColor: "#26BDE2" }}>
+          <div className="mb-6 bg-white border border-gray-200 rounded-lg shadow-sm border-l-4 w-full" style={{ borderLeftColor: "#26BDE2" }}> {/* add w-full */}
             <div className="p-6">
               <div className="flex items-center gap-3 mb-4">
                 <span className="px-3 py-1 border rounded-md text-sm font-medium" style={{ backgroundColor: "#E6F8FC", color: "#26BDE2", borderColor: "#26BDE2" }} >
@@ -77,7 +77,7 @@ const SustainabilityDocument = () => {
           </div>
 
           {/* SDG 9: Industry, Innovation, and Infrastructure */}
-          <div className="mb-6 bg-white border border-gray-200 rounded-lg shadow-sm border-l-4" style={{ borderLeftColor: "#FD6925" }}>
+          <div className="mb-6 bg-white border border-gray-200 rounded-lg shadow-sm border-l-4 w-full" style={{ borderLeftColor: "#FD6925" }}> {/* add w-full */}
             <div className="p-6">
               <div className="flex items-center gap-3 mb-4">
                 <span className="px-3 py-1 border rounded-md text-sm font-medium" style={{ backgroundColor: "#FFF2E7", color: "#FD6925", borderColor: "#FD6925" }} >
@@ -92,7 +92,7 @@ const SustainabilityDocument = () => {
           </div>
 
           {/* SDG 12: Responsible Consumption and Production */}
-          <div className="mb-6 bg-white border border-gray-200 rounded-lg shadow-sm border-l-4" style={{ borderLeftColor: "#BF8B2E" }}>
+          <div className="mb-6 bg-white border border-gray-200 rounded-lg shadow-sm border-l-4 w-full" style={{ borderLeftColor: "#BF8B2E" }}> {/* add w-full */}
             <div className="p-6">
               <div className="flex items-center gap-3 mb-4">
                 <span className="px-3 py-1 border rounded-md text-sm font-medium" style={{ backgroundColor: "#F9F5E7", color: "#BF8B2E", borderColor: "#BF8B2E" }} >
@@ -110,7 +110,7 @@ const SustainabilityDocument = () => {
           </div>
 
           {/* SDG 13: Climate Action */}
-          <div className="mb-8 bg-white border border-gray-200 rounded-lg shadow-sm border-l-4" style={{ borderLeftColor: "#3F7E44" }}>
+          <div className="mb-8 bg-white border border-gray-200 rounded-lg shadow-sm border-l-4 w-full" style={{ borderLeftColor: "#3F7E44" }}> {/* add w-full */}
             <div className="p-6">
               <div className="flex items-center gap-3 mb-4">
                 <span className="px-3 py-1 border rounded-md text-sm font-medium" style={{ backgroundColor: "#E6F4EC", color: "#3F7E44", borderColor: "#3F7E44" }} >
@@ -160,7 +160,7 @@ const SustainabilityDocument = () => {
         {/* Vertical image column on the right */}
         <div className="hidden md:flex flex-col items-center ml-8 mt-2 h-full">
           <img
-            src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/sustainability-duckweed-graphic.svg"
+            src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/duckweed-stripe-v2.webp"
             alt="Duckweed Vertical"
             className="w-40 h-full  "
             style={{ minWidth: '10rem' }}

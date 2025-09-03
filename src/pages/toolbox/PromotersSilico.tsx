@@ -6,8 +6,23 @@ const PromotersSilico = () => {
     <div className="min-h-screen bg-white p-8">
       <div className="max-w-6xl mx-auto">
 
-        <h1 className="text-3xl font-bold mb-4" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Promoters in Silico</h1>
-        <p className="mb-4">This is a page about in silico analysis of promoters.</p>
+        <h1 className="text-3xl font-bold mb-4" style={{ fontFamily: "Space Grotesk, sans-serif" }}>In silico workflow</h1>
+        <p className="" style={{ fontFamily: "Urbanist, sans-serif" }}>Initially, we tried to develop our own workflow for identification of highly expressed genes and their promoters in multiple duckweed species. We successfully identified the highest expressing genes and extracted their promoters based on transcriptomics data, isolated them and even tried to clone them in front of the RUBY reporter.  
+However, we were not successful so we needed to refine our workflow. After extensive literature research and consultations with Dr. Veronika Jedlíčková, iGEM Marburg 2024 team and Dr. Eric Yang, we discovered that we made several mistakes in our in silico workflow, for example not including MoClo compatibility filtering but most importantly, not comparing data across different transcriptomes. 
+We implemented the feedback we received and proceeded with the workflow we are presenting. You can see the graphical representation of our workflow in the Figure X. 
+In our in silico promoter identification of promoter sequences, we drawn an inspiration from the brilliant workflow of the endogenous part identification in Taraxacum presented by the iGEM Marburg 2024 team with their project Tarakate and the article by Zhou et al., 2023 [].
+</p>
+
+        <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/yellow-simple-success-flowchart-instagram-post.webp" alt="Workflow Diagram" className="my-8 mx-auto" />
+
+
+        <h1 className="text-3xl font-bold mb-4" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Data collection</h1>
+                <p className="" style={{ fontFamily: "Urbanist, sans-serif" }}>To find strong and stable promoter sequence that could drive expression of the gene of interest in the whole plant, it is ideal to analyze wider set of different transcriptomic data, which can help identify genes with the desired characteristics [1]. Such characteristics include high expression level, low expression variability across tissues, housekeeping functions, and consistent expression across developmental stages. The usual approach is to compare transcriptomic data (a) from different tissues, (b) in different developmental stages of the plant, or (c) combination of both, which allows the usage of single reference genome. However, we were not able to find such comprehensive data for duckweed species; therefore, we had to search for a different approach.
+
+        </p>
+
+
+
 
 
       <div className="border-t border-gray-200 pt-6">
