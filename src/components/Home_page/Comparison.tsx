@@ -35,15 +35,15 @@ const Comparison = () => {
   const soyGreen = cols === 10 ? 33 : 5;
   const cowsSoy = Array.from({ length: totalCows }, (_, i) =>
     i < soyGreen
-      ? <CowIcon key={i} src="https://static.igem.wiki/teams/5642/icons/vector.webp" />
-      : <CowIcon key={i} src="https://static.igem.wiki/teams/5642/icons/vector-f.webp" />
+      ? <CowIcon key={i} src="https://static.igem.wiki/teams/5642/icons/homepage/other/vector.webp" />
+      : <CowIcon key={i} src="https://static.igem.wiki/teams/5642/icons/homepage/other/vector-f.webp" />
   );
   // Duckweed: 99 green, 1 gray (desktop); 14 green, 1 gray (mobile)
   const duckweedGreen = cols === 10 ? 99 : 14;
   const cowsDuckweed = Array.from({ length: totalCows }, (_, i) =>
     i < duckweedGreen
-      ? <CowIcon key={i} src="https://static.igem.wiki/teams/5642/icons/vector.webp" />
-      : <CowIcon key={i} src="https://static.igem.wiki/teams/5642/icons/vector-f.webp" />
+      ? <CowIcon key={i} src="https://static.igem.wiki/teams/5642/icons/homepage/other/vector.webp" />
+      : <CowIcon key={i} src="https://static.igem.wiki/teams/5642/icons/homepage/other/vector-f.webp" />
   );
 
   const colGap = "20px";
@@ -99,7 +99,7 @@ const Comparison = () => {
         </div>
       </div>
       <div style={{ fontFamily: "Space Grotesk" }} className="text-center text-md text-black-700 mt-12">
-        Feeding 100 cows for a week requires three times less land with duckweed than with soybean.      </div>
+        With the same land, duckweed can feed three times more cows than soybean     </div>
     </div>
   );
 };
