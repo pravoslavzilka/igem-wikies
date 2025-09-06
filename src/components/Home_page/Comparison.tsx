@@ -99,8 +99,7 @@ const Comparison = () => {
         </div>
       </div>
       <div style={{ fontFamily: "Space Grotesk" }} className="text-center text-md text-black-700 mt-12">
-        Feeding 100 cows for a week requires three times less land with duckweed than with soybean.
-      </div>
+        Feeding 100 cows for a week requires three times less land with duckweed than with soybean.      </div>
     </div>
   );
 };
