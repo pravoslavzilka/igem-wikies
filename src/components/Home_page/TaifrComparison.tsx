@@ -5,14 +5,32 @@ const TaifrComparison = () => {
         {/* Top image placeholder */}
         <div className="w-full h-80  rounded-lg flex items-center justify-center mb-5">
           <div className="text-center md:mb-60">
-            {/*<img
-              src="https://static.igem.wiki/teams/5642/images/homepage/taifr2.webp"
-              alt="Dr. Arturo Marí-Ordóñez"
+            <img
+              src="https://github.com/pravoslavzilka/igem-wikies-off/blob/main/src/IGEM_graf_70_.gif?raw=true"
+              alt="Video unable to load"
               className="rounded-lg w-full max-w-full sm:max-w-7xl md:max-w-6xl lg:max-w-5xl h-auto mx-auto md:mb-20"
-            />*/}
-            <video autoPlay loop muted playsInline className=" w-full max-w-full sm:max-w-7xl md:max-w-6xl lg:max-w-5xl h-auto mx-auto md:mb-20">
-                <source src="https://github.com/pravoslavzilka/igem-wikies-off/raw/refs/heads/main/src/taifr.mp4"  type="video/mp4"></source>
-              </video>
+              style={{
+                maxWidth: "1500px", // increased max width
+                height: "1000px",    // increased height
+                margin: "0 auto",
+                display: "block"
+              }}
+            />{/*
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="rounded-lg w-full"
+              style={{
+                maxWidth: "1200px", // increased max width
+                height: "700px",    // increased height
+                margin: "0 auto",
+                display: "block"
+              }}
+            >
+              <source src="https://github.com/pravoslavzilka/igem-wikies-off/raw/refs/heads/main/src/taifr.mp4" type="video/mp4"></source>
+            </video>*/}
           </div>
         </div>
 
