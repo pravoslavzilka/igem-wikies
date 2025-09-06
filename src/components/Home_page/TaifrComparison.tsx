@@ -10,8 +10,8 @@ const TaifrComparison = () => {
               alt="Dr. Arturo Marí-Ordóñez"
               className="rounded-lg w-full max-w-full sm:max-w-7xl md:max-w-6xl lg:max-w-5xl h-auto mx-auto md:mb-20"
             />*/}
-            <video autoPlay loop muted playsInline>
-                <source src="https://github.com/pravoslavzilka/igem-wikies-off/raw/refs/heads/main/src/taifr.mp4" className="rounded-lg w-full max-w-full sm:max-w-7xl md:max-w-6xl lg:max-w-5xl h-auto mx-auto md:mb-20" type="video/mp4"></source>
+            <video autoPlay loop muted playsInline className=" w-full max-w-full sm:max-w-7xl md:max-w-6xl lg:max-w-5xl h-auto mx-auto md:mb-20">
+                <source src="https://github.com/pravoslavzilka/igem-wikies-off/raw/refs/heads/main/src/taifr.mp4"  type="video/mp4"></source>
               </video>
           </div>
         </div>
