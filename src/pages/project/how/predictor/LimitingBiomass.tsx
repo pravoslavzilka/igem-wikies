@@ -59,7 +59,7 @@ const LimitingBiomass = () => {
             />
             <div className="p-4 bg-gray-50">
               <p className="text-sm text-gray-600" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                <strong>Fig XX:</strong> Ondra, caring for duckweed while feeling as 
+                <strong>Fig 1:</strong> Ondra, caring for duckweed while feeling as 
                 on the seashore, measuring the actual biomass of our 
                 duckweed densities in each cultivation tray 
               </p>
@@ -89,7 +89,7 @@ const LimitingBiomass = () => {
               </div>
               
               <p className="text-sm text-gray-600 mt-3 p-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                <strong>Fig XX:</strong> Experimentally measured growth curve for the duckweed cultivation in the small tray.
+                <strong>Fig 2:</strong> Experimentally measured growth curve for the duckweed cultivation in the small tray.
               </p>
             </div>
 
@@ -124,7 +124,7 @@ const LimitingBiomass = () => {
               </div>
               
               <p className="text-sm text-gray-600 mt-3 p-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                <strong>Fig XX:</strong> Experimentally measured growth curve for the duckweed cultivation in the large tray.
+                <strong>Fig 3:</strong> Experimentally measured growth curve for the duckweed cultivation in the large tray.
               </p>
             </div>
 
