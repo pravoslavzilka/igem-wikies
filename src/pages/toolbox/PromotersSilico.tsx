@@ -149,7 +149,7 @@ const PromotersSilico = () => {
               </div>
 
               <p className="text-sm text-gray-600 mt-3 p-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                <strong>Fig 6:</strong>   Schematic overview of the OrthoFinder 2 workflow used for orthology inference and identification of orthogroups from proteomes of Lemnoideae species (taken from OrthoFinder tutorials by David Emms (https://davidemms.github.io).
+                <strong>Fig 6:</strong>   Schematic overview of the OrthoFinder 2 workflow used for orthology inference and identification of orthogroups from proteomes of Lemnoideae species (taken from OrthoFinder tutorials by David Emms (<Link target='_blank' style={{ color: '#3b82f6' }} to="https://davidemms.github.io">https://davidemms.github.io</Link>).
               </p>
             </div>
 
@@ -196,6 +196,37 @@ const PromotersSilico = () => {
         </p>
 
 
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-8">
+ 
+            
+            <div className="bg-gray-50 rounded-lg">
+              
+              
+              <div className="bg-white rounded">
+                <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure7.webp" alt="Large Tray Growth Curve" className="w-full h-auto" />
+              </div>
+
+              <p className="text-sm text-gray-600 mt-3 p-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                <strong>Fig 7:</strong>   VST-based coefficient of variation (CV) versus rlog-based mean expression per orthogroup, used to evaluate stability and strength of gene expression across Lemnoideae species.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 rounded-lg">
+              
+              
+              <div className="bg-white rounded">
+                <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure8.webp" alt="Large Tray Growth Curve" className="w-full h-auto" />
+              </div>
+
+              <p className="text-sm text-gray-600 mt-3 p-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                <strong>Fig 8:</strong>   CV versus log₂ mean expression (rlog normalized mean ≥ 10), highlighting highly expressed orthogroups with stable expression as candidates for promoter selection.
+              </p>
+            </div>
+
+          </div>
+
+
         <h1 className="text-3xl font-bold mb-6 mt-16" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Functional annotation</h1>
 
         <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
@@ -206,6 +237,248 @@ const PromotersSilico = () => {
         <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
           Orthogroups containing only reasonably annotated (not unknown) and housekeeping genes were considered. As expected, many candidates were linked to essential cellular processes such as ribosomal proteins, translation factors, or primary metabolism. The final list of 20 Orthogroups was curated manually.
         </p>
+
+
+        {/* Genetic Data Table */}
+      <div className="mt-12">
+        <h2 className="text-xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+          Orthogroup Expression Analysis
+        </h2>
+        <div className="overflow-x-auto">
+          <table className="w-full border border-gray-200 rounded-lg overflow-hidden">
+            <thead className="bg-green-100">
+              <tr>
+                <th className="px-3 py-3 text-left text-xs font-semibold text-gray-900 border-r border-gray-200" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                  Orthogroup
+                </th>
+                <th className="px-3 py-3 text-left text-xs font-semibold text-gray-900 border-r border-gray-200" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                  Mean rlog expression
+                </th>
+                <th className="px-3 py-3 text-left text-xs font-semibold text-gray-900 border-r border-gray-200" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                  CV vst
+                </th>
+                <th className="px-3 py-3 text-left text-xs font-semibold text-gray-900 border-r border-gray-200" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                  Le_gibba_7742
+                </th>
+                <th className="px-3 py-3 text-left text-xs font-semibold text-gray-900 border-r border-gray-200" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                  Le_japonica_7182
+                </th>
+                <th className="px-3 py-3 text-left text-xs font-semibold text-gray-900 border-r border-gray-200" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                  Le_minor_9252
+                </th>
+                <th className="px-3 py-3 text-left text-xs font-semibold text-gray-900 border-r border-gray-200" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                  Sp_polyrrhizia_9505
+                </th>
+                <th className="px-3 py-3 text-left text-xs font-semibold text-gray-900" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                  Gene Ontology
+                </th>
+              </tr>
+            </thead>
+            <tbody className="bg-white divide-y divide-gray-200">
+              <tr className="hover:bg-gray-50">
+                <td className="px-3 py-2 text-xs text-blue-600 font-semibold border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>OG0007366</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>11.41</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>6.07E-03</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lg7742Ab018g004410</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lj7182a18Tg004050_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lm9252a018g004250_T001</td>
+                <td className="bg-green-200 px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Sp9509d020g002140</td>
+                <td className="px-3 py-2 text-xs text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>Belongs to the PI3 PI4-kinase family</td>
+              </tr>
+              <tr className="bg-gray-50 hover:bg-gray-100">
+                <td className="px-3 py-2 text-xs text-blue-600 font-semibold border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>OG0005421</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>10.75</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>6.74E-03</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lg7742Ab014g003060</td>
+                <td className="bg-green-500 text-white px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lj7182a14Tg002820_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lm9252a014g002730_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Sp9509d016g005470</td>
+                <td className="px-3 py-2 text-xs text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>transposition, RNA-mediated</td>
+              </tr>
+              <tr className="hover:bg-gray-50">
+                <td className="px-3 py-2 text-xs text-blue-600 font-semibold border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>OG0004915</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>11.19</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>7.93E-03</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lg7742Ab005g000790</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lj7182a05Tg000730_T001</td>
+                <td className="bg-green-200 px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lm9252a005g000710_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Sp9509d003g000930</td>
+                <td className="px-3 py-2 text-xs text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>Serine/threonine-protein kinase smg-1</td>
+              </tr>
+              <tr className="bg-gray-50 hover:bg-gray-100">
+                <td className="px-3 py-2 text-xs text-blue-600 font-semibold border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>OG0011246</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>10.82</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>9.23E-03</td>
+                <td className="bg-green-200 px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lg7742Ab004g010790</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lj7182a04Tg009740_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lm9252a004g009880_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Sp9509d009g002750</td>
+                <td className="px-3 py-2 text-xs text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>DnaJ homolog subfamily C</td>
+              </tr>
+              <tr className="hover:bg-gray-50">
+                <td className="px-3 py-2 text-xs text-blue-600 font-semibold border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>OG0005862</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>11.24</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>9.77E-03</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lg7742Ab001g005990</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lj7182a01Tg004710_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lm9252a001g005510_T001</td>
+                <td className="bg-orange-300 px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Sp9509d015g004110</td>
+                <td className="px-3 py-2 text-xs text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>E3 ubiquitin-protein ligase</td>
+              </tr>
+              <tr className="bg-gray-50 hover:bg-gray-100">
+                <td className="px-3 py-2 text-xs text-blue-600 font-semibold border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>OG0005220</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>10.16</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>8.94E-03</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lg7742Ab009g010430</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lj7182a09Tg007710_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lm9252a009g009270_T001</td>
+                <td className="bg-green-500 text-white px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Sp9509d001g002350</td>
+                <td className="px-3 py-2 text-xs text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>ARF guanine-nucleotide exchange factor GNOM-like</td>
+              </tr>
+              <tr className="hover:bg-gray-50">
+                <td className="px-3 py-2 text-xs text-blue-600 font-semibold border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>OG0003959</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>10.49</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>9.38E-03</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lg7742Ab006g003150</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lj7182a06Tg002810_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lm9252a006g003330_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Sp9509d008g002800</td>
+                <td className="px-3 py-2 text-xs text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>Alpha-glucan water dikinase</td>
+              </tr>
+              <tr className="bg-gray-50 hover:bg-gray-100">
+                <td className="px-3 py-2 text-xs text-blue-600 font-semibold border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>OG0012224</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>10.75</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>9.67E-03</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lg7742Ab011g006310</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lj7182a11Tg005770_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lm9252a011g005920_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Sp9509d018g005380</td>
+                <td className="px-3 py-2 text-xs text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>acetyl-coa carboxylase</td>
+              </tr>
+              <tr className="hover:bg-gray-50">
+                <td className="px-3 py-2 text-xs text-blue-600 font-semibold border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>OG0001029</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>10.24</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>9.34E-03</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lg7742Ab015g009220</td>
+                <td className="bg-green-200 px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lj7182a15Tg008480_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lm9252a015g008980_T001</td>
+                <td className="bg-green-500 text-white px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Sp9509d007g011980</td>
+                <td className="px-3 py-2 text-xs text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>Belongs to the TRAFAC class myosin-kinesin ATPase superfamily. Myosin family</td>
+              </tr>
+              <tr className="bg-gray-50 hover:bg-gray-100">
+                <td className="px-3 py-2 text-xs text-blue-600 font-semibold border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>OG0007225</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>10.83</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>1.01E-02</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lg7742Ab016g000370</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lj7182a16Tg000230_T001</td>
+                <td className="bg-green-200 px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lm9252a016g000260_T002</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Sp9509d013g008700</td>
+                <td className="px-3 py-2 text-xs text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>Histone-lysine N-methyltransferase ATXR3</td>
+              </tr>
+              <tr className="hover:bg-gray-50">
+                <td className="px-3 py-2 text-xs text-blue-600 font-semibold border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>OG0000305</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>10.95</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>1.04E-02</td>
+                <td className="bg-green-500 text-white px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lg7742Ab002g007900</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lj7182a02Tg005920_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lm9252a002g006650_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Sp9509d014g001720</td>
+                <td className="px-3 py-2 text-xs text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>Chromatin structure-remodeling complex protein</td>
+              </tr>
+              <tr className="bg-gray-50 hover:bg-gray-100">
+                <td className="px-3 py-2 text-xs text-blue-600 font-semibold border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>OG0006605</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>11.67</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>1.15E-02</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lg7742Ab007g004030</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lj7182a07Tg003120_T002</td>
+                <td className="bg-orange-300 px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lm9252a007g003170_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Sp9509d005g007210</td>
+                <td className="px-3 py-2 text-xs text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>Auxin transport protein</td>
+              </tr>
+              <tr className="hover:bg-gray-50">
+                <td className="px-3 py-2 text-xs text-blue-600 font-semibold border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>OG0000129</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>10.54</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>1.06E-02</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lg7742Ab012g008460</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lj7182a08Mg002570_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lm9252a012g002120_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Sp9509d013g004070</td>
+                <td className="px-3 py-2 text-xs text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>Translation initiation factor eIF3 subunit 135</td>
+              </tr>
+              <tr className="bg-gray-50 hover:bg-gray-100">
+                <td className="px-3 py-2 text-xs text-blue-600 font-semibold border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>OG0005311</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>10.34</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>1.04E-02</td>
+                <td className="bg-green-500 text-white px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lg7742Ab011g008270</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lj7182a11Tg007360_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lm9252a011g007960_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Sp9509d018g007030</td>
+                <td className="px-3 py-2 text-xs text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>Cell division cycle and apoptosis regulator protein</td>
+              </tr>
+              <tr className="hover:bg-gray-50">
+                <td className="px-3 py-2 text-xs text-blue-600 font-semibold border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>OG0006123</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>10.37</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>1.05E-02</td>
+                <td className="bg-green-500 text-white px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lg7742Ab003g002040</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lj7182a03Tg001560_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lm9252a003g001710_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Sp9509d002g010680</td>
+                <td className="px-3 py-2 text-xs text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>atatg2,atg2</td>
+              </tr>
+              <tr className="bg-gray-50 hover:bg-gray-100">
+                <td className="px-3 py-2 text-xs text-blue-600 font-semibold border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>OG0005227</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>11.48</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>1.69E-02</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lg7742Ab009g012850</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lj7182a09Tg009790_T001</td>
+                <td className="bg-orange-300 px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lm9252a009g011520_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Sp9509d001g000110</td>
+                <td className="px-3 py-2 text-xs text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>E3 ubiquitin-protein ligase</td>
+              </tr>
+              <tr className="hover:bg-gray-50">
+                <td className="px-3 py-2 text-xs text-blue-600 font-semibold border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>OG0006436</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>11.14</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>1.16E-02</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lg7742Ab005g013530</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lj7182a05Tg010900_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lm9252a005g011820_T001</td>
+                <td className="bg-orange-300 px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Sp9509d003g011520</td>
+                <td className="px-3 py-2 text-xs text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>WD domain containing protein</td>
+              </tr>
+              <tr className="bg-gray-50 hover:bg-gray-100">
+                <td className="px-3 py-2 text-xs text-blue-600 font-semibold border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>OG0006848</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>11.56</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>2.70E-02</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lg7742Ab010g006900</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lj7182a10Tg005290_T002</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lm9252a010g005620_T001</td>
+                <td className="bg-green-500 text-white px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Sp9509d011g005360</td>
+                <td className="px-3 py-2 text-xs text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>Nuclear chaperone required for maturation and nuclear export of pre-60S ribosome subunits</td>
+              </tr>
+              <tr className="hover:bg-gray-50">
+                <td className="px-3 py-2 text-xs text-blue-600 font-semibold border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>OG0008145</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>10.78</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>3.09E-02</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lg7742Ab002g017940</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lj7182a02Tg015180_T001</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lm9252a002g016660_T001</td>
+                <td className="bg-green-500 text-white px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Sp9509d004g000350</td>
+                <td className="px-3 py-2 text-xs text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>DNA polymerase epsilon catalytic subunit A</td>
+              </tr>
+              <tr className="bg-gray-50 hover:bg-gray-100">
+                <td className="px-3 py-2 text-xs text-blue-600 font-semibold border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>OG0001101</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>10.17</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>1.94E-02</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lg7742Ab005g007530</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lj7182a05Tg006230_T009</td>
+                <td className="px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Lm9252a005g006950_T008</td>
+                <td className="bg-green-500 text-white px-3 py-2 text-xs text-gray-700 border-r border-gray-200" style={{ fontFamily: 'Urbanist, sans-serif' }}>Sp9509d003g006650</td>
+                <td className="px-3 py-2 text-xs text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>Regulates circadian rhythms</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
 
         <h1 className="text-3xl font-bold mb-6 mt-16" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Promoter region</h1>
