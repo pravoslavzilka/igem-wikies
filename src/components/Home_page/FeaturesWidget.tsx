@@ -31,8 +31,8 @@ const Features = [
 
 
 const FeaturesWidget = () => {
-  // Calculate how many times to repeat for seamless loop (at least 2x, ideally 3x for wide screens)
-  const repeatedFeatures = Features.concat(Features).concat(Features);
+  // Repeat features 4 times for a longer seamless loop
+  const repeatedFeatures = Features.concat(Features).concat(Features).concat(Features);
 
   return (
     <div className="mt-20" style={{ overflow: "hidden" }}>
@@ -46,10 +46,10 @@ const FeaturesWidget = () => {
         }}
       >
         <div
-          className="flex flex-nowrap items-start gap-16 features-marquee-track" // increased gap from 8 to 16
+          className="flex flex-nowrap items-start gap-20 features-marquee-track"
           style={{
             width: "max-content",
-            animation: "features-marquee-loop 36s linear infinite" // slower: 36s instead of 18s
+            animation: "features-marquee-loop 48s linear infinite" // slower for longer loop
           }}
         >
           {repeatedFeatures.map((item, idx) => (
@@ -86,19 +86,22 @@ const FeaturesWidget = () => {
               >
                 {item.title}
               </h3>
-              <div
-                className="mx-auto mt-4 bg-[#F6F6F6] rounded-full px-6 py-2 w-fit text-base font-medium"
-                style={{
-                  fontFamily: "Space Grotesk, sans-serif",
-                  fontWeight: 500,
-                  lineHeight: "140%",
-                  color: "#171F16",
-                  boxShadow: "none",
-                  fontSize: "0.8rem",
-                }}
-              >
-                {item.description}
-              </div>
+              {/* Only render description div if description is not empty */}
+              {item.description && (
+                <div
+                  className="mx-auto mt-4 bg-[#F6F6F6] rounded-full px-6 py-2 w-fit text-base font-medium"
+                  style={{
+                    fontFamily: "Space Grotesk, sans-serif",
+                    fontWeight: 500,
+                    lineHeight: "140%",
+                    color: "#171F16",
+                    boxShadow: "none",
+                    fontSize: "0.8rem",
+                  }}
+                >
+                  {item.description}
+                </div>
+              )}
             </div>
           ))}
         </div>
@@ -106,7 +109,7 @@ const FeaturesWidget = () => {
           {`
             @keyframes features-marquee-loop {
               0% { transform: translateX(0); }
-              100% { transform: translateX(-33.3333%); }
+              100% { transform: translateX(-25%); }
             }
             .features-marquee-track {
               will-change: transform;
