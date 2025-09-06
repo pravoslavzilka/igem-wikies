@@ -25,12 +25,12 @@ export const CONFIG = {
     accent: '#9DD019',
     categories: {
       0: '#779E45',  // No deforestation
-      1: '#fe958dff',  // 1-19k
-      2: '#EF8F84',  // 19-56k
-      3: '#E37564',  // 56-96k
-      4: '#D85B45',  // 96-130k
-      5: '#cc4125',  // 130-260k
-      6: '#B42104'   // 260k+
+      1: '#ffa399',  // 1-19k
+      2: '#f38a7c',  // 19-56k
+      3: '#e57260',  // 56-96k
+      4: '#d65943',  // 96-130k
+      5: '#c63f26',  // 130-260k
+      6: '#b42104'   // 260k+
     }
   }
 };
@@ -62,11 +62,17 @@ const BrazilDeforestationWidget = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  // Definícia rokov - 2013-2034 (22 rokov celkom)
+  const YEARS = [
+    2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, // Past: 11 rokov (indexy 0-10)
+    2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034  // Future: 11 rokov (indexy 11-21)
+  ];
+
   useEffect(() => {
     const loadData = async () => {
       try {
         setLoading(true);
-        const response = await fetch('https://static.igem.wiki/teams/5642/files/brazil-deforestation-categories.json');
+        const response = await fetch('https://static.igem.wiki/teams/5642/files/brazil-deforestation-categories2.json');
         
         if (!response.ok) {
           throw new Error(`Failed to load data: ${response.status}`);
@@ -98,13 +104,19 @@ const BrazilDeforestationWidget = () => {
       
       if (sliderValue <= 50) {
         // Ľavá polovica: 2013-2023 (indexy 0-10)
+        // sliderValue 0 = rok 2013 (index 0)
+        // sliderValue 50 = rok 2023 (index 10)
         dataIndex = Math.floor((sliderValue / 50) * 10);
       } else {
-        // Pravá polovica: zatiaľ stále 2023 (index 10)
-        dataIndex = 10;
+        // Pravá polovica: 2024-2034 (indexy 11-21)  
+        // sliderValue 51 = rok 2024 (index 11)
+        // sliderValue 100 = rok 2034 (index 21)
+        const futureProgress = (sliderValue - 50) / 50; // 0-1 pre pravú polovicu
+        dataIndex = 11 + Math.floor(futureProgress * 10); // 11-21
       }
       
-      dataIndex = Math.min(dataIndex, 10); // Zabezpečíme, že neprekročíme maximálny index
+      // Zabezpečíme, že neprekročíme maximálny dostupný index
+      dataIndex = Math.min(dataIndex, point.values.length - 1, YEARS.length - 1);
       
       const categoryValue = point.values[dataIndex] || 0;
       const color = CONFIG.colors.categories[categoryValue as keyof typeof CONFIG.colors.categories] || CONFIG.colors.categories[0];
@@ -122,16 +134,21 @@ const BrazilDeforestationWidget = () => {
   };
 
   const getCurrentYear = () => {
+    let yearIndex;
+    
     if (sliderValue <= 50) {
       // Ľavá polovica: 2013-2023
-      const yearProgress = sliderValue / 50;
-      const yearIndex = Math.floor(yearProgress * 10);
-      const years = [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023];
-      return years[yearIndex];
+      yearIndex = Math.floor((sliderValue / 50) * 10);
     } else {
-      // Pravá polovica: zatiaľ stále 2023
-      return 2023;
+      // Pravá polovica: 2024-2034
+      const futureProgress = (sliderValue - 50) / 50;
+      yearIndex = 11 + Math.floor(futureProgress * 10);
     }
+    
+    // Zabezpečíme, že neprekročíme dostupné roky
+    yearIndex = Math.min(yearIndex, YEARS.length - 1);
+    
+    return YEARS[yearIndex];
   };
 
   const currentYear = getCurrentYear();

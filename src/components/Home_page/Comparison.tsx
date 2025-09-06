@@ -98,7 +98,7 @@ const Comparison = () => {
           </div>
         </div>
       </div>
-      <div style={{ fontFamily: "Space Grotesk" }} className="text-center text-md text-black-700 mt-12">
+      <div style={{ fontFamily: "Space Grotesk", fontSize: "20px" }} className="text-center  text-black-700 mt-12">
         With the same land, duckweed can feed three times more cows than soybean     </div>
     </div>
   );
