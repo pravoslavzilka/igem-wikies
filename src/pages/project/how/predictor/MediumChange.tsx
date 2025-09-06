@@ -2,23 +2,23 @@
 
 const MediumChange = () => {
     const cultureData = [
-    { compound: 'NH4Cl', amount: '0.04' },
-    { compound: 'KNO3', amount: '103.03' },
-    { compound: 'K2HPO4', amount: '25.0' },
-    { compound: 'MgSO4·7H2O', amount: '88.50' },
-    { compound: 'CaCl2·2H2O', amount: '75.50' },
-    { compound: 'Fe-EDTA', amount: '6.01' },
-    { compound: 'H3BO3', amount: '2.84' },
-    { compound: 'MnSO4·H2O', amount: '1.54' },
-    { compound: 'ZnSO4·7H2O', amount: '0.22' },
-    { compound: 'CuSO4·5H2O', amount: '0.08' },
-    { compound: 'Na2MoO4·2H2O', amount: '0.12' }
+    { compound: 'NH₄Cl', amount: '6.04' },
+    { compound: 'KNO₃', amount: '103.83' },
+    { compound: 'KH₂PO₄', amount: '32.66' },
+    { compound: 'MgSO₄·7H₂O', amount: '98.59' },
+    { compound: 'CaCl₂·2H₂O', amount: '75.56' },
+    { compound: 'Fe-EDTA', amount: '6.61' },
+    { compound: 'H₃BO₃', amount: '2.84' },
+    { compound: 'MnSO₄·H₂O', amount: '1.54' },
+    { compound: 'ZnSO₄·7H₂O', amount: '0.22' },
+    { compound: 'CuSO₄·5H₂O', amount: '0.08' },
+    { compound: 'Na₂MoO₄·2H₂O', amount: '0.12' }
   ];
 
   return (
     <div className="max-w-6xl mx-auto p-8 bg-white">
       {/* Header */}
-      <h1 className="text-4xl font-bold text-gray-900 mb-8 " style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+      <h1 className="text-4xl font-bold text-gray-900 mb-12 " style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
         Cultivation Medium Change Experiment
       </h1>
 
@@ -33,7 +33,7 @@ const MediumChange = () => {
             <h2 className="text-xl font-semibold text-gray-900 mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               Rationale
             </h2>
-            <p className="text-gray-700 leading-relaxed text-sm" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+            <p className="text-gray-700 leading-relaxed text-md" style={{ fontFamily: 'Urbanist, sans-serif' }}>
               The inevitable part of successful duckweed cultivation is regular 
               cultivation medium change. It is necessary due to nutrient depletion 
               during the growth of our duckweed cultures. The nutrient uptake 
@@ -50,7 +50,7 @@ const MediumChange = () => {
             <h2 className="text-xl font-semibold text-gray-900 mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               Methodology
             </h2>
-            <p className="text-gray-700 leading-relaxed text-sm" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+            <p className="text-gray-700 leading-relaxed text-md" style={{ fontFamily: 'Urbanist, sans-serif' }}>
               To determine the minimum frequency of medium change, two types of 
               experiments were conducted simultaneously: a control experimental with 
               fresh medium every day (so that medium nutrient depletion or any 
@@ -67,36 +67,28 @@ const MediumChange = () => {
           </div>
 
           {/* Graph Placeholder */}
-          <div>
-            <h2 className="text-xl font-semibold text-gray-900 mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-              Results
-            </h2>
-            <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
-              <div className="text-gray-400 text-lg mb-2">📊</div>
-              <p className="text-gray-500 text-sm" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                Graph Placeholder
-              </p>
-              <p className="text-gray-400 text-xs mt-1" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                Biomass growth over time for experimental and control groups
+          <div className="bg-gray-50   rounded-lg ">
+              <div className=" rounded">
+                <img src="https://static.igem.wiki/teams/5642/images/how/predictor/medium-change-graph.webp" alt="Medium Change Graph" className="w-full h-auto rounded" />
+              </div>
+              <p className="text-sm text-gray-600 mt-3 p-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                <strong>Fig 2:</strong> Graph showing biomass growth over time for experimental and control groups.
               </p>
             </div>
-          </div>
         </div>
 
         {/* Right Column */}
         <div className="space-y-8">
           
           {/* Scientist Image Placeholder */}
-          <div className="bg-gray-100 border border-gray-200 rounded-lg p-6 text-center">
-            <div className="bg-gray-200 rounded-lg h-48 flex items-center justify-center mb-4">
-              <div className="text-gray-400 text-4xl">👨‍🔬</div>
+          <div className="bg-gray-50   rounded-lg ">
+              <div className=" rounded">
+                <img src="https://static.igem.wiki/teams/5642/images/how/predictor/duck-08557-min.webp" alt="Duckweed Cultivation" className="w-full h-auto rounded" />
+              </div>
+              <p className="text-sm text-gray-600 mt-3 p-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                <strong>Fig 1:</strong> Marko, one of our cultivation hustlers, undergoing the tedious hustle of medium exchange:D
+              </p>
             </div>
-            <p className="text-gray-600 text-sm" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-              Fig 1: Metric unit of our cultivation buckets, 
-              undergoing the investigation of medium 
-              cultivation change.
-            </p>
-          </div>
 
           {/* Culture Medium Composition Table */}
           <div>
@@ -107,10 +99,10 @@ const MediumChange = () => {
               <table className="w-full">
                 <thead className="bg-green-100">
                   <tr>
-                    <th className="px-4 py-3 text-left text-sm font-semibold text-gray-900" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                    <th className="px-4 py-3 text-left text-md font-semibold text-gray-900" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
                       Compound
                     </th>
-                    <th className="px-4 py-3 text-left text-sm font-semibold text-gray-900" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                    <th className="px-4 py-3 text-left text-md font-semibold text-gray-900" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
                       Amount (mg/L)
                     </th>
                   </tr>
@@ -118,10 +110,10 @@ const MediumChange = () => {
                 <tbody className="bg-white divide-y divide-gray-200">
                   {cultureData.map((item, index) => (
                     <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                      <td className="px-4 py-3 text-sm text-gray-900" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                      <td className="px-4 py-3 text-md text-gray-900" style={{ fontFamily: 'Urbanist, sans-serif' }}>
                         {item.compound}
                       </td>
-                      <td className="px-4 py-3 text-sm text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                      <td className="px-4 py-3 text-md text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>
                         {item.amount}
                       </td>
                     </tr>
@@ -133,7 +125,10 @@ const MediumChange = () => {
 
           {/* Results Text */}
           <div>
-            <p className="text-gray-700 leading-relaxed text-sm" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+            <h2 className="text-xl font-semibold text-gray-900 mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              Results
+            </h2>
+            <p className="text-gray-700 leading-relaxed text-md" style={{ fontFamily: 'Urbanist, sans-serif' }}>
               Based on the data shown in the graph, it was determined that the optimal medium change frequency that is ensuring the maximal growth rate but at the same time the maintenance needs. Every day is ensuring the fastest growth, so not the maximal biomass yields of the control group and experimental groups start to deviate noticeably.
             </p>
           </div>
