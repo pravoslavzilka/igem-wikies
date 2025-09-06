@@ -10,9 +10,12 @@ import ProjectWhat from './pages/project/What';
 import ProjectWhy from './pages/project/Why';
 import ProjectHow from './pages/project/How';
 
+// Project pages - how
+
 import Taifr from './pages/project/how/Taifr';
 
 import LimitingBiomass from './pages/project/how/predictor/LimitingBiomass';
+import MediumChange from './pages/project/how/predictor/MediumChange';
 
 // Toolbox pages
 import DeepDiveDocument from './pages/toolbox/DeepDive';
@@ -59,13 +62,16 @@ function App() {
           <Route path="/project/how/predictor/limiting-biomass/" element={<LimitingBiomass />} />
 
 
-
+          {/* How Routes */}
           <Route path="/project/how/cultivator/" element={<LivingLayersDocument />} />
 
           <Route path="/project/how/taifr/" element={<Taifr />} />
 
+          <Route path="/project/how/predictor/limiting-biomass/" element={<LimitingBiomass />} />
+          <Route path="/project/how/predictor/medium-change/" element={<MediumChange />} />
+
           
-          {/* Handbook Route */}
+          
           
           {/* Toolbox Routes */}
           <Route path="/toolbox/deep-dive-on-duckweed/" element={<DeepDiveDocument />} />
