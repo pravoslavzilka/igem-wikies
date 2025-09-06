@@ -477,40 +477,49 @@ const PromotersSilico = () => {
               </tr>
             </tbody>
           </table>
+          <div className="bg-gray-50 rounded-lg">
+              
+              
+              
+
+              <p className="text-sm text-gray-600 mt-3 p-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                <strong>Fig 9:</strong>   Summarized table of candidate genes identified by our workflow. Twenty orthogroups with rlog normalized expression mean above 10, the lowest coefficient of variance and reasonable ontology of all genes included are shown in the table. Genes with MoClo compatible promoter regions are marked green and were directly selected for experimental evaluation, all unmarked are incompatible. Orange marked genes were chosen for synthesis without BbsI restriction sites - such synthesized promoters regions were also experimentally evaluated.
+              </p>
+            </div>
         </div>
       </div>
 
 
-        <h1 className="text-3xl font-bold mb-6 mt-16" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Promoter region</h1>
+        <h1 className="text-3xl font-bold mb-2 mt-16" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Promoter region</h1>
 
 
-        <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
-          The distance of promoter region from transcription starting site (TSS) varies strongly, from tens of bp to several kbp. The gold standard is to search for promoter sequences within 2kbp upstream of the TSS. However, it is known that the untranslated region (UTR), located between the TSS and the start codon (ATG), also influences gene expression levels, particularly through post-transcriptional regulation mechanisms (Dassi et al., 2024) [16], and we had to take this into account since the exact UTR length is not annotated for most genes.
-        </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-8">
+ 
+            
+            <div className="bg-gray-50 rounded-lg">
+              
+              
+              <div className="bg-white rounded">
+                <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure10.webp" alt="Large Tray Growth Curve" className="w-full h-auto" />
+              </div>
 
+              <p className="text-sm text-gray-600 mt-3 p-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                <strong>Fig 10:</strong>   Schematic representation of a gene region showing promoter (orange), TSS (green), UTR (red), start codon ATG (light blue), and the CDS (dark blue; coding sequence, gene of interest). 
+              </p>
+            </div>
 
-        <div className="mb-8 flex flex-col md:flex-row md:items-start md:justify-between">
-      <div className="md:w-1/2">
-      
-      
-        <p className="text-justify leading-relaxed text-gray-800 mb-4 mt-10">
-          Therefore, we evaluated promoter sequences concatenated with the UTR, which could be directly ligated to the gene during transformation experiments. For laboratory evaluation, the promoter+UTR regions were defined as 2 kbp upstream from the ATG (start of the coding sequence, CDS).
-        </p>
-        
-      </div>
-      <div className="md:w-1/2 flex flex-col gap-2 mt-4 md:mt-0 justify-center items-center m-10">
-        <div className="flex flex-row gap-4">
-          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-sdg-logo-un-emblem-square-print.webp" alt="SDG Main" className="w-20 h-20 md:w-36 md:h-36 object-contain" />
-          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-print-02.webp" alt="SDG 2" className="w-20 h-20 md:w-36 md:h-36 object-contain" />
-          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-print-06.webp" alt="SDG 6" className="w-20 h-20 md:w-36 md:h-36 object-contain" />
-        </div>
-        <div className="flex flex-row gap-4">
-          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-print-09.webp" alt="SDG 9"  className="w-20 h-20 md:w-36 md:h-36 object-contain" />
-          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-print-12.webp" alt="SDG 12" className="w-20 h-20 md:w-36 md:h-36 object-contain" />
-          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-print-13.webp" alt="SDG 13" className="w-20 h-20 md:w-36 md:h-36 object-contain" />
-        </div>
-      </div>
-      </div>
+            <div className="flex items-center">
+              <p className=" leading-relaxed" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                          The distance of promoter region from transcription starting site (TSS) varies strongly, from tens of bp to several kbp. The gold standard is to search for promoter sequences within 2kbp upstream of the TSS. However, it is known that the untranslated region (UTR), located between the TSS and the start codon (ATG), also influences gene expression levels, particularly through post-transcriptional regulation mechanisms (Dassi et al., 2024) [16], and we had to take this into account since the exact UTR length is not annotated for most genes.
+
+                <br/><br/>
+                 Therefore, we evaluated promoter sequences concatenated with the UTR, which could be directly ligated to the gene during transformation experiments. For laboratory evaluation, the promoter+UTR regions were defined as 2 kbp upstream from the ATG (start of the coding sequence, CDS).
+
+              </p>
+              
+            </div>
+
+          </div>  
 
 
         <h1 className="text-3xl font-bold mb-6 mt-16" style={{ fontFamily: "Space Grotesk, sans-serif" }}>MoClo compatibility</h1>
