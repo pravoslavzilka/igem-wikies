@@ -59,8 +59,6 @@ function App() {
           <Route path="/project/why/" element={<ProjectWhy />} />
           <Route path="/project/how/" element={<ProjectHow />} />
 
-          <Route path="/project/how/predictor/limiting-biomass/" element={<LimitingBiomass />} />
-
 
           {/* How Routes */}
           <Route path="/project/how/cultivator/" element={<LivingLayersDocument />} />

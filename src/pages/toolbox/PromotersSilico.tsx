@@ -8,10 +8,10 @@ const PromotersSilico = () => {
 
         <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: "Space Grotesk, sans-serif" }}>In silico workflow</h1>
         <p className="leading-relaxed" style={{ fontFamily: "Urbanist, sans-serif" }}>Initially, we tried to develop our own workflow for identification of highly expressed genes and their promoters in multiple duckweed species. We successfully identified the highest expressing genes and extracted their promoters based on transcriptomics data, isolated them and even tried to clone them in front of the RUBY reporter.  
-However, we were not successful so we needed to refine our workflow. After extensive literature research and consultations with Dr. Veronika Jedlíčková, iGEM Marburg 2024 team and Dr. Eric Yang, we discovered that we made several mistakes in our in silico workflow, for example not including MoClo compatibility filtering but most importantly, not comparing data across different transcriptomes. 
-We implemented the feedback we received and proceeded with the workflow we are presenting. You can see the graphical representation of our workflow in the Figure X. 
-In our in silico promoter identification of promoter sequences, we drawn an inspiration from the brilliant workflow of the endogenous part identification in Taraxacum presented by the iGEM Marburg 2024 team with their project Tarakate and the article by Zhou et al., 2023 [].
-</p>
+        However, we were not successful so we needed to refine our workflow. After extensive literature research and consultations with Dr. Veronika Jedlíčková, iGEM Marburg 2024 team and Dr. Eric Yang, we discovered that we made several mistakes in our in silico workflow, for example not including MoClo compatibility filtering but most importantly, not comparing data across different transcriptomes. 
+        We implemented the feedback we received and proceeded with the workflow we are presenting. You can see the graphical representation of our workflow in the Figure X. 
+        In our in silico promoter identification of promoter sequences, we drawn an inspiration from the brilliant workflow of the endogenous part identification in Taraxacum presented by the iGEM Marburg 2024 team with their project Tarakate and the article by Zhou et al., 2023 [].
+        </p>
 
         <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/yellow-simple-success-flowchart-instagram-post.webp" alt="Workflow Diagram" className="my-8 mx-auto" />
 
@@ -36,16 +36,17 @@ In our in silico promoter identification of promoter sequences, we drawn an insp
         </p>
       </div>
       <div className="md:w-1/2 flex flex-col gap-2 mt-4 md:mt-0 justify-center items-center m-10">
-        <div className="flex flex-row gap-4">
-          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-sdg-logo-un-emblem-square-print.webp" alt="SDG Main" className="w-20 h-20 md:w-36 md:h-36 object-contain" />
-          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-print-02.webp" alt="SDG 2" className="w-20 h-20 md:w-36 md:h-36 object-contain" />
-          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-print-06.webp" alt="SDG 6" className="w-20 h-20 md:w-36 md:h-36 object-contain" />
-        </div>
-        <div className="flex flex-row gap-4">
-          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-print-09.webp" alt="SDG 9"  className="w-20 h-20 md:w-36 md:h-36 object-contain" />
-          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-print-12.webp" alt="SDG 12" className="w-20 h-20 md:w-36 md:h-36 object-contain" />
-          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-print-13.webp" alt="SDG 13" className="w-20 h-20 md:w-36 md:h-36 object-contain" />
-        </div>
+        <div className="bg-gray-50 rounded-lg">
+              
+              
+              <div className="bg-white rounded">
+                <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure1.webp" alt="Large Tray Growth Curve" className="w-full h-auto" />
+              </div>
+              
+              <p className="text-sm text-gray-600 mt-3 p-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                <strong>Fig 1:</strong> Example of downloadable reference genome and annotation resources from the Lemna.org database. Shown are files related to the Lemna japonica 7182 genome assembly (Le_japonica_7182-REF-CSHL-1.0), including FASTA, GFF3, protein, CDS and transcript datasets.
+              </p>
+            </div>
       </div>
   </div>
 
@@ -62,6 +63,18 @@ In our in silico promoter identification of promoter sequences, we drawn an insp
 
         </p>
 
+            <div className="bg-gray-50 mt-5  mb-5 rounded-lg">
+              
+              
+             <div className="bg-white rounded">
+                <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure2.webp" alt="Large Tray Growth Curve" className="w-full h-auto" />
+              </div>
+              
+              <p className="text-sm text-gray-600 mt-3 p-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                <strong>Fig 2:</strong>  Exemplary Trim Galore! wrapper command-line execution with settings
+              </p>
+            </div>
+
 
 
         <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
@@ -69,29 +82,91 @@ In our in silico promoter identification of promoter sequences, we drawn an insp
 
         </p>
 
+        <div className="bg-gray-50 mt-5  mb-5 rounded-lg">
+             <div className="bg-white rounded">
+                <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure3.webp" alt="Large Tray Growth Curve" className="w-full h-auto" />
+              </div>
+              
+              <p className="text-sm text-gray-600 mt-3 p-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                <strong>Fig 3:</strong>  STAR aligner command-line settings
+              </p>
+            </div>
+
         <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
           FeatureCounts [10] (2.0.8) software is used for read quantification and is a common part of RNA seq analysis workflow that utilizes STAR aligner. We have ran the Rsubread::featureCount in R with feature type set to “transcript”. The final feature-count table were exported in csv with expression level provided as raw counts. 
 
 
         </p>
+            <div className="bg-gray-50 mt-5  mb-5 rounded-lg">
+            <div className="bg-white rounded">
+                <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure4.webp" alt="Large Tray Growth Curve" className="w-full h-auto" />
+              </div>
+              
+              <p className="text-sm text-gray-600 mt-3 p-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                <strong>Fig 4:</strong>   Execution of featureCount command with settings
+
+              </p>
+            </div>
 
 
-        <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
-            The whole workflow is shown step-by-step in the Fig. 5 for clarity.
-        </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-8">
+ 
+            <div className="flex items-center">
+              <p className="text-gray-700 leading-relaxed" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                 The whole workflow is shown step-by-step in the Fig. 5 for clarity.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg">
+              
+              
+              <div className="bg-white rounded">
+                <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure5.webp" alt="Large Tray Growth Curve" className="w-full h-auto" />
+              </div>
+
+              <p className="text-sm text-gray-600 mt-3 p-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                <strong>Fig 5:</strong>   RNAseq expression analysis workflow schema.
+              </p>
+            </div>
+
+          </div>    
+
+
+        
+
+
 
 
         <h1 className="text-3xl font-bold mb-6 mt-16" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Interspecies comparability - Orthogroups</h1>
 
-        <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
-          The first step needed for the direct comparison of transcriptomes of different species is the identification of orthologous genes. We decided to use OrthoFinder (OF), a software tool for phylogenetic orthology inference. Orthogroups proposed by OF consist of phylogenetically close genes, suggesting they likely share identical functions even in different species. OF uses proteomes of individual species for the analysis. We have provided proteomes from Lemna.org and from study of Arturo Marí-Ordóñez mentioned above [3]. The analysis ran using OrthoFinder 2.5.5 with default settings.
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-8">
+ 
+            
+            <div className="bg-gray-50 rounded-lg">
+              
+              
+              <div className="bg-white rounded">
+                <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure6.webp" alt="Large Tray Growth Curve" className="w-full h-auto" />
+              </div>
 
-        </p>
+              <p className="text-sm text-gray-600 mt-3 p-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                <strong>Fig 6:</strong>   Schematic overview of the OrthoFinder 2 workflow used for orthology inference and identification of orthogroups from proteomes of Lemnoideae species (taken from OrthoFinder tutorials by David Emms (https://davidemms.github.io).
+              </p>
+            </div>
+
+            <div className="flex items-center">
+              <p className=" leading-relaxed" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                 The first step needed for the direct comparison of transcriptomes of different species is the identification of orthologous genes. We decided to use OrthoFinder (OF), a software tool for phylogenetic orthology inference. Orthogroups proposed by OF consist of phylogenetically close genes, suggesting they likely share identical functions even in different species. OF uses proteomes of individual species for the analysis. We have provided proteomes from Lemna.org and from study of Arturo Marí-Ordóñez mentioned above [3]. The analysis ran using OrthoFinder 2.5.5 with default settings.
+                  <br /><br />
+                          Orthogroups consist not only of orthologous genes – similar genes originating from different species – but also paralogous genes, which originate from the same species and result from gene duplications or pseudogene formation. To obtain a single expression level per orthogroup, we have proposed several strategies for the treatment of paralogs. After discussion with Eric Yang and based on his publication [12], only the highest expressed gene from each species in an orthogroup was considered - this avoids distortion of the expression level caused by pseudogenes and inactive duplicated genes.
+
+              </p>
+              
+            </div>
+
+          </div>  
 
 
-        <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
-          Orthogroups consist not only of orthologous genes – similar genes originating from different species – but also paralogous genes, which originate from the same species and result from gene duplications or pseudogene formation. To obtain a single expression level per orthogroup, we have proposed several strategies for the treatment of paralogs. After discussion with Eric Yang and based on his publication [12], only the highest expressed gene from each species in an orthogroup was considered - this avoids distortion of the expression level caused by pseudogenes and inactive duplicated genes.
-        </p>
+       
 
 
 
