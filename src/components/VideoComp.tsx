@@ -63,7 +63,18 @@ const VideoComp = () => {
           
               
             </div>
-            <p className="text-center text-gray-600 font-medium">soybean</p>
+            <p className="text-center pt-10 text-md text-gray-600 font-medium"
+            style={{
+                  fontFamily: "Space Grotesk, sans-serif",
+                  fontWeight: 500,
+                  fontSize: "1.3rem",
+                  lineHeight: "140%",
+                  fontStyle: "medium",
+                  letterSpacing: "0px",
+                  color: "#171F16",
+                }}>
+
+            Soybean</p>
           </div>
 
           {/* Duckweed timelapse video */}
@@ -74,7 +85,19 @@ const VideoComp = () => {
               </video>
 
             </div>
-            <p className="text-center text-gray-600 font-medium">duckweed</p>
+            <p className="text-center text-gray-600 pt-10 font-medium"
+            style={{
+                  fontFamily: "Space Grotesk, sans-serif",
+                  fontWeight: 500,
+                  fontSize: "1.3rem",
+                  lineHeight: "140%",
+                  fontStyle: "medium",
+                  letterSpacing: "0px",
+                  color: "#171F16",
+                }}>
+              
+              
+              Duckweed</p>
           </div>
         </div>
       </div>
