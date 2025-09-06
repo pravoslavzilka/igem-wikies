@@ -4,7 +4,7 @@ const LimitingBiomass = () => {
     return (
     <div className="max-w-6xl mx-auto p-8 bg-white" style={{ fontFamily: 'Urbanist, sans-serif' }}>
       {/* Header */}
-      <h1 className="text-4xl font-bold mb-8 text-gray-900" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+      <h1 className="text-4xl font-bold mb-12 text-gray-900" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
         Limiting biomass density experiment
       </h1>
 
