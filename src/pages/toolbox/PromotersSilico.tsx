@@ -6,7 +6,7 @@ const PromotersSilico = () => {
     <div className="min-h-screen bg-white p-8" style={{ fontFamily: "Urbanist, sans-serif" }}>
       <div className="max-w-6xl mx-auto">
 
-        <h1 className="text-3xl font-bold mb-4" style={{ fontFamily: "Space Grotesk, sans-serif" }}>In silico workflow</h1>
+        <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: "Space Grotesk, sans-serif" }}>In silico workflow</h1>
         <p className="leading-relaxed" style={{ fontFamily: "Urbanist, sans-serif" }}>Initially, we tried to develop our own workflow for identification of highly expressed genes and their promoters in multiple duckweed species. We successfully identified the highest expressing genes and extracted their promoters based on transcriptomics data, isolated them and even tried to clone them in front of the RUBY reporter.  
 However, we were not successful so we needed to refine our workflow. After extensive literature research and consultations with Dr. Veronika Jedlíčková, iGEM Marburg 2024 team and Dr. Eric Yang, we discovered that we made several mistakes in our in silico workflow, for example not including MoClo compatibility filtering but most importantly, not comparing data across different transcriptomes. 
 We implemented the feedback we received and proceeded with the workflow we are presenting. You can see the graphical representation of our workflow in the Figure X. 

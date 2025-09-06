@@ -12,6 +12,8 @@ import ProjectHow from './pages/project/How';
 
 import Taifr from './pages/project/how/Taifr';
 
+import LimitingBiomass from './pages/project/how/predictor/LimitingBiomass';
+
 // Toolbox pages
 import DeepDiveDocument from './pages/toolbox/DeepDive';
 import PromotersSilico from './pages/toolbox/PromotersSilico'
@@ -53,6 +55,9 @@ function App() {
           <Route path="/project/what/" element={<ProjectWhat />} />
           <Route path="/project/why/" element={<ProjectWhy />} />
           <Route path="/project/how/" element={<ProjectHow />} />
+
+          <Route path="/project/how/predictor/limiting-biomass/" element={<LimitingBiomass />} />
+
 
 
           <Route path="/project/how/cultivator/" element={<LivingLayersDocument />} />
