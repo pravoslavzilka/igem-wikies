@@ -44,9 +44,9 @@ const Home = () => {
       
       {/* <Transition /> */}
 
-      <VideoComp />
+      <Transition />
 
-      <Comparison />
+
 
      
 

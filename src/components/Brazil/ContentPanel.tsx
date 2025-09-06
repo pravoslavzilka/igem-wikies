@@ -1,13 +1,13 @@
 import React, { useMemo, useState, useEffect } from 'react';
-import { motion, AnimatePresence, Easing, Variants } from 'framer-motion';
+import { motion, AnimatePresence, Variants, Easing } from 'framer-motion';
 import "@fontsource/space-grotesk";
 import "@fontsource/space-grotesk/700.css";
 
 interface ContentPanelProps {
-  timelinePosition: number;
+  currentYear: number;
 }
 
-interface DynamicContent {
+interface ContentData {
   tagline: string;
   headline: string;
   quote: string;
@@ -111,45 +111,50 @@ const authorVariants: Variants = {
   }
 };
 
-const ContentPanel: React.FC<ContentPanelProps> = ({ timelinePosition }) => {
-  const [displayContent, setDisplayContent] = useState<DynamicContent | null>(null);
+const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
+  const [displayContent, setDisplayContent] = useState<ContentData | null>(null);
   const [contentKey, setContentKey] = useState(0);
 
-  // Dynamic content based on slider position - updated for new logic
-  const getDynamicContent = useMemo((): DynamicContent => {
-    if (timelinePosition <= 25) {
-      // PAST: Pristine state
+  // Get content based on current year
+  const getYearContent = useMemo((): ContentData => {
+    if (currentYear <= 2016) {
       return {
-        tagline: "PRISTINE PERIOD",
-        headline: "Brazil's forests in their natural state.",
-        quote: "The Amazon rainforest existed in perfect balance, with pristine ecosystems covering vast areas of Brazil.",
-        author: "Dr. Elena Rodriguez",
-        title: "Forest Ecology Specialist"
+        tagline: "SOYBEAN",
+        headline: "is the most important source of protein for livestock worldwide",
+        quote: "66% of the protein feedstock our farmers are dependent on is imported",
+        author: "Recent Trends for Enhancing the Diversity",
+        title: "and Quality of Soybean Products"
       };
-    } else if (timelinePosition <= 60) {
-      // PRESENT: Deforestation phase - areas disappearing
+    } else if (currentYear <= 2019) {
       return {
-        tagline: "DEFORESTATION CRISIS",
-        headline: "Forest areas are vanishing rapidly.",
-        quote: "We're witnessing unprecedented rates of forest loss as ecosystems disappear from the landscape entirely.",
-        author: "Prof. Marcus Silva",
-        title: "Deforestation Research Lead"
+        tagline: "70%",
+        headline: "of soybean production is used as feedstock",
+        quote: "40% of the global production is concentrated in Brazil",
+        author: "Foreign Agricultural Service",
+        title: "U.S. Department of Agriculture"
+      };
+    } else if (currentYear <= 2022) {
+      return {
+        tagline: "15 MILLIONS",
+        headline: "hectares of Brazil's tropical savannas of Cerrado is lost",
+        quote: "Since 2000, those savannas have been converted into soybean fields",
+        author: "The expansion of soybean production",
+        title: "in the Cerrado"
       };
     } else {
-      // FUTURE: Recovery through duckweed solution - green areas appearing
       return {
-        tagline: "DUCKWEED REVOLUTION",
-        headline: "Lost forests are being reborn green.",
-        quote: "Our innovative duckweed technology is bringing life back to areas that were completely lost, creating thriving green ecosystems.",
-        author: "Dr. Helena Santos",
-        title: "Ecological Recovery Pioneer"
+        tagline: "TWO-THIRDS",
+        headline: "of the endemic flora of the Cerrado is threatened with extinction",
+        quote: "We can do better!",
+        author: "Prof. Carlos Klink",
+        title: "Department of Ecology University of Brasília"
       };
     }
-  }, [timelinePosition]);
+  }, [currentYear]);
 
   // Handle content transitions
   useEffect(() => {
-    const newContent = getDynamicContent;
+    const newContent = getYearContent;
     
     if (!displayContent) {
       setDisplayContent(newContent);
@@ -159,11 +164,10 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ timelinePosition }) => {
     const contentChanged = JSON.stringify(displayContent) !== JSON.stringify(newContent);
     
     if (contentChanged) {
-      // Trigger content change animation
       setContentKey(prev => prev + 1);
       setDisplayContent(newContent);
     }
-  }, [getDynamicContent, displayContent]);
+  }, [getYearContent, displayContent]);
 
   if (!displayContent) {
     return <div className="text-left space-y-6 sm:space-y-8 h-64"></div>;
@@ -180,18 +184,24 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ timelinePosition }) => {
           exit="exit"
         >
           <div className="mb-4 sm:mb-6">
-            {/* Tagline */}
+            {/* Tagline - OBROVSKE */}
             <motion.div 
-              className="text-2xl sm:text-2xl font-medium tracking-wider mb-3 sm:mb-4 center" 
-              style={{ color: CONFIG.colors.accent, fontFamily: "Space Grotesk, sans-serif", fontWeight: 700, letterSpacing: "4px", textAlign: 'center', }}
+              className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl font-bold tracking-wider mb-6 sm:mb-8" 
+              style={{ 
+                color: CONFIG.colors.accent, 
+                fontFamily: "Space Grotesk, sans-serif", 
+                fontWeight: 900, 
+                letterSpacing: "2px",
+                textAlign: 'center'
+              }}
               variants={taglineVariants}
             >
               <motion.span
                 animate={{
                   textShadow: [
-                    "0 0 0px rgba(116, 198, 157, 0)",
-                    "0 0 8px rgba(116, 198, 157, 0.3)",
-                    "0 0 0px rgba(116, 198, 157, 0)"
+                    "0 0 0px rgba(157, 208, 25, 0)",
+                    "0 0 15px rgba(157, 208, 25, 0.4)",
+                    "0 0 0px rgba(157, 208, 25, 0)"
                   ]
                 }}
                 transition={{ duration: 3, repeat: Infinity }}
@@ -201,8 +211,14 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ timelinePosition }) => {
             </motion.div>
             
             <motion.h1 
-              className="text-2xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-4xl 2xl:text-5xl font-light leading-tight text-white mb-6 sm:mb-8"
-              variants={headlineVariants} style={{marginTop:'40px', textAlign: 'center', fontFamily: "Space Grotesk, sans-serif", fontWeight: 700, letterSpacing: "0px"}}
+              className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-2xl 2xl:text-3xl font-medium leading-relaxed text-white mb-6 sm:mb-8"
+              variants={headlineVariants} 
+              style={{
+                marginTop:'20px', 
+                textAlign: 'center', 
+                fontFamily: "Space Grotesk, sans-serif", 
+                fontWeight: 500
+              }}
             >
               {displayContent.headline}
             </motion.h1>
