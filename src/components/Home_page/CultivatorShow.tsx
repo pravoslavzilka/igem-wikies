@@ -18,7 +18,7 @@ const CultivatorShow = () => {
               ...and equipping it with systems for effortless cultivation at any scale.
             </h1>
             
-            <div className="text-lg text-gray-600 leading-relaxed" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+            <div className="text-lg text-gray-600 leading-relaxed" style={{ fontFamily: 'Urbanist, sans-serif', fontSize: '19px', lineHeight: '140%' }}>
               <p>
                 Our in-house made autonomous cultivation unit, <b>CULTIVATOR</b> can grow, monitor, and harvest duckweed with maximum efficiency and minimum user work - saving hours per day for any scientist looking to scale up their duckweed experiments.
               </p>
@@ -38,31 +38,31 @@ const CultivatorShow = () => {
             {/* Feature highlights: stack vertically on mobile, horizontally on desktop */}
             <div className="flex flex-col lg:flex-row items-center justify-center w-full space-y-8 lg:space-y-0 lg:space-x-12" style={{ fontFamily: 'Space Grotesk, sans-serif', lineHeight: '140%', fontWeight: 500 }}>
               {/* Feature highlights in a horizontal row */}
-              <div className="flex flex-row items-center justify-center w-full space-x-8">
+              <div className="flex flex-row items-center justify-center w-full space-x-8 " >
                 {/* Feature 1 */}
                 <div className="text-center flex-1">
                   <div className="w-auto h-12  mx-auto mb-3 mt-5 flex items-center justify-center">
                     <Clock10Icon color="#779E45" style={{ height: '55px', width: '55px' }} />
                   </div>
-                  <div className="font-semibold text-gray-800 text-sm mb-1">Saves 2 hours per</div>
-                  <div className="font-semibold text-gray-800 text-sm mb-1">m² of duckweed</div>
-                  <div className="font-semibold text-gray-800 text-sm">per week.</div>
+                  <div className="font-semibold text-gray-800 text-md mb-1">Saves 2 hours per</div>
+                  <div className="font-semibold text-gray-800 text-md mb-1">m² of duckweed</div>
+                  <div className="font-semibold text-gray-800 text-md">per week.</div>
                 </div>
                 {/* Feature 2 */}
                 <div className="text-center flex-1">
                   <div className="w-auto h-12 mx-auto mb-3 flex items-center justify-center">
                     <ShieldCheck color="#779E45" style={{ height: '55px', width: '55px' }} />
                   </div>
-                  <div className="font-semibold text-gray-800 text-sm mb-1">Enables 5 parallel</div>
-                  <div className="font-semibold text-gray-800 text-sm">experiments</div>
+                  <div className="font-semibold text-gray-800 text-md mb-1">Enables 5 parallel</div>
+                  <div className="font-semibold text-gray-800 text-md">experiments</div>
                 </div>
                 {/* Feature 3 */}
                 <div className="text-center flex-1">
                   <div className="w-auto h-12 mx-auto mb-3 flex items-center justify-center">
                     <BarChart4Icon color="#779E45" style={{ height: '55px', width: '55px' }} />
                   </div>
-                  <div className="font-semibold text-gray-800 text-sm mb-1">Secures maximum</div>
-                  <div className="font-semibold text-gray-800 text-sm">yield</div>
+                  <div className="font-semibold text-gray-800 text-md mb-1">Secures maximum</div>
+                  <div className="font-semibold text-gray-800 text-md">yield</div>
                 </div>
               </div>
             </div>

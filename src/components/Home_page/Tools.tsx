@@ -26,7 +26,7 @@ const Tools = () => {
                 style={{
                     fontFamily: 'Urbanist, sans-serif',
                     fontWeight: 500,
-                    fontSize: '16px',
+                    fontSize: '18px',
                     lineHeight: '140%',
                     letterSpacing: '0px',
                     textAlign: 'center'
@@ -34,7 +34,7 @@ const Tools = () => {
                 <p>
                     With <span style={{
                     fontWeight: 700,
-                    fontSize: '16px',
+                    fontSize: '18px',
                     lineHeight: '140%',
                     letterSpacing: '0px',
                     textAlign: 'center',
@@ -55,7 +55,7 @@ const Tools = () => {
                 style={{
                     fontFamily: 'Urbanist, sans-serif',
                     fontWeight: 500,
-                    fontSize: '16px',
+                    fontSize: '18px',
                     lineHeight: '140%',
                     letterSpacing: '0px',
                     textAlign: 'center'
@@ -82,7 +82,7 @@ const Tools = () => {
                 style={{
                     fontFamily: 'Urbanist, sans-serif',
                     fontWeight: 500,
-                    fontSize: '16px',
+                    fontSize: '18px',
                     lineHeight: '140%',
                     letterSpacing: '0px',
                     textAlign: 'center'

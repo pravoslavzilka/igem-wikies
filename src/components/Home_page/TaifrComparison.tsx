@@ -5,11 +5,14 @@ const TaifrComparison = () => {
         {/* Top image placeholder */}
         <div className="w-full h-80  rounded-lg flex items-center justify-center mb-5">
           <div className="text-center md:mb-60">
-            <img
+            {/*<img
               src="https://static.igem.wiki/teams/5642/images/homepage/taifr2.webp"
               alt="Dr. Arturo Marí-Ordóñez"
               className="rounded-lg w-full max-w-full sm:max-w-7xl md:max-w-6xl lg:max-w-5xl h-auto mx-auto md:mb-20"
-            />
+            />*/}
+            <video autoPlay loop muted playsInline>
+                <source src="https://github.com/pravoslavzilka/igem-wikies-off/raw/refs/heads/main/src/taifr.mp4" className="rounded-lg w-full max-w-full sm:max-w-7xl md:max-w-6xl lg:max-w-5xl h-auto mx-auto md:mb-20" type="video/mp4"></source>
+              </video>
           </div>
         </div>
 
