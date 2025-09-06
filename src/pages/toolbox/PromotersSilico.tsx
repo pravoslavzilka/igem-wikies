@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 const PromotersSilico = () => {
   return (
-    <div className="min-h-screen bg-white p-8">
+    <div className="min-h-screen bg-white p-8" style={{ fontFamily: "Urbanist, sans-serif" }}>
       <div className="max-w-6xl mx-auto">
 
         <h1 className="text-3xl font-bold mb-4" style={{ fontFamily: "Space Grotesk, sans-serif" }}>In silico workflow</h1>
-        <p className="" style={{ fontFamily: "Urbanist, sans-serif" }}>Initially, we tried to develop our own workflow for identification of highly expressed genes and their promoters in multiple duckweed species. We successfully identified the highest expressing genes and extracted their promoters based on transcriptomics data, isolated them and even tried to clone them in front of the RUBY reporter.  
+        <p className="leading-relaxed" style={{ fontFamily: "Urbanist, sans-serif" }}>Initially, we tried to develop our own workflow for identification of highly expressed genes and their promoters in multiple duckweed species. We successfully identified the highest expressing genes and extracted their promoters based on transcriptomics data, isolated them and even tried to clone them in front of the RUBY reporter.  
 However, we were not successful so we needed to refine our workflow. After extensive literature research and consultations with Dr. Veronika Jedlíčková, iGEM Marburg 2024 team and Dr. Eric Yang, we discovered that we made several mistakes in our in silico workflow, for example not including MoClo compatibility filtering but most importantly, not comparing data across different transcriptomes. 
 We implemented the feedback we received and proceeded with the workflow we are presenting. You can see the graphical representation of our workflow in the Figure X. 
 In our in silico promoter identification of promoter sequences, we drawn an inspiration from the brilliant workflow of the endogenous part identification in Taraxacum presented by the iGEM Marburg 2024 team with their project Tarakate and the article by Zhou et al., 2023 [].
@@ -16,16 +16,179 @@ In our in silico promoter identification of promoter sequences, we drawn an insp
         <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/yellow-simple-success-flowchart-instagram-post.webp" alt="Workflow Diagram" className="my-8 mx-auto" />
 
 
-        <h1 className="text-3xl font-bold mb-4" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Data collection</h1>
-                <p className="" style={{ fontFamily: "Urbanist, sans-serif" }}>To find strong and stable promoter sequence that could drive expression of the gene of interest in the whole plant, it is ideal to analyze wider set of different transcriptomic data, which can help identify genes with the desired characteristics [1]. Such characteristics include high expression level, low expression variability across tissues, housekeeping functions, and consistent expression across developmental stages. The usual approach is to compare transcriptomic data (a) from different tissues, (b) in different developmental stages of the plant, or (c) combination of both, which allows the usage of single reference genome. However, we were not able to find such comprehensive data for duckweed species; therefore, we had to search for a different approach.
+        <h1 className="text-3xl text-justify font-bold mb-4" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Data collection</h1>
+                
 
+       <p className="text-justify leading-relaxed text-gray-800 mb-4">
+          To find strong and stable promoter sequence that could drive expression of the gene of interest in the whole plant, it is ideal to analyze wider set of different transcriptomic data, which can help identify genes with the desired characteristics [1]. Such characteristics include high expression level, low expression variability across tissues, housekeeping functions, and consistent expression across developmental stages. The usual approach is to compare transcriptomic data (a) from different tissues, (b) in different developmental stages of the plant, or (c) combination of both, which allows the usage of single reference genome. However, we were not able to find such comprehensive data for duckweed species; therefore, we had to search for a different approach.
+
+        </p>
+
+    <div className="mb-8 flex flex-col md:flex-row md:items-start md:justify-between">
+      <div className="md:w-1/2">
+      
+      
+        <p className="text-justify leading-relaxed text-gray-800 mb-4">
+          We decided to find genes that are stably expressed not across tissues, but rather across different Lemnoideae species. We gathered raw transcriptomic data and reference genomes from the Lemna.org [2] database for species L. gibba 7742, L. japonica 7182, L. minor 9252 and added data of S. polyrhiza 9509 obtained from study [3] of our advisor Arturo Marí-Ordóñez. We used this dataset to proceed with further analysis.
+        </p>
+        <p className="text-justify leading-relaxed text-gray-800 mb-4">
+          The concepts of circular economy and sustainable agricultural practices have been at the very core of our project since its inception. As a result, our work aligns closely with several Sustainable Development Goals.
+        </p>
+      </div>
+      <div className="md:w-1/2 flex flex-col gap-2 mt-4 md:mt-0 justify-center items-center m-10">
+        <div className="flex flex-row gap-4">
+          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-sdg-logo-un-emblem-square-print.webp" alt="SDG Main" className="w-20 h-20 md:w-36 md:h-36 object-contain" />
+          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-print-02.webp" alt="SDG 2" className="w-20 h-20 md:w-36 md:h-36 object-contain" />
+          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-print-06.webp" alt="SDG 6" className="w-20 h-20 md:w-36 md:h-36 object-contain" />
+        </div>
+        <div className="flex flex-row gap-4">
+          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-print-09.webp" alt="SDG 9"  className="w-20 h-20 md:w-36 md:h-36 object-contain" />
+          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-print-12.webp" alt="SDG 12" className="w-20 h-20 md:w-36 md:h-36 object-contain" />
+          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-print-13.webp" alt="SDG 13" className="w-20 h-20 md:w-36 md:h-36 object-contain" />
+        </div>
+      </div>
+  </div>
+
+
+
+       <h1 className="text-3xl font-bold mb-4" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Raw RNAseq data analysis</h1>
+        <p className="leading-relaxed" style={{ fontFamily: "Urbanist, sans-serif" }}>
+          Raw Illumina short-read sequencing data in fastq format require proper treatment to obtain reliable expression level profile. We have used basic workflow including the RNA seq quality assessment, trimming of adapter sequences and low-quality bases, reference-genome mapping of reads and counting the feature expression levels.
+        </p>
+
+
+        <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
+          First the quality of input data was checked using FastQC v0.12.1 [4] executed from MultiQC v1.27 [5] wrapper- no alarming contents were observed. Trimming wrapper Trim Galore! (0.6.10) [6] utilizes trimming engine Cutadapt (4.9) [7] to run thorough trimming workflow (Fig. 2). This includes omitting adapters - relicts from sequencing reads identification - low quality read-end bases and handling of pair-end reads. Again we ran FastQC on trimmed data to check for properly executed trimming shown by adapter content metric.
+
+        </p>
+
+
+
+        <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
+          Such curated reads are prepared for mapping and assessment of expression level. Several approaches are currently available and after discussion we were considering two aligning softwares - Salmon [8] and STAR [9].  Salmon advantages from quasi-mapping of reads to transcriptome, which ensures faster calculation and lower resource dependencies. However, we have decided to use robust full-genome mapping executed by STAR (2.7.1a) software, since the transcriptome of Lemnoideae species is not reliably annotated. The STAR aligner requires index generation - preprocessing of specific files used by STAR algorithm. The reads are then aligned to reference genome (Fig. 3) and output in format of genome-read-map file BAM, that is to be analysed to quantify expression levels.
+
+        </p>
+
+        <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
+          FeatureCounts [10] (2.0.8) software is used for read quantification and is a common part of RNA seq analysis workflow that utilizes STAR aligner. We have ran the Rsubread::featureCount in R with feature type set to “transcript”. The final feature-count table were exported in csv with expression level provided as raw counts. 
+
+
+        </p>
+
+
+        <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
+            The whole workflow is shown step-by-step in the Fig. 5 for clarity.
+        </p>
+
+
+        <h1 className="text-3xl font-bold mb-6 mt-16" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Interspecies comparability - Orthogroups</h1>
+
+        <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
+          The first step needed for the direct comparison of transcriptomes of different species is the identification of orthologous genes. We decided to use OrthoFinder (OF), a software tool for phylogenetic orthology inference. Orthogroups proposed by OF consist of phylogenetically close genes, suggesting they likely share identical functions even in different species. OF uses proteomes of individual species for the analysis. We have provided proteomes from Lemna.org and from study of Arturo Marí-Ordóñez mentioned above [3]. The analysis ran using OrthoFinder 2.5.5 with default settings.
+
+        </p>
+
+
+        <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
+          Orthogroups consist not only of orthologous genes – similar genes originating from different species – but also paralogous genes, which originate from the same species and result from gene duplications or pseudogene formation. To obtain a single expression level per orthogroup, we have proposed several strategies for the treatment of paralogs. After discussion with Eric Yang and based on his publication [12], only the highest expressed gene from each species in an orthogroup was considered - this avoids distortion of the expression level caused by pseudogenes and inactive duplicated genes.
+        </p>
+
+
+
+        <h1 className="text-3xl font-bold mb-6 mt-16" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Data normalization</h1>
+
+        <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
+          Before proceeding with the analysis, data normalization is essential since transcriptomic data can differ significantly depending on the sequencing depth, the experimental method used, and other variables. That is why raw counts of transcripts from RNAseq experiments are not directly comparable. To address this, we have proceeded with DESeq2 size factor normalization, which accounts for differences in sequencing depth and RNA composition across samples. The exact normalization protocol can be found in the study by Anders and Huber (2010) [13].
+        </p>
+
+        <h1 className="text-3xl font-bold mb-6 mt-16" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Stability and strength assessment</h1>
+
+        <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
+          The strength and stability of gene expression are crucial aspects that reflect the quality of a promoter region and its suitability as a component of a general transformation plasmid. For the assessment of orthogroup expression strength, we calculated the mean expression level, while the coefficient of variation (CV) in each orthogroup was calculated to reflect expression stability across species.
+        </p>
+
+        <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
+          The variance is strongly dependent on the mean of data, which does not allow a simple calculation of averages from heterogenous transcriptomic data. Therefore, we applied the variance stabilizing transformation (VST) from the DESeq2 python package, which reduces the dependence of the variance on the mean and makes the data more homoscedastic. This transformation is particularly useful for calculating the CV.
+        </p>
+
+
+        <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
+          For the calculation of mean expression values, we used the regularized log (rlog) transformation, which stabilizes the variance across the range of mean values, while it also shrinks low-count genes towards the average across samples. This regularization improves the reliability of mean estimates for genes with low expression, which are otherwise highly variable. 
+        </p>
+
+        <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
+          Orthogroups in the 95th percentile of expression average and CV lower than 30% were picked as candidates for promoter search. As shown in Figure 7 (CV /mean expression) and Figure 8 (CV/log₂ mean  10), these filtering criteria yielded a subset of 124 candidate genes that were further analyzed as potential promoter sources.
+        </p>
+
+
+        <h1 className="text-3xl font-bold mb-6 mt-16" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Functional annotation</h1>
+
+        <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
+          Candidate genes for promoter search and evaluation are the highest-expressed, but the biological context was not known. In order to reduce the noise introduced by unannotated genes, we performed functional annotation analysis with eggNOGmapper (<Link className='text-blue-500 hover:underline' target='_blank' to="http://eggnog-mapper.embl.de/">http://eggnog-mapper.embl.de/</Link>) [14] [15], a tool providing ontology-based annotation with GO terms and KEGG pathways across a wide range of species. The second reason for such analysis was to account for the fact that the ideal promoters are likely to be associated with housekeeping genes known for their stable expression. 
+        </p>
+
+
+        <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
+          Orthogroups containing only reasonably annotated (not unknown) and housekeeping genes were considered. As expected, many candidates were linked to essential cellular processes such as ribosomal proteins, translation factors, or primary metabolism. The final list of 20 Orthogroups was curated manually.
+        </p>
+
+
+        <h1 className="text-3xl font-bold mb-6 mt-16" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Promoter region</h1>
+
+
+        <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
+          The distance of promoter region from transcription starting site (TSS) varies strongly, from tens of bp to several kbp. The gold standard is to search for promoter sequences within 2kbp upstream of the TSS. However, it is known that the untranslated region (UTR), located between the TSS and the start codon (ATG), also influences gene expression levels, particularly through post-transcriptional regulation mechanisms (Dassi et al., 2024) [16], and we had to take this into account since the exact UTR length is not annotated for most genes.
+        </p>
+
+
+        <div className="mb-8 flex flex-col md:flex-row md:items-start md:justify-between">
+      <div className="md:w-1/2">
+      
+      
+        <p className="text-justify leading-relaxed text-gray-800 mb-4 mt-10">
+          Therefore, we evaluated promoter sequences concatenated with the UTR, which could be directly ligated to the gene during transformation experiments. For laboratory evaluation, the promoter+UTR regions were defined as 2 kbp upstream from the ATG (start of the coding sequence, CDS).
+        </p>
+        
+      </div>
+      <div className="md:w-1/2 flex flex-col gap-2 mt-4 md:mt-0 justify-center items-center m-10">
+        <div className="flex flex-row gap-4">
+          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-sdg-logo-un-emblem-square-print.webp" alt="SDG Main" className="w-20 h-20 md:w-36 md:h-36 object-contain" />
+          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-print-02.webp" alt="SDG 2" className="w-20 h-20 md:w-36 md:h-36 object-contain" />
+          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-print-06.webp" alt="SDG 6" className="w-20 h-20 md:w-36 md:h-36 object-contain" />
+        </div>
+        <div className="flex flex-row gap-4">
+          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-print-09.webp" alt="SDG 9"  className="w-20 h-20 md:w-36 md:h-36 object-contain" />
+          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-print-12.webp" alt="SDG 12" className="w-20 h-20 md:w-36 md:h-36 object-contain" />
+          <img src="https://static.igem.wiki/teams/5642/images/engagement/sustainability/e-print-13.webp" alt="SDG 13" className="w-20 h-20 md:w-36 md:h-36 object-contain" />
+        </div>
+      </div>
+      </div>
+
+
+        <h1 className="text-3xl font-bold mb-6 mt-16" style={{ fontFamily: "Space Grotesk, sans-serif" }}>MoClo compatibility</h1>
+
+        <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
+          Experimental evaluation of promoter strength requires the assembly of a plasmid containing the promoter sequence using the MoClo protocol. This method utilizes restriction enzyme BbsI, which recognizes specific restriction sites artificially added upstream and downstream of the promoter part. Any natively occurring BbsI restriction site within the promoter sequence would interfere with the MoClo workflow. We have therefore filtered out promoters containing such sites, and for some promoters, BbsI recognition sites were removed and the sequences were synthesized via Twist, obtaining the final set of promoter sequences ready for experimental evaluation.
+        </p>
+
+        <h1 className="text-3xl font-bold mb-6 mt-16" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Summary</h1>
+
+
+        <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
+          We have analyzed transcriptomic data of four Lemnoideae species and identified candidate promoter regions that promise ideal properties for stable and high expression of genes of interest in transformed duckweed. Groups of genes, that bear the same functions interspecially were identified and used for picking of the highest and the most equally expressed groups. Housekeeping genes with known functions were preferred. Final amount of 17 promoter+UTR regions were suggested for wet lab evaluation. 
+        </p>
+
+
+        <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
+          Wondering how the story goes on? Check our [Wet Lab Experimental Page - clickable].
         </p>
 
 
 
 
 
-      <div className="border-t border-gray-200 pt-6">
+
+      <div className="border-t border-gray-200 pt-6 mt-12">
         <h3 className="text-lg font-bold text-gray-900 mb-4" style={{ fontFamily: "Space Grotesk, sans-serif" }}>References</h3>
         <div className="space-y-3 text-sm text-gray-700">
           <p className="leading-relaxed">
