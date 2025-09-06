@@ -97,28 +97,28 @@ const ToolboxShow = () => {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-x-16 text-center" style={{ fontFamily: 'Space Grotesk, sans-serif', lineHeight: '140%', fontWeight: '700' }}>
               {/* Step 1 description */}
               <div className="space-y-2">
-                <p className="text-sm  leading-tight" style={{ lineHeight: '140%' }}>
+                <p className="text-md  leading-tight" style={{ lineHeight: '140%' }}>
                   Using <span style={{ color: '#779E45',  }}>TAIFR</span>, we will introduce optimized nitrogen-cycle related genes into duckweed, driven by our native duckweed promoters.
                 </p>
               </div>
 
               {/* Step 2 description */}
               <div className="space-y-2">
-                <p className="text-sm  leading-tight" style={{ lineHeight: '140%' }}>
+                <p className="text-md  leading-tight" style={{ lineHeight: '140%' }}>
                   Using <span style={{ color: '#779E45' }}>pIB005</span>, we will knock out thiamine monophosphate synthase (TH1) to prevent its release into the environment.
                 </p>
               </div>
 
               {/* Step 3 description */}
               <div className="space-y-2">
-                <p className="text-sm  leading-tight" style={{ lineHeight: '140%' }}>
+                <p className="text-md  leading-tight" style={{ lineHeight: '140%' }}>
                  Our “<span style={{ color: '#779E45' }}>Nitroduckweed</span>” will grow predictably and autonomously in our <span style={{ color: '#779E45' }}>CULTIVATOR</span>, fed with manure and thiamine.
                 </p>
               </div>
 
               {/* Step 4 description */}
               <div className="space-y-2">
-                <p className="text-sm leading-tight" style={{ lineHeight: '140%' }}>
+                <p className="text-md leading-tight" style={{ lineHeight: '140%' }}>
                   It will convert ammonium in manure into protein-rich biomass, fed back to cows directly on the farm - <span style={{ color: '#779E45' }}>no unsustainable and pricey soybeans required</span>.
                 </p>
               </div>

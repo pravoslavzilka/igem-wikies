@@ -338,6 +338,7 @@ const CopyrightSection: React.FC = () => (
 const Footer: React.FC = () => {
   return (
     <footer className={`${CONFIG.colors.background} py-12 px-4 md:px-8`}>
+      <hr className="mb-20" style={{ borderColor: "green" }} />
       <div className={`${CONFIG.layout.containerMaxWidth} mx-auto ${CONFIG.layout.partnerContainerPadding}`}>
         <div className="md:hidden space-y-12">
           <div className="space-y-12">

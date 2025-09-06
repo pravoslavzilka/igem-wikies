@@ -49,7 +49,7 @@ const TaifrComparison = () => {
           {/* Right side - Researcher profile and paragraph */}
           <div className="flex flex-col items-center justify-center lg:col-span-3">
             <div className="text-base text-center text-gray-600 leading-relaxed mb-8 md:ml-10 md:mr-10">
-              <p className="mb-4" style={{ fontFamily: 'Urbanist, sans-serif', }}>
+              <p className="mb-4" style={{ fontFamily: 'Urbanist, sans-serif', fontSize: '17px' }}>
                 I study gene silencing using duckweed as a unique model system. However, my lab faces challenges in knocking out target genes, since current transformation protocols are slow, genotype-limited, and often introduce unwanted variation. A universal, direct frond transformation method would be a breakthrough to fully realize duckweed’s potential as a model organism and biotechnological platform.
               </p>
             </div>

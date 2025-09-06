@@ -27,6 +27,13 @@ const VideoShow = () => {
             What will <span style={{ color: '#779E45' }}>YOUR</span> next step be - <br /> powered by the <span style={{ color: '#779E45' }}>Duckweed Toolbox</span>?
           </h1>
         </div>
+
+
+        <div className="text-center mt-[100px] mb-[100px]">
+          <h1 className="text-4xl font-bold  leading-tight" style={{ fontFamily: 'Space Grotesk, sans-serif', lineHeight: '140%' }}>
+            <span style={{ color: '#779E45' }}>Making plants truly scalable</span> 
+          </h1>
+        </div>
       </div>
     </div>
 
