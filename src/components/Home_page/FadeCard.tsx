@@ -14,14 +14,17 @@ const fadeHeadline = [
   { text: "SynBio.", color: "#779E45" } 
 ];
 
+const fadeWhy = [
+  { text: "That’s why the ", color: "#171F16" },
+  { text: "fastest-growing plant on Earth", color: "#171F16" },
+  { text: " deserves equally ", color: "#171F16" },
+  { text: "fast engineering!", color: "#779E45" }
+];
+
 
 
 const FadeCard = () => {
-
-
-
-
-const [headlineOpacity, setHeadlineOpacity] = useState(0.25);
+  const [headlineOpacity, setHeadlineOpacity] = useState(0.25);
   const [letterFade, setLetterFade] = useState(0);
 
   useEffect(() => {
@@ -73,10 +76,128 @@ const [headlineOpacity, setHeadlineOpacity] = useState(0.25);
           <span key={i}>
             {frag.text.split('').map((char, j) => {
               const isColored = letterIdx < fadeCount;
-              // Use hex color if isColored, else gray
               const style = isColored
                 ? { color: frag.color, transition: "color 0.2s" }
-                : { color: "#9CA3AF", transition: "color 0.2s" }; // Tailwind gray-400 hex
+                : { color: "#9CA3AF", transition: "color 0.2s" };
+              letterIdx++;
+              return (
+                <span key={j} style={style}>
+                  {char}
+                </span>
+              );
+            })}
+          </span>
+        ))}
+      </span>
+    );
+  };
+
+  // Helper to render faded "That’s why the..." line
+  const renderFadedWhy = () => {
+    // The second line only starts after the first line is fully colored
+    const headlineText = fadeHeadline.map(f => f.text).join('');
+    const whyText = fadeWhy.map(f => f.text).join('');
+    const totalHeadlineLetters = headlineText.length;
+    const totalWhyLetters = whyText.length;
+
+    // Calculate progress for both lines
+    // For the second line, progress is 0 until the first line is colored, then increases with scroll
+    let whyFadeCount = 0;
+    if (letterFade === 1) {
+      // Use scroll past the first line to color the second line
+      // We'll use window.scrollY to calculate extra progress
+      // But since letterFade is capped at 1, we need to track extra scroll
+      // Instead, let's use a new effect and state for the second line's scroll progress
+
+      // But you want both lines to color by scroll, so let's combine the logic:
+      // - For the first line: fade from 0 to 1 as letterFade goes from 0 to 0.5
+      // - For the second line: fade from 0 to 1 as letterFade goes from 0.5 to 1
+
+      // So, remap letterFade for each line:
+      //   first line: progress = Math.min(letterFade, 0.5) / 0.5
+      //   second line: progress = Math.max(0, letterFade - 0.5) / 0.5
+
+      // We'll move this logic outside and use it for both lines
+    }
+
+    // But for clarity, let's move the remapping logic outside the render functions
+    // See below for the new logic
+
+    let letterIdx = 0;
+    return (
+      <span>
+        {fadeWhy.map((frag, i) => (
+          <span key={i}>
+            {frag.text.split('').map((char, j) => {
+              const isColored = letterIdx < whyFadeCount;
+              const style = isColored
+                ? { color: frag.color, transition: "color 0.2s" }
+                : { color: "#9CA3AF", transition: "color 0.2s" };
+              letterIdx++;
+              return (
+                <span key={j} style={style}>
+                  {char}
+                </span>
+              );
+            })}
+          </span>
+        ))}
+      </span>
+    );
+  };
+
+  // --- Remap scroll progress for both lines ---
+  // First line: fade from 0 to 1 as letterFade goes from 0 to 0.5
+  // Second line: fade from 0 to 1 as letterFade goes from 0.5 to 1
+  const headlineText = fadeHeadline.map(f => f.text).join('');
+  const whyText = fadeWhy.map(f => f.text).join('');
+  const totalHeadlineLetters = headlineText.length;
+  const totalWhyLetters = whyText.length;
+
+  // For first line
+  const firstLineProgress = Math.min(letterFade, 0.5) / 0.5;
+  const firstLineFadeCount = Math.floor(firstLineProgress * totalHeadlineLetters);
+
+  // For second line
+  const secondLineProgress = Math.max(0, letterFade - 0.5) / 0.5;
+  const secondLineFadeCount = Math.floor(secondLineProgress * totalWhyLetters);
+
+  // Update renderFadedHeadline and renderFadedWhy to use these counts:
+  const renderFadedHeadline2 = () => {
+    let letterIdx = 0;
+    return (
+      <span>
+        {fadeHeadline.map((frag, i) => (
+          <span key={i}>
+            {frag.text.split('').map((char, j) => {
+              const isColored = letterIdx < firstLineFadeCount;
+              const style = isColored
+                ? { color: frag.color, transition: "color 0.2s" }
+                : { color: "#9CA3AF", transition: "color 0.2s" };
+              letterIdx++;
+              return (
+                <span key={j} style={style}>
+                  {char}
+                </span>
+              );
+            })}
+          </span>
+        ))}
+      </span>
+    );
+  };
+
+  const renderFadedWhy2 = () => {
+    let letterIdx = 0;
+    return (
+      <span>
+        {fadeWhy.map((frag, i) => (
+          <span key={i}>
+            {frag.text.split('').map((char, j) => {
+              const isColored = letterIdx < secondLineFadeCount;
+              const style = isColored
+                ? { color: frag.color, transition: "color 0.2s" }
+                : { color: "#9CA3AF", transition: "color 0.2s" };
               letterIdx++;
               return (
                 <span key={j} style={style}>
@@ -92,7 +213,6 @@ const [headlineOpacity, setHeadlineOpacity] = useState(0.25);
 
 
 
-
   return (
     <div className="max-w-8xl mx-auto md:mt-16 md:mb-24 px-4">
       <div id="headline-fade-card" className="bg-[#F7F7F7] rounded-3xl flex flex-col justify-center items-center p-10 relative shadow-none">
@@ -102,10 +222,10 @@ const [headlineOpacity, setHeadlineOpacity] = useState(0.25);
             feeding cows with soybean?
           </div>
           <div className="text-3xl md:text-4xl mt-20 font-bold mb-2" style={{ lineHeight: "140%", textAlign: "center" }}>
-            {renderFadedHeadline()}
+            {renderFadedHeadline2()}
           </div>
           <div className="text-2xl md:mb-52 md:text-3xl mt-20 font-bold mb-2" style={{ fontFamily: "Space Grotesk, sans-serif", fontWeight: 400, lineHeight: "140%", textAlign: "center" }}>
-            That’s why the fastest-growing plant on Earth <br /> deserves equally <span style={{ color: "#779E45"}}>fast engineering!</span>
+            {renderFadedWhy2()}
           </div>
         </div>
       </div>
