@@ -13,6 +13,7 @@ import ProjectHow from './pages/project/How';
 // Project pages - how
 
 import Taifr from './pages/project/how/Taifr';
+import PromoterLibrary from './pages/project/how/PromoterLibrary';
 
 import LimitingBiomass from './pages/project/how/predictor/LimitingBiomass';
 import MediumChange from './pages/project/how/predictor/MediumChange';
@@ -64,12 +65,14 @@ function App() {
           <Route path="/project/how/cultivator/" element={<LivingLayersDocument />} />
 
           <Route path="/project/how/taifr/" element={<Taifr />} />
+          <Route path="/project/how/promoter-library/" element={<PromoterLibrary />} />
+          <Route path="/project/how/promoters-in-silico/" element={<PromotersSilico />} />
 
           <Route path="/project/how/predictor/limiting-biomass/" element={<LimitingBiomass />} />
           <Route path="/project/how/predictor/medium-change/" element={<MediumChange />} />
 
 
-          <Route path="/project/how/promoters-in-silico" element={<PromotersSilico />} />
+          
 
           
           
