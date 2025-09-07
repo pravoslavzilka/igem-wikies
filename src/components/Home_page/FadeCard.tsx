@@ -214,17 +214,55 @@ const FadeCard = () => {
 
 
   return (
-    <div className="max-w-8xl mx-auto md:mt-16 md:mb-24 px-4">
-      <div id="headline-fade-card" className="bg-[#F7F7F7] rounded-3xl flex flex-col justify-center items-center p-10 relative shadow-none">
-        <div className="text-center max-w-3xl flex flex-col justify-center items-center" style={{ fontFamily: "Space Grotesk, sans-serif" }}>
-          <div className="text-3xl md:text-4xl md:mt-52 font-bold mb-8" style={{ lineHeight: "140%" }}>
-            Duckweed is set to <span style={{ color: "#779E45"}} >end soybean <br/> dominance!</span> So, why are we still<br />
+    <div className="max-w-8xl mx-auto md:mt-16 md:mb-24 px-2 md:px-4">
+      <div
+        id="headline-fade-card"
+        className="bg-[#F7F7F7] rounded-3xl flex flex-col justify-center items-center p-4 md:p-10 relative shadow-none"
+      >
+        <div
+          className="text-center max-w-3xl flex flex-col justify-center items-center"
+          style={{ fontFamily: "Space Grotesk, sans-serif" }}
+        >
+          <div
+            className="font-bold mb-6 md:mb-8"
+            style={{
+              fontSize: "1.3rem",
+              lineHeight: "130%",
+              marginTop: "1.5rem",
+              marginBottom: "1.5rem",
+              ...(window.innerWidth >= 768
+                ? { fontSize: "2.25rem", marginTop: "13rem", marginBottom: "2rem" }
+                : {}),
+            }}
+          >
+            Duckweed is set to{" "}
+            <span style={{ color: "#779E45" }}>end soybean <br /> dominance!</span> So, why are we still
+            <br />
             feeding cows with soybean?
           </div>
-          <div className="text-3xl md:text-4xl mt-20 font-bold mb-2" style={{ lineHeight: "140%", textAlign: "center" }}>
+          <div
+            className="font-bold mb-2"
+            style={{
+              fontSize: window.innerWidth < 768 ? "1.2rem" : "2rem",
+              lineHeight: "130%",
+              textAlign: "center",
+              marginTop: window.innerWidth < 768 ? "1.5rem" : "5rem",
+            }}
+          >
             {renderFadedHeadline2()}
           </div>
-          <div className="text-2xl md:mb-52 md:text-3xl mt-20 font-bold mb-2" style={{ fontFamily: "Space Grotesk, sans-serif", fontWeight: 400, lineHeight: "140%", textAlign: "center" }}>
+          <div
+            className="font-bold mb-2"
+            style={{
+              fontFamily: "Space Grotesk, sans-serif",
+              fontWeight: 400,
+              fontSize: window.innerWidth < 768 ? "1rem" : "1.5rem",
+              lineHeight: "130%",
+              textAlign: "center",
+              marginTop: window.innerWidth < 768 ? "1.5rem" : "5rem",
+              marginBottom: window.innerWidth < 768 ? "2rem" : "13rem",
+            }}
+          >
             {renderFadedWhy2()}
           </div>
         </div>
