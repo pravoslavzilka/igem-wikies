@@ -53,16 +53,40 @@ const Comparison = () => {
   const tablesGap = cols === 10 ? "8rem" : "2rem";
 
   return (
-    <div className="bg-white " style={{ padding: "5rem", paddingBottom: "6rem" }}>
-      <h2 className="text-4xl font-bold  text-center" style={{ fontFamily: "Space Grotesk" }} >
-        Duckweeds could save <span style={{ color: "#779E45" }}>farmers money </span> and protect <span style={{ color: "#779E45" }}>Cerrado ecosystems</span>
+    <div
+      className="bg-white"
+      style={{
+        padding: "2rem",
+        paddingBottom: "3rem",
+        paddingTop: "2.5rem",
+        // On desktop, keep original padding
+        ...(window.innerWidth >= 768
+          ? { padding: "5rem", paddingBottom: "6rem" }
+          : {}),
+      }}
+    >
+      <h2
+        className="font-bold text-center"
+        style={{
+          fontFamily: "Space Grotesk",
+          fontSize: window.innerWidth < 768 ? "1.5rem" : "2.25rem", // text-2xl for mobile, text-4xl for desktop
+          lineHeight: window.innerWidth < 768 ? "120%" : "normal",
+          marginTop: window.innerWidth < 768 ? "1.5rem" : "",
+          marginBottom: window.innerWidth < 768 ? "1.5rem" : "2rem",
+        }}
+      >
+        Duckweeds could save <span style={{ color: "#779E45" }}>farmers money </span>
+        and protect <span style={{ color: "#779E45" }}>Cerrado ecosystems</span>
       </h2>
       <div
         className="flex flex-row justify-center items-end"
-        style={{ gap: tablesGap }}
+        style={{
+          gap: tablesGap,
+          marginTop: window.innerWidth < 768 ? "1.5rem" : "4rem",
+        }}
       >
         {/* Soybean group */}
-        <div className="flex flex-col items-center" style={{paddingTop: "4rem"}}>
+        <div className="flex flex-col items-center" style={{ paddingTop: window.innerWidth < 768 ? "0.5rem" : "4rem" }}>
           <div
             className="grid mb-4"
             style={{
@@ -98,8 +122,16 @@ const Comparison = () => {
           </div>
         </div>
       </div>
-      <div style={{ fontFamily: "Space Grotesk", fontSize: "20px" }} className="text-center  text-black-700 mt-12">
-        With the same land, duckweed can feed three times more cows than soybean     </div>
+      <div
+        style={{
+          fontFamily: "Space Grotesk",
+          fontSize: window.innerWidth < 768 ? "1rem" : "20px",
+          marginTop: window.innerWidth < 768 ? "1.5rem" : "3rem",
+        }}
+        className="text-center text-black-700"
+      >
+        With the same land, duckweed can feed three times more cows than soybean
+      </div>
     </div>
   );
 };
