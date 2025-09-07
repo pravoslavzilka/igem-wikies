@@ -67,7 +67,7 @@ const PromotersSilico = () => {
               
               
              <div className="bg-white rounded">
-                <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure2.webp" alt="Large Tray Growth Curve" className="w-full h-auto" />
+                <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure2-hq.webp" alt="Large Tray Growth Curve" className="w-full h-auto" />
               </div>
               
               <p className="text-sm text-gray-600 mt-3 p-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
@@ -84,7 +84,7 @@ const PromotersSilico = () => {
 
         <div className="bg-gray-50 mt-5  mb-5 rounded-lg">
              <div className="bg-white rounded">
-                <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure3.webp" alt="Large Tray Growth Curve" className="w-full h-auto" />
+                <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure3-hq.webp" alt="Large Tray Growth Curve" className="w-full h-auto" />
               </div>
               
               <p className="text-sm text-gray-600 mt-3 p-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
@@ -99,7 +99,7 @@ const PromotersSilico = () => {
         </p>
             <div className="bg-gray-50 mt-5  mb-5 rounded-lg">
             <div className="bg-white rounded">
-                <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure4.webp" alt="Large Tray Growth Curve" className="w-full h-auto" />
+                <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure4-hq.webp" alt="Large Tray Growth Curve" className="w-full h-auto" />
               </div>
               
               <p className="text-sm text-gray-600 mt-3 p-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
@@ -537,7 +537,7 @@ const PromotersSilico = () => {
 
 
         <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
-          Wondering how the story goes on? Check our [Wet Lab Experimental Page - clickable].
+          Wondering how the story goes on? Check our <Link className='text-blue-500 hover:underline' to="/wet-lab-experimental-page">Wet Lab Experimental Page </Link>.
         </p>
 
 
