@@ -45,7 +45,7 @@ const MediumChange = () => {
               Methodology
             </h2>
             <p className="text-gray-700 leading-relaxed text-md" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-              To determine the minimum frequency of medium change, two types of experiments were conducted simultaneously: a control experiment with an medium change frequency of every 2 days (where stress caused by nutrient depletion should be negligible) and another without any medium change, which was performed in two replicates. Each of the 3 culture trays (with a cultivation area of 0.06435 m2) was inoculated by 20 g of Lemna japonica (8627) or S. polyrhiza (0162) and the biomass in them was measured every 2 days. The minimum frequency of medium change necessary to ensure the fastest growth rate was determined as a point where the measured biomass in the experimental group started to lag behind the measured biomass in the control group.
+              To determine the minimum frequency of medium change, two types of experiments were conducted simultaneously: a control experiment with an medium change frequency of every 2 days (where stress caused by nutrient depletion should be negligible) and another without any medium change, which was performed in two replicates. Each of the 3 culture trays (with a cultivation area of 0.06435 m2) was inoculated by 20 g of <em>Lemna japonica (8627)</em> or <em>S. polyrhiza (0162)</em> and the biomass in them was measured every 2 days. The minimum frequency of medium change necessary to ensure the fastest growth rate was determined as a point where the measured biomass in the experimental group started to lag behind the measured biomass in the control group.
 
             </p>
           </div>

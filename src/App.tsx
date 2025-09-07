@@ -68,6 +68,9 @@ function App() {
           <Route path="/project/how/predictor/limiting-biomass/" element={<LimitingBiomass />} />
           <Route path="/project/how/predictor/medium-change/" element={<MediumChange />} />
 
+
+          <Route path="/project/how//promoters-in-silico" element={<PromotersSilico />} />
+
           
           
           
@@ -78,7 +81,7 @@ function App() {
           <Route path="/toolbox/resources" element={<ToolboxResources />} />
           <Route path="/toolbox/downloads" element={<ToolboxDownloads />} />
 
-          <Route path="/toolbox/promoters-in-silico" element={<PromotersSilico />} />
+          
           
 
           <Route path="/engagement/sustainability" element={<SustainabilityDocument />} />
