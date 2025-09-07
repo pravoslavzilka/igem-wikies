@@ -34,14 +34,8 @@ const MediumChange = () => {
               Rationale
             </h2>
             <p className="text-gray-700 leading-relaxed text-md" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-              The inevitable part of successful duckweed cultivation is regular 
-              cultivation medium change. It is necessary due to nutrient depletion 
-              during the growth of our duckweed cultures. The nutrient uptake 
-              increases over time as the biomass increases and there is also a 
-              need to monitor and act accordingly. The importance of pinpointing the 
-              minimum frequency of medium change is further underscored by 
-              understanding high demand for minimal necessary maintenance 
-              needs, so that energy, resources and labour are used effectively.
+              The inevitable part of successful duckweed cultivation is regular cultivation medium change. It is necessary due to nutrient depletion during the growth of our duckweed superhero. This nutrient uptake creates deviation from the optimal environmental conditions that we need to monitor and act accordingly. The importance of pinpointing the minimum frequency of medium change is further underscored by understandably high demand for minimal necessary maintenance needs, so that energy, resources and labour are used effectively.
+
             </p>
           </div>
 
@@ -51,18 +45,8 @@ const MediumChange = () => {
               Methodology
             </h2>
             <p className="text-gray-700 leading-relaxed text-md" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-              To determine the minimum frequency of medium change, two types of 
-              experiments were conducted simultaneously: a control experimental with 
-              fresh medium every day (so that medium nutrient depletion or any 
-              nutrient depletion should be negligible) and another without any 
-              medium change, which was performed in two replicates. Each of the 3 
-              culture trays (with a cultivation area of 0.0544 m²) was inoculated by 
-              30 g of Lemna gibotossi (#527) or 5.4kg/ha (0.1kg/L) at the biomass 
-              density. Biomass was weighed every 2 days to study of 
-              medium change necessary to ensure the fastest growth rate. It was 
-              conducted as a point where the measured biomass in the 
-              experimental group started to lag behind the measured biomass in the 
-              control group.
+              To determine the minimum frequency of medium change, two types of experiments were conducted simultaneously: a control experiment with an medium change frequency of every 2 days (where stress caused by nutrient depletion should be negligible) and another without any medium change, which was performed in two replicates. Each of the 3 culture trays (with a cultivation area of 0.06435 m2) was inoculated by 20 g of Lemna japonica (8627) or S. polyrhiza (0162) and the biomass in them was measured every 2 days. The minimum frequency of medium change necessary to ensure the fastest growth rate was determined as a point where the measured biomass in the experimental group started to lag behind the measured biomass in the control group.
+
             </p>
           </div>
 
@@ -129,7 +113,7 @@ const MediumChange = () => {
               Results
             </h2>
             <p className="text-gray-700 leading-relaxed text-md" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-              Based on the data shown in the graph, it was determined that the optimal medium change frequency that is ensuring the maximal growth rate but at the same time the maintenance needs. Every day is ensuring the fastest growth, so not the maximal biomass yields of the control group and experimental groups start to deviate noticeably.
+              Based on the data shown in the graph, it was determined that the optimal medium change frequency, that is frequency ensuring the maximal growth rate but at the same time the minimal necessary maintenance needs, is every 6 days, since at this point biomass yields of the control group and experimental groups start to deviate noticeably.
             </p>
           </div>
         </div>

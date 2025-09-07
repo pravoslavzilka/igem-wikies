@@ -17,13 +17,8 @@ const LimitingBiomass = () => {
               Rationale
             </h2>
             <p className="text-gray-700 leading-relaxed" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-              Limiting biomass density is key parameter for further mathematical 
-              modelling of duckweed growth since it directly appears in the logistic 
-              growth equation, which is the best known mathematical 
-              approximation of population growth. The limiting biomass density is 
-              defined as biomass density when the duckweed growth effectively 
-              stops, that is when the biomass increments over time become 
-              negligible.
+              Limiting biomass density is key parameter for further mathematical modelling of duckweed growth since it directly appears in the logistic growth equation, which is the best known mathematical approximation of population growth. The limiting biomass density is defined as biomass density when the duckweed growth effectively stops, that is when the biomass increments over time become negligible. 
+
             </p>
           </section>
 
@@ -33,18 +28,8 @@ const LimitingBiomass = () => {
               Methodology
             </h2>
             <p className="text-gray-700 leading-relaxed" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-              To determine the limiting biomass density of <em>Lemna japonica</em> (8627), 
-              experiments on ascertaining the growth curve of this species were 
-              conducted in both large and small trays. The large tray had an area 
-              of 0.14535 m², and the small tray had an area of 0.06435 m². 
-              Temperature in the greenhouse was kept around 25°C and light 
-              conditions followed 16:8 hour light/dark cycle XY. Culture medium 
-              composition is described below. Both trays were inoculated with 5 g 
-              of the duckweed at the start of the experiment. The biomass 
-              measurements were taken daily, and the weight data were recorded 
-              until no significant increment was observed. This marked the point 
-              where duckweed growth significantly slowed down so that it 
-              effectively stopped at this "saturation" biomass density.
+              To determine the limiting biomass density of Lemna japonica (8627), experiments on ascertaining the growth curve of this species were conducted in both large and small trays. The large tray had an area of 0.14535 m2, and the small tray had an area of 0.06435 m2. Temperature in the greenhouse  was kept around 25°C and light conditions followed 16:8 hour light/dark cycle with light intensity of 200 μmol/m2/s. Culture medium composition is described below. Both trays were inoculated with 5 g of the duckweed at the start of the experiment. The biomass measurements were taken daily, and the weight data were recorded until no significant increment was observed. This marked the point where duckweed growth significantly slowed down so that it effectively stopped at this “saturation” biomass density.
+
             </p>
           </section>
         </div>
@@ -59,9 +44,8 @@ const LimitingBiomass = () => {
             />
             <div className="p-4 bg-gray-50">
               <p className="text-sm text-gray-600" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                <strong>Fig 1:</strong> Ondra, caring for duckweed while feeling as 
-                on the seashore, measuring the actual biomass of our 
-                duckweed densities in each cultivation tray 
+                <strong>Fig 1:</strong> Ondra, caring for duckweed while feeling as on the seashore, measuring the actual biomass of our duckweed bestie in each cultivation tray.
+
               </p>
             </div>
           </div>
@@ -96,7 +80,7 @@ const LimitingBiomass = () => {
             {/* Small Tray Text */}
             <div className="flex items-center">
               <p className="text-gray-700 leading-relaxed" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                The experimentally measured growth curve of duckweed small tray can be seen in the graph on the left. Since the fastest growth rate occurred around biomass of 650 g/m², which should be according to the mathematical definition of logistic curve at the halfway between 0 and biomass of "saturation", the value of limiting biomass density was determined to be around 1300 g/m². To determine the intrinsic growth rate (r<sub>0</sub>) from a growth curve, we took natural logarithm of the population size at each time point, plotted this data and fitted a straight line to the points in the exponential phase of growth. The slope of this line represented the intrinsic growth rate (r<sub>0</sub>), which was r<sub>0</sub> ≈ 0.1537 for small tray.
+                The experimentally measured growth curve of duckweed small tray can be seen in the graph on the left. Since the fastest growth rate occurred around biomass of 650 g/m2, which should be according to the mathematical definition of logistic curve at the halfway between 0 and biomass of “saturation”, the value of limiting biomass density was determined to be around 1300 g/m2. To determine the intrinsic growth rate (ri0) from a growth curve, we took natural logarithm of the population size at each time point, plotted this data and fitted a straight line to the points in the exponential phase of growth. The slope of this line represented the intrinsic growth rate (ri0), which was ri0= 0.1537 for small tray.
               </p>
             </div>
           </div>
@@ -113,7 +97,7 @@ const LimitingBiomass = () => {
             {/* Large Tray Text */}
             <div className="flex items-center">
               <p className="text-gray-700 leading-relaxed" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                The experimentally measured growth curve of duckweed in large tray can be seen in the graph on the right. Since the fastest growth rate occurred around biomass of 650 g/m², which should be according to the mathematical definition of logistic curve at the halfway between 0 and biomass of "saturation", the value of limiting biomass density was determined to be around 1300 g/m². To determine the intrinsic growth rate (r<sub>0</sub>) from a growth curve, we took natural logarithm of the population size at each time point, plotted this data and fitted a straight line to the points in the exponential phase of growth. The slope of this line represented the intrinsic growth rate (r<sub>0</sub>), which was r<sub>0</sub> ≈ 0.2287 for large tray.
+                The experimentally measured growth curve of duckweed in large tray can be seen in the graph on the right. Since the fastest growth rate occurred around biomass of 650 g/m2, which should be according to the mathematical definition of logistic curve at the halfway between 0 and biomass of “saturation”, the value of limiting biomass density was determined to be around 1300 g/m2. To determine the intrinsic growth rate (ri0) from a growth curve, we took natural logarithm of the population size at each time point, plotted this data and fitted a straight line to the points in the exponential phase of growth. The slope of this line represented the intrinsic growth rate (ri0), which was ri0= 0.2287 for large tray.
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg">
