@@ -34,46 +34,71 @@ const CONFIG = {
   }
 };
 
+
 const MAP: React.FC<MAPProps> = ({ processedPoints }) => {
   return (
-    <div className="relative">
-      <svg 
-        viewBox={`0 0 ${CONFIG.map.viewBox.width} ${CONFIG.map.viewBox.height}`}
-        className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-none mx-auto"
-      >
-        {processedPoints.map((point) => (
-          <circle
-            key={point.id}
-            cx={point.x}
-            cy={point.y}
-            r={CONFIG.map.dotRadius}
-            fill={point.currentColor}
-            style={{ 
-              transition: 'fill 0.3s ease-in-out'
-            }}
-          />
-        ))}
-      </svg>
+    <div className="space-y-4">
+      <div className="relative">
+        <svg 
+          viewBox={`0 0 ${CONFIG.map.viewBox.width} ${CONFIG.map.viewBox.height}`}
+          className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-none mx-auto"
+        >
+          {processedPoints.map((point) => (
+            <circle
+              key={point.id}
+              cx={point.x}
+              cy={point.y}
+              r={CONFIG.map.dotRadius}
+              fill={point.currentColor}
+              style={{ 
+                transition: 'fill 0.3s ease-in-out'
+              }}
+            />
+          ))}
+        </svg>
+        
+        {/* Legend for larger screens - positioned absolutely over the map */}
+        <div className="hidden md:block absolute bottom-8 lg:bottom-12 xl:bottom-16 left-4 lg:left-6 space-y-2 lg:space-y-3">
+          <div className="text-white text-base font-medium mb-3">
+            Ecosystem loss driven by soybean production:
+          </div>
+          
+          <div className="flex items-center space-x-3">
+            <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: CONFIG.colors.legend.noLoss }}></div>
+            <span className="text-white text-sm">no ecosystem loss</span>
+          </div>
+          
+          <div className="flex items-center space-x-3">
+            <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: CONFIG.colors.legend.moderateLoss }}></div>
+            <span className="text-white text-sm">moderate ecosystem loss</span>
+          </div>
+          
+          <div className="flex items-center space-x-3">
+            <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: CONFIG.colors.legend.severeLoss }}></div>
+            <span className="text-white text-sm">severe ecosystem loss</span>
+          </div>
+        </div>
+      </div>
       
-      {/* Simplified Legend */}
-      <div className="absolute bottom-4 sm:bottom-8 md:bottom-12 lg:bottom-16 xl:bottom-20 left-2 sm:left-4 md:left-6 space-y-2 sm:space-y-3">
-        <div className="text-white text-xs sm:text-sm font-medium mb-3">
+      {/* Legend for mobile screens - positioned below the map */}
+      <div className="block md:hidden px-2 space-y-2">
+        <div className="text-white text-sm font-medium mb-2">
           Ecosystem loss driven by soybean production:
         </div>
         
-        <div className="flex items-center space-x-2 sm:space-x-3">
-          <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full" style={{ backgroundColor: CONFIG.colors.legend.noLoss }}></div>
-          <span className="text-white text-xs sm:text-sm">no ecosystem loss</span>
+        <div className="flex items-center space-x-2">
+          <div className="w-2 h-2 rounded-full" style={{ backgroundColor: CONFIG.colors.legend.noLoss }}></div>
+          <span className="text-white text-xs">no ecosystem loss</span>
         </div>
         
-        <div className="flex items-center space-x-2 sm:space-x-3">
-          <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full" style={{ backgroundColor: CONFIG.colors.legend.moderateLoss }}></div>
-          <span className="text-white text-xs sm:text-sm">moderate ecosystem loss</span>
+        <div className="flex items-center space-x-2">
+          <div className="w-2 h-2 rounded-full" style={{ backgroundColor: CONFIG.colors.legend.moderateLoss }}></div>
+          <span className="text-white text-xs">moderate ecosystem loss</span>
         </div>
         
-        <div className="flex items-center space-x-2 sm:space-x-3">
-          <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full" style={{ backgroundColor: CONFIG.colors.legend.severeLoss }}></div>
-          <span className="text-white text-xs sm:text-sm">severe ecosystem loss</span>
+        <div className="flex items-center space-x-2">
+          <div className="w-2 h-2 rounded-full" style={{ backgroundColor: CONFIG.colors.legend.severeLoss }}></div>
+          <span className="text-white text-xs">severe ecosystem loss</span>
         </div>
       </div>
     </div>
