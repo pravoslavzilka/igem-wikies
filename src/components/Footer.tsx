@@ -2,7 +2,7 @@ import React from 'react';
 
 // ============ TYPES ============
 interface Company {
-  name: string;y
+  name: string;
   logo: string;
   alt: string;
   url: string;
@@ -12,13 +12,13 @@ interface Company {
 interface LogoCardProps {
   company: Company;
   label?: string;
-  isStrategic?: boolean; // Added to handle strategic partner styling
+  isStrategic?: boolean;
 }
 
 interface PartnersSectionProps {
   title: string;
   partners: { company: Company; label?: string }[];
-  isStrategic?: boolean; // Added to indicate strategic partners section
+  isStrategic?: boolean;
 }
 
 // ============ CONFIGURATION ============
@@ -39,30 +39,32 @@ const CONFIG = {
   },
   layout: {
     containerMaxWidth: "max-w-full",
-    partnerContainerPadding: "px-2",
+    partnerContainerPadding: "px-4 sm:px-6",
     desktopSpacing: "ml-16",
   },
   partnerCard: {
-    height: "h-32",
-    strategicHeight: "h-48", // Larger height for strategic partners
-    padding: "p-0",
-    gridCols: "grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 xl:grid-cols-9",
-    strategicWidth: "w-1/2 sm:w-1/3 lg:w-1/4 xl:w-[16.67%]", // Wider for strategic partners
-    normalWidth: "w-1/3 sm:w-1/4 lg:w-1/6 xl:w-[11.11%]", // Normal width for other partners
-    gridGap: "gap-8",
-    sectionWidth: "w-full max-w-8xl",
-    gridJustify: "justify-content-center",
+    // Mobile optimized heights
+    height: "h-20 sm:h-24 md:h-32",
+    strategicHeight: "h-24 sm:h-28 md:h-48",
+    padding: "p-2",
+    // Mobile optimized grid
+    gridCols: "grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 xl:grid-cols-9",
+    strategicGridCols: "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5",
+    gridGap: "gap-4 sm:gap-6 lg:gap-8",
+    sectionWidth: "w-full max-w-7xl",
   },
   copyright: {
     year: "2025",
     licenseUrl: "https://creativecommons.org/licenses/by/4.0/",
     repositoryUrl: "https://gitlab.igem.org/2025/brno-czech-republic",
     brnoUrl: "https://www.brno.cz/",
-    brnoLogoPath: "/images/partners/Brno-logo.png"
+    brnoLogoPath: "https://static.igem.wiki/teams/5642/images/homepage/footer/brno-logo.webp"
   }
 };
 
-// ============ DATA ============
+
+
+// ============ PARTNERS DATA ============
 const PARTNERS_DATA = {
   strategicSponsors: [
     {
@@ -203,29 +205,31 @@ const PARTNERS_DATA = {
 
 // ============ COMPONENTS ============
 const LogoCard: React.FC<LogoCardProps> = ({ company, label, isStrategic }) => {
-const renderLabel = () => {
-  if (!label) return null;
-  const [firstLine, ...rest] = label.split('\n');
-  return (
-    <div
-      className="text-center whitespace-pre-line"
-      style={{ fontFamily: CONFIG.fonts.secondary }}
-    >
-      {/* prvý riadok - čierny, väčší a tučný */}
-      <div className="text-2xl font-semibold text-black">{firstLine}</div>
-
-      {/* zvyšné riadky - menšie, tenké a stále šedé */}
-      {rest.length > 0 && (
-        <div className="text-lg font-normal text-gray-600">
-          {rest.join('\n')}
+  const renderLabel = () => {
+    if (!label) return null;
+    const [firstLine, ...rest] = label.split('\n');
+    return (
+      <div
+        className="text-center whitespace-pre-line mb-2 sm:mb-3"
+        style={{ fontFamily: CONFIG.fonts.secondary }}
+      >
+        {/* první řádek - černý, větší a tučný - mobile optimized */}
+        <div className="text-sm sm:text-lg md:text-2xl font-semibold text-black leading-tight">
+          {firstLine}
         </div>
-      )}
-    </div>
-  );
-};
+
+        {/* zbývající řádky - menší, tenké a stále šedé - mobile optimized */}
+        {rest.length > 0 && (
+          <div className="text-xs sm:text-sm md:text-lg font-normal text-gray-600 leading-tight mt-1">
+            {rest.join('\n')}
+          </div>
+        )}
+      </div>
+    );
+  };
 
   return (
-    <div className="group relative flex flex-col items-center justify-center space-y-2">
+    <div className="group relative flex flex-col items-center justify-center w-full h-full">
       {renderLabel()}
       <a
         href={company.url}
@@ -244,7 +248,7 @@ const renderLabel = () => {
             const parent = target.parentElement;
             if (parent) {
               target.style.display = 'none';
-              parent.innerHTML = `<div className="text-sm ${CONFIG.colors.partnerFallback} text-center font-medium">${company.name}</div>`;
+              parent.innerHTML = `<div class="text-xs sm:text-sm ${CONFIG.colors.partnerFallback} text-center font-medium px-2">${company.name}</div>`;
             }
           }}
         />
@@ -254,18 +258,18 @@ const renderLabel = () => {
 };
 
 const PartnersSection: React.FC<PartnersSectionProps> = ({ title, partners, isStrategic }) => (
-  <div className={`space-y-8 ${CONFIG.partnerCard.sectionWidth} mx-auto`}>
+  <div className={`space-y-4 sm:space-y-6 lg:space-y-8 ${CONFIG.partnerCard.sectionWidth} mx-auto`}>
     <h3
-      className={`text-3xl font-semibold ${CONFIG.colors.textHeader} text-center`}
+      className={`text-xl sm:text-2xl lg:text-3xl font-semibold ${CONFIG.colors.textHeader} text-center px-4`}
       style={{ fontFamily: CONFIG.fonts.primary }}
     >
       {title}
     </h3>
-    <div className="flex flex-wrap justify-center -m-4">
+    <div className={`grid ${isStrategic ? CONFIG.partnerCard.strategicGridCols : CONFIG.partnerCard.gridCols} ${CONFIG.partnerCard.gridGap} px-2 sm:px-4`}>
       {partners.map(({ company, label }, index) => (
         <div
           key={`${title}-${index}`}
-          className={`${isStrategic ? CONFIG.partnerCard.strategicWidth : CONFIG.partnerCard.normalWidth} p-4 flex items-center justify-center`}
+          className="flex items-center justify-center min-h-0"
         >
           <LogoCard company={company} label={label} isStrategic={isStrategic} />
         </div>
@@ -275,34 +279,34 @@ const PartnersSection: React.FC<PartnersSectionProps> = ({ title, partners, isSt
 );
 
 const CopyrightSection: React.FC = () => (
-  <div className={`pt-8 border-t ${CONFIG.colors.border} space-y-6`}>
-    <div className="flex flex-col items-center space-y-4">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+  <div className={`pt-6 sm:pt-8 border-t ${CONFIG.colors.border} space-y-4 sm:space-y-6`}>
+    <div className="flex flex-col items-center space-y-3 sm:space-y-4">
+      <div className="flex flex-col items-center justify-center gap-2 sm:gap-4">
         <a href={CONFIG.copyright.brnoUrl} target="_blank" rel="noopener noreferrer" className="group">
           <img
-            src={CONFIG.copyright.brnoLogoPath}
+            src="https://static.igem.wiki/teams/5642/images/homepage/footer/brno-logo.webp"
             alt="Brno Logo"
-            className="h-13 object-contain transition-all duration-300"
+            className="h-8 sm:h-10 md:h-13 object-contain transition-all duration-300"
             onError={(e) => {
               const target = e.currentTarget;
               const parent = target.parentElement;
               if (parent) {
                 target.style.display = 'none';
-                parent.innerHTML = `<div className="text-sm font-semibold ${CONFIG.colors.textSecondary}">Brno</div>`;
+                parent.innerHTML = `<div class="text-sm font-semibold ${CONFIG.colors.textSecondary}">Brno</div>`;
               }
             }}
           />
         </a>
         <div
-          className={`text-sm md:text-base ${CONFIG.colors.textHeader} font-semibold text-center`}
+          className={`text-xs sm:text-sm md:text-base ${CONFIG.colors.textHeader} font-semibold text-center px-4`}
           style={{ fontFamily: CONFIG.fonts.primary }}
         >
           Under the auspices of the Mayor of Brno
         </div>
       </div>
-      <div className="space-y-2 text-center max-w-4xl">
+      <div className="space-y-2 text-center max-w-4xl px-4">
         <div
-          className={`text-sm ${CONFIG.colors.textSecondary}`}
+          className={`text-xs sm:text-sm ${CONFIG.colors.textSecondary} leading-relaxed`}
           style={{ fontFamily: CONFIG.fonts.secondary }}
         >
           © {CONFIG.copyright.year} - Content on this site is licensed under a{' '}
@@ -316,7 +320,7 @@ const CopyrightSection: React.FC = () => (
           </a>.
         </div>
         <div
-          className={`text-sm ${CONFIG.colors.textTertiary}`}
+          className={`text-xs sm:text-sm ${CONFIG.colors.textTertiary} leading-relaxed`}
           style={{ fontFamily: CONFIG.fonts.secondary }}
         >
           The repository used to create this website is available at{' '}
@@ -337,35 +341,18 @@ const CopyrightSection: React.FC = () => (
 // ============ MAIN COMPONENT ============
 const Footer: React.FC = () => {
   return (
-    <footer className={`${CONFIG.colors.background} py-12 px-4 md:px-8`}>
-      <hr className="mb-20" style={{ borderColor: "green" }} />
+    <footer className={`${CONFIG.colors.background} py-8 sm:py-12`}>
       <div className={`${CONFIG.layout.containerMaxWidth} mx-auto ${CONFIG.layout.partnerContainerPadding}`}>
-        <div className="md:hidden space-y-12">
-          <div className="space-y-12">
-            <PartnersSection
-              title="Strategic Partners & Sponsors"
-              partners={PARTNERS_DATA.strategicSponsors}
-              isStrategic={true}
-            />
-            <PartnersSection
-              title="Enablement Partners"
-              partners={PARTNERS_DATA.enablementPartners}
-            />
-          </div>
-          <CopyrightSection />
-        </div>
-        <div className="hidden md:block space-y-12">
-          <div className="flex flex-col space-y-10">
-            <PartnersSection
-              title="Strategic Partners & Sponsors"
-              partners={PARTNERS_DATA.strategicSponsors}
-              isStrategic={true}
-            />
-            <PartnersSection
-              title="Enablement Partners"
-              partners={PARTNERS_DATA.enablementPartners}
-            />
-          </div>
+        <div className="space-y-8 sm:space-y-12">
+          <PartnersSection
+            title="Strategic Partners & Sponsors"
+            partners={PARTNERS_DATA.strategicSponsors}
+            isStrategic={true}
+          />
+          <PartnersSection
+            title="Enablement Partners"
+            partners={PARTNERS_DATA.enablementPartners}
+          />
           <CopyrightSection />
         </div>
       </div>
