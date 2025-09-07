@@ -38,7 +38,7 @@ const TaifrComparison = () => {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
           {/* Left side - Main headline */}
           <div className="lg:col-span-2">
-            <h1 className="text-4xl font-bold text-gray-800 leading-tight" style={{fontFamily: 'Space Grotesk, sans-serif' }}>
+            <h1 className="text-4xl font-bold text-gray-800 leading-tight" style={{fontFamily: 'Space Grotesk, sans-serif', fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem" }}>
               We're developing a method for 5× faster genetic engineering of duckweed...
             </h1>
             <div className="text-base text-gray-600 leading-relaxed mt-6">

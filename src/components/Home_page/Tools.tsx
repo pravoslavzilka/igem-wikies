@@ -6,7 +6,7 @@ const Tools = () => {
 
         {/* Main headline centered */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-800 leading-tight" style={{fontFamily: 'Space Grotesk, sans-serif' }}>
+          <h1 className="text-4xl font-bold text-gray-800 leading-tight" style={{fontFamily: 'Space Grotesk, sans-serif', fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem" }}>
             ...combining it with tools that broaden<br />
             the possibilities even more,
           </h1>

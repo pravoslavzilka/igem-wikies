@@ -14,7 +14,7 @@ const CultivatorShow = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 max-w-7xl gap-12 justify-center mx-auto">
           {/* Left side - Main content */}
           <div className="space-y-6">
-            <h1 className="text-4xl font-bold text-gray-800 leading-tight" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+            <h1 className="text-4xl font-bold text-gray-800 leading-tight" style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem", }}>
               ...and equipping it with systems for effortless cultivation at any scale.
             </h1>
             

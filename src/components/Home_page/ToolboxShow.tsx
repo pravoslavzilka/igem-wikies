@@ -31,7 +31,7 @@ const ToolboxShow = () => {
       <div className="max-w-8xl mx-auto">
         {/* Header section */}
         <div className="text-center mb-12  mx-auto max-w-6xl">
-          <h1 className="text-4xl font-bold text-gray-800 leading-tight mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif', lineHeight: '140%' }}>
+          <h1 className="text-4xl font-bold text-gray-800 leading-tight mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif', lineHeight: '140%', fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem" }}>
             We've developed the <span style={{ color: '#779E45' }}>Duckweed Toolbox </span> -<br />
             the first step in turning duckweed into a <span style={{ color: '#779E45' }}>crop</span>.
           </h1>
@@ -143,7 +143,7 @@ const ToolboxShow = () => {
               ))}
             </div>
             <div className="text-center px-2" style={{ fontFamily: 'Space Grotesk, sans-serif', lineHeight: '140%', fontWeight: '700' }}>
-              <p className="text-sm leading-tight" style={{ lineHeight: '140%' }}>
+              <p className="text-md leading-tight" style={{ lineHeight: '140%' }}>
                 {stepDescriptions[activeStep].text}
               </p>
             </div>

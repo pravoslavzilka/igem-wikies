@@ -4,7 +4,7 @@ const VideoShow = () => {
       <div className="max-w-6xl mx-auto">
         {/* Main headline */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold  leading-tight" style={{ fontFamily: 'Space Grotesk, sans-serif', lineHeight: '140%' }}>
+          <h1 className="text-4xl font-bold  leading-tight" style={{ fontFamily: 'Space Grotesk, sans-serif', lineHeight: '140%', fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem" }}>
             Duckweed will save <span style={{ color: '#779E45' }}>farmers’ money</span> while reducing emissions <br /> and protecting the <span style={{ color: '#779E45' }}>planet’s natural ecosystems</span>.
           </h1>
         </div>
@@ -23,14 +23,14 @@ const VideoShow = () => {
 
         {/* Bottom call-to-action text */}
         <div className="text-center mt-[100px] mb-[100px]">
-          <h1 className="text-4xl font-bold  leading-tight" style={{ fontFamily: 'Space Grotesk, sans-serif', lineHeight: '140%' }}>
+          <h1 className="text-4xl font-bold  leading-tight" style={{ fontFamily: 'Space Grotesk, sans-serif', lineHeight: '140%', fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem" }}>
             What will <span style={{ color: '#779E45' }}>YOUR</span> next step be - <br /> powered by the <span style={{ color: '#779E45' }}>Duckweed Toolbox</span>?
           </h1>
         </div>
 
 
         <div className="text-center mt-[100px] mb-[100px]">
-          <h1 className="text-4xl font-bold  leading-tight" style={{ fontFamily: 'Space Grotesk, sans-serif', lineHeight: '140%' }}>
+          <h1 className="text-4xl font-bold  leading-tight" style={{ fontFamily: 'Space Grotesk, sans-serif', lineHeight: '140%', fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem" }}>
             <span style={{ color: '#779E45' }}>Making plants truly scalable</span> 
           </h1>
         </div>
