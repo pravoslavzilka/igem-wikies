@@ -69,7 +69,7 @@ function App() {
           <Route path="/project/how/predictor/medium-change/" element={<MediumChange />} />
 
 
-          <Route path="/project/how//promoters-in-silico" element={<PromotersSilico />} />
+          <Route path="/project/how/promoters-in-silico" element={<PromotersSilico />} />
 
           
           
