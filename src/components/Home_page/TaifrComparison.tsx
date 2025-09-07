@@ -10,8 +10,8 @@ const TaifrComparison = () => {
               alt="Video unable to load"
               className="rounded-lg w-full max-w-full sm:max-w-7xl md:max-w-6xl lg:max-w-5xl h-auto mx-auto md:mb-20"
               style={{
-                maxWidth: "1500px", // increased max width
-                height: "1000px",    // increased height
+                maxWidth: window.innerWidth < 768 ? "750px" : "1500px", // increased max width
+                height: window.innerWidth < 768 ? "350px" : "1000px",    // increased height
                 margin: "0 auto",
                 display: "block"
               }}
