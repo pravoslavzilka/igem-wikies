@@ -1,8 +1,25 @@
 import React from "react";
 
 const VideoComp = () => {
+
+
+
+  const Features = [
+    
+    { title: "Grows on water surface", description:"", icon: "https://static.igem.wiki/teams/5642/icons/homepage/features/fi-2352851.webp" , tooltip: "Low cost for everyone" },
+  
+    { title: "The smallest flowering plant", description:"some species just 0,5 mm", icon: "https://static.igem.wiki/teams/5642/icons/homepage/features/fi-4264454.webp", tooltip: "" },
+
+    {title: "The fastest growing flowering plant", description:"16-48 h biomass doubling time", icon: "https://static.igem.wiki/teams/5642/icons/homepage/features/fi-8165228.webp", tooltip: "Sustainable"},
+
+    { title: "High protein content", description:"20-45% of dry weight", icon: "https://static.igem.wiki/teams/5642/icons/homepage/features/fi-4300772.webp", tooltip: "Rich in vitamins and minerals" },
+  
+  ];
+
+
+
   return (
-    <div className="py-16 bg-white md:mt-20" style={{ position: "relative", overflowX: "auto" }}>
+    <div className="py-16 bg-white mt-20 md:mt-0" style={{ position: "relative", overflowX: "auto" }}>
       {/* Decorative background icons */}
       <img
         src="https://static.igem.wiki/teams/5642/icons/fi-11618743.webp"
@@ -67,7 +84,7 @@ const VideoComp = () => {
           <div className="space-y-4 flex flex-col items-center">
             <div className="rounded-xl overflow-hidden relative w-full" style={{ maxWidth: "100%" }}>
               <video autoPlay loop muted playsInline>
-                <source src="https://github.com/pravoslavzilka/igem-wikies-off/raw/7d1e9d9334fa9bbe3810cc42bedc7e1e34d72c7d/src/soybean.mp4" type="video/mp4"></source>
+                <source src="https://github.com/pravoslavzilka/igem-wikies-off/raw/refs/heads/main/src/soybean%20timeplase2.mp4" type="video/mp4"></source>
               </video>
             </div>
             <p
@@ -89,7 +106,7 @@ const VideoComp = () => {
           <div className="space-y-4 flex flex-col items-center">
             <div className="rounded-xl overflow-hidden relative w-full" style={{ maxWidth: "100%" }}>
               <video autoPlay loop muted playsInline>
-                <source src="https://raw.githubusercontent.com/pravoslavzilka/igem-wikies-off/7d1e9d9334fa9bbe3810cc42bedc7e1e34d72c7d/src/DUckweed.mp4" type="video/mp4"></source>
+                <source src="https://github.com/pravoslavzilka/igem-wikies-off/raw/refs/heads/main/src/duckweed%20timelapse_.mp4" type="video/mp4"></source>
               </video>
             </div>
             <p
@@ -107,6 +124,35 @@ const VideoComp = () => {
               Duckweed
             </p>
           </div>
+        </div>
+      </div>
+      {/* Features section at the end */}
+      <div className="w-screen max-w-none mt-12 px-2 md:px-8" style={{ position: "relative", left: "50%", right: "50%", marginLeft: "-50vw", marginRight: "-50vw" }}>
+        <div className="flex flex-wrap justify-center gap-y-8 gap-x-6 md:gap-x-12">
+          {Features.map((feature, idx) => (
+            <div
+              key={idx}
+              className="flex flex-col items-center text-center min-w-[180px] max-w-xs"
+            >
+              <img
+                src={feature.icon}
+                alt={feature.title}
+                className="mb-4"
+                style={{ width: 56, height: 56 }}
+              />
+              <div
+                className="font-semibold text-black mb-2"
+                style={{ fontFamily: "Space Grotesk, sans-serif", fontSize: "1.1rem" }}
+              >
+                {feature.title}
+              </div>
+              {feature.description && (
+                <div className="bg-[#F6F6F6] rounded-full px-6 py-2 text-sm font-medium text-gray-700" style={{ fontFamily: "Urbanist, sans-serif" }}>
+                  {feature.description}
+                </div>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </div>
