@@ -95,7 +95,7 @@ const Hero = () => {
                   fontFamily: "Urbanist, sans-serif",
                   fontSize:
                     window.innerWidth < 700
-                      ? "1.9rem"
+                      ? "1.6rem"
                       : window.innerWidth < 1480
                         ? "3.1rem"
                         : "4.0rem"
