@@ -146,31 +146,45 @@ const FadeCard = () => {
     );
   };
 
-  // --- Remap scroll progress for both lines ---
-  // First line: fade from 0 to 1 as letterFade goes from 0 to 0.5
-  // Second line: fade from 0 to 1 as letterFade goes from 0.5 to 1
-  const headlineText = fadeHeadline.map(f => f.text).join('');
-  const whyText = fadeWhy.map(f => f.text).join('');
-  const totalHeadlineLetters = headlineText.length;
-  const totalWhyLetters = whyText.length;
+  // --- Remap scroll progress for all three lines ---
+  const fadeSentence1 = [
+    { text: "Duckweed is set to ", color: "#171F16" },
+    { text: "end soybean dominance", color: "#779E45" },
+    { text: "! So, why are we still feeding cows with soybean?", color: "#171F16" },
+  ];
+  const fadeSentence2 = fadeHeadline;
+  const fadeSentence3 = fadeWhy;
 
-  // For first line
-  const firstLineProgress = Math.min(letterFade, 0.5) / 0.5;
-  const firstLineFadeCount = Math.floor(firstLineProgress * totalHeadlineLetters);
+  const sentence1Text = fadeSentence1.map(f => f.text).join('');
+  const sentence2Text = fadeSentence2.map(f => f.text).join('');
+  const sentence3Text = fadeSentence3.map(f => f.text).join('');
+  const total1 = sentence1Text.length;
+  const total2 = sentence2Text.length;
+  const total3 = sentence3Text.length;
+  const totalLetters = total1 + total2 + total3;
 
-  // For second line
-  const secondLineProgress = Math.max(0, letterFade - 0.5) / 0.5;
-  const secondLineFadeCount = Math.floor(secondLineProgress * totalWhyLetters);
+  // Map scroll progress to each line
+  let fadeCount1 = 0, fadeCount2 = 0, fadeCount3 = 0;
+  const globalFadeCount = Math.floor(letterFade * totalLetters);
+  if (globalFadeCount <= total1) {
+    fadeCount1 = globalFadeCount;
+  } else if (globalFadeCount <= total1 + total2) {
+    fadeCount1 = total1;
+    fadeCount2 = globalFadeCount - total1;
+  } else {
+    fadeCount1 = total1;
+    fadeCount2 = total2;
+    fadeCount3 = globalFadeCount - total1 - total2;
+  }
 
-  // Update renderFadedHeadline and renderFadedWhy to use these counts:
-  const renderFadedHeadline2 = () => {
+  const renderFadedSentence1 = () => {
     let letterIdx = 0;
     return (
       <span>
-        {fadeHeadline.map((frag, i) => (
+        {fadeSentence1.map((frag, i) => (
           <span key={i}>
             {frag.text.split('').map((char, j) => {
-              const isColored = letterIdx < firstLineFadeCount;
+              const isColored = letterIdx < fadeCount1;
               const style = isColored
                 ? { color: frag.color, transition: "color 0.2s" }
                 : { color: "#9CA3AF", transition: "color 0.2s" };
@@ -187,14 +201,38 @@ const FadeCard = () => {
     );
   };
 
-  const renderFadedWhy2 = () => {
+  const renderFadedSentence2 = () => {
     let letterIdx = 0;
     return (
       <span>
-        {fadeWhy.map((frag, i) => (
+        {fadeSentence2.map((frag, i) => (
           <span key={i}>
             {frag.text.split('').map((char, j) => {
-              const isColored = letterIdx < secondLineFadeCount;
+              const isColored = letterIdx < fadeCount2;
+              const style = isColored
+                ? { color: frag.color, transition: "color 0.2s" }
+                : { color: "#9CA3AF", transition: "color 0.2s" };
+              letterIdx++;
+              return (
+                <span key={j} style={style}>
+                  {char}
+                </span>
+              );
+            })}
+          </span>
+        ))}
+      </span>
+    );
+  };
+
+  const renderFadedSentence3 = () => {
+    let letterIdx = 0;
+    return (
+      <span>
+        {fadeSentence3.map((frag, i) => (
+          <span key={i}>
+            {frag.text.split('').map((char, j) => {
+              const isColored = letterIdx < fadeCount3;
               const style = isColored
                 ? { color: frag.color, transition: "color 0.2s" }
                 : { color: "#9CA3AF", transition: "color 0.2s" };
@@ -235,10 +273,7 @@ const FadeCard = () => {
                 : {}),
             }}
           >
-            Duckweed is set to{" "}
-            <span style={{ color: "#779E45" }}>end soybean <br /> dominance!</span> So, why are we still
-            <br />
-            feeding cows with soybean?
+            {renderFadedSentence1()}
           </div>
           <div
             className="font-bold mb-2"
@@ -249,7 +284,7 @@ const FadeCard = () => {
               marginTop: window.innerWidth < 768 ? "1.5rem" : "5rem",
             }}
           >
-            {renderFadedHeadline2()}
+            {renderFadedSentence2()}
           </div>
           <div
             className="font-bold mb-2"
@@ -263,7 +298,7 @@ const FadeCard = () => {
               marginBottom: window.innerWidth < 768 ? "2rem" : "13rem",
             }}
           >
-            {renderFadedWhy2()}
+            {renderFadedSentence3()}
           </div>
         </div>
       </div>
