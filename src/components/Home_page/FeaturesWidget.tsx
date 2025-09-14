@@ -17,7 +17,7 @@ const Features = [
   
     { title: "Wide pH and temperature cultivation range", description:"", icon: "https://static.igem.wiki/teams/5642/icons/homepage/features/fi-9997473.webp", tooltip: "" },
 
-    { title: "Small genome for a monocot plant", description:"150 - 500 Mbp", icon: "https://static.igem.wiki/teams/5642/icons/fi-7006038.webp", tooltip: "" },
+    { title: "Small genome for a monocot plant", description:"150 - 500 Mbp", icon: "https://static.igem.wiki/teams/5642/icons/features/fi-7006038.webp", tooltip: "" },
 
     { title: "No gene silencing", description:"", icon: "https://static.igem.wiki/teams/5642/icons/homepage/features/fi-11294443.webp", tooltip: "" },
     
@@ -35,7 +35,7 @@ const FeaturesWidget = () => {
   const repeatedFeatures = Features.concat(Features).concat(Features).concat(Features);
 
   return (
-    <div className="mt-20" style={{ overflow: "hidden" }}>
+    <div className="mt-20" style={{ overflow: "hidden", display: window.innerWidth < 768 ? 'block' : 'none' }}>
       <div
         className="py-16 p-10 bg-white"
         style={{

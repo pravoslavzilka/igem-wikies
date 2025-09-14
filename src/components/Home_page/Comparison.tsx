@@ -2,9 +2,14 @@ import React, { useState, useEffect } from "react";
 import "@fontsource/space-grotesk";
 
 // Cow image components
-const CowIcon = ({ src }: { src: string }) => (
-  <img src={src} alt="cow" width={25} height={15} style={{ display: "inline-block" }} />
-);
+const CowIcon = ({ src }: { src: string }) => {
+  // Responsive cow size
+
+  const height = window.innerWidth < 500 ? 16 : window.innerWidth < 1500 ? 17 : 22;
+  return (
+    <img src={src} alt="cow" height={height} style={{ display: "inline-block", height }} />
+  );
+};
 
 const getCowCols = (width: number) => {
   // 5 columns for mobile, 10 for desktop
@@ -46,11 +51,24 @@ const Comparison = () => {
       : <CowIcon key={i} src="https://static.igem.wiki/teams/5642/icons/homepage/other/vector-f.webp" />
   );
 
-  const colGap = "20px";
-  const rowGap = "40px";
+  // Responsive gaps
+  const colGap = window.innerWidth < 500 ? "8px" : window.innerWidth < 1500 ? "18px" : "32px";
+  const rowGap = window.innerWidth < 500 ? "20px" : window.innerWidth < 1500 ? "14px" : "18px";
 
   // Set gap between tables: smaller on mobile, larger on desktop
   const tablesGap = cols === 10 ? "8rem" : "2rem";
+
+
+  const Features = [
+    { title: "High nutrient uptake", description:"Great phytoremediation potential", icon: "https://static.igem.wiki/teams/5642/icons/homepage/features/fi-9997472.webp", tooltip: "High nutritional value", color: "#FFB2FF" },
+  
+    { title: "Wide pH and temperature cultivation range", description:"", icon: "https://static.igem.wiki/teams/5642/icons/homepage/features/fi-9997473.webp", tooltip: "" },
+
+    { title: "Small genome for a monocot plant", description:"150 - 500 Mbp", icon: "https://static.igem.wiki/teams/5642/icons/features/fi-7006038.webp", tooltip: "" },
+
+    { title: "No gene silencing", description:"", icon: "https://static.igem.wiki/teams/5642/icons/homepage/features/fi-11294443.webp", tooltip: "" },
+    
+  ];
 
   return (
     <div
@@ -71,7 +89,7 @@ const Comparison = () => {
           fontFamily: "Space Grotesk",
           fontSize: window.innerWidth < 768 ? "1.5rem" : "2.25rem", // text-2xl for mobile, text-4xl for desktop
           lineHeight: window.innerWidth < 768 ? "120%" : "normal",
-          marginTop: window.innerWidth < 768 ? "1.5rem" : "",
+          marginTop: window.innerWidth < 768 ? "1.5rem" : "1.9rem",
           marginBottom: window.innerWidth < 768 ? "1.5rem" : "2rem",
         }}
       >
@@ -82,17 +100,18 @@ const Comparison = () => {
         className="flex flex-row justify-center items-end"
         style={{
           gap: tablesGap,
-          marginTop: window.innerWidth < 768 ? "1.5rem" : "4rem",
+          marginTop: window.innerWidth < 768 ? "1.5rem" : "2rem",
         }}
       >
         {/* Soybean group */}
-        <div className="flex flex-col items-center" style={{ paddingTop: window.innerWidth < 768 ? "0.5rem" : "4rem" }}>
+        <div className="flex flex-col items-center" style={{ paddingTop: window.innerWidth < 768 ? "0.5rem" : "1rem" }}>
           <div
             className="grid mb-4"
             style={{
               gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))`,
               columnGap: colGap,
-              rowGap: rowGap
+              rowGap: rowGap,
+              margin: '0 auto'
             }}
           >
             {cowsSoy}
@@ -103,7 +122,7 @@ const Comparison = () => {
           <div
             style={{
               borderLeft: "2px solid #779E45",
-              height: "300px",
+              height: window.innerWidth < 768 ? "180px" : "300px",
               margin: ""
             }}
           />
@@ -115,7 +134,8 @@ const Comparison = () => {
             style={{
               gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))`,
               columnGap: colGap,
-              rowGap: rowGap
+              rowGap: rowGap,
+              margin: '0 auto'
             }}
           >
             {cowsDuckweed}
@@ -132,6 +152,39 @@ const Comparison = () => {
       >
         With the same land, duckweed can feed three times more cows than soybean
       </div>
+
+
+       {/* Features section at the end */}
+      <div className="w-screen max-w-none mt-12 px-2 md:px-8" style={{ position: "relative", left: "50%", right: "50%", marginLeft: "-50vw", marginRight: "-50vw", display: window.innerWidth < 768 ? 'none' : 'block' }}>
+        <div className="flex flex-wrap justify-center gap-y-10 gap-x-8 md:gap-x-16">
+          {Features.map((feature, idx) => (
+            <div
+              key={idx}
+              className="flex flex-col items-center text-center min-w-[180px] max-w-xs"
+            >
+              <img
+                src={feature.icon}
+                alt={feature.title}
+                className="mb-4"
+                style={{ width: 56, height: 56 }}
+              />
+              <div
+                className="font-semibold text-black mb-2"
+                style={{ fontFamily: "Space Grotesk, sans-serif", fontSize: "1.1rem" }}
+              >
+                {feature.title}
+              </div>
+              {feature.description && (
+                <div className="bg-[#F6F6F6] rounded-full px-6 py-2 text-sm font-medium text-gray-700" style={{ fontFamily: "Urbanist, sans-serif" }}>
+                  {feature.description}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div> 
+
+
     </div>
   );
 };
