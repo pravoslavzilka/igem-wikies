@@ -6,22 +6,22 @@ import React, { useState, useEffect } from 'react';
 
 
 const headlineWords = [
-    { word: "Affordable", icon: "https://static.igem.wiki/teams/5642/icons/fi-45165.webp", image:"https://static.igem.wiki/teams/5642/images/homepage/iconshover/soyprice-graph.webp",  tooltip: "Soybean is the dominant source of protein for livestock. Since 2000, its prices have more than doubled, squeezing farmers’ margins and driving up feed costs", color: "#9DD019" },
+    { word: "Affordable", icon: "https://static.igem.wiki/teams/5642/icons/homepage/headline/1.webp", image:"https://static.igem.wiki/teams/5642/images/homepage/iconshover/soyprice-graph.webp",  tooltip: "Soybean is the dominant source of protein for livestock. Since 2000, its prices have more than doubled, squeezing farmers’ margins and driving up feed costs", color: "#9DD019" },
   
       { word: "local", icon: "", tooltip: "" },
   
-    { word: "protein", icon: "https://static.igem.wiki/teams/5642/icons/fi-11618743.webp", image:"https://static.igem.wiki/teams/5642/images/homepage/iconshover/sqmepm5rxog31.webp", tooltip: "70% of global soy production is used for animal feed - 310 million tons grown on 115 million hectares. In the past 50 years, demand has increased tenfold, often at the expense of forests and savannas that were cleared to make way for soy fields.", color: "#FFB2FF" },
+    { word: "protein", icon: "https://static.igem.wiki/teams/5642/icons/homepage/headline/2.webp", image:"https://static.igem.wiki/teams/5642/images/homepage/iconshover/sqmepm5rxog31.webp", tooltip: "70% of global soy production is used for animal feed - 310 million tons grown on 115 million hectares. In the past 50 years, demand has increased tenfold, often at the expense of forests and savannas that were cleared to make way for soy fields.", color: "#FFB2FF" },
   
     { word: "for", icon: "", tooltip: ""},
   
     { word: "every", icon: "", tooltip: "" },
-  
-    { word: "farm", icon: "https://static.igem.wiki/teams/5642/icons/fi-7830224.webp", image:"https://static.igem.wiki/teams/5642/images/homepage/iconshover/container.webp", tooltip: "Soybean production is concentrated in just a handful of countries, leaving farmers everywhere else dependent on imports. Our modular, autonomous cultivation unit lets any farm produce its own protein-rich duckweed, ensuring a steady, local alternative to soy. ", color:"#7363F4"  },
-  
+
+    { word: "farm", icon: "https://static.igem.wiki/teams/5642/icons/homepage/headline/3.webp", image:"https://static.igem.wiki/teams/5642/images/homepage/iconshover/container.webp", tooltip: "Soybean production is concentrated in just a handful of countries, leaving farmers everywhere else dependent on imports. Our modular, autonomous cultivation unit lets any farm produce its own protein-rich duckweed, ensuring a steady, local alternative to soy. ", color:"#7363F4"  },
+
     { word: "by", icon: "", tooltip: "" },
-  
-    { word: "programmable", icon: "https://static.igem.wiki/teams/5642/icons/fi-5870724.webp", image:"https://static.igem.wiki/teams/5642/images/homepage/taifr-1.webp", tooltip: "We are developing a genetic engineering platform that cuts the time needed for stable insertion of new trait to duckweed - the world’s fastest-growing plant - from five months down to just one." , color: "#D07519"},
-  
+
+    { word: "programmable", icon: "https://static.igem.wiki/teams/5642/icons/homepage/headline/4.webp", image:"https://static.igem.wiki/teams/5642/images/homepage/iconshover/programmable.webp", tooltip: "We are developing a genetic engineering platform that cuts the time needed for stable insertion of new trait to duckweed - the world’s fastest-growing plant - from five months down to just one." , color: "#D07519"},
+
     { word: "duckweed", icon: "", tooltip: "" },
     
   ];
