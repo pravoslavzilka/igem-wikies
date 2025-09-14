@@ -57,7 +57,7 @@ const itemVariants: Variants = {
 };
 
 const BrazilDeforestationWidget = () => {
-  const [sliderValue, setSliderValue] = useState(50); // 0-100, kde 50 je stred (NOW)
+  const [sliderValue, setSliderValue] = useState(0);
   const [dataPoints, setDataPoints] = useState<DataPoint[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);

@@ -13,6 +13,7 @@ interface ContentData {
   quote: string;
   author: string;
   title: string;
+  imageUrl?: string; // Pole pre URL obrÃ¡zka
 }
 
 const CONFIG = {
@@ -123,7 +124,8 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
         headline: "is the most important source of protein for livestock worldwide",
         quote: "66% of the protein feedstock our farmers are dependent on is imported",
         author: "Recent Trends for Enhancing the Diversity",
-        title: "and Quality of Soybean Products"
+        title: "and Quality of Soybean Products",
+        imageUrl: "images/authors/author1.jpg"
       };
     } else if (currentYear <= 2019) {
       return {
@@ -131,7 +133,8 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
         headline: "of soybean production is used as feedstock",
         quote: "40% of the global production is concentrated in Brazil",
         author: "Foreign Agricultural Service",
-        title: "U.S. Department of Agriculture"
+        title: "U.S. Department of Agriculture",
+        imageUrl: "images/authors/author2.jpg"
       };
     } else if (currentYear <= 2022) {
       return {
@@ -139,7 +142,8 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
         headline: "hectares of Brazil's tropical savannas of Cerrado is lost",
         quote: "Since 2000, those savannas have been converted into soybean fields",
         author: "The expansion of soybean production",
-        title: "in the Cerrado"
+        title: "in the Cerrado",
+        imageUrl: "images/authors/author3.jpg"
       };
     } else {
       return {
@@ -147,7 +151,8 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
         headline: "of the endemic flora of the Cerrado is threatened with extinction",
         quote: "We can do better!",
         author: "Prof. Carlos Klink",
-        title: "Department of Ecology University of Brasília"
+        title: "Department of Ecology University of BrasÃ­lia",
+        imageUrl: "https://static.igem.wiki/teams/5642/images/homepage/brazil/carlos-klink.webp"
       };
     }
   }, [currentYear]);
@@ -170,11 +175,11 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
   }, [getYearContent, displayContent]);
 
   if (!displayContent) {
-    return <div className="text-left space-y-6 sm:space-y-8 h-64"></div>;
+    return <div className="text-left space-y-4 sm:space-y-6 h-48 sm:h-64"></div>;
   }
 
   return (
-    <div className="text-left space-y-6 sm:space-y-8">
+    <div className="text-left space-y-4 sm:space-y-6 md:space-y-8 px-2 sm:px-0">
       <AnimatePresence mode="wait">
         <motion.div 
           key={contentKey}
@@ -183,10 +188,10 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
           animate="visible"
           exit="exit"
         >
-          <div className="mb-4 sm:mb-6">
-            {/* Tagline - OBROVSKE */}
+          <div className="mb-3 sm:mb-4 md:mb-6">
+            {/* Tagline - responzÃ­vne veÄ¾kosti */}
             <motion.div 
-              className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl font-bold tracking-wider mb-6 sm:mb-8" 
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-6xl 2xl:text-7xl font-bold tracking-wider mb-3 sm:mb-4 md:mb-6" 
               style={{ 
                 color: CONFIG.colors.accent, 
                 fontFamily: "Space Grotesk, sans-serif", 
@@ -211,10 +216,10 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
             </motion.div>
             
             <motion.h1 
-              className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-2xl 2xl:text-3xl font-medium leading-relaxed text-white mb-6 sm:mb-8"
+              className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl 2xl:text-2xl font-medium leading-relaxed text-white mb-4 sm:mb-6"
               variants={headlineVariants} 
               style={{
-                marginTop:'20px', 
+                marginTop:'15px', 
                 textAlign: 'center', 
                 fontFamily: "Space Grotesk, sans-serif", 
                 fontWeight: 500
@@ -225,12 +230,12 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
           </div>
           
           <motion.div 
-            className="border-t border-white/20 pt-6 sm:pt-8"
+            className="border-t border-white/20 pt-4 sm:pt-6"
             variants={childVariants}
           >
-            <div className="flex items-start space-x-3 sm:space-x-4">
+            <div className="flex items-start space-x-2 sm:space-x-3">
               <motion.div 
-                className="text-4xl sm:text-5xl md:text-6xl text-white/20 font-serif flex-shrink-0"
+                className="text-3xl sm:text-4xl md:text-5xl text-white/20 font-serif flex-shrink-0"
                 animate={{ 
                   scale: [1, 1.05, 1],
                   opacity: [0.2, 0.3, 0.2]
@@ -242,18 +247,28 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
               
               <div className="min-w-0 flex-1">
                 <motion.p 
-                  className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl text-white mb-3 sm:mb-4 leading-relaxed"
+                  className="text-sm sm:text-base md:text-lg lg:text-base xl:text-lg text-white mb-2 sm:mb-3 leading-relaxed flex items-start"
                   variants={quoteVariants}
                 >
-                  {displayContent.quote}
+                  <span>{displayContent.quote}</span>
+                  <motion.span 
+                    className="text-3xl sm:text-4xl md:text-5xl text-white/20 font-serif ml-2 sm:ml-3 -mt-1"
+                    animate={{ 
+                      scale: [1, 1.05, 1],
+                      opacity: [0.2, 0.3, 0.2]
+                    }}
+                    transition={{ duration: 4, repeat: Infinity }}
+                  >
+                    "
+                  </motion.span>
                 </motion.p>
                 
                 <motion.div 
-                  className="flex items-center space-x-3"
+                  className="flex items-center space-x-2 sm:space-x-3"
                   variants={authorVariants}
                 >
                   <motion.div 
-                    className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gray-400 flex-shrink-0"
+                    className="w-6 h-6 sm:w-8 sm:h-8 rounded-full flex-shrink-0 overflow-hidden"
                     whileHover={{ scale: 1.1 }}
                     animate={{
                       boxShadow: [
@@ -263,11 +278,27 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
                       ]
                     }}
                     transition={{ duration: 2, repeat: Infinity }}
-                  />
+                  >
+                    {displayContent.imageUrl ? (
+                      <img 
+                        src={displayContent.imageUrl} 
+                        alt={displayContent.author} 
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                          const sibling = e.currentTarget.nextElementSibling;
+                          if (sibling) {
+                            (sibling as HTMLElement).style.display = 'block';
+                          }
+                        }}
+                      />
+                    ) : null}
+                    <div className="w-full h-full rounded-full bg-gray-400" style={{display: displayContent.imageUrl ? 'none' : 'block'}} />
+                  </motion.div>
                   
                   <div className="min-w-0">
                     <motion.div 
-                      className="font-medium text-white text-sm sm:text-base"
+                      className="font-medium text-white text-xs sm:text-sm md:text-base"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ delay: 0.4 }}

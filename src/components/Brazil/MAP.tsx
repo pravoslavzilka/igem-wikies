@@ -59,8 +59,9 @@ const MAP: React.FC<MAPProps> = ({ processedPoints }) => {
         
         {/* Legend for larger screens - positioned absolutely over the map */}
         <div className="hidden md:block absolute bottom-8 lg:bottom-12 xl:bottom-16 left-4 lg:left-6 space-y-2 lg:space-y-3">
-          <div className="text-white text-base font-medium mb-3">
-            Ecosystem loss driven by soybean production:
+          <div className="text-white text-lg lg:text-xl font-bold mb-4 leading-tight">
+            <div className="underline decoration-2 underline-offset-2">Ecosystem loss driven by</div>
+            <div className="font-extrabold">soybean production:</div>
           </div>
           
           <div className="flex items-center space-x-3">
@@ -82,8 +83,9 @@ const MAP: React.FC<MAPProps> = ({ processedPoints }) => {
       
       {/* Legend for mobile screens - positioned below the map */}
       <div className="block md:hidden px-2 space-y-2">
-        <div className="text-white text-sm font-medium mb-2">
-          Ecosystem loss driven by soybean production:
+        <div className="text-white text-base font-bold mb-3 leading-tight">
+          <div className="underline decoration-2 underline-offset-2">Ecosystem loss driven by</div>
+          <div className="font-extrabold">soybean production:</div>
         </div>
         
         <div className="flex items-center space-x-2">
