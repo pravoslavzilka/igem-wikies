@@ -1,6 +1,6 @@
 const Tools = () => {
     return (
-    <div className="p-10 min-h-screen mx-auto mb-20   md:mt-[-150px]">
+    <div className="p-10 min-h-screen mx-auto md:mb-40   md:mt-[-150px]">
       <div className="max-w-7xl mx-auto">
         
 
@@ -26,7 +26,7 @@ const Tools = () => {
                 style={{
                     fontFamily: 'Urbanist, sans-serif',
                     fontWeight: 500,
-                    fontSize: '18px',
+                    fontSize: '19px',
                     lineHeight: '140%',
                     letterSpacing: '0px',
                     textAlign: 'center'
@@ -34,12 +34,12 @@ const Tools = () => {
                 <p>
                     With <span style={{
                     fontWeight: 700,
-                    fontSize: '18px',
+                    fontSize: '19px',
                     lineHeight: '140%',
                     letterSpacing: '0px',
                     textAlign: 'center',
                     fontFamily: 'Urbanist, sans-serif'
-                    }}>just two constructs</span> and <b>our protocol</b>, you can express any gene in duckweed - transiently in a week, <b>stably in a month!</b>
+                    }}>just two constructs</span> and <b style={{color:"#779E45"}}>our protocol</b>, you can express any gene in duckweed - transiently in a week, <b style={{color:"#779E45"}}>stably in a month!</b>
                 </p>
                 </div>
           </div>
@@ -55,15 +55,15 @@ const Tools = () => {
                 style={{
                     fontFamily: 'Urbanist, sans-serif',
                     fontWeight: 500,
-                    fontSize: '18px',
+                    fontSize: '19px',
                     lineHeight: '140%',
                     letterSpacing: '0px',
                     textAlign: 'center'
                 }}> 
                 <p className="mt-8">
-                    Want to knockout a gene? <b>Simply insert 
+                    Want to knockout a gene? <b style={{color:"#779E45"}}>Simply insert 
                     your gRNA</b> into our dubbed target-specific 
-                    construct, transform, <b>and see the 
+                    construct, transform, <b style={{color:"#779E45"}}>and see the 
                     phenotype!</b>
                 </p>
                 </div>
@@ -82,14 +82,14 @@ const Tools = () => {
                 style={{
                     fontFamily: 'Urbanist, sans-serif',
                     fontWeight: 500,
-                    fontSize: '18px',
+                    fontSize: '19px',
                     lineHeight: '140%',
                     letterSpacing: '0px',
                     textAlign: 'center'
                 }}>
                 <p  >
                     Want to fine-tune your gene's expression in 
-                    duckweed? Try one of the <b>7 new native 
+                    duckweed? Try one of the <b style={{color:"#779E45"}}>7 new native 
                     promoters</b> we've characterized
                 </p>
                 </div>
