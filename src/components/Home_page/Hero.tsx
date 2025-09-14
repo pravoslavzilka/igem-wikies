@@ -20,7 +20,7 @@ const headlineWords = [
 
     { word: "by", icon: "", tooltip: "" },
 
-    { word: "programmable", icon: "https://static.igem.wiki/teams/5642/icons/homepage/headline/4.webp", image:"https://static.igem.wiki/teams/5642/images/homepage/iconshover/programmable.webp", tooltip: "We are developing a genetic engineering platform that cuts the time needed for stable insertion of new trait to duckweed - the world’s fastest-growing plant - from five months down to just one." , color: "#D07519"},
+    { word: "programmable", icon: "https://static.igem.wiki/teams/5642/icons/homepage/headline/4.webp", image:"https://static.igem.wiki/teams/5642/images/homepage/iconshover/taifr.webp", tooltip: "We are developing a genetic engineering platform that cuts the time needed for stable insertion of new trait to duckweed - the world’s fastest-growing plant - from five months down to just one." , color: "#D07519"},
 
     { word: "duckweed", icon: "", tooltip: "" },
     
