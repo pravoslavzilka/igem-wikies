@@ -6,7 +6,7 @@ const CultivatorShow = () => {
     <div className="bg-white p-8 min-h-screen md:mt-[-200px]">
       <div className="max-w-8xl mx-auto">
         {/* Top image placeholder */}
-        <div className="w-full h-64 sm:h-96 md:h-[45rem] bg-gray-200 rounded-lg flex items-center justify-center mb-12">
+        <div className="w-full h-64 sm:h-40 md:h-[26rem] bg-gray-200 rounded-lg flex items-center justify-center mb-12">
           <img src="https://static.igem.wiki/teams/5642/images/homepage/cultivator-min.webp" alt="Lab Image" className="w-full h-full object-cover rounded-lg" />
         </div>
 
