@@ -35,6 +35,11 @@ const VideoShow = () => {
           </h1>
         </div>
       </div>
+
+      <div className="w-full mt-[100px] mb-[100px] rounded-lg flex items-center justify-center">
+        <img src="https://static.igem.wiki/teams/5642/icons/igem-brno-final-transparent.webp" alt="Farm/Cow" className="h-60 object-cover rounded-lg" />
+      </div>
+
     </div>
 
   );

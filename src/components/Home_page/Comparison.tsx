@@ -5,7 +5,7 @@ import "@fontsource/space-grotesk";
 const CowIcon = ({ src }: { src: string }) => {
   // Responsive cow size
 
-  const height = window.innerWidth < 500 ? 16 : window.innerWidth < 1500 ? 17 : 22;
+  const height = window.innerWidth < 500 ? 16 : window.innerWidth < 1500 ? 17 : 18;
   return (
     <img src={src} alt="cow" height={height} style={{ display: "inline-block", height }} />
   );

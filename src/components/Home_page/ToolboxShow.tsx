@@ -27,7 +27,7 @@ const ToolboxShow = () => {
   const [activeStep, setActiveStep] = useState(0);
 
   return (
-    <div className=" p-8 min-h-screen mt-[100px] md:mt-[-100px]">
+    <div className=" p-8 min-h-screen mt-[100px] ">
       <div className="max-w-8xl mx-auto">
         {/* Header section */}
         <div className="text-center mb-12  mx-auto max-w-6xl">
@@ -152,9 +152,11 @@ const ToolboxShow = () => {
 
         {/* Bottom image placeholder */}
         <div className="w-full h-[500px] bg-gray-200 rounded-lg flex items-center justify-center">
-          <img src="https://static.igem.wiki/teams/5642/images/homepage/nitroduck.webp" alt="Farm/Cow" className="w-full h-full object-cover rounded-lg" />
+          <img src="https://static.igem.wiki/teams/5642/images/homepage/nitroduck-cov-update.webp" alt="Farm/Cow" className="w-full h-full object-cover rounded-lg" />
       </div>
       </div>
+
+      
     </div>
   );
 }
