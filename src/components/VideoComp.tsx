@@ -128,7 +128,7 @@ const VideoComp = () => {
       </div>
       {/* Features section at the end */}
       <div className="w-screen max-w-none mt-12 px-2 md:px-8" style={{ position: "relative", left: "50%", right: "50%", marginLeft: "-50vw", marginRight: "-50vw" }}>
-        <div className="flex flex-wrap justify-center gap-y-8 gap-x-6 md:gap-x-12">
+        <div className="flex flex-wrap justify-center gap-y-10 gap-x-8 md:gap-x-16">
           {Features.map((feature, idx) => (
             <div
               key={idx}

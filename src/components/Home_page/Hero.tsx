@@ -84,21 +84,27 @@ const Hero = () => {
           
           {/* Content */}
           <div className="relative z-10 h-full flex items-center justify-center px-2 md:px-8">
-            <div className="text-center max-w-6xl w-full">
+            <div className="text-center max-w-6xl w-full sm:mt-20">
               <h1
-                className="absolute text-3xl sm:text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-20 px-2 md:px-16 w-[98vw] md:w-[80vw] max-w-full md:max-w-7xl flex flex-wrap justify-center items-center gap-x-1 gap-y-2 md:gap-x-2 md:gap-y-4 mt-5"
+                className="absolute font-bold text-white mb-20 px-2 md:px-16 w-[98vw] md:w-[80vw] max-w-full md:max-w-7xl flex flex-wrap justify-center items-center gap-x-1 gap-y-2 md:gap-x-2 md:gap-y-4 mt-5 "
                 style={{
                   top: "13%",
                   left: "50%",
                   transform: "translate(-50%, -50%)",
                   zIndex: 10,
                   fontFamily: "Urbanist, sans-serif",
+                  fontSize:
+                    window.innerWidth < 700
+                      ? "1.9rem"
+                      : window.innerWidth < 1480
+                        ? "3.1rem"
+                        : "4.0rem"
                 }}
               >
                 {headlineWords.map((item, idx) => (
                   <span key={idx} className="relative inline-flex items-center mx-1">
                     <span 
-                      style={{ fontSize: "0.85em", lineHeight: "1" }}>
+                      style={{  lineHeight: "1" }}>
                       {item.word}
                     </span>
                     {item.icon && (
