@@ -58,7 +58,7 @@ const CONFIG = {
     licenseUrl: "https://creativecommons.org/licenses/by/4.0/",
     repositoryUrl: "https://gitlab.igem.org/2025/brno-czech-republic",
     brnoUrl: "https://www.brno.cz/",
-    brnoLogoPath: "https://static.igem.wiki/teams/5642/images/homepage/footer/brno-logo.webp"
+    brnoLogoPath: "https://static.igem.wiki/teams/5642/images/homepage/footer/brno-logo2.webp"
   }
 };
 
@@ -213,12 +213,12 @@ const LogoCard: React.FC<LogoCardProps> = ({ company, label, isStrategic }) => {
         className="text-center whitespace-pre-line mb-2 sm:mb-3"
         style={{ fontFamily: CONFIG.fonts.secondary }}
       >
-        {/* první řádek - černý, větší a tučný - mobile optimized */}
+        {/* prvnÃ­ Å™Ã¡dek - ÄernÃ½, vÄ›tÅ¡Ã­ a tuÄnÃ½ - mobile optimized */}
         <div className="text-sm sm:text-lg md:text-2xl font-semibold text-black leading-tight">
           {firstLine}
         </div>
 
-        {/* zbývající řádky - menší, tenké a stále šedé - mobile optimized */}
+        {/* zbÃ½vajÃ­cÃ­ Å™Ã¡dky - menÅ¡Ã­, tenkÃ© a stÃ¡le Å¡edÃ© - mobile optimized */}
         {rest.length > 0 && (
           <div className="text-xs sm:text-sm md:text-lg font-normal text-gray-600 leading-tight mt-1">
             {rest.join('\n')}
@@ -259,16 +259,18 @@ const LogoCard: React.FC<LogoCardProps> = ({ company, label, isStrategic }) => {
 
 const PartnersSection: React.FC<PartnersSectionProps> = ({ title, partners, isStrategic }) => (
   <div className={`space-y-4 sm:space-y-6 lg:space-y-8 ${CONFIG.partnerCard.sectionWidth} mx-auto`}>
-    <h3
-      className={`text-xl sm:text-2xl lg:text-3xl font-semibold ${CONFIG.colors.textHeader} text-center px-4`}
-      style={{ fontFamily: CONFIG.fonts.primary }}
-    >
-      {title}
-    </h3>
+    {title && (
+      <h3
+        className={`text-xl sm:text-2xl lg:text-3xl font-semibold ${CONFIG.colors.textHeader} text-center px-4`}
+        style={{ fontFamily: CONFIG.fonts.primary }}
+      >
+        {title}
+      </h3>
+    )}
     <div className={`grid ${isStrategic ? CONFIG.partnerCard.strategicGridCols : CONFIG.partnerCard.gridCols} ${CONFIG.partnerCard.gridGap} px-2 sm:px-4`}>
       {partners.map(({ company, label }, index) => (
         <div
-          key={`${title}-${index}`}
+          key={`${title || 'partners'}-${index}`}
           className="flex items-center justify-center min-h-0"
         >
           <LogoCard company={company} label={label} isStrategic={isStrategic} />
@@ -284,9 +286,9 @@ const CopyrightSection: React.FC = () => (
       <div className="flex flex-col items-center justify-center gap-2 sm:gap-4">
         <a href={CONFIG.copyright.brnoUrl} target="_blank" rel="noopener noreferrer" className="group">
           <img
-            src="https://static.igem.wiki/teams/5642/images/homepage/footer/brno-logo.webp"
+            src={CONFIG.copyright.brnoLogoPath}
             alt="Brno Logo"
-            className="h-8 sm:h-10 md:h-13 object-contain transition-all duration-300"
+            className="h-11 sm:h-14 md:h-15 object-contain transition-all duration-300"
             onError={(e) => {
               const target = e.currentTarget;
               const parent = target.parentElement;
@@ -309,7 +311,7 @@ const CopyrightSection: React.FC = () => (
           className={`text-xs sm:text-sm ${CONFIG.colors.textSecondary} leading-relaxed`}
           style={{ fontFamily: CONFIG.fonts.secondary }}
         >
-          © {CONFIG.copyright.year} - Content on this site is licensed under a{' '}
+          Â© {CONFIG.copyright.year} - Content on this site is licensed under a{' '}
           <a
             href={CONFIG.copyright.licenseUrl}
             target="_blank"
@@ -345,7 +347,6 @@ const Footer: React.FC = () => {
       <div className={`${CONFIG.layout.containerMaxWidth} mx-auto ${CONFIG.layout.partnerContainerPadding}`}>
         <div className="space-y-8 sm:space-y-12">
           <PartnersSection
-            title="Strategic Partners & Sponsors"
             partners={PARTNERS_DATA.strategicSponsors}
             isStrategic={true}
           />

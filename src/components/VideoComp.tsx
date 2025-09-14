@@ -19,7 +19,7 @@ const VideoComp = () => {
 
 
   return (
-    <div className="py-16 bg-white mt-20 md:mt-0" style={{ position: "relative", overflowX: "auto" }}>
+    <div className="py-16 bg-white mt-5 md:mt-0" style={{ position: "relative", overflowX: "auto" }}>
       {/* Decorative background icons */}
       <img
         src="https://static.igem.wiki/teams/5642/icons/fi-11618743.webp"
