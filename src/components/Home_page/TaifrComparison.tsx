@@ -1,36 +1,53 @@
+import React, { useRef, useEffect, useState } from "react";
+
 const TaifrComparison = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [playVideo, setPlayVideo] = useState(false);
+
+  useEffect(() => {
+    const observer = new window.IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setPlayVideo(true);
+          } else {
+            setPlayVideo(false);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+    return () => {
+      if (videoRef.current) observer.unobserve(videoRef.current);
+    };
+  }, []);
+
   return (
-    <div className=" p-10 min-h-screen md:mt-60">
-      <div className="max-w-7xl mx-auto">
+    <div className="p-2 md:p-10 min-h-screen md:mt-60 mb-20">
+      <div className="md:max-w-7xl mx-auto">
         {/* Top image placeholder */}
         <div className="w-full h-80  rounded-lg flex items-center justify-center mb-5">
-          <div className="text-center md:mb-60">
-            <img
-              src="https://github.com/pravoslavzilka/igem-wikies-off/blob/main/src/IGEM_graf_70_.gif?raw=true"
-              alt="Video unable to load"
-              className="rounded-lg w-full max-w-full sm:max-w-7xl md:max-w-6xl lg:max-w-5xl h-auto mx-auto md:mb-20"
-              style={{
-                maxWidth: window.innerWidth < 768 ? "750px" : "1500px", // increased max width
-                height: window.innerWidth < 768 ? "350px" : "1000px",    // increased height
-                margin: "0 auto",
-                display: "block"
-              }}
-            />{/*
+          <div className="text-center md:mb-40">
+            
             <video
-              autoPlay
+              ref={videoRef}
+              autoPlay={playVideo}
               loop
               muted
               playsInline
               className="rounded-lg w-full"
               style={{
-                maxWidth: "1200px", // increased max width
-                height: "700px",    // increased height
+                width: window.innerWidth < 768 ? "100%" : "90%",
+                height: "auto",
                 margin: "0 auto",
                 display: "block"
               }}
             >
-              <source src="https://github.com/pravoslavzilka/igem-wikies-off/raw/refs/heads/main/src/taifr.mp4" type="video/mp4"></source>
-            </video>*/}
+              <source src="https://github.com/pravoslavzilka/igem-wikies-off/raw/refs/heads/main/src/IGEM_graf_video_updated.mp4" type="video/mp4"></source>
+            </video>
           </div>
         </div>
 
