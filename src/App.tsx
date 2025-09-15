@@ -17,6 +17,7 @@ import PromoterLibrary from './pages/project/how/PromoterLibrary';
 
 import LimitingBiomass from './pages/project/how/predictor/LimitingBiomass';
 import MediumChange from './pages/project/how/predictor/MediumChange';
+import HarvestingStrategy from './pages/project/how/predictor/HarvestingStrategy';
 
 // Toolbox pages
 import DeepDiveDocument from './pages/toolbox/DeepDive';
@@ -70,6 +71,7 @@ function App() {
 
           <Route path="/project/how/predictor/limiting-biomass/" element={<LimitingBiomass />} />
           <Route path="/project/how/predictor/medium-change/" element={<MediumChange />} />
+          <Route path="/project/how/predictor/harvesting-strategy/" element={<HarvestingStrategy />} />
 
 
           
