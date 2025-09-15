@@ -138,6 +138,82 @@ const HarvestingStrategy = () => {
           seconds to remove the residual water which could otherwise affect the 
           weight of our sample.
         </p>
+
+
+
+        {/* Results from first iteration */}
+        <h3 className="text-xl font-semibold mb-3 mt-12 text-gray-800" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+          Results from the first iteration
+        </h3>
+        <p className="text-gray-700 leading-relaxed mb-6" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+          Based on the first empirical data, we decided on proceeding mainly with <em>L. japonica</em> (8627) in the next experiments, since it 
+          was the fastest growing species we had and its sufficient frond size hadn't caused problems during harvesting with nets.
+        </p>
+
+        {/* Graph placeholder */}
+        <div className="bg-gray-100 rounded-lg p-8 mb-4">
+          <div className="bg-white rounded-lg p-6 border-2 border-gray-300">
+            {/* Graph content */}
+            <div className="h-80 bg-gray-50 rounded flex items-center justify-center mb-4 relative">
+              {/* Y-axis label */}
+              <div className="absolute left-4 top-1/2 transform -rotate-90 text-sm text-gray-600" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                Biomass (g FW m⁻²)
+              </div>
+              
+              {/* Graph area */}
+              <div className="flex flex-col items-center justify-center">
+                <div className="w-16 h-16 bg-green-400 rounded-lg mb-4"></div>
+                <p className="text-gray-600 text-sm text-center" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                  Graph showing biomass yields over time
+                  <br />
+                  (Multiple growth curves for L.minor and L.japonica
+                  <br />
+                  at different harvesting percentages)
+                </p>
+              </div>
+              
+              {/* X-axis label */}
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-sm text-gray-600" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                Time (days)
+              </div>
+            </div>
+            
+            {/* Legend placeholder */}
+            <div className="flex flex-wrap justify-center gap-4 text-xs" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+              <div className="flex items-center gap-1">
+                <div className="w-3 h-3 bg-gray-400 rounded"></div>
+                <span>L.minor_20%</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <div className="w-3 h-3 bg-green-400 rounded"></div>
+                <span>L.minor_30%</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <div className="w-3 h-3 bg-green-600 rounded"></div>
+                <span>L.minor_40%</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <div className="w-3 h-3 bg-blue-400 rounded"></div>
+                <span>L.japonica_20%</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <div className="w-3 h-3 bg-blue-500 rounded"></div>
+                <span>L.japonica_30%</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <div className="w-3 h-3 bg-blue-600 rounded"></div>
+                <span>L.japonica_40%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Caption */}
+        <p className="text-sm text-gray-600 text-center italic mb-8" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+          Fig 3. Graph showing comparison between <em>L. minor</em> (5500) and <em>L. japonica</em> (8627) biomass yields in the 
+          first iteration of harvesting strategy experiments.
+        </p>
+
       </div>
     </div>
   );
