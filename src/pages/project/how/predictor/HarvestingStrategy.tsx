@@ -214,6 +214,84 @@ const HarvestingStrategy = () => {
           first iteration of harvesting strategy experiments.
         </p>
 
+        {/* Second iteration */}
+        <h3 className="text-xl font-semibold mb-3 text-gray-800" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+          Second iteration: Collecting benchmark cultivation data
+        </h3>
+        
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
+          {/* Left column - text content */}
+          <div>
+            <p className="text-gray-700 leading-relaxed mb-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+              In the next step, the aim of the experiments shifted from "informing" our 
+              computational model to "challenging" it. Three small cultivation trays 
+              were inoculated by 30 g of <em>Lemna japonica</em> (8627) in the beginning of the 
+              experiment, so that initial biomass density was around 500 gm⁻². 
+              Harvesting was done each 3 days (hf), but the harvesting ratio (hr) was 
+              different for every tray, specifically 30%, 40% and 50%.
+            </p>
+
+            <h4 className="text-lg font-semibold mb-3 text-gray-800" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              Results from the second iteration
+            </h4>
+            <p className="text-gray-700 leading-relaxed mb-6" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+              After 15 days of cultivation, the cumulative biomass harvested for trays 
+              with harvesting ratios 30%, 40% and 50% was 886.0 gm⁻², 1047.3 gm⁻², 
+              and 1012.4 gm⁻², respectively. The harvesting strategy with maximum 
+              yield was thus that with hf = 3 days & hr = 40%.
+            </p>
+
+            <h4 className="text-lg font-semibold mb-3 text-gray-800" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              Third iteration: Aiming for even higher yields
+            </h4>
+            <p className="text-gray-700 leading-relaxed mb-6" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+              Based on outputs from our computational model, we started the 
+              experiments the same way as in the second iteration, but with harvesting 
+              strategies hf = 3 days & hr = 45%, hf = 4 days & hr = 50% and hf = 5 
+              days & hr = 60%.
+            </p>
+
+            <h4 className="text-lg font-semibold mb-3 text-gray-800" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              Results from the third iteration
+            </h4>
+            <p className="text-gray-700 leading-relaxed" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+              After 15 days of cultivation, we must stop the cultivation experiment 
+              since the duckweed biomass left on tray after each harvest was on a 
+              sharp decline. Thus, the best harvesting strategy based on all of our 
+              empirical data is hf = 3 days and hr = 40%.
+            </p>
+          </div>
+
+          {/* Right column - image */}
+          <div>
+            <div className="bg-gray-200 rounded-lg p-4 h-80">
+              <div className="w-full h-full bg-green-100 rounded-lg flex items-center justify-center relative overflow-hidden">
+                {/* Simulating duckweed cultivation image */}
+                <div className="absolute inset-0 bg-gradient-to-br from-green-200 via-green-300 to-green-400"></div>
+                <div className="absolute inset-2 bg-green-500 rounded opacity-60"></div>
+                <div className="relative z-10 text-center text-white font-semibold bg-black bg-opacity-50 p-2 rounded">
+                  Duckweed Culture
+                </div>
+              </div>
+            </div>
+            <p className="text-sm text-gray-600 text-center mt-2 italic" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+              Fig 4. Cultures of <em>Lemna japonica</em> (8627) 
+              <br />
+              in trays subjected to different harvesting 
+              <br />
+              strategies.
+            </p>
+          </div>
+        </div>
+
+        {/* Conclusion box */}
+        <div className="bg-gray-100 rounded-lg p-6 border-l-4 border-green-500">
+          <p className="text-gray-800 font-medium text-center" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+            After three iterations, we came up with the best harvesting strategy of hf = 3 and hr = 40% with an 
+            average yield of 210 gm⁻² per each harvest.
+          </p>
+        </div>
+
       </div>
     </div>
   );
