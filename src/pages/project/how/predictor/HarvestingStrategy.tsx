@@ -30,7 +30,13 @@ const HarvestingStrategy = () => {
         </h2>
         
         {/* Cultivation conditions */}
-        <h3 className="text-xl font-semibold mb-3 text-gray-800" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+        
+
+        {/* Two column layout for methodology content */}
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
+          {/* Left column */}
+          <div>
+            <h3 className="text-xl font-semibold mb-3 text-gray-800" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
           Cultivation conditions
         </h3>
         <p className="text-gray-700 leading-relaxed mb-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
@@ -39,11 +45,6 @@ const HarvestingStrategy = () => {
           climate room. The temperature was kept to 16°C light/darkness 12°C (light 
           intensity of 200 μmol/m²/s).
         </p>
-
-        {/* Two column layout for methodology content */}
-        <div className="grid md:grid-cols-2 gap-8 mb-8">
-          {/* Left column */}
-          <div>
             {/* Species tested */}
             <h3 className="text-xl font-semibold mb-3 text-gray-800" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               Species tested
@@ -77,39 +78,36 @@ const HarvestingStrategy = () => {
 
           {/* Right column - Image placeholder */}
           <div className="space-y-6">
-            <div className="bg-gray-200 rounded-lg p-8 flex items-center justify-center h-64">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-gray-400 rounded-lg mx-auto mb-4"></div>
-                <p className="text-gray-600 font-medium" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                  Fig. 1. Weighing our duckweed before 
-                  <br />
-                  determining the precise 
-                  <br />
-                  amount that should be harvested.
-                </p>
-              </div>
+            <div className="bg-gray-100 rounded-lg overflow-hidden">
+            <img 
+              src="https://static.igem.wiki/teams/5642/images/how/predictor/duck-08547-1-min.webp"
+              alt="Researcher conducting duckweed experiment"
+              className=" h-64 w-full object-cover"
+            />
+            <div className="p-4 bg-gray-50">
+              <p className="text-sm text-gray-600" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                <strong>Fig 1:</strong> Weighting our duckweed bestie for determination of the precise amount that should be harvested.
+
+              </p>
+            
+          </div>
             </div>
 
-            <div className="bg-gray-200 rounded-lg p-8 flex items-center justify-center h-64">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-gray-400 rounded-lg mx-auto mb-4"></div>
-                <p className="text-gray-600 font-medium" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                  Fig 2. Our duckweed cultivation arsenal: 
-                  <br />
-                  (1) A hand centrifuge, (2) Sieve for 
-                  <br />
-                  duckweed harvesting, (3) FROGG with 
-                  <br />
-                  harnessing. (4) Duckweed cultivation tray, 
-                  <br />
-                  (5) Hygro thermometer/hydrometer, 
-                  <br />
-                  and (6) A bucket for preparation of 
-                  <br />
-                  culture medium.
-                </p>
-              </div>
-            </div>
+            <div className="bg-gray-100 rounded-lg overflow-hidden">
+            <img 
+              src="https://static.igem.wiki/teams/5642/images/how/predictor/pxl-20250820-164200119.webp"
+              alt="Researcher conducting duckweed experiment"
+              className=" h-64 w-full object-cover"
+            />
+            <div className="p-4 bg-gray-50">
+              <p className="text-sm text-gray-600" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                <strong>Fig 2:</strong> Our duckweed cultivation arsenal. (1) A hand centrifuge. (2) Sieves for duckweed harvesting. (3) PROBE with multimeter. (4) Duckweed cultivation tray. (5) Ingredients for mixing the cultivation medium. (6) A bucket for preparation of the cultivation medium.
+
+
+              </p>
+            
+          </div>
+          </div>
           </div>
         </div>
       </div>
@@ -241,7 +239,33 @@ const HarvestingStrategy = () => {
               yield was thus that with hf = 3 days & hr = 40%.
             </p>
 
-            <h4 className="text-lg font-semibold mb-3 text-gray-800" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+            
+
+            
+          </div>
+
+          {/* Right column - image */}
+          <div>
+            <div className="bg-gray-100 rounded-lg overflow-hidden">
+            <img 
+              src="https://static.igem.wiki/teams/5642/images/how/predictor/duck-08507.webp"
+              alt="Researcher conducting duckweed experiment"
+              className=" h-64 w-full object-cover"
+            />
+            <div className="p-4 bg-gray-50">
+              <p className="text-sm text-gray-600" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                <strong>Fig 2:</strong> Our duckweed cultivation arsenal. (1) A hand centrifuge. (2) Sieves for duckweed harvesting. (3) PROBE with multimeter. (4) Duckweed cultivation tray. (5) Ingredients for mixing the cultivation medium. (6) A bucket for preparation of the cultivation medium.
+
+
+              </p>
+            
+          </div>
+          </div>
+                    
+          </div>
+        </div>
+
+        <h4 className="text-lg font-semibold mb-3 text-gray-800" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               Third iteration: Aiming for even higher yields
             </h4>
             <p className="text-gray-700 leading-relaxed mb-6" style={{ fontFamily: 'Urbanist, sans-serif' }}>
@@ -250,8 +274,7 @@ const HarvestingStrategy = () => {
               strategies hf = 3 days & hr = 45%, hf = 4 days & hr = 50% and hf = 5 
               days & hr = 60%.
             </p>
-
-            <h4 className="text-lg font-semibold mb-3 text-gray-800" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+           <h4 className="text-lg font-semibold mb-3 text-gray-800" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               Results from the third iteration
             </h4>
             <p className="text-gray-700 leading-relaxed" style={{ fontFamily: 'Urbanist, sans-serif' }}>
@@ -260,32 +283,9 @@ const HarvestingStrategy = () => {
               sharp decline. Thus, the best harvesting strategy based on all of our 
               empirical data is hf = 3 days and hr = 40%.
             </p>
-          </div>
-
-          {/* Right column - image */}
-          <div>
-            <div className="bg-gray-200 rounded-lg p-4 h-80">
-              <div className="w-full h-full bg-green-100 rounded-lg flex items-center justify-center relative overflow-hidden">
-                {/* Simulating duckweed cultivation image */}
-                <div className="absolute inset-0 bg-gradient-to-br from-green-200 via-green-300 to-green-400"></div>
-                <div className="absolute inset-2 bg-green-500 rounded opacity-60"></div>
-                <div className="relative z-10 text-center text-white font-semibold bg-black bg-opacity-50 p-2 rounded">
-                  Duckweed Culture
-                </div>
-              </div>
-            </div>
-            <p className="text-sm text-gray-600 text-center mt-2 italic" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-              Fig 4. Cultures of <em>Lemna japonica</em> (8627) 
-              <br />
-              in trays subjected to different harvesting 
-              <br />
-              strategies.
-            </p>
-          </div>
-        </div>
 
         {/* Conclusion box */}
-        <div className="bg-gray-100 rounded-lg p-6 border-l-4 border-green-500">
+        <div className="bg-gray-100 mt-10 rounded-lg p-6 border-l-4 border-green-500">
           <p className="text-gray-800 font-medium text-center" style={{ fontFamily: 'Urbanist, sans-serif' }}>
             After three iterations, we came up with the best harvesting strategy of hf = 3 and hr = 40% with an 
             average yield of 210 gm⁻² per each harvest.
