@@ -95,7 +95,7 @@ const PARTNERS_DATA = {
         url: "https://www.greenonyx.ag/",
         category: "Sponsor of Duckweed Hackers"
       },
-      label: "Main Sponsor\nof\nduckweed hackers"
+      label: "Main Sponsor\nduckweed hackers"
     },
     {
       company: {
@@ -105,7 +105,7 @@ const PARTNERS_DATA = {
         url: "https://www.vut.cz/en/",
         category: "Sponsor of Duckweed Hustlers"
       },
-      label: "Main Sponsor\nof\nduckweed hustlers"
+      label: "Main Sponsor\nduckweed hustlers"
     },
     {
       company: {
@@ -115,7 +115,7 @@ const PARTNERS_DATA = {
         url: "https://www.biovendor.com/",
         category: "Sponsor of Duckweed Hipsters"
       },
-      label: "Main Sponsor\nof\nduckweed hipsters"
+      label: "Main Sponsor\nduckweed hipsters"
     }
   ],
   enablementPartners: [
