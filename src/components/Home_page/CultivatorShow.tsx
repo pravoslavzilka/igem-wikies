@@ -7,7 +7,12 @@ const CultivatorShow = () => {
       <div className="max-w-8xl mx-auto">
         {/* Top image placeholder */}
         <div className="w-full h-64 sm:h-40 md:h-[26rem] bg-gray-200 rounded-lg flex items-center justify-center mb-12">
-          <img src="https://static.igem.wiki/teams/5642/images/homepage/cultivator-min.webp" alt="Lab Image" className="w-full h-full object-cover rounded-lg" />
+          <img
+            src="https://static.igem.wiki/teams/5642/images/homepage/duckweed-08465.webp"
+            alt="Lab Image"
+            className="w-full h-full rounded-lg"
+            style={{ objectFit: "cover", objectPosition: "top" }} // crop only from bottom, show top
+          />
         </div>
 
         {/* Bottom section with content */}
