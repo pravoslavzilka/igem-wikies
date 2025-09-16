@@ -74,7 +74,7 @@ const ToolboxShow = () => {
             We've developed the <span style={{ color: '#779E45' }}>Duckweed Toolbox </span> -<br />
             the first step in turning duckweed into a <span style={{ color: '#779E45' }}>crop</span>.
           </h1>
-          <p className="text-lg text-gray-600" style={{ fontFamily: 'Space Grotesk, sans-serif', lineHeight: '140%' }}>Here's our next move:</p>
+          <p className="text-lg text-gray-600 mt-10 mb-10" style={{ fontFamily: 'Space Grotesk, sans-serif', lineHeight: '140%', fontSize: window.innerWidth < 768 ? "1.2rem" : "1.7rem" }}>Here's our next move:</p>
         </div>
 
         {/* Steps timeline */}
