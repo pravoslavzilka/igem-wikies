@@ -76,7 +76,10 @@ const Hero = () => {
         <div 
           className="h-[70vh] md:h-screen bg-cover bg-center rounded-3xl relative overflow-hidden mx-2 md:mx-4 mt-4"
           style={{
-            backgroundImage: "url('https://static.igem.wiki/teams/5642/images/homepage/photo.webp')",
+            backgroundImage: "url('https://static.igem.wiki/teams/5642/images/homepage/duckweed-1-min.webp')",
+            backgroundPosition: "top", // show top, crop from bottom
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover"
           }}
         >
           {/* Blue Gradient Overlay */}
@@ -135,7 +138,7 @@ const Hero = () => {
             </div>
 
             {/* Mission Card */}
-            <div className="hidden md:block absolute bottom-8 right-8 bg-[#4B463F]/90 backdrop-blur-md rounded-2xl p-6 max-w-sm shadow-lg" style={{boxShadow: "0 4px 24px 0 rgba(0,0,0,0.12)"}}>
+            <div className="hidden md:block absolute bottom-8 mb-16 right-8 bg-[#4B463F]/90 backdrop-blur-md rounded-2xl p-6 max-w-sm shadow-lg" style={{boxShadow: "0 4px 24px 0 rgba(0,0,0,0.12)"}}>
               <h3 className="text-white text-2xl font-bold mb-3" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
                 Running a farm is less and less profitable
               </h3>
