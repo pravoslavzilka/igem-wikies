@@ -92,7 +92,7 @@ const HarvestingStrategy = () => {
 
             <div className="bg-gray-100 rounded-lg overflow-hidden">
             <img 
-              src="https://static.igem.wiki/teams/5642/images/how/predictor/pxl-20250820-164200119.webp"
+              src="https://static.igem.wiki/teams/5642/images/how/predictor/tools-for-harvesting-jpeg.webp"
               alt="Researcher conducting duckweed experiment"
               className=" h-64 w-full object-cover"
             />
@@ -150,62 +150,9 @@ const HarvestingStrategy = () => {
 
         {/* Graph placeholder */}
         <div className="bg-gray-100 rounded-lg p-8 mb-4">
-          <div className="bg-white rounded-lg p-6 border-2 border-gray-300">
-            {/* Graph content */}
-            <div className="h-80 bg-gray-50 rounded flex items-center justify-center mb-4 relative">
-              {/* Y-axis label */}
-              <div className="absolute left-4 top-1/2 transform -rotate-90 text-sm text-gray-600" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                Biomass (g FW m⁻²)
-              </div>
-              
-              {/* Graph area */}
-              <div className="flex flex-col items-center justify-center">
-                <div className="w-16 h-16 bg-green-400 rounded-lg mb-4"></div>
-                <p className="text-gray-600 text-sm text-center" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                  Graph showing biomass yields over time
-                  <br />
-                  (Multiple growth curves for L.minor and L.japonica
-                  <br />
-                  at different harvesting percentages)
-                </p>
-              </div>
-              
-              {/* X-axis label */}
-              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-sm text-gray-600" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                Time (days)
-              </div>
-            </div>
-            
-            {/* Legend placeholder */}
-            <div className="flex flex-wrap justify-center gap-4 text-xs" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-              <div className="flex items-center gap-1">
-                <div className="w-3 h-3 bg-gray-400 rounded"></div>
-                <span>L.minor_20%</span>
-              </div>
-              <div className="flex items-center gap-1">
-                <div className="w-3 h-3 bg-green-400 rounded"></div>
-                <span>L.minor_30%</span>
-              </div>
-              <div className="flex items-center gap-1">
-                <div className="w-3 h-3 bg-green-600 rounded"></div>
-                <span>L.minor_40%</span>
-              </div>
-              <div className="flex items-center gap-1">
-                <div className="w-3 h-3 bg-blue-400 rounded"></div>
-                <span>L.japonica_20%</span>
-              </div>
-              <div className="flex items-center gap-1">
-                <div className="w-3 h-3 bg-blue-500 rounded"></div>
-                <span>L.japonica_30%</span>
-              </div>
-              <div className="flex items-center gap-1">
-                <div className="w-3 h-3 bg-blue-600 rounded"></div>
-                <span>L.japonica_40%</span>
-              </div>
-            </div>
-          </div>
-        </div>
+          <img src="https://static.igem.wiki/teams/5642/images/how/predictor/graf-final-6.webp" alt="Graph showing comparison between L. minor and L. japonica biomass yields" className="w-full h-auto" />
 
+        </div>
         {/* Caption */}
         <p className="text-sm text-gray-600 text-center italic mb-8" style={{ fontFamily: 'Urbanist, sans-serif' }}>
             <strong>Fig.3:</strong> Graph showing comparison between <i>L. minor</i> (5500) and <i>L. japonica</i> (8627) biomass yields in the first iteration of

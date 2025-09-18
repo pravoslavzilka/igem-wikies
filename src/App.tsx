@@ -41,7 +41,7 @@ import WhyPlantsSuck from './pages/toolbox/WhyPlantsSuck';
 // import EngagementImpact from './pages/engagement/Impact';
 
 // Duckweed Mafia pages
-//import DuckweedMafia from './pages/DuckweedMafia';  
+import Partners from './pages/duckweed_mafia/Partners';
 //import DuckweedMafiaTeam from './pages/duckweed-mafia/Team';
 //import DuckweedMafiaMission from './pages/duckweed-mafia/Mission';
 // import DuckweedMafiaCulture from './pages/duckweed-mafia/Culture';
@@ -102,7 +102,10 @@ function App() {
           <Route path="/duckweed-mafia/team" element={<DuckweedMafiaTeam />} />
           <Route path="/duckweed-mafia/mission" element={<DuckweedMafiaMission />} />
           <Route path="/duckweed-mafia/culture" element={<DuckweedMafiaCulture />} />
-          */}   {/* Duckweed Mafia Routes */}
+          */}   
+          
+          {/* Duckweed Mafia Routes */}
+          <Route path="/duckweed-mafia/partners" element={<Partners />} />
           <Route path="/handbook" element={<Handbook />} />
         </Routes>
 
