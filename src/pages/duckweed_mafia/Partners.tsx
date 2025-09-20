@@ -3,7 +3,42 @@ import { Link } from "react-router-dom";
 const Partners = () => {
   return (
     <div className="min-h-screen bg-white" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-      <div className="max-w-6xl mx-auto px-8 py-12">
+      <div className="max-w-6xl mx-auto px-8 py-12 ">
+
+        <div className="bg-white py-8 px-6 border-b-2 border-gray-200">
+        <div className="max-w-4xl mx-auto mb-32">
+          <div className="relative">
+            {/* Central Logo */}
+            <div className="flex justify-center mb-[-70px]">
+              <img 
+                src="https://static.igem.wiki/teams/5642/icons/igem-brno-final-transparent.webp" 
+                alt="iGEM Logo" 
+                className="h-18 w-auto"
+                style={{ maxHeight: '272px', width: 'auto' }}
+              />
+            </div>
+            
+            {/* Ally Labels */}
+            <div className="relative hidden sm:block">
+              <div className="absolute top-0 left-0 transform -translate-y-32">
+                <span className="text-lg font-semibold uppercase tracking-wide" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>Strategic Ally</span>
+              </div>
+              <div className="absolute top-0 right-0 transform -translate-y-32">
+                <span className="text-lg font-semibold uppercase tracking-wide" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>General Ally</span>
+              </div>
+              <div className="absolute bottom-0 left-0 transform translate-y-8">
+                <span className="text-lg font-semibold uppercase tracking-wide" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>Main Allies</span>
+              </div>
+              <div className="absolute bottom-0 right-0 transform translate-y-8">
+                <span className="text-lg font-semibold uppercase tracking-wide" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>Enablement Allies</span>
+              </div>
+            </div>
+            
+          </div>
+          
+          
+        </div>
+      </div>
         
         {/* Strategic Ally Section */}
         <section className="mb-16">
