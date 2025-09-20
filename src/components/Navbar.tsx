@@ -38,6 +38,7 @@ const Navbar = () => {
       { label: 'Team', path: '/duckweed-mafia/team' },
       { label: 'Sponsors and partners', path: '/duckweed-mafia/partners' },
       { label: 'Cool statistics', path: '/duckweed-mafia/cool-statistics' },
+      { label: 'Safety', path: '/duckweed-mafia/safety' },
       { label: 'Attributions', path: '/duckweed-mafia/cool-statistics' }
     ]
   };

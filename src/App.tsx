@@ -37,16 +37,12 @@ import WhyPlantsSuck from './pages/toolbox/WhyPlantsSuck';
 // Engagement pages 
 
 import ThreeHParty from './pages/engagement/outreach/ThreeHParty';
-// import Engagement from './pages/Engagement';
-// import EngagementCommunity from './pages/engagement/Community';
-// import EngagementEvents from './pages/engagement/Events';
-// import EngagementImpact from './pages/engagement/Impact';
+
 
 // Duckweed Mafia pages
 import Partners from './pages/duckweed_mafia/Partners';
-//import DuckweedMafiaTeam from './pages/duckweed-mafia/Team';
-//import DuckweedMafiaMission from './pages/duckweed-mafia/Mission';
-// import DuckweedMafiaCulture from './pages/duckweed-mafia/Culture';
+import DuckweedSafety from './pages/duckweed_mafia/DuckweedSafety';
+
 
 
 
@@ -100,7 +96,8 @@ function App() {
           
           {/* Duckweed Mafia Routes */}
           <Route path="/duckweed-mafia/partners" element={<Partners />} />
-          <Route path="/handbook" element={<Handbook />} />
+          <Route path="/duckweed-mafia/safety" element={<DuckweedSafety />} />
+          
         </Routes>
 
         <div style={{ marginTop: '5rem' }}>
