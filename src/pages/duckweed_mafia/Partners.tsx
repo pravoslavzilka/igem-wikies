@@ -7,19 +7,19 @@ const Partners = () => {
         
         {/* Strategic Ally Section */}
         <section className="mb-16">
-            <h2 className="text-2xl font-bold text-gray-800 mb-8 justify-center items-center text-center" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+            <h2 className="text-2xl font-bold text-gray-800 mt-10 mb-10 justify-center items-center text-center" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
                 STRATEGIC ALLY  
               </h2>
-          <div className="grid md:grid-cols-4 gap-12 items-center">
+          <div className="grid md:grid-cols-3 gap-12 items-center">
             <div className="flex justify-center md:col-span-1">
               <img
                 src="https://static.igem.wiki/teams/5642/images/homepage/footer/muni-sci-logo.webp"
                 alt="MUNI"
                 className="max-w-full h-auto"
-                style={{ maxWidth: "220px", width: "100%", height: "auto" }} // bigger image
+                style={{ maxWidth: "400px", width: "100%", height: "auto" }}
               />
             </div>
-            <div className="md:col-span-3">
+            <div className="md:col-span-2">
               
               
               <p className="text-md  leading-relaxed mb-6" style={{ fontFamily: 'Urbanist, sans-serif' }}>
@@ -33,11 +33,11 @@ const Partners = () => {
         </section>
         {/* General Ally Section */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-center justify-center items-center text-gray-800 mb-8" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+          <h2 className="text-2xl font-bold text-center justify-center items-center text-gray-800 mt-10 mb-10" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             GENERAL ALLY
           </h2>
-          <div className="grid md:grid-cols-4 gap-12 items-center">
-            <div className="md:col-span-3">
+          <div className="grid md:grid-cols-3 gap-12 items-center">
+            <div className="md:col-span-2">
               
               
               <p>
@@ -67,7 +67,7 @@ const Partners = () => {
                 src="https://static.igem.wiki/teams/5642/images/homepage/footer/iocb-tech-foundation-logo.webp"
                 alt="IOCB Tech Foundation"
                 className="max-w-full h-auto"
-                style={{ maxWidth: "220px", width: "100%", height: "auto" }} // bigger image
+                style={{ maxWidth: "400px", width: "100%", height: "auto" }} // bigger image
               />
             </div>
           </div>
@@ -79,21 +79,27 @@ const Partners = () => {
           <h2 className="text-2xl font-bold text-center justify-center items-center text-gray-800 mb-8" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             MAIN ALLIES
           </h2>
-          <div className="grid md:grid-cols-4 gap-12 items-center">
+          <div className="grid md:grid-cols-3 gap-12 items-center">
             <div className="flex justify-center md:col-span-1">
-              <img
-                src="https://static.igem.wiki/teams/5642/images/homepage/footer/greenonyx-logo.webp"
-                alt="GreenOnyx"
-                className="max-w-full h-auto"
-                style={{ maxWidth: "220px", width: "100%", height: "auto" }} // bigger image
-              />
+              <div className="flex flex-col items-center">
+                <img
+                  src="https://static.igem.wiki/teams/5642/images/homepage/footer/greenonyx-logo.webp"
+                  alt="GreenOnyx"
+                  className="max-w-full h-auto"
+                  style={{ maxWidth: "400px", width: "100%", height: "auto" }}
+                />
+                <div className="mt-2 text-md font-bold text-gray-700" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                  x Duckweed Hackers
+
+                </div>
+              </div>
             </div>
-            <div className="md:col-span-3">
+            <div className="md:col-span-2">
               
               
               <p>
                 <strong>GreenOnyx</strong>
-                <span style={{ fontWeight: 400 }}>
+                <span style={{ fontWeight: 400 }}>  
                     {" "}
                     is an agritech pioneer revolutionizing sterile large duckweed cultivation.
                     Their cutting-edge quantum cultivation system has even taken duckweed to
@@ -110,12 +116,12 @@ const Partners = () => {
                 </span>
                 <a href="https://greenonyx.bio">
                     <strong>greenonyx.bio</strong>
-                </a>
+                </a>  
                 <span style={{ fontWeight: 400 }}>
                     . Dr. Shoham also collaborated with us on an interview for the{" "}
                 </span>
-                <a href="http://www.ruduckweed.org/uploads/1/0/8/9/10896289/duckweed_forum_issue_50.pdf?fbclid=PAQ0xDSwMfeHZleHRuA2FlbQIxMQABpxDMlsGrXOqInppmjlmxbeLfOPZ2g8u0vSXTmQ0KICPgfvBORU91F5cNsyML_aem_bWYQ0UdFdfLugRMv9R-QgA">
-                    <span style={{ fontWeight: 400 }}>The Duckweed journal</span>
+                <a target="_blank" rel="noopener noreferrer" href="http://www.ruduckweed.org/uploads/1/0/8/9/10896289/duckweed_forum_issue_50.pdf?fbclid=PAQ0xDSwMfeHZleHRuA2FlbQIxMQABpxDMlsGrXOqInppmjlmxbeLfOPZ2g8u0vSXTmQ0KICPgfvBORU91F5cNsyML_aem_bWYQ0UdFdfLugRMv9R-QgA">
+                    <span style={{ fontWeight: 400, color: '#3b82f6' }}>The Duckweed journal</span>
                 </a>
                 <span style={{ fontWeight: 400 }}>.</span>
                 </p>
@@ -125,6 +131,100 @@ const Partners = () => {
             
             
           </div>
+
+
+
+          <div className="grid md:grid-cols-3 gap-12 items-center mt-16">
+            
+            <div className="md:col-span-2">
+              
+              
+                  <p>
+                    <strong>Brno University of Technology (BUT)</strong>
+                    <span style={{ fontWeight: 400 }}>
+                      {" "}
+                      – A leading technical university in the Czech Republic, VUT provided
+                      essential workspace, equipment, and financial support that allowed us to
+                      develop and test our CULTIVATOR - autonomous duckweed cultivation system. We
+                      are especially grateful to{" "}
+                    </span>
+                    <strong>
+                      doc. Ing. Jiří Hlinka, Ph.D., Dean of the Faculty of Mechanical Engineering
+                      (FSI) at VUT Brno
+                    </strong>
+                    <span style={{ fontWeight: 400 }}>
+                      , for making this collaboration possible.
+                    </span>
+                    <a href="https://www.vut.cz">
+                      {" "}
+                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>vut.cz</span>
+                    </a>
+                  </p>
+
+
+
+            </div>
+            <div className="flex justify-center md:col-span-1">
+              <div className="flex flex-col items-center">
+                <img
+                  src="https://static.igem.wiki/teams/5642/images/homepage/footer/brno-university-logo.webp"
+                  alt="Brno University"
+                  className="max-w-full h-auto"
+                  style={{ maxWidth: "400px", width: "100%", height: "auto" }}
+                />
+                <div className="mt-2 text-md font-bold text-gray-700" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                  x Duckweed Hustlers
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="grid md:grid-cols-3 mt-16 gap-12 items-center">
+            <div className="flex justify-center md:col-span-1">
+              <div className="flex flex-col items-center">
+                <img
+                  src="https://static.igem.wiki/teams/5642/images/homepage/footer/biovendor-group-logo.webp"
+                  alt="BioVendor"
+                  className="max-w-full h-auto"
+                  style={{ maxWidth: "400px", width: "100%", height: "auto" }}
+                />
+                <div className="mt-2 text-md font-bold text-gray-700" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                  x Duckweed Hipsters
+
+                </div>
+              </div>
+            </div>
+            <div className="md:col-span-2">
+              
+              
+              <p>
+                <strong>BioVendor Group</strong>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  – A leading Czech biotechnology company that provided financial support for
+                  our project, enabling us to attend iGEM Grand Jamboree personally. Their
+                  partnership also helped us bring our ideas from Brno all the way to the
+                  international stage at the iGEM Grand Jamboree in Paris. We are especially
+                  thankful to{" "}
+                </span>
+                <strong>Jana Držíková, Marketing Manager at BioVendor Group</strong>
+                <span style={{ fontWeight: 400 }}>
+                  , for orchestrating this collaboration and supporting us in telling our
+                  story alongside the whole iGEM Brno Team. <Link style={{ color: '#3b82f6' }} to="https://www.biovendor.cz">biovendor.cz</Link>
+                </span>
+              </p>
+
+
+
+            </div>
+            
+            
+          </div>            
+
+
+
         </section>
 
 
