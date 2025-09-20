@@ -42,6 +42,7 @@ import ThreeHParty from './pages/engagement/outreach/ThreeHParty';
 // Duckweed Mafia pages
 import Partners from './pages/duckweed_mafia/Partners';
 import DuckweedSafety from './pages/duckweed_mafia/DuckweedSafety';
+import DuckweedMafia from './pages/duckweed_mafia/DuckweedMafia';
 
 
 
@@ -97,6 +98,7 @@ function App() {
           {/* Duckweed Mafia Routes */}
           <Route path="/duckweed-mafia/partners" element={<Partners />} />
           <Route path="/duckweed-mafia/safety" element={<DuckweedSafety />} />
+          <Route path="/duckweed-mafia/team" element={<DuckweedMafia/>} />
           
         </Routes>
 
