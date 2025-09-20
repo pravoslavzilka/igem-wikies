@@ -265,7 +265,7 @@ const Partners = () => {
                     assistance in overcoming countless challenges.{" "}
                   </span>
                   <a href="http://boisivonlab.ceitec.cz">
-                    <span style={{ fontWeight: 400 }}>boisivonlab.ceitec.cz</span>
+                    <span style={{ fontWeight: 400, color: '#3b82f6' }}>boisivonlab.ceitec.cz</span>
                   </a>
                   <span style={{ fontWeight: 400 }}>&nbsp;</span>
                 </p>
@@ -282,7 +282,7 @@ const Partners = () => {
                     for their enormous assistance with ordering primers and consumables.{" "}
                   </span>
                   <a href="http://rihalab.ceitec.cz">
-                    <span style={{ fontWeight: 400 }}>rihalab.ceitec.cz</span>
+                    <span style={{ fontWeight: 400, color: '#3b82f6' }}>rihalab.ceitec.cz</span>
                   </a>
                   <span style={{ fontWeight: 400 }}>&nbsp;</span>
                 </p>
@@ -303,7 +303,7 @@ const Partners = () => {
                     and his team for their continuous technical support.{" "}
                   </span>
                   <a href="http://cellim.ceitec.eu">
-                    <span style={{ fontWeight: 400 }}>cellim.ceitec.eu</span>
+                    <span style={{ fontWeight: 400, color: '#3b82f6' }}>cellim.ceitec.eu</span>
                   </a>
                 </p>
                 <p style={{ marginTop: '1rem' }}>
@@ -317,7 +317,7 @@ const Partners = () => {
                   </span>
                   <a href="https://www.google.com/search?q=https://www.ceitec.eu/plant-sciences-core-facility/cf">
                     {" "}
-                    <span style={{ fontWeight: 400 }}>
+                    <span style={{ fontWeight: 400, color: '#3b82f6' }}>
                       www.ceitec.eu/plant-sciences-core-facility/cf
                     </span>
                   </a>
@@ -329,6 +329,275 @@ const Partners = () => {
             </div>
             
           </div>
+
+          <div className="grid md:grid-cols-2 mt-16 gap-12 items-center">
+            
+            <div className="md:col-span-1">
+              
+              
+              <p>
+                <strong>
+                  Masaryk University – Microbial Bioengineering Laboratory (MBL)
+                </strong>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  – Access to the lab has been absolutely crucial for all of our molecular
+                  biology work, and we are deeply grateful to the MBL team for making this
+                  possible.{" "}
+                </span>
+                <strong>Dr. Pavel Dvořák</strong>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  has been the key orchestrator in arranging and facilitating this lab access,
+                  ensuring that our experiments could move forward. We would especially like
+                  to thank{" "}
+                </span>
+                <strong>Matúš Pešta </strong>
+                <span style={{ fontWeight: 400 }}>and </span>
+                <strong>Barbora Jankovičová</strong>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  for their constant willingness to help us solve everyday laboratory
+                  problems, and{" "}
+                </span>
+                <strong>Karolína Černá</strong>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  for tirelessly handling autoclaving requests on demand.{" "}
+                </span>
+                <a  href="http://mik.sci.muni.cz">
+                  <span style={{ fontWeight: 400, color: '#3b82f6' }}>mik.sci.muni.cz</span>
+                </a>
+                <span style={{ fontWeight: 400 }}>&nbsp;</span>
+              </p>
+
+
+
+
+
+            </div>
+
+            <div className="flex justify-center md:col-span-1">
+              <div className="flex flex-col items-center">
+                <img
+                  src="https://static.igem.wiki/teams/5642/images/homepage/footer/mbl-logo.webp"
+                  alt="MBL"
+                  className="max-w-full h-auto"
+                  style={{ maxWidth: "600px", width: "100%", height: "auto" }}
+                />
+                
+              </div>
+            </div>
+            
+            
+          </div>      
+
+
+            <div className="grid md:grid-cols-2 mt-16 gap-12 items-center">
+
+
+              <div className="flex justify-center md:col-span-1">
+              <div className="flex flex-col items-center">
+                <img
+                  src="https://static.igem.wiki/teams/5642/images/homepage/footer/dd4f95-c2c94f63676f4bb18e6139d1d0152701-mv2.webp"
+                  alt="StrojLab"
+                  className="max-w-full h-auto"
+                  style={{ maxWidth: "600px", height: "100px", width: "auto" }}
+                />
+                
+              </div>
+            </div>
+            
+            <div className="md:col-span-1">
+              
+              
+              <>
+                <p>
+                  <strong>strojLAB (Brno University of Technology)</strong>
+                  <span style={{ fontWeight: 400 }}>
+                    {" "}
+                    – A student-run “maker space” and workshop facility at the Faculty of
+                    Mechanical Engineering (VUT). StrojLAB provided the well-equipped workshop
+                    environment where we constructed our CULTIVATOR - an autonomous duckweed
+                    cultivation system. As strojLAB team member Jan Kalina notes, “When
+                    someone doesn’t know where to find help, they go to strojLAB”{" "}
+                  </span>
+                  <a href="https://www.fme.vutbr.cz/en/fakulta/zfsi/74419#:~:text=StrojLAB%20is%20not%20only%20workshops,from%20the%20strojLAB%20student%20team">
+                    <span style={{ fontWeight: 400, color: '#3b82f6' }}>fme.vutbr.cz</span>
+                  </a>
+                  <span style={{ fontWeight: 400 }}>
+                    , reflecting the team’s commitment to supporting technical projects like
+                    ours.
+                  </span>
+                  <span style={{ fontWeight: 400 }}>
+                    <br />
+                    <br />
+                  </span>
+                </p>
+                <p>
+                  <br />
+                  <br />
+                </p>
+              </>
+
+
+
+
+
+
+            </div>
+            
+          </div>    
+
+
+          <div className="grid md:grid-cols-2 mt-16 gap-12 items-center">
+            
+            <div className="md:col-span-1">
+              
+              
+              <p>
+                <strong>
+                  Arturo Mari-Ordoñez Lab (Gregor Mendel Institute, Austrian Academy of
+                  Sciences)
+                </strong>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  – Our indispensable knowledge partner and the true{" "}
+                </span>
+                <em>
+                  <span style={{ fontWeight: 400 }}>duckweed king</span>
+                </em>
+                <span style={{ fontWeight: 400 }}>
+                  . Arturo and his lab generously shared essential protocols, provided some of
+                  starter duckweed cultures, and offered expert guidance throughout our
+                  journey. With monthly calls and unwavering mentorship, they helped us
+                  navigate scientific challenges that might have otherwise stalled our
+                  progress. Their leadership in duckweed research has truly shaped our work
+                  and ambition.
+                </span>
+                <a href="https://www.oeaw.ac.at/gmi/research/research-groups/arturo-mari-ordonez">
+                  {" "}
+                  <span style={{ fontWeight: 400, color: '#3b82f6' }}>
+                    oeaw.ac.at/gmi/research/research-groups/arturo-mari-ordonez
+                  </span>
+                </a>
+              </p>
+
+
+
+
+
+
+            </div>
+
+            <div className="flex justify-center md:col-span-1">
+              <div className="flex flex-col items-center">
+                <img
+                  src="https://static.igem.wiki/teams/5642/images/homepage/footer/arturo-mari-ordonez-logo.webp"
+                  alt="Arturo Mari Ordonez"
+                  className="max-w-full h-auto"
+                  style={{ maxWidth: "600px", width: "100%", height: "auto" }}
+                />
+                
+              </div>
+              </div>
+            </div>     
+
+
+
+             <div className="grid md:grid-cols-2 mt-16 gap-12 items-center">
+
+
+              <div className="flex justify-center md:col-span-1">
+              <div className="flex flex-col items-center">
+                <img
+                  src="https://static.igem.wiki/teams/5642/images/homepage/footer/ansa-biotechnologies-logo.webp"
+                  alt="Ansa Biotechnologies"
+                  className="max-w-full h-auto"
+                  style={{ maxWidth: "600px", height: "100px", width: "auto" }}
+                />
+                
+              </div>
+            </div>
+            
+            <div className="md:col-span-1">
+              
+              
+              <p>
+                <strong>Ansa Biotechnologies</strong>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  – The team is transforming DNA synthesis with next-generation enzymatic
+                  technologies and supported our work through their iGEM program by providing
+                  access to complex and long DNA synthesis (up to 7.5 kb), enabling complex
+                  constructs that would otherwise be impossible to obtain. We appreciate the
+                  clear communication and helpful coordination from{" "}
+                </span>
+                <strong>Erin Lovelace</strong>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  (Customer Experience), who assisted with submission guidance.
+                </span>
+                <a href="https://ansabio.com?utm_source=chatgpt.com">
+                  {" "}
+                  <span style={{ fontWeight: 400, color: '#3b82f6' }}>ansabio.com</span>
+                </a>
+                <span style={{ fontWeight: 400 }}>.</span>
+              </p>
+
+
+
+
+
+
+
+            </div>
+            
+          </div>    
+
+
+          <div className="grid md:grid-cols-2 mt-16 gap-12 items-center">
+            
+            <div className="md:col-span-1">
+              
+              
+              <p>
+                <strong>IBBA (CNR)</strong>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  – Institute of Agricultural Biology and Biotechnology (IBBA, CNR) – The
+                  institute contributed essential duckweed clones and access to maintained
+                  collections that accelerated our build-and-test cycle. We thank{" "}
+                </span>
+                <strong>Dr. Laura Morello</strong>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  for her generous assistance. <a style={{ color: '#3b82f6' }} href="http://ibba.cnr.it">ibba.cnr.it</a>.
+                </span>
+              </p>
+
+
+
+
+
+
+
+            </div>
+
+            <div className="flex justify-center md:col-span-1">
+              <div className="flex flex-col items-center">
+                <img
+                  src="https://static.igem.wiki/teams/5642/images/homepage/footer/ibba-logo.webp"
+                  alt="IBBA (CNR)"
+                  className="max-w-full h-auto"
+                  style={{ maxWidth: "600px", height: "100px", width: "auto" }}
+                />
+                
+              </div>
+              </div>
+            </div>     
+
+          
         </section>
 
 
