@@ -56,44 +56,8 @@ const DuckweedSafety = () => {
           </div>
         </div>
         
-        {/* Bottom Left - Video Placeholder */}
-        <div>
-          <div className="bg-gray-800 rounded-lg h-48 flex items-center justify-center relative">
-            <div className="text-center text-white">
-              <div className="w-12 h-12 mx-auto mb-2 bg-gray-600 rounded-full flex items-center justify-center">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z"/>
-                </svg>
-              </div>
-              <p className="text-sm">Video Content</p>
-            </div>
-            {/* Video Controls Bar */}
-            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2 rounded-b-lg">
-              <div className="flex items-center justify-between text-white text-xs">
-                <span>0:00</span>
-                <div className="flex-1 mx-2 h-1 bg-gray-600 rounded">
-                  <div className="h-1 bg-red-500 rounded w-1/4"></div>
-                </div>
-                <span>2:30</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        {/* Bottom Right - Team Photo */}
-        <div>
-          <div className="bg-gray-200 rounded-lg h-48 flex items-center justify-center">
-            <div className="text-center text-gray-500">
-              <div className="w-16 h-16 mx-auto mb-2 bg-gray-300 rounded-full flex items-center justify-center">
-                <svg className="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-              </div>
-              <p className="text-sm">Team Photo</p>
-              <p className="text-xs text-gray-400 mt-1">Research Team</p>
-            </div>
-          </div>
-        </div>
+       
+
       </div>
       
       {/* Footer Reference */}
@@ -282,13 +246,7 @@ const DuckweedSafety = () => {
         </div>
       </div>
 
-      {/* Footer Reference */}
-      <div className="mt-6 pt-4 border-t border-gray-200">
-        <div className="space-y-1 text-sm text-gray-500" style={{fontFamily: 'Urbanist, sans-serif'}}>
-          <p>(1) Reference citation placeholder</p>
-          <p>(2) CRISPR reference citation placeholder</p>
-        </div>
-      </div>  
+    
 
 
 
