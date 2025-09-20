@@ -10,16 +10,16 @@ const Partners = () => {
             <h2 className="text-2xl font-bold text-gray-800 mt-10 mb-10 justify-center items-center text-center" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
                 STRATEGIC ALLY  
               </h2>
-          <div className="grid md:grid-cols-3 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center md:col-span-1">
               <img
                 src="https://static.igem.wiki/teams/5642/images/homepage/footer/muni-sci-logo.webp"
                 alt="MUNI"
                 className="max-w-full h-auto"
-                style={{ maxWidth: "400px", width: "100%", height: "auto" }}
+                style={{ maxWidth: "600px", width: "100%", height: "auto" }}
               />
             </div>
-            <div className="md:col-span-2">
+            <div className="md:col-span-1">
               
               
               <p className="text-md  leading-relaxed mb-6" style={{ fontFamily: 'Urbanist, sans-serif' }}>
@@ -36,8 +36,8 @@ const Partners = () => {
           <h2 className="text-2xl font-bold text-center justify-center items-center text-gray-800 mt-10 mb-10" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             GENERAL ALLY
           </h2>
-          <div className="grid md:grid-cols-3 gap-12 items-center">
-            <div className="md:col-span-2">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="md:col-span-1">
               
               
               <p>
@@ -67,7 +67,7 @@ const Partners = () => {
                 src="https://static.igem.wiki/teams/5642/images/homepage/footer/iocb-tech-foundation-logo.webp"
                 alt="IOCB Tech Foundation"
                 className="max-w-full h-auto"
-                style={{ maxWidth: "400px", width: "100%", height: "auto" }} // bigger image
+                style={{ maxWidth: "600px", width: "100%", height: "auto" }} // bigger image
               />
             </div>
           </div>
@@ -79,14 +79,14 @@ const Partners = () => {
           <h2 className="text-2xl font-bold text-center justify-center items-center text-gray-800 mb-8" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             MAIN ALLIES
           </h2>
-          <div className="grid md:grid-cols-3 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center md:col-span-1">
               <div className="flex flex-col items-center">
                 <img
                   src="https://static.igem.wiki/teams/5642/images/homepage/footer/greenonyx-logo.webp"
                   alt="GreenOnyx"
                   className="max-w-full h-auto"
-                  style={{ maxWidth: "400px", width: "100%", height: "auto" }}
+                  style={{ maxWidth: "600px", width: "100%", height: "auto" }}
                 />
                 <div className="mt-2 text-md font-bold text-gray-700" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
                   x Duckweed Hackers
@@ -94,7 +94,7 @@ const Partners = () => {
                 </div>
               </div>
             </div>
-            <div className="md:col-span-2">
+            <div className="md:col-span-1">
               
               
               <p>
@@ -134,9 +134,9 @@ const Partners = () => {
 
 
 
-          <div className="grid md:grid-cols-3 gap-12 items-center mt-16">
+          <div className="grid md:grid-cols-2 gap-12 items-center mt-16">
             
-            <div className="md:col-span-2">
+            <div className="md:col-span-1">
               
               
                   <p>
@@ -170,7 +170,7 @@ const Partners = () => {
                   src="https://static.igem.wiki/teams/5642/images/homepage/footer/brno-university-logo.webp"
                   alt="Brno University"
                   className="max-w-full h-auto"
-                  style={{ maxWidth: "400px", width: "100%", height: "auto" }}
+                  style={{ maxWidth: "600px", width: "100%", height: "auto" }}
                 />
                 <div className="mt-2 text-md font-bold text-gray-700" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
                   x Duckweed Hustlers
@@ -181,14 +181,14 @@ const Partners = () => {
           </div>
 
 
-          <div className="grid md:grid-cols-3 mt-16 gap-12 items-center">
+          <div className="grid md:grid-cols-2 mt-16 gap-12 items-center">
             <div className="flex justify-center md:col-span-1">
               <div className="flex flex-col items-center">
                 <img
                   src="https://static.igem.wiki/teams/5642/images/homepage/footer/biovendor-group-logo.webp"
                   alt="BioVendor"
                   className="max-w-full h-auto"
-                  style={{ maxWidth: "400px", width: "100%", height: "auto" }}
+                  style={{ maxWidth: "600px", width: "100%", height: "auto" }}
                 />
                 <div className="mt-2 text-md font-bold text-gray-700" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
                   x Duckweed Hipsters
@@ -196,7 +196,7 @@ const Partners = () => {
                 </div>
               </div>
             </div>
-            <div className="md:col-span-2">
+            <div className="md:col-span-1">
               
               
               <p>
@@ -225,6 +225,110 @@ const Partners = () => {
 
 
 
+        </section>
+
+
+        {/* General Ally Section */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-center justify-center items-center text-gray-800 mt-16 mb-10" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+            ENABLEMENT ALLY
+          </h2>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+
+            <div className="flex justify-center md:col-span-1">
+              <img
+                src="https://static.igem.wiki/teams/5642/images/homepage/footer/ceitec-logo.webp"
+                alt="CEITEC"
+                className="max-w-full h-auto"
+                style={{ maxWidth: "600px", width: "100%", height: "auto" }} // bigger image
+              />
+            </div>
+            <div className="md:col-span-1">
+              
+              
+              <>
+                <p>
+                  <strong>CEITEC – Boisivon Lab</strong>
+                  <span style={{ fontWeight: 400 }}>
+                    {" "}
+                    – was absolutely crucial for our work with plants, being fully equipped
+                    for such experiments and generously allowing us to use its facilities
+                    under the guidance of{" "}
+                  </span>
+                  <strong>Dr. Hélène Boisivon</strong>
+                  <span style={{ fontWeight: 400 }}>. We are deeply grateful to </span>
+                  <strong>Marie Štefková</strong>
+                  <span style={{ fontWeight: 400 }}> and </span>
+                  <strong>Marek Sedláček </strong>
+                  <span style={{ fontWeight: 400 }}>
+                    for their extraordinary patience, day-to-day support, and unwavering
+                    assistance in overcoming countless challenges.{" "}
+                  </span>
+                  <a href="http://boisivonlab.ceitec.cz">
+                    <span style={{ fontWeight: 400 }}>boisivonlab.ceitec.cz</span>
+                  </a>
+                  <span style={{ fontWeight: 400 }}>&nbsp;</span>
+                </p>
+                <p style={{ marginTop: '1rem' }}>
+                  <strong>CEITEC – Říha Lab – </strong>
+                  <span style={{ fontWeight: 400 }}>
+                    supported our work by taking on administrative tasks. Special thanks go to{" "}
+                  </span>
+                  <strong>Jana Pečinková</strong>
+                  <span style={{ fontWeight: 400 }}> and </span>
+                  <strong>Karel Říha</strong>
+                  <span style={{ fontWeight: 400 }}>
+                    {" "}
+                    for their enormous assistance with ordering primers and consumables.{" "}
+                  </span>
+                  <a href="http://rihalab.ceitec.cz">
+                    <span style={{ fontWeight: 400 }}>rihalab.ceitec.cz</span>
+                  </a>
+                  <span style={{ fontWeight: 400 }}>&nbsp;</span>
+                </p>
+                <p style={{ marginTop: '1rem' }}>
+                  <strong>
+                    CEITEC – Cellular Imaging Core Facility (Masaryk University)
+                  </strong>
+                  <span style={{ fontWeight: 400 }}>
+                    {" "}
+                    – Provides access to state-of-the-art Zeiss fluorescence microscopes,
+                    enabling us to efficiently evaluate the success of our genetic
+                    transformations and develop imaging-based analysis methods. We are
+                    grateful to{" "}
+                  </span>
+                  <strong>Dr. Milan Ešner</strong>
+                  <span style={{ fontWeight: 400 }}>
+                    {" "}
+                    and his team for their continuous technical support.{" "}
+                  </span>
+                  <a href="http://cellim.ceitec.eu">
+                    <span style={{ fontWeight: 400 }}>cellim.ceitec.eu</span>
+                  </a>
+                </p>
+                <p style={{ marginTop: '1rem' }}>
+                  <strong>CEITEC – Plant Sciences Core Facility (Masaryk University)</strong>
+                  <span style={{ fontWeight: 400 }}>
+                    {" "}
+                    – Provides access to state-of-the-art, fully controlled plant cultivation
+                    chambers and phytotrons. This enabled us to perform crucial cultivation
+                    experiments and fine-tune our model, PREDICTOR. We are grateful to Mr.
+                    Mokroš for his invaluable support and assistance.
+                  </span>
+                  <a href="https://www.google.com/search?q=https://www.ceitec.eu/plant-sciences-core-facility/cf">
+                    {" "}
+                    <span style={{ fontWeight: 400 }}>
+                      www.ceitec.eu/plant-sciences-core-facility/cf
+                    </span>
+                  </a>
+                </p>
+                <p>&nbsp;</p>
+              </>
+
+
+            </div>
+            
+          </div>
         </section>
 
 
