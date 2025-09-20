@@ -35,6 +35,8 @@ import WhyPlantsSuck from './pages/toolbox/WhyPlantsSuck';
 
 
 // Engagement pages 
+
+import ThreeHParty from './pages/engagement/outreach/ThreeHParty';
 // import Engagement from './pages/Engagement';
 // import EngagementCommunity from './pages/engagement/Community';
 // import EngagementEvents from './pages/engagement/Events';
@@ -91,18 +93,10 @@ function App() {
 
           <Route path="/engagement/sustainability" element={<SustainabilityDocument />} />
           
-          {/* Engagement Routes 
-          <Route path="/engagement" element={<Engagement />} />
-          <Route path="/engagement/community" element={<EngagementCommunity />} />
-          <Route path="/engagement/events" element={<EngagementEvents />} />
-          <Route path="/engagement/impact" element={<EngagementImpact />} />
-          
-          
-          <Route path="/duckweed-mafia" element={<DuckweedMafia />} />
-          <Route path="/duckweed-mafia/team" element={<DuckweedMafiaTeam />} />
-          <Route path="/duckweed-mafia/mission" element={<DuckweedMafiaMission />} />
-          <Route path="/duckweed-mafia/culture" element={<DuckweedMafiaCulture />} />
-          */}   
+          {/* Engagement Routes */}   
+
+
+          <Route path="/engagement/outreach/3h-party" element={<ThreeHParty />} />
           
           {/* Duckweed Mafia Routes */}
           <Route path="/duckweed-mafia/partners" element={<Partners />} />
