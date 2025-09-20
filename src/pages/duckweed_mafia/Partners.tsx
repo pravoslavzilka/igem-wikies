@@ -7,9 +7,9 @@ const Partners = () => {
         
         {/* Strategic Ally Section */}
         <section className="mb-16">
-            <h2 className="text-2xl font-bold text-gray-800 mt-10 mb-10 justify-center items-center text-center" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-                STRATEGIC ALLY  
-              </h2>
+            <h1 className="text-3xl font-bold text-gray-800 mt-10 mb-10 justify-center items-center text-center" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                STRATEGIC ALLY
+            </h1>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center md:col-span-1">
               <img
@@ -33,7 +33,7 @@ const Partners = () => {
         </section>
         {/* General Ally Section */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-center justify-center items-center text-gray-800 mt-10 mb-10" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+          <h2 className="text-3xl font-bold text-center justify-center items-center text-gray-800 mt-20 mb-20" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             GENERAL ALLY
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -76,7 +76,7 @@ const Partners = () => {
 
         {/* MAIN ALLIES  */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-center justify-center items-center text-gray-800 mb-8" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+          <h2 className="text-3xl font-bold text-center justify-center items-center text-gray-800 mt-20 mb-20" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             MAIN ALLIES
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -230,7 +230,7 @@ const Partners = () => {
 
         {/* General Ally Section */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-center justify-center items-center text-gray-800 mt-16 mb-10" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+          <h2 className="text-3xl font-bold text-center justify-center items-center text-gray-800 mt-20 mb-20" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             ENABLEMENT ALLY
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
