@@ -56,7 +56,7 @@ const DuckweedProtocol = () => {
             {/* Stock Solutions Table */}
             <div className="mt-6">
               <div className="bg-white border rounded-lg overflow-hidden">
-                <table className="w-full text-sm urbanist">
+                <table className="w-full text-md urbanist">
                   <thead className="bg-gray-100">
                     <tr>
                       <th className="px-4 py-3 text-left font-medium text-gray-900">Stock solutions (1 L)</th>
@@ -124,7 +124,7 @@ const DuckweedProtocol = () => {
                 </table>
               </div>
               
-              <p className="text-sm text-gray-600 mt-2 urbanist">
+              <p className="text-md text-gray-600 mt-2 urbanist">
                 <strong>Table 1.</strong> Chemical composition of the stock solutions from 
                 which DCMM is prepared. Keep stock solutions in fridge.
               </p>
@@ -181,7 +181,7 @@ const DuckweedProtocol = () => {
             <span className="text-gray-500 urbanist">Image Placeholder: IDEM Stock cultivation</span>
           </div>
           
-          <p className="text-sm text-gray-600 urbanist">
+          <p className="text-md text-gray-600 urbanist">
             <strong>Figure 1.</strong> The end of IDEM Stock duckweed 
             cultivation at the end of summer should look like this 
             "landscape". Fortunately, by then our CULTIVATOR was 
@@ -289,7 +289,7 @@ const DuckweedProtocol = () => {
                 <span className="text-gray-500 urbanist">Duckweed cultivation setup</span>
               </div>
               
-              <p className="text-sm text-gray-600 urbanist">
+              <p className="text-md text-gray-600 urbanist">
                 <strong>Section 2.</strong> (1) Petri dish with sterile duckweed culture 
                 kept as a backup. (2) Ø14 cm glass crystallization pot for 
                 maintaining a larger amount of duckweed. Always ready 
@@ -302,13 +302,13 @@ const DuckweedProtocol = () => {
               <div className="bg-gray-200 h-32 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-gray-500 urbanist">Confluence demonstration</span>
               </div>
-              <p className="text-sm text-gray-700 urbanist font-medium">
+              <p className="text-md text-gray-700 urbanist font-medium">
                 Duckweed at 50% – 75 = 100% confluence
               </p>
             </div>
 
             <div className="bg-gray-50 p-4 rounded-lg">
-              <p className="text-sm text-gray-600 urbanist italic">
+              <p className="text-md text-gray-600 urbanist italic">
                 You can too – read more on the <span className="underline">CULTIVATOR page</span>.
               </p>
             </div>
@@ -325,7 +325,7 @@ const DuckweedProtocol = () => {
             <h2 className="text-xl font-semibold text-gray-900 space-grotesk" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               MONDAY WORKFLOW
             </h2>
-            <div className="urbanist text-gray-700 space-y-3 text-sm">
+            <div className="urbanist text-gray-700 space-y-3 text-md">
               <p>• Split old duckweed from dishes and trays into clones dedicated to specific clones.</p>
               
               <p>• Observe and note the different glass pots and trays with detergent. Most of the time, only have rinsing with distilled water.</p>
@@ -343,7 +343,7 @@ const DuckweedProtocol = () => {
             <h2 className="text-xl font-semibold text-gray-900 space-grotesk" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               FRIDAY WORKFLOW
             </h2>
-            <div className="urbanist text-gray-700 space-y-3 text-sm">
+            <div className="urbanist text-gray-700 space-y-3 text-md">
               <p>• Split old duckweed from trays into clones dedicated to specific clones for fresh medium.</p>
               
               <p>• Pour new medium into all trays and return duckweed to ~70% confluence - suitable for transformation on Monday.</p>
@@ -354,7 +354,7 @@ const DuckweedProtocol = () => {
             </div>
             
             <div className="bg-gray-50 p-4 rounded-lg mt-4">
-              <p className="text-sm text-gray-700 urbanist">
+              <p className="text-md text-gray-700 urbanist">
                 <strong>Transformation:</strong> up to 3 days afterwards at 20to (2) 75% 
                 confluence - suitable for transformation up to a week 
                 afterwards at 75% (3) 82% confluence - Not longer 
@@ -368,7 +368,7 @@ const DuckweedProtocol = () => {
             <h2 className="text-xl font-semibold text-gray-900 space-grotesk" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               MONTHLY WORKFLOW
             </h2>
-            <div className="urbanist text-gray-700 space-y-3 text-sm">
+            <div className="urbanist text-gray-700 space-y-3 text-md">
               <p>• Every month autoclave bottles, Enrols.</p>
               
               <p>• Prepare 2-3 gl of fresh medium: xx with 3 gl Phytagel or 6gl Plant Agar</p>
@@ -398,7 +398,7 @@ const DuckweedProtocol = () => {
         <h2 className="text-xl font-semibold text-gray-900 mb-4 space-grotesk" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
           REFERENCES
         </h2>
-        <div className="urbanist text-gray-700 text-sm space-y-2">
+        <div className="urbanist text-gray-700 text-md space-y-2">
           <p>
             1. Lam, E., Appenroth, K.-J., Sree, K. S., Ecker, J., Wieser, G., Huber, S., ... & Ziegler, P. (2023). The duckweed genomes: annotation of a plant biofactory and biodiversity. Plant Journal, 115, 705-726. doi: 10.1111/tpj.16256
           </p>
