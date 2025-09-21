@@ -31,6 +31,7 @@ import SustainabilityDocument from './pages/project/why/Sustainability';
 
 import LivingLayersDocument from './pages/project/how/Cultivator';
 import WhyPlantsSuck from './pages/toolbox/WhyPlantsSuck';
+import DuckweedProtocol from './pages/toolbox/predictable_duckweed/DuckweedProtocol';
 
 
 
@@ -84,6 +85,7 @@ function App() {
           <Route path="/toolbox/tools" element={<ToolboxTools />} />
           <Route path="/toolbox/resources" element={<ToolboxResources />} />
           <Route path="/toolbox/downloads" element={<ToolboxDownloads />} />
+          <Route path="/toolbox/predictable-duckweed-protocol/" element={<DuckweedProtocol />} />
 
           
           
