@@ -1,6 +1,6 @@
 const Tools = () => {
     return (
-    <div className="p-10 min-h-screen mx-auto md:mb-40   md:mt-[-150px]">
+    <div className="p-10 min-h-screen mx-auto md:mb-40 pt-20 pb-20  md:mt-[-150px]">
       <div className="max-w-7xl mx-auto">
         
 
@@ -93,8 +93,17 @@ const Tools = () => {
                     promoters</b> we've characterized
                 </p>
                 </div>
+
+
+             
           </div>
+          <div className="pt-4 flex justify-center lg:col-span-3">
+            <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-medium transition-colors duration-200" style={{ fontFamily: 'Urbanist, sans-serif', backgroundColor: '#22531C' }}>
+                  Explore our Part Collection and see how duckweed becomes programmable!
+                </button>
+         </div>     
         </div>
+                 
       </div>
     </div>
   );

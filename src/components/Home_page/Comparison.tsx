@@ -53,7 +53,7 @@ const Comparison = () => {
 
   // Responsive gaps
   const colGap = window.innerWidth < 500 ? "8px" : window.innerWidth < 1500 ? "18px" : "32px";
-  const rowGap = window.innerWidth < 500 ? "20px" : window.innerWidth < 1500 ? "14px" : "18px";
+  const rowGap = window.innerWidth < 500 ? "20px" : window.innerWidth < 1500 ? "13px" : "16px";
 
   // Set gap between tables: smaller on mobile, larger on desktop
   const tablesGap = cols === 10 ? "8rem" : "2rem";
@@ -155,7 +155,7 @@ const Comparison = () => {
 
 
        {/* Features section at the end */}
-      <div className="w-screen max-w-none mt-12 px-2 md:px-8" style={{ position: "relative", left: "50%", right: "50%", marginLeft: "-50vw", marginRight: "-50vw", display: window.innerWidth < 768 ? 'none' : 'block' }}>
+      <div className="w-screen max-w-none mt-6 px-2 md:px-8" style={{ position: "relative", left: "50%", right: "50%", marginLeft: "-50vw", marginRight: "-50vw", display: window.innerWidth < 768 ? 'none' : 'block' }}>
         <div className="flex flex-wrap justify-center gap-y-10 gap-x-8 md:gap-x-16">
           {Features.map((feature, idx) => (
             <div

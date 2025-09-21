@@ -1,6 +1,6 @@
 const VideoShow = () => {
     return (
-    <div className="bg-white p-5 mt-[100px] min-h-screen">
+    <div className="bg-white p-5 mt-[10px] min-h-screen">
       <div className="max-w-6xl mx-auto">
         {/* Main headline */}
         <div className="text-center mb-12">
@@ -36,7 +36,7 @@ const VideoShow = () => {
         </div>
       </div>
 
-      <div className="w-full mt-[100px] mb-[100px] rounded-lg flex items-center justify-center">
+      <div className="w-full mt-[100px] rounded-lg flex items-center justify-center">
         <img src="https://static.igem.wiki/teams/5642/icons/igem-brno-final-transparent.webp" alt="Farm/Cow" className="h-60 object-cover rounded-lg" />
       </div>
 

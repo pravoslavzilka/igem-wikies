@@ -66,7 +66,7 @@ const ToolboxShow = () => {
   }, [timelineStarted]);
 
   return (
-    <div className=" p-8 min-h-screen mt-[100px] ">
+    <div className=" p-8 min-h-screen mt-[200px] ">
       <div className="max-w-8xl mx-auto">
         {/* Header section */}
         <div className="text-center mb-12  mx-auto max-w-6xl">

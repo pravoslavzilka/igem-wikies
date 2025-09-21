@@ -1,7 +1,7 @@
 const ModelShow = () => {
     return (
     <div className="bg-white p-8 min-h-screen md:mb-[-200px]">
-      <div className="max-w-6xl mx-auto  mt-20" >
+      <div className="max-w-6xl mx-auto  mt-6" >
         {/* Top image placeholder */}
         
 

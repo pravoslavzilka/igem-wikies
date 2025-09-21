@@ -29,8 +29,8 @@ const TaifrComparison = () => {
     <div className="p-2 md:p-10 min-h-screen md:mt-60 mb-20">
       <div className="md:max-w-7xl mx-auto">
         {/* Top image placeholder */}
-        <div className="w-full h-80  rounded-lg flex items-center justify-center mb-5">
-          <div className="text-center md:mb-40">
+        <div className="w-full h-80  rounded-lg flex items-center justify-center ">
+          <div className="text-center md:mb-32">
             
             <video
               ref={videoRef}
@@ -40,7 +40,7 @@ const TaifrComparison = () => {
               playsInline
               className="rounded-lg w-full"
               style={{
-                width: window.innerWidth < 768 ? "100%" : "90%",
+                width: window.innerWidth < 768 ? "100%" : "80%",
                 height: "auto",
                 margin: "0 auto",
                 display: "block"

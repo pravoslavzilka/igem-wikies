@@ -6,7 +6,7 @@ const CultivatorShow = () => {
     <div className="bg-white p-8 min-h-screen md:mt-[-200px]">
       <div className="max-w-8xl mx-auto">
         {/* Top image placeholder */}
-        <div className="w-full h-64 sm:h-40 md:h-[26rem] bg-gray-200 rounded-lg flex items-center justify-center mb-12">
+        <div className="w-full h-64 sm:h-40 md:h-[26rem] bg-gray-200 rounded-lg flex items-center justify-center mb-6">
           <img
             src="https://static.igem.wiki/teams/5642/images/homepage/duckweed-08465.webp"
             alt="Lab Image"
@@ -29,7 +29,7 @@ const CultivatorShow = () => {
               </p>
             </div>
 
-            <div className="pt-4">
+            <div className="">
               <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-medium transition-colors duration-200" style={{ fontFamily: 'Urbanist, sans-serif', backgroundColor: '#22531C' }}>
                 See how cultivator works
               </button>
