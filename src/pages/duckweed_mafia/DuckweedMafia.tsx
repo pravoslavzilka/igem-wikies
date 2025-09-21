@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
 const DuckweedMafiaTeam = () => {
-  const [currentSection, setCurrentSection] = useState('Founders');
-  const [leftColumnFixed, setLeftColumnFixed] = useState(true);
+  const [currentSection, setCurrentSection] = useState('Intro');
+  const [leftColumnFixed, setLeftColumnFixed] = useState(false);
+  const [showTeamSection, setShowTeamSection] = useState(false);
 
   const teamSections = [
     {
@@ -168,23 +169,37 @@ const DuckweedMafiaTeam = () => {
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
       
-      // Calculate which section we're in based on scroll position
-      let totalMembers = 0;
-      let currentSectionTitle = 'Founders';
-      
-      for (const section of teamSections) {
-        if (scrollPosition < (totalMembers + section.members.length) * windowHeight) {
-          currentSectionTitle = section.title;
-          break;
+      // Check if we're in the intro section or team section
+      if (scrollPosition < windowHeight) {
+        setCurrentSection('Intro');
+        setLeftColumnFixed(false);
+        setShowTeamSection(false);
+      } else {
+        setShowTeamSection(true);
+        setLeftColumnFixed(true);
+        
+        // Calculate which team section we're in based on scroll position
+        // Subtract one viewport height to account for intro section
+        const teamScrollPosition = scrollPosition - windowHeight;
+        let totalMembers = 0;
+        let currentSectionTitle = 'Founders';
+        
+        for (const section of teamSections) {
+          if (teamScrollPosition < (totalMembers + section.members.length) * windowHeight) {
+            currentSectionTitle = section.title;
+            break;
+          }
+          totalMembers += section.members.length;
         }
-        totalMembers += section.members.length;
-      }
-      
-      setCurrentSection(currentSectionTitle);
+        
+        setCurrentSection(currentSectionTitle);
 
-      // Check if we're near the bottom of the page
-      const bottomThreshold = documentHeight - windowHeight * 1.9;
-      setLeftColumnFixed(scrollPosition < bottomThreshold);
+        // Check if we're near the bottom of the page to unlock left column
+        const bottomThreshold = documentHeight - windowHeight * 1.2;
+        if (scrollPosition >= bottomThreshold) {
+          setLeftColumnFixed(false);
+        }
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -192,107 +207,198 @@ const DuckweedMafiaTeam = () => {
   }, []);
 
   return (
-    <div className="flex min-h-screen bg-amber-50">
-      {/* Fixed Left Sidebar - Hidden on mobile */}
-      <div className={`hidden md:flex w-1/2 bg-amber-100 p-8 h-full flex-col transition-all duration-300 ${
-        leftColumnFixed ? 'fixed' : 'absolute bottom-0'
-      }`}>
-        {/* Logo */}
-        <div className="mb-8">
-          <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mb-4">
-            <span className="text-white font-bold text-lg">iGEM</span>
+    <div className="min-h-screen bg-amber-50">
+      {/* Intro Section - Full Screen */}
+      <div className="min-h-screen bg-amber-50 flex items-center justify-center p-8">
+        <div className="max-w-4xl mx-auto text-center">
+          {/* Logo */}
+          <div className="mb-8">
+            <div className="w-24 h-24 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <span className="text-white font-bold text-2xl">iGEM</span>
+            </div>
           </div>
-        </div>
 
-        {/* Main Image Placeholder */}
-        <div className="mb-8 flex-1">
-          <div className="w-full h-64 bg-green-200 rounded-lg flex items-center justify-center">
-            <span className="text-green-600 text-sm">Team Photo Placeholder</span>
+          {/* Main Title */}
+          <div className="mb-8">
+            <h1 className="text-6xl md:text-8xl font-bold text-green-700 mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              The
+            </h1>
+            <h1 className="text-6xl md:text-8xl font-bold text-green-700 mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              Duckweed
+            </h1>
+            <h1 className="text-6xl md:text-8xl font-bold text-green-700" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              Mafia
+            </h1>
           </div>
-        </div>
 
-        {/* Title */}
-        <div className="mb-8">
-          <h1 className="text-4xl font-bold text-green-700 mb-2" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-            MEET
-          </h1>
-          <h1 className="text-4xl font-bold text-green-700" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-            The
-          </h1>
-          <h1 className="text-4xl font-bold text-green-700 transition-all duration-500" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-            {currentSection}
-          </h1>
-        </div>
+          {/* Team Photo Placeholder */}
+          <div className="mb-8">
+            <div className="w-full max-w-2xl h-64 mx-auto bg-green-200 rounded-lg flex items-center justify-center">
+              <span className="text-green-600 text-lg">Team Photo Placeholder</span>
+            </div>
+          </div>
 
-        {/* Description */}
-        <div className="text-sm text-gray-700 mb-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-          <p className="mb-4">
-            <strong>What is Duckweed Mafia?</strong>
-          </p>
-          <p className="mb-4">
-            We're iGEM Brno — probably the Duckweed Mafia. Our big might-land name 
-            means we're trying to grow a • big, hackers, founders and hustlers. 
-            We are still called Team Brno — but you know, sometimes we forget 
-            the rules. 🤷‍♂️ Just one moment of the mafia!
-          </p>
+          {/* Description */}
+          <div className="max-w-2xl mx-auto text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+            <p className="text-lg mb-6">
+              <strong>What is Duckweed Mafia?</strong>
+            </p>
+            <p className="text-base mb-6">
+              We're iGEM Brno — proudly the Duckweed Mafia. Our big, organized crew
+              splits into three main groups — the 3H: Hackers, Hipsters and Hustlers.
+              And of course, Founders stand behind it all, helping connect and
+              coordinate every piece of the puzzle.
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-6 text-sm">
+              <div className="text-left">
+                <p className="font-semibold mb-2 text-green-700">Hackers</p>
+                <p className="mb-4">
+                  The builders and experimenters. Hackers run the bench, write code, test
+                  protocols and translate chaos into data. They split projects into clear
+                  tasks, document results and make sure every late night in the lab moves
+                  us closer to the goal.
+                </p>
+                
+                <p className="font-semibold mb-2 text-green-700">Hustlers</p>
+                <p>
+                  In our version of the 3H, hustlers are the cultivation crew. They design and
+                  manage systems: containers, cultivation conditions, optimal conditions for
+                  growth. They think about applications in the field, and set up routines for
+                  pumping & harvesting so our biology works reliably outside the lab.
+                </p>
+              </div>
+              
+              <div className="text-left">
+                <p className="font-semibold mb-2 text-green-700">Hipsters</p>
+                <p className="mb-4">
+                  The storytellers and designers. They craft our identity, visuals and
+                  narrative so the science feels human and exciting. From brand to video,
+                  they make sure people get what we're doing — and why it matters.
+                </p>
+                
+                <p className="font-semibold mb-2 text-green-700">Founders</p>
+                <p>
+                  The glue across all teams. Founders coordinate, connect dots and keep
+                  the whole machine aligned. They care about long-term vision, hustle on
+                  lab experiments, design sessions and pitches — making sure all the
+                  moving parts work together.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-8">
+              <p className="text-lg font-semibold text-green-700">
+                Find out each other's story!
+              </p>
+              <div className="mt-4">
+                <svg className="w-6 h-6 mx-auto text-green-600 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Scrollable Right Content */}
-      <div className="w-full md:w-1/2 md:ml-auto">
-        {teamSections.map((section, sectionIndex) =>
-          section.members.map((member, memberIndex) => (
-            <div key={`${sectionIndex}-${memberIndex}`} className="min-h-screen bg-white p-4 md:p-8 flex flex-col justify-center">
-              {/* Mobile Section Header - Only visible on mobile */}
-              <div className="mb-8 md:hidden">
-                <h2 className="text-2xl font-bold text-green-700 mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-                  MEET
-                </h2>
-                <h3 className="text-3xl font-bold text-green-700" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-                  The
-                </h3>
-                <h3 className="text-3xl font-bold text-green-700" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-                  {section.title}
-                </h3>
-              </div>
+      {/* Team Section */}
+      <div className="flex">
+        {/* Fixed Left Sidebar - Hidden on mobile, only shows after intro */}
+        {showTeamSection && (
+          <div style={{backgroundColor:"#cdbd9bff" }} className={`hidden md:flex w-1/2  p-8 flex-col transition-all duration-300 z-10 ${
+            leftColumnFixed ? 'fixed top-0 left-0 h-screen' : 'relative h-auto min-h-screen'
+          }`}>
+            {/* Logo */}
+            <div className="mb-8 flex-shrink-0">
+              <img style={{ height: "100px", width: "auto"}} src='https://static.igem.wiki/teams/5642/icons/igem-brno-final-transparent.webp' />
+            </div>
 
-              {/* Member Profile */}
-              <div className="flex-1">
-                {/* Guest Label */}
-                <p className="text-xs text-gray-500 mb-4 uppercase tracking-wide" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                  QUEST: {member.role}
-                </p>
+            
 
-                {/* Member Image */}
-                <div className="mb-6">
-                  <div className="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center relative">
-                    <span className="text-gray-400">Member Photo Placeholder</span>
-                    {/* Name overlay */}
-                    <div className="absolute bottom-4 right-4 bg-black bg-opacity-70 text-white px-3 py-1 rounded text-sm">
-                      {member.name}
+            {/* Title */}
+            <div className="mb-8 flex-shrink-0">
+              <h1 className="text-4xl font-bold text-green-700 mb-2" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                MEET
+              </h1>
+              <h1 className="text-4xl font-bold text-green-700" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                The
+              </h1>
+              <h1 className="text-4xl font-bold text-green-700 transition-all duration-500" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                {currentSection}
+              </h1>
+            </div>
+
+            {/* Description */}
+            <div className="text-sm text-gray-700 mb-4 flex-shrink-0" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+              <p className="mb-4">
+                <strong>What is Duckweed Mafia?</strong>
+              </p>
+              <p className="mb-4">
+                We're iGEM Brno — probably the Duckweed Mafia. Our big might-land name 
+                means we're trying to grow a • big, hackers, founders and hustlers. 
+                We are still called Team Brno — but you know, sometimes we forget 
+                the rules. 🤷‍♂️ Just one moment of the mafia!
+              </p>
+            </div>
+          </div>
+        )}
+
+        {/* Scrollable Right Content */}
+        <div className={`w-full ${showTeamSection ? 'md:w-1/2 md:ml-auto' : ''}`}>
+          {teamSections.map((section, sectionIndex) =>
+            section.members.map((member, memberIndex) => (
+              <div key={`${sectionIndex}-${memberIndex}`} className="min-h-screen bg-white p-4 md:p-8 flex flex-col justify-center">
+                {/* Mobile Section Header - Only visible on mobile */}
+                <div className="mb-8 md:hidden">
+                  <h2 className="text-2xl font-bold text-green-700 mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                    MEET
+                  </h2>
+                  <h3 className="text-3xl font-bold text-green-700" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                    The
+                  </h3>
+                  <h3 className="text-3xl font-bold text-green-700" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                    {section.title}
+                  </h3>
+                </div>
+
+                {/* Member Profile */}
+                <div className="flex-1">
+                  {/* Guest Label */}
+                  <p className="text-xs text-gray-500 mb-4 uppercase tracking-wide" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                    QUEST: {member.role}
+                  </p>
+
+                  {/* Member Image */}
+                  <div className="mb-6">
+                    <div className="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center relative">
+                      <span className="text-gray-400">Member Photo Placeholder</span>
+                      {/* Name overlay */}
+                      <div className="absolute bottom-4 right-4 bg-black bg-opacity-70 text-white px-3 py-1 rounded text-sm">
+                        {member.name}
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                {/* Member Description */}
-                <div className="text-sm text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                  <p className="leading-relaxed">
-                    {member.description}
-                  </p>
+                  {/* Member Description */}
+                  <div className="text-sm text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                    <p className="leading-relaxed">
+                      {member.description}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))
-        )}
-        
-        {/* Footer */}
-        <div className="bg-gray-800 text-white p-8 text-center">
-          <h3 className="text-xl font-bold mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-            Ready to Join the Duckweed Mafia?
-          </h3>
-          <p style={{ fontFamily: 'Urbanist, sans-serif' }}>
-            Contact us to learn more about our innovative biotechnology research.
-          </p>
+            ))
+          )}
+          
+          {/* Footer */}
+          <div className="bg-gray-800 text-white p-8 text-center">
+            <h3 className="text-xl font-bold mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              Ready to Join the Duckweed Mafia?
+            </h3>
+            <p style={{ fontFamily: 'Urbanist, sans-serif' }}>
+              Contact us to learn more about our innovative biotechnology research.
+            </p>
+          </div>
         </div>
       </div>
     </div>
