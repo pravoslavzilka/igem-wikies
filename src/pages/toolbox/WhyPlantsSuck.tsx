@@ -11,7 +11,7 @@ const WhyPlantsSuck = () => {
     <div className="min-h-screen bg-white p-8">
       <div className="max-w-6xl mx-auto">
         {/* Main Title */}
-        <h1 className="text-3xl font-bold text-center text-black mb-8" style={{ fontFamily: "Space Grotesk" }}>
+        <h1 className="text-4xl font-bold text-center text-black mb-16 mt-10" style={{ fontFamily: "Space Grotesk" }}>
           Plants Are Not Just Green Bacteria
         </h1>
 
@@ -34,9 +34,9 @@ const WhyPlantsSuck = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
           {/* Left Column - Text */}
           <div className="lg:col-span-1">
-            <div className="bg-blue-50 border border-blue-200 p-6 rounded-lg">
+            <div className=" p-6 rounded-lg">
               <h2 className="text-xl font-bold text-black mb-4" style={{ fontFamily: "Space Grotesk" }}>The Waiting Game</h2>
-              <p className="text-sm leading-relaxed text-black" style={{ fontFamily: "Urbanist" }}>
+              <p className="text-md leading-relaxed text-black" style={{ fontFamily: "Urbanist" }}>
                 Time is the most immediate and obvious challenge in 
                 plant biotechnology. Microbial systems such as <em>E. coli</em> 
                 can be transformed and analyzed within 24–48 hours, 
@@ -86,8 +86,8 @@ const WhyPlantsSuck = () => {
               
               <div className="text-center flex-1 ">
                 <img 
-                  src="https://static.igem.wiki/teams/5642/images/toolbox/whyplantssuck/arabidopsis.webp"
-                  alt="E.coli bacteria"
+                  src="https://static.igem.wiki/teams/5642/images/toolbox/whyplantssuck/soybean.webp"
+                  alt="Soybean plant"
                   className="w-full h-50 object-cover rounded-lg mb-2"
                 />
                 <p className="text-xs text-black font-medium text-center">Glycine max green pod — Macleay Grass Man, via Wikimedia Commons, CC BY 2.0
@@ -97,7 +97,7 @@ const WhyPlantsSuck = () => {
               {/* Plant seedlings Image */}
               <div className="text-center flex-1">
                 <img 
-                  src="https://static.igem.wiki/teams/5642/images/toolbox/whyplantssuck/soybean.webp"
+                  src="https://static.igem.wiki/teams/5642/images/toolbox/whyplantssuck/arabidopsis.webp"
                   alt="Plant seedlings in laboratory"
                   className="w-full h-50 object-cover rounded-lg mb-2"
                 />
@@ -124,15 +124,15 @@ const WhyPlantsSuck = () => {
             </div>
 
             {/* Genome Compositions */}
-                        <img src="https://static.igem.wiki/teams/5642/images/toolbox/whyplantssuck/compositions-of-genomes2.webp" alt="Genome Sizes Chart" className="w-full h-auto mb-4" />
+             <img src="https://static.igem.wiki/teams/5642/images/toolbox/whyplantssuck/compositions-of-genomes2.webp" alt="Genome Sizes Chart" className="w-full h-auto mb-4" />
 
           </div>
 
           {/* Right Column - Genomes on Steroids */}
           <div>
-            <div className="bg-blue-50 border border-blue-200 p-6 rounded-lg">
+            <div className="p-6 rounded-lg">
               <h2 className="text-xl font-bold text-black mb-4" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Genomes on Steroids</h2>
-              <p className="text-sm leading-relaxed text-black" style={{ fontFamily: "Urbanist, sans-serif" }}>
+              <p className="text-md leading-relaxed text-black" style={{ fontFamily: "Urbanist, sans-serif" }}>
                 Another major obstacle in plant biotechnology is genome complexity. 
                 Unlike bacteria such as <em>E. coli</em>, which have small and compact genomes 
                 (about 4.6 Mb), many plants carry genomes that are not only much larger 
@@ -163,7 +163,7 @@ const WhyPlantsSuck = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8" style={{ fontFamily: "Urbanist, sans-serif" }}>
             {/* Left Column - Main Text */}
             <div className="space-y-6">
-              <p className="text-sm leading-relaxed text-black" >
+              <p className="text-md leading-relaxed text-black" >
                 In microbial systems, a single transformed cell is already a complete organism; it can readily grow 
                 into a colony and be selected on a medium for testing. In plants, however, a transformed cell is 
                 only the beginning. To succeed, a transformed plant cell must regenerate into a whole, 
@@ -175,11 +175,11 @@ const WhyPlantsSuck = () => {
               </p>
 
               <div className="bg-gray-50 p-4 rounded-lg">
-                <p className="text-sm font-medium text-black mb-3">
+                <p className="text-md font-medium text-black mb-3">
                   A typical plant transformation workflow involves several demanding stages :
                 </p>
                 
-                <ul className="space-y-3 text-sm text-black">
+                <ul className="space-y-3 text-md text-black">
                   <li>
                     <strong>• Callus induction</strong> – 2–4 weeks<br/>
                     <span className="text-gray-700 ml-2">
@@ -219,7 +219,7 @@ const WhyPlantsSuck = () => {
                 </ul>
               </div>
 
-              <p className="text-sm leading-relaxed text-black">
+              <p className="text-md leading-relaxed text-black">
                 But to make matters even worse, different plants often require different methods or their specific 
                 adaptations. <em>Arabidopsis thaliana</em> is relatively easy, since the "floral dip" method allows 
                 transformation through flowers, skipping most tissue culture steps and giving transgenic seeds in a 
@@ -235,10 +235,10 @@ const WhyPlantsSuck = () => {
               {/* E. coli transformation */}
               <div className="border-2 border-gray-300 rounded-lg p-4 bg-gray-50 flex flex-row items-center gap-4">
                 <div className="h-40 w-40 bg-blue-100 rounded flex items-center justify-center flex-shrink-0"> {/* increased from h-24 w-24 */}
-                  <span className="text-gray-600 text-sm text-center">Sketch from Barča<br/>(E.coli transformation)</span>
+                  <span className="text-gray-600 text-md text-center">Sketch from Barča<br/>(E.coli transformation)</span>
                 </div>
                 <div className="text-left flex-1">
-                  <h4 className="font-bold text-sm text-black">E. coli transformation</h4>
+                  <h4 className="font-bold text-md text-black">E. coli transformation</h4>
                   <p className="text-xs text-black mt-1">
                     Transformation efficiency is extremely high, reaching up to 
                     10⁹ colonies per microgram of DNA. Unlike in plants, 
@@ -251,7 +251,7 @@ const WhyPlantsSuck = () => {
               {/* Arabidopsis floral dip */}
               <div className="border-2 border-gray-300 rounded-lg p-4 bg-gray-50 flex flex-row items-center gap-4">
                 <div className="text-left flex-1">
-                  <h4 className="font-bold text-sm text-black">Arabidopsis floral dip</h4>
+                  <h4 className="font-bold text-md text-black">Arabidopsis floral dip</h4>
                   <p className="text-xs text-black mt-1">
                     The floral dip method is simple and widely used, 
                     but efficiency is low — usually around 1–2% of 
@@ -259,17 +259,17 @@ const WhyPlantsSuck = () => {
                   </p>
                 </div>
                 <div className="h-40 w-40 bg-green-100 rounded flex items-center justify-center flex-shrink-0"> {/* increased from h-24 w-24 */}
-                  <span className="text-gray-600 text-sm text-center">Sketch from Barča<br/>(floral dip)</span>
+                  <span className="text-gray-600 text-md text-center">Sketch from Barča<br/>(floral dip)</span>
                 </div>
               </div>
 
               {/* Maize and soybean transformation */}
               <div className="border-2 border-gray-300 rounded-lg p-4 bg-gray-50 flex flex-row items-center gap-4">
                 <div className="h-40 w-40 bg-yellow-100 rounded flex items-center justify-center flex-shrink-0"> {/* increased from h-24 w-24 */}
-                  <span className="text-gray-600 text-sm text-center">Sketch from Barča<br/>(calli transformation)</span>
+                  <span className="text-gray-600 text-md text-center">Sketch from Barča<br/>(calli transformation)</span>
                 </div>
                 <div className="text-left flex-1">
-                  <h4 className="font-bold text-sm text-black">Maize and soybean transformation</h4>
+                  <h4 className="font-bold text-md text-black">Maize and soybean transformation</h4>
                   <p className="text-xs text-black mt-1">
                     Stable Agrobacterium-mediated transformation of corn and 
                     soybean is possible through callus or immature embryos, 
@@ -287,7 +287,7 @@ const WhyPlantsSuck = () => {
           </div>
         </div>
       <div className="max-w-4xl mx-auto">                
-          <h1 className="text-3xl font-bold text-center text-black mb-8 mt-20" style={{ fontFamily: "Space Grotesk" }}>
+          <h1 className="text-2xl font-bold text-center text-black mb-8 mt-20" style={{ fontFamily: "Space Grotesk" }}>
             Mutations You Didn’t Ask For
 
           </h1>
@@ -309,7 +309,7 @@ const WhyPlantsSuck = () => {
 
         <div className="border-t border-gray-200 pt-6">
                 <h3 className="text-lg font-bold text-gray-900 mb-4" style={{ fontFamily: "Space Grotesk, sans-serif" }}>References</h3>
-                <div className="space-y-3 text-sm text-gray-700">
+                <div className="space-y-3 text-md text-gray-700">
                   <p className="leading-relaxed">
                     [1] Altpeter, F. et al. (2016) ‘Advancing Crop Transformation in the Era of Genome Editing’, The Plant Cell, 28(7), pp. 1510–1520. Available at: <Link className='text-blue-500 hover:underline' target='_blank' to="https://doi.org/10.1105/tpc.16.00196">https://doi.org/10.1105/tpc.16.00196</Link>.</p>
                   <p className="leading-relaxed">
