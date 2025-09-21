@@ -13,7 +13,7 @@ interface ContentData {
   quote: string;
   author: string;
   title: string;
-  imageUrl?: string; // Pole pre URL obrÃ¡zka
+  imageUrl?: string;
 }
 
 const CONFIG = {
@@ -151,8 +151,8 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
         headline: "of the endemic flora of the Cerrado is threatened with extinction",
         quote: "We can do better!",
         author: "Prof. Carlos Klink",
-        title: "Department of Ecology University of BrasÃ­lia",
-        imageUrl: "https://static.igem.wiki/teams/5642/images/homepage/brazil/carlos-klink.webp"
+        title: "Department of Ecology University of Brasília",
+        imageUrl: "/images/authors/carlos_klink.jpeg"
       };
     }
   }, [currentYear]);
@@ -175,11 +175,11 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
   }, [getYearContent, displayContent]);
 
   if (!displayContent) {
-    return <div className="text-left space-y-4 sm:space-y-6 h-48 sm:h-64"></div>;
+    return <div className="text-left space-y-4 h-48"></div>;
   }
 
   return (
-    <div className="text-left space-y-4 sm:space-y-6 md:space-y-8 px-2 sm:px-0">
+    <div className="text-left space-y-3 sm:space-y-4 md:space-y-5 px-2 sm:px-0">
       <AnimatePresence mode="wait">
         <motion.div 
           key={contentKey}
@@ -188,10 +188,10 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
           animate="visible"
           exit="exit"
         >
-          <div className="mb-3 sm:mb-4 md:mb-6">
-            {/* Tagline - responzÃ­vne veÄ¾kosti */}
+          <div className="mb-2 sm:mb-3 md:mb-4">
+            {/* Tagline - responsive sizes */}
             <motion.div 
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-6xl 2xl:text-7xl font-bold tracking-wider mb-3 sm:mb-4 md:mb-6" 
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-wider mb-2 sm:mb-3 md:mb-4" 
               style={{ 
                 color: CONFIG.colors.accent, 
                 fontFamily: "Space Grotesk, sans-serif", 
@@ -216,7 +216,7 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
             </motion.div>
             
             <motion.h1 
-              className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl 2xl:text-2xl font-medium leading-relaxed text-white mb-4 sm:mb-6"
+              className="text-base sm:text-lg md:text-xl font-medium leading-relaxed text-white mb-3 sm:mb-4"
               variants={headlineVariants} 
               style={{
                 marginTop:'15px', 
@@ -230,12 +230,12 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
           </div>
           
           <motion.div 
-            className="border-t border-white/20 pt-4 sm:pt-6"
+            className="border-t border-white/20 pt-3 sm:pt-4"
             variants={childVariants}
           >
             <div className="flex items-start space-x-2 sm:space-x-3">
               <motion.div 
-                className="text-3xl sm:text-4xl md:text-5xl text-white/20 font-serif flex-shrink-0"
+                className="text-3xl sm:text-4xl text-white/20 font-serif flex-shrink-0"
                 animate={{ 
                   scale: [1, 1.05, 1],
                   opacity: [0.2, 0.3, 0.2]
@@ -247,12 +247,12 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
               
               <div className="min-w-0 flex-1">
                 <motion.p 
-                  className="text-sm sm:text-base md:text-lg lg:text-base xl:text-lg text-white mb-2 sm:mb-3 leading-relaxed flex items-start"
+                  className="text-sm sm:text-base md:text-lg text-white mb-2 sm:mb-3 leading-relaxed flex items-start"
                   variants={quoteVariants}
                 >
                   <span>{displayContent.quote}</span>
                   <motion.span 
-                    className="text-3xl sm:text-4xl md:text-5xl text-white/20 font-serif ml-2 sm:ml-3 -mt-1"
+                    className="text-3xl sm:text-4xl text-white/20 font-serif ml-2 sm:ml-3 -mt-1"
                     animate={{ 
                       scale: [1, 1.05, 1],
                       opacity: [0.2, 0.3, 0.2]
@@ -298,7 +298,7 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
                   
                   <div className="min-w-0">
                     <motion.div 
-                      className="font-medium text-white text-xs sm:text-sm md:text-base"
+                      className="font-medium text-white text-xs sm:text-sm"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ delay: 0.4 }}

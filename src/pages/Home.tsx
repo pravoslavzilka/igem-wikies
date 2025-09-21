@@ -33,10 +33,10 @@ const Home = () => {
         <Hero />
 
 
-      {/* BrazilDeforestationWidget with rounded corners */}
-      <div className="mx-4 mt-8 rounded-3xl overflow-hidden">
+      {/* BrazilDeforestationWidget  */}
+      
         <BrazilDeforestationWidget />
-      </div>
+     
 
       
       {/* <Transition /> */}
