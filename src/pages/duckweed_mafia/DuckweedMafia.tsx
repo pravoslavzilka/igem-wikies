@@ -1,9 +1,25 @@
 import React, { useState, useEffect } from 'react';
 
 const DuckweedMafiaTeam = () => {
-  const [currentSection, setCurrentSection] = useState('Intro');
+  const [currentSection, setCurrentSection] = useState('Founders');
   const [leftColumnFixed, setLeftColumnFixed] = useState(false);
   const [showTeamSection, setShowTeamSection] = useState(false);
+
+  const scrollToSection = (sectionTitle) => {
+    const windowHeight = window.innerHeight;
+    let totalMembers = 0;
+    
+    // Calculate the position of the target section
+    for (const section of teamSections) {
+      if (section.title === sectionTitle) {
+        // Add one viewport for intro + accumulated members * 0.6 (since cards are 60vh)
+        const targetPosition = windowHeight + (totalMembers * windowHeight * 0.6);
+        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+        break;
+      }
+      totalMembers += section.members.length;
+    }
+  };
 
   const teamSections = [
     {
@@ -27,7 +43,7 @@ const DuckweedMafiaTeam = () => {
         {
           name: "Zdeňka Vilhanová",
           role: "head of offline events, junior-ish designer, duckweed dish wizard, biochemistry student",
-          description: "Zdenka is the heart of our Duckweed Hipsters team — a brilliant negotiator, a true friend, and the one who always gets things done. Whether she's baking her legendary duckweed cookies or offering tea with a smile, she keeps everything running smoothly. Beyond iGEM, she works on a fascinating project with hydrogen-eating bacteria. Calm, clever, and endlessly kind — we couldn't wish for a better teammate!"
+          description: "Zdenka is the heart of our Duckweed Hipsters team – a brilliant negotiator, a true friend, and the one who always gets things done. Whether she's baking her legendary duckweed cookies or offering tea with a smile, she keeps everything running smoothly. Beyond iGEM, she works on a fascinating project with hydrogen-eating bacteria. Calm, clever, and endlessly kind – we couldn't wish for a better teammate!"
         }
       ]
     },
@@ -37,7 +53,7 @@ const DuckweedMafiaTeam = () => {
         {
           name: "Hanka Slámová",
           role: "head of instagram. science communication, bit of a lab rat, environment and health student",
-          description: "Always on the move — whether it's across countries or between bold ideas. A biohacking enthusiast who blends science with everyday life, and a music lover often found with a guitar in hand, singing, or rehearsing for the next play. Passionate about exploring new ways to optimize both experiments and human potential. Outside of iGEM, she dives deep into endocrine disruption and neurotoxicity research"
+          description: "Always on the move – whether it's across countries or between bold ideas. A biohacking enthusiast who blends science with everyday life, and a music lover often found with a guitar in hand, singing, or rehearsing for the next play. Passionate about exploring new ways to optimize both experiments and human potential. Outside of iGEM, she dives deep into endocrine disruption and neurotoxicity research"
         },
         {
           name: "Terka Slančíková",
@@ -70,7 +86,7 @@ const DuckweedMafiaTeam = () => {
           description: "There was always something fascinating about living nature, that drived the small kid to sit down and observe what is happening around him. This fascination perserved and since I started biology related studies the small kid only digged deeper with the same curiosity. I love to spend time in nature (e.g. on summer scout camps) and to fall into the depth of my own thoughts. I also enjoy the musicality of people, even though I would not call myself a musician. You can typically see me on bicycle the whole summer."
         },
         {
-          name: "Ĺubo Gallo",
+          name: "Ľubo Gallo",
           role: "guy that can source almost anything, Your local lab manager substitution, biochemistry student",
           description: "When people see Ľubo crawling around lab corners, they say that he looks like a PI. Well, he's just 20. Science is his life. He spends most of his time at the lab. Even when he's on vacation, he's thinking about new projects or planning something amazing. In high school, he studied chemistry, and it stuck with him. He's just a multidisciplinary guy enjoying science. Also a professional nerd."
         }
@@ -82,7 +98,7 @@ const DuckweedMafiaTeam = () => {
         {
           name: "Peťo Schmidt",
           role: "head of linkedIn, the 'let´s sell the duckweed guy' chief email officer, economy student",
-          description: "Energetic and thoughtful, he's the kind of person who leads with both heart and action. Whether he's dancing, running, or deep in a book, he's always learning and growing. A graduate of leadership academies and an active force in NGOs, he's passionate about making a real impact. He just graduated from ECON MUNI — and he's only getting started!"
+          description: "Energetic and thoughtful, he's the kind of person who leads with both heart and action. Whether he's dancing, running, or deep in a book, he's always learning and growing. A graduate of leadership academies and an active force in NGOs, he's passionate about making a real impact. He just graduated from ECON MUNI – and he's only getting started!"
         }
       ]
     },
@@ -102,7 +118,7 @@ const DuckweedMafiaTeam = () => {
         {
           name: "Andrej Žabka",
           role: "Cultivator developer, electronics designer, CAD",
-          description: "Once Andrej discovers something that sparks his curiosity, he doesn't let go — days blur into nights as he dives deep until he masters it. Drawn to the intersection of mechanics, electronics and creativity, he has worked with CNC machines, designed artistic pieces and built custom interactive systems blending engineering with storytelling. From automation and exhibition electronics to precise CAD models, he treats each task as both a technical puzzle and a chance to create something meaningful — technology as a way to give form to ideas that connect people with innovation."
+          description: "Once Andrej discovers something that sparks his curiosity, he doesn't let go – days blur into nights as he dives deep until he masters it. Drawn to the intersection of mechanics, electronics and creativity, he has worked with CNC machines, designed artistic pieces and built custom interactive systems blending engineering with storytelling. From automation and exhibition electronics to precise CAD models, he treats each task as both a technical puzzle and a chance to create something meaningful – technology as a way to give form to ideas that connect people with innovation."
         },
         {
           name: "David Kopecký",
@@ -122,7 +138,7 @@ const DuckweedMafiaTeam = () => {
         {
           name: "Marko Mećava",
           role: "cultivation hustler, promoters developer, proteomics and genomic student",
-          description: "Balkan-tempered hedonist, passionate about science, sports and beauty, I thrive on contrasts — from extreme sports to biochemistry research. Feeling 'in between worlds' drives Marko to balance curiosity, creativity, discipline and joy. Synthetic biology excites me for its potential to solve global problems and spark innovation. Currently he is focusing on Alzheimer's and neurobiology, using stem cell models to study disease development. Beyond the lab Marko is training, running, enjoying techno, acting or working on a new venture. Ambitious, bold and bald, yet empathetic, his tattoos remind him of the contrasts that shape Marko´s life."
+          description: "Balkan-tempered hedonist, passionate about science, sports and beauty, I thrive on contrasts – from extreme sports to biochemistry research. Feeling 'in between worlds' drives Marko to balance curiosity, creativity, discipline and joy. Synthetic biology excites me for its potential to solve global problems and spark innovation. Currently he is focusing on Alzheimer's and neurobiology, using stem cell models to study disease development. Beyond the lab Marko is training, running, enjoying techno, acting or working on a new venture. Ambitious, bold and bald, yet empathetic, his tattoos remind him of the contrasts that shape Marko´s life."
         },
         {
           name: "Ondřej Švanda",
@@ -170,7 +186,8 @@ const DuckweedMafiaTeam = () => {
       const documentHeight = document.documentElement.scrollHeight;
       
       // Check if we're in the intro section or team section
-      if (scrollPosition < windowHeight) {
+      // Transition happens at 50% of the intro section
+      if (scrollPosition < windowHeight * 0.5) {
         setCurrentSection('Intro');
         setLeftColumnFixed(false);
         setShowTeamSection(false);
@@ -179,13 +196,14 @@ const DuckweedMafiaTeam = () => {
         setLeftColumnFixed(true);
         
         // Calculate which team section we're in based on scroll position
-        // Subtract one viewport height to account for intro section
-        const teamScrollPosition = scrollPosition - windowHeight;
+        // Subtract half viewport height to account for early transition
+        const teamScrollPosition = scrollPosition - (windowHeight * 0.5);
         let totalMembers = 0;
         let currentSectionTitle = 'Founders';
         
         for (const section of teamSections) {
-          if (teamScrollPosition < (totalMembers + section.members.length) * windowHeight) {
+          // Use 0.6 multiplier since cards are 60vh tall
+          if (teamScrollPosition < (totalMembers + section.members.length) * windowHeight * 0.6) {
             currentSectionTitle = section.title;
             break;
           }
@@ -195,7 +213,7 @@ const DuckweedMafiaTeam = () => {
         setCurrentSection(currentSectionTitle);
 
         // Check if we're near the bottom of the page to unlock left column
-        const bottomThreshold = documentHeight - windowHeight * 1.2;
+        const bottomThreshold = documentHeight - windowHeight * 2.3;
         if (scrollPosition >= bottomThreshold) {
           setLeftColumnFixed(false);
         }
@@ -249,14 +267,21 @@ const DuckweedMafiaTeam = () => {
             
             <div className="text-sm text-gray-800 space-y-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
               <p>
-                We're iGEM Brno — proudly the Duckweed Mafia. Our big, organized crew
-                splits into three main groups — the <strong>3H: Hackers, Hipsters and Hustlers.</strong>
+                We're iGEM Brno – proudly the Duckweed Mafia. Our big, organized crew
+                splits into three main groups – the <strong>3H: Hackers, Hipsters and Hustlers.</strong>
                 And of course, <strong>Founders</strong> stand behind it all, helping connect and
                 coordinate every piece of the puzzle.
               </p>
               
               <div>
-                <p className="font-bold text-black mb-1">Hackers</p>
+                <p className="font-bold text-black mb-1">
+                  <button 
+                    onClick={() => scrollToSection('Hackers')} 
+                    className="hover:text-green-600 transition-colors cursor-pointer"
+                  >
+                    Hackers
+                  </button>
+                </p>
                 <p className="mb-3">
                   The builders and experimenters. Hackers run the bench, write code, test
                   protocols and translate chaos into data. They split projects into clear
@@ -266,7 +291,14 @@ const DuckweedMafiaTeam = () => {
               </div>
 
               <div>
-                <p className="font-bold text-black mb-1">Hustlers</p>
+                <p className="font-bold text-black mb-1">
+                  <button 
+                    onClick={() => scrollToSection('Hustlers')} 
+                    className="hover:text-green-600 transition-colors cursor-pointer"
+                  >
+                    Hustlers
+                  </button>
+                </p>
                 <p className="mb-3">
                   In our version of the 3H, hustlers are the cultivation crew. They design and
                   manage systems: containers, cultivation conditions, optimal conditions for
@@ -276,20 +308,34 @@ const DuckweedMafiaTeam = () => {
               </div>
 
               <div>
-                <p className="font-bold text-black mb-1">Hipsters</p>
+                <p className="font-bold text-black mb-1">
+                  <button 
+                    onClick={() => scrollToSection('Hipsters')} 
+                    className="hover:text-green-600 transition-colors cursor-pointer"
+                  >
+                    Hipsters
+                  </button>
+                </p>
                 <p className="mb-3">
                   The storytellers and designers. They craft our identity, visuals and
                   narrative so the science feels human and exciting. From brand to video,
-                  they make sure people get what we're doing — and why it matters.
+                  they make sure people get what we're doing – and why it matters.
                 </p>
               </div>
 
               <div>
-                <p className="font-bold text-black mb-1">Founders</p>
+                <p className="font-bold text-black mb-1">
+                  <button 
+                    onClick={() => scrollToSection('Founders')} 
+                    className="hover:text-green-600 transition-colors cursor-pointer"
+                  >
+                    Founders
+                  </button>
+                </p>
                 <p className="mb-3">
                   The glue across all teams. Founders coordinate, connect dots and keep
                   the whole machine aligned. They care about long-term vision, hustle on
-                  lab experiments, design sessions and pitches — making sure all the
+                  lab experiments, design sessions and pitches – making sure all the
                   moving parts work together.
                 </p>
               </div>
@@ -304,58 +350,47 @@ const DuckweedMafiaTeam = () => {
 
       {/* Team Section */}
       <div className="flex">
-        {/* Fixed Left Sidebar - Hidden on mobile, only shows after intro */}
-        {showTeamSection && (
-          <div className={`hidden md:flex w-1/2 bg-amber-100 p-8 flex-col transition-all duration-300 z-10 ${
-            leftColumnFixed ? 'fixed top-0 left-0 h-screen' : 'relative h-auto min-h-screen'
-          }`}>
-            {/* Logo */}
-            <div className="mb-8 flex-shrink-0">
-              <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mb-4">
-                <span className="text-white font-bold text-lg">iGEM</span>
-              </div>
-            </div>
-
-            {/* Main Image Placeholder */}
-            <div className="mb-8 flex-1 flex items-center">
-              <div className="w-full h-64 bg-green-200 rounded-lg flex items-center justify-center">
-                <span className="text-green-600 text-sm">Team Photo Placeholder</span>
-              </div>
-            </div>
-
-            {/* Title */}
-            <div className="mb-8 flex-shrink-0">
-              <h1 className="text-4xl font-bold text-green-700 mb-2" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-                MEET
-              </h1>
-              <h1 className="text-4xl font-bold text-green-700" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-                The
-              </h1>
-              <h1 className="text-4xl font-bold text-green-700 transition-all duration-500" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-                {currentSection}
-              </h1>
-            </div>
-
-            {/* Description */}
-            <div className="text-sm text-gray-700 mb-4 flex-shrink-0" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-              <p className="mb-4">
-                <strong>What is Duckweed Mafia?</strong>
-              </p>
-              <p className="mb-4">
-                We're iGEM Brno — probably the Duckweed Mafia. Our big might-land name 
-                means we're trying to grow a • big, hackers, founders and hustlers. 
-                We are still called Team Brno — but you know, sometimes we forget 
-                the rules. 🤷‍♂️ Just one moment of the mafia!
-              </p>
-            </div>
+        {/* Fixed Left Sidebar - Hidden on mobile, always present on desktop */}
+        <div style={{ backgroundColor: '#cdbd9bff' }} className={`hidden md:flex w-1/2  p-8 flex-col transition-all duration-500 z-10 ${
+          leftColumnFixed ? 'fixed top-0 left-0 h-screen opacity-100' : 'relative h-auto min-h-screen opacity-0 pointer-events-none'
+        } ${showTeamSection ? 'opacity-100' : ''}`}>
+          {/* Logo */}
+          <div className="mb-8 ">
+            <img src="https://static.igem.wiki/teams/5642/icons/igem-brno-final-transparent.webp" alt="Team Logo" className=" h-24" />
           </div>
-        )}
+
+          
+
+          {/* Title */}
+          <div className="mb-8 flex-shrink-0 mt-10">
+            <h1 className="text-3xl font-bold text-green-700 mb-2 text-white" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              <em>MEET</em>
+            </h1>
+            <h1 className="text-6xl font-bold text-green-700 mb-2" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              The
+            </h1>
+            <h1 className="text-6xl font-bold text-green-700 mb-2" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              {currentSection}
+            </h1>
+            
+          </div>
+
+          {/* Description */}
+          <div className="text-sm text-gray-700 mb-4 flex-shrink-0" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+            <p className="mb-4">
+              <strong>Who is Duckweed Mafia?</strong>
+            </p>
+            <p className="mb-4">
+              We're iGEM Brno – proudly the Duckweed Mafia. Our big, organized crew splits into three main groups – the 3H: Hackers, Hipsters and Hustlers. And of course, Founders stand behind it all, helping connect and coordinate every piece of the puzzle.
+            </p>
+          </div>
+        </div>
 
         {/* Scrollable Right Content */}
-        <div className={`w-full ${showTeamSection ? 'md:w-1/2 md:ml-auto' : ''}`}>
+        <div className={`w-full transition-all duration-500 ${showTeamSection ? 'md:w-1/2 md:ml-auto' : ''}`}>
           {teamSections.map((section, sectionIndex) =>
             section.members.map((member, memberIndex) => (
-              <div key={`${sectionIndex}-${memberIndex}`} className="min-h-screen bg-white p-4 md:p-8 flex flex-col justify-center">
+              <div key={`${sectionIndex}-${memberIndex}`} className="min-h-[60vh] bg-white p-4 md:p-8 flex flex-col justify-center">
                 {/* Mobile Section Header - Only visible on mobile */}
                 <div className="mb-8 md:hidden">
                   <h2 className="text-2xl font-bold text-green-700 mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
