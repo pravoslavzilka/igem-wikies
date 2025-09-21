@@ -4,7 +4,6 @@ const DuckweedProtocol = () => {
   return (
     <div className="max-w-6xl mx-auto p-8 bg-white" style={{ fontFamily: 'Urbanist, sans-serif' }}>
       
-      
       {/* Header */}
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-900 mb-6 space-grotesk" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
@@ -29,7 +28,7 @@ const DuckweedProtocol = () => {
         <div className="space-y-8">
           {/* Cultivation Conditions */}
           <div>
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4 space-grotesk">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4 space-grotesk" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               CULTIVATION CONDITIONS
             </h2>
             <div className="bg-gray-50 p-4 rounded-lg urbanist">
@@ -42,7 +41,7 @@ const DuckweedProtocol = () => {
 
           {/* Growth Medium */}
           <div>
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4 space-grotesk">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4 space-grotesk" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               GROWTH MEDIUM
             </h2>
             <div className="urbanist text-gray-700 space-y-3">
@@ -134,7 +133,7 @@ const DuckweedProtocol = () => {
 
           {/* Material & Equipment */}
           <div>
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4 space-grotesk">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4 space-grotesk" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               MATERIAL & EQUIPMENT NEEDED
             </h2>
             <ul className="space-y-2 urbanist text-gray-700">
@@ -191,7 +190,7 @@ const DuckweedProtocol = () => {
 
           {/* Cultivation Hierarchy */}
           <div>
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4 space-grotesk">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4 space-grotesk" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               CULTIVATION HIERARCHY
             </h2>
             <div className="urbanist text-gray-700 space-y-4">
@@ -213,7 +212,7 @@ const DuckweedProtocol = () => {
           </div>
 
           {/* Additional placeholder images */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4 mb-8">
             <div className="bg-gray-200 h-32 rounded-lg flex items-center justify-center">
               <span className="text-gray-500 text-xs urbanist text-center">Petri dish setup</span>
             </div>
@@ -221,6 +220,192 @@ const DuckweedProtocol = () => {
               <span className="text-gray-500 text-xs urbanist text-center">Glass panel + tray</span>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Extended Protocol Section */}
+      <div className="mt-12 border-t pt-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Left Column - Continued */}
+          <div className="space-y-6">
+            <div className="urbanist text-gray-700 space-y-4">
+              <p>
+                each duckweed clone or a magnetic stir. This is important because:
+              </p>
+              
+              <div className="pl-4 space-y-2">
+                <p>• You may need sterile duckweed for experiments or clania</p>
+                <p>• Clones can be very different - having single</p>
+                <p>• It's easy to keep track of plants susceptible to airploy or infectious cloning in directly</p>
+                <p>• Decisions often better than it's, you can be "contaminator" for both experiments</p>
+              </div>
+
+              <div className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded mt-4">
+                <p className="font-medium text-gray-900">
+                  Always keep a larger stock of important clones ready!
+                </p>
+              </div>
+
+              <p>
+                <strong>2. POTS</strong> (glass, Ø14 cm) with liquid DCMM overgrown by 
+                duckweed. POTS is important because:
+              </p>
+              
+              <div className="pl-4 space-y-2">
+                <p>• For experiments you might need quite starting from just a 
+                few fronds in a dish takes time if your experiments are 
+                variable, you want to always have plenty of duckweed 
+                available from different sources</p>
+              </div>
+
+              <p>
+                <strong>Always keep duckweed at suitable confluence for 
+                experiments (50-75%)</strong>
+              </p>
+
+              <p>
+                <strong>3. TRAYS</strong> (plastic, any size) where the medium is refreshed 
+                every day and adjusted each Monday and Friday. This is 
+                important because:
+              </p>
+              
+              <div className="pl-4 space-y-2">
+                <p>• Transformation efficiency drops significantly when 
+                confluence exceeds 82%.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column - Images and Captions */}
+          <div className="space-y-6">
+            <div className="text-center">
+              <div className="bg-gray-200 h-24 rounded-lg flex items-center justify-center mb-2">
+                <span className="text-gray-500 urbanist">Petri dish + glass pot + tray</span>
+              </div>
+            </div>
+
+            <div className="mt-8">
+              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-gray-500 urbanist">Duckweed cultivation setup</span>
+              </div>
+              
+              <p className="text-sm text-gray-600 urbanist">
+                <strong>Section 2.</strong> (1) Petri dish with sterile duckweed culture 
+                kept as a backup. (2) Ø14 cm glass crystallization pot for 
+                maintaining a larger amount of duckweed. Always ready 
+                for experiments. (3) Plastic tray with liquid medium, 
+                used to grow duckweed for weekly experiments.
+              </p>
+            </div>
+
+            <div className="mt-8 text-center">
+              <div className="bg-gray-200 h-32 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-gray-500 urbanist">Confluence demonstration</span>
+              </div>
+              <p className="text-sm text-gray-700 urbanist font-medium">
+                Duckweed at 50% – 75 = 100% confluence
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <p className="text-sm text-gray-600 urbanist italic">
+                You can too – read more on the <span className="underline">CULTIVATOR page</span>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Workflow Sections */}
+      <div className="mt-12 border-t pt-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          
+          {/* Monday Workflow */}
+          <div className="space-y-4">
+            <h2 className="text-xl font-semibold text-gray-900 space-grotesk" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              MONDAY WORKFLOW
+            </h2>
+            <div className="urbanist text-gray-700 space-y-3 text-sm">
+              <p>• Split old duckweed from dishes and trays into clones dedicated to specific clones.</p>
+              
+              <p>• Observe and note the different glass pots and trays with detergent. Most of the time, only have rinsing with distilled water.</p>
+              
+              <p>• Poor new medium into glass pots and return duckweed to ~30% confluence.</p>
+              
+              <p>• Pour new medium into half of the trays and return duckweed to ~40% confluence - suitable for transformation on Tue and Wed day, after refreshing (Thursday and Friday).</p>
+              
+              <p>• Check different glass pots - clean with detergent and return duckweed to ~70% confluence - suitable for transformation on Tue 3rd and 5th day, after refreshing Thursday and Wednesday.</p>
+            </div>
+          </div>
+
+          {/* Friday Workflow */}
+          <div className="space-y-4">
+            <h2 className="text-xl font-semibold text-gray-900 space-grotesk" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              FRIDAY WORKFLOW
+            </h2>
+            <div className="urbanist text-gray-700 space-y-3 text-sm">
+              <p>• Split old duckweed from trays into clones dedicated to specific clones for fresh medium.</p>
+              
+              <p>• Pour new medium into all trays and return duckweed to ~70% confluence - suitable for transformation on Monday.</p>
+              
+              <p>• Note: If it's Thu 1st and 2nd day, then refreshing Saturday and Sunday).</p>
+              
+              <p>• Check different dishes!</p>
+            </div>
+            
+            <div className="bg-gray-50 p-4 rounded-lg mt-4">
+              <p className="text-sm text-gray-700 urbanist">
+                <strong>Transformation:</strong> up to 3 days afterwards at 20to (2) 75% 
+                confluence - suitable for transformation up to a week 
+                afterwards at 75% (3) 82% confluence - Not longer 
+                suitable for transformation.
+              </p>
+            </div>
+          </div>
+
+          {/* Monthly Workflow */}
+          <div className="space-y-4">
+            <h2 className="text-xl font-semibold text-gray-900 space-grotesk" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              MONTHLY WORKFLOW
+            </h2>
+            <div className="urbanist text-gray-700 space-y-3 text-sm">
+              <p>• Every month autoclave bottles, Enrols.</p>
+              
+              <p>• Prepare 2-3 gl of fresh medium: xx with 3 gl Phytagel or 6gl Plant Agar</p>
+              
+              <p>• Adjust pH to 6.8 with 1M KOH or 1M HCl, then autoclave for 20 minutes at 121°C.</p>
+              
+              <p>• Pour medium on petri dishes and dishes in flow box while maintaining sterile environment and sterilising.</p>
+              
+              <p>• Subculture 6 fronds from the 1st start-up plate per clone into the new plates (4 fronds per plate).</p>
+              
+              <p>• Discard the 1st start-up plate after transfer.</p>
+              
+              <p>• Put all labels (in 2nd labels) up under for previous subculturing.</p>
+              
+              <p>• After subculturing!</p>
+              
+              <p>• If all looks fine in new backup plates are still sterile → GREAT! JOB! ☺ You can discard the old backup plates.</p>
+              
+              <p>• If duckweed is contaminated → Repeat the subculturing from the old 2nd plate, and this time pay extra attention!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* References */}
+      <div className="mt-12 border-t pt-8">
+        <h2 className="text-xl font-semibold text-gray-900 mb-4 space-grotesk" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+          REFERENCES
+        </h2>
+        <div className="urbanist text-gray-700 text-sm space-y-2">
+          <p>
+            1. Lam, E., Appenroth, K.-J., Sree, K. S., Ecker, J., Wieser, G., Huber, S., ... & Ziegler, P. (2023). The duckweed genomes: annotation of a plant biofactory and biodiversity. Plant Journal, 115, 705-726. doi: 10.1111/tpj.16256
+          </p>
+          
+          <p>
+            2. Muranaka, T. & Sheetz, P. (1982). A revised medium for rapid growth rate with duckweed and tobacco cultures. Physiologia Plantarum, 16(1), 473-497.
+          </p>
         </div>
       </div>
     </div>
