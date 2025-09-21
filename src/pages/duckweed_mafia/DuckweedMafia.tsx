@@ -209,28 +209,24 @@ const DuckweedMafiaTeam = () => {
   return (
     <div className="min-h-screen bg-amber-50">
       {/* Intro Section - Full Screen */}
-      <div className="min-h-screen flex" style={{ backgroundColor: '#cdbd9bff' }}>
+      <div className="min-h-screen flex flex-col md:flex-row gap-4 " style={{ backgroundColor: '#cdbd9bff' }}>
         {/* Left Side */}
-        <div className="w-1/2 flex flex-col justify-center items-center p-8">
+        <div className="flex-1 flex flex-col justify-center items-center p-8">
           {/* Logo */}
-          <div className="mb-8">
-            <div className="w-24 h-24 bg-green-600 rounded-full flex items-center justify-center mb-4">
-              <span className="text-white font-bold text-2xl">iGEM</span>
-            </div>
-            <p className="text-green-700 text-sm text-center font-semibold">Brno</p>
-          </div>
+      
 
           {/* Team Photo Placeholder */}
-          <div className="mb-8 w-full max-w-md">
+           <div className="mb-8 w-full max-w-md">
             <div className="w-full h-64 bg-green-200 rounded-lg flex items-center justify-center">
-              <span className="text-green-600 text-lg">Team Photo Placeholder</span>
+            <img src="https://static.igem.wiki/teams/5642/images/duckweedmafia/team/igem-promo-09-min.webp"
+                style={{ width:"100%", height:"100%", objectFit:"cover", borderRadius:"0.5rem" }} />
             </div>
-          </div>
+        </div>
 
           {/* Main Title */}
-          <div className="text-center">
-            <h1 className="text-5xl font-bold text-green-700 mb-2" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-              MEET
+          <div className="">
+            <h1 className="text-3xl font-bold text-green-700 mb-2 text-white" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              <em>MEET</em>
             </h1>
             <h1 className="text-6xl font-bold text-green-700 mb-2" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               The
@@ -245,7 +241,7 @@ const DuckweedMafiaTeam = () => {
         </div>
 
         {/* Right Side - Description Box */}
-        <div className="w-1/2 flex items-center justify-center p-8">
+        <div className="flex-1 p-4 justify-center items-center p-8">
           <div className="bg-white p-8 rounded-lg shadow-lg max-w-lg border-4 border-gray-800">
             <h2 className="text-xl font-bold text-black mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               Who is Duckweed Mafia?
