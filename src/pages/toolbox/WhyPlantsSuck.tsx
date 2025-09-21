@@ -53,64 +53,45 @@ const WhyPlantsSuck = () => {
                 iteration cycles make optimization far more laborious 
                 and expensive, than in bacterial systems.
               </p>
-              <img 
-                  src="https://static.igem.wiki/teams/5642/images/toolbox/whyplantssuck/e-coli.webp"
-                  alt="E.coli bacteria"
-                  className=" mt-10 w-full h-50 object-cover rounded-lg mb-2"
-                />
+              
             </div>
           </div>
 
           {/* Middle Column - Chart */}
           <div className="lg:col-span-2 flex flex-col items-center">
             <h3 className="text-lg font-semibold text-black mb-4 text-center" style={{ fontFamily: "Space Grotesk" }}>
-              Days needed for transformation
+           
             </h3>
             
             {/* Bar Chart */}
             <div className="w-full" style={{ fontFamily: "Urbanist" }}> {/* removed max-w-xs */}
-              <div className="mb-3">
-                <div className="flex justify-between items-center mb-1">
-                  <span className="text-sm text-black">E.coli</span>
-                  <span className="text-sm text-black">1</span>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-6">
-                  <div className="bg-blue-400 h-6 rounded-full" style={{width: '2%'}}></div>
-                </div>
-              </div>
               
-              <div className="mb-3">
-                <div className="flex justify-between items-center mb-1">
-                  <span className="text-sm text-black">Arabidopsis</span>
-                  <span className="text-sm text-black">90</span>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-6">
-                  <div className="bg-orange-400 h-6 rounded-full" style={{width: '45%'}}></div>
-                </div>
-              </div>
-              
-              <div className="mb-3">
-                <div className="flex justify-between items-center mb-1">
-                  <span className="text-sm text-black">Soybean</span>
-                  <span className="text-sm text-black">200</span>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-6">
-                  <div className="bg-green-500 h-6 rounded-full" style={{width: '100%'}}></div>
-                </div>
-              </div>
+              <img src="https://static.igem.wiki/teams/5642/images/toolbox/whyplantssuck/days-needed-for-transformation.webp" alt="Days needed for transformation" className="w-full h-auto" />
             </div>
 
             {/* Image placeholder for the middle chart/graph */}
             
             <div className="flex flex-row gap-4 w-full mt-10"> {/* changed from space-y-4 to flex-row gap-4 */}
-              {/* E.coli Image */}
+    
+              
+              <div className="text-center flex-1 ">
+                <img 
+                  src="https://static.igem.wiki/teams/5642/images/toolbox/whyplantssuck/e-coli.webp"
+                  alt="E.coli bacteria"
+                  className="  w-full h-50 object-cover rounded-lg mb-2"
+                />
+                <p className="text-xs text-black font-medium text-center">Escherichia coli
+</p>
+              </div>
+              
               <div className="text-center flex-1 ">
                 <img 
                   src="https://static.igem.wiki/teams/5642/images/toolbox/whyplantssuck/arabidopsis.webp"
                   alt="E.coli bacteria"
                   className="w-full h-50 object-cover rounded-lg mb-2"
                 />
-                <p className="text-xs text-black font-medium text-center">E.coli</p>
+                <p className="text-xs text-black font-medium text-center">Glycine max green pod — Macleay Grass Man, via Wikimedia Commons, CC BY 2.0
+</p>
               </div>
 
               {/* Plant seedlings Image */}
@@ -121,8 +102,8 @@ const WhyPlantsSuck = () => {
                   className="w-full h-50 object-cover rounded-lg mb-2"
                 />
                 <p className="text-xs text-gray-600 text-center">
-                  The budding seedling of an Arabidopsis thaliana triple mutant — Martin 
-                  Stübler, via Wikimedia Commons, CC BY-SA 4.0
+                  The budding seedling of an Arabidopsis thaliana triple mutant — Martin Stübler, via Wikimedia Commons, CC BY-SA 4.0
+
                 </p>
               </div>
             </div>
@@ -138,34 +119,12 @@ const WhyPlantsSuck = () => {
           <div>
             {/* Genome Sizes Chart */}
             <div className="mb-8">
-              <h3 className="text-lg font-bold text-black mb-4" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Genome sizes in Mbp</h3>
-              <div className="space-y-3" style={{ fontFamily: "Urbanist, sans-serif" }}>
-                <div className="flex items-center">
-                  <span className="text-sm text-black w-20">E. coli</span>
-                  <div className="flex-1 bg-gray-200 rounded-full h-6 ml-4">
-                    <div className="bg-blue-400 h-6 rounded-full" style={{width: '2%'}}></div>
-                  </div>
-                  <span className="text-sm text-black ml-2">4.6</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-sm text-black w-20">Arabidopsis</span>
-                  <div className="flex-1 bg-gray-200 rounded-full h-6 ml-4">
-                    <div className="bg-orange-400 h-6 rounded-full" style={{width: '6%'}}></div>
-                  </div>
-                  <span className="text-sm text-black ml-2">135</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-sm text-black w-20">Soybean</span>
-                  <div className="flex-1 bg-gray-200 rounded-full h-6 ml-4">
-                    <div className="bg-green-500 h-6 rounded-full" style={{width: '100%'}}></div>
-                  </div>
-                  <span className="text-sm text-black ml-2">1115</span>
-                </div>
-              </div>
+              <img src="https://static.igem.wiki/teams/5642/images/toolbox/whyplantssuck/genome-sizes-in-mbp.webp" alt="Genome Sizes Chart" className="w-full h-auto" />
+              
             </div>
 
             {/* Genome Compositions */}
-                        <img src="https://static.igem.wiki/teams/5642/images/toolbox/whyplantssuck/compositions-of-genomes.webp" alt="Genome Sizes Chart" className="w-full h-auto mb-4" />
+                        <img src="https://static.igem.wiki/teams/5642/images/toolbox/whyplantssuck/compositions-of-genomes2.webp" alt="Genome Sizes Chart" className="w-full h-auto mb-4" />
 
           </div>
 
@@ -198,7 +157,7 @@ const WhyPlantsSuck = () => {
 
 
 
-        <div className="mb-8">
+        <div className="mb-8 ">
           <h2 className="text-xl font-bold text-black mb-6" style={{ fontFamily: "Space Grotesk, sans-serif" }}>From Cell to Plant (Hardly Ever Correctly)</h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8" style={{ fontFamily: "Urbanist, sans-serif" }}>
