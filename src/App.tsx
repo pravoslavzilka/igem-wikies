@@ -33,6 +33,7 @@ import LivingLayersDocument from './pages/project/how/Cultivator';
 import WhyPlantsSuck from './pages/toolbox/WhyPlantsSuck';
 import DuckweedProtocol from './pages/toolbox/predictable_duckweed/DuckweedProtocol';
 import TransformationProtocol from './pages/toolbox/programable_duckweed/TransformationProtocol';
+import AgrobacteriumProtocol from './pages/toolbox/programable_duckweed/AgrobacteriumProtocol';
 
 
 
@@ -88,6 +89,7 @@ function App() {
           <Route path="/toolbox/downloads" element={<ToolboxDownloads />} />
           <Route path="/toolbox/predictable-duckweed-protocol/" element={<DuckweedProtocol />} />
           <Route path="/toolbox/programable-duckweed-protocol/" element={<TransformationProtocol />} />
+          <Route path="/toolbox/agrobacterium-mediated-transformation-protocol/" element={<AgrobacteriumProtocol />} />
 
           
           
