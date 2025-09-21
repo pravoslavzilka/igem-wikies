@@ -7,8 +7,8 @@ const PredictorMain = () => {
     const [showDensity, setShowDensity] = useState(false);
     const [showBiomass, setShowBiomass] = useState(false);
 
-    const [TT, setTT] = useState(30);
-    const [HP, setHP] = useState(10);
+    const [TT, setTT] = useState(40);
+    const [HP, setHP] = useState(5);
     const [HR, setHR] = useState(0.5);
     const [W0, setW0] = useState(100);
     const [biomassValues, setBiomassValues] = useState<number[]>([]);
@@ -88,7 +88,7 @@ const PredictorMain = () => {
 
       ctxH.fillStyle = "red";
       ctxH.beginPath();
-      ctxH.arc(x, y, 4, 0, 2 * Math.PI);
+      ctxH.arc(x, y, 8, 0, 2 * Math.PI);
       ctxH.fill();
     });
 
@@ -127,7 +127,7 @@ const PredictorMain = () => {
         </h2>
         <div className="flex justify-center mb-6">
           <img
-            src="/images/predictor/page_0.png"
+            src="https://static.igem.wiki/teams/5642/images/how/predictor/page-0.webp"
             alt="Duckweed cultivation workflow"
             className="w-full max-w-3xl rounded-xl"
           />
@@ -168,7 +168,7 @@ const PredictorMain = () => {
 
             <div className="flex justify-center">
                 <img
-                src="/images/predictor/GrowthVariance.png"
+                src="https://static.igem.wiki/teams/5642/images/how/predictor/growthvariance.webp"
                 alt="Detailed predictive model"
                 className="rounded-lg shadow-md w-full"
                 />
@@ -188,7 +188,7 @@ const PredictorMain = () => {
         </h2>
         <div className="flex justify-center mb-6">
           <img
-            src="/images/predictor/page_1.png"
+            src="https://static.igem.wiki/teams/5642/images/how/predictor/page-1.webp"
             alt="Duckweed cultivation workflow"
           />
         </div>
@@ -285,7 +285,7 @@ const PredictorMain = () => {
         <canvas
             ref={biomassCanvasRef}
             width={600}
-            height={280}
+            height={450}
             className="w-full h-auto border border-gray-200 rounded"
         />
         </div>
@@ -301,7 +301,7 @@ const PredictorMain = () => {
         <canvas
             ref={harvestCanvasRef}
             width={600}
-            height={280}
+            height={450}
             className="w-full h-auto border border-gray-200 rounded"
         />
         </div>
@@ -338,24 +338,24 @@ const PredictorMain = () => {
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
         <a href="/project/how/predictor/limiting-biomass/" className="block group">
         <img
-            src="/images/predictor/exp_LB.png"
-            alt="Literature data"
+            src="https://static.igem.wiki/teams/5642/images/how/predictor/exp-lb.webp"
+            alt="limiting biomass"
             className="group-hover:opacity-90 transition"
         />
         </a>
 
         <a href="/project/how/predictor/harvesting-strategy/" className="block group">
         <img
-            src="/images/predictor/exp_HS.png"
-            alt="Controlled experiments"
+            src="https://static.igem.wiki/teams/5642/images/how/predictor/exp-hs.webp"
+            alt="harvesting strategy"
             className="group-hover:opacity-90 transition"
         />
         </a>
 
         <a href="/project/how/predictor/medium-change/" className="block group">
         <img
-            src="/images/predictor/exp_MC.png"
-            alt="Integration into predictor"
+            src="https://static.igem.wiki/teams/5642/images/how/predictor/exp-mc.webp"
+            alt="medium change"
             className="group-hover:opacity-90 transition"
         />
         </a>
@@ -379,7 +379,7 @@ const PredictorMain = () => {
 
     <div className="flex justify-center mb-6">
         <img
-        src="/images/predictor/page_3.png"
+        src="https://static.igem.wiki/teams/5642/images/how/predictor/page-3.webp"
         alt="Core principles of duckweed cultivation"
         />
     </div>
@@ -403,7 +403,7 @@ const PredictorMain = () => {
 
     <div className="flex justify-center mb-6">
         <img
-        src="/images/predictor/page_4.png"
+        src="https://static.igem.wiki/teams/5642/images/how/predictor/page-4.webp"
         alt="In-silico simulation overview"
         />
     </div>
@@ -453,7 +453,7 @@ const PredictorMain = () => {
 
         <div className="flex justify-center">
             <img
-            src="/images/predictor/YieldPredictorScheme.png"
+            src="https://static.igem.wiki/teams/5642/images/how/predictor/yieldpredictorscheme.webp"
             alt="Detailed predictive model"
             className="rounded-lg shadow-md w-full"
             />
@@ -473,7 +473,7 @@ const PredictorMain = () => {
 
     <div className="flex justify-center mb-6">
         <img
-        src="/images/predictor/page_5.png"
+        src="https://static.igem.wiki/teams/5642/images/how/predictor/page-5.webp"
         alt="Real-life cultivation results and trends"
         />
     </div>
@@ -496,7 +496,7 @@ const PredictorMain = () => {
 
     <div className="flex justify-center mb-6">
         <img
-        src="/images/predictor/page_6.png"
+        src="https://static.igem.wiki/teams/5642/images/how/predictor/page-6.webp"
         alt="Growth Modeller detailed Scheme"
         />
     </div>
@@ -521,7 +521,7 @@ const PredictorMain = () => {
 
     <div className="flex justify-center mb-6">
         <img
-        src="/images/predictor/page_7.png"
+        src="https://static.igem.wiki/teams/5642/images/how/predictor/page-7.webp"
         alt="Cultivation monitoring overview"
         />
     </div>
@@ -575,7 +575,7 @@ const PredictorMain = () => {
         </button>
         <div className="flex justify-center">
             <img
-            src="/images/predictor/SegmentationScheme.png"
+            src="https://static.igem.wiki/teams/5642/images/how/predictor/segmentationscheme.webp"
             alt="Density estimation details"
             />
         </div>
@@ -605,7 +605,7 @@ const PredictorMain = () => {
         </button>
         <div className="flex justify-center">
             <img
-            src="/images/predictor/BiomassPredictionScheme.png"
+            src="https://static.igem.wiki/teams/5642/images/how/predictor/biomasspredictionscheme.webp"
             alt="Biomass prediction details"
             />
         </div>
