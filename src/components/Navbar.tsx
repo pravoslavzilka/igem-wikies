@@ -4,6 +4,8 @@ import { Leaf, ChevronDown } from 'lucide-react';
 import "@fontsource/urbanist";
 import "@fontsource/urbanist/600.css";
 import "@fontsource/space-grotesk";
+import { label } from 'framer-motion/client';
+import path from 'path';
 
 const Navbar = () => {
   const location = useLocation();
@@ -20,13 +22,13 @@ const Navbar = () => {
     project: [
       { label: 'What', path: '/project/what' },
       { label: 'How', path: '/project/how' },
-      { label: 'Why', path: '/project/why' }
+      { label: 'Why', path: '/project/why' },
       
     ],
     toolbox: [
       { label: 'Why plants suck ', path: '/toolbox/why-plants-suck/' },
       { label: 'Deep dive on duckweed', path: '/toolbox/deep-dive-on-duckweed' },
-      { label: 'Programmable duckweed', path: '/toolbox/programmable-duckweed' }
+      { label: 'Programmable duckweed', path: '/toolbox/programmable-duckweed' },
     ],
     engagement: [
       { label: 'Human practices', path: '/engagement/human-practices' },
