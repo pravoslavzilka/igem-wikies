@@ -287,16 +287,14 @@ const WhyPlantsSuck = () => {
           {/* Main Content Paragraph */}
           <div className="mb-12">
             <p className="text-base leading-relaxed text-black mb-4" style={{ fontFamily: "Urbanist" }}>
-              Even when a plant successfully regenerates, the story doesn’t always end well. Long periods in tissue culture put cells under stress, and this stress can lead to random genetic and epigenetic changes known as somaclonal variation [14]. These changes may include point mutations, chromosome rearrangements, or altered gene expression, none of which were part of the intended transformation. The result is that two regenerated plants from the same protocol may look or behave very differently, making it difficult to tell whether an observed effect comes from the introduced construct or from unintended culture-induced mutations [15]. Researchers deal with somaclonal variation by regenerating many independent lines and checking whether traits are consistent across them, or by cultivating plants through several generations to stabilize changes. Both strategies work, but they add months of effort and burn more expenses[16]. This “background noise” is a challenge unique to plants, since bacteria and yeast rarely experience such large-scale instability during routine transformation.
+              Even when a plant successfully regenerates, the story doesn’t always end well. Long periods in tissue culture put cells under stress, and this stress can lead to random genetic and epigenetic changes known as somaclonal variation [14]. These changes may include point mutations, chromosome rearrangements, or altered gene expression, none of which were part of the intended transformation. The result is that two regenerated plants from the same protocol may look or behave very differently, making it difficult to tell whether an observed effect comes from the introduced construct or from unintended culture-induced mutations [15]. Researchers deal with somaclonal variation by regenerating many independent lines and checking whether traits are consistent across them, or by cultivating plants through several generations to stabilize changes. Both strategies work, but they add months of effort and burn more expenses [16]. This “background noise” is a challenge unique to plants, since bacteria and yeast rarely experience such large-scale instability during routine transformation.
 
             </p>
 
-            <p className="mt-10">
-              At iGEM Brno, we are developing a faster and simpler way to transform the fastest growing plant on Earth. By implementing our transposon-based transformation TAIFR (link to page describing TAIFR), we aim to generate stable, uniformly transformed lines “in-planta” more efficiently. Duckweed’s rapid growth and simple body plan make it an ideal chassis, while removing the dependence on long tissue culture steps lowers the risk of somaclonal variation. With this approach, we aim not only to unlock its unique biotechnological potential (Why?), but also to provide plant researchers with a new model system — one that enables the generation of stable engineered lines quickly, affordably, and predictably. This would accelerate plant-oriented basic research and help translate it more rapidly into meaningful impact for society.
-
-            </p>
+            
           </div>  
         </div> 
+        
             </div>
 
                         
@@ -305,6 +303,10 @@ const WhyPlantsSuck = () => {
 
 
           </div>
+          <p className="mt-10" style={{ fontFamily: "Urbanist, sans-serif" }  }>
+              At iGEM Brno, we are developing a faster and simpler way to transform the fastest growing plant on Earth. By implementing our transposon-based transformation TAIFR (link to page describing TAIFR), we aim to generate stable, uniformly transformed lines “in-planta” more efficiently. Duckweed’s rapid growth and simple body plan make it an ideal chassis, while removing the dependence on long tissue culture steps lowers the risk of somaclonal variation. With this approach, we aim not only to unlock its unique biotechnological potential (Why?), but also to provide plant researchers with a new model system — one that enables the generation of stable engineered lines quickly, affordably, and predictably. This would accelerate plant-oriented basic research and help translate it more rapidly into meaningful impact for society.
+
+            </p>
         </div>
              
 
