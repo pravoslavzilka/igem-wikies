@@ -12,7 +12,7 @@ const WhyPlantsSuck = () => {
       <div className="max-w-6xl mx-auto">
         {/* Main Title */}
         <h1 className="text-4xl font-bold text-center text-black mb-16 mt-10" style={{ fontFamily: "Space Grotesk" }}>
-          Plants Are Not Just Green Bacteria
+          Plants Are Not Just Green Bacteria 2
         </h1>
 
         {/* Main Content Paragraph */}
