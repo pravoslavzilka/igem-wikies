@@ -22,7 +22,7 @@ const Tools = () => {
               <img src="https://static.igem.wiki/teams/5642/images/homepage/sp162gfp.webp" alt="Microscopy" className="w-full h-full object-cover" />
             </div>
 
-            <div className="text-sm leading-relaxed text-center"
+            <div className="text-sm text-gray-600 leading-relaxed text-center"
                 style={{
                     fontFamily: 'Urbanist, sans-serif',
                     fontWeight: 500,
@@ -73,7 +73,7 @@ const Tools = () => {
           <div className="space-y-6 flex flex-col items-center">
             <div className="bg-black rounded-lg flex items-center justify-center relative overflow-hidden w-full max-w-[350px] mx-auto h-70">
               <div className="absolute items-center justify-center inset-0 bg-gradient-radial from-green-400/30 via-green-500/20 to-transparent"></div>
-              <img  src="https://static.igem.wiki/teams/5642/images/homepage/sp162gfp.webp" alt="Microscopy" className="w-full h-full object-cover" />
+              <img  src="https://static.igem.wiki/teams/5642/images/homepage/p101-transient.webp" alt="Microscopy" className="w-full h-full object-cover" />
 
 
             </div>
