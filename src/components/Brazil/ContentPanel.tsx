@@ -118,7 +118,8 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
 
   // Get content based on current year
   const getYearContent = useMemo((): ContentData => {
-    if (currentYear <= 2016) {
+    if (currentYear <= 2017) {
+      // SOYBEAN
       return {
         tagline: "SOYBEAN",
         headline: "is the most important source of protein for livestock worldwide",
@@ -127,7 +128,8 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
         title: "and Quality of Soybean Products",
         imageUrl: "images/authors/author1.jpg"
       };
-    } else if (currentYear <= 2019) {
+    } else if (currentYear <= 2020) {
+      // 70%
       return {
         tagline: "70%",
         headline: "of soybean production is used as feedstock",
@@ -136,7 +138,8 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
         title: "U.S. Department of Agriculture",
         imageUrl: "images/authors/author2.jpg"
       };
-    } else if (currentYear <= 2022) {
+    } else if (currentYear <= 2023) {
+      // 15 MILLIONS
       return {
         tagline: "15 MILLIONS",
         headline: "hectares of Brazil's tropical savannas of Cerrado is lost",
@@ -145,11 +148,32 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
         title: "in the Cerrado",
         imageUrl: "images/authors/author3.jpg"
       };
-    } else {
+    } else if (currentYear <= 2027) {
+      // AGRIBUSINESSES
       return {
-        tagline: "TWO-THIRDS",
-        headline: "of the endemic flora of the Cerrado is threatened with extinction",
-        quote: "We can do better!",
+        tagline: "AGRIBUSINESSES",
+        headline: "rely on ecosystem services like abundant water and healthy soils",
+        quote: "but continuing past practices will severely damage these foundations of their success",
+        author: "Prof. Carlos Klink",
+        title: "Department of Ecology University of Brasília",
+        imageUrl: "/images/authors/carlos_klink.jpeg"
+      };
+    } else if (currentYear <= 2030) {
+      // NEW
+      return {
+        tagline: "NEW",
+        headline: "business model is emerging as stakeholders of Cerrado work",
+        quote: "to boost environmental sustainability through better practices and new technologies",
+        author: "Prof. Carlos Klink",
+        title: "Department of Ecology University of Brasília",
+        imageUrl: "/images/authors/carlos_klink.jpeg"
+      };
+    } else {
+      // IF SUCCESSFUL
+      return {
+        tagline: "IF SUCCESSFUL",
+        headline: "Brazil could double farm output while safeguarding natural resources",
+        quote: "technologies like those from iGEM Brno could play a vital role in future",
         author: "Prof. Carlos Klink",
         title: "Department of Ecology University of Brasília",
         imageUrl: "/images/authors/carlos_klink.jpeg"

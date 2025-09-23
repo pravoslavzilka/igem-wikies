@@ -145,12 +145,12 @@ const Comparison = () => {
       <div
         style={{
           fontFamily: "Space Grotesk",
-          fontSize: window.innerWidth < 768 ? "1rem" : "20px",
+          fontSize: window.innerWidth < 768 ? "1rem" : "1.7rem",
           marginTop: window.innerWidth < 768 ? "1.5rem" : "3rem",
         }}
-        className="text-center text-black-700"
+        className="text-center font-bold"
       >
-        With the same land, duckweed can feed three times more cows than soybean
+        <h2 style={{fontFamily: "Space Grotesk"}}>With the same land, <span style={{ color: "#779E45" }}>duckweed</span> can feed <span style={{ color: "#779E45" }}>three times more cows</span> than soybean</h2>
       </div>
 
 

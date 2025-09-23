@@ -74,7 +74,7 @@ const Hero = () => {
       {/* Hero Section */}
       <div className="relative">
         <div 
-          className="h-[70vh] md:h-screen bg-cover bg-center rounded-3xl relative overflow-hidden mx-2 md:mx-4 mt-4"
+          className="h-[70vh] md:h-screen bg-cover bg-center rounded-3xl relative overflow-hidden mx-2 md:mx-4 mt-4 "
           style={{
             backgroundImage: "url('https://static.igem.wiki/teams/5642/images/homepage/duckweed-1-min.webp')",
             backgroundPosition: "top", // show top, crop from bottom
@@ -83,7 +83,7 @@ const Hero = () => {
           }}
         >
           {/* Blue Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-br"></div>
+          <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-black/40 to-transparent rounded-t-lglute inset-0 bg-gradient-to-br"></div>
           
           {/* Content */}
           <div className="relative z-10 h-full flex items-center justify-center px-2 md:px-8">
