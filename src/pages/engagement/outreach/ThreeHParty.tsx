@@ -193,14 +193,14 @@ const ThreeHParty = () => {
         </section>
 
         {/* Food Photos Section */}
-        <section className="mb-12">
+        <section className="mb-12 max-w-3xl items-center mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="relative h-[450px] md:h-[600px] bg-gradient-to-br from-amber-200 to-orange-200 rounded-lg overflow-hidden">
+            <div className="relative h-[300px] md:h-[400px] bg-gradient-to-br from-amber-200 to-orange-200 rounded-lg overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center">
                 <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/sponzor-02391.webp"/>
               </div>
             </div>
-            <div className="relative h-[450px] md:h-[600px] bg-gradient-to-br from-lime-200 to-green-200 rounded-lg overflow-hidden">
+            <div className="relative h-[300px] md:h-[400px] bg-gradient-to-br from-lime-200 to-green-200 rounded-lg overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center">
                 <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/sponzor-02358.webp"/>
               </div>
