@@ -16,7 +16,7 @@ const MediumChange = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto p-8 bg-white">
+    <div className="max-w-6xl mx-auto p-8 bg-white" style={{ fontFamily: 'Urbanist, sans-serif' }}>
       {/* Header */}
       <h1 className="text-4xl font-bold text-gray-900 mb-12 " style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
         Cultivation Medium Change Experiment
@@ -33,10 +33,19 @@ const MediumChange = () => {
             <h2 className="text-xl font-semibold text-gray-900 mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               Rationale
             </h2>
-            <p className="text-gray-700 leading-relaxed text-md" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-              The inevitable part of successful duckweed cultivation is regular cultivation medium change. It is necessary due to nutrient depletion during the growth of our duckweed superhero. This nutrient uptake creates deviation from the optimal environmental conditions that we need to monitor and act accordingly. The importance of pinpointing the minimum frequency of medium change is further underscored by understandably high demand for minimal necessary maintenance needs, so that energy, resources and labour are used effectively.
-
+            <p>
+              <span style={{ fontWeight: 400 }}>
+                The inevitable part of successful duckweed cultivation is regular
+                cultivation medium change. It is necessary due to nutrient depletion during
+                the growth of our duckweed superhero. This nutrient uptake creates deviation
+                from the optimal environmental conditions that we need to monitor and act
+                accordingly. The importance of pinpointing the minimum frequency of medium
+                change is further underscored by understandably high demand for minimal
+                necessary maintenance needs, so that energy, resources and labour are used
+                effectively.
+              </span>
             </p>
+
           </div>
 
           {/* Methodology Section */}
@@ -44,10 +53,33 @@ const MediumChange = () => {
             <h2 className="text-xl font-semibold text-gray-900 mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               Methodology
             </h2>
-            <p className="text-gray-700 leading-relaxed text-md" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-              To determine the minimum frequency of medium change, two types of experiments were conducted simultaneously: a control experiment with an medium change frequency of every 2 days (where stress caused by nutrient depletion should be negligible) and another without any medium change, which was performed in two replicates. Each of the 3 culture trays (with a cultivation area of 0.06435 m2) was inoculated by 20 g of <em>Lemna japonica (8627)</em> or <em>S. polyrhiza (0162)</em> and the biomass in them was measured every 2 days. The minimum frequency of medium change necessary to ensure the fastest growth rate was determined as a point where the measured biomass in the experimental group started to lag behind the measured biomass in the control group.
-
+            <p>
+              <span style={{ fontWeight: 400 }}>
+                To determine the minimum frequency of medium change, two types of
+                experiments were conducted simultaneously: a control experiment with an
+                medium change frequency of every 2 days (where stress caused by nutrient
+                depletion should be negligible) and another without any medium change, which
+                was performed in two replicates. Each of the 3 culture trays (with a
+                cultivation area of 0.06435 m
+              </span>
+              <span style={{ fontWeight: 400 }}>2</span>
+              <span style={{ fontWeight: 400 }}>) was inoculated by 20 g of </span>
+              <em>
+                <span style={{ fontWeight: 400 }}>Lemna japonica (8627)</span>
+              </em>
+              <span style={{ fontWeight: 400 }}> or </span>
+              <em>
+                <span style={{ fontWeight: 400 }}>S. polyrhiza (0162)</span>
+              </em>
+              <span style={{ fontWeight: 400 }}>
+                {" "}
+                and the biomass in them was measured every 2 days. The minimum frequency of
+                medium change necessary to ensure the fastest growth rate was determined as
+                a point where the measured biomass in the experimental group started to lag
+                behind the measured biomass in the control group.
+              </span>
             </p>
+
           </div>
 
           {/* Graph Placeholder */}
@@ -112,9 +144,16 @@ const MediumChange = () => {
             <h2 className="text-xl font-semibold text-gray-900 mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               Results
             </h2>
-            <p className="text-gray-700 leading-relaxed text-md" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-              Based on the data shown in the graph, it was determined that the optimal medium change frequency, that is frequency ensuring the maximal growth rate but at the same time the minimal necessary maintenance needs, is every 6 days, since at this point biomass yields of the control group and experimental groups start to deviate noticeably.
+            <p>
+              <span style={{ fontWeight: 400 }}>
+                Based on the data shown in the graph, it was determined that the optimal
+                medium change frequency, that is frequency ensuring the maximal growth rate
+                but at the same time the minimal necessary maintenance needs, is every 6
+                days, since at this point biomass yields of the control group and
+                experimental groups start to deviate noticeably.
+              </span>
             </p>
+
           </div>
         </div>
       </div>
