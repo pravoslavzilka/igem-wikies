@@ -2,237 +2,312 @@ import React, { useState } from 'react';
 import "@fontsource/space-grotesk";
 
 const ProjectWhy = () => {
-  const [hoveredCard, setHoveredCard] = useState(null);
+  const [activeToggle, setActiveToggle] = useState('recombinant');
+  const [activeStatusToggle, setActiveStatusToggle] = useState('food');
 
-  const applications = [
-    {
-      id: 1,
-      icon: "🌱",
-      title: "Novel Protein Crop",
-      description: "Duckweeds, especially Wolffia globosa, have been used traditionally as food in Southeast Asia and are now gaining interest globally for their nutritional potential. With as much protein as soybeans, full amino acid profile, and a biomass doubling time of just 48 hours, duckweed could be a novel source of protein for animal feed or even human consumption. Nutrient analyses across all five genera confirm alignment with WHO recommendations. Duckweed is also used as feed for livestock and fish, often surpassing corn in protein content. Though pricing limits widespread livestock use, it holds strong potential in premium pet food and functional foods."
+  const toggleData = {
+    recombinant: {
+      title: 'Recombinant Proteins Factory',
+      content: 'Duckweed can be engineered to produce valuable recombinant proteins efficiently, making it an ideal biofactory for pharmaceutical and industrial applications.',
+      imageType: 'factory'
     },
-    {
-      id: 2,
-      icon: "🔬",
-      title: "Phytoremediation Chassis",
-      description: "Duckweeds can remove heavy metals, pharmaceutical residues and nutrients like nitrates and phosphates from polluted water. Duckweed are also easy to harvest - a key advantage. Once the contaminants are taken up, the plants can be collected and processed, enabling the safe removal of harmful substances from the environment. Adding to their value is the fact that duckweeds thrive under a wide range of conditions: tolerating pH values from 4 to 9 (), temperatures from 5°C to 38°C (), and adapting to environments ranging from low light to full sunlight (). Therefore, their phytoremediation capabilities are not limited to a narrow set of conditions and can be deployed broadly."
-    },
-    {
-      id: 3,
-      icon: "🏭",
-      title: "Recombinant Protein Factory",
-      description: "Bacteria are the workhorse of bioproduction - until they need to create molecules with complex post-translational modifications (). For that, either yeast or Chinese hamster ovary (CHO) cells are used (). What truly sets plants apart in recombinant protein production is their scalability. You can grow millions of plants in fields, with minimal cost compared to sterile bioreactors (). Even better: if you're expressing those proteins in duckweed, you can fit up to 900 m2 of surface area into a single large shipping container - resulting in hundreds of millions of plants on your ground floor. Plants with almost no gene silencing (), allowing for high-level protein overexpression. However, the drawback is plant glycosylation – it is not identical to mammalian glycosylation ()..."
-      
-      },
-    {
-      id: 4,
-      icon: "📊",
-      title: "Plant Monocot Model Organism",
-      description: "Most plant scientists currently work with Arabidopsis or tobacco as model organisms (). However, since both are dicots and many staple crops are monocots, not all discoveries in these two species are directly transferable to agricultural crops (). Duckweeds, being monocots, offer a promising alternative. As the smallest flowering plants (), they reproduce primarily asexually (), exhibit unique gene-silencing patterns (), and grow extremely fast, allowing experiments to be conducted 5 to 30 times faster than with traditional model plants, depending on the comparison. On the other hand, duckweed unique traits may both illuminate fundamental plant processes and pose challenges when translating findings to other crops."
-      }
-  ];
-
-  const currentApplications = [
-    {
-      title: "Food Industry",
-      description: "Early efforts are already underway. Startups like GreenOnyx (), PlantibleFoods (), microTERRA (), and LemnaPRO () are pioneers in duckweed cultivation for human use. With superior vegan greens and proteins that have egg-like properties, duckweed-based foods are slowly making their way into gastronomy! Some duckweed are approved for human consumption - recognized as GRAS in the USA and authorized as a novel food in the EU for use in protein-rich food products." },
-    {
-      title: "Phytoremediation",
-      description: "Lemna minor has been shown to remove over 85% of cadmium from contaminated water by accumulating the metal in its roots (). It also effectively removed more than 70% of ibuprofen from water through passive uptake (). Lemna gibba demonstrated the ability to uptake and tolerate glyphosate, a widely used herbicide (). Startups like Fyto () are using duckweed to convert cow manure into protein-rich biomass, which is then fed back to the cows directly on the farm."
-
-      
-      },
-    {
-      title: "Biomanufacturing",
-      description: "Lemna punctata has been engineered to express and secrete aprotinin, a protease inhibitor, which was successfully purified using immunoaffinity chromatography (). Antigens against porcine epidemic diarrhoea virus and tuberculosis have also been expressed in duckweed (). Additionally, studies have demonstrated the successful expression of avian influenza virus H5N1 antigens in Lemna minor (). Companies like AlgenTech and Phylloceuticals claim they are successfully producing growth factors and antigens in duckweed species ()." 
-    },
-    {
-      title: "Basic Research",
-      description: "In the past five years, duckweed-oriented research has seen a significant surge, with over 700 peer-reviewed articles published. Five fully assembled genomes have been completed, representing three genera (Spirodela, Lemna, and Wolffia). Transcriptomic data are available for most sequenced species, often covering multiple tissues or stress conditions. Germplasm collections - such as those at the Rutgers Duckweed Stock Cooperative () and IPK Gatersleben () - preserve a wide diversity of clones across species."
-    
+    monocot: {
+      title: 'Plant Monocot Model Organism', 
+      content: 'As a simple aquatic plant, duckweed serves as an excellent model organism for studying plant biology, genetics, and biotechnology applications.',
+      imageType: 'microscope'
     }
-  ];
+  };
 
-  const companies = [
-    "GreenOnyx", "PlantibleFoods", "microTERRA", "LemnaPRO", 
-    "Fyto", "AlgenTech", "Phylloceuticals"
-  ];
+  const statusData = {
+    food: {
+      title: 'Food',
+      content: 'Early efforts are already underway. Startups like GreenCrop.D, and SunCorp Corp B, having FDA and EuropeanFDA EU) are promising duckweed cultivation for human use. With superior vegan greens and proteins that have eggs like properties, duckweed-based foods are slowly making their way into gastronomic. Some duckweed are approved for human consumption - recognized as GRAS in the USA and authorized as a novel food in the EU for use in protein-rich food products.',
+      imageType: 'books'
+    },
+    phytoremediation: {
+      title: 'Phytoremediation',
+      content: 'Duckweed shows exceptional ability to remove pollutants from water systems, making it valuable for environmental cleanup and water treatment applications.',
+      imageType: 'books'
+    },
+    biomanufacturing: {
+      title: 'Biomanufacturing',
+      content: 'Advanced biomanufacturing processes using duckweed are being developed for producing high-value compounds and materials at industrial scale.',
+      imageType: 'books'
+    },
+    basicresearch: {
+      title: 'Basic Research',
+      content: 'Fundamental research continues to unlock new potential applications and optimize duckweed cultivation techniques for various industrial uses.',
+      imageType: 'books'
+    }
+  };
 
-  const stats = [
-    { number: "700+", label: "Research Papers\n(Past 5 Years)" },
-    { number: "5", label: "Fully Assembled\nGenomes" },
-    { number: "3", label: "Genera\nSequenced" },
-    { number: "48hr", label: "Biomass Doubling\nTime" }
-  ];
+  const renderImage = (imageType) => {
+    if (imageType === 'factory') {
+      return (
+        <div className="relative h-full bg-gradient-to-b from-blue-100 to-blue-200 rounded-lg overflow-hidden">
+          <div className="absolute inset-0 p-6">
+            {/* Factory/Industrial visualization */}
+            <div className="space-y-4">
+              <div className="flex justify-center">
+                <div className="w-16 h-12 bg-gray-600 rounded-t-lg relative">
+                  <div className="absolute -top-2 left-1/2 transform -translate-x-1/2">
+                    <div className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center">
+                      <div className="w-4 h-4 bg-blue-400 rounded-full animate-pulse"></div>
+                    </div>
+      </div>
+
+      {/* Bottom Section - Current Status */}
+      <div className="grid md:grid-cols-3 gap-8 mt-12 pt-8 border-t border-gray-200">
+        {/* Left Content - Stacked Books Image */}
+        <div className="md:col-span-1">
+          <div className="bg-gray-100 rounded-lg p-6 h-80">
+            <div className="relative h-full">
+              {/* Stack of books representation */}
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
+                <div className="space-y-1">
+                  <div className="w-24 h-8 bg-gray-400 rounded-sm shadow-md transform rotate-1"></div>
+                  <div className="w-24 h-8 bg-gray-500 rounded-sm shadow-md transform -rotate-1"></div>
+                  <div className="w-24 h-8 bg-gray-600 rounded-sm shadow-md transform rotate-0.5"></div>
+                  <div className="w-24 h-8 bg-gray-700 rounded-sm shadow-md"></div>
+                </div>
+              </div>
+              {/* Wood grain texture background */}
+              <div className="absolute bottom-0 w-full h-12 bg-gradient-to-r from-amber-100 to-amber-200 rounded-b-lg opacity-80"></div>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Content - Status Questions */}
+        <div className="md:col-span-2">
+          <p className="text-gray-600 text-sm mb-6" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+            But what is a current status quo of duckweed application?
+          </p>
+
+          <div className="space-y-3">
+            {/* Food Section - Always Expanded */}
+            <div className="border border-gray-200 rounded-lg overflow-hidden">
+              <button
+                onClick={() => setActiveStatusToggle(activeStatusToggle === 'food' ? null : 'food')}
+                className={`w-full flex items-center justify-between p-4 text-left transition-colors duration-200 ${
+                  activeStatusToggle === 'food' ? 'bg-green-50 border-l-4 border-l-green-500' : 'hover:bg-gray-50'
+                }`}
+              >
+                <div className="flex items-center">
+                  <div className={`w-3 h-3 mr-4 ${
+                    activeStatusToggle === 'food' ? 'bg-green-500' : 'bg-gray-400'
+                  }`}></div>
+                  <h3 className="font-semibold text-gray-900 text-lg" style={{ fontFamily: 'Space Grotesk, monospace' }}>
+                    {statusData.food.title}
+                  </h3>
+                </div>
+              </button>
+              
+              {activeStatusToggle === 'food' && (
+                <div className="px-4 pb-4 bg-green-50 border-t border-green-100">
+                  <p className="text-gray-700 leading-relaxed pt-3 text-sm" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                    {statusData.food.content}
+                  </p>
+                </div>
+              )}
+            </div>
+
+            {/* Other Status Items */}
+            {[
+              { key: 'phytoremediation', label: 'Phytoremediation' },
+              { key: 'biomanufacturing', label: 'Biomanufacturing' },
+              { key: 'basicresearch', label: 'Basic Research' }
+            ].map(({ key, label }) => (
+              <div key={key} className="border border-gray-200 rounded-lg overflow-hidden">
+                <button
+                  onClick={() => setActiveStatusToggle(activeStatusToggle === key ? null : key)}
+                  className={`w-full flex items-center justify-between p-4 text-left transition-colors duration-200 ${
+                    activeStatusToggle === key ? 'bg-green-50 border-l-4 border-l-green-500' : 'hover:bg-gray-50'
+                  }`}
+                >
+                  <div className="flex items-center">
+                    <div className={`w-1 h-1 mr-4 rounded-full ${
+                      activeStatusToggle === key ? 'bg-green-500' : 'bg-gray-400'
+                    }`}></div>
+                    <h3 className="font-medium text-gray-900" style={{ fontFamily: 'Space Grotesk, monospace' }}>
+                      {label}
+                    </h3>
+                  </div>
+                  <div className={`transform transition-transform duration-200 ${
+                    activeStatusToggle === key ? 'rotate-180' : ''
+                  }`}>
+                    <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                  </div>
+                </button>
+                
+                {activeStatusToggle === key && (
+                  <div className="px-4 pb-4 bg-green-50 border-t border-green-100">
+                    <p className="text-gray-700 leading-relaxed pt-3 text-sm" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                      {statusData[key].content}
+                    </p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+                  </div>
+                </div>
+              </div>
+              <div className="grid grid-cols-3 gap-2">
+                <div className="h-8 bg-blue-300 rounded"></div>
+                <div className="h-8 bg-blue-400 rounded"></div>
+                <div className="h-8 bg-blue-300 rounded"></div>
+              </div>
+              <div className="flex justify-center space-x-2">
+                <div className="w-3 h-3 bg-green-400 rounded-full animate-bounce"></div>
+                <div className="w-3 h-3 bg-green-400 rounded-full animate-bounce" style={{animationDelay: '0.1s'}}></div>
+                <div className="w-3 h-3 bg-green-400 rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <div className="relative h-full bg-gradient-to-b from-purple-100 to-purple-200 rounded-lg overflow-hidden">
+          <div className="absolute inset-0 p-6">
+            {/* Microscope/Research visualization */}
+            <div className="space-y-4">
+              <div className="flex justify-center">
+                <div className="w-20 h-16 bg-gray-700 rounded-lg relative">
+                  <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-8 h-2 bg-gray-500 rounded"></div>
+                  <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-12 h-8 bg-gray-600 rounded-full"></div>
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-2">
+                <div className="h-6 bg-purple-300 rounded-full"></div>
+                <div className="h-6 bg-purple-400 rounded-full"></div>
+              </div>
+              <div className="flex justify-center">
+                <div className="w-16 h-2 bg-purple-500 rounded-full opacity-60"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+  };
 
   return (
-    <div className="min-h-screen bg-gray-50 font-sans" style={{ fontFamily: "Space Grotesk, sans-serif" }}>
-      {/* Hero Section */}
-      <div className="bg-gradient-to-br from-green-600 to-green-800 text-white py-20">
-        <div className="max-w-6xl mx-auto px-8">
-          <h1 className="text-5xl font-bold mb-6">Forgetting Arabidopsis or Soybean?</h1>
-          <p className="text-xl text-green-100 max-w-3xl">
-            It's time to embrace duckweed as the next frontier in plant biotechnology. With unprecedented growth rates, nutritional density, and versatile applications, duckweed represents a paradigm shift in sustainable agriculture and biomanufacturing.
-          </p>
+    <div className="max-w-4xl mx-auto p-6 bg-white">
+      {/* Header Section */}
+      <div className="mb-8">
+        <p className="text-sm text-gray-600 mb-2" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+          Why
+        </p>
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4" style={{ fontFamily: 'Space Grotesk, monospace' }}>
+          Forgetting Arabidopsis or soybean and bracing ourselves for duckweed!
+        </h1>
+        <p className="text-gray-600 text-lg" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+          The smallest flowering plant on earth makes its debut as the next exciting new model crop!
+        </p>
+      </div>
+
+      {/* Duckweed Image */}
+      <div className="mb-12">
+        <div className="w-full h-64 bg-gradient-to-br from-lime-400 via-green-400 to-emerald-500 rounded-lg relative overflow-hidden">
+          <div className="absolute inset-0 bg-green-400 opacity-90"></div>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-full h-full bg-repeat opacity-80" style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='2' fill='%23065f46' opacity='0.3'/%3E%3Ccircle cx='5' cy='5' r='1.5' fill='%23047857' opacity='0.4'/%3E%3Ccircle cx='15' cy='15' r='1.5' fill='%23047857' opacity='0.4'/%3E%3Ccircle cx='15' cy='5' r='1' fill='%23059669' opacity='0.5'/%3E%3Ccircle cx='5' cy='15' r='1' fill='%23059669' opacity='0.5'/%3E%3C/svg%3E")`,
+              backgroundSize: '20px 20px'
+            }}></div>
+          </div>
         </div>
       </div>
 
-      {/* Introduction */}
-      
-
-      {/* Applications & Potential */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-5">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-              Applications & Potential
-            </h2>
-            <p className="text-xl text-gray-600">
-              Discover the four key areas where duckweed is revolutionizing biotechnology
+      {/* Main Content Grid */}
+      <div className="grid md:grid-cols-3 gap-8">
+        {/* Left Content */}
+        <div className="md:col-span-2">
+          {/* Novel Protein Crop Section */}
+          <div className="mb-8">
+            <div className="flex items-center mb-4">
+              <div className="w-3 h-3 bg-green-500 mr-3"></div>
+              <h2 className="text-xl font-semibold text-gray-900" style={{ fontFamily: 'Space Grotesk, monospace' }}>
+                Novel Protein Crop
+              </h2>
+            </div>
+            <p className="text-gray-700 leading-relaxed mb-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+              Duckweeds, especially Wolffia globosa, have been used traditionally as food in Southeast Asia and are now gaining interest globally for their nutritional potential. With its rapid protein as soybeans, full amino acid profile, and a biomass doubling time as fast as 16-48 hours, duckweed could be a novel source of protein for animal feed or even human consumption.
+            </p>
+            <p className="text-gray-700 leading-relaxed" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+              Recent analyses show that certain strains and traits will likely be crucial for optimizing duckweed as a sustainable, low-cost protein source. Cultivating duckweed to also scale for commercial production will be crucial because biomass use is likely strongly connected to premium per-food and nutritional foods.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8">
-            {applications.map((app) => (
-              <div
-                key={app.id}
-                className={`bg-white rounded-xl p-4  shadow-lg transition-all duration-300 border-t-4 border-green-600 cursor-pointer ${
-                  hoveredCard === app.id ? 'transform -translate-y-2 shadow-2xl' : ''
-                }`}
-                onMouseEnter={() => setHoveredCard(app.id)}
-                onMouseLeave={() => setHoveredCard(null)}
-              >
-                <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-                  {app.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {app.description}
-                </p>
-                {/* Image placeholder at bottom */}
-                <div style={{ marginTop: "20px"}} className="bg-gray-200 border-2 border-dashed border-gray-400 w-full md:w-64 h-48 flex items-center justify-center rounded-lg">
-                  <div className="text-center text-gray-600">
-                    <div className="text-sm mb-2">🔬 DIAGRAM PLACEHOLDER</div>
-             
+
+          {/* Phytoremediation Chassis Section */}
+          <div className="mb-8">
+            <h2 className="text-xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Space Grotesk, monospace' }}>
+              Phytoremediation Chassis
+            </h2>
+            
+            <div className="space-y-3">
+              {Object.entries(toggleData).map(([key, data]) => (
+                <div key={key} className="border border-gray-200 rounded-lg overflow-hidden">
+                  <button
+                    onClick={() => setActiveToggle(activeToggle === key ? null : key)}
+                    className={`w-full flex items-center justify-between p-4 text-left transition-colors duration-200 ${
+                      activeToggle === key ? 'bg-green-50 border-l-4 border-l-green-500' : 'hover:bg-gray-50'
+                    }`}
+                  >
+                    <div className="flex items-center">
+                      <div className={`w-2 h-2 mr-4 rounded-full transition-colors duration-200 ${
+                        activeToggle === key ? 'bg-green-500' : 'bg-gray-400'
+                      }`}></div>
+                      <h3 className="font-medium text-gray-900" style={{ fontFamily: 'Space Grotesk, monospace' }}>
+                        {data.title}
+                      </h3>
+                    </div>
+                    <div className={`transform transition-transform duration-200 ${
+                      activeToggle === key ? 'rotate-180' : ''
+                    }`}>
+                      <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+                  </button>
+                  
+                  {activeToggle === key && (
+                    <div className="px-4 pb-4 bg-green-50 border-t border-green-100">
+                      <p className="text-gray-700 leading-relaxed pt-3" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                        {data.content}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Right Content - Dynamic Image */}
+        <div className="md:col-span-1">
+          <div className="bg-gray-100 rounded-lg p-6 h-80">
+            {activeToggle ? renderImage(toggleData[activeToggle].imageType) : (
+              <div className="relative h-full flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <svg className="w-8 h-8 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
                   </div>
+                  <p className="text-gray-500 text-sm" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                    Select a topic to view related content
+                  </p>
                 </div>
               </div>
-            ))}
+            )}
           </div>
         </div>
-      </section>
-      {/* Current Applications */}
-      <section className="bg-green-700 text-white py-20">
-        <div className="max-w-7xl mx-auto px-5">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              But What is a current status quo of duckweed application?
-
-            </h2>
-            <p className="text-xl opacity-90">
-              Real-world implementations already making an impact
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-10">
-            {currentApplications.map((app, index) => (
-              <div
-                key={index}
-                className="bg-white bg-opacity-10 rounded-xl p-5 backdrop-blur-sm border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300"
-              >
-                <h3 className="text-xl font-semibold mb-4">
-                  {app.title}
-                </h3>
-                <p className="text-white text-opacity-90 leading-relaxed">
-                  {app.description}
-                </p>
-                {/* Image placeholder at bottom */}
-                <div style={{ marginTop: "20px"}} className="bg-gray-200 border-2 border-dashed border-gray-400 w-full md:w-64 h-48 flex items-center justify-center rounded-lg">
-                  <div className="text-center text-gray-600">
-                    <div className="text-sm mb-2">🔬 IMAGE PLACEHOLDER</div>
-                    
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Industry Leaders */}
-      <section className="bg-white py-16">
-        <div className="max-w-7xl mx-auto px-5">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-              Industry Leaders
-            </h2>
-            <p className="text-xl text-gray-600">
-              Companies pioneering duckweed applications across industries
-            </p>
-          </div>
-          
-          <div className="flex flex-wrap gap-4 justify-center mt-8">
-            {companies.map((company, index) => (
-              <span
-                key={index}
-                className="bg-green-50 text-green-700 px-6 py-3 rounded-full font-medium border-2 border-green-100 hover:bg-green-100 transition-colors duration-200 cursor-pointer"
-              >
-                {company}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Research Stats */}
-      <section className="bg-gray-50 py-16">
-        <div className="max-w-7xl mx-auto px-5 text-center">
-          <div className="mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-              That's not enough
-            </h2>
-            <p className="text-xl text-gray-600">
-              There are only a few companies working with duckweed to produce food, feedstock, or remediate water. There’s also just a handful of proof-of-concept studies for recombinant protein production in duckweed. Just several visionary research groups dedicated to advancing duckweed research…
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mt-12">
-            {stats.map((stat, index) => (
-              <div
-                key={index}
-                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
-              >
-                <div className="text-5xl font-bold text-green-700 mb-3">
-                  {stat.number}
-                </div>
-                <div className="text-gray-600 whitespace-pre-line">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="bg-gradient-to-br from-green-700 to-green-600 text-white py-20 text-center">
-        <div className="max-w-7xl mx-auto px-5">
-          <h2 className="text-4xl md:text-5xl font-bold mb-5">
-            The Future is User-Friendly
-          </h2>
-          <p className="text-xl mb-10 opacity-90 max-w-3xl mx-auto">
-            At iGEM Brno, we are convinced that this is not enough to fully utilize the amazing capabilities of duckweed. 
-And because we believe that the success of technology lies in its user-friendliness,
-
-We developed TAIFR and characterized duckweed-native promoters, so anyone can engineer duckweed efficiently. We built an autonomous cultivation prototype, allowing anyone to grow duckweed in their lab cheaply and without labour.
-
-And that is also why we went to iGEM - to show the entire SynBio community the potential of duckweed and to make tools available for anyone to unlock it!
-
-          </p>
-          <button className="inline-block bg-white text-green-700 px-8 py-4 rounded-lg font-semibold text-lg hover:transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 shadow-lg">
-            Join the Revolution
-          </button>
-        </div>
-      </section>
+      </div>
     </div>
   );
 };
