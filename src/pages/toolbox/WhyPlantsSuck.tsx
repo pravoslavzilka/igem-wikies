@@ -38,7 +38,7 @@ const WhyPlantsSuck = () => {
               <h2 className="text-xl font-bold text-black mb-4" style={{ fontFamily: "Space Grotesk" }}>The Waiting Game</h2>
               <p className="text-md leading-relaxed text-black" style={{ fontFamily: "Urbanist" }}>
                 Time is the most immediate and obvious challenge in 
-                plant biotechnology. Microbial systems such as <em>E. coli</em> 
+                plant biotechnology. Microbial systems such as <em>E. coli</em>  
                 can be transformed and analyzed within 24–48 hours, 
                 allowing researchers to quickly test new constructs, 
                 obtain results and iterate [4]. In contrast, plant 
@@ -66,7 +66,7 @@ const WhyPlantsSuck = () => {
             {/* Bar Chart */}
             <div className="w-full" style={{ fontFamily: "Urbanist" }}> {/* removed max-w-xs */}
               
-              <img src="https://static.igem.wiki/teams/5642/images/toolbox/whyplantssuck/days-needed-for-transformation.webp" alt="Days needed for transformation" className="w-full h-auto" />
+              <img src="https://static.igem.wiki/teams/5642/images/toolbox/whyplantssuck/days-needed-for-transformation-new-graph.webp" alt="Days needed for transformation" className="w-full h-auto" />
             </div>
 
             {/* Image placeholder for the middle chart/graph */}
@@ -277,16 +277,8 @@ const WhyPlantsSuck = () => {
                   </p>
                 </div>
               </div>
-            </div>
 
-                        
-
-
-
-
-          </div>
-        </div>
-      <div className="max-w-4xl mx-auto">                
+              <div className="max-w-4xl mx-auto">                
           <h1 className="text-2xl font-bold text-center text-black mb-8 mt-20" style={{ fontFamily: "Space Grotesk" }}>
             Mutations You Didn’t Ask For
 
@@ -304,7 +296,17 @@ const WhyPlantsSuck = () => {
 
             </p>
           </div>  
-        </div>        
+        </div> 
+            </div>
+
+                        
+
+
+
+
+          </div>
+        </div>
+             
 
 
         <div className="border-t border-gray-200 pt-6">
