@@ -2,13 +2,13 @@ const ThreeHParty = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="py-16 px-6">
-        <div className="max-w-4xl mx-auto">
+      <div className="py-16 px-6">
+        <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             (Bio) Hackers, Hipsters and Hustlers Party: a Silicon Valley for a day in Brno!
           </h1>
         </div>
-      </header>
+      </div>
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-6 py-12">
@@ -53,8 +53,8 @@ const ThreeHParty = () => {
         <section className="mb-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="relative h-64 bg-gradient-to-br from-purple-200 to-green-200 rounded-lg overflow-hidden">
-              <div className="absolute inset-0 flex items-center justify-center ">
-                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/labtour.webp" />
+              <div className="absolute inset-0 flex items-center justify-center " style={{ height: '400px', width: 'auto', objectFit: 'cover' }}>
+                <img  src="https://static.igem.wiki/teams/5642/images/engagement/outreach/labtour.webp" />
               </div>
               <div className="absolute bottom-4 left-4 bg-white px-3 py-1 rounded text-sm font-semibold">
                 1
