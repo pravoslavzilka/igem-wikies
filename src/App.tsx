@@ -41,6 +41,7 @@ import AgrobacteriumProtocol from './pages/toolbox/programable_duckweed/Agrobact
 // Engagement pages 
 
 import ThreeHParty from './pages/engagement/outreach/ThreeHParty';
+import Outreach from './pages/engagement/Outreach';
 
 
 // Duckweed Mafia pages
@@ -99,7 +100,8 @@ function App() {
 
 
           <Route path="/engagement/outreach/3h-party" element={<ThreeHParty />} />
-          
+          <Route path="/engagement/outreach" element={<Outreach />} />
+
           {/* Duckweed Mafia Routes */}
           <Route path="/duckweed-mafia/partners" element={<Partners />} />
           <Route path="/duckweed-mafia/safety" element={<DuckweedSafety />} />

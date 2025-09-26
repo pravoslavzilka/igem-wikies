@@ -40,12 +40,42 @@ const ThreeHParty = () => {
             <p className="text-lg leading-relaxed">
               Our goal was twofold.
             </p>
-            <p className="text-lg leading-relaxed">
-              First, we wanted to <strong className="font-bold">showcase the incredible, high-tech work our team is doing</strong> - to inspire new supporters to join us and make our current ones feel proud of their contributions.
+            <p>
+              <span style={{ fontWeight: 400 }}>First, we wanted to </span>
+              <strong>showcase the incredible, high-tech work our team is doing</strong>
+              <span style={{ fontWeight: 400 }}>
+                {" "}
+                - to inspire new supporters to join us and make our current ones feel proud
+                of their contributions.
+              </span>
             </p>
-            <p className="text-lg leading-relaxed">
-              Second, and even more crucial, we wanted to <strong className="font-bold">immerse ourselves and our community in the mindsets of successful innovators</strong>. Winning iGEM isn't just about great science it's about having the right <em>mindset</em>. You can have the lab, the funding, and the smartest brains... and still not have the right approach to problem-solving, community building, and vision. That is why we decided to gather the gold standard of a hacker, a hipster, and two hustlers (because academia needs to hustle twice as much)
+
+            <p>
+              <span style={{ fontWeight: 400 }}>
+                Second, and even more crucial, we wanted to{" "}
+              </span>
+              <strong>
+                immerse ourselves and our community in the mindsets of successful innovators
+              </strong>
+              <span style={{ fontWeight: 400 }}>
+                . Winning iGEM isn’t just about great science it’s about having the right{" "}
+              </span>
+              <em>
+                <span style={{ fontWeight: 400 }}>mindset</span>
+              </em>
+              <span style={{ fontWeight: 400 }}>
+                . You can have the lab, the funding, and the smartest brains… and still fail{" "}
+              </span>
+              <strong>
+                if you don’t have the right approach to problem-solving, community building,
+                and vision
+              </strong>
+              <span style={{ fontWeight: 400 }}>
+                . That is why we decided to gather the gold standard of a hacker, a hipster,
+                and two hustlers (because academia needs to hustle twice as much)
+              </span>
             </p>
+
           </div>
         </section>
 
