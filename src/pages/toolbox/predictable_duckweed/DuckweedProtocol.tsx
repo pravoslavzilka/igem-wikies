@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const DuckweedProtocol = () => {
   return (
-    <div className="max-w-6xl mx-auto p-8 bg-white" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+    <div className="max-w-6xl mx-auto p-8 bg-white text-lg block" style={{ fontFamily: 'Urbanist, sans-serif' }}>
       
       {/* Header */}
       <div className="text-center mb-12">
@@ -11,15 +12,29 @@ const DuckweedProtocol = () => {
         </h1>
         
         <div className="bg-gray-50 p-6 rounded-lg text-left urbanist">
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Duckweed cultivation has picked up many decades as far as the definitive use becomes most successful. It's 
-            essential to always have fresh plants ready for experiments - that's why we developed a strategy for small-scale cultivation 
-            in the lab.
+          <>
+          <p>
+            <span style={{ fontWeight: 400 }}>
+              Duckweed cultivation is not a rocket science :) But for us iGEMers and
+              scientists working intensively with duckweed, it’s essential to always
+              have fresh plants ready for experiments - that’s why we developed a
+              strategy for small-scale cultivation in the lab.
+            </span>
           </p>
-          <p className="text-gray-700 leading-relaxed">
-            The protocol was greatly inspired by the work of our advisor, 
-            Dr. Ottoleer, and Sheerez A real-life experienced knowledge!
+          <p>&nbsp;</p>
+          <p>
+            <span style={{ fontWeight: 400 }}>
+              The protocol was greatly inspired by the work of our advisor,&nbsp;
+              Dr. Ordonez, who shared a wealth of duckweed knowledge&nbsp;
+              with us – some of it already is already{" "}
+            </span>
+            <a style={{ fontWeight: 400, color: 'blue' }} href="https://www.biorxiv.org/content/10.1101/2025.08.28.672806v1.full">
+              <span style={{ fontWeight: 400 }}>published</span>
+            </a>
+            <span style={{ fontWeight: 400 }}>.</span>
           </p>
+        </>
+
         </div>
       </div>
 
@@ -32,10 +47,16 @@ const DuckweedProtocol = () => {
               CULTIVATION CONDITIONS
             </h2>
             <div className="bg-gray-50 p-4 rounded-lg urbanist">
-              <p className="text-gray-700">
-                Ideal cultivation conditions are 23 ± 2°C, under a PPFD light 
-                fluorescent of ~100 μmol m⁻² s⁻¹ with an intensity of 500 umol/m²/s.
+              <p>
+                <span style={{ fontWeight: 400 }}>Ideal cultivation conditions are </span>
+                <strong>21 - 25 °C</strong>
+                <span style={{ fontWeight: 400 }}> under a </span>
+                <strong>16/8 hour light/dark </strong>
+                <span style={{ fontWeight: 400 }}>cycle with an intensity of </span>
+                <strong>200 µmol/m²/s</strong>
+                <span style={{ fontWeight: 400 }}>.</span>
               </p>
+
             </div>
           </div>
 
@@ -46,87 +67,224 @@ const DuckweedProtocol = () => {
             </h2>
             <div className="urbanist text-gray-700 space-y-3">
               <p>
-                We grow duckweed hydroponically in duckweed cultivation 
-                medium. The recipe consists of base macro- and micronutrient 
-                stock solutions L M, III and IV, with pH 5.2 and adjusting pH to 
-                6.8 ± 0.7 using 1M KOH or 1M HCl.
+                <span style={{ fontWeight: 400 }}>
+                  We grow duckweed hydroponically in duckweed cultivation medium, called{" "}
+                </span>
+                <strong>DCMN</strong>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  prepared by combining 5ml/l of each stock solutions I, II, III and IV with
+                  dH
+                </span>
+                <span style={{ fontWeight: 400 }}>2</span>
+                <span style={{ fontWeight: 400 }}>O and </span>
+                <strong>adjusting pH to 5.6 – 5.7 </strong>
+                <span style={{ fontWeight: 400 }}>using </span>
+                <strong>1M KOH </strong>
+                <span style={{ fontWeight: 400 }}>or </span>
+                <strong>1M HCl</strong>
+                <span style={{ fontWeight: 400 }}>. </span>
               </p>
+
             </div>
 
             {/* Stock Solutions Table */}
             <div className="mt-6">
-              <div className="bg-white border rounded-lg overflow-hidden">
-                <table className="w-full text-md urbanist">
-                  <thead className="bg-gray-100">
-                    <tr>
-                      <th className="px-4 py-3 text-left font-medium text-gray-900">Stock solutions (1 L)</th>
-                      <th className="px-4 py-3 text-left font-medium text-gray-900">g/L</th>
-                      <th className="px-4 py-3 text-left font-medium text-gray-900">mM</th>
-                      <th className="px-4 py-3 text-left font-medium text-gray-900">Final</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-200">
-                    <tr>
-                      <td className="px-4 py-3 font-medium">I</td>
-                      <td className="px-4 py-3"></td>
-                      <td className="px-4 py-3"></td>
-                      <td className="px-4 py-3"></td>
-                    </tr>
-                    <tr className="bg-gray-50">
-                      <td className="px-4 py-3">KNO₃</td>
-                      <td className="px-4 py-3">67.35</td>
-                      <td className="px-4 py-3">667</td>
-                      <td className="px-4 py-3">6.67</td>
-                    </tr>
-                    <tr>
-                      <td className="px-4 py-3">Ca(NO₃)₂·4H₂O</td>
-                      <td className="px-4 py-3">47.22</td>
-                      <td className="px-4 py-3">200</td>
-                      <td className="px-4 py-3">2.00</td>
-                    </tr>
-                    <tr className="bg-gray-50">
-                      <td className="px-4 py-3">II</td>
-                      <td className="px-4 py-3"></td>
-                      <td className="px-4 py-3"></td>
-                      <td className="px-4 py-3"></td>
-                    </tr>
-                    <tr>
-                      <td className="px-4 py-3">KH₂PO₄</td>
-                      <td className="px-4 py-3">0.0816</td>
-                      <td className="px-4 py-3">1</td>
-                      <td className="px-4 py-3">0.60</td>
-                    </tr>
-                    <tr className="bg-gray-50">
-                      <td className="px-4 py-3">MgSO₄·7H₂O</td>
-                      <td className="px-4 py-3">0.4416</td>
-                      <td className="px-4 py-3">3</td>
-                      <td className="px-4 py-3">1.80</td>
-                    </tr>
-                    <tr>
-                      <td className="px-4 py-3">III</td>
-                      <td className="px-4 py-3"></td>
-                      <td className="px-4 py-3"></td>
-                      <td className="px-4 py-3"></td>
-                    </tr>
-                    <tr className="bg-gray-50">
-                      <td className="px-4 py-3">Na₂MoO₄·2H₂O</td>
-                      <td className="px-4 py-3">1.21</td>
-                      <td className="px-4 py-3">5</td>
-                      <td className="px-4 py-3">0.005</td>
-                    </tr>
-                    <tr>
-                      <td className="px-4 py-3">H₃BO₃</td>
-                      <td className="px-4 py-3">12.4</td>
-                      <td className="px-4 py-3">200</td>
-                      <td className="px-4 py-3">0.20</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div className="inline-block border-2 border-black bg-white">
+                {/* Header */}
+                <div className="bg-green-500 text-white text-center py-2 px-4 font-bold">
+                  Modified N-medium
+                </div>
+                
+                {/* Subheader */}
+                <div className="bg-green-300 flex">
+                  <div className="flex-1 text-center py-2 px-4 font-semibold border-r border-black">
+                    Stock solutions (*) (**)
+                  </div>
+                  <div className="w-20 bg-green-500 text-white text-center py-2 px-2 font-bold">
+                    FINAL
+                  </div>
+                </div>
+                
+                {/* Column headers */}
+                <div className="bg-green-300 flex border-t border-black">
+                  <div className="w-24 text-center py-2 px-2 font-semibold border-r border-black">
+                    Stock solution
+                  </div>
+                  <div className="w-32 text-center py-2 px-2 font-semibold border-r border-black">
+                    Compound
+                  </div>
+                  <div className="w-16 text-center py-2 px-2 font-semibold border-r border-black">
+                    [g/L]
+                  </div>
+                  <div className="w-16 text-center py-2 px-2 font-semibold border-r border-black">
+                    [mM]
+                  </div>
+                  <div className="w-20 bg-green-500 text-white text-center py-2 px-2 font-bold">
+                  </div>
+                </div>
+                
+                {/* Data rows */}
+                <div className="bg-green-200">
+                  {/* Row 1 */}
+                  <div className="flex border-t border-black">
+                    <div className="w-24 text-center py-2 px-2 border-r border-black font-semibold">
+                      #1
+                    </div>
+                    <div className="w-32 text-center py-2 px-2 border-r border-black">
+                      KH₂PO₄
+                    </div>
+                    <div className="w-16 text-center py-2 px-2 border-r border-black">
+                      27,22
+                    </div>
+                    <div className="w-16 text-center py-2 px-2 border-r border-black">
+                      200
+                    </div>
+                    <div className="w-20 text-center py-2 px-2 font-semibold">
+                      1 mM
+                    </div>
+                  </div>
+                  
+                  {/* Row 2 */}
+                  <div className="flex border-t border-black">
+                    <div className="w-24 text-center py-2 px-2 border-r border-black font-semibold">
+                      #2
+                    </div>
+                    <div className="w-32 text-center py-2 px-2 border-r border-black">
+                      Ca(NO₃)₂*4H₂O
+                    </div>
+                    <div className="w-16 text-center py-2 px-2 border-r border-black">
+                      47,23
+                    </div>
+                    <div className="w-16 text-center py-2 px-2 border-r border-black">
+                      200
+                    </div>
+                    <div className="w-20 text-center py-2 px-2 font-semibold">
+                      1 mM
+                    </div>
+                  </div>
+                  
+                  {/* Row 3 - KNO₃ */}
+                  <div className="flex border-t border-black">
+                    <div className="w-24 text-center py-2 px-2 border-r border-black font-semibold">
+                      #3
+                    </div>
+                    <div className="w-32 text-center py-2 px-2 border-r border-black">
+                      KNO₃
+                    </div>
+                    <div className="w-16 text-center py-2 px-2 border-r border-black">
+                      161,8
+                    </div>
+                    <div className="w-16 text-center py-2 px-2 border-r border-black">
+                      1600
+                    </div>
+                    <div className="w-20 text-center py-2 px-2 font-semibold">
+                      8 mM
+                    </div>
+                  </div>
+                  
+                  {/* Row 4 - H₃BO₃ */}
+                  <div className="flex border-t border-black">
+                    <div className="w-24 text-center py-2 px-2 border-r border-black">
+                    </div>
+                    <div className="w-32 text-center py-2 px-2 border-r border-black">
+                      H₃BO₃
+                    </div>
+                    <div className="w-16 text-center py-2 px-2 border-r border-black">
+                      0,0618
+                    </div>
+                    <div className="w-16 text-center py-2 px-2 border-r border-black">
+                      1
+                    </div>
+                    <div className="w-20 text-center py-2 px-2 font-semibold">
+                      5 uM
+                    </div>
+                  </div>
+                  
+                  {/* Row 5 - MnCl₂*4H₂O */}
+                  <div className="flex border-t border-black">
+                    <div className="w-24 text-center py-2 px-2 border-r border-black">
+                    </div>
+                    <div className="w-32 text-center py-2 px-2 border-r border-black">
+                      MnCl₂*4H₂O
+                    </div>
+                    <div className="w-16 text-center py-2 px-2 border-r border-black">
+                      0,5145
+                    </div>
+                    <div className="w-16 text-center py-2 px-2 border-r border-black">
+                      2,6
+                    </div>
+                    <div className="w-20 text-center py-2 px-2 font-semibold">
+                      13 uM
+                    </div>
+                  </div>
+                  
+                  {/* Row 6 - Na₂MoO₄*2H₂O */}
+                  <div className="flex border-t border-black">
+                    <div className="w-24 text-center py-2 px-2 border-r border-black">
+                    </div>
+                    <div className="w-32 text-center py-2 px-2 border-r border-black">
+                      Na₂MoO₄*2H₂O
+                    </div>
+                    <div className="w-16 text-center py-2 px-2 border-r border-black">
+                      0,018
+                    </div>
+                    <div className="w-16 text-center py-2 px-2 border-r border-black">
+                      0,08
+                    </div>
+                    <div className="w-20 text-center py-2 px-2 font-semibold">
+                      0,4 uM
+                    </div>
+                  </div>
+                  
+                  {/* Row 7 - MgSO₄*7H₂O */}
+                  <div className="flex border-t border-black">
+                    <div className="w-24 text-center py-2 px-2 border-r border-black">
+                    </div>
+                    <div className="w-32 text-center py-2 px-2 border-r border-black">
+                      MgSO₄*7H₂O
+                    </div>
+                    <div className="w-16 text-center py-2 px-2 border-r border-black">
+                      49,3
+                    </div>
+                    <div className="w-16 text-center py-2 px-2 border-r border-black">
+                      200
+                    </div>
+                    <div className="w-20 text-center py-2 px-2 font-semibold">
+                      1 mM
+                    </div>
+                  </div>
+                  
+                  {/* Row 8 - Fe(II)NaEDTA */}
+                  <div className="flex border-t border-black">
+                    <div className="w-24 text-center py-2 px-2 border-r border-black font-semibold">
+                      #4
+                    </div>
+                    <div className="w-32 text-center py-2 px-2 border-r border-black">
+                      Fe(II)NaEDTA
+                    </div>
+                    <div className="w-16 text-center py-2 px-2 border-r border-black">
+                      1,835
+                    </div>
+                    <div className="w-16 text-center py-2 px-2 border-r border-black">
+                      5
+                    </div>
+                    <div className="w-20 text-center py-2 px-2 font-semibold">
+                      25 uM
+                    </div>
+                  </div>
+                </div>
               </div>
               
               <p className="text-md text-gray-600 mt-2 urbanist">
-                <strong>Table 1.</strong> Chemical composition of the stock solutions from 
-                which DCMM is prepared. Keep stock solutions in fridge.
+                <p>
+                <strong>Table 1. </strong>
+                <span style={{ fontWeight: 400 }}>
+                  Chemical composition of the stock solution from which DCMN is prepared. Keep
+                  stock solutions in fridge to avoid their contamination.&nbsp;
+                </span>
+              </p>
+
               </p>
             </div>
           </div>
@@ -139,27 +297,27 @@ const DuckweedProtocol = () => {
             <ul className="space-y-2 urbanist text-gray-700">
               <li className="flex items-start">
                 <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Petri dishes (6.7cm)
+                Petri dishes (Ø7cm)
               </li>
               <li className="flex items-start">
                 <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                X-well plates (6-well ~1L, 24-well, Ø 16cm)
+                glass pots/beaker (0.5 – 1L, ideally Ø 14cm)
               </li>
               <li className="flex items-start">
                 <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Greenhouse compartments (if treatment are needed)
+                plastic trays (if larger experiment are needed)
               </li>
               <li className="flex items-start">
                 <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                mesh sieve, one for each individual clone to avoid cross-contamination
+                metal sieve, one for each individual clone to 
               </li>
               <li className="flex items-start">
                 <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                pumps for mixing media
+                plastic pot for mixing media
               </li>
               <li className="flex items-start">
                 <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Laminar hood
+                pH meter
               </li>
               <li className="flex items-start">
                 <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -172,21 +330,24 @@ const DuckweedProtocol = () => {
         {/* Right Column */}
         <div className="space-y-8">
           {/* Main Image */}
-          <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-            <span className="text-gray-500 urbanist">Image Placeholder: Duckweed cultivation setup</span>
+          <div className=" rounded-lg flex items-center justify-center">
+            <img src="https://static.igem.wiki/teams/5642/images/toolbox/cultivationprotocol/duckweed-08438.webp" alt="Duckweed cultivation setup" className="h-full" />
           </div>
 
-          {/* Figure 1 */}
-          <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center mb-4">
-            <span className="text-gray-500 urbanist">Image Placeholder: IDEM Stock cultivation</span>
-          </div>
           
-          <p className="text-md text-gray-600 urbanist">
-            <strong>Figure 1.</strong> The end of IDEM Stock duckweed 
-            cultivation at the end of summer should look like this 
-            "landscape". Fortunately, by then our CULTIVATOR was 
-            learned, but you are advised to autonomous cultivation.
+          
+          <p>
+            <strong>Picture 1. </strong>
+            <span style={{ fontWeight: 400 }}>
+              The level of iGEM Brno’s duckweed cultivation at the end of summer should
+              not be called “small-scale.” Fortunately, by then our CULTIVATOR was
+              finished, and we switched to autonomous cultivation. You can too - read how
+              on the{" "}
+            </span>
+            <span style={{ fontWeight: 400 }}><Link to="/Hardware">CULTIVATOR page</Link></span>
+            <span style={{ fontWeight: 400 }}>.</span>
           </p>
+
 
           {/* Cultivation Hierarchy */}
           <div>
