@@ -1,7 +1,7 @@
 const FinalMessageSection = () => {
   return (
     <section className="w-full bg-white relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-1">
         <div className="relative">
           {/* Decorative line */}
           <div className="absolute inset-x-0 top-1/2 h-0.5 bg-gray-100 transform -translate-y-1/2"></div>
