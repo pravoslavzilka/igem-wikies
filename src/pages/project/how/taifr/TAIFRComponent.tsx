@@ -103,7 +103,7 @@ const TAIFRComponent = () => {
 
         {/* Figure 3 Bottom - Four circles */}
         <section className="mb-8">
-          <div className="grid grid-cols-4 gap-6 mb-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-4">
             <div className="text-center">
               <div className="bg-gray-200 rounded-full w-32 h-32 mx-auto mb-2 flex items-center justify-center">
                 <span className="text-gray-600 text-xs" style={{ fontFamily: 'Urbanist, sans-serif' }}>1</span>
@@ -275,7 +275,7 @@ const TAIFRComponent = () => {
             
             </>
 
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                 
                 <div className="col-span-3 mt-10 rounded">
                      <p>
@@ -342,7 +342,7 @@ const TAIFRComponent = () => {
           </ul>
 
 
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             {/* First column (1/5 width) */}
             <div className="col-span-2  p-4 rounded">
                 <img style={{ height: '300px', width: 'auto' }} src="https://static.igem.wiki/teams/5642/images/how/taifr/agrobacterium-transfer.webp" alt="Figure 5" className="" />
@@ -386,7 +386,7 @@ const TAIFRComponent = () => {
             </div>
 
 
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             {/* First column (1/5 width) */}
             <div className="col-span-3  p-4 rounded">
                 <>
@@ -540,10 +540,10 @@ const TAIFRComponent = () => {
         </section>
 
 
-        <section className="mb-8">
-          <div className="flex items-start gap-8">
+        <section className="mb-8 ">
+          <div className=" grid grid-cols-1 md:grid-cols-3 gap-4">
             {/* Left side - Question and diagram */}
-            <div className="w-1/3">
+            <div className="col-span-1">
               <h3 className="text-lg font-bold text-gray-800 mb-4 leading-tight" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
                Can we insert transgene into duckweed genome and regenerate transgenic cells into whole plant?
 
@@ -562,7 +562,7 @@ const TAIFRComponent = () => {
             </div>
 
             {/* Right side - Text content */}
-            <div className="w-2/3 text-gray-700">
+            <div className="col-span-2 text-gray-700">
               <p className="text-gray-700 leading-relaxed mb-4 text-justify" style={{ fontFamily: 'Urbanist, sans-serif' }}>
                 We designed our first assay <u>The Regeneration Assay</u>.
               </p>
@@ -614,103 +614,131 @@ const TAIFRComponent = () => {
 
             </div>
           </div>
-        </section>            
+        </section>     
 
 
 
-        {/* We designed our first assay The Regeneration Assay */}
-        <section className="mb-8 clear-both">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-            We designed our first assay The Regeneration Assay.
-          </h2>
-          
-          <p>
+        <section className="mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            
+
+            {/* Right side - Text content */}
+            <div className="col-span-2 text-gray-700">
+              
+              
+              <p style={{ marginTop: '1rem' }}>
                 <span style={{ fontWeight: 400 }}>
-                    In short, duckweed was co-transformed with two{" "}
+                    We were lucky to get Dr. Slotkin on a call (
+                </span>
+                <span style={{ fontWeight: 400 }}>read more in Human Practices</span>
+                <span style={{ fontWeight: 400 }}>
+                    ) to discuss our design with him. He told us that there is no reason this
+                    could not work in duckweed - it is definitely worth giving a try. But we
+                    should first perform{" "}
+                </span>
+                <strong>The Excision Assay</strong>
+                <span style={{ fontWeight: 400 }}>
+                    {" "}
+                    to see whether the PONG transposase is even able to act on mPing in the
+                    duckweed nuclear environment, and to check whether any duckweed-native
+                    transposases might act upon mPing sequences, potentially ruining our
+                    efforts.
+                </span>
+                </p>
+
+
+            </div>
+            {/* Left side - Question and diagram */}
+            <div className="col-span-1">
+              <h3 className="text-lg font-bold text-gray-800 mb-4 leading-tight" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+               But wait… Is PONG transposase actually able to recognize and excise mPing in duckweed?
+
+
+              </h3>
+              
+              {/* Circular diagram placeholder */}
+              <div className="relative w-64 h-64 mx-auto mb-4">
+                <img src="https://static.igem.wiki/teams/5642/images/how/taifr/taifr-cycles.webp" alt="TAIFR Cycle" className="w-64 h-64 object-contain" />
+
+                
+              </div>
+              
+              <h3 className="text-2xl font-bold text-gray-800 text-center" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                EXCISION ASSAY
+
+              </h3>
+            </div>
+          </div>
+        </section>     
+
+
+        <section className="mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {/* Left side - Question and diagram */}
+            <div className="col-span-1">
+              <h3 className="text-lg font-bold text-gray-800 mb-4 leading-tight" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+               And what if Agrobacterium cannot reach the meristematic tissue?
+
+              </h3>
+              
+              {/* Circular diagram placeholder */}
+              <div className="relative w-64 h-64 mx-auto mb-4">
+                <img src="https://static.igem.wiki/teams/5642/images/how/taifr/meristematic.webp" alt="TAIFR Cycle" className="w-64 h-64 object-contain" />
+
+                
+              </div>
+              
+              <h3 className="text-2xl font-bold text-gray-800 text-center" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                MERISTEMATIC ASSAY
+
+              </h3>
+            </div>
+
+            {/* Right side - Text content */}
+            <div className="col-span-2 text-gray-700">
+              
+              <p style={{ marginTop: '1rem' }}>
+                <span style={{ fontWeight: 400 }}>
+                    To address the second possible bottleneck of frond-mediated transformation
+                    in duckweed, we also designed{" "}
+                </span>
+                <strong>The Meristematic Assay</strong>
+                <span style={{ fontWeight: 400 }}>
+                    , utilizing an already established GFP-stable line of{" "}
+                </span>
+                <em>
+                    <span style={{ fontWeight: 400 }}>Spirodela polyrhiza 162</span>
+                </em>
+                <span style={{ fontWeight: 400 }}>
+                    , generated by callus-mediated transformation and kindly provided by Dr.
+                    Ordóñez. We aimed to test whether knocking out GFP using Cas9 guided by GFP
+                    gRNAs would result in decreased or even lost fluorescence in subsequent
+                    generations - thus confirming that{" "}
                 </span>
                 <em>
                     <span style={{ fontWeight: 400 }}>Agrobacterium</span>
                 </em>
                 <span style={{ fontWeight: 400 }}>
                     {" "}
-                    lines. The first carried GFP linked to neomycin resistance between
-                    transposable mPing elements - this is the{" "}
+                    can reach the meristematic cells of duckweed.
                 </span>
-                <strong>PING part</strong>
-                <span style={{ fontWeight: 400 }}>
-                    . The second carried the PONG transposase under the monocot-specific
-                    promoter rZmUBI, which should recognize, cut, move, and insert this cassette
-                    into the duckweed nuclear genome – this is the{" "}
-                </span>
-                <strong>PONG part</strong>
-                <span style={{ fontWeight: 400 }}>.</span>
                 </p>
 
 
-          <p className="text-gray-700 leading-relaxed mb-4 text-justify" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-            From duckweed antibiotic sensitivity tests performed by Dr. Ordóñez, we knew that neomycin, especially its synthetic form G418 - kills duckweed most effectively (Marí-Ordóñez, unpublished). That is why we placed the gene for its resistance, NPTII, into our cassette for insertion into the duckweed nuclear genome.
-          </p>
-
-          <p className="text-gray-700 leading-relaxed mb-4 text-justify" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-            After the, hopefully, successful insertion, we would select transgene-positive cells by neomycin selection, trying to favor transgenic cells over non-transgenic ones in a way that would not kill them all immediately, allowing the few transgenic cells to survive and give rise to new fronds.
-          </p>
-
-          <p className="text-gray-700 leading-relaxed mb-4 text-justify" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-            We were lucky to get Dr. Slotkin on a call (read more in Human Practices) to discuss our design with him. He told us that there is no reason this could not work in duckweed - it is definitely worth giving a try. But we should first perform The Excision Assay to see whether the PONG transposase is even able to act on mPing in the duckweed nuclear environment, and to check whether any duckweed-native transposases might act upon mPing sequences, potentially ruining our efforts.
-          </p>
-
-          <p className="text-gray-700 leading-relaxed mb-6 text-justify" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-            To address the second possible bottleneck of frond-mediated transformation in duckweed, we also designed The Meristematic Assay, utilizing an already established GFP-stable line of Spirodela polyrhiza 162, generated by callus-mediated transformation and kindly provided by Dr. Ordóñez. We aimed to test whether knocking out GFP using Cas9 guided by GFP gRNAs would result in decreased or even lost fluorescence in subsequent generations - thus confirming that Agrobacterium can reach the meristematic cells of duckweed.
-          </p>
-        </section>
-
-        {/* Three Assay Questions - As simple text blocks */}
-        <section className="mb-8">
-          <div className="space-y-8">
-            <div className="text-center">
-              <h3 className="text-xl font-bold text-blue-800 mb-2" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-                REGENERATION ASSAY
-              </h3>
-              <p className="text-blue-700 mb-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                Can we insert transgene into duckweed genome and regenerate transgenic cells into whole plant?
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <h3 className="text-xl font-bold text-purple-800 mb-2" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-                EXCISION ASSAY
-              </h3>
-              <p className="text-purple-700 mb-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                But wait… Is PONG transposase actually able to recognize and excise mPing in duckweed?
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <h3 className="text-xl font-bold text-orange-800 mb-2" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-                MERISTEMATIC ASSAY
-              </h3>
-              <p className="text-orange-700 mb-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                And what if Agrobacterium cannot reach the meristematic tissue?
-              </p>
             </div>
           </div>
-        </section>
+        </section>        
 
-        {/* Additional Regeneration Assay Detail */}
+
+
         
 
-        {/* Discover section */}
-        <section className="mb-8">
-          <div className="text-center py-6 px-8 bg-green-100 rounded-lg">
-            <h2 className="text-xl font-bold text-green-800" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-              Discover how you can use our TAIFR parts and protocol engineer duckweed
-            </h2>
-          </div>
-        </section>
+        
+        
       </main>
 
       {/* Footer with References */}
-      <footer className="bg-gray-50 py-8 border-t border-gray-200">
+      <footer className=" py-8 ">
         <div className="max-w-4xl mx-auto px-8">
           <h3 className="text-lg font-bold mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             References
