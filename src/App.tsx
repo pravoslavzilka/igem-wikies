@@ -24,6 +24,7 @@ import PredictorMain from './pages/project/how/predictor/PredictorMain';
 // Toolbox pages
 import DeepDiveDocument from './pages/toolbox/DeepDive';
 import PromotersSilico from './pages/toolbox/PromotersSilico'
+import VacuumInfiltrationTesting from './pages/toolbox/programable_duckweed/VacuumInfiltrationTesting';
 
 import ToolboxTools from './pages/toolbox/Tools';
 import ToolboxResources from './pages/toolbox/Resources';
@@ -92,6 +93,7 @@ function App() {
           <Route path="/toolbox/predictable-duckweed-protocol/" element={<DuckweedProtocol />} />
           <Route path="/toolbox/programable-duckweed-protocol/" element={<TransformationProtocol />} />
           <Route path="/toolbox/agrobacterium-mediated-transformation-protocol/" element={<AgrobacteriumProtocol />} />
+          <Route path="/toolbox/vacuum-infiltration-testing/" element={<VacuumInfiltrationTesting />} />
 
           
           
