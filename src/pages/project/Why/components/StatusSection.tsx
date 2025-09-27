@@ -36,99 +36,92 @@ const StatusSection = ({
   };
 
   return (
-    <section 
-      className="flex flex-col items-start bg-white"
-      style={{ 
-        padding: '40px 128px', 
-        gap: '64px',
-        width: '1440px',
-        height: '760px'
-      }}
-    >
-      <div 
-        className="flex justify-between items-center w-full"
-        style={{ gap: '200px', width: '1184px', height: '680px' }}
-      >
-        {/* Left Image */}
-        <div 
-          className="rounded-2xl relative overflow-hidden transition-all duration-500"
-          style={{ width: '484px', height: '680px', borderRadius: '16px' }}
-        >
-          {getCurrentStatusImageUrl() ? (
-            <img 
-              src={getCurrentStatusImageUrl()!} 
-              alt="Status accordion content image" 
-              className="w-full h-full object-cover transition-opacity duration-500"
-            />
-          ) : (
-            <>
-              <div className="absolute inset-0 bg-gradient-to-b from-amber-100 via-orange-100 to-red-200"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-24 h-24 bg-orange-200 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <div className="w-12 h-12 bg-orange-500 rounded-full"></div>
+    <section className="w-full bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+        <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-16">
+          {/* Left Image */}
+          <div className="w-full lg:w-1/2 order-1">
+            <div 
+              className="rounded-xl lg:rounded-2xl relative overflow-hidden w-full transition-all duration-500"
+              style={{ 
+                aspectRatio: '4/5',
+                minHeight: '400px',
+                maxHeight: '680px'
+              }}
+            >
+              {getCurrentStatusImageUrl() ? (
+                <img 
+                  src={getCurrentStatusImageUrl()!} 
+                  alt="Status accordion content image" 
+                  className="w-full h-full object-cover transition-opacity duration-500"
+                />
+              ) : (
+                <>
+                  <div className="absolute inset-0 bg-gradient-to-b from-amber-100 via-orange-100 to-red-200"></div>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-center p-8">
+                      <div className="w-16 h-16 lg:w-24 lg:h-24 bg-orange-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <div className="w-8 h-8 lg:w-12 lg:h-12 bg-orange-500 rounded-full"></div>
+                      </div>
+                      <p className="text-gray-600 text-sm">
+                        {activeStatusAccordion ? `${statusAccordionData[activeStatusAccordion]?.title} image` : 'Select a status item'}
+                      </p>
+                    </div>
                   </div>
-                  <p className="text-gray-600 text-sm">
-                    {activeStatusAccordion ? `${statusAccordionData[activeStatusAccordion]?.title} image` : 'Select a status item'}
-                  </p>
+                </>
+              )}
+            </div>
+          </div>
+
+          {/* Right Content */}
+          <div className="w-full lg:w-1/2 order-2">
+            <div className="space-y-6 lg:space-y-10">
+              <p 
+                className="text-gray-500 text-base lg:text-lg font-semibold"
+                style={{ 
+                  fontFamily: 'Urbanist, sans-serif',
+                  color: 'rgba(27, 27, 27, 0.5)'
+                }}
+              >
+                But What is a current status quo of duckweed application?
+              </p>
+              
+              <div className="space-y-6">
+                <AccordionItem
+                  id="food"
+                  title={statusAccordionData['food'].title}
+                  content={statusAccordionData['food'].content}
+                  isActive={activeStatusAccordion === 'food'}
+                  onClick={setActiveStatusAccordion}
+                  showContent={true}
+                />
+                
+                <div className="space-y-6">
+                  <AccordionItem
+                    id="phytoremediation-status"
+                    title={statusAccordionData['phytoremediation-status'].title}
+                    content={statusAccordionData['phytoremediation-status'].content}
+                    isActive={activeStatusAccordion === 'phytoremediation-status'}
+                    onClick={setActiveStatusAccordion}
+                  />
+                  
+                  <AccordionItem
+                    id="biomanufacturing"
+                    title={statusAccordionData['biomanufacturing'].title}
+                    content={statusAccordionData['biomanufacturing'].content}
+                    isActive={activeStatusAccordion === 'biomanufacturing'}
+                    onClick={setActiveStatusAccordion}
+                  />
+                  
+                  <AccordionItem
+                    id="basic-research"
+                    title={statusAccordionData['basic-research'].title}
+                    content={statusAccordionData['basic-research'].content}
+                    isActive={activeStatusAccordion === 'basic-research'}
+                    onClick={setActiveStatusAccordion}
+                  />
                 </div>
               </div>
-            </>
-          )}
-        </div>
-
-        {/* Right Content */}
-        <div 
-          className="flex flex-col items-start"
-          style={{ gap: '40px', width: '584px', height: '597px' }}
-        >
-          <p 
-            className="text-gray-500"
-            style={{ 
-              fontFamily: 'Urbanist, sans-serif',
-              fontSize: '18px',
-              fontWeight: 600,
-              lineHeight: '140%',
-              color: 'rgba(27, 27, 27, 0.5)'
-            }}
-          >
-            But What is a current status quo of duckweed application?
-          </p>
-          
-          <div className="flex flex-col items-start gap-6 self-stretch">
-            <AccordionItem
-              id="food"
-              title={statusAccordionData['food'].title}
-              content={statusAccordionData['food'].content}
-              isActive={activeStatusAccordion === 'food'}
-              onClick={setActiveStatusAccordion}
-              showContent={true}
-            />
-            
-            <div className="space-y-6 self-stretch">
-              <AccordionItem
-                id="phytoremediation-status"
-                title={statusAccordionData['phytoremediation-status'].title}
-                content={statusAccordionData['phytoremediation-status'].content}
-                isActive={activeStatusAccordion === 'phytoremediation-status'}
-                onClick={setActiveStatusAccordion}
-              />
-              
-              <AccordionItem
-                id="biomanufacturing"
-                title={statusAccordionData['biomanufacturing'].title}
-                content={statusAccordionData['biomanufacturing'].content}
-                isActive={activeStatusAccordion === 'biomanufacturing'}
-                onClick={setActiveStatusAccordion}
-              />
-              
-              <AccordionItem
-                id="basic-research"
-                title={statusAccordionData['basic-research'].title}
-                content={statusAccordionData['basic-research'].content}
-                isActive={activeStatusAccordion === 'basic-research'}
-                onClick={setActiveStatusAccordion}
-              />
             </div>
           </div>
         </div>

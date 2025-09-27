@@ -16,17 +16,26 @@ export const getAccordionData = (
   },
   'phytoremediation': {
     title: 'Phytoremediation Chassis',
-    content: ['Content for phytoremediation chassis would go here.'],
+    content: [
+      'Duckweed\'s exceptional nutrient uptake makes it a powerful phytoremediation tool, capable of removing excess nitrogen, phosphorus, and various pollutants from water systems.',
+      'Its rapid growth rate and tolerance to various environmental conditions make it ideal for treating wastewater, agricultural runoff, and contaminated water bodies while producing valuable biomass.'
+    ],
     imageUrl: phytoremediationImageUrl
   },
   'recombinant': {
     title: 'Recombinant Proteins Factory',
-    content: ['Content for recombinant proteins factory would go here.'],
+    content: [
+      'Duckweed\'s simple genetics and ability to perform complex post-translational modifications make it an attractive platform for recombinant protein production.',
+      'Its aquatic nature allows for easy harvesting and processing, while its rapid growth enables quick protein production cycles for pharmaceutical and industrial applications.'
+    ],
     imageUrl: recombinantImageUrl
   },
   'monocot': {
     title: 'Plant Monocot Model Organism',
-    content: ['Content for plant monocot model organism would go here.'],
+    content: [
+      'As one of the simplest flowering plants, duckweed serves as an excellent model organism for studying monocot plant biology and genetics.',
+      'Its small genome, rapid life cycle, and ease of cultivation make it perfect for research applications in plant biology, genetics, and biotechnology.'
+    ],
     imageUrl: monocotImageUrl
   }
 });
@@ -41,23 +50,32 @@ export const getStatusAccordionData = (
     title: 'Food',
     content: [
       'Early efforts are already underway. Startups like GreenOnyx (), PlantibleFoods (), microTERRA (), and LemnaPRO () are pioneers in duckweed cultivation for human use. With superior vegan greens and proteins that have egg-like properties, duckweed-based foods are slowly making their way into gastronomy!',
-      'Some duckweed are approved for human consumption - recognized as GRAS in the USA and authorized as a novel food in the EU for use in protein-rich food products'
+      'Some duckweed are approved for human consumption - recognized as GRAS in the USA and authorized as a novel food in the EU for use in protein-rich food products.'
     ],
     imageUrl: foodImageUrl
   },
   'phytoremediation-status': {
     title: 'Phytoremediation',
-    content: ['Content for phytoremediation status would go here.'],
+    content: [
+      'Several companies and research institutions are already implementing duckweed-based phytoremediation systems for water treatment.',
+      'Current applications focus mainly on municipal wastewater treatment and agricultural runoff management, but the potential for large-scale environmental remediation remains largely untapped.'
+    ],
     imageUrl: phytoremediationStatusImageUrl
   },
   'biomanufacturing': {
     title: 'Biomanufacturing',
-    content: ['Content for biomanufacturing would go here.'],
+    content: [
+      'While promising, duckweed biomanufacturing is still in its infancy with only a few proof-of-concept studies demonstrating recombinant protein production.',
+      'The field lacks standardized protocols and optimization tools that would make duckweed a viable alternative to traditional expression systems like bacteria or mammalian cells.'
+    ],
     imageUrl: biomanufacturingImageUrl
   },
   'basic-research': {
     title: 'Basic Research',
-    content: ['Content for basic research would go here.'],
+    content: [
+      'Research on duckweed is fragmented across various institutions with limited coordination and resource sharing.',
+      'Most studies focus on specific applications rather than developing comprehensive tools and methodologies that could benefit the entire duckweed research community.'
+    ],
     imageUrl: basicResearchImageUrl
   }
 });
