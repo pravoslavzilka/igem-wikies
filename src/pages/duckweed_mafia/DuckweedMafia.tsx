@@ -1,23 +1,35 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const DuckweedMafiaTeam = () => {
   const [currentSection, setCurrentSection] = useState('Founders');
   const [leftColumnFixed, setLeftColumnFixed] = useState(false);
   const [showTeamSection, setShowTeamSection] = useState(false);
 
+  // 1. Create refs for each section
+  const sectionRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
+
+  // Editable scroll offsets for each section (in px)
+  const scrollOffsets: { [key: string]: number } = {
+    Founders: 30,
+    Hackers: 30,
+    Hipsters: -400,   // Adjust as needed
+    Hustlers: -500,   // Adjust as needed
+    PIs: 120,        // Adjust as needed
+    Advisors: 120    // Adjust as needed
+  };
+
+  // 2. Update scrollToSection to use refs and scroll with offset
   const scrollToSection = (sectionTitle) => {
-    const windowHeight = window.innerHeight;
-    let totalMembers = 0;
-    
-    // Calculate the position of the target section
-    for (const section of teamSections) {
-      if (section.title === sectionTitle) {
-        // Add one viewport for intro + accumulated members * 0.6 (since cards are 60vh)
-        const targetPosition = windowHeight + (totalMembers * windowHeight * 0.6);
-        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-        break;
-      }
-      totalMembers += section.members.length;
+    const ref = sectionRefs.current[sectionTitle];
+    if (ref) {
+      const rect = ref.getBoundingClientRect();
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      // Use per-section offset, fallback to 30 if not set
+      const offset = scrollOffsets[sectionTitle] ?? 30;
+      window.scrollTo({
+        top: rect.top + scrollTop - offset,
+        behavior: 'smooth'
+      });
     }
   };
 
@@ -28,23 +40,19 @@ const DuckweedMafiaTeam = () => {
         {
           name: "Matej Zámečník",
           role: "visionary working in lab, transformation specialist, excellent negotiator, experimental biology of plants graduate",
-          description: "Matěj is a visionary at the intersection of biotechnology, synthetic biology, and entrepreneurship. A hacker and techno-optimist, he seeks to delay entropy, enhance complexity, and promote sustainability by upgrading biological systems and advancing decentralized technologies. Calling himself a 'molecular horticulturist,' he works on making plants truly scalable. Passionate about biohacking, Matěj blends scientific innovation with an adventurous spirit, aspiring to merge high-tech progress with the resilience of nature"
+          description: "Matěj is a visionary at the intersection of biotechnology, synthetic biology, and entrepreneurship. A hacker and techno-optimist, he seeks to delay entropy, enhance complexity, and promote sustainability by upgrading biological systems and advancing decentralized technologies. Calling himself a “molecular horticulturist,” he works on making plants truly scalable. Passionate about biohacking, Matěj blends scientific innovation with an adventurous spirit, aspiring to merge high-tech progress with the resilience of nature"
         },
         {
           name: "Matúš Grieš",
           role: "Lab master, chief Promoter, the peacekeeper, experimental biology of plants student",
-          description: "Matúš always tries to balance out Matej so the team doesn't get fed up. And he gets balanced by Miro so they don't do cool stuff that does not make sense. When he puts on his red glasses, Chinese folks start asking for autographs. Besides iGEM, sleeping and eating, he grinds on an athletic track and sometimes pretends to play one of his four instruments."
+          description: "Matúš always tries to balance out Matej so the team doesn’t get fed up. And he gets balanced by Miro so they don’t do cool stuff that does not make sense. When he puts on his red glasses, Chinese folks start asking for autographs. Besides iGEM, sleeping and eating, he grinds on an athletic track and sometimes pretends to play one of his four instruments."
         },
         {
           name: "Miro Rosputinský",
-          role: "Lab buddy, cultivation master, king of copywriting, experimental biology of plants student",
+          role: "ab buddy, cultivation master, king of copywriting, experimental biology of plants student",
           description: "Miro's life has been mostly iGEM, but outside of it, he is drawn to stories—whether told through a well-written paper, a book, or a film. He is an avid Wikipedia deep-diver, a puzzle and quiz enthusiast, and a principled opponent of memorizing chess openings."
-        },
-        {
-          name: "Zdeňka Vilhanová",
-          role: "head of offline events, junior-ish designer, duckweed dish wizard, biochemistry student",
-          description: "Zdenka is the heart of our Duckweed Hipsters team – a brilliant negotiator, a true friend, and the one who always gets things done. Whether she's baking her legendary duckweed cookies or offering tea with a smile, she keeps everything running smoothly. Beyond iGEM, she works on a fascinating project with hydrogen-eating bacteria. Calm, clever, and endlessly kind – we couldn't wish for a better teammate!"
         }
+        
       ]
     },
     {
@@ -52,19 +60,15 @@ const DuckweedMafiaTeam = () => {
       members: [
         {
           name: "Hanka Slámová",
-          role: "head of instagram. science communication, bit of a lab rat, environment and health student",
-          description: "Always on the move – whether it's across countries or between bold ideas. A biohacking enthusiast who blends science with everyday life, and a music lover often found with a guitar in hand, singing, or rehearsing for the next play. Passionate about exploring new ways to optimize both experiments and human potential. Outside of iGEM, she dives deep into endocrine disruption and neurotoxicity research"
+          role: "lab master, wikies in process, toxicology student",
+          description: "Hanka believes everyone deserves to explore the wonders of science. That’s why you’ll often catch her giving lively talks at science fairs, devising tasks for student competitions, and sparking curiosity in young minds at summer camps. Other times, you'll find her on the dance floor, camera in hand at a mountain peak, or chilling in her favourite café. Beyond iGEM, her main research interests are environmental pollutants causing endocrine disruption."
         },
         {
           name: "Terka Slančíková",
-          role: "lab master, wikies in process, toxicology student",
-          description: "Terka's greatest inspiration is nature in all its forms. She is fascinated by the way it finds solutions with maximum efficiency and minimal materials. Keeping that sense of wonder in the back of her mind shapes both who she is and the choices she makes, personally and professionally."
-        },
-        {
-          name: "Klárka Pěchoučková",
           role: "Lab master, promoter team bestie, molecular biology student",
-          description: "Hanka believes everyone deserves to explore the wonders of science. That's why you'll often catch her giving lively talks at science fairs, devising tasks for student competitions, and sparking curiosity in young minds at summer camps. Other times, you'll find her on the dance floor, camera in hand at a mountain peak, or chilling in her favourite café. Beyond iGEM, her main research interests are environmental pollutants causing endocrine disruption."
+          description: "Terka's greatest inspiration is nature in all its forms. She is fascinated by the way it finds solutions with maximum efficiency and minimal materials. Keeping that sense of wonder in the back of her mind shapes both who she is and the choices she makes, personally and professionally.-"
         },
+
         {
           name: "Miška Prokopová",
           role: "Dry&Wet lab trainee, bioinformatics student",
@@ -73,11 +77,11 @@ const DuckweedMafiaTeam = () => {
         {
           name: "Jonáš Pospíchal",
           role: "isolation master, TAIFR lab bro, genomic and proteomic student",
-          description: "Jony is rarely idle. He enjoys gaining knowledge just as much as sharing it, whether through teaching or tutoring. Lately, being completely engrossed in iGEM, he has let some of his other hobbies – like diving – slide a bit. Alongside his commitment to plant biology as a way of helping the planet, he is equally fascinated by human biology, driven by the desire to live a long and healthy life. He still hasn't quite developed a taste for music and art, though."
+          description: "Jony is rarely idle. He enjoys gaining knowledge just as much as sharing it, whether through teaching or tutoring. Lately, being completely engrossed in iGEM, he has let some of his other hobbies – like diving – slide a bit. Alongside his commitment to plant biology as a way of helping the planet, he is equally fascinated by human biology, driven by the desire to live a long and healthy life. He still hasn’t quite developed a taste for music and art, though."
         },
         {
           name: "Barča Gavendová",
-          role: "Lab master, TAIFR team, biology graphics queen, molecular biology and genetics student",
+          role: "Lab master, TAIFR team, biology graphics queen, molecular biology and genetics student ",
           description: "Barča is seldom still. She loves nature and all kinds of outdoor sports - hiking, rock climbing, outdoor swimming - and some indoor too, like dancing. When she doesn't have the energy for that, she likes to read and eat something sweet she baked. She values nature greatly and believes biotechnology can help us protect it. In her non-iGem lab, she works on a small piece of this whole puzzle, modifying bacteria so that they can consume waste biomass."
         },
         {
@@ -96,9 +100,19 @@ const DuckweedMafiaTeam = () => {
       title: "Hipsters",
       members: [
         {
+          name: "Zdeňka Vilhanová",
+          role: "head of offline events, junior-ish designer, duckweed dish wizard, biochemistry student",
+          description: "Zdenka is the heart of our Duckweed Hipsters team — a brilliant negotiator, a true friend, and the one who always gets things done. Whether she’s baking her legendary duckweed cookies or offering tea with a smile, she keeps everything running smoothly. Beyond iGEM, she works on     a fascinating project with hydrogen-eating bacteria. Calm, clever, and endlessly kind — we couldn’t wish for a better teammate!"
+        },
+        {
+          name: "Klárka Pěchoučková",
+          role: "head of instagram. science communication, bit of a lab rat, environment and health student",
+          description: "Always on the move — whether it's across countries or between bold ideas. A biohacking enthusiast who blends science with everyday life, and a music lover often found with a guitar in hand, singing, or rehearsing for the next play. Passionate about exploring new ways to optimize both experiments and human potential. Outside of iGEM, she dives deep into endocrine disruption and neurotoxicity research"
+        },
+        {
           name: "Peťo Schmidt",
-          role: "head of linkedIn, the 'let´s sell the duckweed guy' chief email officer, economy student",
-          description: "Energetic and thoughtful, he's the kind of person who leads with both heart and action. Whether he's dancing, running, or deep in a book, he's always learning and growing. A graduate of leadership academies and an active force in NGOs, he's passionate about making a real impact. He just graduated from ECON MUNI – and he's only getting started!"
+          role: "head of linkedIn, the “let´s sell the duckweed guy chief email officer, economy student",
+          description: "Energetic and thoughtful, he's the kind of person who leads with both heart and action. Whether he's dancing, running, or deep in a book, he's always learning and growing. A graduate of leadership academies and an active force in NGOs, he's passionate about making a real impact. He just graduated from ECON MUNI — and he's only getting started!"
         }
       ]
     },
@@ -106,19 +120,20 @@ const DuckweedMafiaTeam = () => {
       title: "Hustlers",
       members: [
         {
+          name: "Martin Pavella",
+          role: "cultivator developer, machine learning software architect",
+          description: "Martin often feels torn between sacrificing everything for work and progress, and simply settling into a quiet and peaceful life. At the same time, he can’t help but push himself to keep learning about how the world truly works. He is trying to figure out where he fits in it, and how he can do the most for the benefit of humanity, nature, and for the people close to him. He loves math and technology, especially the way they can make difficult problems feel so simple in hindsight."
+        },
+        {
           name: "Pravoslav Žilka",
           role: "Cultivator engineer. 3d modeling, faculty of mechanical engineering",
           description: "Finding elegance in complex systems, Pravo seeks patterns that reveal simplicity hidden within apparent chaos. His goal is to make use of all the remaining space and possibilities that time has to offer before the inevitable thermal dead end, turning limitations into opportunities for discovery. By embracing both the beauty of structure and the urgency of finitude, his paradigm views progress not as endless expansion, but as the art of shaping meaning and innovation within the boundaries of existence."
         },
-        {
-          name: "Martin Pavella",
-          role: "cultivator developer, machine learning software architect",
-          description: "Martin often feels torn between sacrificing everything for work and progress, and simply settling into a quiet and peaceful life. At the same time, he can't help but push himself to keep learning about how the world truly works. He is trying to figure out where he fits in it, and how he can do the most for the benefit of humanity, nature, and for the people close to him. He loves math and technology, especially the way they can make difficult problems feel so simple in hindsight."
-        },
+        
         {
           name: "Andrej Žabka",
           role: "Cultivator developer, electronics designer, CAD",
-          description: "Once Andrej discovers something that sparks his curiosity, he doesn't let go – days blur into nights as he dives deep until he masters it. Drawn to the intersection of mechanics, electronics and creativity, he has worked with CNC machines, designed artistic pieces and built custom interactive systems blending engineering with storytelling. From automation and exhibition electronics to precise CAD models, he treats each task as both a technical puzzle and a chance to create something meaningful – technology as a way to give form to ideas that connect people with innovation."
+          description: "Once Andrej discovers something that sparks his curiosity, he doesn’t let go — days blur into nights as he dives deep until he masters it. Drawn to the intersection of mechanics, electronics and creativity, he has worked with CNC machines, designed artistic pieces and built custom interactive systems blending engineering with storytelling. From automation and exhibition electronics to precise CAD models, he treats each task as both a technical puzzle and a chance to create something meaningful — technology as a way to give form to ideas that connect people with innovation."
         },
         {
           name: "David Kopecký",
@@ -128,7 +143,7 @@ const DuckweedMafiaTeam = () => {
         {
           name: "Anna Podmanická",
           role: "metabolic models expert, curious junior, highschool student",
-          description: "Anna sees life as one big adventure full of questions worth asking. She loves learning, connecting ideas across disciplines—from math to astrobiology to environmental engineering—and especially diving into things she's not great at (yet!), like history or public speaking. She believes progress means growing wisdom together, not just power in the hands of a few. Whether she's working on her wastewater treatment project PURA, volunteering for AMAVET, or teaming up with iGEM Brno, she's happiest in curious, creative communities full of young people trying to make a difference. Her motto? If you're the smartest person in the room, you are in the wrong room:)"
+          description: "Anna sees life as one big adventure full of questions worth asking. She loves learning, connecting ideas across disciplines—from math to astrobiology to environmental engineering—and especially diving into things she’s not great at (yet!), like history or public speaking. She believes progress means growing wisdom together, not just power in the hands of a few. Whether she’s working on her wastewater treatment project PURA, volunteering for AMAVET, or teaming up with iGEM Brno, she’s happiest in curious, creative communities full of young people trying to make a difference. Her motto? If you’re the smartest person in the room, you are in the wrong room:)"
         },
         {
           name: "Michal Šimčák",
@@ -138,12 +153,12 @@ const DuckweedMafiaTeam = () => {
         {
           name: "Marko Mećava",
           role: "cultivation hustler, promoters developer, proteomics and genomic student",
-          description: "Balkan-tempered hedonist, passionate about science, sports and beauty, I thrive on contrasts – from extreme sports to biochemistry research. Feeling 'in between worlds' drives Marko to balance curiosity, creativity, discipline and joy. Synthetic biology excites me for its potential to solve global problems and spark innovation. Currently he is focusing on Alzheimer's and neurobiology, using stem cell models to study disease development. Beyond the lab Marko is training, running, enjoying techno, acting or working on a new venture. Ambitious, bold and bald, yet empathetic, his tattoos remind him of the contrasts that shape Marko´s life."
+          description: "Balkan-tempered hedonist, passionate about science, sports and beauty, I thrive on contrasts — from extreme sports to biochemistry research. Feeling “in between worlds” drives Marko to balance curiosity, creativity, discipline and joy. Synthetic biology excites me for its potential to solve global problems and spark innovation. Currently he is focusing on Alzheimer’s and neurobiology, using stem cell models to study disease development. Beyond the lab Marko is training, running, enjoying techno, acting or working on a new venture. Ambitious, bold and bald, yet empathetic, his tattoos remind him of the contrasts that shape Marko´s life."
         },
         {
           name: "Ondřej Švanda",
           role: "botany student, media master, weedeater",
-          description: "Lover of growth media preparation (it's like cooking) and making duckweeds happy and thriving. When Ondra works in flow box, Greenhouse or fytotrone he feels like on the seashore - thanks to its (for someone annoying) humming. Ondra is totally fascinated by the duckweeds' growth!"
+          description: "Lover of growth media preparation (it’s like cooking) and making duckweeds happy and thriving. When Ondra works in flow box, Greenhouse or fytotrone he feels like on the seashore - thanks to its (for someone annoying) humming. Ondra is totally fascinated by the duckweeds’ growth!"
         }
       ]
     },
@@ -151,20 +166,21 @@ const DuckweedMafiaTeam = () => {
       title: "PIs",
       members: [
         {
+          name: "doc. Pavel Dvořák, Ph.D.",
+          role: "Fostering synthetic biology and bioengineering at Masaryk University, across the Czech Republic, and beyond is my mission.",
+          description: "Pavel believes that biology and bioengineering will not solve all of our problems, but they can solve many and make our lives more sustainable. Experiencing the beauty and diversity of nature while travelling, hiking, cycling, or simply enjoying quiet evenings on the terrace with his family assures him it is worth the effort. The enthusiasm of their talented students is what keeps him going."
+        },
+        {
           name: "Karel Říha, Ph.D.",
-          role: "Senior Principal Investigator at Masaryk University and Director of Science at CEITEC",
+          role: "Senior Principal Investigator at Masaryk University and Director of Science at CEITEC, where he serves as a leading scientist and dedicated mentor.",
           description: "He believes today is an extraordinary time to begin a research career and is passionate about guiding the next generation. He empowers young scientists by challenging them with the right questions to foster critical thinking. Despite a demanding schedule, he consistently finds time to offer thoughtful advice and suggest improvements to experiments, demonstrating his commitment to both science and the people who drive it forward."
         },
         {
           name: "Arturo Marí-Ordóñez, Ph.D.",
-          role: "Research group leader at the Gregor Mendel Institute in Vienna",
-          description: "Arturo leads a research group at the Gregor Mendel Institute in Vienna, where they study how plants detect and silence transposable elements through small RNA and chromatin-based pathways. His aim is to uncover the molecular mechanisms that safeguard genome integrity and translate these insights into broader applications in plant biology and biotechnology."
-        },
-        {
-          name: "doc. Pavel Dvořák, Ph.D.",
-          role: "Faculty member focused on synthetic biology and bioengineering",
-          description: "Fostering synthetic biology and bioengineering at Masaryk University, across the Czech Republic, and beyond is my mission. Pavel believes that biology and bioengineering will not solve all of our problems, but they can solve many and make our lives more sustainable. Experiencing the beauty and diversity of nature while travelling, hiking, cycling, or simply enjoying quiet evenings on the terrace with his family assures him it is worth the effort. The enthusiasm of their talented students is what keeps him going."
+          role: "Advancing our understanding of epigenetic silencing in duckweeds, while supporting the next generation of synthetic biologists.",
+          description: "We see Arturo as the “Duckweed King” 👑—a funny but fitting title, given his immense knowledge of duckweed genetic engineering and his use of these tiny plants as a system to study genome defense. His research focuses on how plants protect themselves from transposable elements (TEs), which act like molecular parasites by hijacking cellular machinery and potentially disrupting essential genes. Arturo has uncovered that plants can recognize TE mRNAs as foreign during translation, activating a small RNA–based post-transcriptional silencing response that later transitions into chromatin-level repression for stable, heritable control. Ultimately, his work sheds light on the delicate balance between genome defense and genome evolution in plants."
         }
+        
       ]
     },
     {
@@ -172,8 +188,8 @@ const DuckweedMafiaTeam = () => {
       members: [
         {
           name: "Helene Robert Boisivon, Ph.D.",
-          role: "Plant biology researcher and advisor",
-          description: "Helene believes that understanding the fundamental principles of plant life is key to addressing the greatest challenges of our time, such as climate change and food security. Although plant biology does not offer an answer to everything, it gives us powerful tools to create more resilient crops for more sustainable agriculture. Her international experience at leading European institutions has convinced her that scientific collaboration and a diversity of perspectives are essential for progress. It is the enthusiasm and curiosity of her students and team members that constantly inspire her and drive her forward."
+          role: "Uncovering the secrets of plant life at the molecular level is the key to ensuring our future in a changing climate.",
+          description: "Helene believes that understanding the fundamental principles of plant life is key to addressing the greatest challenges of our time, such as climate change and food security. She studies how environmental factors, especially high temperatures, influence seed development and quality in Arabidopsis thaliana and Brassica napus. Their research focuses on the hormonal signaling pathways that regulate plant growth and early seed development at the molecular level. Although plant biology does not offer an answer to everything, it gives us powerful tools to create more resilient crops for more sustainable agriculture. It is the enthusiasm and curiosity of her students and team members that constantly inspire her and drive her forward."
         }
       ]
     }
@@ -197,7 +213,7 @@ const DuckweedMafiaTeam = () => {
         
         // Calculate which team section we're in based on scroll position
         // Subtract half viewport height to account for early transition
-        const teamScrollPosition = scrollPosition - (windowHeight * 0.5);
+        const teamScrollPosition = scrollPosition - (windowHeight * 1.5);
         let totalMembers = 0;
         let currentSectionTitle = 'Founders';
         
@@ -234,10 +250,10 @@ const DuckweedMafiaTeam = () => {
       
 
           {/* Team Photo Placeholder */}
-           <div className="mb-8 w-full max-w-md">
-            <div className="w-full h-64 bg-green-200 rounded-lg flex items-center justify-center">
+           <div className="mb-8 w-full ">
+            <div className="  rounded-lg flex items-center justify-center">
             <img src="https://static.igem.wiki/teams/5642/images/duckweedmafia/team/igem-promo-09-min.webp"
-                style={{ width:"100%", height:"100%", objectFit:"cover", borderRadius:"0.5rem" }} />
+                style={{  height:"400px", width:"100%", objectFit:"cover", borderRadius:"0.5rem" }} />
             </div>
         </div>
 
@@ -283,10 +299,7 @@ const DuckweedMafiaTeam = () => {
                   </button>
                 </p>
                 <p className="mb-3">
-                  The builders and experimenters. Hackers run the bench, write code, test
-                  protocols and translate chaos into data. They split projects into clear
-                  tasks, document results and make sure every late night in the lab moves
-                  us closer to the goal.
+                  The builders and experimenters. Hackers run the bench, write code, test protocols and translate chaos into data. They split projects into clear tasks, document results and make sure every late night in the lab moves us closer to the goal.
                 </p>
               </div>
 
@@ -300,10 +313,7 @@ const DuckweedMafiaTeam = () => {
                   </button>
                 </p>
                 <p className="mb-3">
-                  In our version of the 3H, hustlers are the cultivation crew. They design and
-                  manage systems: containers, cultivation conditions, optimal conditions for
-                  growth. They think about applications in the field, and set up routines for
-                  pumping & harvesting so our biology works reliably outside the lab.
+                  In our version of the 3H, hustlers are the cultivation crew. They design and manage systems: containers, kultivační podmínky, optimální podmínky for growth. They think about applications in the field, and set up routines for pumping & harvesting so our biology works reliably outside the lab.
                 </p>
               </div>
 
@@ -317,9 +327,7 @@ const DuckweedMafiaTeam = () => {
                   </button>
                 </p>
                 <p className="mb-3">
-                  The storytellers and designers. They craft our identity, visuals and
-                  narrative so the science feels human and exciting. From brand to video,
-                  they make sure people get what we're doing – and why it matters.
+                  The storytellers and designers. They craft our identity, visuals and narrative so the science feels human and exciting. From brand to video, they make sure people get what we’re doing — and why it matters.
                 </p>
               </div>
 
@@ -333,10 +341,7 @@ const DuckweedMafiaTeam = () => {
                   </button>
                 </p>
                 <p className="mb-3">
-                  The glue across all teams. Founders coordinate, connect dots and keep
-                  the whole machine aligned. They care about long-term vision, hustle on
-                  lab experiments, design sessions and pitches – making sure all the
-                  moving parts work together.
+                  The glue across all teams. Founders coordinate, connect dots and keep the whole machine aligned. They care about long-term vision, hustle on lab experiments, design sessions and pitches — making sure all the moving parts work together.
                 </p>
               </div>
 
@@ -390,7 +395,12 @@ const DuckweedMafiaTeam = () => {
         <div className={`w-full transition-all duration-500 ${showTeamSection ? 'md:w-1/2 md:ml-auto' : ''}`}>
           {teamSections.map((section, sectionIndex) =>
             section.members.map((member, memberIndex) => (
-              <div key={`${sectionIndex}-${memberIndex}`} className="min-h-[60vh] bg-white p-4 md:p-8 flex flex-col justify-center">
+              <div
+                key={`${sectionIndex}-${memberIndex}`}
+                // 3. Attach ref only to the first member of each section
+                ref={memberIndex === 0 ? (el) => { sectionRefs.current[section.title] = el; } : undefined}
+                className="min-h-[60vh] bg-white p-4 md:p-8 flex flex-col justify-center"
+              >
                 {/* Mobile Section Header - Only visible on mobile */}
                 <div className="mb-8 md:hidden">
                   <h2 className="text-2xl font-bold text-green-700 mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
@@ -407,7 +417,7 @@ const DuckweedMafiaTeam = () => {
                 {/* Member Profile */}
                 <div className="flex-1">
                   {/* Guest Label */}
-                  <p className="text-xs text-gray-500 mb-4 uppercase tracking-wide" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                  <p className="text-md text-gray-500 mb-4 uppercase tracking-wide" style={{ fontFamily: 'Urbanist, sans-serif' }}>
                     QUEST: {member.role}
                   </p>
 
@@ -423,7 +433,7 @@ const DuckweedMafiaTeam = () => {
                   </div>
 
                   {/* Member Description */}
-                  <div className="text-sm text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                  <div className="text-lg text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>
                     <p className="leading-relaxed">
                       {member.description}
                     </p>
