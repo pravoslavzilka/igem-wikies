@@ -42,8 +42,8 @@ const WhyPlantsSuck = () => {
                 can be transformed and analyzed within 24–48 hours, 
                 allowing researchers to quickly test new constructs, 
                 obtain results and iterate [4]. In contrast, plant 
-                transformations take far longer. In the standard model 
-                <em>Arabidopsis thaliana</em>, stable transformation and 
+                transformations take far longer. In the standard model  
+                 <em> Arabidopsis thaliana</em>, stable transformation and 
                 selection typically requires 2 - 3 months [5]. 
                 Agricultural plants like corn, rice, wheat or soybeans 
                 tend to be more recalcitrant and the process is even 
@@ -80,7 +80,7 @@ const WhyPlantsSuck = () => {
                   alt="E.coli bacteria"
                   className="  w-full h-50 object-cover rounded-lg mb-2"
                 />
-                <p className="text-xs text-black font-medium text-center">Escherichia coli
+                <p className="text-sm text-black font-medium text-center"><em>Escherichia coli (picture by James Smith)</em>
 </p>
               </div>
               
@@ -90,7 +90,7 @@ const WhyPlantsSuck = () => {
                   alt="Soybean plant"
                   className="w-full h-50 object-cover rounded-lg mb-2"
                 />
-                <p className="text-xs text-black font-medium text-center">Glycine max green pod — Macleay Grass Man, via Wikimedia Commons, CC BY 2.0
+                <p className="text-sm text-black font-medium text-center"><em>Soybean (Glycine max) green pod (picture by Macleay Grass Man)</em>
 </p>
               </div>
 
@@ -101,10 +101,7 @@ const WhyPlantsSuck = () => {
                   alt="Plant seedlings in laboratory"
                   className="w-full h-50 object-cover rounded-lg mb-2"
                 />
-                <p className="text-xs text-gray-600 text-center">
-                  The budding seedling of an Arabidopsis thaliana triple mutant — Martin Stübler, via Wikimedia Commons, CC BY-SA 4.0
-
-                </p>
+                <p className="text-sm text-black font-medium text-center"><em>The flowering Arabidopsis thaliana triple mutant in phytotron (picture by Martin Stübler)</em></p>
               </div>
             </div>
           </div>
@@ -234,8 +231,8 @@ const WhyPlantsSuck = () => {
             <div className="space-y-4">
               {/* E. coli transformation */}
               <div className="border-2 border-gray-300 rounded-lg p-4 bg-gray-50 flex flex-row items-center gap-4">
-                <div className="h-40 w-40 bg-blue-100 rounded flex items-center justify-center flex-shrink-0"> {/* increased from h-24 w-24 */}
-                  <span className="text-gray-600 text-md text-center">Sketch from Barča<br/>(E.coli transformation)</span>
+                <div className="  rounded flex items-center justify-center flex-shrink-0"> {/* increased from h-24 w-24 */}
+                  <img style={{height: '150px', width: 'auto'}} src="https://static.igem.wiki/teams/5642/images/toolbox/whyplantssuck/bacterial-transformation-copy-3.webp" alt="E. coli transformation" className="h-full rounded w-full object-contain" />
                 </div>
                 <div className="text-left flex-1">
                   <h4 className="font-bold text-md text-black">E. coli transformation</h4>
@@ -258,15 +255,15 @@ const WhyPlantsSuck = () => {
                     seeds produce transformants [18].
                   </p>
                 </div>
-                <div className="h-40 w-40 bg-green-100 rounded flex items-center justify-center flex-shrink-0"> {/* increased from h-24 w-24 */}
-                  <span className="text-gray-600 text-md text-center">Sketch from Barča<br/>(floral dip)</span>
+                <div className="  rounded flex items-center justify-center flex-shrink-0"> {/* increased from h-24 w-24 */}
+                  <img style={{height: '170px', width: 'auto'}} src="https://static.igem.wiki/teams/5642/images/toolbox/whyplantssuck/floral-dip-copy.webp" alt="E. coli transformation" className="h-full rounded w-full object-contain" />
                 </div>
               </div>
 
               {/* Maize and soybean transformation */}
               <div className="border-2 border-gray-300 rounded-lg p-4 bg-gray-50 flex flex-row items-center gap-4">
-                <div className="h-40 w-40 bg-yellow-100 rounded flex items-center justify-center flex-shrink-0"> {/* increased from h-24 w-24 */}
-                  <span className="text-gray-600 text-md text-center">Sketch from Barča<br/>(calli transformation)</span>
+                <div className="  rounded flex items-center justify-center flex-shrink-0"> {/* increased from h-24 w-24 */}
+                  <img style={{height: '150px', width: 'auto'}} src="https://static.igem.wiki/teams/5642/images/toolbox/whyplantssuck/calli-transformation-copy.webp" alt="E. coli transformation" className="h-full rounded w-full object-contain" />
                 </div>
                 <div className="text-left flex-1">
                   <h4 className="font-bold text-md text-black">Maize and soybean transformation</h4>
@@ -304,7 +301,7 @@ const WhyPlantsSuck = () => {
 
           </div>
           <p className="mt-10" style={{ fontFamily: "Urbanist, sans-serif" }  }>
-              At iGEM Brno, we are developing a faster and simpler way to transform the fastest growing plant on Earth. By implementing our transposon-based transformation TAIFR (link to page describing TAIFR), we aim to generate stable, uniformly transformed lines “in-planta” more efficiently. Duckweed’s rapid growth and simple body plan make it an ideal chassis, while removing the dependence on long tissue culture steps lowers the risk of somaclonal variation. With this approach, we aim not only to unlock its unique biotechnological potential (Why?), but also to provide plant researchers with a new model system — one that enables the generation of stable engineered lines quickly, affordably, and predictably. This would accelerate plant-oriented basic research and help translate it more rapidly into meaningful impact for society.
+              At iGEM Brno, we are developing a faster and simpler way to transform the fastest growing plant on Earth. By implementing our transposon-based transformation TAIFR (link to page describing TAIFR), we aim to generate stable, uniformly transformed lines “in-planta” more efficiently. Duckweed’s rapid growth and simple body plan make it an ideal chassis, while removing the dependence on long tissue culture steps lowers the risk of somaclonal variation. With this approach, we aim not only to unlock its unique biotechnological potential <Link to="/project/why" className="text-blue-500" style={{ textDecoration: "underline" }}>(Why)</Link>, but also to provide plant researchers with a new model system — one that enables the generation of stable engineered lines quickly, affordably, and predictably. This would accelerate plant-oriented basic research and help translate it more rapidly into meaningful impact for society.
 
             </p>
         </div>
