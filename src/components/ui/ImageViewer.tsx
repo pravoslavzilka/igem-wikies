@@ -4,7 +4,7 @@ export interface ImageSlide {
     src: string;
     title?: string;
     leftNote?: string;
-    rightNote?: string;
+    rightNote?: string[];
     bottomNote?: string;
 }
 
@@ -67,11 +67,12 @@ const ImageViewer: React.FC<ImageViewerProps> = ({
                 {/* Close */}
                 <button
                     onClick={onClose}
-                    className="absolute top-2 right-2 md:top-4 md:right-4 text-white text-3xl md:text-4xl leading-none"
+                    className="fixed top-4 right-6 md:top-6 md:right-10 text-white text-6xl leading-none hover:scale-110 transition-transform z-50"
                     aria-label="Close"
                 >
                     ×
                 </button>
+
 
                 {/* Title */}
                 {title && (
@@ -82,21 +83,22 @@ const ImageViewer: React.FC<ImageViewerProps> = ({
 
                 {/* Image with side notes */}
                 <div className="flex items-center justify-center gap-4">
-                    {/* Left note */}
-                    {leftNote && (
-                        <div className="hidden md:block text-white text-sm max-w-[15vw] text-right">
-                            {leftNote}
-                        </div>
-                    )}
 
                     {/* Prev button */}
                     <button
                         onClick={prev}
-                        className="text-white text-4xl md:text-5xl leading-none select-none"
+                        className="p-6 md:p-8 text-white text-5xl md:text-6xl leading-none select-none hover:scale-110 transition-transform"
                         aria-label="Previous image"
                     >
                         ‹
                     </button>
+
+                    {/* Left note */}
+                    {leftNote && (
+                        <div className="hidden md:block text-white text-lg max-w-[15vw] text-right">
+                            {leftNote}
+                        </div>
+                    )}
 
                     {/* Image */}
                     <img
@@ -105,21 +107,25 @@ const ImageViewer: React.FC<ImageViewerProps> = ({
                         className="max-h-[70vh] max-w-[60vw] object-contain rounded-lg shadow-lg"
                     />
 
+                    {/* Right note */}
+                    {rightNote && (
+                        <div className="hidden md:block text-white text-lg max-w-[15vw] text-left space-y-2">
+                            {Array.isArray(rightNote)
+                                ? rightNote.map((line, idx) => <p key={idx}>• {line}</p>)
+                                : rightNote}
+                        </div>
+                    )}
+
+
                     {/* Next button */}
                     <button
                         onClick={next}
-                        className="text-white text-4xl md:text-5xl leading-none select-none"
+                        className="p-6 md:p-8 text-white text-5xl md:text-6xl leading-none select-none hover:scale-110 transition-transform"
                         aria-label="Next image"
                     >
                         ›
                     </button>
 
-                    {/* Right note */}
-                    {rightNote && (
-                        <div className="hidden md:block text-white text-sm max-w-[15vw] text-left">
-                            {rightNote}
-                        </div>
-                    )}
                 </div>
 
                 {/* Bottom note */}
