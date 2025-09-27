@@ -179,7 +179,8 @@ const BrazilDeforestationWidget = () => {
   return (
     <div ref={scrollContainerRef} style={{ height: `${CONFIG.scroll.multiplier * 100}vh` }}>
       <div style={{ position: 'sticky', top: '0px', height: '100vh', overflow: 'hidden' }}>
-        <div className="w-full h-full flex items-center  mt-10 " style={{ backgroundColor: CONFIG.colors.background }}>
+        {/* Odstránené mt-10 aby neboli biele pásy */}
+        <div className="w-full h-full flex items-center" style={{ backgroundColor: CONFIG.colors.background }}>
           <AnimatePresence mode="wait">
             {loading ? (
               <motion.div key="loading" className="w-full flex items-center justify-center" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>

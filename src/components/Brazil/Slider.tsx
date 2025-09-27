@@ -53,17 +53,19 @@ const Slider: React.FC<SliderProps> = ({
               const isCenter = index === 10;
               const isFirstOrLast = index === 0 || index === numberOfTicks - 1;
               const tickOpacity = isDisabled ? 0.5 : 1;
+
+              // --- OPRAVA: Logika pre veľkosť paličiek je teraz oddelená od stavu 'isActive' ---
+              // Veľkosť je konštantná a závisí len od pozície paličky.
+              const sizeClass = isCenter
+                ? 'h-6 w-1'
+                : isFirstOrLast
+                  ? 'h-4 w-0.5'
+                  : 'h-3 w-px';
               
               return (
                 <div
                   key={tickValue}
-                  className={`transition-colors duration-300 ${ // transition je len na farbu, nie na všetko
-                    isCenter 
-                      ? (isActive ? 'h-6 w-1' : 'h-5 w-0.5')
-                      : isFirstOrLast 
-                        ? (isActive ? 'h-4 w-0.5' : 'h-3 w-px')
-                        : (isActive ? 'h-3 w-px' : 'h-2 w-px')
-                  }`}
+                  className={`transition-colors duration-300 ${sizeClass}`} // Použije sa nová, pevná veľkostná trieda
                   style={{ 
                     backgroundColor: isActive 
                       ? CONFIG.colors.accent 
@@ -75,7 +77,6 @@ const Slider: React.FC<SliderProps> = ({
             })}
           </div>
           
-          {/* OPRAVA: Zväčšený handle, odstránený "transition-all" a zmena opacity */}
           <div
             className={`absolute bottom-0 transform -translate-x-1/2 w-3 h-6 rounded-sm shadow-lg ${
               isDisabled ? 'animate-pulse' : ''
