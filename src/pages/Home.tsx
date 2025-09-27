@@ -23,33 +23,21 @@ import Tools from '../components/Home_page/Tools';
 
 
 const Home = () => {
-
- 
-
-
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen">
 
-        <Hero />
+      <Hero />
 
+      <div className="mt-12"></div>
 
-      {/* BrazilDeforestationWidget  */}
-      
-        <BrazilDeforestationWidget />
-     
+      <BrazilDeforestationWidget />
 
-      
       {/* <Transition /> */}
-
       <Transition />
-
-
-
-     
 
       <FeaturesWidget />
 
-      <div className="mx-4 mt-8  rounded-3xl overflow-hidden">
+      <div className="mx-4 mt-8 rounded-3xl overflow-hidden">
         <FadeCard />
       </div>
 
@@ -57,13 +45,11 @@ const Home = () => {
 
       <Tools />
 
-
       <CultivatorShow />
 
       <ModelShow />
 
       <ToolboxShow />
-
 
       <VideoShow />
 
