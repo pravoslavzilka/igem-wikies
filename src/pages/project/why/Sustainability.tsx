@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const SustainabilityDocument = () => {
   return (
-    <div className="max-w-6xl mx-auto p-8 bg-white font-sans" style={{ fontFamily: "Urbanist, sans-serif" }}>
+    <div className="max-w-6xl mx-auto p-8 bg-white font-sans text-lg" style={{ fontFamily: "Urbanist, sans-serif" }}>
       {/* Header */}
       <div className=" mb-20  ">
         <h1 className="text-4xl font-bold  mb-4" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Sustainability</h1>
