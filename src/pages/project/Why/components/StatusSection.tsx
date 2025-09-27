@@ -64,7 +64,7 @@ const StatusSection = ({
                         <div className="w-8 h-8 lg:w-12 lg:h-12 bg-orange-500 rounded-full"></div>
                       </div>
                       <p className="text-gray-600 text-sm">
-                        {activeStatusAccordion ? `${statusAccordionData[activeStatusAccordion]?.title} image` : 'Select a status item'}
+                        {activeStatusAccordion ? `${statusAccordionData[activeStatusAccordion]?.title} image` : 'Tu dať default STATUS IMG'}
                       </p>
                     </div>
                   </div>
@@ -103,6 +103,7 @@ const StatusSection = ({
                     content={statusAccordionData['phytoremediation-status'].content}
                     isActive={activeStatusAccordion === 'phytoremediation-status'}
                     onClick={setActiveStatusAccordion}
+                    showContent={true}
                   />
                   
                   <AccordionItem
@@ -111,6 +112,7 @@ const StatusSection = ({
                     content={statusAccordionData['biomanufacturing'].content}
                     isActive={activeStatusAccordion === 'biomanufacturing'}
                     onClick={setActiveStatusAccordion}
+                    showContent={true}
                   />
                   
                   <AccordionItem
@@ -119,6 +121,7 @@ const StatusSection = ({
                     content={statusAccordionData['basic-research'].content}
                     isActive={activeStatusAccordion === 'basic-research'}
                     onClick={setActiveStatusAccordion}
+                    showContent={true}
                   />
                 </div>
               </div>

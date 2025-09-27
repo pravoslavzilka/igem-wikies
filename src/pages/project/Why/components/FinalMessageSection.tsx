@@ -13,15 +13,19 @@ const FinalMessageSection = () => {
               style={{ borderRadius: '16px' }}
             >
               <p 
-                className="text-gray-900 text-center text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold leading-tight"
+                className="text-gray-900 text-center font-semibold leading-tight"
                 style={{ 
                   fontFamily: 'Urbanist, sans-serif',
+                  fontSize: '32px',
                   fontWeight: 600,
                   lineHeight: '140%',
-                  color: '#1B1B1B'
+                  color: '#1B1B1B',
+                  width: '784px',
+                  margin: '0 auto'
                 }}
               >
-                And that is also why we went to iGEM - to show the entire SynBio community the potential of duckweed and to make tools available for anyone to unlock it!
+                And that is also why we went to iGEM - to show the entire SynBio community the potential of duckweed and to make tools available{' '}
+                <span style={{ color: '#6ca033' }}>for anyone to unlock it</span>!
               </p>
             </div>
           </div>
