@@ -64,14 +64,14 @@ const ProblemsSection: React.FC = () => {
       title: "High protein feed costs and reliance on import",
       image: "https://static.igem.wiki/teams/5642/images/what/problem-soybean-feed.webp",
       quote: "Soybean is an amazing source of protein. I wish I could afford more!",
-      author: "Rudolf Repiský",
+      author: "Štefan Strharský",
       height: 397
     },
     {
       title: "Deforestation caused by protein crops",
       image: "https://static.igem.wiki/teams/5642/images/what/problem-deforestation.webp",
       quote: "Our land was taken from us and turned into a one giant soy field",
-      author: "Prof. Carlos Klink",
+      author: "Ms. Conservationist",
       height: 397
     },
     {

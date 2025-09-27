@@ -1,3 +1,4 @@
+// src/pages/project/What/What.tsx
 import React from 'react';
 
 // Import všetkých komponentov z components folder
@@ -11,6 +12,10 @@ import StruggleSection from './components/StruggleSection';
 import ExpertQuoteSection from './components/ExpertQuoteSection';
 import CallToActionSection from './components/CallToActionSection';
 
+// Import References komponenty a dát
+import References from '../../../components/References';
+import { whatReferences } from './data/references';
+
 const What: React.FC = () => {
   return (
     <div className="w-full bg-white max-w-none">
@@ -23,6 +28,7 @@ const What: React.FC = () => {
       <StruggleSection />
       <ExpertQuoteSection />
       <CallToActionSection />
+      <References references={whatReferences} />
     </div>
   );
 };
