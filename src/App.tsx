@@ -72,7 +72,7 @@ function App() {
 
           <Route path="/project/how/taifr/" element={<Taifr />} />
           <Route path="/project/how/taifr/overview" element={<TAIFRComponent />} />
-          <Route path="/project/how/promoter-library/" element={<PromoterLibrary />} />
+          <Route path="/project/how/promoters/" element={<PromoterLibrary />} />
           <Route path="/project/how/promoters-in-silico/" element={<PromotersSilico />} />
 
           <Route path="/project/how/predictor/in-silico-cultivation/" element={<PredictorMain />} />
