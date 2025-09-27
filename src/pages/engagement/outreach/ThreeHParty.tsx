@@ -1,6 +1,6 @@
 const ThreeHParty = () => { 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white" style={{ fontFamily: 'Urbanist, sans-serif' }}>
       {/* Header */}
       <div className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
@@ -12,71 +12,55 @@ const ThreeHParty = () => {
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-6 py-12">
-        {/* Definitions Section */}
-        <section className="mb-12 space-y-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-          <div className="border-l-4 border-green-600 pl-4 py-2">
-            <p className="text-lg">
-              <strong className="font-bold">A Hacker</strong> – the problem-solver who thrives on creativity and curiosity.
-            </p>
-          </div>
-          <div className="border-l-4 border-green-600 pl-4 py-2">
-            <p className="text-lg">
-              <strong className="font-bold">A Hustler</strong> – the unstoppable doer who makes things happen against all odds.
-            </p>
-          </div>
-          <div className="border-l-4 border-green-600 pl-4 py-2">
-            <p className="text-lg">
-              <strong className="font-bold">A Hipster</strong> – the visionary who shapes culture and spots the next big thing before anyone else.
-            </p>
-          </div>
-        </section>
-
+        
+       
         {/* Why We Did It Section */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-            WHY we did it
-          </h2>
-          <div className="space-y-6" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-            <p className="text-lg leading-relaxed">
-              Our goal was twofold.
-            </p>
-            <p>
-              <span style={{ fontWeight: 400 }}>First, we wanted to </span>
-              <strong>showcase the incredible, high-tech work our team is doing</strong>
-              <span style={{ fontWeight: 400 }}>
-                {" "}
-                - to inspire new supporters to join us and make our current ones feel proud
-                of their contributions.
-              </span>
-            </p>
+        <section className="mb-12 text-lg">
+              <>
+                <p>
+                  <strong>WHY we did it</strong>
+                </p>
+                <p>
+                  <span style={{ fontWeight: 400 }}>Our goal was twofold.</span>
+                </p>
+                <p>
+                  <span style={{ fontWeight: 400 }}>First, we wanted to </span>
+                  <strong>showcase the incredible, high-tech work our team is doing</strong>
+                  <span style={{ fontWeight: 400 }}>
+                    {" "}
+                    - to inspire new supporters to join us and make our current ones feel
+                    proud of their contributions.
+                  </span>
+                </p>
+                <p>
+                  <span style={{ fontWeight: 400 }}>
+                    Second, and even more crucial, we wanted to{" "}
+                  </span>
+                  <strong>
+                    immerse ourselves and our community in the mindsets of successful
+                    innovators
+                  </strong>
+                  <span style={{ fontWeight: 400 }}>
+                    . Winning iGEM isn’t just about great science it’s about having the right{" "}
+                  </span>
+                  <em>
+                    <span style={{ fontWeight: 400 }}>mindset</span>
+                  </em>
+                  <span style={{ fontWeight: 400 }}>
+                    . You can have the lab, the funding, and the smartest brains… and still
+                    fail{" "}
+                  </span>
+                  <strong>
+                    if you don’t have the right approach to problem-solving, community
+                    building, and vision
+                  </strong>
+                  <span style={{ fontWeight: 400 }}>
+                    . That is why we decided to gather the gold standard of a hacker, a
+                    hipster, and two hustlers (because academia needs to hustle twice as much)
+                  </span>
+                </p>
+              </>
 
-            <p>
-              <span style={{ fontWeight: 400 }}>
-                Second, and even more crucial, we wanted to{" "}
-              </span>
-              <strong>
-                immerse ourselves and our community in the mindsets of successful innovators
-              </strong>
-              <span style={{ fontWeight: 400 }}>
-                . Winning iGEM isn’t just about great science it’s about having the right{" "}
-              </span>
-              <em>
-                <span style={{ fontWeight: 400 }}>mindset</span>
-              </em>
-              <span style={{ fontWeight: 400 }}>
-                . You can have the lab, the funding, and the smartest brains… and still fail{" "}
-              </span>
-              <strong>
-                if you don’t have the right approach to problem-solving, community building,
-                and vision
-              </strong>
-              <span style={{ fontWeight: 400 }}>
-                . That is why we decided to gather the gold standard of a hacker, a hipster,
-                and two hustlers (because academia needs to hustle twice as much)
-              </span>
-            </p>
-
-          </div>
         </section>
 
         {/* Image Gallery Section */}
@@ -99,58 +83,94 @@ const ThreeHParty = () => {
               </div>
             </div>
           </div>
-          <p className="mt-4 text-sm italic text-gray-600" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+          <p className="mt-4 text-md italic " style={{ fontFamily: 'Urbanist, sans-serif' }}>
             Lab tour showcasing duckweed to our colleagues from iGEM Prague. Discussion with Jan Kasper about: "Why Invest in Startups"
           </p>
         </section>
 
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-            Making It Happen
-          </h2>
-          <div className="space-y-6" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-            <p className="text-lg leading-relaxed">
-              We poured countless hours into preparing this unique event for 50 people on the MUNI campus. We prepared special duckweed food such as duckweed appetizers, fresh salad, cookies and our own duckweed pesto. We also ask local wine and coffe shop for donation of their products in exchange for brand placement at the event. For making an amazing experience we invited four exceptional guests from our networks to lead the mindset charge:
+        <section className="mb-12 text-lg">
+          <>
+            <p>
+              <strong className="text-3xl ">Making It Happen</strong>
             </p>
-
-            {/* Guest List */}
-            <ul className="space-y-4">
-              <li className="flex items-start">
-                <span className="text-purple-600 mr-3 mt-1">●</span>
-                <div>
-                  <strong className="font-bold">Ján Kasper</strong> (Hustler, picture 2), one of the few true venture capitalists in CZ/SK, from{' '}
-                  <a href="#" className="text-green-600 hover:underline font-semibold">ZAKA VC</a>, Discussion:{' '}
-                  <em>Why Invest in Startups</em>
-                </div>
+            <p style={{ marginTop: '2rem', marginBottom: '1rem' }}>
+              <span style={{ fontWeight: 400 }}>
+                We poured countless hours into preparing this unique event for 60 people
+                on the MUNI campus. We prepared special duckweed food such as: duckweed
+                appetizers, fresh salad, cookies and our own duckweed pesto. For making an
+                amazing experience we invited four exceptional guests from our networks to
+                lead the mindset charge:
+              </span>
+            </p>
+            <ul>
+              <li style={{ fontWeight: 400, marginTop: '1rem' }}>
+                <strong>Ján Kasper</strong>
+                <span style={{ fontWeight: 400 }}>
+                  , one of the few true venture capitalists in CZ/SK, from
+                </span>
+                <a style={{ color: '#4F46E5' }} href="https://www.linkedin.com/company/zakastartup/">
+                  {" "}
+                  <strong>ZAKA VC</strong>
+                </a>
+                <strong>,</strong> <span style={{ fontWeight: 400 }}>Discussion</span>
+                <em>
+                  <span style={{ fontWeight: 400 }}>: Why Invest in Startups</span>
+                </em>
               </li>
-              <li className="flex items-start">
-                <span className="text-purple-600 mr-3 mt-1">●</span>
-                <div>
-                  <strong className="font-bold">Vojta Roček</strong> (Hustler, picture 5), an experienced startup founder and the worst nightmare of academia, from{' '}
-                  <a href="#" className="text-green-600 hover:underline font-semibold">Presto Ventures</a> &{' '}
-                  <a href="#" className="text-green-600 hover:underline font-semibold">Czech Startup Association</a>, Discussion:{' '}
-                  <em>Why academia is great for knowledge but bad for startups</em>
-                </div>
+              <li style={{ fontWeight: 400, marginTop: '1rem' }}>
+                <strong>Vojta Roček</strong>
+                <span style={{ fontWeight: 400 }}>
+                  , an experienced startup founder and the worst nightmare of academia,
+                  from
+                </span>
+                <a style={{ color: '#4F46E5' }}  href="https://www.linkedin.com/company/presto-ventures/">
+                  {" "}
+                  <strong>Presto Ventures</strong>
+                </a>
+                <span style={{ fontWeight: 400 }}> &amp;</span>
+                <a style={{ color: '#4F46E5' }}  href="https://www.linkedin.com/company/czech-startup-association/">
+                  {" "}
+                  <strong>Czech Startup Association</strong>
+                </a>
+                <strong>, </strong>
+                <span style={{ fontWeight: 400 }}>Discussion</span>
+                <em>
+                  <span style={{ fontWeight: 400 }}>
+                    : Why academia is great for knowledge but bad for startups
+                  </span>
+                </em>
               </li>
-              <li className="flex items-start">
-                <span className="text-purple-600 mr-3 mt-1">●</span>
-                <div>
-                  <strong className="font-bold">Mitch Altman</strong> (Hacker, picture 3), a legendary founder of Cornfield Electronics and a pioneer of the hackerspace movement from San Francisco, Discussion:{' '}
-                  <em>What Does It Mean to Be a Hacker?</em>
-                </div>
+              <li style={{ fontWeight: 400, marginTop: '1rem' }}>
+                <strong>Mitch Altman</strong>
+                <span style={{ fontWeight: 400 }}>
+                  , a legendary founder of Cornfield Electronics and a pioneer of the
+                  hackerspace movement from San Francisco. Discussion:{" "}
+                </span>
+                <em>
+                  <span style={{ fontWeight: 400 }}>
+                    What Does It Mean to Be a Hacker?
+                  </span>
+                </em>
               </li>
-              <li className="flex items-start">
-                <span className="text-purple-600 mr-3 mt-1">●</span>
-                <div>
-                  <strong className="font-bold">Peter Dendiš</strong> (Hipster, picture 4), a visionary serial entrepreneur and a jack-of-all-trades, Discussion:{' '}
-                  <em>Go Big or Go Home – How to Sell Your Vision</em>
-                </div>
-              </li>
+               <li style={{ fontWeight: 400, marginTop: '1rem' }}>
+              <strong>Peter Dendis</strong>
+              <span style={{ fontWeight: 400 }}>
+                , a visionary serial entrepreneur and a jack-of-all-trades, Discussion:{" "}
+              </span>
+              <em>
+                <span style={{ fontWeight: 400 }}>
+                  Go Big or Go Home – How to Sell Your Vision
+                </span>
+              </em>
+            </li>
             </ul>
-          </div>
+           
+          </>
+
 
           {/* Guest Images Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+            <div>
             <div className="relative h-64 bg-gradient-to-br from-indigo-200 to-purple-200 rounded-lg overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center">
                 <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/pxl-20250426-153332593-1.webp" />
@@ -158,7 +178,12 @@ const ThreeHParty = () => {
               <div className="absolute bottom-4 left-4 bg-white px-3 py-1 rounded text-sm font-semibold">
                 3
               </div>
+              
             </div>
+            <div><strong className="font-bold">A Hacker</strong> – the problem-solver who thrives on creativity and curiosity.</div>
+            </div>
+
+            <div>
             <div className="relative h-64 bg-gradient-to-br from-purple-200 to-pink-200 rounded-lg overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center">
 
@@ -170,6 +195,12 @@ const ThreeHParty = () => {
                 4
               </div>
             </div>
+            
+             <div><strong className="font-bold">A Hipster</strong> – the visionary who shapes culture and spots the next big thing before anyone else.</div>
+
+            </div>  
+
+            <div>
             <div className="relative h-64 bg-gradient-to-br from-green-200 to-purple-200 rounded-lg overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center">
                 <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/pxl-20250426-140450571.webp" />
@@ -178,25 +209,94 @@ const ThreeHParty = () => {
                 5
               </div>
             </div>
+            <div><strong className="font-bold">A Hustler</strong> – the unstoppable doer who makes things happen against all odds.</div>
+            </div>
           </div>
         </section>
 
         {/* Final Outcome Section */}
-        <section className="mb-12">
+        <section className="mb-12 text-lg">
           <h2 className="text-3xl font-bold mb-6" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             The Final Outcome
           </h2>
-          <div className="space-y-6" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-            <p className="text-lg leading-relaxed">
-              At the end of the evening, we served duckweed pizza made fresh by a local pizzeria and unveiled the highlight of the night: <strong className="font-bold">a duckweed cake shaped like the Golden Village</strong> (the valley where the iGEM Jamboree unfolds). And of course, we shared the SV secret ingredients: <em>It stars with the building your product... Finally, you throw in a grain of luck and a lot of hustle to save the day... and maybe a touch of hacking to cut through obstacles</em>.
+          <>
+            <p className="mb-10" >
+              <span style={{ fontWeight: 400 }}>The 3H Party was a huge success. </span>
+              <strong>Ján Kasper’s talk</strong>
+              <span style={{ fontWeight: 400 }}>
+                {" "}
+                about the incredible difficulty of building a proper startup resonated
+                deeply.{" "}
+              </span>
+              <strong>Vojta Roček’s challenging questions</strong>
+              <span style={{ fontWeight: 400 }}>
+                {" "}
+                about academic funding ignited a passionate debate that continued late
+                into the night.{" "}
+              </span>
+              <strong>Mitch Altman</strong>
+              <span style={{ fontWeight: 400 }}>
+                {" "}
+                inspired us with his message that human connections&nbsp; matters as much
+                as building cool gadgets. Finally,{" "}
+              </span>
+              <strong>Peter Dendis</strong>
+              <span style={{ fontWeight: 400 }}>
+                {" "}
+                shared his insights on the next big things ahead and teached us the art of
+                luck management which left us all feeling motivated and equipped to push
+                forward with our vision.
+              </span>
             </p>
-            <p className="text-lg leading-relaxed">
-              The party energized <strong className="font-bold">30 iGEM members</strong> with fresh perspectives and new connections. One of our guests captured the feeling perfectly, saying: <em>"This is the first time I have experienced the Silicon Valley Vibe while sitting in Brno Czech Republic."</em> This is incredibly sweet, and for us, it proved that we successfully channeled the energy and mindset that drives innovation.
+            <p>
+              <span style={{ fontWeight: 400 }}>
+                One of our guests captured the feeling perfectly, saying,{" "}
+              </span>
+              <strong>
+                "This is the first time I have experienced the Silicon Valley like vibe
+                while here in Czech Republic.”
+              </strong>
+              <span style={{ fontWeight: 400 }}>
+                {" "}
+                This extraordinary event was an energetic mix of intellectual curiosity,
+                community spirit, and visionary thinking.
+              </span>
             </p>
-            <p className="text-lg leading-relaxed">
-              We personally loved the <strong className="font-bold">fantastic insights from our guests</strong>, especially from Mitch Altman and Peter DendiÅ¡. Our guests inspired the ICER Prague for changing the political vent, <strong className="font-bold">Pleasure on Cocktails</strong> for their idea on making pleasure in a responsible, and <strong className="font-bold">polheur and Lucilene</strong> for going with their life on unpopular narrative science, and <strong className="font-bold">our team members</strong> came away feeling energized and validated. Players as it will help raise at least two iGEM teams at least: <strong className="font-bold">ICER Hungry in Paris</strong>.
+            <p>
+              <span style={{ fontWeight: 400 }}>
+                But that wouldn’t have been possible without our{" "}
+              </span>
+              <strong>main sponsor, Tensor Ventures</strong>
+              <span style={{ fontWeight: 400 }}>
+                , who believed in us and funded the even and others:{" "}
+              </span>
+              <strong>iGEM Prague</strong>
+              <span style={{ fontWeight: 400 }}> for bringing the beer; </span>
+              <strong>Vican Winery</strong>
+              <span style={{ fontWeight: 400 }}> for donating the premium wine; </span>
+              <strong>Fiftybeans</strong>
+              <span style={{ fontWeight: 400 }}> and </span>
+              <strong>Rebelbean</strong>
+              <span style={{ fontWeight: 400 }}>
+                {" "}
+                for the exceptional coffee; and, most importantly,{" "}
+              </span>
+              <strong>our guests and speakers</strong>
+              <span style={{ fontWeight: 400 }}>
+                {" "}
+                for making the 3H Party an unforgettable experience.
+              </span>
             </p>
-          </div>
+            <p>
+              <span style={{ fontWeight: 400 }}>
+                And now, with our community stronger and our mindsets sharper, we’re one
+                step closer to our next big goal:{" "}
+              </span>
+              <strong>iGEM victory in Paris</strong>
+              <span style={{ fontWeight: 400 }}>.</span>
+            </p>
+          </>
+
         </section>
 
         {/* Guest Photos Section */}
@@ -217,7 +317,7 @@ const ThreeHParty = () => {
               </div>
             </div>
           </div>
-          <p className="mt-4 text-sm italic text-gray-600" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+          <p className="mt-4 text-md italic " style={{ fontFamily: 'Urbanist, sans-serif' }}>
             <strong className="font-bold">Mitch Altman</strong>, a legendary Hacker of hardware and a deeply inspiring picture from ICER Show and a picture question from an Austral student: <em>"SynechON"</em>. <strong className="font-bold">Peter DendiÅ¡ about: It is all about a startup building self (not Ashely)</strong>
           </p>
         </section>
@@ -236,8 +336,22 @@ const ThreeHParty = () => {
               </div>
             </div>
           </div>
-          <p className="mt-4 text-sm italic text-gray-600" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-            The samples of 30 types- Urban Wine & Pilny Beanz. These including wines and coffee cake product. Of course, why not hipster and making was on.
+          <p className="mt-4 text-md italic " style={{ fontFamily: 'Urbanist, sans-serif' }}>
+            <p>
+            <em>
+              <span style={{ fontWeight: 400 }}>The partners of 3H Party: </span>
+            </em>
+            <strong>
+              <em>Vican Wine &amp; Fifty Beans</em>
+            </strong>
+            <em>
+              <span style={{ fontWeight: 400 }}>
+                . These exclusive wines and coffee were excellent. Everyone really loved
+                them and nothing was left
+              </span>
+            </em>
+          </p>
+
           </p>
         </section>
 
