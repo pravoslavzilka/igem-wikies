@@ -42,7 +42,7 @@ const AccordionItem = ({ id, title, content, isActive, onClick, showContent = fa
         {content.map((paragraph: string, index: number) => (
           <p 
             key={index}
-            className="text-gray-700 leading-relaxed text-sm sm:text-base max-w-none lg:max-w-lg"
+            className="text-justify leading-relaxed text-sm sm:text-base max-w-none lg:max-w-lg text-gray-700"
             style={{ 
               fontFamily: 'Space Grotesk, sans-serif', 
               lineHeight: '168%',
