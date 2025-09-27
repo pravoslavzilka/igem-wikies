@@ -13,8 +13,82 @@ const traySlides: ImageSlide[] = [
     },
 ];
 
+const waterCycleSlides: ImageSlide[] = [
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/watercycle/water-cycle-schema-old.webp",
+        title: "High level overview of the water circulation system.",
+    },
+
+];
+
+const nutrientSlides: ImageSlide[] = [
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/watercycle/nutrient-mixing-schema-old.webp",
+        title: "High level overview of the water enrichment system.",
+    },
+
+];
+
+const harvestingSlides: ImageSlide[] = [
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/harvest/iterations/cultivator-history-1.webp",
+        title: "Iteration 1",
+        rightNote: [
+            "Densely packed jets near the harvesting edge to push the duckweed over.",
+            "Sparse jets at the back to evenly re-distribute the duckweed.",
+            "1mm jet diameter."
+        ]
+    },
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/harvest/iterations/cultivator-history-2.webp",
+        title: "Iteration 2",
+        rightNote: [
+            "Uniformly spaced jets at a shallow 30° angle, to gently push the duckweed forward while raising the water level.",
+            "1mm jet diameter."
+        ]
+    },
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/harvest/iterations/cultivator-history-4.webp",
+        title: "Iteration 3",
+        rightNote: [
+            "Jets at a shallow 30° angle, to gently push the duckweed forward while raising the water level.",
+            "Front jets targeted to push duckweed over the edge with maximum force.",
+            "1mm jet diameter."
+        ]
+    },
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/harvest/iterations/cultivator-history-3.webp",
+        title: "Iteration 4",
+        rightNote: [
+            "Uniformly spaced jets at a steep 45° angle, to push the duckweed forward more quickly.",
+            "1mm jet diameter."
+        ]
+    },
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/harvest/iterations/cultivator-history-5.webp",
+        title: "Iteration 5",
+        rightNote: [
+            "45° angled jets but only at the back, to create a steady current that pushes the duckweed over the edge.",
+            "No jets in the front to avoid distributing the flowing duckweed.",
+            "1mm jet diameter."
+        ]
+    },
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/harvest/iterations/cultivator-history-6.webp",
+        title: "Iteration 6",
+        rightNote: [
+            "45° angled parsely placed jets with a larger throughput.",
+            "3mm jet diameter."
+        ]
+    },
+
+];
+
 export default function LivingLayers() {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpenTraySlides, setIsOpenTraySlides] = useState(false);
+    const [isOpenCycleSlides, setIsOpenCycleSlides] = useState(false);
+    const [isOpenNutrientSlides, setIsOpenNutrientSlides] = useState(false);
+    const [isOpenHarvestingSlides, setIsOpenHarvestingSlides] = useState(false);
 
     return (
         <div className="bg-white text-gray-900 leading-relaxed text-justify">
@@ -83,6 +157,8 @@ export default function LivingLayers() {
                     the cultivator for their own work—for about $800 in materials.
                 </p>
             </section>
+
+            <hr className="my-8 w-1/2 mx-auto border-t-2 border-gray-400"/>
 
 
             <div className="max-w-6xl mx-auto p-8 bg-white text-gray-900 leading-relaxed">
@@ -160,7 +236,7 @@ export default function LivingLayers() {
                         {/* Add space above link */}
                         <div className="mt-6 flex justify-center md:justify-center">
                             <button
-                                onClick={() => setIsOpen(true)}
+                                onClick={() => setIsOpenTraySlides(true)}
                                 className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
                             >
                                 See the trays in detail
@@ -172,8 +248,8 @@ export default function LivingLayers() {
                 {/* Fullscreen image viewer */}
                 <ImageViewer
                     slides={traySlides}
-                    isOpen={isOpen}
-                    onClose={() => setIsOpen(false)}
+                    isOpen={isOpenTraySlides}
+                    onClose={() => setIsOpenTraySlides(false)}
                 />
             </div>
 
@@ -237,11 +313,26 @@ export default function LivingLayers() {
                             the remaining biomass.
                         </p>
 
+                        {/* Add space above link */}
+                        <div className="mt-6 flex justify-center md:justify-center">
+                            <button
+                                onClick={() => setIsOpenHarvestingSlides(true)}
+                                className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
+                            >
+                                See the design iterations we went through.
+                            </button>
+                        </div>
+
                     </div>
                 </div>
             </div>
+            <ImageViewer
+                slides={harvestingSlides}
+                isOpen={isOpenHarvestingSlides}
+                onClose={() => setIsOpenHarvestingSlides(false)}
+            />
 
-            <div className="grid md:grid-cols-2 gap-8 items-start max-w-6xl mx-auto p-8">
+            <div className="grid md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto p-8">
                 {/* Left column */}
                 <div>
                     <p className="text-justify">
@@ -252,6 +343,22 @@ export default function LivingLayers() {
                         harvesting, making it possible to cultivate different duckweed strains
                         on separate layers without cross-contamination.
                     </p>
+                    <p>
+                        The harvested duckweed falls through a vertical drop chute, where it is separated from the
+                        water, and stored until it is picked up by the operator. The collected water is immediately
+                        filtered, ensuring that it remains free of duckweed and and suitable for reuse in future
+                        cultivation cycles.
+                    </p>
+
+                    {/* Add space above link */}
+                    <div className="mt-6 flex justify-center md:justify-center">
+                        <button
+                            onClick={() => setIsOpenCycleSlides(true)}
+                            className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
+                        >
+                            See the whole water circulation system.
+                        </button>
+                    </div>
                 </div>
 
                 {/* Right column */}
@@ -264,15 +371,66 @@ export default function LivingLayers() {
                             <div className="text-xs italic">(Photo of a the valve ladder.)</div>
                         </div>
                     </div>
+                </div>
+            </div>
+            {/* Fullscreen image viewer */}
+            <ImageViewer
+                slides={waterCycleSlides}
+                isOpen={isOpenCycleSlides}
+                onClose={() => setIsOpenCycleSlides(false)}
+            />
 
-                    <div className="text-lg space-y-4">
-                        <p className="text-justify">
 
-                        </p>
+            <div className="grid md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto p-8">
+                {/* Left column */}
+                <div>
+                    <div
+                        className="bg-gray-200 border-2 border-dashed border-gray-400 h-64 flex items-center
+                        justify-center rounded-lg">
+                        <div className="text-center text-gray-600">
+                            <div className="text-sm mb-2">📸 IMAGE PLACEHOLDER</div>
+                            <div className="text-xs italic">(Photo of a the nutrient station.)</div>
+                        </div>
+                    </div>
+                    <p className="text-justify">
+
+                    </p>
+                </div>
+
+                {/* Right column */}
+                <div>
+                    <p className="text-justify">
+                        The water is then directed into a central reservoir. Inside the reservoir, sensors automatically
+                        measure the water’s electrical conductivity (EC) and the pH level to assess the dissolved
+                        nutrient levels, while peristaltic pumps accurately inject the nutrients as needed. The system
+                        allows for 4 different liquid additives to be separately mixed into the medium. In order to
+                        prevent clumping in the liquid additives, dedicated electric DC motors periodically spin a metal
+                        stirrer inside the containers, using neodymium magnets below the base of the containers. A
+                        mixing pump then ensures an even distribution inside the main reservoir, maintaining an ideal
+                        growth solution and preventing the crystallization of the combined additives.
+                    </p>
+                    <p className="text-justify">
+                        Once enriched and balanced, the water is cycled back into the trays for the next round of
+                        cultivation. This closed-loop design minimizes waste, conserves resources, and keeps the
+                        duckweed growing under optimal conditions—harvest after harvest.
+                    </p>
+                    {/* Add space above link */}
+                    <div className="mt-6 flex justify-center md:justify-center">
+                        <button
+                            onClick={() => setIsOpenNutrientSlides(true)}
+                            className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
+                        >
+                            See how our nutrient system works in detail.
+                        </button>
                     </div>
                 </div>
             </div>
-
+            {/* Fullscreen image viewer */}
+            <ImageViewer
+                slides={nutrientSlides}
+                isOpen={isOpenNutrientSlides}
+                onClose={() => setIsOpenNutrientSlides(false)}
+            />
 
         </div>
     );
