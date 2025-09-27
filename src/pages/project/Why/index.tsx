@@ -13,7 +13,7 @@ const ProjectWhy = ({
   heroImageUrl = "https://static.igem.wiki/teams/5642/images/why/duckweed.webp",
   firstSectionImageUrl = null, 
   secondSectionImageUrl = null,
-  futureSectionImageUrl = "https://static.igem.wiki/teams/5642/images/why/igem-promo-photo.webp",
+  futureSectionImageUrl = "https://static.igem.wiki/teams/5642/images/why/duckweed-future.webp",
   // Images for different accordion states
   novelProteinImageUrl = "https://static.igem.wiki/teams/5642/images/why/soybean.webp",
   phytoremediationImageUrl = "https://static.igem.wiki/teams/5642/images/why/why6.webp",
