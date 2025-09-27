@@ -13,6 +13,7 @@ import ProjectHow from './pages/project/How';
 // Project pages - how
 
 import Taifr from './pages/project/how/Taifr';
+import TAIFRComponent from './pages/project/how/taifr/TAIFRComponent';
 import PromoterLibrary from './pages/project/how/PromoterLibrary';
 
 import LimitingBiomass from './pages/project/how/predictor/LimitingBiomass';
@@ -70,6 +71,7 @@ function App() {
           <Route path="/project/how/cultivator/" element={<LivingLayersDocument />} />
 
           <Route path="/project/how/taifr/" element={<Taifr />} />
+          <Route path="/project/how/taifr/overview" element={<TAIFRComponent />} />
           <Route path="/project/how/promoter-library/" element={<PromoterLibrary />} />
           <Route path="/project/how/promoters-in-silico/" element={<PromotersSilico />} />
 
