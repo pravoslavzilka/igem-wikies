@@ -35,41 +35,60 @@ const Outreach = () => {
       {/* Four Pillars Section */}
       <div className="px-6 py-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-          {[
-            {
-              title: "Creating Network",
-              description: "Being part of a community",
-              icon: "network"
-            },
-            {
-              title: "Communicating Science", 
-              description: "Letting the world discover duckweed",
-              icon: "science"
-            },
-            {
-              title: "Cultivating Community",
-              description: "Hosting our own events", 
-              link: "/engagement/outreach/3h-party",
-              icon: "community"
-            },
-            {
-              title: "Connecting w/ iGEMers",
-              description: "Attending iGEM meetups",
-              icon: "connect"
-            }
-          ].map((pillar, index) => (
-            <div key={index} className="bg-green-500 text-center p-4 rounded-lg">
+          <div  className="bg-green-500 text-center p-4 rounded-lg">
               <h3 className=" font-bold text-2xl mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-                {pillar.title}
+                Creating Network
               </h3>
-              <div className="bg-white rounded-full w-36 h-36 mx-auto mb-2 flex items-center justify-center">
+              <div className=" mt-10 bg-white rounded-full w-36 h-36 mx-auto mb-2 flex items-center justify-center">
                 <div className=" rounded-full flex items-center justify-center">
-                  <span className="text-md "><b>{pillar.description}</b></span>
+                  <span className="text-md "><b>Being part of a community</b></span>
                 </div>
               </div>
               
             </div>
-          ))}
+
+
+            <div  className="bg-green-500 text-center p-4 rounded-lg">
+              <h3 className=" font-bold text-2xl mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                Communicating Science
+              </h3>
+              <div className="bg-white rounded-full w-36 h-36 mx-auto mb-2 flex items-center justify-center">
+                <div className=" rounded-full flex items-center justify-center">
+                  <span className="text-md "><b>Letting the world discover duckweed</b></span>
+                </div>
+              </div>
+              
+            </div>
+
+
+            <div  className="bg-green-500 text-center p-4 rounded-lg">
+              <h3 className=" font-bold text-2xl mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                Cultivating Community
+              </h3>
+              <div className="bg-white rounded-full w-36 h-36 mx-auto mb-2 flex items-center justify-center">
+                <div className=" rounded-full flex items-center justify-center">
+                  <span className="text-md "><b><Link to="/engagement/outreach/3h-party">Hosting our own events</Link></b></span>
+                </div>
+              </div>
+              
+            </div>
+
+
+
+            <div  className="bg-green-500 text-center p-4 rounded-lg">
+              <h3 className=" font-bold text-2xl mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                Connecting w/ iGEMers
+              </h3>
+              <div className="bg-white rounded-full w-36 h-36 mx-auto mb-2 flex items-center justify-center">
+                <div className=" rounded-full flex items-center justify-center">
+                  <span className="text-md "><b>Attending iGEM meetups</b></span>
+                </div>
+              </div>
+              
+            </div>
+
+
+          
         </div>
       </div>
 

@@ -23,6 +23,7 @@ const Navbar = () => {
       { label: 'What', path: '/project/what' },
       { label: 'How', path: '/project/how' },
       { label: 'Why', path: '/project/why' },
+      { label: 'Hardware', path: '/project/why' },
       
     ],
     toolbox: [

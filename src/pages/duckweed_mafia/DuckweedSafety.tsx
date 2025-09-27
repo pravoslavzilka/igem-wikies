@@ -2,7 +2,7 @@ import React from 'react';
 
 const DuckweedSafety = () => {
   return (
-    <div className="max-w-6xl mx-auto p-6 bg-white">
+    <div className="max-w-6xl mx-auto p-6 bg-white text-lg">
       {/* Main Title */}
       <h1 className="text-4xl font-bold text-center mb-8 text-gray-900" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
         Safety
@@ -18,7 +18,7 @@ const DuckweedSafety = () => {
           <p>
             <p>
               <span style={{ fontWeight: 400 }}>Duckweed is known for its extremely </span>
-              <strong>fast growth rate</strong>
+              <strong>fast growth rate </strong>
               <span style={{ fontWeight: 400 }}>
                  and, some species, have been even recognized as invasive, causing damage
                 to freshwater ecosystems (1). Aware of the risks, we treated duckweed in our
@@ -237,7 +237,7 @@ const DuckweedSafety = () => {
               </strong>
               <span style={{ fontWeight: 400 }}>
                 {" "}
-                (GV3101 and EHA105), all classified as Biosafety Level 1 (BSL-1). These
+                (EHA105, GVG3101 and C58C1), all classified as Biosafety Level 1 (BSL-1). These
                 strains are widely used for cloning and plasmid preparation and pose
                 minimal risk to human health or the environment.
               </span>
