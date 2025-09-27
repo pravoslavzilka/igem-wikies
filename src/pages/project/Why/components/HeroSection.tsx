@@ -28,10 +28,11 @@ const HeroSection = ({ heroImageUrl }: HeroSectionProps) => {
               Forgetting Arabidopsis or soybean and bracing ourselves for duckweed!
             </h1>
             <p 
-              className="text-gray-700 text-sm sm:text-base max-w-2xl mx-auto text-left leading-relaxed"
+              className="text-gray-700 text-sm sm:text-base max-w-2xl leading-relaxed"
               style={{ 
                 fontFamily: 'Urbanist, sans-serif',
-                color: 'rgba(27, 27, 27, 0.75)'
+                color: 'rgba(27, 27, 27, 0.75)',
+                textAlign: 'left'
               }}
             >
               The smallest flowering plant on Earth hides a lot of potential - all of it waiting to be unlocked.

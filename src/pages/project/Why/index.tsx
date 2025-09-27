@@ -11,8 +11,8 @@ import { WhyProps } from './types';
 
 const ProjectWhy = ({ 
   heroImageUrl = "https://static.igem.wiki/teams/5642/images/why/duckweed.webp",
-  firstSectionImageUrl = "https://static.igem.wiki/teams/5642/images/why/why5.webp", 
-  secondSectionImageUrl = "https://static.igem.wiki/teams/5642/images/why/why5.webp",
+  firstSectionImageUrl = null, 
+  secondSectionImageUrl = null,
   futureSectionImageUrl = "https://static.igem.wiki/teams/5642/images/why/igem-promo-photo.webp",
   // Images for different accordion states
   novelProteinImageUrl = "https://static.igem.wiki/teams/5642/images/why/why5.webp",

@@ -58,6 +58,7 @@ const AccordionSection = ({
                   content={accordionData['phytoremediation'].content}
                   isActive={activeAccordion === 'phytoremediation'}
                   onClick={setActiveAccordion}
+                  showContent={true}
                 />
                 
                 <AccordionItem
@@ -66,6 +67,7 @@ const AccordionSection = ({
                   content={accordionData['recombinant'].content}
                   isActive={activeAccordion === 'recombinant'}
                   onClick={setActiveAccordion}
+                  showContent={true}
                 />
                 
                 <AccordionItem
@@ -74,6 +76,7 @@ const AccordionSection = ({
                   content={accordionData['monocot'].content}
                   isActive={activeAccordion === 'monocot'}
                   onClick={setActiveAccordion}
+                  showContent={true}
                 />
               </div>
             </div>
@@ -104,7 +107,7 @@ const AccordionSection = ({
                         <div className="w-8 h-8 lg:w-12 lg:h-12 bg-green-500 rounded-full"></div>
                       </div>
                       <p className="text-gray-600 text-sm">
-                        {activeAccordion ? `${accordionData[activeAccordion]?.title} image` : 'Select an accordion item'}
+                        {activeAccordion ? `${accordionData[activeAccordion]?.title} image` : 'Tu dať default IMG'}
                       </p>
                     </div>
                   </div>
