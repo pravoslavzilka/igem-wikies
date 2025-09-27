@@ -4,7 +4,7 @@
   futureSectionImageUrl = null,
   // Images for different accordion states
   novelProteinImageUrl = "https://static.igem.wiki/teams/5642/images/why/why5.webp",
-  phytoremediationImageUrl = "https://static.igem.wiki/teams/5642/images/why/why6.webp",
+  phytoremediationImageUrl = "https://static.igem.wiki/teams/5642/images/why/fyto.webp",
   recombinantImageUrl = "https://static.igem.wiki/teams/5642/images/why/why7.webp",
   monocotImageUrl = "https://static.igem.wiki/teams/5642/images/why/why8.webp",
   // Images for status accordion states

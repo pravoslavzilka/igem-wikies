@@ -15,13 +15,13 @@ const ProjectWhy = ({
   secondSectionImageUrl = null,
   futureSectionImageUrl = "https://static.igem.wiki/teams/5642/images/why/igem-promo-photo.webp",
   // Images for different accordion states
-  novelProteinImageUrl = "https://static.igem.wiki/teams/5642/images/why/why5.webp",
+  novelProteinImageUrl = "https://static.igem.wiki/teams/5642/images/why/soybean.webp",
   phytoremediationImageUrl = "https://static.igem.wiki/teams/5642/images/why/why6.webp",
   recombinantImageUrl = "https://static.igem.wiki/teams/5642/images/why/why7.webp",
   monocotImageUrl = "https://static.igem.wiki/teams/5642/images/why/why8.webp",
   // Images for status accordion states
-  foodImageUrl = "https://static.igem.wiki/teams/5642/images/why/why1.webp",
-  phytoremediationStatusImageUrl = "https://static.igem.wiki/teams/5642/images/why/why2.webp",
+  foodImageUrl = "https://static.igem.wiki/teams/5642/images/why/wanna-greens.webp",
+  phytoremediationStatusImageUrl = "https://static.igem.wiki/teams/5642/images/why/fyto.webp",
   biomanufacturingImageUrl = "https://static.igem.wiki/teams/5642/images/why/why3.webp",
   basicResearchImageUrl = "https://static.igem.wiki/teams/5642/images/why/why4.webp"
 }: WhyProps) => {

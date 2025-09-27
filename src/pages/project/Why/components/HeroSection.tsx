@@ -5,40 +5,8 @@ interface HeroSectionProps {
 const HeroSection = ({ heroImageUrl }: HeroSectionProps) => {
   return (
     <section className="w-full bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex flex-col items-center">
-          {/* Text Content */}
-          <div className="w-full max-w-4xl text-left mb-8 lg:mb-16">
-            <p 
-              className="text-gray-500 mb-2 text-base sm:text-lg font-semibold"
-              style={{ 
-                fontFamily: 'Urbanist, sans-serif',
-                color: 'rgba(27, 27, 27, 0.5)'
-              }}
-            >
-              Why
-            </p>
-            <h1 
-              className="text-gray-900 mb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight"
-              style={{ 
-                fontFamily: 'Urbanist, sans-serif',
-                color: '#1B1B1B'
-              }}
-            >
-              Forgetting Arabidopsis or soybean and bracing ourselves for duckweed!
-            </h1>
-            <p 
-              className="text-gray-700 text-sm sm:text-base max-w-2xl leading-relaxed"
-              style={{ 
-                fontFamily: 'Urbanist, sans-serif',
-                color: 'rgba(27, 27, 27, 0.75)',
-                textAlign: 'left'
-              }}
-            >
-              The smallest flowering plant on Earth hides a lot of potential - all of it waiting to be unlocked.
-            </p>
-          </div>
-
           {/* Hero Image */}
           <div className="w-full max-w-6xl">
             <div 
@@ -50,11 +18,45 @@ const HeroSection = ({ heroImageUrl }: HeroSectionProps) => {
               }}
             >
               {heroImageUrl ? (
-                <img 
-                  src={heroImageUrl} 
-                  alt="Duckweed hero image" 
-                  className="w-full h-full object-cover"
-                />
+                <div className="relative w-full h-full">
+                  <img 
+                    src={heroImageUrl} 
+                    alt="Duckweed hero image" 
+                    className="w-full h-full object-cover"
+                  />
+                  {/* Overlay s bielym textom */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-center px-4">
+                      <p 
+                        className="text-white text-sm sm:text-base font-medium mb-2"
+                        style={{ 
+                          fontFamily: 'Urbanist, sans-serif',
+                          textShadow: '1px 1px 2px rgba(0,0,0,0.7)'
+                        }}
+                      >
+                        Why
+                      </p>
+                      <h2 
+                        className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 drop-shadow-lg"
+                        style={{ 
+                          fontFamily: 'Urbanist, sans-serif',
+                          textShadow: '2px 2px 4px rgba(0,0,0,0.7)'
+                        }}
+                      >
+                        Forgetting Arabidopsis or soybean and bracing ourselves for duckweed!
+                      </h2>
+                      <p 
+                        className="text-white text-lg sm:text-xl md:text-2xl font-medium drop-shadow-md"
+                        style={{ 
+                          fontFamily: 'Urbanist, sans-serif',
+                          textShadow: '1px 1px 2px rgba(0,0,0,0.7)'
+                        }}
+                      >
+                        The smallest flowering plant on Earth hides a lot of potential - all of it waiting to be unlocked.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               ) : (
                 <>
                   <div className="absolute inset-0 bg-gradient-to-br from-emerald-400 to-green-600"></div>
@@ -63,6 +65,38 @@ const HeroSection = ({ heroImageUrl }: HeroSectionProps) => {
                       backgroundImage: `url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23065f46' opacity='0.1'%3E%3Ccircle cx='15' cy='15' r='3'/%3E%3Ccircle cx='7' cy='7' r='2'/%3E%3Ccircle cx='23' cy='23' r='2'/%3E%3Ccircle cx='23' cy='7' r='1.5'/%3E%3Ccircle cx='7' cy='23' r='1.5'/%3E%3C/g%3E%3C/svg%3E")`,
                       backgroundSize: '30px 30px'
                     }}></div>
+                  </div>
+                  {/* Biele písmo aj pre fallback gradient */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-center px-4">
+                      <p 
+                        className="text-white text-sm sm:text-base font-medium mb-2"
+                        style={{ 
+                          fontFamily: 'Urbanist, sans-serif',
+                          textShadow: '1px 1px 2px rgba(0,0,0,0.7)'
+                        }}
+                      >
+                        Why
+                      </p>
+                      <h2 
+                        className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 drop-shadow-lg"
+                        style={{ 
+                          fontFamily: 'Urbanist, sans-serif',
+                          textShadow: '2px 2px 4px rgba(0,0,0,0.7)'
+                        }}
+                      >
+                        Forgetting Arabidopsis or soybean and bracing ourselves for duckweed!
+                      </h2>
+                      <p 
+                        className="text-white text-lg sm:text-xl md:text-2xl font-medium drop-shadow-md"
+                        style={{ 
+                          fontFamily: 'Urbanist, sans-serif',
+                          textShadow: '1px 1px 2px rgba(0,0,0,0.7)'
+                        }}
+                      >
+                        The smallest flowering plant on Earth hides a lot of potential - all of it waiting to be unlocked.
+                      </p>
+                    </div>
                   </div>
                 </>
               )}
