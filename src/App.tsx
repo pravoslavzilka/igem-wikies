@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -6,7 +5,7 @@ import Home from './pages/Home';
 import Handbook from './pages/Handbook';
 
 // Project pages
-import ProjectWhat from './pages/project/What';
+import ProjectWhat from './pages/project/What/What';
 import ProjectWhy from './pages/project/Why/index';
 import ProjectHow from './pages/project/How';
 
