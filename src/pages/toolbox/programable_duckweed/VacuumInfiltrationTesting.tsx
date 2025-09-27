@@ -10,14 +10,16 @@ export default function VacuumInfiltrationTesting() {
       
       {/* Introduction */}
       <div className="mb-8">
-        Testing infiltration conditions was crucial for achieving transient transformation efficiency in our Regeneration Assay.
-        We had a protocol from the Ordoñez Lab (1), developed for Spirodela. Since our work also included Lemna, Wolffia,
-        and Wolffiella species, we sought to apply it to a broader range of duckweed species and clones. Because we
-        suspected that each duckweed clone might respond differently, we systematically tested a range of parameters in
-        parallel and aimed to simplify the protocol wherever possible. For these assays, we used the pAMO052
-        construct, carrying the RUBY reporter under the rZmUBI promoter, kindly provided by the Ordoñez Lab. The RUBY
-        reporter reconstitutes the betalain pathway from red beet, producing a visible red pigment in plant tissues. This
-        allows direct confirmation of transgene expression without the need for microscopy.
+        <p className="mb-4">
+          Testing infiltration conditions was crucial for achieving transient transformation efficiency in our <span className="font-medium">Regeneration Assay</span>. 
+          We had a protocol from the <strong>Ordoñez Lab (1)</strong>, developed for <em>Spirodela</em>. Since our work also included <em>Lemna</em>, <em>Wolffia</em>, 
+          and <em>Wolffiella</em> species, we sought to apply it to a broader range of duckweed species and clones. Because we 
+          suspected that each duckweed clone might respond differently, we systematically tested a range of parameters in 
+          parallel and aimed to simplify the protocol wherever possible. For these assays, we used the <strong>pAMO052 
+          construct</strong>, carrying the <strong>RUBY reporter</strong> under the <strong>rZmUBI promoter</strong>, kindly provided by the Ordoñez Lab. The RUBY 
+          reporter reconstitutes the <strong>betalain pathway</strong> from red beet, producing a visible red pigment in plant tissues. This 
+          allows direct confirmation of transgene expression without the need for microscopy.
+        </p>
 
       </div>
 
