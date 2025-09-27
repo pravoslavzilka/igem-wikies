@@ -7,7 +7,7 @@ import Handbook from './pages/Handbook';
 
 // Project pages
 import ProjectWhat from './pages/project/What';
-import ProjectWhy from './pages/project/Why';
+import ProjectWhy from './pages/project/Why/index';
 import ProjectHow from './pages/project/How';
 
 // Project pages - how
@@ -29,7 +29,7 @@ import ToolboxTools from './pages/toolbox/Tools';
 import ToolboxResources from './pages/toolbox/Resources';
 import ToolboxDownloads from './pages/toolbox/Downloads';
 
-import SustainabilityDocument from './pages/project/why/Sustainability';
+import SustainabilityDocument from './pages/project/Why/Sustainability';
 
 import LivingLayersDocument from './pages/project/how/Cultivator';
 import WhyPlantsSuck from './pages/toolbox/WhyPlantsSuck';
