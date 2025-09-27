@@ -1,4 +1,3 @@
-import React from 'react';
 import { AccordionItemProps } from '../types';
 
 // Jednoduchá funkcia na formátovanie
