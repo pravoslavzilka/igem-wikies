@@ -31,17 +31,24 @@ const FutureSection = ({ futureSectionImageUrl }: FutureSectionProps) => {
               </h2>
               
               <p 
-                className="text-gray-700 text-sm sm:text-base leading-relaxed"
+                className="text-justify leading-relaxed text-sm sm:text-base text-gray-700"
                 style={{ 
                   fontFamily: 'Space Grotesk, sans-serif',
                   lineHeight: '168%',
                   color: 'rgba(23, 31, 22, 0.75)'
                 }}
               >
-                At iGEM Brno, we are convinced that this is not enough to fully utilize the amazing capabilities of duckweed. And because we believe that the success of technology lies in its user-friendliness
-                {/* one line space */}
-                <br />
-                <br />
+                At iGEM Brno, we are convinced that this is not enough to fully utilize the amazing capabilities of duckweed. And because we believe that the success of technology lies in its user-friendliness
+              </p>
+              
+              <p 
+                className="text-justify leading-relaxed text-sm sm:text-base text-gray-700"
+                style={{ 
+                  fontFamily: 'Space Grotesk, sans-serif',
+                  lineHeight: '168%',
+                  color: 'rgba(23, 31, 22, 0.75)'
+                }}
+              >
                 We developed TAIFR and characterized duckweed-native promoters, so anyone can engineer duckweed efficiently. We built an autonomous cultivation prototype, allowing anyone to grow duckweed in their lab cheaply and without labour.
               </p>
             </div>

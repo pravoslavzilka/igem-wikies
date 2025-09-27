@@ -13,14 +13,14 @@ const FinalMessageSection = () => {
               style={{ borderRadius: '16px' }}
             >
               <p 
-                className="text-gray-900 text-center font-semibold leading-tight"
+                className="text-justify text-gray-900 font-semibold leading-tight"
                 style={{ 
                   fontFamily: 'Urbanist, sans-serif',
                   fontSize: '32px',
                   fontWeight: 600,
                   lineHeight: '140%',
                   color: '#1B1B1B',
-                  width: '784px',
+                  maxWidth: '784px',
                   margin: '0 auto'
                 }}
               >
