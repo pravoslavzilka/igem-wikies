@@ -127,23 +127,88 @@ const TAIFRComponent = () => {
           </div>
           
           <p className="text-gray-700 leading-relaxed text-justify" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-            <strong>Figure 3.</strong> Co-transformation of constructs pIB002 (GFP-NPTII) and pIB003 (PONG) into wild-type <em>Spirodela polyrhiza</em> (1) results in transient GFP expression (2). Upon neomycin selection, some transformed duckweed give rise to new GFP-positive fronds 3–4 weeks post infiltration (3). GFP expression was further confirmed by Western blot (4).
-          </p>
+            <p>
+                <strong>Figure 3. </strong>
+                <span style={{ fontWeight: 400 }}>
+                    Co-transformation of constructs pIB002 (GFP-NPTII) and pIB003 (PONG) into
+                    wild-type{" "}
+                </span>
+                <em>
+                    <span style={{ fontWeight: 400 }}>Spirodela polyrhiza </span>
+                </em>
+                <span style={{ fontWeight: 400 }}>
+                    (1) results in transient GFP expression (2). Upon neomycin selection, some
+                    transformed duckweed give rise to new GFP-positive fronds 3–4 weeks post
+                    infiltration (3). GFP expression was further confirmed by Western blot (4).
+                </span>
+                </p>
+
+            </p>
+        </section>
+
+        <section className="mb-8">
+          <div className="text-center py-6 px-8 bg-green-100 rounded-lg">
+            <h2 className="text-2xl font-bold text-green-800" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              Discover how you can use our TAIFR parts and protocol engineer duckweed
+            </h2>
+          </div>
         </section>
 
         {/* Why duckweed genetic engineering takes so long? */}
         <section className="mb-8">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+          <h2 className="text-4xl font-bold text-gray-800 mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             Why duckweed genetic engineering takes so long?
           </h2>
           
-          <p className="text-gray-700 leading-relaxed mb-4 text-justify" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-            Most of the genetic engineering in plant biotechnology is mediated by callus - dedifferentiated plant tissue that is more susceptible to infection by Agrobacterium tumefaciens - a natural plant pathogen capable of transferring and integrating T-DNA–bordered DNA into the plant nuclear genome (1). Such infected callus is then regenerated into a mature plant using hormone combinations (unique for each species or even cultivar). This process takes from weeks to months, depending on the plant species being used, but often callus-mediated transformation is not even possible due to the inability of many species to regenerate into mature plants (2).
-          </p>
+          <p>
+            <span style={{ fontWeight: 400 }}>
+                Most of the genetic engineering in plant biotechnology is mediated by callus
+                - dedifferentiated plant tissue that is more susceptible to infection by{" "}
+            </span>
+            <em>
+                <span style={{ fontWeight: 400 }}>Agrobacterium tumefaciens </span>
+            </em>
+            <span style={{ fontWeight: 400 }}>
+                - a natural plant pathogen capable of transferring and integrating
+                T-DNA–bordered DNA into the plant nuclear genome (1). Such infected callus
+                is then regenerated into a mature plant using hormone combinations (unique
+                for each species or even cultivar). This process takes from weeks to months,
+                depending on the plant species being used, but often callus-mediated
+                transformation is not even possible due to the inability of many species to
+                regenerate into mature plants (2).
+            </span>
+            </p>
 
-          <p className="text-gray-700 leading-relaxed mb-6 text-justify" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-            Duckweed (Lemnoideae) genetic engineering is also mediated by callus and Agrobacterium (3). Unfortunately, one such iteration cycle takes around 5 months. Callus must be induced and formed (2 months), then transformed by Agrobacterium, positive transformants selected and grown (1.5 months), and then regenerated into mature plants (1.5 months). Understandably, such a lengthy process - often resulting in genome duplication or somaclonal mutations (Marí-Ordóñez, personal communication) discourages scientists or iGEMers from even considering to work with duckweed, a plant with vast biotechnological potential.
-          </p>
+            <p className='mt-10 mb-10'>
+                <span style={{ fontWeight: 400 }}>Duckweed (</span>
+                <em>
+                    <span style={{ fontWeight: 400 }}>Lemnoideae</span>
+                </em>
+                <span style={{ fontWeight: 400 }}>
+                    ) genetic engineering is also mediated by callus and{" "}
+                </span>
+                <em>
+                    <span style={{ fontWeight: 400 }}>Agrobacterium</span>
+                </em>
+                <span style={{ fontWeight: 400 }}>
+                    {" "}
+                    (3). Unfortunately, one such iteration cycle takes around 5 months. Callus
+                    must be induced and formed (2 months), then transformed by{" "}
+                </span>
+                <em>
+                    <span style={{ fontWeight: 400 }}>Agrobacterium</span>
+                </em>
+                <span style={{ fontWeight: 400 }}>
+                    , positive transformants selected and grown (1.5 months), and then
+                    regenerated into mature plants (1.5 months). Understandably, such a lengthy
+                    process - often resulting in genome duplication or somaclonal mutations
+                    (Marí-Ordóñez, personal communication) discourages scientists or iGEMers
+                    from even considering to work with duckweed, a plant with vast
+                    biotechnological potential.
+                </span>
+                </p>
+
+
 
           {/* Figures 4 and 5 side by side */}
           <div className="grid grid-cols-2 gap-6 mb-6">
@@ -153,9 +218,7 @@ const TAIFRComponent = () => {
                   [Figure 4]
                 </p>
               </div>
-              <p className="text-sm text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                <strong>Figure 4.</strong> Calli of wild-type Spirodela polyrhiza 162 – Sp162 (1) and Sp162 transgenic RUBY-line (2)
-              </p>
+             
             </div>
             <div className="text-center">
               <div className="bg-gray-200 rounded-lg h-48 mb-2 flex items-center justify-center">
@@ -163,26 +226,68 @@ const TAIFRComponent = () => {
                   [Figure 5]
                 </p>
               </div>
-              <p className="text-sm text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                <strong>Figure 5.</strong> Dr. Arturo Marí-Ordóñez from GMI Vienna – an expert on duckweed genetic engineering
-              </p>
+              
             </div>
+           
+
           </div>
+           <p>
+                <strong>Figure 4. Calli of wild-type&nbsp; </strong>
+                <em>
+                    <span style={{ fontWeight: 400 }}>Spirodela polyrhiza</span>
+                </em>
+                <span style={{ fontWeight: 400 }}>
+                    {" "}
+                    162 – Sp162 (1) and Sp162 transgenic RUBY-line (2)
+                </span>
+                </p>
         </section>
 
         {/* Could it be accelerated? */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+          <h2 className="text-4xl font-bold text-gray-800 mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             Could it be accelerated?
           </h2>
           
-          <p className="text-gray-700 leading-relaxed mb-4 text-justify" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-            Possibly yes! Duckweeds possess a strong regeneration capacity, as they reproduce mostly asexually (4) by budding (like yeast). In some plants, genetic engineering is mediated by infecting auxiliary meristematic parts - undifferentiated growth tissue in branches or stems, i.e., auxiliary nodes - with Agrobacterium and then selecting meristematic cells carrying the transgene and resistance gene to give rise to a new shoot of fully transgenic plants. This is called in-planta mediated genetic engineering (5). It has been demonstrated in pea (6), peanut (7), soybean (8), and sweet potato (9).
-          </p>
+         <>
+            <p>
+                <span style={{ fontWeight: 400 }}>
+                Possibly yes! Duckweeds possess a strong regeneration capacity, as they
+                reproduce mostly asexually (4) by budding (like yeast). In some plants,
+                genetic engineering is mediated by infecting auxiliary meristematic parts
+                - undifferentiated growth tissue in branches or stems, i.e., auxiliary
+                nodes - with{" "}
+                </span>
+                <em>
+                <span style={{ fontWeight: 400 }}>Agrobacterium</span>
+                </em>
+                <span style={{ fontWeight: 400 }}>
+                {" "}
+                and then selecting meristematic cells carrying the transgene and
+                resistance gene to give rise to a new shoot of fully transgenic plants.
+                This is called in-planta mediated genetic engineering (5). It has been
+                demonstrated in pea (6), peanut (7), soybean (8), and sweet potato
+                (9).&nbsp;
+                </span>
+            </p>
+            <p>
+                <br />
+                <span style={{ fontWeight: 400 }}>
+                So, we in iGEM Brno thought: let’s try in-planta mediated transformation
+                in duckweed as well! We even found in the literature that it had already
+                been attempted a few times and was called frond-mediated transformation
+                (10), (11), (12) - since one duckweed “leaf” is called a frond. We
+                contacted experts, including Dr. Ordóñez from GMI Vienna, who we later
+                realized is an expert in duckweed genetic engineering. Dr. Ordóñez told us
+                that he had also tried all those frond-mediated transformation methods,
+                even contacting their authors, but was not able to replicate any of
+                them...{" "}
+                </span>
+                <span style={{ fontWeight: 400 }}>Read more at Human Practices page</span>
+                <span style={{ fontWeight: 400 }}>.</span>
+            </p>
+            </>
 
-          <p className="text-gray-700 leading-relaxed mb-6 text-justify" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-            So, we in iGEM Brno thought: let's try in-planta mediated transformation in duckweed as well! We even found in the literature that it had already been attempted a few times and was called frond-mediated transformation (10), (11), (12) - since one duckweed "leaf" is called a frond. We contacted experts, including Dr. Ordóñez from GMI Vienna, who we later realized is an expert in duckweed genetic engineering. Dr. Ordóñez told us that he had also tried all those frond-mediated transformation methods, even contacting their authors, but was not able to replicate any of them... Read more at Human Practices page.
-          </p>
 
           {/* Figure 6 - Right aligned as in PDF */}
           <div className="float-right ml-6 mb-4 w-64">
