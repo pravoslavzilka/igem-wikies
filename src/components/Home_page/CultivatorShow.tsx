@@ -1,4 +1,6 @@
 import { Clock10Icon, ShieldCheck, BarChart4Icon } from "lucide-react"
+import {Link} from "react-router-dom";
+import React from "react";
 
 
 const CultivatorShow = () => {
@@ -22,7 +24,7 @@ const CultivatorShow = () => {
             <h1 className="text-4xl font-bold text-gray-800 leading-tight" style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem", }}>
               ...and equipping it with systems for effortless cultivation at any scale.
             </h1>
-            
+
             <div className="text-lg text-gray-600 leading-relaxed" style={{ fontFamily: 'Urbanist, sans-serif', fontSize: '19px', lineHeight: '140%' }}>
               <p>
                 Our in-house made autonomous cultivation unit, <b>CULTIVATOR</b> can grow, monitor, and harvest duckweed with maximum efficiency and minimum user work - saving hours per day for any scientist looking to scale up their duckweed experiments.
@@ -30,9 +32,14 @@ const CultivatorShow = () => {
             </div>
 
             <div className="">
-              <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-medium transition-colors duration-200" style={{ fontFamily: 'Urbanist, sans-serif', backgroundColor: '#22531C' }}>
-                See how cultivator works
-              </button>
+              <Link to="/project/how/cultivator/" onClick={() => window.scrollTo(0, 0)}>
+                <button
+                  className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-medium transition-colors duration-200"
+                  style={{ fontFamily: "Urbanist, sans-serif", backgroundColor: "#22531C" }}
+                >
+                  See how the cultivator works
+                </button>
+              </Link>
             </div>
           </div>
 
