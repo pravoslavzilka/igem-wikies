@@ -123,7 +123,7 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
         quote: "66% of the protein feedstock our farmers are dependent on is imported",
         author: "Recent Trends for Enhancing the Diversity",
         title: "and Quality of Soybean Products",
-        imageUrl: "/images/authors/Book.jpg"
+        imageUrl: "https://static.igem.wiki/teams/5642/images/homepage/brazil/book-white-bg.webp"
       };
     } else if (currentYear <= 2020) {
       return {
@@ -132,7 +132,7 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
         quote: "40% of the global production is concentrated in Brazil",
         author: "Foreign Agricultural Service",
         title: "U.S. Department of Agriculture",
-        imageUrl: "/images/authors/Book.jpg"
+        imageUrl: "https://static.igem.wiki/teams/5642/images/homepage/brazil/book-white-bg.webp"
       };
     } else if (currentYear <= 2023) {
       return {
@@ -141,7 +141,7 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
         quote: "Since 2000, those savannas have been converted into soybean fields",
         author: "The expansion of soybean production",
         title: "in the Cerrado",
-        imageUrl: "/images/authors/Book.jpg"
+        imageUrl: "https://static.igem.wiki/teams/5642/images/homepage/brazil/book-white-bg.webp"
       };
     } else if (currentYear <= 2027) {
       return {
@@ -150,7 +150,7 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
         quote: "but continuing past practices will severely damage these foundations of their success",
         author: "Prof. Carlos Klink",
         title: "Department of Ecology University of Brasília",
-        imageUrl: "/images/authors/carlos_klink.jpeg"
+        imageUrl: "https://static.igem.wiki/teams/5642/images/homepage/brazil/carlos-klink.webp"
       };
     } else if (currentYear <= 2030) {
       return {
@@ -159,7 +159,7 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
         quote: "to boost environmental sustainability through better practices and new technologies",
         author: "Prof. Carlos Klink",
         title: "Department of Ecology University of Brasília",
-        imageUrl: "/images/authors/carlos_klink.jpeg"
+        imageUrl: "https://static.igem.wiki/teams/5642/images/homepage/brazil/carlos-klink.webp"
       };
     } else {
       return {
@@ -168,7 +168,7 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
         quote: "technologies like those from iGEM Brno could play a vital role in future",
         author: "Prof. Carlos Klink",
         title: "Department of Ecology University of Brasília",
-        imageUrl: "/images/authors/carlos_klink.jpeg"
+        imageUrl: "https://static.igem.wiki/teams/5642/images/homepage/brazil/carlos-klink.webp"
       };
     }
   }, [currentYear]);
@@ -205,19 +205,20 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
         >
           <div className="mb-2 sm:mb-3 md:mb-4">
             <motion.div 
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-wider mb-2 sm:mb-3 md:mb-4" 
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold tracking-wider mb-3 sm:mb-4 md:mb-5" 
               style={{ 
                 color: CONFIG.colors.accent, 
                 fontFamily: "Space Grotesk, sans-serif", 
                 fontWeight: 900, 
-                letterSpacing: "2px",
-                textAlign: 'center'
+                letterSpacing: "1px",
+                textAlign: 'center',
+                lineHeight: '1.2'
               }}
               variants={taglineVariants}
             >
-              <div className="inline-block relative">
-                <span className="text-6xl sm:text-8xl text-white/20 font-serif absolute right-full top-0 -mt-2 sm:-mt-4 mr-1 sm:mr-2">
-                  “
+              <div className="inline-block relative px-2">
+                <span className="text-4xl sm:text-6xl md:text-7xl text-white/20 font-serif absolute right-full top-0 -mt-1 sm:-mt-2 mr-1">
+                  "
                 </span>
                 <motion.span
                   animate={{
@@ -257,7 +258,7 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
                 {displayContent.quote}
               </div>
               <span className="text-3xl sm:text-4xl text-white/20 font-serif absolute left-full -translate-x-full top-1/2 -translate-y-1/2 ml-1 sm:ml-2">
-                ”
+                "
               </span>
             </motion.div>
 
