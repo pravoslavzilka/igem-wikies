@@ -1,4 +1,12 @@
+import React from 'react';
 import { AccordionItemProps } from '../types';
+
+// Jednoduchá funkcia na formátovanie
+const formatText = (text: string): string => {
+  return text
+    .replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold">$1</strong>')
+    .replace(/\*(.*?)\*/g, '<em class="italic">$1</em>');
+};
 
 const AccordionItem = ({ id, title, content, isActive, onClick, showContent = false }: AccordionItemProps) => (
   <div className="w-full">
@@ -40,9 +48,8 @@ const AccordionItem = ({ id, title, content, isActive, onClick, showContent = fa
               lineHeight: '168%',
               color: 'rgba(23, 31, 22, 0.75)'
             }}
-          >
-            {paragraph}
-          </p>
+            dangerouslySetInnerHTML={{ __html: formatText(paragraph) }}
+          />
         ))}
       </div>
     )}
