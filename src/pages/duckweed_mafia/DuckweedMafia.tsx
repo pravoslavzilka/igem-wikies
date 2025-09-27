@@ -190,7 +190,7 @@ const DuckweedMafiaTeam = () => {
           name: "doc. Pavel Dvořák, Ph.D.",
           role: "Fostering synthetic biology and bioengineering at Masaryk University, across the Czech Republic, and beyond is my mission.",
           description: "Pavel believes that biology and bioengineering will not solve all of our problems, but they can solve many and make our lives more sustainable. Experiencing the beauty and diversity of nature while travelling, hiking, cycling, or simply enjoying quiet evenings on the terrace with his family assures him it is worth the effort. The enthusiasm of their talented students is what keeps him going.",
-          image:"https://static.igem.wiki/teams/5642/images/duckweedmafia/team/04.webp"
+          image:"https://static.igem.wiki/teams/5642/images/duckweedmafia/team/0445.webp"
         },
         {
           name: "Karel Říha, Ph.D.",
@@ -238,13 +238,13 @@ const DuckweedMafiaTeam = () => {
         
         // Calculate which team section we're in based on scroll position
         // Subtract half viewport height to account for early transition
-        const teamScrollPosition = scrollPosition - (windowHeight * 1.5);
+        const teamScrollPosition = scrollPosition - (windowHeight * 0.9);
         let totalMembers = 0;
         let currentSectionTitle = 'Founders';
         
         for (const section of teamSections) {
           // Use 0.6 multiplier since cards are 60vh tall
-          if (teamScrollPosition < (totalMembers + section.members.length) * windowHeight * 0.6) {
+          if (teamScrollPosition < (totalMembers + section.members.length) * windowHeight * 0.84) {
             currentSectionTitle = section.title;
             break;
           }
