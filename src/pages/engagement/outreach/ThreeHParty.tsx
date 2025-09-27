@@ -17,9 +17,9 @@ const ThreeHParty = () => {
         {/* Why We Did It Section */}
         <section className="mb-12 text-lg">
               <>
-                <p>
+                <h2 className="text-2xl" style={{marginBottom: '1rem'}}>
                   <strong>WHY we did it</strong>
-                </p>
+                </h2>
                 <p>
                   <span style={{ fontWeight: 400 }}>Our goal was twofold.</span>
                 </p>
@@ -32,7 +32,7 @@ const ThreeHParty = () => {
                     proud of their contributions.
                   </span>
                 </p>
-                <p>
+                <p className="mt-4">
                   <span style={{ fontWeight: 400 }}>
                     Second, and even more crucial, we wanted to{" "}
                   </span>
