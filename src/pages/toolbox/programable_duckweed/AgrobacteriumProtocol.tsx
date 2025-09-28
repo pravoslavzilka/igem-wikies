@@ -1,8 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
+import TextModal, {textSlide} from '../../../components/ui/TextModal';
+
+
+const bacteriaAntibiotic: textSlide[] = [ 
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/watercycle/water-cycle-schema-old.webp",
+        title: "Appropriate antibiotics",
+        description: [
+            "A.tumefaciens EHA105 : use rifampicin (50 μg/ml) and streptomycin (50 μg/ml)",
+            "A.tumefaciens GV3101 : use rifampicin (50 μg/ml) and gentamicin (100 μg/ml)",
+            "Do not forget to also add antibiotics specific for your binary vector.",
+
+        ],
+    },
+];
+
 
 export default function AgrobacteriumProtocol() {
+  const [isOpenAntibioticSlides, setIsOpenAntibioticSlides] = useState(false);
   return (
-    <div className="max-w-6xl mx-auto p-6 bg-white">
+    <div className="max-w-6xl mx-auto p-6 bg-white text-lg text-justify">
       
       
       <div className="p-8 ">
@@ -10,15 +27,15 @@ export default function AgrobacteriumProtocol() {
           Electroporation of Agrobacterium protocol
         </h1>
         
-        <div className="bg-gray-100 border-l-4 border-gray-400 p-4 mb-8">
+        <div className="bg-gray-100 border-l-4 border-l-indigo-600 p-4 mb-8">
           <p className="text-gray-800 leading-relaxed" style={{fontFamily: 'Urbanist'}}>
-            Once your plasmid has been cloned into a binary vector carrying the desired DNA within the T-DNA region, the next step is to introduce it into <em>Agrobacterium tumefaciens</em>. This bacterium is used as a delivery system, transferring the T-DNA into the plant genome.
+            Once your plasmid has been cloned into a binary vector carrying the desired DNA within the T-DNA region, the next step is to introduce it into <em> Agrobacterium tumefaciens</em>. This bacterium is used as a delivery system, transferring the T-DNA into the plant genome.
           </p>
         </div>
 
         <div className="space-y-8">
           {/* Step 1 */}
-          <div className="bg-white p-6 border border-gray-300 border-l-4 border-l-gray-600">
+          <div className="bg-white p-6 border border-gray-300 border-l-4 border-l-green-600">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4" style={{fontFamily: 'Space Grotesk'}}>
               Step 1: Thawing cells & DNA addition
             </h2>
@@ -35,7 +52,7 @@ export default function AgrobacteriumProtocol() {
           </div>
 
           {/* Step 2 */}
-          <div className="bg-white p-6 border border-gray-300 border-l-4 border-l-gray-600">
+          <div className="bg-white p-6 border border-gray-300 border-l-4 border-l-blue-600">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4" style={{fontFamily: 'Space Grotesk'}}>
               Step 2: Electroporation
             </h2>
@@ -74,7 +91,7 @@ export default function AgrobacteriumProtocol() {
           </div>
 
           {/* Step 3 */}
-          <div className="bg-white p-6 border border-gray-300 border-l-4 border-l-gray-600">
+          <div className="bg-white p-6 border border-gray-300 border-l-4 border-l-purple-600">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4" style={{fontFamily: 'Space Grotesk'}}>
               Step 3: Recovery
             </h2>
@@ -92,12 +109,19 @@ export default function AgrobacteriumProtocol() {
           </div>
 
           {/* Step 4 */}
-          <div className="bg-white p-6 border border-gray-300 border-l-4 border-l-gray-600">
+          <div className="bg-white p-6 border border-gray-300 border-l-4 border-l-orange-600">
+
+            <TextModal
+            slides={bacteriaAntibiotic}
+            isOpen={isOpenAntibioticSlides}
+            onClose={() => setIsOpenAntibioticSlides(false)}
+            />
+
             <h2 className="text-2xl font-semibold text-gray-900 mb-4" style={{fontFamily: 'Space Grotesk'}}>
               Step 4: Plating
             </h2>
             <div className="space-y-2 mb-4" style={{fontFamily: 'Urbanist'}}>
-              <p className="text-gray-700">4.1) Before recovery, prepare LB agar plates with appropriate antibiotics.</p>
+              <p className="text-gray-700">4.1) Before recovery, prepare LB agar plates with <button onClick={() => setIsOpenAntibioticSlides(true)} className=" text-bold"><span className='text-green-600'><b>appropriate antibiotics</b></span></button>.</p>
               <p className="text-gray-700">4.2) After recovery, briefly vortex cells.</p>
               <p className="text-gray-700">4.3) Plate 50–200 µL (commonly 100 µL) and spread using sterile glass beads.</p>
             </div>
@@ -110,7 +134,7 @@ export default function AgrobacteriumProtocol() {
           </div>
 
           {/* Step 5 */}
-          <div className="bg-white p-6 border border-gray-300 border-l-4 border-l-gray-600">
+          <div className="bg-white p-6 border border-gray-300 border-l-4 border-l-teal-600">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4" style={{fontFamily: 'Space Grotesk'}}>
               Step 5: Cuvette cleaning
             </h2>
