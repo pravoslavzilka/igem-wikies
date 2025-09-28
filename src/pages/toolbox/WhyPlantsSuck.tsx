@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from 'react-router-dom';
+import References from "../../components/References";
 
 
 
@@ -8,7 +9,7 @@ import { Link } from 'react-router-dom';
 const WhyPlantsSuck = () => {
 
   return (
-    <div className="min-h-screen bg-white p-8">
+    <div className="min-h-screen bg-white p-8 text-lg text-justify" style={{ fontFamily: "Urbanist, sans-serif" }}>
       <div className="max-w-6xl mx-auto">
         {/* Main Title */}
         <h1 className="text-4xl font-bold text-center text-black mb-16 mt-10" style={{ fontFamily: "Space Grotesk" }}>
@@ -17,7 +18,7 @@ const WhyPlantsSuck = () => {
 
         {/* Main Content Paragraph */}
         <div className="mb-12">
-          <p className="text-base leading-relaxed text-black mb-4" style={{ fontFamily: "Urbanist" }}>
+          <p className="text-base text-lg leading-relaxed text-black mb-4" style={{ fontFamily: "Urbanist" }}>
             <strong>Plants</strong> have enormous potential in biotechnology, but working with them comes with far more challenges 
             than working with microbes. Bacteria can be grown quickly, transformed in a matter of hours, and studied 
             in simple laboratory conditions. In contrast, plants grow slowly, require controlled environments, and carry 
@@ -38,7 +39,7 @@ const WhyPlantsSuck = () => {
               <h2 className="text-xl font-bold text-black mb-4" style={{ fontFamily: "Space Grotesk" }}>The Waiting Game</h2>
               <p className="text-md leading-relaxed text-black" style={{ fontFamily: "Urbanist" }}>
                 Time is the most immediate and obvious challenge in 
-                plant biotechnology. Microbial systems such as <em>E. coli</em>  
+                plant biotechnology. Microbial systems such as <em>E. coli </em>  
                 can be transformed and analyzed within 24–48 hours, 
                 allowing researchers to quickly test new constructs, 
                 obtain results and iterate [4]. In contrast, plant 
@@ -80,7 +81,7 @@ const WhyPlantsSuck = () => {
                   alt="E.coli bacteria"
                   className="  w-full h-50 object-cover rounded-lg mb-2"
                 />
-                <p className="text-sm text-black font-medium text-center"><em>Escherichia coli (picture by James Smith)</em>
+                <p className="text-sm text-black font-medium text-center"><em>Escherichia coli</em> (picture by James Smith)
 </p>
               </div>
               
@@ -90,7 +91,7 @@ const WhyPlantsSuck = () => {
                   alt="Soybean plant"
                   className="w-full h-50 object-cover rounded-lg mb-2"
                 />
-                <p className="text-sm text-black font-medium text-center"><em>Soybean (Glycine max) green pod (picture by Macleay Grass Man)</em>
+                <p className="text-sm text-black font-medium text-center"><em>Soybean (Glycine max) green pod</em> (picture by Macleay Grass Man)
 </p>
               </div>
 
@@ -101,7 +102,7 @@ const WhyPlantsSuck = () => {
                   alt="Plant seedlings in laboratory"
                   className="w-full h-50 object-cover rounded-lg mb-2"
                 />
-                <p className="text-sm text-black font-medium text-center"><em>The flowering Arabidopsis thaliana triple mutant in phytotron (picture by Martin Stübler)</em></p>
+                <p className="text-sm text-black font-medium text-center">The flowering <em>Arabidopsis thaliana</em> triple mutant in phytotron (picture by Martin Stübler)</p>
               </div>
             </div>
           </div>
@@ -221,7 +222,7 @@ const WhyPlantsSuck = () => {
                 adaptations. <em>Arabidopsis thaliana</em> is relatively easy, since the "floral dip" method allows 
                 transformation through flowers, skipping most tissue culture steps and giving transgenic seeds in a 
                 few months [12]. Corn (<em>Zea mays</em>) usually needs young embryos to be infected with 
-                <em>Agrobacterium</em> and then grown back into plants in tissue culture — a slow process with only a few 
+                <em> Agrobacterium</em> and then grown back into plants in tissue culture — a slow process with only a few 
                 percent success [13]. Soybean (<em>Glycine max</em>) is even more difficult, with efficiencies often below 
                 1% and long regeneration times [14].
               </p>
@@ -236,7 +237,7 @@ const WhyPlantsSuck = () => {
                 </div>
                 <div className="text-left flex-1">
                   <h4 className="font-bold text-md text-black">E. coli transformation</h4>
-                  <p className="text-xs text-black mt-1">
+                  <p className="text-sm text-black mt-1">
                     Transformation efficiency is extremely high, reaching up to 
                     10⁹ colonies per microgram of DNA. Unlike in plants, 
                     obtaining transformants in bacteria is straightforward and 
@@ -249,7 +250,7 @@ const WhyPlantsSuck = () => {
               <div className="border-2 border-gray-300 rounded-lg p-4 bg-gray-50 flex flex-row items-center gap-4">
                 <div className="text-left flex-1">
                   <h4 className="font-bold text-md text-black">Arabidopsis floral dip</h4>
-                  <p className="text-xs text-black mt-1">
+                  <p className=" text-black mt-1 text-sm">
                     The floral dip method is simple and widely used, 
                     but efficiency is low — usually around 1–2% of 
                     seeds produce transformants [18].
@@ -267,7 +268,7 @@ const WhyPlantsSuck = () => {
                 </div>
                 <div className="text-left flex-1">
                   <h4 className="font-bold text-md text-black">Maize and soybean transformation</h4>
-                  <p className="text-xs text-black mt-1">
+                  <p className="text-sm text-black mt-1">
                     Stable Agrobacterium-mediated transformation of corn and 
                     soybean is possible through callus or immature embryos, 
                     but efficiencies are very low, typically only 1–5% [19].
@@ -283,7 +284,7 @@ const WhyPlantsSuck = () => {
 
           {/* Main Content Paragraph */}
           <div className="mb-12">
-            <p className="text-base leading-relaxed text-black mb-4" style={{ fontFamily: "Urbanist" }}>
+            <p className="text-base leading-relaxed text-lg text-black mb-4" style={{ fontFamily: "Urbanist" }}>
               Even when a plant successfully regenerates, the story doesn’t always end well. Long periods in tissue culture put cells under stress, and this stress can lead to random genetic and epigenetic changes known as somaclonal variation [14]. These changes may include point mutations, chromosome rearrangements, or altered gene expression, none of which were part of the intended transformation. The result is that two regenerated plants from the same protocol may look or behave very differently, making it difficult to tell whether an observed effect comes from the introduced construct or from unintended culture-induced mutations [15]. Researchers deal with somaclonal variation by regenerating many independent lines and checking whether traits are consistent across them, or by cultivating plants through several generations to stabilize changes. Both strategies work, but they add months of effort and burn more expenses [16]. This “background noise” is a challenge unique to plants, since bacteria and yeast rarely experience such large-scale instability during routine transformation.
 
             </p>
@@ -301,92 +302,108 @@ const WhyPlantsSuck = () => {
 
           </div>
           <p className="mt-10" style={{ fontFamily: "Urbanist, sans-serif" }  }>
-              At iGEM Brno, we are developing a faster and simpler way to transform the fastest growing plant on Earth. By implementing our transposon-based transformation TAIFR (link to page describing TAIFR), we aim to generate stable, uniformly transformed lines “in-planta” more efficiently. Duckweed’s rapid growth and simple body plan make it an ideal chassis, while removing the dependence on long tissue culture steps lowers the risk of somaclonal variation. With this approach, we aim not only to unlock its unique biotechnological potential <Link to="/project/why" className="text-blue-500" style={{ textDecoration: "underline" }}>(Why)</Link>, but also to provide plant researchers with a new model system — one that enables the generation of stable engineered lines quickly, affordably, and predictably. This would accelerate plant-oriented basic research and help translate it more rapidly into meaningful impact for society.
+              At iGEM Brno, we are developing a faster and simpler way to transform the fastest growing plant on Earth. By implementing our transposon-based transformation <Link to="/project/how/taifr/overview" className="text-blue-500" style={{ textDecoration: "underline" }}>TAIFR</Link>, we aim to generate stable, uniformly transformed lines “in-planta” more efficiently. Duckweed’s rapid growth and simple body plan make it an ideal chassis, while removing the dependence on long tissue culture steps lowers the risk of somaclonal variation. With this approach, we aim not only to unlock its unique biotechnological potential <Link to="/project/why" className="text-blue-500" style={{ textDecoration: "underline" }}>(Why)</Link>, but also to provide plant researchers with a new model system — one that enables the generation of stable engineered lines quickly, affordably, and predictably. This would accelerate plant-oriented basic research and help translate it more rapidly into meaningful impact for society.
 
             </p>
         </div>
+
+
+        <References references={Reference} />
              
 
 
-        <div className="border-t border-gray-200 pt-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-4" style={{ fontFamily: "Space Grotesk, sans-serif" }}>References</h3>
-                <div className="space-y-3 text-md text-gray-700">
-                  <p className="leading-relaxed">
-                    [1] Altpeter, F. et al. (2016) ‘Advancing Crop Transformation in the Era of Genome Editing’, The Plant Cell, 28(7), pp. 1510–1520. Available at: <Link className='text-blue-500 hover:underline' target='_blank' to="https://doi.org/10.1105/tpc.16.00196">https://doi.org/10.1105/tpc.16.00196</Link>.</p>
-                  <p className="leading-relaxed">
-                    [2] Quiroz, L.F. et al. (2024) ‘Tissue culture-independent approaches to revolutionizing plant transformation and gene editing’, Horticulture Research, 12(2), p. uhae292. Available at: <Link className='text-blue-500 hover:underline' target='_blank' to="https://doi.org/10.1093/hr/uhae292">https://doi.org/10.1093/hr/uhae292</Link>.</p>
-                  <p className="leading-relaxed">
-                      [3] Duta-Cornescu, G. et al. (2023) Somaclonal variation—advantage or disadvantage in plant breeding? Plants, 12(4), 808. doi:10.3390/plants12040808.
-                  </p>
-                  <p className="leading-relaxed">
-                       [4] Thermo Fisher Scientific (n.d.) Bacterial Transformation Workflow. Available at: <Link className='text-blue-500 hover:underline' target='_blank' to="https://www.thermofisher.com/us/en/home/life-science/cloning/cloning-learning-center/invitrogen-school-of-molecular-biology/molecular-cloning/transformation/bacterial-transformation-workflow.html">https://www.thermofisher.com/us/en/home/life-science/cloning/cloning-learning-center/invitrogen-school-of-molecular-biology/molecular-cloning/transformation/bacterial-transformation-workflow.html</Link>
-                  </p>
-                  <p className="leading-relaxed">   
-                    [5] Clough, S.J. and Bent, A.F. (1998) Floral dip: a simplified method for Agrobacterium-mediated transformation of Arabidopsis thaliana. The Plant Journal, 16(6), pp.735–743. doi:10.1046/j.1365-313x.1998.00343.x.
-
-                  </p>
-                  <p className="leading-relaxed">
-[6] Xu, H. et al. (2022) Progress in soybean genetic transformation over the last decade. Plant Methods, 18, 103. doi:10.1186/s13007-022-00927-3.
-                  </p>
-                  <p className="leading-relaxed">
-[7] Michael, T.P. and VanBuren, R. (2020) Building near-complete plant genomes. Current Opinion in Plant Biology, 54, pp.26–33. doi:10.1016/j.pbi.2019.12.009.
-                  </p>
-                  <p className="leading-relaxed">
-[8] The Arabidopsis Genome Initiative (2000) Analysis of the genome sequence of the flowering plant Arabidopsis thaliana. Nature, 408, pp.796–815. doi:10.1038/35048692.
-                  </p>
-                  <p className="leading-relaxed">
-[9] Appels, R. et al. (2018) Shifting the limits in wheat research and breeding using a fully annotated reference genome. Science, 361(6403), eaar7191. doi:10.1126/science.aar7191.
-                  </p>
-                  <p className="leading-relaxed">
-[10] Wendel, J.F. (2015) ‘The wondrous cycles of polyploidy in plants’, American Journal of Botany, 102(11), pp. 1753–1756. Available at: <Link className='text-blue-500 hover:underline' target='_blank' to="https://doi.org/10.3732/ajb.1500320">https://doi.org/10.3732/ajb.1500320</Link>.
-
-                  </p>
-                  <p className="leading-relaxed">
-[11] Lowe, K. et al. (2016) Agrobacterium tumefaciens-mediated transformation of maize immature embryos. Plant Methods, 12, 29. doi:10.1186/s13007-016-0139-4.
-
-                  </p>
-                  <p className="leading-relaxed">
-[12] Clough, S.J. and Bent, A.F. (1998) Floral dip: a simplified method for Agrobacterium-mediated transformation of Arabidopsis thaliana. The Plant Journal, 16(6), pp.735–743. doi:10.1046/j.1365-313x.1998.00343.x.
-
-                  </p>
-                  <p className="leading-relaxed">
-[13] Ishida, Y. et al. (2007) Agrobacterium-mediated transformation of maize. Nature Protocols, 2, pp.1614–1621. doi:10.1038/nprot.2007.241.
-
-                  </p>
-                  <p className="leading-relaxed">
-[14] Li, Z. et al. (2017) Optimizing tissue culture-based transformation in soybean. Frontiers in Plant Science, 8, 246. doi:10.3389/fpls.2017.00246.
-
-                  </p>
-                  <p className="leading-relaxed">
-[15] Krishna, H. et al. (2016) Somaclonal variations and their applications in horticultural crops improvement. PLoS ONE, 11(2), e0147522. doi:10.1371/journal.pone.0147522.
-
-                  </p>
-                  <p className="leading-relaxed">
-[16] Duta-Cornescu, G. et al. (2023) Somaclonal variation—advantage or disadvantage in plant breeding? Plants, 12(4), 808. doi:10.3390/plants12040808.
-
-                  </p>
-
-                  <p className="leading-relaxed">
-                          [17] Orłowska, R. et al. (2024) An insight into tissue culture-induced variation for crop improvement. BMC Plant Biology, 24, 60. doi:10.1186/s12870-023-04679-w.
-                  </p>
-
-                  <p className="leading-relaxed">
-[18] Clough, S.J. and Bent, A.F. (1998) ‘Floral dip: a simplified method for Agrobacterium-mediated transformation of Arabidopsis thaliana’, The Plant Journal, 16(6), pp. 735–743. doi:10.1046/j.1365-313x.1998.00343.x.
-                  </p>
-
-                  <p className="leading-relaxed">
-[19] Olhoft, P.M. et al. (2003) ‘Efficient soybean transformation using Agrobacterium tumefaciens’, Plant Cell Reports, 22, pp. 478–482. doi:10.1007/s00299-003-0701-9.
-
-                  </p>
-
-                </div>
-              </div>
+       
+              
 
       </div>
     </div>
   );
 
 }
+
+
+const Reference = [
+    {
+        id: 1,
+        text: "Altpeter, F. et al. (2016) 'Advancing Crop Transformation in the Era of Genome Editing', The Plant Cell, 28(7), pp. 1510–1520. Available at: https://doi.org/10.1105/tpc.16.00196.",
+        url: "https://doi.org/10.1105/tpc.16.00196"
+    },
+    {
+        id: 2,
+        text: "Quiroz, L.F. et al. (2024) 'Tissue culture-independent approaches to revolutionizing plant transformation and gene editing', Horticulture Research, 12(2), p. uhae292. Available at: https://doi.org/10.1093/hr/uhae292.",
+        url: "https://doi.org/10.1093/hr/uhae292"
+    },
+    {
+        id: 3,
+        text: "Duta-Cornescu, G. et al. (2023) Somaclonal variation—advantage or disadvantage in plant breeding? Plants, 12(4), 808. doi:10.3390/plants12040808."
+    },
+    {
+        id: 4,
+        text: "Thermo Fisher Scientific (n.d.) Bacterial Transformation Workflow. Available at: https://www.thermofisher.com/us/en/home/life-science/cloning/cloning-learning-center/invitrogen-school-of-molecular-biology/molecular-cloning/transformation/bacterial-transformation-workflow.html",
+        url: "https://www.thermofisher.com/us/en/home/life-science/cloning/cloning-learning-center/invitrogen-school-of-molecular-biology/molecular-cloning/transformation/bacterial-transformation-workflow.html"
+    },
+    {
+        id: 5,
+        text: "Clough, S.J. and Bent, A.F. (1998) Floral dip: a simplified method for Agrobacterium-mediated transformation of Arabidopsis thaliana. The Plant Journal, 16(6), pp.735–743. doi:10.1046/j.1365-313x.1998.00343.x."
+    },
+    {
+        id: 6,
+        text: "Xu, H. et al. (2022) Progress in soybean genetic transformation over the last decade. Plant Methods, 18, 103. doi:10.1186/s13007-022-00927-3."
+    },
+    {
+        id: 7,
+        text: "Michael, T.P. and VanBuren, R. (2020) Building near-complete plant genomes. Current Opinion in Plant Biology, 54, pp.26–33. doi:10.1016/j.pbi.2019.12.009."
+    },
+    {
+        id: 8,
+        text: "The Arabidopsis Genome Initiative (2000) Analysis of the genome sequence of the flowering plant Arabidopsis thaliana. Nature, 408, pp.796–815. doi:10.1038/35048692."
+    },
+    {
+        id: 9,
+        text: "Appels, R. et al. (2018) Shifting the limits in wheat research and breeding using a fully annotated reference genome. Science, 361(6403), eaar7191. doi:10.1126/science.aar7191."
+    },
+    {
+        id: 10,
+        text: "Wendel, J.F. (2015) 'The wondrous cycles of polyploidy in plants', American Journal of Botany, 102(11), pp. 1753–1756. Available at: https://doi.org/10.3732/ajb.1500320.",
+        url: "https://doi.org/10.3732/ajb.1500320"
+    },
+    {
+        id: 11,
+        text: "Lowe, K. et al. (2016) Agrobacterium tumefaciens-mediated transformation of maize immature embryos. Plant Methods, 12, 29. doi:10.1186/s13007-016-0139-4."
+    },
+    {
+        id: 12,
+        text: "Clough, S.J. and Bent, A.F. (1998) Floral dip: a simplified method for Agrobacterium-mediated transformation of Arabidopsis thaliana. The Plant Journal, 16(6), pp.735–743. doi:10.1046/j.1365-313x.1998.00343.x."
+    },
+    {
+        id: 13,
+        text: "Ishida, Y. et al. (2007) Agrobacterium-mediated transformation of maize. Nature Protocols, 2, pp.1614–1621. doi:10.1038/nprot.2007.241."
+    },
+    {
+        id: 14,
+        text: "Li, Z. et al. (2017) Optimizing tissue culture-based transformation in soybean. Frontiers in Plant Science, 8, 246. doi:10.3389/fpls.2017.00246."
+    },
+    {
+        id: 15,
+        text: "Krishna, H. et al. (2016) Somaclonal variations and their applications in horticultural crops improvement. PLoS ONE, 11(2), e0147522. doi:10.1371/journal.pone.0147522."
+    },
+    {
+        id: 16,
+        text: "Duta-Cornescu, G. et al. (2023) Somaclonal variation—advantage or disadvantage in plant breeding? Plants, 12(4), 808. doi:10.3390/plants12040808."
+    },
+    {
+        id: 17,
+        text: "Orłowska, R. et al. (2024) An insight into tissue culture-induced variation for crop improvement. BMC Plant Biology, 24, 60. doi:10.1186/s12870-023-04679-w."
+    },
+    {
+        id: 18,
+        text: "Clough, S.J. and Bent, A.F. (1998) 'Floral dip: a simplified method for Agrobacterium-mediated transformation of Arabidopsis thaliana', The Plant Journal, 16(6), pp. 735–743. doi:10.1046/j.1365-313x.1998.00343.x."
+    },
+    {
+        id: 19,
+        text: "Olhoft, P.M. et al. (2003) 'Efficient soybean transformation using Agrobacterium tumefaciens', Plant Cell Reports, 22, pp. 478–482. doi:10.1007/s00299-003-0701-9."
+    }
+]
 
 
 export default WhyPlantsSuck;
