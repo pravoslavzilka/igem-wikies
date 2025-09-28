@@ -37,7 +37,7 @@ const ComparisonsSection: React.FC<ComparisonsSectionProps> = ({
   }, []);
 
   useEffect(() => {
-    const interval = setInterval(nextPageAuto, 10000); // 10 seconds
+    const interval = setInterval(nextPageAuto, 15000); // 15 seconds
     return () => clearInterval(interval);
   }, [nextPageAuto]);
 
@@ -67,6 +67,7 @@ const ComparisonsSection: React.FC<ComparisonsSectionProps> = ({
         <div className="hidden sm:flex items-center justify-center w-full sm:w-[484px]">
           <Link 
             to={pagesData[currentPage].pageUrl}
+            onClick={() => window.scrollTo(0, 0)}
             className="group flex items-center gap-2 text-2xl sm:text-3xl lg:text-4xl font-semibold leading-[120%] text-center text-[#779E45] hover:text-[#5d7a33] transition-colors"
           >
             {pagesData[currentPage].pageTitle}
@@ -107,6 +108,7 @@ const ComparisonsSection: React.FC<ComparisonsSectionProps> = ({
           <div className="block sm:hidden w-full text-center mb-6">
             <Link 
               to={pagesData[currentPage].pageUrl}
+              onClick={() => window.scrollTo(0, 0)}
               className="group inline-flex items-center gap-2 text-xl font-semibold text-[#779E45] hover:text-[#5d7a33] transition-colors"
             >
               {pagesData[currentPage].pageTitle}
