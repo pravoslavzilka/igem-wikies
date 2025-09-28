@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 import { pagesData } from "./data/pagesData";
 import ComparisonCard from "./components/ComparisonCard";
 import TabNavigation from "./components/TabNavigation";
@@ -43,26 +44,35 @@ const ComparisonsSection: React.FC<ComparisonsSectionProps> = ({
   // Manual navigation with timer reset
   const nextPage = () => {
     setCurrentPage((prev: number) => (prev + 1) % pagesData.length);
+    // Timer will be reset automatically by useEffect dependency
   };
 
   const prevPage = () => {
     setCurrentPage((prev: number) => (prev - 1 + pagesData.length) % pagesData.length);
+    // Timer will be reset automatically by useEffect dependency
   };
 
   const goToPage = (index: number) => {
     setCurrentPage(index);
+    // Timer will be reset automatically by useEffect dependency
   };
 
   return (
     <section className="flex flex-col items-center py-12 sm:py-16 lg:py-20 px-4 sm:px-8 lg:px-32 gap-6 sm:gap-8 lg:gap-12 w-full min-h-[642px] bg-white relative">
-      {/* Header for Desktop ONLY */}
-      <div className="hidden lg:flex justify-between items-center gap-4 sm:gap-6 w-full max-w-[1184px]">
+      {/* Header */}
+      <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-6 w-full max-w-[1184px]">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-[120%] text-center text-black w-full sm:w-[284px]">
           Before
         </h2>
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-[120%] text-center w-full sm:w-[484px]">
-          Comparisons
-        </h2>
+        <div className="hidden sm:flex items-center justify-center w-full sm:w-[484px]">
+          <Link 
+            to={pagesData[currentPage].pageUrl}
+            className="group flex items-center gap-2 text-2xl sm:text-3xl lg:text-4xl font-semibold leading-[120%] text-center text-[#779E45] hover:text-[#5d7a33] transition-colors"
+          >
+            {pagesData[currentPage].pageTitle}
+            <ExternalLink className="w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 group-hover:scale-110 transition-transform" />
+          </Link>
+        </div>
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-[120%] text-center text-black w-full sm:w-[284px]">
           Now
         </h2>
@@ -93,14 +103,28 @@ const ComparisonsSection: React.FC<ComparisonsSectionProps> = ({
           transition={{ duration: 0.3, ease: "easeInOut" }}
           className="w-full max-w-[1184px]"
         >
+          {/* Mobile: Page Title with Link */}
+          <div className="block sm:hidden w-full text-center mb-6">
+            <Link 
+              to={pagesData[currentPage].pageUrl}
+              className="group inline-flex items-center gap-2 text-xl font-semibold text-[#779E45] hover:text-[#5d7a33] transition-colors"
+            >
+              {pagesData[currentPage].pageTitle}
+              <ExternalLink className="w-5 h-5 group-hover:scale-110 transition-transform" />
+            </Link>
+          </div>
+
           {/* Desktop Layout */}
           <div className="hidden lg:flex justify-between items-center gap-4 h-[280px]">
+            {/* Before Card */}
             <ComparisonCard
               type="before"
               time={pagesData[currentPage].beforeTime}
               description={pagesData[currentPage].beforeDescription}
               details={pagesData[currentPage].beforeDetails}
             />
+
+            {/* Center Image */}
             <div className="w-[484px] h-[280px] rounded-xl flex items-center justify-center overflow-hidden">
               {imageUrls[currentPage] ? (
                 <img 
@@ -118,6 +142,8 @@ const ComparisonsSection: React.FC<ComparisonsSectionProps> = ({
                 </div>
               )}
             </div>
+
+            {/* After Card */}
             <ComparisonCard
               type="after"
               time={pagesData[currentPage].afterTime}
@@ -128,11 +154,8 @@ const ComparisonsSection: React.FC<ComparisonsSectionProps> = ({
           </div>
 
           {/* Mobile & Tablet Layout */}
-          <div className="flex flex-col lg:hidden gap-8 w-full">
-            <h2 className="text-3xl font-semibold text-center text-black">
-              Comparisons
-            </h2>
-          
+          <div className="flex flex-col lg:hidden gap-6">
+            {/* Center Image First */}
             <div className="w-full max-w-[400px] mx-auto h-[240px] sm:h-[280px] rounded-xl flex items-center justify-center overflow-hidden">
               {imageUrls[currentPage] ? (
                 <img 
@@ -151,33 +174,21 @@ const ComparisonsSection: React.FC<ComparisonsSectionProps> = ({
               )}
             </div>
 
+            {/* Before and After Cards Side by Side */}
             <div className="grid grid-cols-2 gap-4 w-full">
-              {/* Before Column */}
-              <div className="flex flex-col items-center gap-4">
-                <h2 className="text-2xl font-semibold leading-[120%] text-center text-black">
-                  Before
-                </h2>
-                <ComparisonCard
-                  type="before"
-                  time={pagesData[currentPage].beforeTime}
-                  description={pagesData[currentPage].beforeDescription}
-                  details={pagesData[currentPage].beforeDetails}
-                />
-              </div>
-
-              {/* Now Column */}
-              <div className="flex flex-col items-center gap-4">
-                <h2 className="text-2xl font-semibold leading-[120%] text-center text-black">
-                  Now
-                </h2>
-                <ComparisonCard
-                  type="after"
-                  time={pagesData[currentPage].afterTime}
-                  description={pagesData[currentPage].afterDescription}
-                  details={pagesData[currentPage].afterDetails}
-                  accentColor={pagesData[currentPage].accentColor}
-                />
-              </div>
+              <ComparisonCard
+                type="before"
+                time={pagesData[currentPage].beforeTime}
+                description={pagesData[currentPage].beforeDescription}
+                details={pagesData[currentPage].beforeDetails}
+              />
+              <ComparisonCard
+                type="after"
+                time={pagesData[currentPage].afterTime}
+                description={pagesData[currentPage].afterDescription}
+                details={pagesData[currentPage].afterDetails}
+                accentColor={pagesData[currentPage].accentColor}
+              />
             </div>
           </div>
         </motion.div>

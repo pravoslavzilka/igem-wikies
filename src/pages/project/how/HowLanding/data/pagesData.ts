@@ -1,6 +1,8 @@
 export interface PageData {
   id: number;
   title: string;
+  pageTitle: string;
+  pageUrl: string;
   beforeTime: string;
   beforeDescription: string;
   beforeDetails: string;
@@ -15,6 +17,8 @@ export const pagesData: PageData[] = [
   {
     id: 1,
     title: "Transformation Speed",
+    pageTitle: "TAIFR",
+    pageUrl: "/project/how/taifr",
     beforeTime: "5 months",
     beforeDescription: "to get a stable line of transgenic duckweed",
     beforeDetails: "Duckweed genetic engineering is painfully slow, laborious and unpredictable.",
@@ -27,6 +31,8 @@ export const pagesData: PageData[] = [
   {
     id: 2,
     title: "Native Promoters",
+    pageTitle: "Promoters",
+    pageUrl: "/project/how/promoters",
     beforeTime: "No native parts",
     beforeDescription: "available to SynBio community",
     beforeDetails: "Exogenous promoters are often silenced, hindering expression.",
@@ -39,6 +45,8 @@ export const pagesData: PageData[] = [
   {
     id: 3,
     title: "Cultivation Efficiency",
+    pageTitle: "Cultivator",
+    pageUrl: "/project/how/cultivator",
     beforeTime: "Laboriousness",
     beforeDescription: "of larger scale duckweed cultivation",
     beforeDetails: "Scientists spend a vast amount of time on repetitive subculturing.",
@@ -51,6 +59,8 @@ export const pagesData: PageData[] = [
   {
     id: 4,
     title: "Yield Optimization",
+    pageTitle: "Predictor",
+    pageUrl: "/project/how/predictor/in-silico-cultivation",
     beforeTime: "Yield variations",
     beforeDescription: "in duckweed, on the scale of orders of magnitude",
     beforeDetails: "Any duckweed company or research group must overcome lengthy optimization.",
