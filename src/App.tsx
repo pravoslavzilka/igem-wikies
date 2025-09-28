@@ -8,7 +8,7 @@ import Handbook from './pages/Handbook';
 // Project pages
 import ProjectWhat from './pages/project/What/What';
 import ProjectWhy from './pages/project/Why/index';
-import ProjectHow from './pages/project/How';
+import HowLanding from './pages/project/how/HowLanding';
 
 // Project pages - how
 
@@ -65,7 +65,7 @@ function App() {
           {/* Project Routes */}
           <Route path="/project/what/" element={<ProjectWhat />} />
           <Route path="/project/why/" element={<ProjectWhy />} />
-          <Route path="/project/how/" element={<ProjectHow />} />
+          <Route path="/project/how/" element={<HowLanding />} />
 
 
           {/* How Routes */}
