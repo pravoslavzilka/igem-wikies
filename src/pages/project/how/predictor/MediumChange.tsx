@@ -119,7 +119,7 @@ const MediumChange = () => {
                       Compound
                     </th>
                     <th className="px-4 py-3 text-left text-md font-semibold text-gray-900" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-                      Amount (mg/L)
+                      Amount (g/L)
                     </th>
                   </tr>
                 </thead>
