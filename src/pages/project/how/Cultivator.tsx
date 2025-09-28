@@ -5,18 +5,18 @@ const traySlides: ImageSlide[] = [
     {
         src: "https://static.igem.wiki/teams/5642/images/how/cultivator/trays/tray-blueprint.webp",
         title: "Tray laser cutting blueprint",
-        bottomNote: "The second iteration with slotted edges for improved durability.",
+        bottomNote: "The second iteration with slotted edges for improved durability",
     },
     {
         src: "https://static.igem.wiki/teams/5642/images/how/cultivator/trays/tray-silicone-seam.webp",
-        title: "The edges as waterproofed using silicone.",
+        title: "The edges as waterproofed using silicone",
     },
 ];
 
 const waterCycleSlides: ImageSlide[] = [
     {
         src: "https://static.igem.wiki/teams/5642/images/how/cultivator/watercycle/water-cycle-schema-old.webp",
-        title: "High level overview of the water circulation system.",
+        title: "High level overview of the water circulation system",
     },
 
 ];
@@ -24,7 +24,7 @@ const waterCycleSlides: ImageSlide[] = [
 const nutrientSlides: ImageSlide[] = [
     {
         src: "https://static.igem.wiki/teams/5642/images/how/cultivator/watercycle/nutrient-mixing-schema-old.webp",
-        title: "High level overview of the water enrichment system.",
+        title: "High level overview of the water enrichment system",
     },
 
 ];
@@ -77,18 +77,48 @@ const harvestingSlides: ImageSlide[] = [
         src: "https://static.igem.wiki/teams/5642/images/how/cultivator/harvest/iterations/cultivator-history-6.webp",
         title: "Iteration 6",
         rightNote: [
-            "45° angled parsely placed jets with a larger throughput.",
+            "45° angled parsely placed jets with a larger throughput",
             "3mm jet diameter."
         ]
     },
-
 ];
+
+const lightSlides: ImageSlide[] = [
+    {
+        src: "",
+        title: "TODO",
+    },
+];
+
+const probeSlides: ImageSlide[] = [
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/probe/full-probe-iteration-1.webp",
+        title: "PROBE iteration #1",
+        rightNote: [
+            "The light dependent resistors are placed in custom 3D printed casings.",
+            "The LDR casings alternate with connective pieces with 12 cm gaps.",
+            "This design requires glue to hold together and is less robust due to short plastic tubes and small overlap within the 3D printed pieces.",
+            "All 3D printed pieces are 2cm long."
+        ]
+    },
+];
+
+const guiSlides: ImageSlide[] = [
+    {
+        src: "",
+        title: "TODO",
+    },
+];
+
 
 export default function LivingLayers() {
     const [isOpenTraySlides, setIsOpenTraySlides] = useState(false);
     const [isOpenCycleSlides, setIsOpenCycleSlides] = useState(false);
     const [isOpenNutrientSlides, setIsOpenNutrientSlides] = useState(false);
     const [isOpenHarvestingSlides, setIsOpenHarvestingSlides] = useState(false);
+    const [isOpenLightSlides, setIsOpenLightSlides] = useState(false);
+    const [isOpenPROBESlides, setIsOpenPROBESlides] = useState(false);
+    const [isOpenGUISlides, setIsOpenGUISlides] = useState(false);
 
     return (
         <div className="bg-white text-gray-900 leading-relaxed text-justify">
@@ -432,6 +462,185 @@ export default function LivingLayers() {
                 onClose={() => setIsOpenNutrientSlides(false)}
             />
 
+
+            <div className="max-w-6xl mx-auto p-8 bg-white text-gray-900 leading-relaxed space-y-16">
+                {/* Section 1: Lighting */}
+                <div className="grid md:grid-cols-2 gap-8 items-center">
+                    {/* Text */}
+                    <div>
+                        <p className="text-lg mb-4">
+                            Each cultivation layer is equipped with dedicated LED lighting,
+                            positioned just <span className="font-semibold">11 cm</span> above
+                            the water surface to ensure high light intensity with minimal energy
+                            use. This setup enables photosynthetically active radiation (PAR)
+                            levels of up to 180 μmol/m²/s at the water surface, while maintaining
+                            power consumption between 36 W and 72 W per layer.
+                        </p>
+                        {/* Add space above link */}
+                        <div className="mt-6 flex justify-center md:justify-center">
+                            <button
+                                onClick={() => setIsOpenLightSlides(true)}
+                                className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
+                            >
+                                See which lifghts we experimented with.
+                            </button>
+                        </div>
+                    </div>
+
+                    {/* Image placeholder */}
+                    <div className="flex justify-center">
+                        <div
+                            className="bg-gray-200 border-2 border-dashed border-gray-400 h-80 w-full flex items-center justify-center rounded-lg">
+                            <div className="text-center text-gray-600">
+                                <div className="text-sm mb-2">📸 IMAGE PLACEHOLDER</div>
+                                <div className="text-xs italic">
+                                    (Lighting setup, 11 cm measurement)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* Fullscreen image viewer */}
+                    <ImageViewer
+                        slides={lightSlides}
+                        isOpen={isOpenLightSlides}
+                        onClose={() => setIsOpenLightSlides(false)}
+                    />
+                </div>
+
+                {/* Section 2: Biomass monitoring */}
+                <div className="grid md:grid-cols-2 gap-8 items-center">
+                    {/* Image placeholder */}
+                    <div className="flex justify-center">
+                        <div
+                            className="bg-gray-200 border-2 border-dashed border-gray-400 h-64 w-full flex items-center justify-center rounded-lg">
+                            <div className="text-center text-gray-600">
+                                <div className="text-sm mb-2">📸 IMAGE PLACEHOLDER</div>
+                                <div className="text-xs italic">(Duckweed + light flux diagram)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Text */}
+                    <div>
+                        <p className="text-lg mb-4">
+                            To maintain optimal growth conditions, it’s essential to monitor the
+                            duckweed biomass on each layer. Since duckweed grows most efficiently
+                            when the surface is fully covered, we measure the thickness of the
+                            duckweed layer using our custom-designed{" "}
+                            <span className="font-semibold">PROBE system</span> — the{" "}
+                            <span className="italic">
+              PhotoResistor Occlusion-based Biomass Estimator
+            </span>
+                            .
+                        </p>
+                        {/* Add space above link */}
+                        <div className="mt-6 flex justify-center md:justify-center">
+                            <button
+                                onClick={() => setIsOpenPROBESlides(true)}
+                                className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
+                            >
+                                See the design iterations we went through.
+                            </button>
+                        </div>
+                    </div>
+                    {/* Fullscreen image viewer */}
+                    <ImageViewer
+                        slides={probeSlides}
+                        isOpen={isOpenPROBESlides}
+                        onClose={() => setIsOpenPROBESlides(false)}
+                    />
+                </div>
+
+                {/* Section 3: Probe system */}
+                <div>
+
+
+                    {/* Text */}
+                    <p className="text-lg mb-4">
+                        PROBE uses a grid of chained, light-sensitive photoresistors submerged
+                        beneath the water surface. A photoresistor (or the light-dependent
+                        resistor) is an electronic component whose resistance decreases when
+                        light falls on it, as it is made of light-sensitive semiconducting
+                        material [1]. By measuring the voltage drop across this grid of sensors, we
+                        can determine how much light is absorbed by the duckweed. When this
+                        data is processed using linear regression, it provides an accurate,
+                        real-time estimate of the biomass present on each layer.
+                    </p>
+                    <p className="text-lg">
+                        The grid of photoresistors is encased in a waterproof plastic casing,
+                        allowing for simple installation and maintenance. A single cable with a
+                        3.5 mm jack connector connects the PROBE to the system.
+                    </p>
+
+                    <div className="flex justify-center mb-6">
+                        <img
+                            src="https://static.igem.wiki/teams/5642/images/how/cultivator/probe/full-probe-landscape.webp"
+                            alt="Harvesting and water current schema"
+                            className="max-w-x rounded-lg object-contain"
+                        />
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="max-w-6xl mx-auto p-8 bg-white text-gray-900 leading-relaxed space-y-8">
+                {/* Text */}
+                <div>
+                    <p className="text-lg mb-4">
+                        At the heart of the system is a central Raspberry Pi single-board computer,
+                        which functions as the main server and control hub. It communicates wirelessly
+                        via Wi-Fi and the MQTT application protocol with multiple ESP32 microcontrollers
+                        distributed throughout the cultivator. MQTT (Message Queuing Telemetry Transport)
+                        is a popular application protocol. It implements a publish-subscribe communication
+                        pattern, which is specifically suited for IoT (Internet of Things) applications.
+                        It is even suitable for unstable network connections where it guarantees stability.
+                        It is based on a central MQTT broker, which is a computer program continuously
+                        running on a server [2].
+                    </p>
+
+                    {/* Image */}
+                    <div className="flex justify-center mb-6">
+                        <img
+                            src="https://static.igem.wiki/teams/5642/images/how/cultivator/tech/communication-schema.webp"
+                            alt="Harvesting and water current schema"
+                            className="max-w-x rounded-lg object-contain"
+                        />
+                    </div>
+
+                    <p className="text-lg mb-4">
+                        Each ESP32 in the system is responsible for controlling specific hardware
+                        components—including LED grow lights, electromagnetic water valves, and the
+                        circulation pump—based on commands received from the Raspberry Pi. Users can
+                        access the system through a web-based graphical user interface (GUI) hosted on
+                        the Raspberry Pi. This interface is accessible from any device with a browser
+                        and provides a real-time overview of the cultivator’s status as well as full
+                        control over system parameters and operations. All the code we used has been open-sourced on our
+                        GitHub repositories [3, 4].
+                    </p>
+                    {/* Add space above link */}
+                    <div className="mt-6 flex justify-center md:justify-center">
+                        <button
+                            onClick={() => setIsOpenGUISlides(true)}
+                            className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
+                        >
+                            Check out the GUI
+                        </button>
+                    </div>
+
+                    <ImageViewer
+                        slides={guiSlides}
+                        isOpen={isOpenGUISlides}
+                        onClose={() => setIsOpenGUISlides(false)}
+                    />
+                </div>
+
+
+
+            </div>
+
+
         </div>
+
+
     );
 }
