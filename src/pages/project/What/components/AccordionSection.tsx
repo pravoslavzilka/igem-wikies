@@ -19,7 +19,7 @@ const AccordionComponent = () => {
         "Rising feed costs are hitting farmers hard—feed makes up 55 % of the production cost in poultry, 32% in pigs, and over 14% in cattle (3). Even though meat and milk prices are high, livestock producers continue to see shrinking profit margins (4).",
         "Quality protein feed is becoming less affordable. Read more on the farmers’ burden - farmer HP link"
       ],
-      isExpanded: true
+      isExpanded: false
     },
     {
       title: "And the costs go far beyond just money",
