@@ -1,7 +1,9 @@
 import React from "react";
 import HeroSection from "./HeroSection";
 import ComparisonsSection from "./ComparisonsSection";
-
+import IgemNevadaSection from "./components/IgemNevadaSection";
+import Goal6ExperimentalResults from "./components/ExperimentSteps.tsx";
+import ProgressAndFindings from "./components/ProgressAndFindings.tsx";
 interface HowLandingProps {
   heroImageUrl?: string;
   transformationImageUrl?: string;
@@ -26,6 +28,11 @@ const HowLanding: React.FC<HowLandingProps> = ({
         cultivationImageUrl={cultivationImageUrl}
         optimizationImageUrl={optimizationImageUrl}
       />
+      <IgemNevadaSection />
+      <Goal6ExperimentalResults />
+      <ProgressAndFindings />
+      <br />
+      
     </div>
   );
 };
