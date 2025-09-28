@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-//import ImageViewer, {ImageSlide} from "../../../components/ui/ImageViewer.tsx";
 import TextModal, {textSlide} from '../../../components/ui/TextModal.tsx';
 
 
