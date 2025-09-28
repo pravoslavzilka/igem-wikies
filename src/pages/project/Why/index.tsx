@@ -22,7 +22,7 @@ const ProjectWhy = ({
   // Images for status accordion states
   foodImageUrl = "https://static.igem.wiki/teams/5642/images/why/wanna-greens.webp",
   phytoremediationStatusImageUrl = "https://static.igem.wiki/teams/5642/images/why/fyto.webp",
-  biomanufacturingImageUrl = "https://static.igem.wiki/teams/5642/images/why/why3.webp",
+  biomanufacturingImageUrl = "https://static.igem.wiki/teams/5642/images/why/red-duckweed.webp",
   basicResearchImageUrl = "https://static.igem.wiki/teams/5642/images/why/why4.webp"
 }: WhyProps) => {
   const [activeAccordion, setActiveAccordion] = useState<string | null>('novel-protein');
