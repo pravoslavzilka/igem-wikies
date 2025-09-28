@@ -9,9 +9,10 @@ export const getAccordionData = (
   'novel-protein': {
     title: 'Novel Protein Crop',
     content: [
-      'Duckweeds can remove heavy metals, pharmaceutical residues (6) and nutrients like nitrates and phosphates (7) from polluted water. As floating plants, they are also easy to harvest - a key advantage. Once the contaminants are taken up, the plants can be collected and processed, enabling the safe removal of harmful substances from the environment.',
-      'Adding to their value is the fact that duckweeds thrive under a wide range of conditions: tolerating pH values from 4 to 9 (8), temperatures from 6°C to 33°C (9), and adapting to environments ranging from low light to full sunlight (9). Therefore, their phytoremediation capabilities are not limited to a narrow set of conditions and can be deployed broadly.'
+      'Duckweeds, especially Wolffia globosa, have been used traditionally as food in Southeast Asia and are now gaining interest globally for their nutritional potential. With as much protein as soybeans (1), full amino acid profile (2), and a biomass doubling time of just 30 hours (3), duckweed could be a novel source of protein for animal feed or even human consumption.',
+      'Nutrient analyses across all five genera confirm alignment with EFSA recommendations (4). Duckweed is also used as feed for livestock and fish (5), often surpassing corn in protein content. Though pricing limits widespread livestock use, it holds strong potential in premium pet food and functional foods.'
     ],
+
     imageUrl: novelProteinImageUrl
   },
   'phytoremediation': {
