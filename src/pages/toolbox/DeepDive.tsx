@@ -238,7 +238,7 @@ export default function DuckweedDocument() {
 
       {/* Peers section */}
       <div className="mt-12 mb-8">
-        <h2 className="text-2xl font-bold text-gray-800 mb-4">Our peers in the field of duckweed</h2>
+        <h2 className="text-2xl font-bold text-gray-800 mb-4" style={{ fontFamily: "Space Grotesk" }}>Our peers in the field of duckweed</h2>
         <div className="bg-gray-50 p-4 rounded-lg">
           <MapSVG locations={LOCATIONS} isInView={true} />
         </div>
