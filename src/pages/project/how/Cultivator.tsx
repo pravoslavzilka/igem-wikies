@@ -5,7 +5,7 @@ import {cultivatorReferences} from "./data/references.ts";
 
 const traySlides: ImageSlide[] = [
     {
-        src: "",
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/trays/tray-template-iteration-1.webp",
         title: "Tray laser cutting blueprint. Iteration #1",
         rightNote: [
             "Simple straight edges",
