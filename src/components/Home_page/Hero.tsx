@@ -16,7 +16,7 @@ const headlineWords = [
   
     { word: "every", icon: "", tooltip: "" },
 
-    { word: "farm", icon: "https://static.igem.wiki/teams/5642/icons/homepage/headline/3.webp", image:"https://static.igem.wiki/teams/5642/images/homepage/iconshover/container.webp", tooltip: "Soybean production is concentrated in just a handful of countries, leaving farmers everywhere else dependent on imports. Our modular, autonomous cultivation unit lets any farm produce its own protein-rich duckweed, ensuring a steady, local alternative to soy. ", color:"#7363F4"  },
+    { word: "farm", icon: "https://static.igem.wiki/teams/5642/icons/homepage/headline/3.webp", image:"https://static.igem.wiki/teams/5642/images/homepage/duckweed-08465.webp", tooltip: "Soybean production is concentrated in just a handful of countries, leaving farmers everywhere else dependent on imports. Our modular, autonomous cultivation unit lets any farm produce its own protein-rich duckweed, ensuring a steady, local alternative to soy. ", color:"#7363F4"  },
 
     { word: "by", icon: "", tooltip: "" },
 
@@ -83,7 +83,8 @@ const Hero = () => {
           }}
         >
           {/* Blue Gradient Overlay */}
-          <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-black/40 to-transparent rounded-t-lglute inset-0 bg-gradient-to-br"></div>
+          <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-black/40 to-transparent" />
+
           
           {/* Content */}
           <div className="relative z-10 h-full flex items-center justify-center px-2 md:px-8">
