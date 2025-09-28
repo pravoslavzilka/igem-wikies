@@ -11,7 +11,7 @@ import { WhyProps } from './types';
 
 const ProjectWhy = ({ 
   heroImageUrl = "https://static.igem.wiki/teams/5642/images/why/duckweed.webp",
-  firstSectionImageUrl = null, 
+  firstSectionImageUrl = "https://static.igem.wiki/teams/5642/images/what/duckweed-default.webp", 
   secondSectionImageUrl = null,
   futureSectionImageUrl = "https://static.igem.wiki/teams/5642/images/why/duckweed-future.webp",
   // Images for different accordion states
