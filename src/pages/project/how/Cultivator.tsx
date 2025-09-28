@@ -1,4 +1,3 @@
-import React, {useState} from "react";
 import ImageViewer, {ImageSlide} from "../../../components/ui/ImageViewer.tsx";
 import References from "../../../components/References.tsx";
 import {cultivatorReferences} from "./data/references.ts";
@@ -581,7 +580,7 @@ export default function LivingLayers() {
                                 onClick={() => setIsOpenLightSlides(true)}
                                 className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
                             >
-                                See which lifghts we experimented with.
+                                See which lights we experimented with.
                             </button>
                         </div>
                     </div>
