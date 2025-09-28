@@ -44,6 +44,7 @@ import HumanPractices from "./pages/engagement/human_practices";
 
 import ThreeHParty from './pages/engagement/outreach/ThreeHParty';
 import Outreach from './pages/engagement/Outreach';
+import IgemBrnoCommunity from './pages/engagement/outreach/IgemBrnoCommunity';
 
 
 // Duckweed Mafia pages
@@ -106,6 +107,7 @@ function App() {
           <Route path="/engagement/outreach/3h-party" element={<ThreeHParty />} />
           <Route path="/engagement/outreach" element={<Outreach />} />
           <Route path="/engagement/human-practices" element={<HumanPractices />} />
+          <Route path="/engagement/outreach/igem-brno-community" element={<IgemBrnoCommunity />} />
 
           {/* Duckweed Mafia Routes */}
           <Route path="/duckweed-mafia/partners" element={<Partners />} />
