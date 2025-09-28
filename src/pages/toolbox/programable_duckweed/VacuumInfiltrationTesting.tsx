@@ -1,8 +1,11 @@
 import React from 'react';
+import References from '../../../components/References';
+
+
 
 export default function VacuumInfiltrationTesting() {
   return (
-    <div className="max-w-6xl mx-auto p-8 bg-white font-['Urbanist'] text-lg text-gray-800 leading-relaxed  block">
+    <div className="max-w-6xl mx-auto p-8 bg-white font-['Urbanist'] text-lg text-gray-800 leading-relaxed text-justify">
       {/* Header */}
       <h1 className="text-4xl font-bold mb-6 font-['Space_Grotesk'] text-gray-900">
         Vacuum infiltration testing
@@ -40,10 +43,10 @@ export default function VacuumInfiltrationTesting() {
 
         <div className="col-span-2">
           <div className="border-2 border-gray-300 rounded-lg p-4 bg-gray-50">
-            <div className="w-full h-48 rounded flex items-center justify-center mb-3">
-              <span className="text-red-600 font-medium">[Chýba obrázok na drive]</span>
+            <div className="w-full  h-64  rounded overflow-hidden">
+              <img src="https://static.igem.wiki/teams/5642/images/toolbox/vacumtesting/vacuum-pics-copy-2.webp" alt="In vitro calli of Spirodela polyrhiza 162 expressing RUBY" className=" object-cover" />
             </div>
-            <p className="text-md text-gray-600">
+            <p className="text-md mt-4 text-gray-600">
               <strong>Figure 1.</strong> An example of stable expression of RUBY resulting in red coloring from betalain in calli of <em>Spirodela polyrhiza</em> 162
             </p>
           </div>
@@ -115,7 +118,7 @@ export default function VacuumInfiltrationTesting() {
         </p>
         <p className="mb-4">
           <strong>Co-cultivation under light conditions</strong> resulted in healthier, faster-dividing fronds, whereas co-cultivation in 
-          <strong>darkness</strong> not only slowed growth but also prevented any transient expression.
+          <strong> darkness</strong> not only slowed growth but also prevented any transient expression.
         </p>
         <p className="mb-4">
           The addition of <strong>Silwet L-77</strong> had no effect compared to the control, probably because duckweed leaves are not as 
@@ -126,33 +129,21 @@ export default function VacuumInfiltrationTesting() {
       {/* Figure 2 */}
       <div className="mb-8">
         
-          <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
-            <div className="text-center col-span-1">
-              <div className="w-32 h-24 bg-gradient-to-br from-red-300 to-red-400 rounded flex items-center justify-center mb-2">
-                <span className="text-white text-xs font-bold">1</span>
-              </div>
-            </div>
-            <div className="text-center col-span-1">
-              <div className="w-32 h-24 bg-gradient-to-br from-green-200 to-green-300 rounded flex items-center justify-center mb-2">
-                <span className="text-green-800 text-xs font-bold">2</span>
-              </div>
-            </div>
-            <div className="text-center col-span-1">
-              <div className="w-32 h-24 bg-gradient-to-br from-yellow-200 to-yellow-300 rounded flex items-center justify-center mb-2">
-                <span className="text-yellow-800 text-xs font-bold">3</span>
-              </div>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-7 gap-4">
+            
+            
+            <img src="https://static.igem.wiki/teams/5642/images/toolbox/vacumtesting/vacuum-pics-min.webp" alt="Lemna gibba 7742 expressing RUBY after 5 min vacuum and light co-cultivation" className=" object-cover col-span-5 md:h-64" />
 
             <div className='col-span-2'>
                 <p className="text-sm text-gray-600">
-            <strong>Figure 2.</strong> Transient transformation of <em>Lemna gibba</em> 7742 by AtEHA105 with 
-            the pAM052 construct (rZmUBI-RUBY) resulted in RUBY being expressed in 
-            some fronds after 5 minutes of vacuuming followed by co-cultivation 
-            under light (1), no expression after 5 minutes of vacuuming followed by co-
-            cultivation in darkness (2), and decreased efficiency of transformation 
-            after 20 minutes of vacuuming followed by co-cultivation under light 
-            (3) due to frond senescence. Photos were taken six days post infiltration.
-          </p>
+                  <strong>Figure 2.</strong> Transient transformation of <em>Lemna gibba</em> 7742 by AtEHA105 with 
+                  the pAM052 construct (rZmUBI-RUBY) resulted in RUBY being expressed in 
+                  some fronds after 5 minutes of vacuuming followed by co-cultivation 
+                  under light (1), no expression after 5 minutes of vacuuming followed by co-
+                  cultivation in darkness (2), and decreased efficiency of transformation 
+                  after 20 minutes of vacuuming followed by co-cultivation under light 
+                  (3) due to frond senescence. Photos were taken six days post infiltration.
+                </p>
             </div>
           </div>
           
@@ -185,22 +176,10 @@ export default function VacuumInfiltrationTesting() {
 
       <div className="mb-8">
         
-          <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
-            <div className="text-center col-span-1">
-              <div className="w-32 h-24 bg-gradient-to-br from-red-300 to-red-400 rounded flex items-center justify-center mb-2">
-                <span className="text-white text-xs font-bold">1</span>
-              </div>
-            </div>
-            <div className="text-center col-span-1">
-              <div className="w-32 h-24 bg-gradient-to-br from-green-200 to-green-300 rounded flex items-center justify-center mb-2">
-                <span className="text-green-800 text-xs font-bold">2</span>
-              </div>
-            </div>
-            <div className="text-center col-span-1">
-              <div className="w-32 h-24 bg-gradient-to-br from-yellow-200 to-yellow-300 rounded flex items-center justify-center mb-2">
-                <span className="text-yellow-800 text-xs font-bold">3</span>
-              </div>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-7 gap-4">
+            
+
+            <img src="https://static.igem.wiki/teams/5642/images/toolbox/vacumtesting/vacuum-pics-miniv.webp" alt="Lemna gibba 7742 expressing RUBY after 5 min vacuum and light co-cultivation" className=" object-cover col-span-5 md:h-64" />
 
             <div className='col-span-2'>
                 <p className="text-sm text-gray-600">
@@ -226,12 +205,21 @@ export default function VacuumInfiltrationTesting() {
         </p>
       </div>
 
-      {/* References */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4 font-['Space_Grotesk'] text-gray-900">
-          References
-        </h2>
-      </section>
+
+        
+
+      <References references={Reference} />
+
     </div>
   );
 }
+
+
+const Reference = [
+    {
+        id: 1,
+        text: "Barragán-Borrero, V., de Santana Lopes, A., Rodrigues Batista, E. D., Höfer, M., Elias, R., Chakraborty, A., Ponce-Mañe, A., Descombes, C., Diezma-Navas, L., Petraki, L., Huber, M., Xu, S., & Marí-Ordóñez, A. (2025). Strain, procedures, and tools for reproducible genetic transformation and genome editing of Spirodela polyrhiza (L.) Schleid [Preprint]. bioRxiv. https://doi.org/10.1101/2025.08.28.672806",
+        url: "https://doi.org/10.1101/2025.08.28.672806"
+    },
+
+  ]
