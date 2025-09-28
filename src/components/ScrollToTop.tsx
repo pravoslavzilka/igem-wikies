@@ -1,12 +1,68 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronUp } from 'lucide-react';
 
+// Custom CSS keyframes and responsive styles
+const bounceStyle = `
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* Responsive styles for the button */
+.scroll-to-top-btn {
+  /* Base sizes for desktop */
+  width: 3rem; /* 48px */
+  height: 3rem; /* 48px */
+  bottom: 2rem; /* 32px */
+  right: 2rem; /* 32px */
+}
+
+/* Tablet and smaller devices */
+@media (max-width: 768px) {
+  .scroll-to-top-btn {
+    width: 2.75rem; /* 44px */
+    height: 2.75rem; /* 44px */
+    bottom: 1.5rem; /* 24px */
+    right: 1.5rem; /* 24px */
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .scroll-to-top-btn {
+    width: 2.5rem; /* 40px */
+    height: 2.5rem; /* 40px */
+    bottom: 1.25rem; /* 20px */
+    right: 1.25rem; /* 20px */
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 320px) {
+  .scroll-to-top-btn {
+    width: 2.25rem; /* 36px */
+    height: 2.25rem; /* 36px */
+    bottom: 1rem; /* 16px */
+    right: 1rem; /* 16px */
+  }
+}
+
+/* High zoom levels - smaller button */
+@media (max-width: 600px) and (max-height: 400px) {
+  .scroll-to-top-btn {
+    width: 2rem; /* 32px */
+    height: 2rem; /* 32px */
+    bottom: 0.75rem; /* 12px */
+    right: 0.75rem; /* 12px */
+  }
+}
+`;
+
 const ScrollToTop: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const toggleVisibility = () => {
-      // Total document height
       const documentHeight = Math.max(
         document.body.scrollHeight,
         document.body.offsetHeight,
@@ -15,38 +71,30 @@ const ScrollToTop: React.FC = () => {
         document.documentElement.offsetHeight
       );
       
-      // Current scroll position
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      
-      // Viewport height
       const windowHeight = window.innerHeight;
-      
-      // Distance from the bottom of the page
       const distanceFromBottom = documentHeight - (scrollTop + windowHeight);
       
-      // Show the button if we are less than 800px from the bottom and not at the very top
-      if (distanceFromBottom <= 1200 && scrollTop > 100) {
+      // Responsive threshold based on screen size
+      const threshold = window.innerWidth < 768 ? 800 : 1200;
+      
+      if (distanceFromBottom <= threshold && scrollTop > 100) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
       }
     };
 
-    // Add event listeners with passive flag for better performance
     window.addEventListener('scroll', toggleVisibility, { passive: true });
     window.addEventListener('resize', toggleVisibility, { passive: true });
-    
-    // Initial call
     toggleVisibility();
     
-    // Cleanup
     return () => {
       window.removeEventListener('scroll', toggleVisibility);
       window.removeEventListener('resize', toggleVisibility);
     };
   }, []);
 
-  // Function to scroll to the top
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -54,28 +102,36 @@ const ScrollToTop: React.FC = () => {
     });
   };
 
-  // If not visible, render nothing
   if (!isVisible) return null;
 
   return (
-    <button
-      onClick={scrollToTop}
-      className={`
-        fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50
-        w-12 h-12 bg-white hover:bg-green-50 
-        text-green-600 hover:text-green-800
-        rounded-full shadow-lg hover:shadow-xl
-        flex items-center justify-center cursor-pointer
-        border-2 border-green-200 hover:border-green-400
-        transition-all duration-300 ease-in-out
-        hover:scale-105
-        ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}
-      `}
-      aria-label="Scroll to top"
-      title="Back to top"
-    >
-      <ChevronUp size={20} />
-    </button>
+    <>
+      {/* Insert keyframes and responsive styles into document */}
+      <style>{bounceStyle}</style>
+
+      <button
+        onClick={scrollToTop}
+        className={`
+          scroll-to-top-btn
+          fixed z-50
+          bg-white hover:bg-green-50 
+          text-green-600 hover:text-green-800
+          rounded-full shadow-lg hover:shadow-xl
+          flex items-center justify-center cursor-pointer
+          border-2 border-green-200 hover:border-green-400
+          transition-all duration-300 ease-in-out
+          hover:scale-105
+          ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}
+        `}
+        style={{
+          animation: isVisible ? 'bounce-slow 2s infinite' : 'none'
+        }}
+        aria-label="Scroll to top"
+        title="Back to top"
+      >
+        <ChevronUp className="w-4 h-4 sm:w-5 sm:h-5" />
+      </button>
+    </>
   );
 };
 
