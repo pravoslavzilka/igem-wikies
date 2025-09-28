@@ -3,9 +3,27 @@ import ImageViewer, {ImageSlide} from "../../../components/ui/ImageViewer.tsx";
 
 const traySlides: ImageSlide[] = [
     {
+        src: "",
+        title: "Tray laser cutting blueprint. Iteration #1",
+        rightNote: [
+            "Simple straight edges",
+            "One wall is shorter to allow the duckweed to fall over the edge during harvesting",
+            "5cm water level",
+            "8cm high walls",
+            "3mm thick transparent acrylic",
+        ],
+    },
+    {
         src: "https://static.igem.wiki/teams/5642/images/how/cultivator/trays/tray-blueprint.webp",
-        title: "Tray laser cutting blueprint",
-        bottomNote: "The second iteration with slotted edges for improved durability",
+        title: "Tray laser cutting blueprint. Iteration #2",
+        rightNote: [
+            "Slotted edges which fit together to improve stability and reliability",
+            "The right wall has a notch in the middle to only allow the duckweed to fall through the designated area.",
+            "Opaque acrylic to suppress algae growth",
+            "3cm water level",
+            "5cm high walls",
+            "4mm thick acrylic",
+        ],
     },
     {
         src: "https://static.igem.wiki/teams/5642/images/how/cultivator/trays/tray-silicone-seam.webp",
@@ -110,6 +128,32 @@ const guiSlides: ImageSlide[] = [
     },
 ];
 
+const suitcaseSlides: ImageSlide[] = [
+    {
+        src: "",
+        title: "TODO",
+    },
+];
+
+const schematicsSlides: ImageSlide[] = [
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/tech/schematics/light-valve-pcb-schematic.webp",
+        title: "Schematic of the electronic box which controls the lights, the electromagnetic valves, and the PROBEs.",
+    },
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/tech/schematics/pump-schematic.webp",
+        title: "Schematic of the electronic box which controls the pumps and the medium sensors.",
+    },
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/tech/schematics/suitcase-schematic.webp",
+        title: "Schematic of the insides of the suitcase.",
+    },
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/tech/schematics/probe-schematic.webp",
+        title: "Schematic of a single PROBE module.",
+    },
+];
+
 
 export default function LivingLayers() {
     const [isOpenTraySlides, setIsOpenTraySlides] = useState(false);
@@ -119,6 +163,8 @@ export default function LivingLayers() {
     const [isOpenLightSlides, setIsOpenLightSlides] = useState(false);
     const [isOpenPROBESlides, setIsOpenPROBESlides] = useState(false);
     const [isOpenGUISlides, setIsOpenGUISlides] = useState(false);
+    const [isOpenSuitcaseSlides, setIsOpenSuitcaseSlides] = useState(false);
+    const [isOpenSchematicsSlides, setIsOpenSchematicsSlides] = useState(false);
 
     return (
         <div className="bg-white text-gray-900 leading-relaxed text-justify">
@@ -603,7 +649,7 @@ export default function LivingLayers() {
                         <img
                             src="https://static.igem.wiki/teams/5642/images/how/cultivator/tech/communication-schema.webp"
                             alt="Harvesting and water current schema"
-                            className="max-w-x rounded-lg object-contain"
+                            className="max-w-md rounded-lg object-contain"
                         />
                     </div>
 
@@ -633,9 +679,128 @@ export default function LivingLayers() {
                         onClose={() => setIsOpenGUISlides(false)}
                     />
                 </div>
+            </div>
 
 
+            <div className="max-w-6xl mx-auto p-8 bg-white text-gray-900 leading-relaxed space-y-16">
+                {/* Section 1: Suitcase */}
+                <div className="grid md:grid-cols-2 gap-8 items-start">
+                    {/* Text */}
+                    <div>
+                        <p className="text-lg mb-4">
+                            The server, Wi-Fi router, and power supply are packaged in a separate
+                            suitcase, which is plugged into a wall outlet. A single power cable
+                            connecting the suitcase to the cultivator is all that’s required. All
+                            data transfer is handled wirelessly. The suitcase also contains
+                            electrical circuit breakers and current protection circuits, which
+                            ensure safety. In case of a short circuit or some other failure, the
+                            power will be immediately automatically turned off.
+                        </p>
+                        {/* Add space above link */}
+                        <div className="mt-6 flex justify-center md:justify-center">
+                            <button
+                                onClick={() => setIsOpenSuitcaseSlides(true)}
+                                className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
+                            >
+                                View the suitcase contents
+                            </button>
+                        </div>
 
+                        <ImageViewer
+                            slides={suitcaseSlides}
+                            isOpen={isOpenSuitcaseSlides}
+                            onClose={() => setIsOpenSuitcaseSlides(false)}
+                        />
+                    </div>
+
+                    {/* Image placeholder */}
+                    <div className="flex justify-center">
+                        <div
+                            className="bg-gray-200 border-2 border-dashed border-gray-400 h-64 w-full flex items-center justify-center rounded-lg">
+                            <div className="text-center text-gray-600">
+                                <div className="text-sm mb-2">📸 IMAGE PLACEHOLDER</div>
+                                <div className="text-xs italic">(Suitcase from the outside)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Section 2: Waterproof boxes */}
+                <div className="grid md:grid-cols-2 gap-8 items-start">
+                    {/* Images */}
+                    <div className="space-y-6">
+                        <div className="flex justify-center">
+                            <div
+                                className="bg-gray-200 border-2 border-dashed border-gray-400 h-48 w-full flex items-center justify-center rounded-lg">
+                                <div className="text-center text-gray-600">
+                                    <div className="text-sm mb-2">📸 IMAGE PLACEHOLDER</div>
+                                    <div className="text-xs italic">(Electronics box 1)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex justify-center">
+                            <div
+                                className="bg-gray-200 border-2 border-dashed border-gray-400 h-48 w-full flex items-center justify-center rounded-lg">
+                                <div className="text-center text-gray-600">
+                                    <div className="text-sm mb-2">📸 IMAGE PLACEHOLDER</div>
+                                    <div className="text-xs italic">(Electronics box 2)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Text */}
+                    <div>
+                        <p className="text-lg mb-4">
+                            The remaining electronics are mounted directly on the cultivator,
+                            neatly organized into two waterproof boxes, each equipped with an ESP32
+                            microcontroller.
+                        </p>
+
+                        <ul className="list-disc list-inside space-y-4 text-lg">
+                            <li>
+                                <span className="font-semibold">The first box primarily includes:</span>
+                                <ul className="list-disc list-inside ml-6 space-y-1 text-base">
+                                    <li>Five relays for switching the grow lights on each layer on and off</li>
+                                    <li>Five relays for actuating the electromagnetic valves that direct water flow to
+                                        specific layers
+                                    </li>
+                                    <li>Five connectors for reading output from the PROBE system on each layer</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span className="font-semibold">The second box contains:</span>
+                                <ul className="list-disc list-inside ml-6 space-y-1 text-base">
+                                    <li>Electronics for measuring water conductivity</li>
+                                    <li>
+                                        MOSFET transistors for controlling peristaltic pumps that precisely dose
+                                        nutrients into the water
+                                    </li>
+                                    <li>
+                                        Two PWM (Pulse Width Modulation) DC motor drivers for operating the
+                                        harvesting and circulation pumps
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        {/* Add space above link */}
+                        <div className="mt-6 flex justify-center md:justify-center">
+                            <button
+                                onClick={() => setIsOpenSchematicsSlides(true)}
+                                className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
+                            >
+                                View the detailed schematics
+                            </button>
+                        </div>
+
+                        <ImageViewer
+                            slides={schematicsSlides}
+                            isOpen={isOpenSchematicsSlides}
+                            onClose={() => setIsOpenSchematicsSlides(false)}
+                        />
+                    </div>
+                </div>
             </div>
 
 
