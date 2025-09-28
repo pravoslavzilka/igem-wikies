@@ -2,42 +2,65 @@ import React from 'react';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="flex flex-col items-center px-10 w-full h-[823px]">
-      {/* Text Container */}
-      <div className="flex flex-col justify-center items-start px-32 py-20 gap-1 w-full max-w-[1360px] h-[323px]">
-        {/* What label */}
-        <h2 
-          className="w-[43px] h-[25px] text-lg font-semibold leading-[140%] text-black/50"
-          style={{ fontFamily: 'Urbanist, sans-serif' }}
-        >
-          What
-        </h2>
-        
-        {/* Main heading */}
-        <h1 
-          className="w-full max-w-[1104px] h-[134px] text-5xl font-semibold leading-[140%] text-black"
-          style={{ fontFamily: 'Urbanist, sans-serif' }}
-        >
-          We wanted to solve a real, BIG problem with synthetic biology
-        </h1>
-      </div>
+    <section className="w-full bg-white py-8 sm:py-12 lg:py-16 px-4 sm:px-8 lg:px-32">
+      <div className="max-w-7xl mx-auto">
+        {/* Text Container */}
+        <div className="mb-6 sm:mb-8 lg:mb-12">
+          {/* What label */}
+          <h2 
+            className="text-base sm:text-lg font-semibold leading-[140%] text-black/50 mb-2 sm:mb-4"
+            style={{ fontFamily: 'Urbanist, sans-serif' }}
+          >
+            What
+          </h2>
+          
+          {/* Main heading - responsive sizes */}
+          <h1 
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-[140%] text-black max-w-none"
+            style={{ fontFamily: 'Urbanist, sans-serif' }}
+          >
+            We wanted to solve a real, BIG problem with synthetic biology
+          </h1>
+        </div>
 
-      {/* Photo Container */}
-      <div className="relative w-full max-w-[1360px] h-[480px] rounded-3xl overflow-hidden">
-        {/* Background image */}
-        <img 
-          src="https://static.igem.wiki/teams/5642/images/what/bull.webp" 
-          alt="Bull"
-          className="absolute w-full h-full object-cover"
-        />
-        
-        {/* Team photo overlay */}
-        <img 
-          src="https://static.igem.wiki/teams/5507/what/img-7065-1.jpg" 
-          alt="Team photo"
-          className="absolute w-full h-[907px] object-cover"
-          style={{ top: 'calc(50% - 907px/2 + 54.5px)' }}
-        />
+        {/* Photo Container */}
+        <div className="relative w-full rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden bg-gray-200">
+          <div 
+            className="relative w-full"
+            style={{
+              aspectRatio: "16/9", // Better ratio for mobile
+              minHeight: "200px",
+              maxHeight: "480px"
+            }}
+          >
+            {/* Background image */}
+            <img 
+              src="https://static.igem.wiki/teams/5642/images/what/bull.webp" 
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover"
+              loading="eager"
+              onError={(e) => {
+                console.log('Failed to load bull image');
+                e.currentTarget.style.display = 'none';
+              }}
+            />
+            
+            {/* Team photo overlay - adjusted for better display */}
+            <img 
+              src="https://static.igem.wiki/teams/5507/what/img-7065-1.jpg" 
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-80"
+              loading="eager"
+              onError={(e) => {
+                console.log('Failed to load team image');
+                e.currentTarget.style.display = 'none';
+              }}
+            />
+            
+            {/* Gradient overlay for better readability if you want to add text */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+          </div>
+        </div>
       </div>
     </section>
   );
