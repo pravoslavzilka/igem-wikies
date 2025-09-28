@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function IgemBrnoCommunity() {
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen bg-white font-sans text-lg text-justify">
       {/* Header Section */}
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
@@ -42,7 +42,7 @@ export default function IgemBrnoCommunity() {
             </div>
             <div className="md:w-1/3">
               <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">JIC Event Image</span>
+                <span className="text-gray-500">Čakám na fotky od Zdenky</span>
               </div>
             </div>
           </div>
@@ -539,19 +539,7 @@ export default function IgemBrnoCommunity() {
           </div>
         </section>
 
-        {/* (Bio)Hackers, Hipsters and Hustlers Party */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-gray-800" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
-            (Bio)Hackers, Hipsters and Hustlers Party
-          </h2>
-          <div className="flex flex-col md:flex-row gap-8 mb-8">
-            <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Bio Hackers Party Image</span>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Cultivating Community Section Header */}
         <div className="bg-gradient-to-r from-purple-500 to-pink-500 text-white py-12 px-8 rounded-lg mb-12 text-center">

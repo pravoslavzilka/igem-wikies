@@ -79,16 +79,11 @@ const VideoComp = () => {
             <span style={{ color: "#779E45" }}>duckweeds</span> - plants that are (almost) superior!
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8  mb-10 mt-[-20px] ">
           {/* Soybean timelapse video */}
           <div className="space-y-4 flex flex-col items-center">
-            <div className="rounded-xl overflow-hidden relative w-full" style={{ maxWidth: "100%" }}>
-              <video autoPlay loop muted playsInline>
-                <source src="https://github.com/pravoslavzilka/igem-wikies-off/raw/refs/heads/main/src/soybean%20timeplase2.mp4" type="video/mp4"></source>
-              </video>
-            </div>
             <p
-              className="text-center pt-6 md:pt-10 text-md text-gray-600 font-medium"
+              className="text-center  text-md text-gray-600 font-medium"
               style={{
                 fontFamily: "Space Grotesk, sans-serif",
                 fontWeight: 500,
@@ -101,16 +96,17 @@ const VideoComp = () => {
             >
               Soybean
             </p>
+            <div className="rounded-xl overflow-hidden relative w-full" style={{ maxWidth: "100%" }}>
+              <video autoPlay loop muted playsInline>
+                <source src="https://github.com/pravoslavzilka/igem-wikies-off/raw/refs/heads/main/src/soybean%20timeplase2.mp4" type="video/mp4"></source>
+              </video>
+            </div>
+            
           </div>
           {/* Duckweed timelapse video */}
           <div className="space-y-4 flex flex-col items-center">
-            <div className="rounded-xl overflow-hidden relative w-full" style={{ maxWidth: "100%" }}>
-              <video autoPlay loop muted playsInline>
-                <source src="https://github.com/pravoslavzilka/igem-wikies-off/raw/refs/heads/main/src/duckweed%20timelapse_.mp4" type="video/mp4"></source>
-              </video>
-            </div>
             <p
-              className="text-center text-gray-600 pt-6 md:pt-10 font-medium"
+              className="text-center text-gray-600  font-medium"
               style={{
                 fontFamily: "Space Grotesk, sans-serif",
                 fontWeight: 500,
@@ -123,6 +119,13 @@ const VideoComp = () => {
             >
               Duckweed
             </p>
+            
+            <div className="rounded-xl overflow-hidden relative w-full" style={{ maxWidth: "100%" }}>
+              <video autoPlay loop muted playsInline>
+                <source src="https://github.com/pravoslavzilka/igem-wikies-off/raw/refs/heads/main/src/duckweed%20timelapse_.mp4" type="video/mp4"></source>
+              </video>
+            </div>
+            
           </div>
         </div>
       </div>

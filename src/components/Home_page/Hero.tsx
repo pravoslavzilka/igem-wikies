@@ -187,7 +187,7 @@ const Hero = () => {
             </div>
             <div>
               <h3 className={`font-bold mb-2 ${window.innerWidth < 500 ? 'text-base' : 'text-lg md:text-2xl'}`}>{headlineWords[iconHover.idx].word}</h3>
-              <p className={`font-medium mb-3 ${window.innerWidth < 500 ? 'text-xs' : 'text-base md:text-lg'}`}>{headlineWords[iconHover.idx].tooltip}</p>
+              <p className={`text-justify font-medium mb-3 ${window.innerWidth < 500 ? 'text-xs' : 'text-base md:text-lg'}`}>{headlineWords[iconHover.idx].tooltip}</p>
             </div>
           </div>
         </div>
