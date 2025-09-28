@@ -106,7 +106,58 @@ const harvestingSlides: ImageSlide[] = [
 const lightSlides: ImageSlide[] = [
     {
         src: "",
-        title: "TODO",
+        title: "LED strip 1",
+        rightNote: [
+            "12 W",
+            "Red and blue spectrum",
+            "Intensity at water surface ~ 100 μmol/m²/s",
+            "230 lm/m",
+            "60 LEDs/m"
+        ]
+    },
+    {
+        src: "",
+        title: "LED strip 2",
+        rightNote: [
+            "12 W",
+            "White 4500K",
+            "Intensity at water surface ~ 100 μmol/m²/s",
+            "1050 lm/m",
+            "60 LEDs/m"
+        ]
+    },
+    {
+        src: "",
+        title: "LED strip 3",
+        rightNote: [
+            "20 W",
+            "White 6000K",
+            "Intensity at water surface ~ 160 μmol/m²/s",
+            "2100 lm/m",
+            "120 LEDs/m"
+        ]
+    },
+    {
+        src: "",
+        title: "LED strip 4",
+        rightNote: [
+            "24 W",
+            "White 2800K",
+            "Intensity at water surface ~ 170 μmol/m²/s",
+            "1920 lm/m",
+            "300 LEDs/m"
+        ]
+    },
+    {
+        src: "",
+        title: "LED strip 5",
+        rightNote: [
+            "24 W",
+            "White 6500K",
+            "Intensity at water surface ~ 180 μmol/m²/s",
+            "1920 lm/m",
+            "300 LEDs/m"
+        ]
     },
 ];
 
