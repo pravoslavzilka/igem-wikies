@@ -2,8 +2,8 @@
 
 const HarvestingStrategy = () => {
   return (
-    <div className="max-w-6xl mx-auto p-6 bg-white">
-      {/* Header */}
+    <div className="max-w-6xl mx-auto p-6 bg-white text-lg text-justify" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+       {/* Header */}
       <h1 className="text-4xl font-bold mb-8 text-gray-900" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
         Harvesting Strategy Experiments
       </h1>
@@ -14,7 +14,7 @@ const HarvestingStrategy = () => {
           Rationale
         </h2>
         <p className="text-gray-700 leading-relaxed mb-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-          <span style={{fontWeight: "400"}}>Not only cultivation conditions but also a harvesting strategy should be optimized to ensure smooth duckweed cultivation. That&rsquo;s why we explored different harvesting strategies (with different harvesting frequencies and ratios) to determine which one leads to the maximum biomass yield while maintaining long-term sustainability of duckweed culture. </span>
+          <span style={{fontWeight: "400"}}>Not only cultivation conditions but also a harvesting strategy should be optimized to ensure smooth duckweed cultivation. That's why we explored different harvesting strategies (with different harvesting frequencies and ratios) to determine which one leads to the maximum biomass yields, as duckweed grows the fastest at a certain surface confluence. The goal is to maintain the long-term sustainability of duckweed culture.</span>
         </p>
       </div>
 
@@ -47,7 +47,7 @@ const HarvestingStrategy = () => {
               Species tested
             </h3>
             <p className="text-gray-700 leading-relaxed mb-6" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-              For these experiments, we used 5 clones of duckweed, namely{" "}
+              For these experiments, we used 5 ecotypes of duckweed, namely{" "}
             <i>L. minor</i> (5930), <i>L. minor</i> (5500), <i>L. minor</i> (8623),{" "}
             <i>L. japonica</i> (8627), and <i>S. polyrhiza</i> (0162).
             </p>
@@ -83,7 +83,7 @@ const HarvestingStrategy = () => {
             />
             <div className="p-4 bg-gray-50">
               <p className="text-sm text-gray-600" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                <strong>Fig 1:</strong> Weighting our duckweed bestie for determination of the precise amount that should be harvested.
+                <strong>Fig.1:</strong> Weighting our duckweed bestie L. japonica (8627) for determination of the precise amount that should be harvested.
 
               </p>
             
@@ -98,7 +98,7 @@ const HarvestingStrategy = () => {
             />
             <div className="p-4 bg-gray-50">
               <p className="text-sm text-gray-600" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                <strong>Fig 2:</strong> Our duckweed cultivation arsenal. (1) A hand centrifuge. (2) Sieves for duckweed harvesting. (3) PROBE with multimeter. (4) Duckweed cultivation tray. (5) Ingredients for mixing the cultivation medium. (6) A bucket for preparation of the cultivation medium.
+                <strong>Fig.2:</strong> Our duckweed cultivation arsenal. (1) A hand centrifuge. (2) Sieves for duckweed harvesting. (3) PROBE with multimeter. (4) Duckweed cultivation tray. (5) Ingredients for mixing the cultivation medium. (6) A bucket for preparation of the cultivation medium.
 
 
               </p>
@@ -109,10 +109,10 @@ const HarvestingStrategy = () => {
         </div>
       </div>
 
-      {/* Results Section */}
+      {/* Iterative process section */}
       <div className="mb-8">
         <h2 className="text-2xl font-bold mb-4 text-gray-900" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-          Results
+          Iterative process
         </h2>
         
         <h3 className="text-xl font-semibold mb-3 text-gray-800" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
@@ -120,18 +120,17 @@ const HarvestingStrategy = () => {
         </h3>
         <p className="text-gray-700 leading-relaxed" style={{ fontFamily: 'Urbanist, sans-serif' }}>
           In the beginning of the experiments, we inoculated trays with duckweed
-            so that it optically covered the entire surface of the tray (such a
-            rough starting point is in itself proof that this was only the first
-            iteration). We had 4 trays from each of the 5 clones in our collection.
+            so that it optically covered the entire surface of the tray (such a rough starting point is in itself proof that this was only the first iteration). We had
+            4 trays (2 small and 2 large) from each of the 5 clones in our collection.
             Subsequently, we monitored duckweed in all trays every three days and
-            harvested precisely determined amounts, specifically 20%, 30%, 40% and
-            50% of the actual biomass. The medium change was also done every three
-            days along with harvesting.
-            Before each weighing, it was necessary to remove residual water from the
-            duckweed. To do that, the content of the tray was poured through a net
-            where duckweed got caught. Then, the duckweed wrapped in this net was
-            hand-centrifuged always for 30 seconds to remove the residual water
-            which could otherwise affect the accuracy of biomass determination.
+            harvested precisely determined amounts, specifically 20%, 30%, 40%
+            and 50% of the actual biomass. The medium change was also done
+            every three days, along with harvesting. Before each weighing, it was
+            necessary to remove residual water from the duckweed. To do that, the
+            content of the tray was poured through a net where duckweed got
+            caught. Then, the duckweed wrapped in this net was hand-centrifuged
+            always for 30 seconds to remove the residual water which could
+            otherwise affect the accuracy of biomass determination.
         </p>
            
 
@@ -144,7 +143,7 @@ const HarvestingStrategy = () => {
         <p className="text-gray-700 leading-relaxed mb-6" style={{ fontFamily: 'Urbanist, sans-serif' }}>
           Based on the first empirical data, we decided on proceeding mainly with{" "}
         <i>L. japonica</i> (8627) in the next experiments, since it was the
-        fastest growing species we had and its sufficient frond size hadn’t
+        fastest growing species we had and its sufficient frond size hadn't
         caused problems during harvesting with nets.
         </p>
 
@@ -155,8 +154,7 @@ const HarvestingStrategy = () => {
         </div>
         {/* Caption */}
         <p className="text-sm text-gray-600 text-center italic mb-8" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-            <strong>Fig.3:</strong> Graph showing comparison between <i>L. minor</i> (5500) and <i>L. japonica</i> (8627) biomass yields in the first iteration of
-  harvesting strategy experiments.
+            <strong>Fig.3:</strong> Graph showing comparison between <i>L. minor</i> (5500) and <i>L. japonica</i> (8627) biomass yields (averaged across all 4 cultivations run for the given species) in the first iteration of harvesting strategy experiments.
         </p>
 
         {/* Second iteration */}
@@ -168,20 +166,20 @@ const HarvestingStrategy = () => {
           {/* Left column - text content */}
           <div>
             <p className="text-gray-700 leading-relaxed mb-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-              In the next step, the aim of the experiments shifted from “informing”
-        our computational model to “challenging” it. Three small cultivation
+              In the next step, the aim of the experiments shifted from "informing"
+        our computational model to "challenging" it. Three small cultivation
         trays were inoculated by 30 g of <i>Lemna japonica</i> (8627) in the
         beginning of the experiment, so that initial biomass density was around
         500 g/m<sup>2</sup>. Harvesting was done each 3 days (hf), but the
         harvesting ratio (hr) was different for every tray, specifically 30%,
-        40% and 50%.
+        40% and 50%. Each experiment was done in triplicates to ensure statistical significance and the data reported below are the mean values.
             </p>
 
             <h4 className="text-lg font-semibold mb-3 text-gray-800" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               Results from the second iteration
             </h4>
             <p className="text-gray-700 leading-relaxed mb-6" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-              After 15 days of cultivation, the cumulative biomass harvested for trays
+              After 15 days of cultivation, the cumulative biomass harvested from trays
         with harvesting ratios 30%, 40% and 50% was 886.0 g/m<sup>2</sup>,
         1047.3 g/m<sup>2</sup>, and 1012.4 g/m<sup>2</sup>, respectively. The
         harvesting strategy with maximum yield was thus that with hf = 3 days &
@@ -218,26 +216,59 @@ const HarvestingStrategy = () => {
               Third iteration: Aiming for even higher yields
             </h4>
             <p className="text-gray-700 leading-relaxed mb-6" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-              Based on outputs from our computational model, we started the
-        experiments the same way as in the second iteration, but with harvesting
-        strategies hf = 3 days &amp; hr = 45%, hf = 4 days &amp; hr = 50% and hf
-        = 5 days &amp; hr = 60%.
+              The harvesting strategy hf = 3 days & hr = 40% in the second iteration
+        already achieved the highest yields so far while it also proved
+        sustainability since the biomass left on tray after each harvest remained
+        stable over the whole duration of the experiment. Based on outputs from
+        our computational model, we started the experiments the same way as in
+        the second iteration, but with harvesting strategies hf = 3 days & hr =
+        45%, hf = 4 days & hr = 50% and hf = 5 days & hr = 60%, trying to find
+        out whether even higher yields are possible.
             </p>
            <h4 className="text-lg font-semibold mb-3 text-gray-800" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               Results from the third iteration
             </h4>
             <p className="text-gray-700 leading-relaxed" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-              After 15 days of cultivation, we must stop the cultivation experiment
-        since the duckweed biomass left on tray after each harvest was on a
-        sharp decline. Thus, the best harvesting strategy based on all of our
-        empirical data is hf = 3 days and hr = 40%.
+              After 15 days of cultivation, we had to stop the cultivation experiment
+        since the biomass of <i>Lemna japonica</i> (8627) left on trays after each
+        harvest wasn't stable over time - in fact, it decreased significantly over
+        the duration of the experiment.
             </p>
+
+        
+
+
+
+
+        {/* Graph placeholder */}
+        <div className="bg-gray-100 rounded-lg p-8 mb-4 mt-12">
+          <img src="https://static.igem.wiki/teams/5642/images/how/predictor/graf-final-7.webp" alt="Graph showing comparison between L. minor and L. japonica biomass yields" className="w-full h-auto" />
+
+        </div>
+        {/* Caption */}
+        <p className="text-sm text-gray-600 text-center italic mb-8" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+            <p>
+            <span style={{ fontWeight: 400 }}>
+              <b>Fig.5:</b> Graph showing the declining biomass of{" "}
+            </span>
+            <em>
+              <span style={{ fontWeight: 400 }}>Lemna japonica (8627)</span>
+            </em>
+            <span style={{ fontWeight: 400 }}>
+              {" "}
+              left on trays after each harvest in the third iteration of the harvesting
+              strategy experiments, where tested harvesting strategies were hf = 3 days
+              &amp; hr = 45%, hf = 4 days &amp; hr = 50% and hf = 5 days &amp; hr = 60%.
+            </span>
+          </p>
+
+        </p>    
 
         {/* Conclusion box */}
         <div className="bg-gray-100 mt-10 rounded-lg p-6 border-l-4 border-green-500">
           <p className="text-gray-800 font-medium text-center" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-            After three iterations, we came up with the best harvesting strategy of hf = 3 and hr = 40% with an 
-            average yield of 210 gm⁻² per each harvest.
+            After three iterations, we determined the best harvesting strategy to be hf = 3 and hr = 40% with an 
+            average yield of 210 g/m² per each harvest.
           </p>
         </div>
 
