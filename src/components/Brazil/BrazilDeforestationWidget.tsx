@@ -3,6 +3,7 @@ import { motion, AnimatePresence, Variants, Easing } from 'framer-motion';
 import Slider from './Slider';
 import MAP from './MAP';
 import ContentPanel from './ContentPanel';
+import BrazilInfoWidget from './BrazilInfoWidget';
 
 interface DataPoint {
   x: number;
@@ -201,6 +202,7 @@ const BrazilDeforestationWidget = () => {
                 <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 md:gap-8 lg:gap-12 items-center">
                   <motion.div className="space-y-4 sm:space-y-6 order-2 xl:order-1" variants={itemVariants}>
                     <MAP processedPoints={processedPoints} />
+                    <BrazilInfoWidget />
                     <div className="px-2 sm:px-0">
                       <Slider 
                         sliderValue={displaySliderValue}

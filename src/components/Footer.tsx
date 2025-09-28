@@ -316,7 +316,7 @@ const PartnersSection: React.FC<PartnersSectionProps> = ({ title, partners, isSt
     <div className={`space-y-4 sm:space-y-6 lg:space-y-8 ${CONFIG.partnerCard.sectionWidth} mx-auto`}>
       {title && (
         <h3
-          className={`text-xl sm:text-2xl lg:text-3xl font-semibold ${CONFIG.colors.textHeader} text-center px-4`}
+          className={`text-xl sm:text-xl lg:text-2xl font-semibold ${CONFIG.colors.textHeader} text-center px-4`}
           style={{ fontFamily: CONFIG.fonts.primary }}
         >
           {title}
@@ -403,7 +403,7 @@ const Footer: React.FC = () => {
       <div className={`${CONFIG.layout.containerMaxWidth} mx-auto ${CONFIG.layout.partnerContainerPadding}`}>
         <div className="space-y-8 sm:space-y-12">
           <PartnersSection
-            title="Strategic Sponsors"
+            title=""
             partners={PARTNERS_DATA.strategicSponsors}
             isStrategic={true}
           />
