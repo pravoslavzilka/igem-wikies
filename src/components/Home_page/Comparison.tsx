@@ -87,14 +87,13 @@ const Comparison = () => {
         className="font-bold text-center"
         style={{
           fontFamily: "Space Grotesk",
-          fontSize: window.innerWidth < 768 ? "1.5rem" : "2.25rem", // text-2xl for mobile, text-4xl for desktop
+          fontSize: window.innerWidth < 768 ? "1.5rem" : "2.0rem", // text-2xl for mobile, text-4xl for desktop
           lineHeight: window.innerWidth < 768 ? "120%" : "normal",
           marginTop: window.innerWidth < 768 ? "1.5rem" : "1.9rem",
           marginBottom: window.innerWidth < 768 ? "1.5rem" : "2rem",
         }}
       >
-        Duckweeds could save <span style={{ color: "#779E45" }}>farmers money </span>
-        and protect <span style={{ color: "#779E45" }}>Cerrado ecosystems</span>
+        With the same land, <span style={{ color: "#779E45" }}>duckweed</span> can feed <span style={{ color: "#779E45" }}>three times more cows</span> than soybean
       </h2>
       <div
         className="flex flex-row justify-center items-end"
@@ -150,7 +149,8 @@ const Comparison = () => {
         }}
         className="text-center font-bold"
       >
-        <h2 style={{fontFamily: "Space Grotesk"}}>With the same land, <span style={{ color: "#779E45" }}>duckweed</span> can feed <span style={{ color: "#779E45" }}>three times more cows</span> than soybean</h2>
+        <h2 style={{fontFamily: "Space Grotesk"}}>Duckweeds could save <span style={{ color: "#779E45" }}>farmers money </span>
+        and protect <span style={{ color: "#779E45" }}>Cerrado ecosystems</span></h2>
       </div>
 
 

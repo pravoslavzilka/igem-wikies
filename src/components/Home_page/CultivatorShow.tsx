@@ -37,7 +37,7 @@ const CultivatorShow = () => {
                   className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-medium transition-colors duration-200"
                   style={{ fontFamily: "Urbanist, sans-serif", backgroundColor: "#22531C" }}
                 >
-                  See how the cultivator works
+                  See how the CULTIVATOR works
                 </button>
               </Link>
             </div>
@@ -58,7 +58,7 @@ const CultivatorShow = () => {
                   </div>
                   <div className="font-semibold text-gray-800 text-md mb-1">Saves 2 hours per</div>
                   <div className="font-semibold text-gray-800 text-md mb-1">m² of duckweed</div>
-                  <div className="font-semibold text-gray-800 text-md">per week.</div>
+                  <div className="font-semibold text-gray-800 text-md">experiments weekly</div>
                 </div>
                 {/* Feature 2 */}
                 <div className="text-center flex-1">

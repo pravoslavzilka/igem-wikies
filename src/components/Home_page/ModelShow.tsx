@@ -28,7 +28,7 @@ const ModelShow = () => {
                 With 90% less workload than before.
               </div>
               
-              <div className="text-md text-gray-600 leading-relaxed mb-8" style={{ fontFamily: 'Urbanist, sans-serif', fontSize: '19px', lineHeight: '140%' }}>
+              <div className="text-md text-justify text-gray-600 leading-relaxed mb-8" style={{ fontFamily: 'Urbanist, sans-serif', fontSize: '19px', lineHeight: '140%' }}>
                 <p>
                   The cultivator is guided by PREDICTOR - a model trained on months of cultivation experiments conducted under controlled conditions. It can now estimate the optimal cultivation settings in the cultivator based on your desired yield and the species being used.
                 </p>
@@ -36,7 +36,7 @@ const ModelShow = () => {
 
               <div>
                 <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-medium transition-colors duration-200" style={{ fontFamily: 'Urbanist, sans-serif', backgroundColor: "#22531C" }}>
-                  See how model works
+                  See how the PREDICTOR works
                 </button>
               </div>
             </div>
