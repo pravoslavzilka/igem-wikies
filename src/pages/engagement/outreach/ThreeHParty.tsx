@@ -1,6 +1,6 @@
 const ThreeHParty = () => { 
   return (
-    <div className="min-h-screen bg-white" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+    <div className="min-h-screen bg-white text-lg " style={{ fontFamily: 'Urbanist, sans-serif' }}>
       {/* Header */}
       <div className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
@@ -11,7 +11,7 @@ const ThreeHParty = () => {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-6xl mx-auto px-6 py-12">
+      <div className="max-w-6xl mx-auto px-6 py-12 text-justify">
         
        
         {/* Why We Did It Section */}
@@ -70,21 +70,17 @@ const ThreeHParty = () => {
               <div className="absolute inset-0 flex items-center justify-center " style={{ height: '400px', width: 'auto', objectFit: 'cover' }}>
                 <img  src="https://static.igem.wiki/teams/5642/images/engagement/outreach/labtour.webp" />
               </div>
-              <div className="absolute bottom-4 left-4 bg-white px-3 py-1 rounded text-sm font-semibold">
-                1
-              </div>
+              
             </div>
             <div className="relative h-64 bg-gradient-to-br from-green-200 to-indigo-200 rounded-lg overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center">
                 <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/pxl-20250426-130215031.webp" />
               </div>
-              <div className="absolute bottom-4 left-4 bg-white px-3 py-1 rounded text-sm font-semibold">
-                2
-              </div>
+              
             </div>
           </div>
           <p className="mt-4 text-md italic " style={{ fontFamily: 'Urbanist, sans-serif' }}>
-            Lab tour showcasing duckweed to our colleagues from iGEM Prague. Discussion with Jan Kasper about: "Why Invest in Startups"
+            Lab tour showcasing duckweed to our colleagues from iGEM Prague. Discussion with Jan Kasper about: "Why Invest (your time or money) in Startups"
           </p>
         </section>
 
@@ -175,12 +171,10 @@ const ThreeHParty = () => {
               <div className="absolute inset-0 flex items-center justify-center">
                 <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/pxl-20250426-153332593-1.webp" />
               </div>
-              <div className="absolute bottom-4 left-4 bg-white px-3 py-1 rounded text-sm font-semibold">
-                3
-              </div>
+              
               
             </div>
-            <div><strong className="font-bold">A Hacker</strong> – the problem-solver who thrives on creativity and curiosity.</div>
+            <div className=" mt-4"><strong className="font-bold">Mitch Altman: a hacker</strong> – the problem-solver who thrives on creativity and curiosity.</div>
             </div>
 
             <div>
@@ -191,12 +185,10 @@ const ThreeHParty = () => {
     
                 
               </div>
-              <div className="absolute bottom-4 left-4 bg-white px-3 py-1 rounded text-sm font-semibold">
-                4
-              </div>
+             
             </div>
-            
-             <div><strong className="font-bold">A Hipster</strong> – the visionary who shapes culture and spots the next big thing before anyone else.</div>
+
+             <div className=" mt-4"><strong className="font-bold">Peter Dendis: a hipster</strong> – the visionary who shapes culture and spots the next big thing before anyone else.</div>
 
             </div>  
 
@@ -205,11 +197,9 @@ const ThreeHParty = () => {
               <div className="absolute inset-0 flex items-center justify-center">
                 <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/pxl-20250426-140450571.webp" />
               </div>
-              <div className="absolute bottom-4 left-4 bg-white px-3 py-1 rounded text-sm font-semibold">
-                5
-              </div>
+              
             </div>
-            <div><strong className="font-bold">A Hustler</strong> – the unstoppable doer who makes things happen against all odds.</div>
+            <div className=" mt-4"><strong >Vojta Roček: a hustler</strong> – the unstoppable doer who makes things happen against all odds.</div>
             </div>
           </div>
         </section>
@@ -318,7 +308,7 @@ const ThreeHParty = () => {
             </div>
           </div>
           <p className="mt-4 text-md italic " style={{ fontFamily: 'Urbanist, sans-serif' }}>
-            <strong className="font-bold">Mitch Altman</strong>, a legendary Hacker of hardware and a deeply inspiring picture from ICER Show and a picture question from an Austral student: <em>"SynechON"</em>. <strong className="font-bold">Peter DendiÅ¡ about: It is all about a startup building self (not Ashely)</strong>
+            <strong className="font-bold">Mitch Altman, a legendary hacker of hardware got a bacteria hacking course from iGEM Brno and a private excursion from our enablement partner- Thermofisher, which produce around 20 % of global electron microscopy just from BRNO facility.</strong>
           </p>
         </section>
 

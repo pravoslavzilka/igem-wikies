@@ -7,7 +7,7 @@ export default function VacuumInfiltrationTesting() {
   return (
     <div className="max-w-6xl mx-auto p-8 bg-white font-['Urbanist'] text-lg text-gray-800 leading-relaxed text-justify">
       {/* Header */}
-      <h1 className="text-4xl font-bold mb-6 font-['Space_Grotesk'] text-gray-900">
+      <h1 className="text-4xl text-center font-bold mb-6 font-['Space_Grotesk'] text-gray-900">
         Vacuum infiltration testing
       </h1>
       
