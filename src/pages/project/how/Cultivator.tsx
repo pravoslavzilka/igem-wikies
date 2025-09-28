@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import ImageViewer, {ImageSlide} from "../../../components/ui/ImageViewer.tsx";
+import References from "../../../components/References.tsx";
+import {cultivatorReferences} from "./data/references.ts";
 
 const traySlides: ImageSlide[] = [
     {
@@ -649,7 +651,7 @@ export default function LivingLayers() {
                         <img
                             src="https://static.igem.wiki/teams/5642/images/how/cultivator/tech/communication-schema.webp"
                             alt="Harvesting and water current schema"
-                            className="max-w-md rounded-lg object-contain"
+                            className="max-w-lg rounded-lg object-contain"
                         />
                     </div>
 
@@ -807,7 +809,7 @@ export default function LivingLayers() {
             <div className="max-w-4xl mx-auto text-center py-12">
                 {/* Heading */}
                 <h2 className="text-2xl font-bold text-green-600 mb-6">
-                    See the cultivator in cation!
+                    See the cultivator in action!
                 </h2>
 
                 {/* Video embed */}
@@ -822,6 +824,8 @@ export default function LivingLayers() {
                 </div>
             </div>
 
+
+            <References references={cultivatorReferences}/>
 
         </div>
 
