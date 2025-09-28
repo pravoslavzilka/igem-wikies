@@ -5,29 +5,31 @@ const DuckweedMafiaTeam = () => {
   const [leftColumnFixed, setLeftColumnFixed] = useState(false);
   const [showTeamSection, setShowTeamSection] = useState(false);
 
-  // 1. Create refs for each section
+  // Create refs for each section
   const sectionRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
+  const introSectionRef = useRef<HTMLDivElement | null>(null);
 
-  // Editable scroll offsets for each section (in px)
-  const scrollOffsets: { [key: string]: number } = {
-    Founders: 30,
-    Hackers: 30,
-    Hipsters: -400,   // Adjust as needed
-    Hustlers: -500,   // Adjust as needed
-    PIs: 120,        // Adjust as needed
-    Advisors: 120    // Adjust as needed
-  };
-
-  // 2. Update scrollToSection to use refs and scroll with offset
-  const scrollToSection = (sectionTitle) => {
-    const ref = sectionRefs.current[sectionTitle];
-    if (ref) {
-      const rect = ref.getBoundingClientRect();
+  // Update scrollToSection to scroll to the first member of each section using ID
+  const scrollToSection = (sectionTitle: string) => {
+    // Generate the ID for the first member of the section
+    const firstMemberID = `${sectionTitle}1`;
+    const element = document.getElementById(firstMemberID);
+    
+    if (element) {
+      const rect = element.getBoundingClientRect();
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      // Use per-section offset, fallback to 30 if not set
-      const offset = scrollOffsets[sectionTitle] ?? 30;
+      // Use a consistent offset that accounts for any fixed headers
+      let offset = 100;
+
+      if (sectionTitle === "Hustlers") {
+        offset += 550;
+      }
+      if (sectionTitle === "Hipsters") {
+        offset += 350;
+      }
+
       window.scrollTo({
-        top: rect.top + scrollTop - offset,
+        top: rect.top + scrollTop + offset,
         behavior: 'smooth'
       });
     }
@@ -197,19 +199,20 @@ const DuckweedMafiaTeam = () => {
           role: "Senior Principal Investigator at Masaryk University and Director of Science at CEITEC, where he serves as a leading scientist and dedicated mentor.",
           description: "He believes today is an extraordinary time to begin a research career and is passionate about guiding the next generation. He empowers young scientists by challenging them with the right questions to foster critical thinking. Despite a demanding schedule, he consistently finds time to offer thoughtful advice and suggest improvements to experiments, demonstrating his commitment to both science and the people who drive it forward.",
           image:"https://static.igem.wiki/teams/5642/images/duckweedmafia/team/34456.webp"
-        },
-        {
-          name: "Arturo Marí-Ordóñez, Ph.D.",
-          role: "Advancing our understanding of epigenetic silencing in duckweeds, while supporting the next generation of synthetic biologists.",
-          description: "We see Arturo as the “Duckweed King” 👑—a funny but fitting title, given his immense knowledge of duckweed genetic engineering and his use of these tiny plants as a system to study genome defense. His research focuses on how plants protect themselves from transposable elements (TEs), which act like molecular parasites by hijacking cellular machinery and potentially disrupting essential genes. Arturo has uncovered that plants can recognize TE mRNAs as foreign during translation, activating a small RNA–based post-transcriptional silencing response that later transitions into chromatin-level repression for stable, heritable control. Ultimately, his work sheds light on the delicate balance between genome defense and genome evolution in plants.",
-          image:"https://static.igem.wiki/teams/5642/images/duckweedmafia/team/csm-2024-09-m5835-arturo-mari-ordonez-c-anna-stoecher-babc631801.webp"
         }
+        
         
       ]
     },
     {
       title: "Advisors",
       members: [
+        {
+          name: "Arturo Marí-Ordóñez, Ph.D.",
+          role: "Advancing our understanding of epigenetic silencing in duckweeds, while supporting the next generation of synthetic biologists.",
+          description: "We see Arturo as the “Duckweed King” 👑—a funny but fitting title, given his immense knowledge of duckweed genetic engineering and his use of these tiny plants as a system to study genome defense. His research focuses on how plants protect themselves from transposable elements (TEs), which act like molecular parasites by hijacking cellular machinery and potentially disrupting essential genes. Arturo has uncovered that plants can recognize TE mRNAs as foreign during translation, activating a small RNA–based post-transcriptional silencing response that later transitions into chromatin-level repression for stable, heritable control. Ultimately, his work sheds light on the delicate balance between genome defense and genome evolution in plants.",
+          image:"https://static.igem.wiki/teams/5642/images/duckweedmafia/team/csm-2024-09-m5835-arturo-mari-ordonez-c-anna-stoecher-babc631801.webp"
+        },
         {
           name: "Helene Robert Boisivon, Ph.D.",
           role: "Uncovering the secrets of plant life at the molecular level is the key to ensuring our future in a changing climate.",
@@ -221,70 +224,133 @@ const DuckweedMafiaTeam = () => {
   ];
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.documentElement.scrollHeight;
-      
-      // Check if we're in the intro section or team section
-      // Transition happens at 50% of the intro section
-      if (scrollPosition < windowHeight * 0.5) {
-        setCurrentSection('Intro');
-        setLeftColumnFixed(false);
-        setShowTeamSection(false);
-      } else {
-        setShowTeamSection(true);
-        setLeftColumnFixed(true);
-        
-        // Calculate which team section we're in based on scroll position
-        // Subtract half viewport height to account for early transition
-        const teamScrollPosition = scrollPosition - (windowHeight * 0.9);
-        let totalMembers = 0;
-        let currentSectionTitle = 'Founders';
-        
-        for (const section of teamSections) {
-          // Use 0.6 multiplier since cards are 60vh tall
-          if (teamScrollPosition < (totalMembers + section.members.length) * windowHeight * 0.84) {
-            currentSectionTitle = section.title;
-            break;
-          }
-          totalMembers += section.members.length;
-        }
-        
-        setCurrentSection(currentSectionTitle);
+    // Create intersection observer that observes ALL team member elements
+    const observerOptions = {
+      root: null,
+      rootMargin: '-30% 0px -30% 0px', // Middle 40% of viewport
+      threshold: 0
+    };
 
-        // Check if we're near the bottom of the page to unlock left column
-        const bottomThreshold = documentHeight - windowHeight * 2.3;
-        if (scrollPosition >= bottomThreshold) {
+    const allMemberObserver = new IntersectionObserver((entries) => {
+      // Get all visible elements and determine which section they belong to
+      const visibleElements = entries
+        .filter(entry => entry.isIntersecting)
+        .map(entry => {
+          const elementId = entry.target.id;
+          // Extract section name from ID (e.g., "Founders1" -> "Founders")
+          const sectionName = elementId.replace(/\d+$/, '');
+          return {
+            element: entry.target,
+            sectionName: sectionName,
+            top: entry.boundingClientRect.top,
+            id: elementId
+          };
+        })
+        .filter(item => item.sectionName)
+        .sort((a, b) => a.top - b.top);
+
+      if (visibleElements.length > 0) {
+        // Use the topmost visible element's section
+        const topElement = visibleElements[0];
+        setCurrentSection(topElement.sectionName);
+      }
+    }, observerOptions);
+
+    // Separate observer for intro section to control fixed sidebar
+    const introObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setCurrentSection('Intro');
           setLeftColumnFixed(false);
+          setShowTeamSection(false);
+        } else {
+          setShowTeamSection(true);
+          setLeftColumnFixed(true);
         }
+      });
+    }, {
+      root: null,
+      rootMargin: '-30% 0px 0px 0px',
+      threshold: 0
+    });
+
+    // Observer for bottom of page to temporarily unlock left column
+    const footerObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setLeftColumnFixed(false);
+        } else {
+          if (showTeamSection) {
+            setLeftColumnFixed(true);
+          }
+        }
+      });
+    }, {
+      root: null,
+      rootMargin: '100px 0px 0px 0px',
+      threshold: 0
+    });
+
+    // Wait for DOM to be ready before setting up observers
+    const setupObservers = () => {
+      // Observe ALL team member elements (not just first ones)
+      teamSections.forEach(section => {
+        section.members.forEach((member, index) => {
+          const elementId = `${section.title}${index + 1}`;
+          const element = document.getElementById(elementId);
+          if (element) {
+            allMemberObserver.observe(element);
+          }
+        });
+      });
+
+      // Observe intro section
+      if (introSectionRef.current) {
+        introObserver.observe(introSectionRef.current);
+      }
+
+      // Find and observe footer
+      const footer = document.querySelector('[data-footer="true"]');
+      if (footer) {
+        footerObserver.observe(footer);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    // Setup observers with a small delay to ensure DOM is ready
+    const timer = setTimeout(setupObservers, 100);
+
+    return () => {
+      clearTimeout(timer);
+      allMemberObserver.disconnect();
+      introObserver.disconnect();
+      footerObserver.disconnect();
+    };
+  }, [showTeamSection]);
 
   return (
     <div className="min-h-screen bg-amber-50">
       {/* Intro Section - Full Screen */}
-      <div className="min-h-screen flex flex-col md:flex-row gap-4 " style={{ backgroundColor: '#cdbd9bff' }}>
+      <div 
+        ref={introSectionRef}
+        className="min-h-screen flex flex-col md:flex-row gap-4" 
+        style={{ backgroundColor: '#cdbd9bff' }}
+      >
         {/* Left Side */}
         <div className="flex-1 flex flex-col justify-center items-center p-8">
-          {/* Logo */}
-      
-
-          {/* Team Photo Placeholder */}
-           <div className="mb-8 w-full ">
-            <div className="  rounded-lg flex items-center justify-center">
-            <img src="https://static.igem.wiki/teams/5642/images/duckweedmafia/team/igem-promo-09-min.webp"
-                style={{  height:"400px", width:"100%", objectFit:"cover", borderRadius:"0.5rem" }} />
+          {/* Team Photo */}
+          <div className="mb-8 w-full">
+            <div className="rounded-lg flex items-center justify-center">
+              <img 
+                src="https://static.igem.wiki/teams/5642/images/duckweedmafia/team/igem-promo-09-min.webp"
+                style={{ height: "400px", width: "100%", objectFit: "cover", borderRadius: "0.5rem" }} 
+                alt="Team Photo"
+              />
             </div>
-        </div>
+          </div>
 
           {/* Main Title */}
           <div className="">
-            <h1 className="text-3xl font-bold text-green-700 mb-2 text-white" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+            <h1 className="text-3xl font-bold text-white mb-2" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               <em>MEET</em>
             </h1>
             <h1 className="text-6xl font-bold text-green-700 mb-2" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
@@ -308,8 +374,8 @@ const DuckweedMafiaTeam = () => {
             
             <div className="text-sm text-gray-800 space-y-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
               <p>
-                We're iGEM Brno – proudly the Duckweed Mafia. Our big, organized crew
-                splits into three main groups – the <strong>3H: Hackers, Hipsters and Hustlers.</strong>
+                We're iGEM Brno — proudly the Duckweed Mafia. Our big, organized crew
+                splits into three main groups — the <strong>3H: Hackers, Hipsters and Hustlers.</strong>
                 And of course, <strong>Founders</strong> stand behind it all, helping connect and
                 coordinate every piece of the puzzle.
               </p>
@@ -338,7 +404,7 @@ const DuckweedMafiaTeam = () => {
                   </button>
                 </p>
                 <p className="mb-3">
-                  In our version of the 3H, hustlers are the cultivation crew. They design and manage systems: containers, kultivační podmínky, optimální podmínky for growth. They think about applications in the field, and set up routines for pumping & harvesting so our biology works reliably outside the lab.
+                  In our version of the 3H, hustlers are the cultivation crew. They design and manage systems: containers, cultivation conditions, optimal conditions for growth. They think about applications in the field, and set up routines for pumping & harvesting so our biology works reliably outside the lab.
                 </p>
               </div>
 
@@ -352,7 +418,7 @@ const DuckweedMafiaTeam = () => {
                   </button>
                 </p>
                 <p className="mb-3">
-                  The storytellers and designers. They craft our identity, visuals and narrative so the science feels human and exciting. From brand to video, they make sure people get what we’re doing — and why it matters.
+                  The storytellers and designers. They craft our identity, visuals and narrative so the science feels human and exciting. From brand to video, they make sure people get what we're doing — and why it matters.
                 </p>
               </div>
 
@@ -381,19 +447,24 @@ const DuckweedMafiaTeam = () => {
       {/* Team Section */}
       <div className="flex">
         {/* Fixed Left Sidebar - Hidden on mobile, always present on desktop */}
-        <div style={{ backgroundColor: '#cdbd9bff' }} className={`hidden md:flex w-1/2  p-8 flex-col transition-all duration-500 z-10 ${
-          leftColumnFixed ? 'fixed top-0 left-0 h-screen opacity-100' : 'relative h-auto min-h-screen opacity-0 pointer-events-none'
-        } ${showTeamSection ? 'opacity-100' : ''}`}>
+        <div 
+          style={{ backgroundColor: '#cdbd9bff' }} 
+          className={`hidden md:flex w-1/2 p-8 flex-col transition-all duration-500 z-10 ${
+            leftColumnFixed ? 'fixed top-0 left-0 h-screen' : 'relative h-auto min-h-screen'
+          } ${showTeamSection ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+        >
           {/* Logo */}
-          <div className="mb-8 ">
-            <img src="https://static.igem.wiki/teams/5642/icons/igem-brno-final-transparent.webp" alt="Team Logo" className=" h-24" />
+          <div className="mb-8">
+            <img 
+              src="https://static.igem.wiki/teams/5642/icons/igem-brno-final-transparent.webp" 
+              alt="Team Logo" 
+              className="h-24" 
+            />
           </div>
-
-          
 
           {/* Title */}
           <div className="mb-8 flex-shrink-0 mt-10">
-            <h1 className="text-3xl font-bold text-green-700 mb-2 text-white" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+            <h1 className="text-3xl font-bold text-white mb-2" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               <em>MEET</em>
             </h1>
             <h1 className="text-6xl font-bold text-green-700 mb-2" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
@@ -402,7 +473,6 @@ const DuckweedMafiaTeam = () => {
             <h1 className="text-6xl font-bold text-green-700 mb-2" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               {currentSection}
             </h1>
-            
           </div>
 
           {/* Description */}
@@ -411,7 +481,7 @@ const DuckweedMafiaTeam = () => {
               <strong>Who is Duckweed Mafia?</strong>
             </p>
             <p className="mb-4">
-              We're iGEM Brno – proudly the Duckweed Mafia. Our big, organized crew splits into three main groups – the 3H: Hackers, Hipsters and Hustlers. And of course, Founders stand behind it all, helping connect and coordinate every piece of the puzzle.
+              We're iGEM Brno — proudly the Duckweed Mafia. Our big, organized crew splits into three main groups — the 3H: Hackers, Hipsters and Hustlers. And of course, Founders stand behind it all, helping connect and coordinate every piece of the puzzle.
             </p>
           </div>
         </div>
@@ -422,8 +492,15 @@ const DuckweedMafiaTeam = () => {
             section.members.map((member, memberIndex) => (
               <div
                 key={`${sectionIndex}-${memberIndex}`}
-                // 3. Attach ref only to the first member of each section
-                ref={memberIndex === 0 ? (el) => { sectionRefs.current[section.title] = el; } : undefined}
+                // Add unique ID for each member: "Founders1", "Founders2", "Hackers1", etc.
+                id={`${section.title}${memberIndex + 1}`}
+                // Attach ref and data-section identifier only to the first member of each section
+                ref={memberIndex === 0 ? (el) => { 
+                  if (el) {
+                    sectionRefs.current[section.title] = el;
+                  }
+                } : undefined}
+                data-section={memberIndex === 0 ? section.title : undefined}
                 className="min-h-[60vh] bg-white p-4 md:p-8 flex flex-col justify-center"
               >
                 {/* Mobile Section Header - Only visible on mobile */}
@@ -449,9 +526,13 @@ const DuckweedMafiaTeam = () => {
                   {/* Member Image */}
                   <div className="mb-6">
                     <div className="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center relative" style={{ marginTop: '5rem' }}>
-                      <img src={member.image} alt={member.name} className="w-full h-full object-cover rounded-lg md:min-h-[400px] object-cover object-top" />
+                      <img 
+                        src={member.image} 
+                        alt={member.name} 
+                        className="w-full h-full object-cover rounded-lg md:min-h-[400px] object-cover object-top" 
+                      />
                       {/* Name overlay */}
-                      <div  className=" absolute bottom-[-50px] right-4 bg-black bg-opacity-70 text-white px-3 py-1 rounded text-lg">
+                      <div className="absolute bottom-[-50px] right-4 bg-black bg-opacity-70 text-white px-3 py-1 rounded text-lg">
                         {member.name}
                       </div>
                     </div>
@@ -469,7 +550,7 @@ const DuckweedMafiaTeam = () => {
           )}
           
           {/* Footer */}
-          <div className="bg-gray-800 text-white p-8 text-center">
+          <div className="bg-gray-800 text-white p-8 text-center" data-footer="true">
             <h3 className="text-xl font-bold mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               Ready to Join the Duckweed Mafia?
             </h3>
