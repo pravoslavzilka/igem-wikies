@@ -95,7 +95,7 @@ const harvestingSlides: ImageSlide[] = [
         src: "https://static.igem.wiki/teams/5642/images/how/cultivator/harvest/iterations/cultivator-history-6.webp",
         title: "Iteration 6",
         rightNote: [
-            "45° angled parsely placed jets with a larger throughput",
+            "45° angled sparsely placed jets with a larger throughput",
             "3mm jet diameter."
         ]
     },
@@ -800,6 +800,25 @@ export default function LivingLayers() {
                             onClose={() => setIsOpenSchematicsSlides(false)}
                         />
                     </div>
+                </div>
+            </div>
+
+
+            <div className="max-w-4xl mx-auto text-center py-12">
+                {/* Heading */}
+                <h2 className="text-2xl font-bold text-green-600 mb-6">
+                    See the cultivator in cation!
+                </h2>
+
+                {/* Video embed */}
+                <div className="relative w-full aspect-video max-w-6xl mx-auto rounded-lg overflow-hidden shadow-lg">
+                    <iframe
+                        className="absolute inset-0 w-full h-full"
+                        src="https://www.youtube.com/watch?v=0VAylWxDQfk"
+                        title="Duckweed Cultivator Demo"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
                 </div>
             </div>
 
