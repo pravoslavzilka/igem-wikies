@@ -49,7 +49,9 @@ const FutureSection = ({ futureSectionImageUrl }: FutureSectionProps) => {
                   color: 'rgba(23, 31, 22, 0.75)'
                 }}
               >
-                We developed TAIFR and characterized duckweed-native promoters, so anyone can engineer duckweed efficiently. We built an autonomous cultivation prototype, allowing anyone to grow duckweed in their lab cheaply and without labour.
+                We developed <strong>TAIFR</strong> and characterized <strong>duckweed-native promoters</strong>, 
+                so <span style={{ color: "#6ca033" }}>anyone can engineer duckweed efficiently</span>. 
+                We built <strong>CULTIVATOR</strong>, allowing <span style={{ color: "#6ca033" }}>anyone to grow duckweed in their lab cheaply</span> and without labour.
               </p>
             </div>
           </div>
