@@ -1,41 +1,46 @@
+// src/pages/project/What/components/StruggleSection.tsx
 import React from 'react';
 
 const StruggleSection: React.FC = () => {
   return (
-    <section className="flex flex-col items-start px-32 py-10 gap-16 w-full h-[354px] bg-white">
-      <div className="flex flex-row items-start pt-20 gap-[200px] w-full max-w-[1184px] h-[274px] border-t border-black/10">
-        
-        {/* Left side - heading */}
-        <div className="flex flex-col items-start gap-6 w-[384px] h-12">
-          <h2 
-            className="w-full h-12 text-4xl font-semibold leading-[120%] text-black"
-            style={{ fontFamily: 'Urbanist, sans-serif' }}
-          >
-            The struggle is real
-          </h2>
-        </div>
+    <section className="w-full bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-8 lg:px-32">
+      <div className="max-w-7xl mx-auto">
+        <div className="border-t border-black/10 pt-12 sm:pt-16 lg:pt-20">
+          <div className="flex flex-col lg:flex-row lg:items-start gap-8 lg:gap-16 xl:gap-[200px]">
+            
+            {/* Left side - heading */}
+            <div className="w-full lg:w-[384px] lg:flex-shrink-0">
+              <h2 
+                className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-[120%] text-black"
+                style={{ fontFamily: 'Urbanist, sans-serif' }}
+              >
+                The struggle is real
+              </h2>
+            </div>
 
-        {/* Right side - content */}
-        <div className="flex flex-col items-start gap-6 w-[600px] h-[194px] flex-grow">
-          
-          {/* First paragraph */}
-          <p 
-            className="w-full h-[90px] text-lg leading-[168%] text-black/75"
-            style={{ fontFamily: 'Space Grotesk, sans-serif' }}
-          >
-            We had ideas on what to do with duckweed, like engineering it to uptake ammonium faster for manure remediation- nitroduck link or to grow faster and bigger - hanson bbd hp link.
-          </p>
+            {/* Right side - content */}
+            <div className="flex-1 min-w-0 space-y-4 sm:space-y-6">
+              
+              {/* First paragraph */}
+              <p 
+                className="text-base sm:text-lg leading-[168%] text-black/75 text-justify"
+                style={{ fontFamily: 'Space Grotesk, sans-serif' }}
+              >
+                We had ideas on what to do with duckweed, like engineering it to uptake ammonium faster for manure remediation- nitroduck link or to grow faster and bigger - hanson bbd hp link.
+              </p>
 
-          {/* Second paragraph - highlighted */}
-          <p 
-            className="w-full h-20 text-2xl font-bold leading-[168%] text-green-900"
-            style={{ fontFamily: 'Space Grotesk, sans-serif' }}
-          >
-            But we realized we just wouldn't be able to do it. Duckweeds are very hard to engineer.
-          </p>
-          
+              {/* Second paragraph - highlighted */}
+              <p 
+                className="text-lg sm:text-xl lg:text-2xl font-bold leading-[168%] text-green-900"
+                style={{ fontFamily: 'Space Grotesk, sans-serif' }}
+              >
+                But we realized we just wouldn't be able to do it. Duckweeds are very hard to engineer.
+              </p>
+              
+            </div>
+            
+          </div>
         </div>
-        
       </div>
     </section>
   );

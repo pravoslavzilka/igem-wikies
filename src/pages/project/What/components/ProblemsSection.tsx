@@ -1,3 +1,4 @@
+// src/pages/project/What/components/ProblemsSection.tsx
 import React from 'react';
 
 interface ProblemCardProps {
@@ -5,27 +6,21 @@ interface ProblemCardProps {
   image: string;
   quote: string;
   author: string;
-  height?: number;
 }
 
-const ProblemCard: React.FC<ProblemCardProps> = ({ title, image, quote, author, height = 397 }) => {
-  // Dynamicky výpočet výšky quote kontajnera na základe dĺžky textu
-  const isLongQuote = quote.length > 80;
-  const quoteContainerHeight = isLongQuote ? "auto" : "h-[71px]";
-  const quoteTextHeight = isLongQuote ? "auto" : "h-[42px]";
-  
+const ProblemCard: React.FC<ProblemCardProps> = ({ title, image, quote, author }) => {
   return (
-    <div className={`flex flex-col items-center px-4 gap-6 w-[384px]`} style={{ height: `${height}px` }}>
+    <div className="flex flex-col items-center gap-4 sm:gap-6 w-full max-w-sm mx-auto">
       {/* Title */}
       <h3 
-        className="w-[352px] h-[58px] text-2xl font-semibold leading-[120%] text-center text-black"
+        className="text-lg sm:text-xl lg:text-2xl font-semibold leading-[120%] text-center text-black px-2"
         style={{ fontFamily: 'Urbanist, sans-serif' }}
       >
         {title}
       </h3>
 
       {/* Image */}
-      <div className="w-[352px] h-[220px] rounded-lg overflow-hidden">
+      <div className="w-full aspect-[352/220] rounded-lg overflow-hidden">
         <img 
           src={image} 
           alt={title}
@@ -33,15 +28,15 @@ const ProblemCard: React.FC<ProblemCardProps> = ({ title, image, quote, author, 
         />
       </div>
 
-      {/* Quote container - dynamická výška */}
-      <div className={`flex flex-row items-start gap-5 w-[352px] ${quoteContainerHeight} min-h-[71px]`}>
+      {/* Quote container */}
+      <div className="flex flex-row items-start gap-3 sm:gap-5 w-full">
         {/* Avatar placeholder */}
-        <div className="w-12 h-12 bg-gray-100 rounded flex-shrink-0 mt-1"></div>
+        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gray-100 rounded flex-shrink-0 mt-1"></div>
         
         {/* Quote and author */}
-        <div className="flex flex-col justify-start items-start gap-3 w-[284px] flex-grow">
+        <div className="flex flex-col justify-start items-start gap-2 sm:gap-3 flex-grow min-w-0">
           <p 
-            className={`w-full ${quoteTextHeight} text-sm leading-[148%] text-black`}
+            className="w-full text-sm leading-[148%] text-black"
             style={{ fontFamily: 'Space Grotesk, sans-serif' }}
           >
             "{quote}"
@@ -64,37 +59,38 @@ const ProblemsSection: React.FC = () => {
       title: "High protein feed costs and reliance on import",
       image: "https://static.igem.wiki/teams/5642/images/what/problem-soybean-feed.webp",
       quote: "Soybean is an amazing source of protein. I wish I could afford more!",
-      author: "Štefan Strharský",
-      height: 397
+      author: "Štefan Strharský"
     },
     {
       title: "Deforestation caused by protein crops",
       image: "https://static.igem.wiki/teams/5642/images/what/problem-deforestation.webp",
       quote: "Our land was taken from us and turned into a one giant soy field",
-      author: "Ms. Conservationist",
-      height: 397
+      author: "Ms. Conservationist"
     },
     {
       title: "Nitrogen runoffs and manure utilization",
       image: "https://static.igem.wiki/teams/5642/images/what/problem-nitrogen.webp",
       quote: "We tend to think manure is free fertilizer, but in reality, much of the nitrogen just disappears into the air or water. It's money and nutrients lost.",
-      author: "Ing. Jakub Neužil",
-      height: 460 // Zvýšená výška pre dlhší quote
+      author: "Ing. Jakub Neužil"
     }
   ];
 
   return (
-    <section className="flex flex-row items-start px-32 py-10 gap-4 w-full bg-white">
-      {problems.map((problem, index) => (
-        <ProblemCard
-          key={index}
-          title={problem.title}
-          image={problem.image}
-          quote={problem.quote}
-          author={problem.author}
-          height={problem.height}
-        />
-      ))}
+    <section className="w-full bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-8 lg:px-32">
+      <div className="max-w-7xl mx-auto">
+        {/* Grid layout - responsive */}
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-12 text-justify">
+          {problems.map((problem, index) => (
+            <ProblemCard
+              key={index}
+              title={problem.title}
+              image={problem.image}
+              quote={problem.quote}
+              author={problem.author}
+            />
+          ))}
+        </div>
+      </div>
     </section>
   );
 };
