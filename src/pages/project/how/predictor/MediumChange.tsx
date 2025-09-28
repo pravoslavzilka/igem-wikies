@@ -16,7 +16,7 @@ const MediumChange = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto p-8 bg-white" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+    <div className="max-w-6xl mx-auto p-8 bg-white text-lg text-justify" style={{ fontFamily: 'Urbanist, sans-serif' }}>
       {/* Header */}
       <h1 className="text-4xl font-bold text-gray-900 mb-12 " style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
         Cultivation Medium Change Experiment
@@ -85,10 +85,24 @@ const MediumChange = () => {
           {/* Graph Placeholder */}
           <div className="bg-gray-50   rounded-lg ">
               <div className=" rounded">
-                <img src="https://static.igem.wiki/teams/5642/images/how/predictor/medium-change-graph.webp" alt="Medium Change Graph" className="w-full h-auto rounded" />
+                <img src="https://static.igem.wiki/teams/5642/images/how/predictor/graf-final-medium-change.webp" alt="Medium Change Graph" className="w-full h-auto rounded" />
               </div>
               <p className="text-sm text-gray-600 mt-3 p-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                <strong>Fig 2:</strong> Graph showing biomass growth over time for experimental and control groups.
+                <strong>Fig 2:</strong><p>
+                  <span style={{ fontWeight: 400 }}>
+                    Graph showing biomass growth over time for experimental (mean values from
+                    two replicates of the experiment) and control groups of{" "}
+                  </span>
+                  <em>
+                    <span style={{ fontWeight: 400 }}>Lemna japonica (8627)</span>
+                  </em>
+                  <span style={{ fontWeight: 400 }}> and </span>
+                  <em>
+                    <span style={{ fontWeight: 400 }}>Spirodela polyrhiza (0162)</span>
+                  </em>
+                  <span style={{ fontWeight: 400 }}>.</span>
+                </p>
+
               </p>
             </div>
         </div>
