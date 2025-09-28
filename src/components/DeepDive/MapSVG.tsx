@@ -16,9 +16,10 @@ const MapSVG: React.FC<MapSVGProps> = ({ locations, isInView }) => {
   const [debouncedHoveredLeafId, setDebouncedHoveredLeafId] = useState<string | null>(null);
 
   const {
-    colors: { mapFill },
+    colors: { mapFill, company, research },
     animation: { staggerDelay, duration, springStiffness },
-    layout: { svgViewBox }
+    layout: { svgViewBox },
+    legend: { position, itemSize, spacing, fontSize, fontWeight }
   } = MAP_CONFIG;
 
   // Debounce hover state
@@ -32,7 +33,7 @@ const MapSVG: React.FC<MapSVGProps> = ({ locations, isInView }) => {
   useEffect(() => {
     const loadSVG = async () => {
       try {
-        const response = await fetch('/WorldMap.svg');
+        const response = await fetch('https://static.igem.wiki/teams/5642/images/toolbox/deepdiveonduckweed/worldmap.svg');
         const text = await response.text();
         setSvgContent(text);
       } catch (error) {
@@ -90,6 +91,44 @@ const MapSVG: React.FC<MapSVGProps> = ({ locations, isInView }) => {
           </motion.g>
         ))}
       </svg>
+      
+      {/* Legend positioned absolutely over the map */}
+      <div 
+        className={`absolute ${fontSize} ${fontWeight}`}
+        style={{
+          bottom: position.bottom,
+          left: position.left,
+          fontFamily: MAP_CONFIG.typography.fontFamily
+        }}
+      >
+        <div className="space-y-3">
+          {/* Company legend item */}
+          <div className="flex items-center" style={{ gap: spacing }}>
+            <img 
+              src="https://static.igem.wiki/teams/5642/images/toolbox/deepdiveonduckweed/leaf1.webp"
+              alt="Company"
+              style={{ 
+                width: `${itemSize}px`, 
+                height: `${itemSize}px` 
+              }}
+            />
+            <span style={{ color: company }}>Companies</span>
+          </div>
+          
+          {/* Research legend item */}
+          <div className="flex items-center" style={{ gap: spacing }}>
+            <img 
+              src="https://static.igem.wiki/teams/5642/images/toolbox/deepdiveonduckweed/leaf2.webp"
+              alt="Research"
+              style={{ 
+                width: `${itemSize}px`, 
+                height: `${itemSize}px` 
+              }}
+            />
+            <span style={{ color: research }}>Research</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

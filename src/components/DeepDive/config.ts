@@ -2,8 +2,8 @@ export const MAP_CONFIG = {
   colors: {
     background: '#FFFFFF',
     mapFill: '#2D3748',
-    company: '#9DD019',
-    research: '#4A90E2',
+    company: '#2D5A3D',
+    research: '#9DD019',
     text: '#1A202C',
     textSecondary: '#718096',
     white: '#FFFFFF',
@@ -24,8 +24,8 @@ export const MAP_CONFIG = {
     glowRadius: 0.8, // Glow effect radius multiplier
     shadowFilter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.3))',
     images: {
-      company: '/leaf1.png', // Company leaf image
-      research: '/leaf2.png' // Research leaf image
+      company: 'https://static.igem.wiki/teams/5642/images/toolbox/deepdiveonduckweed/leaf1.webp', // Company leaf image
+      research: 'https://static.igem.wiki/teams/5642/images/toolbox/deepdiveonduckweed/leaf2.webp' // Research leaf image
     }
   },
   tooltip: {
