@@ -50,23 +50,25 @@ const TaifrComparison = () => {
             </video>
           </div>
         </div>
-
+         <h1 className="text-4xl font-bold text-gray-800 leading-tight text-center" style={{fontFamily: 'Space Grotesk, sans-serif', fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem" }}>
+              We're developing a method for 5× faster genetic engineering of duckweed...
+            </h1>     
         {/* Bottom section with text content */}
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 ">
+        <div className="grid grid-cols-1 mt-4 lg:grid-cols-5 gap-8 ">
+          
           {/* Left side - Main headline */}
           <div className="lg:col-span-2 justify-center items-center flex flex-col">
-            <h1 className="text-4xl font-bold text-gray-800 leading-tight text-center" style={{fontFamily: 'Space Grotesk, sans-serif', fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem" }}>
-              We're developing a method for 5× faster genetic engineering of duckweed...
-            </h1>
-            <div className="text-base text-gray-600 leading-relaxed mt-6">
-              <div className="flex items-center space-x-4 ">
-              <div className="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
-                <img src="https://static.igem.wiki/teams/5642/images/what/arturo-mari-ordonez.webp" alt="Dr. Arturo Marí-Ordóñez" className="rounded-full" />
-              </div>
+            
+            <div className="text-base text-gray-600 leading-relaxed mt-[-50px]">
+              <div className="flex justify-end text-right space-x-4 ">
+              
               <div style={{fontFamily: 'Space Grotesk, sans-serif' }}>
                 <div className="font-bold text-xl text-gray-800">Dr. Arturo Marí-Ordóñez</div>
                 <div className="text-gray-600 mt-1">Principal Investigator</div>
                 <div className="text-gray-600">at the Gregor Mendel Institute in Vienna</div>
+              </div>
+              <div className="w-24 h-24 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
+                <img src="https://static.igem.wiki/teams/5642/images/what/arturo-mari-ordonez.webp" alt="Dr. Arturo Marí-Ordóñez" className="rounded-full" />
               </div>
             </div>
             </div>   
