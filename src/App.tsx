@@ -38,9 +38,9 @@ import DuckweedProtocol from './pages/toolbox/predictable_duckweed/DuckweedProto
 import TransformationProtocol from './pages/toolbox/programable_duckweed/TransformationProtocol';
 import AgrobacteriumProtocol from './pages/toolbox/programable_duckweed/AgrobacteriumProtocol';
 
+import HumanPractices from "./pages/engagement/human_practices";
 
-
-// Engagement pages 
+// Engagement pages
 
 import ThreeHParty from './pages/engagement/outreach/ThreeHParty';
 import Outreach from './pages/engagement/Outreach';
@@ -61,7 +61,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          
+
           {/* Project Routes */}
           <Route path="/project/what/" element={<ProjectWhat />} />
           <Route path="/project/why/" element={<ProjectWhy />} />
@@ -83,7 +83,7 @@ function App() {
 
 
 
-          
+
           {/* Toolbox Routes */}
           <Route path="/toolbox/deep-dive-on-duckweed/" element={<DeepDiveDocument />} />
           <Route path="/toolbox/why-plants-suck/" element={<WhyPlantsSuck />} />
@@ -95,27 +95,28 @@ function App() {
           <Route path="/toolbox/agrobacterium-mediated-transformation-protocol/" element={<AgrobacteriumProtocol />} />
           <Route path="/toolbox/vacuum-infiltration-testing/" element={<VacuumInfiltrationTesting />} />
 
-          
-          
+
+
 
           <Route path="/engagement/sustainability" element={<SustainabilityDocument />} />
-          
-          {/* Engagement Routes */}   
+
+          {/* Engagement Routes */}
 
 
           <Route path="/engagement/outreach/3h-party" element={<ThreeHParty />} />
           <Route path="/engagement/outreach" element={<Outreach />} />
+          <Route path="/engagement/human-practices" element={<HumanPractices />} />
 
           {/* Duckweed Mafia Routes */}
           <Route path="/duckweed-mafia/partners" element={<Partners />} />
           <Route path="/duckweed-mafia/safety" element={<DuckweedSafety />} />
           <Route path="/duckweed-mafia/team" element={<DuckweedMafia/>} />
-          
+
         </Routes>
 
         <div style={{ marginTop: '5rem' }}>
           <Footer />
-        </div>       
+        </div>
       </div>
       <ScrollToTop />
     </Router>
