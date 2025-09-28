@@ -1,0 +1,204 @@
+/* Responzívne CSS opravy pre /project/what stránku */
+
+/* Základné responzívne nastavenia */
+* {
+  box-sizing: border-box;
+}
+
+/* Zabránenie horizontálnemu scrollovaniu */
+.what-page-container {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Responzívne kontajnery */
+.responsive-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media (min-width: 640px) {
+  .responsive-container {
+    padding: 0 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-container {
+    padding: 0 128px;
+  }
+}
+
+/* Responzívne texty */
+.responsive-heading-xl {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+@media (min-width: 640px) {
+  .responsive-heading-xl {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-heading-xl {
+    font-size: 48px;
+  }
+}
+
+.responsive-heading-lg {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+@media (min-width: 640px) {
+  .responsive-heading-lg {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-heading-lg {
+    font-size: 36px;
+  }
+}
+
+.responsive-text {
+  font-size: 14px;
+  line-height: 1.68;
+}
+
+@media (min-width: 640px) {
+  .responsive-text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-text {
+    font-size: 18px;
+  }
+}
+
+/* Responzívne flexbox layouty */
+.responsive-flex-col-lg-row {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media (min-width: 1024px) {
+  .responsive-flex-col-lg-row {
+    flex-direction: row;
+    gap: 64px;
+  }
+}
+
+/* Responzívne obrázky */
+.responsive-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+@media (min-width: 640px) {
+  .responsive-image {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-image {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .responsive-image {
+    height: 680px;
+  }
+}
+
+/* Responzívne paddingy a marginy */
+.responsive-section-padding {
+  padding: 48px 0;
+}
+
+@media (min-width: 640px) {
+  .responsive-section-padding {
+    padding: 64px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-section-padding {
+    padding: 80px 0;
+  }
+}
+
+/* Oprava pre fixné šírky */
+.no-fixed-width {
+  width: auto !important;
+  max-width: 100% !important;
+}
+
+/* Accordion responzívne úpravy */
+.accordion-content {
+  padding-left: 16px;
+}
+
+@media (min-width: 640px) {
+  .accordion-content {
+    padding-left: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .accordion-content {
+    padding-left: 52px;
+  }
+}
+
+/* CTA sekcia responzívne úpravy */
+.cta-container {
+  padding: 48px 24px;
+}
+
+@media (min-width: 640px) {
+  .cta-container {
+    padding: 64px 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cta-container {
+    padding: 80px 200px;
+  }
+}
+
+/* Utility triedy pre mobilné zariadenia */
+@media (max-width: 639px) {
+  .mobile-hide {
+    display: none !important;
+  }
+  
+  .mobile-center {
+    text-align: center !important;
+  }
+  
+  .mobile-full-width {
+    width: 100% !important;
+  }
+}
+
+/* Utility triedy pre desktop */
+@media (min-width: 1024px) {
+  .desktop-auto-width {
+    width: auto !important;
+  }
+}
