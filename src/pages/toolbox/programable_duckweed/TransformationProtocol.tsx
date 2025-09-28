@@ -1,8 +1,43 @@
-import React from 'react';
+import React, {useState} from 'react';
+//import ImageViewer, {ImageSlide} from "../../../components/ui/ImageViewer.tsx";
+import TextModal, {textSlide} from '../../../components/ui/TextModal.tsx';
+
+
+
+const agrobacteriumInfection: textSlide[] = [ 
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/watercycle/water-cycle-schema-old.webp",
+        title: "AIM (agrobacterium infection medium)",
+        description: [
+            "50g/l sucrose",
+            "1 g/l MgCl2 (10mM final)",
+            "Opaque acrylic to suppress algae growth",
+            "pH 5.2 - 5.5 (measure by pH strips as there is not enough salts to properly measure by pH meter)",
+            "40 mg/l acetosyringone",
+        ],
+    },
+];
+
+
+const appropriateAntibiotic: textSlide[] = [ 
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/watercycle/water-cycle-schema-old.webp",
+        title: "Appropriate antibiotics",
+        description: [
+            "A.tumefaciens EHA105 : use rifampicin (50 mg/l) and streptomycin (50 mg/l)",
+            "A.tumefaciens GV3101 : use rifampicin (50 mg/l) and gentamicin (50 mg/l)",
+            "Do not forget to also add antibiotics specific for your binary vector.",
+           
+        ],
+    },
+];
+
 
 const TransformationProtocol = () =>  {
+  const [isOpenagrobacteriumInfection, setIsOpenagrobacteriumInfection] = useState(false);
+  const [isOpenAntibioticSlides, setIsOpenAntibioticSlides] = useState(false);
   return (
-    <div className="max-w-6xl mx-auto p-6 bg-white">
+    <div className="max-w-6xl mx-auto p-6 bg-white text-lg text-justify">
       
       <div className="p-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-6" style={{fontFamily: 'Space Grotesk'}}>
@@ -12,10 +47,13 @@ const TransformationProtocol = () =>  {
         <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-8">
           <p className="text-gray-800 leading-relaxed" style={{fontFamily: 'Urbanist'}}>
             This protocol follows and builds on the approach described by Arturo 
-            Marí-Ordóñez (Dombey <em>et al.</em>, 2023) from the Gregor Mendel Institute in Vienna.
+            Mari-Ordonez (Dombey <em>et al.</em>, 2025) from the Gregor Mendel Institute in Vienna.
           </p>
         </div>
 
+       
+
+        
 
       <div className='grid grid-cols-1 md:grid-cols-4 gap-4' >
 
@@ -25,20 +63,25 @@ const TransformationProtocol = () =>  {
 
         <div className='col-span-3'>
         <div className="space-y-8">
-          {/* Day 5 to -3 */}
+          {/* Day -5 to -3 */}
           <div className="bg-white p-6 border border-gray-300 border-l-4 border-l-green-600">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4" style={{fontFamily: 'Space Grotesk'}}>
-              Day 5 to -3 • PREPARATION OF DUCKWEED
+              Day -5 to -3 • PREPARATION OF DUCKWEED
             </h2>
             <div className="space-y-2" style={{fontFamily: 'Urbanist'}}>
-              <p className="text-gray-700"><strong>1.1)</strong> Depending on the confluence on trays, split duckweed to new trays with fresh 
-                medium or agar. 95% confidence.</p>
-              <p className="text-gray-700"><strong>1.2)</strong> Let fronds grow until ~75% surface coverage before use.</p>
+
+              1) Depending on the confluence on trays, spill duckweed to new trays with
+              fresh medium to app. 50% of confluence.
+              <br />
+              2) Let fronds grow until ~75% surface coverage before use.
+              <br />
+              
               <div className="bg-red-50 border border-red-300 p-3 mt-4">
                 <p className="text-red-800 font-medium">
-                  <strong>NOTE 1:</strong> Crowded fronds stop dividing and produce fewer transformed offspring; 
-                  spare fronds are fragile and often die during infiltration. ~75% coverage for 
-                  robust, actively dividing fronds that are easier to transform.
+                  <strong>NOTE 1:</strong> Crowded fronds stop dividing and produce fewer 
+                  transformed offspring; sparse fronds are fragile and often do not survive 
+                  infiltration. ~75% coverage gives robust, actively dividing fronds that are 
+                  easiest to transform.
                 </p>
               </div>
             </div>
@@ -46,25 +89,37 @@ const TransformationProtocol = () =>  {
 
           {/* Day 1-2 */}
           <div className="bg-white p-6 border border-gray-300 border-l-4 border-l-blue-600">
+
+            <TextModal
+            slides={appropriateAntibiotic}
+            isOpen={isOpenAntibioticSlides}
+            onClose={() => setIsOpenAntibioticSlides(false)}
+            />
+            <TextModal
+            slides={agrobacteriumInfection}
+            isOpen={isOpenagrobacteriumInfection}
+            onClose={() => setIsOpenagrobacteriumInfection(false)}
+            />
             <h2 className="text-2xl font-semibold text-gray-900 mb-4" style={{fontFamily: 'Space Grotesk'}}>
               Day 1 - 2 • PREPARATION OF AGROBACTERIUM
             </h2>
             <div className="space-y-2" style={{fontFamily: 'Urbanist'}}>
-              <p className="text-gray-700"><strong>1)</strong> From a glycerol stock, inoculate 5 mL LB + <span className="text-red-600 font-semibold">appropriate antibiotics</span>. Grow 
+              <p className="text-gray-700"><strong>1)</strong> From the glycerol stock, inoculate 5 mL LB + <button onClick={() => setIsOpenAntibioticSlides(true)} className=" text-bold"><span className='text-green-600'><b>appropriate antibiotics</b></span></button>. Grow 
                 O/N at 28°C, 200 rpm (<em>keep in mind, this can take up to 16-18 hours</em>).</p>
-              <p className="text-gray-700"><strong>2)</strong> Next day, inoculate 100 mL LB + same antibiotics with 1-1.5ml dilution of O/N 
-                culture. Grow until OD₆₀₀ = 1-2.</p>
+              <p className="text-gray-700"><strong>2)</strong> Next day, inoculate 100 mL LB + antibiotics with 1:100—1:500 dilution of O/N 
+                culture. Grow until OD₆₀₀ = 1—2.</p>
               <ul className="text-gray-700 space-y-1 ml-6 list-disc">
                 <li>1:500 dilution typically reaches OD₆₀₀ = 0.7 in 12 - 18 hours (depending on your construct)</li>
+                <li>1:100 dilution typically reaches OD₆₀₀ = 0.7 in 6 - 12 hours</li>
               </ul>
-              <p className="text-gray-700"><strong>3)</strong> Pellet culture by centrifugation (30 min, 3000 g). Leave ~0.1 cm LB above pellet 
+              <p className="text-gray-700"><strong>3)</strong> Pellet culture by centrifugation (20 min, 3000 g). Leave ~0.1 cm LB above pellet 
                 to avoid stress.</p>
-              <p className="text-gray-700"><strong>4)</strong> Resuspend pellet gently in <span className="font-semibold">AIM</span> (Agrobacterium Infiltration Medium).</p>
+              <p className="text-gray-700"><strong>4)</strong> Resuspend pellet gently in <button onClick={() => setIsOpenagrobacteriumInfection(true)} className=" text-bold"><span className='text-green-600'><b>AIM</b></span></button> (Agrobacterium Infiltration Medium).</p>
               <ul className="text-gray-700 space-y-1 ml-6 list-disc">
                 <li>Resuspend to final OD₆₀₀ = 0.7</li>
-                <li>2-50 ml of Agrobacterium infiltration (OD₆₀₀ = 0.7) results in 3 plates of transformed duckweed (confidence 50-75 %)</li>
+                <li>25-30 ml of Agrobacterium solution (OD₆₀₀ = 0.7) results in 2 plates of transformed duckweed (confluence 50-75 %)</li>
               </ul>
-              <p className="text-gray-700"><strong>5)</strong> Add acetosyringone to final concentration of 200 μM. Adjust pH to 5.5. 
+              <p className="text-gray-700"><strong>5)</strong> Add acetosyringone to final concentration of 40 mg/L. Adjust pH to 5.5. 
                 Incubate 1 h at 28°C, 100 rpm, protected from light.</p>
               <div className="bg-red-50 border border-red-300 p-3 mt-4">
                 <p className="text-red-800 font-medium">
@@ -83,9 +138,9 @@ const TransformationProtocol = () =>  {
             <div className="space-y-2" style={{fontFamily: 'Urbanist'}}>
               <p className="text-gray-700"><strong>1)</strong> Just before infiltration, add Silwet L-77 to Agrobacterium solution (final 
                 concentration: 0.02%).</p>
-              <p className="text-gray-700"><strong>2)</strong> Transfer fronds into Agrobacterium solution. Apply vacuum (-70 kPa) for 5 - 10 
+              <p className="text-gray-700"><strong>2)</strong> Transfer fronds into Agrobacterium solution. Apply vacuum (−70 kPa) for 5 - 10 
                 minutes (depending on clone - see our vacuum transformation optimization page).</p>
-              <p className="text-gray-700"><strong>3)</strong> Release vacuum slowly while gently swirling.</p>
+              <p className="text-gray-700"><strong>3)</strong> Release the vacuum slowly while gently swirling.</p>
               <div className="bg-red-50 border border-red-300 p-3 mt-4">
                 <p className="text-red-800 font-medium">
                   <strong>NOTE 3:</strong> Swirling during vacuum infiltration ensures dorsal stomata are exposed 
@@ -99,7 +154,7 @@ const TransformationProtocol = () =>  {
                   <div className=" ">
                     <img src="https://static.igem.wiki/teams/5642/images/toolbox/transformationprotocol/duckweed-08356-min.webp" alt="Vacuum Infiltration Setup" className="h-full mb-4 rounded-lg"/>
                   </div>
-                  <p className="text-sm text-gray-600">Falcon tubes with duckweed fronds in AIM solution with Agrobacterium</p>
+                  <p className="text-sm text-gray-600">Falcon tubes with duckweed fronds in fection AIM solution with Agrobacterium </p>
                 </div>
                 <div className="bg-gray-50 p-4 border border-gray-200">
                   <div className=" ">
@@ -118,7 +173,7 @@ const TransformationProtocol = () =>  {
             </h2>
             <div className="space-y-2" style={{fontFamily: 'Urbanist'}}>
               <p className="text-gray-700"><strong>1)</strong> Split the infiltrated duckweed and Agrobacterium suspension into plates.</p>
-              <p className="text-gray-700"><strong>2)</strong> Add DCMU medium (link to duckweed cultivation protocol) (~25 mL per 
+              <p className="text-gray-700"><strong>2)</strong> Add DCMN medium (link na duckweed cultivation protocol) (~25 mL per 
                 plate) to dilute AIM.</p>
               <p className="text-gray-700"><strong>3)</strong> Do not seal plates.</p>
               <div className="bg-red-50 border border-red-300 p-3 mt-4">
@@ -135,11 +190,11 @@ const TransformationProtocol = () =>  {
               Day 4 - 5 • CO-CULTIVATION
             </h2>
             <div className="space-y-2" style={{fontFamily: 'Urbanist'}}>
-              <p className="text-gray-700"><strong>1)</strong> Incubate plates for 48 h at 21 °C, 16/8 photoperiod, 200 μmol/m²/s light.</p>
+              <p className="text-gray-700"><strong>1)</strong> Incubate plates for 48 h at 21°C, 16/8 photoperiod, 200 µmol/m²/s light.</p>
               <div className="bg-red-50 border border-red-300 p-3 mt-4">
                 <p className="text-red-800 font-medium">
-                  <strong>NOTE 5:</strong> 48 h is optimal. Shorter → low transfer. Longer → Agrobacterium 
-                  overgrowth and kills fronds.
+                  <strong>NOTE 5:</strong> 48 h is optimal. Shorter → low transfer. Longer → 
+                  Agrobacterium overgrows and kills fronds.
                 </p>
               </div>
             </div>
@@ -152,8 +207,8 @@ const TransformationProtocol = () =>  {
             </h2>
             <div className="space-y-2" style={{fontFamily: 'Urbanist'}}>
               <p className="text-gray-700"><strong>1)</strong> Transfer fronds to Duckweed Post-Infiltration Medium (<span className="text-red-600 font-semibold">DPIM</span>).</p>
-              <p className="text-gray-700"><strong>2)</strong> Incubate at 21 °C, 16/8 photoperiod, 200 μmol/m²/s light.</p>
-              <p className="text-gray-700"><strong>3)</strong> Refresh medium every 5 days.</p>
+              <p className="text-gray-700"><strong>2)</strong> Incubate at 21°C, 16/8 photoperiod, 200 µmol/m²/s light.</p>
+              <p className="text-gray-700"><strong>3)</strong> Refresh medium every 6 days.</p>
             </div>
           </div>
 
@@ -163,18 +218,18 @@ const TransformationProtocol = () =>  {
               Day 7-20 • SIGNAL EVALUATION
             </h2>
             <div className="space-y-2" style={{fontFamily: 'Urbanist'}}>
-              <p className="text-gray-700"><strong>1)</strong> Evaluate transient expression at 6th, 12th, and 15th day post infiltration 
-                (dpi). When checking expression, always refresh the medium by separating 
-                the old and adding new.</p>
+              <p className="text-gray-700"><strong>1)</strong> Evaluate transient expression at 6th, 12th, and 18th day post 
+                infiltration (dpi). When checking the expression, always refresh the medium by 
+                aspirating the old and adding new.</p>
               <ul className="text-gray-700 space-y-1 ml-6 list-disc">
                 <li><strong>6 dpi:</strong> usually, a strong expression is already visible</li>
                 <li><strong>12 dpi:</strong> expression is usually quite strong but may start fading</li>
                 <li><strong>18 dpi:</strong> expression is still visible, but noticeably faded</li>
               </ul>
-              <p className="text-gray-700"><strong>2)</strong> Even if no signal is visible at day 6, keep the plates until at least day 12 
-                before discarding. Both the strength of expression and the timing of its 
-                appearance depend on the construct design. Expression strength in the 
-                position of the marker relative to <strong>P-LAT</strong>-1A linkers.</p>
+              <p className="text-gray-700"><strong>2)</strong> Even if no signal is visible by day 6, keep the plants until at least day 12 
+                before discarding them. Both the strength of expression and the timing of 
+                its appearance depend on the construct design, specifically the promoter 
+                strength or the position of the marker relative to the <strong>P2A/T2A</strong> linkers.</p>
             </div>
           </div>
         </div>
