@@ -3,8 +3,8 @@ import React, {useEffect, useState} from "react";
 export interface ImageSlide {
     src: string;
     title?: string;
-    leftNote?: string;
-    rightNote?: string[];
+    leftNote?: string | string[];
+    rightNote?: string | string[];
     bottomNote?: string;
 }
 
@@ -26,7 +26,10 @@ const ImageViewer: React.FC<ImageViewerProps> = ({
     // Reset when opening
     useEffect(() => {
         if (isOpen) {
-            const safeIndex = Math.min(Math.max(startIndex, 0), slides.length - 1);
+            const safeIndex = Math.min(
+                Math.max(startIndex, 0),
+                slides.length - 1
+            );
             setCurrent(safeIndex);
         }
     }, [isOpen, startIndex, slides.length]);
@@ -47,7 +50,8 @@ const ImageViewer: React.FC<ImageViewerProps> = ({
 
     if (!isOpen) return null;
 
-    const prev = () => setCurrent((i) => (i - 1 + slides.length) % slides.length);
+    const prev = () =>
+        setCurrent((i) => (i - 1 + slides.length) % slides.length);
     const next = () => setCurrent((i) => (i + 1) % slides.length);
 
     const {src, title, leftNote, rightNote, bottomNote} = slides[current];
@@ -73,7 +77,6 @@ const ImageViewer: React.FC<ImageViewerProps> = ({
                     ×
                 </button>
 
-
                 {/* Title */}
                 {title && (
                     <h2 className="text-white text-xl md:text-2xl font-semibold mb-4 text-center">
@@ -83,7 +86,6 @@ const ImageViewer: React.FC<ImageViewerProps> = ({
 
                 {/* Image with side notes */}
                 <div className="flex items-center justify-center gap-4">
-
                     {/* Prev button */}
                     <button
                         onClick={prev}
@@ -95,8 +97,12 @@ const ImageViewer: React.FC<ImageViewerProps> = ({
 
                     {/* Left note */}
                     {leftNote && (
-                        <div className="hidden md:block text-white text-lg max-w-[15vw] text-right">
-                            {leftNote}
+                        <div className="hidden md:block text-white text-lg max-w-[15vw] text-right space-y-2">
+                            {Array.isArray(leftNote)
+                                ? leftNote.map((line, idx) => (
+                                    <p key={idx}>• {line}</p>
+                                ))
+                                : leftNote}
                         </div>
                     )}
 
@@ -111,11 +117,12 @@ const ImageViewer: React.FC<ImageViewerProps> = ({
                     {rightNote && (
                         <div className="hidden md:block text-white text-lg max-w-[15vw] text-left space-y-2">
                             {Array.isArray(rightNote)
-                                ? rightNote.map((line, idx) => <p key={idx}>• {line}</p>)
+                                ? rightNote.map((line, idx) => (
+                                    <p key={idx}>• {line}</p>
+                                ))
                                 : rightNote}
                         </div>
                     )}
-
 
                     {/* Next button */}
                     <button
@@ -125,15 +132,19 @@ const ImageViewer: React.FC<ImageViewerProps> = ({
                     >
                         ›
                     </button>
-
                 </div>
 
                 {/* Bottom note */}
                 {bottomNote && (
-                    <p className="text-white text-sm mt-4 text-center max-w-[80vw]">
+                    <p className="text-white text-sm mt-2 text-center max-w-[80vw]">
                         {bottomNote}
                     </p>
                 )}
+
+                {/* Slide counter */}
+                <p className="text-white text-xs mt-2 opacity-75">
+                    {current + 1} / {slides.length}
+                </p>
             </div>
         </div>
     );
