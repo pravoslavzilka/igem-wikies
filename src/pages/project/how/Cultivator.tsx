@@ -1,6 +1,7 @@
 import ImageViewer, {ImageSlide} from "../../../components/ui/ImageViewer.tsx";
 import References from "../../../components/References.tsx";
 import {cultivatorReferences} from "./data/references.ts";
+import {useState} from "react";
 
 const traySlides: ImageSlide[] = [
     {
