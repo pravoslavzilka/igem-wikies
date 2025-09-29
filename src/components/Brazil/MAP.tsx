@@ -131,8 +131,8 @@ const MAP: React.FC<MAPProps> = ({ processedPoints }) => {
         
         {/* Legend for larger screens - positioned absolutely above map */}
         <div className="hidden md:block absolute bottom-4 lg:bottom-6 xl:bottom-8 left-4 lg:left-6 space-y-2 lg:space-y-3">
-          <div className="text-white text-sm lg:text-base xl:text-lg font-bold mb-3 leading-tight">
-            <div className="underline decoration-2 underline-offset-2">Ecosystem loss driven by</div>
+          <div className="text-white text-sm lg:text-base xl:text-lg font-extrabold mb-3 leading-tight">
+            <div className="">Ecosystem loss driven by</div>
             <div className="font-extrabold">soybean production:</div>
           </div>
           
