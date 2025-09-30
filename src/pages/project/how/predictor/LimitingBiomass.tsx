@@ -86,14 +86,7 @@ const LimitingBiomass = () => {
               </p>
             </div>
           </div>
-           <p className="mt-4">
-              <span style={{ fontWeight: 400 }}>
-                In the next iteration of the experiment, limiting biomass experiments
-                on ascertaining the growth curve of <em>Lemna gibba</em>, <em>Lemna obscura</em>,{" "}
-                <em>Lemna valdiviana</em>, <em>Wolffia globosa</em>, and <em>Wolffia hyalina</em> were
-                performed in the same way.
-              </span>
-            </p>
+           
         </div>
       </div>
 
@@ -166,6 +159,15 @@ const LimitingBiomass = () => {
               </p>
             </div>
           </div>
+
+          <p className="mt-4">
+              <span style={{ fontWeight: 400 }}>
+                In the next iteration of the experiment, limiting biomass experiments
+                on ascertaining the growth curve of <em>Lemna gibba</em>, <em>Lemna obscura</em>,{" "}
+                <em>Lemna valdiviana</em>, <em>Wolffia globosa</em>, and <em>Wolffia hyalina</em> were
+                performed in the same way.
+              </span>
+            </p>
 
           {/* Additional species results */}
           <div className="mt-12">
