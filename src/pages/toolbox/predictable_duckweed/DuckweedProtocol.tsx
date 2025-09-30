@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import References from '../../../components/References';
 
 const DuckweedProtocol = () => {
   return (
@@ -26,7 +27,7 @@ const DuckweedProtocol = () => {
             <span style={{ fontWeight: 400 }}>
               The protocol was greatly inspired by the work of our advisor,&nbsp;
               Dr. Ordonez, who shared a wealth of duckweed knowledge&nbsp;
-              with us – some of it already is already{" "}
+              with us – some of it is already published (2)
             </span>
             <a style={{ fontWeight: 400, color: 'blue' }} href="https://www.biorxiv.org/content/10.1101/2025.08.28.672806v1.full">
               <span style={{ fontWeight: 400 }}>published</span>
@@ -332,7 +333,7 @@ const DuckweedProtocol = () => {
             </div>
             <p>
               <p className='text-md  mt-2 urbanist'>
-                <strong>Picture 2. </strong>
+                <strong>Figure 2. </strong>
                 <span style={{ fontWeight: 400 }}>
                   (1) Petri dish with sterile duckweed culture kept as a backup; (2) Ø14 cm
                   glass crystallization pot for maintaining a larger amount of duckweed,
@@ -349,7 +350,7 @@ const DuckweedProtocol = () => {
             </div>
 
             <p className='text-md  mt-2 urbanist'>
-              <strong>Picture 3. </strong>
+              <strong>Figure 3. </strong>
               <span style={{ fontWeight: 400 }}>Culture of </span>
               <em>
                 <span style={{ fontWeight: 400 }}>Spirodela polyrhiza </span>
@@ -375,7 +376,7 @@ const DuckweedProtocol = () => {
           
           
           <p>
-            <strong>Picture 1. </strong>
+            <strong>Figure 1. </strong>
             <span style={{ fontWeight: 400 }}>
               The level of iGEM Brno’s duckweed cultivation at the end of summer should
               not be called “small-scale.” Fortunately, by then our CULTIVATOR was
@@ -412,7 +413,7 @@ const DuckweedProtocol = () => {
                     <strong>1. DISHES</strong>
                     <span style={{ fontWeight: 400 }}>
                       {" "}
-                      (Petri, Ø7 cm) with sterile solid MS medium for each duckweed clone or
+                      (Petri, Ø7 cm) with sterile solid MS medium (1) for each  duckweed clone or
                       transgenic line. This is important because:
                     </span>
                   </li>
@@ -728,66 +729,28 @@ const DuckweedProtocol = () => {
         </div>
       </div>
 
-      {/* References */}
-      <div className="mt-12 border-t pt-8">
-        <h2 className="text-xl font-semibold text-gray-900 mb-4 space-grotesk" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-          REFERENCES
-        </h2>
-        <div className="urbanist text-gray-700 text-md space-y-2">
-          
-          <ul>
-            <li style={{ fontWeight: 400 }}>
-              <ol style={{ listStyleType: 'decimal', paddingLeft: '20px' }}>
-                <li>
-                  <span style={{ fontWeight: 400 }}>
-                    Barragán-Borrero, V., de Santana Lopes, A., Batista, E. D. R., Höfer,
-                    M., Elias, R., Chakraborty, A., Ponce-Mañe, A., Descombes, C.,
-                    Diezma-Navas, L., Petraki, L., Huber, M., Xu, S., &amp; Marí-Ordóñez,
-                    A. (2025, August 28).{" "}
-                  </span>
-                  <em>
-                    <span style={{ fontWeight: 400 }}>
-                      Strain, procedures, and tools for reproducible genetic
-                      transformation and genome editing of
-                    </span>
-                  </em>{" "}
-                  <em>
-                    <span style={{ fontWeight: 400 }}>Spirodela polyrhiza</span>
-                  </em>
-                  <span style={{ fontWeight: 400 }}> (L.) Schleid. bioRxiv. </span>
-                  <a style={{ fontWeight: 400, color: 'blue', textDecoration: 'underline' }} href="https://doi.org/10.1101/2025.08.28.672806">
-                    <span style={{ fontWeight: 400 }}>
-                      https://doi.org/10.1101/2025.08.28.672806
-                    </span>
-                  </a>
-                </li>
-              </ol>
-              <span style={{ fontWeight: 400 }}>2. </span>
-              <span style={{ fontWeight: 400 }}>
-                Murashige, T., &amp; Skoog, F. (1962).{" "}
-              </span>
-              <em>
-                <span style={{ fontWeight: 400 }}>
-                  A revised medium for rapid growth and bio assays with tobacco tissue
-                  cultures
-                </span>
-              </em>
-              <span style={{ fontWeight: 400 }}>. </span>
-              <em>
-                <span style={{ fontWeight: 400 }}>Physiologia Plantarum</span>
-              </em>
-              <span style={{ fontWeight: 400 }}>, </span>
-              <em>
-                <span style={{ fontWeight: 400 }}>15</span>
-              </em>
-              <span style={{ fontWeight: 400 }}>(3), 473–497.</span>
-            </li>
-          </ul>
 
-        </div>
-      </div>
+      <References references={Reference} />  
+
+      
     </div>
   );
 };
 
 export default DuckweedProtocol;
+
+
+
+
+const Reference = [
+    {
+        id: 1,
+        text: "Barragán-Borrero, V., de Santana Lopes, A., Batista, E. D. R., Höfer, M., Elias, R., Chakraborty, A., Ponce-Mañe, A., Descombes, C., Diezma-Navas, L., Petraki, L., Huber, M., Xu, S., & Marí-Ordóñez, A. (2025, August 28). Strain, procedures, and tools for reproducible genetic transformation and genome editing of Spirodela polyrhiza (L.) Schleid. bioRxiv. https://doi.org/10.1101/2025.08.28.672806",
+        url: "https://doi.org/10.1101/2025.08.28.672806"
+    },
+    {
+        id: 2,
+        text: "Murashige, T., & Skoog, F. (1962). A revised medium for rapid growth and bio assays with tobacco tissue cultures. Physiologia Plantarum, 15(3), 473–497."
+    }
+]
+
