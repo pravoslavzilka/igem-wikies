@@ -2,19 +2,19 @@ import { Link } from "react-router-dom";
 
 const Partners = () => {
   return (
-    <div className="min-h-screen bg-white" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+    <div className="min-h-screen bg-white text-justify text-lg" style={{ fontFamily: 'Urbanist, sans-serif' }}>
       <div className="max-w-6xl mx-auto px-8 py-12 ">
 
         <div className="bg-white py-8 px-6 border-b-2 border-gray-200">
         <div className="max-w-4xl mx-auto mb-32">
           <div className="relative">
             {/* Central Logo */}
-            <div className="flex justify-center mb-[-70px]">
+            <div className="flex justify-center mb-[-250px]">
               <img 
-                src="https://static.igem.wiki/teams/5642/icons/igem-brno-final-transparent.webp" 
+                src="https://static.igem.wiki/teams/5642/images/duckweedmafia/partners/title-page.webp" 
                 alt="iGEM Logo" 
-                className="h-18 w-auto"
-                style={{ maxHeight: '272px', width: 'auto' }}
+                className=" w-auto "
+                style={{  md: { height: '500px', width: 'auto' } }}
               />
             </div>
             
@@ -102,7 +102,7 @@ const Partners = () => {
                 src="https://static.igem.wiki/teams/5642/images/homepage/footer/iocb-tech-foundation-logo.webp"
                 alt="IOCB Tech Foundation"
                 className="max-w-full h-auto"
-                style={{ maxWidth: "600px", width: "100%", height: "auto" }} // bigger image
+                style={{ maxWidth: "600px", width: "100%", height: "auto" }}
               />
             </div>
           </div>
@@ -139,7 +139,7 @@ const Partners = () => {
                     is an agritech pioneer revolutionizing sterile large duckweed cultivation.
                     Their cutting-edge quantum cultivation system has even taken duckweed to
                     space aboard SpaceX, proving its potential in the most extreme environments.
-                    As our main sponsor, GreenOnyx empowers our mission to explore duckweed’s
+                    As our main sponsor, GreenOnyx empowers our mission to explore duckweed's
                     potential as a sustainable protein source, a powerful bioremediation tool,
                     and a new chassis for biotech innovation. We are deeply grateful to{" "}
                 </span>
@@ -263,10 +263,10 @@ const Partners = () => {
         </section>
 
 
-        {/* General Ally Section */}
+        {/* Enablement Allies Section */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-center justify-center items-center text-gray-800 mt-20 mb-20" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-            ENABLEMENT ALLY
+            ENABLEMENT ALLIES
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
 
@@ -275,7 +275,7 @@ const Partners = () => {
                 src="https://static.igem.wiki/teams/5642/images/homepage/footer/ceitec-logo.webp"
                 alt="CEITEC"
                 className="max-w-full h-auto"
-                style={{ maxWidth: "600px", width: "100%", height: "auto" }} // bigger image
+                style={{ maxWidth: "600px", width: "100%", height: "auto" }}
               />
             </div>
             <div className="md:col-span-1">
@@ -347,8 +347,8 @@ const Partners = () => {
                     {" "}
                     – Provides access to state-of-the-art, fully controlled plant cultivation
                     chambers and phytotrons. This enabled us to perform crucial cultivation
-                    experiments and fine-tune our model, PREDICTOR. We are grateful to Mr.
-                    Mokroš for his invaluable support and assistance.
+                    experiments and fine-tune our model, PREDICTOR. We are grateful to <b>Mr.
+                    Mokroš</b> for his invaluable support and assistance.
                   </span>
                   <a href="https://www.google.com/search?q=https://www.ceitec.eu/plant-sciences-core-facility/cf">
                     {" "}
@@ -451,17 +451,17 @@ const Partners = () => {
                   <strong>strojLAB (Brno University of Technology)</strong>
                   <span style={{ fontWeight: 400 }}>
                     {" "}
-                    – A student-run “maker space” and workshop facility at the Faculty of
+                    – A student-run "maker space" and workshop facility at the Faculty of
                     Mechanical Engineering (VUT). StrojLAB provided the well-equipped workshop
                     environment where we constructed our CULTIVATOR - an autonomous duckweed
-                    cultivation system. As strojLAB team member Jan Kalina notes, “When
-                    someone doesn’t know where to find help, they go to strojLAB”{" "}
+                    cultivation system. As strojLAB team member Jan Kalina notes, "When
+                    someone doesn't know where to find help, they go to strojLAB"{" "}
                   </span>
                   <a href="https://www.fme.vutbr.cz/en/fakulta/zfsi/74419#:~:text=StrojLAB%20is%20not%20only%20workshops,from%20the%20strojLAB%20student%20team">
                     <span style={{ fontWeight: 400, color: '#3b82f6' }}>fme.vutbr.cz</span>
                   </a>
                   <span style={{ fontWeight: 400 }}>
-                    , reflecting the team’s commitment to supporting technical projects like
+                    , reflecting the team's commitment to supporting technical projects like
                     ours.
                   </span>
                   <span style={{ fontWeight: 400 }}>
@@ -540,7 +540,60 @@ const Partners = () => {
 
 
 
-             <div className="grid md:grid-cols-2 mt-16 gap-12 items-center">
+            <div className="grid md:grid-cols-2 mt-16 gap-12 mt-16 mb-16 items-center">
+
+              <div className="flex justify-center md:col-span-1">
+              <div className="flex flex-col items-center">
+                <img
+                  src="https://static.igem.wiki/teams/5642/images/homepage/footer/ibba-logo.webp"
+                  alt="IBBA (CNR)"
+                  className="max-w-full h-auto"
+                  style={{ maxWidth: "600px", height: "100px", width: "auto" }}
+                />
+                
+              </div>
+              </div>
+            
+            <div className="md:col-span-1">
+              
+              <p>
+                <strong>IBBA (CNR)</strong>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}– Institute of Agricultural Biology and Biotechnology (IBBA, CNR) – The institute contributed essential duckweed clones and access to maintained collections that enabled us to fine-tune our PREDICTOR by growth rate data on 12 duckweeds clones deposited form IBBA BioBank. We thank <b>Dr. Laura Morello</b> for her generous assistance. <a style={{ color: '#3b82f6' }} href="http://ibba.cnr.it">ibba.cnr.it</a>.
+                </span>
+              </p>
+
+            </div>
+
+            
+            </div> 
+
+
+
+            <div className="grid md:grid-cols-2 gap-12 mt-16 mb-16 items-center">
+           
+            <div className="md:col-span-1">
+              <p>
+                <strong>Thermo Fisher Scientific (Czech Republic)</strong>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  – The Czech branch of the global Thermo Fisher/Fisher Scientific company donated DNA extraction kits for plant and gel samples. These kits accelerated our laboratory work on experiments by streamlining plant DNA isolation. We are especially thankful to site manager <strong>Petr Střelec</strong>, who supported us in making this possible. (Thermo Fisher is a major supplier of life-science reagents and equipment, operating in the Czech Republic under Fisher Scientific).
+                </span>
+              </p>
+            </div>
+             <div className="flex justify-center md:col-span-1">
+              <img
+                src="https://static.igem.wiki/teams/5642/images/homepage/footer/thermofisher-logo.webp"
+                alt="Thermo Fisher Scientific"
+                className="max-w-full h-auto"
+                style={{ maxWidth: "600px", width: "100%", height: "auto" }}
+              />
+            </div>
+          </div>
+
+
+
+             <div className="grid md:grid-cols-2 mt-16 gap-12 mt-16 mb-16 items-center">
 
 
               <div className="flex justify-center md:col-span-1">
@@ -580,62 +633,213 @@ const Partners = () => {
                 <span style={{ fontWeight: 400 }}>.</span>
               </p>
 
-
-
-
-
-
-
             </div>
             
           </div>    
 
 
-          <div className="grid md:grid-cols-2 mt-16 gap-12 items-center">
-            
+
+          <div className="grid md:grid-cols-2 gap-12 items-center mt-16 mb-16">
             <div className="md:col-span-1">
-              
-              
               <p>
-                <strong>IBBA (CNR)</strong>
+                <strong>DIANA Biotechnologies</strong>
                 <span style={{ fontWeight: 400 }}>
                   {" "}
-                  – Institute of Agricultural Biology and Biotechnology (IBBA, CNR) – The
-                  institute contributed essential duckweed clones and access to maintained
-                  collections that accelerated our build-and-test cycle. We thank{" "}
-                </span>
-                <strong>Dr. Laura Morello</strong>
-                <span style={{ fontWeight: 400 }}>
-                  {" "}
-                  for her generous assistance. <a style={{ color: '#3b82f6' }} href="http://ibba.cnr.it">ibba.cnr.it</a>.
+                  - DIANA is a Czech biotechnology company that provided us with reverse transcriptase kits essential for producing cDNA from mRNA. This crucial donation has allowed us to accurately and quantitatively evaluate our promoters, which is a vital step in our research. We are especially grateful to the CEO, <strong>Václav Navrátil Ph.D.</strong>, for making this collaboration possible and enabling us to accelerate our experimental work.
                 </span>
               </p>
-
-
-
-
-
-
-
             </div>
+            <div className="flex justify-center md:col-span-1 ">
+              <img
+                src="https://static.igem.wiki/teams/5642/images/homepage/footer/diana-logo-blue-color.webp"
+                alt="DIANA Biotechnologies"
+                className="max-w-full h-auto"
+                style={{ maxWidth: "600px", width: "100%", height: "auto" }}
+              />
+            </div>
+          </div>
 
+          <div className="grid md:grid-cols-2 gap-12 mt-16 mb-16 items-center">
             <div className="flex justify-center md:col-span-1">
-              <div className="flex flex-col items-center">
-                <img
-                  src="https://static.igem.wiki/teams/5642/images/homepage/footer/ibba-logo.webp"
-                  alt="IBBA (CNR)"
-                  className="max-w-full h-auto"
-                  style={{ maxWidth: "600px", height: "100px", width: "auto" }}
-                />
-                
-              </div>
-              </div>
-            </div>     
+              <img
+                src="https://static.igem.wiki/teams/5642/images/homepage/footer/enablement-p-multiplexdx.webp"
+                alt="MultiplexDX"
+                className="max-w-full h-auto"
+                style={{ maxWidth: "600px", width: "100%", height: "auto" }}
+              />
+            </div>
+            <div className="md:col-span-1">
+              <p>
+                <strong>MultiplexDX</strong>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  - A Slovak biotechnology company synthesized Taqman probes crucial for the quantitative evaluation of our promoters and provided us with invaluable consultation on PCR design. Their expert support and precise reagents ensure the highest standard of reliability and efficiency for our molecular analysis. We are grateful to the CEO, <strong>Pavol Čekan, PhD</strong>, for his direct support enabling us to accelerate our experimental work.
+                </span>
+              </p>
+            </div>
+          </div>
+
+
+              
 
           
         </section>
 
 
+        {/* SPECIAL ALLIES */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-center justify-center items-center text-gray-800 mt-20 mb-20" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+            SPECIAL ALLIES
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center mt-16">
+            <div className="flex justify-center md:col-span-1">
+              <img
+                src="https://static.igem.wiki/teams/5642/images/homepage/footer/farma-pecinov.webp"
+                alt="Farma Pecinov"
+                className="max-w-full h-auto"
+                style={{ maxWidth: "600px", width: "auto", height: "400px" }}
+              />
+            </div>
+            <div className="md:col-span-1">
+              <p>
+                <strong>Farma Pecinov</strong>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  – We are profoundly thankful to <strong>Mr. Nevřela</strong> and Farma Pecínov for their support. Farma Pecínov is a countryside retreat that combines a working farm with hotel, wellness, and event services, set in the picturesque nature near Benešov. With strong agricultural roots, their belief in our work was shown through the purchase of an official partnership in our crowdfunding campaign — a gesture that gave them the unique opportunity to name our very first NitroDuckweed, which we are going to develop! Curious what the name will be? So are we!
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center mt-16">
+            <div className="md:col-span-1">
+              <p>
+                <strong>Tensor Ventures</strong>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  – A Czech deep-tech venture capital firm specializing in TechBio, the intersection of biotechnology and artificial intelligence. Tensor Ventures is the official sponsor of our Bio 3H Party (hustlers-hipsters-hackers). Their focus on bridging biotech and AI strongly resonates with our vision of innovative, data-driven science. We are particularly grateful to <strong>Knarik Avanesyan, Head of Marketing</strong>, and <strong>Jan Faflík, Senior Associate</strong>, for making this collaboration possible.
+                </span>
+              </p>
+            </div>
+            <div className="flex justify-center md:col-span-1">
+              <img
+                src="https://static.igem.wiki/teams/5642/images/homepage/footer/tensor-ventures-logo.webp"
+                alt="Tensor Ventures"
+                className="max-w-full h-auto"
+                style={{ maxWidth: "600px", width: "100%", height: "auto" }}
+              />
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center mt-16">
+            <div className="flex justify-center md:col-span-1">
+              <img
+                src="https://static.igem.wiki/teams/5642/images/homepage/footer/p-lab-logo.webp"
+                alt="P-LAB"
+                className="max-w-full h-auto"
+                style={{ maxWidth: "600px", width: "100%", height: "auto" }}
+              />
+            </div>
+            <div className="md:col-span-1">
+              <p>
+                <strong>P-LAB a.s.</strong>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  – A leading Czech laboratory-supply company that donated large sterile glass cultivation dishes and inoculation loops, enabling us to grow duckweed at larger scale under sterile conditions. This partnership was crucial in allowing us to continue experiments even before our own container system was fully developed. We are especially thankful to <strong>Tomáš Přikryl, CEO of P-LAB</strong>, for making this collaboration possible.
+                </span>
+              </p>
+            </div>
+          </div>
+
+          
+
+          <div className="grid md:grid-cols-2 gap-12 items-center mt-16">
+            <div className="md:col-span-1">
+              <p>
+                <strong>AGRONET Nesovice</strong>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  - helped us generously twice granting us space for filming and contributing valuable data to regarding cows feedstock and manure management. This assistance was essential for creating our promotional and presentational video and gaining a deeper understanding of real-world agronomic challenges. We are very grateful to <strong>P. Neužil</strong> for enabling this collaboration, which was vital for linking our biotechnological research with the practical agricultural environment.
+                </span>
+              </p>
+            </div>
+            <div className="flex justify-center md:col-span-1">
+              <img
+                src="https://static.igem.wiki/teams/5642/images/homepage/footer/agronet-nesovice.webp"
+                alt="AGRONET Nesovice"
+                className="max-w-full h-auto"
+                style={{ maxWidth: "600px", width: "100%", height: "auto" }}
+              />
+            </div>
+          </div>
+
+          
+
+          <div className="grid md:grid-cols-2 gap-12 items-center mt-16">
+
+            <div className="flex justify-center md:col-span-1">
+              <img
+                src="https://static.igem.wiki/teams/5642/images/homepage/footer/vican-winery.webp"
+                alt="Vican"
+                className="max-w-full h-auto"
+                style={{ maxWidth: "600px", width: "100%", height: "auto" }}
+              />
+            </div>
+            <div className="md:col-span-1">
+              <p>
+                <strong>Vican</strong>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  - A family winery from Mikulov, founded by film producer <strong>Tomáš Vican</strong>, which is particularly famous for its Riesling and natural orange wines. Their generous sponsorship was instrumental in helping us organize a fantastic 3H party. We are incredibly grateful for their support which made our great event possible.
+                </span>
+              </p>
+            </div>
+            
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center mt-16">
+            
+            <div className="md:col-span-1">
+              <p>
+                <strong>Fiftybeans</strong>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  - Is a specialty coffee roastery from Brno, founded by award-winning barista <strong>Roman Nejedlý</strong>, with a focus on high-quality, ethically sourced coffee. Their generous sponsorship was instrumental in helping us organize a fantastic 3H party. Their amazing coffee was a true highlight of the event, and we can't thank them enough for their partnership.
+                </span>
+              </p>
+            </div>
+
+            <div className="flex justify-center md:col-span-1">
+              <img
+                src="https://static.igem.wiki/teams/5642/images/homepage/footer/fiftybeans.webp"
+                alt="Fiftybeans"
+                className="max-w-full h-auto"
+                style={{ maxWidth: "600px", width: "100%", height: "auto" }}
+              />
+            </div>
+          </div>
+
+          <div className="bg-gray-50 p-8 rounded-lg mt-16 text-center">
+            <p className="text-lg">
+              <span style={{ fontWeight: 400 }}>
+                Under patronage of Brno Major <strong>JUDr. Markéta Vaňková</strong> and thanks to the financial support of the city, our dream came true and all 21 students were able to attend the Paris finals.
+              </span>
+            </p>
+            <div className="flex justify-center mt-6">
+              <img
+                src="https://static.igem.wiki/teams/5642/images/homepage/footer/brno-logo2.webp"
+                alt="Brno City"
+                className="max-w-full h-auto"
+                style={{ maxWidth: "400px", width: "100%", height: "auto" }}
+              />
+            </div>
+          </div>
+
+          <p className="text-center text-gray-600 mt-16 italic">
+            Each of the above partners has enabled key aspects of our research – from imaging and cultivation to laboratory setup and supplies. We thank them for their crucial contributions and collaboration.
+          </p>
+        </section>
         
         
       </div>
