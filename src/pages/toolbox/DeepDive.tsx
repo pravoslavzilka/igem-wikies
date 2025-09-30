@@ -110,14 +110,7 @@ export default function DuckweedDocument() {
               reproduce sexually by flowering, however, it is rare in nature [9].
             </p>
 
-            <p className="mb-6">
-              Duckweeds inhabit the surface of small and shallow water bodies across a wide latitudinal 
-              range, from tropical to boreal zones. Local dispersal is facilitated by flowing water and 
-              occasionally strong winds, while transfer on long-distance or between isolated water 
-              bodies is frequently mediated epizoochorously by birds [10] and aquatic mammals [11]. 
-              Combined with rapid vegetative propagation, these dispersal mechanisms enable efficient 
-              colonisation and potential invasion of new aquatic habitats.
-            </p>
+            
 
            </div> 
 
@@ -125,7 +118,73 @@ export default function DuckweedDocument() {
             
            </div>
            
+
+
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+
+
+          
+
+              <div className="col-span-2">
+                    <p className="mb-4">
+                      Duckweeds inhabit the surface of small and shallow water bodies across a wide latitudinal range, from tropical to boreal zones. Local dispersal is facilitated by flowing water and occasionally strong winds, while transfer on long-distance or between isolated water bodies is frequently mediated epizoochorously by birds [10] and aquatic mammals [11]. Combined with rapid vegetative propagation, these dispersal mechanisms enable efficient colonisation and potential invasion of new aquatic habitats.
+
+                    </p>
+
+                  
+
+              </div>
+                <div className="col-span-1">
+                      <div className="  rounded-lg">
+                        <img style={{ objectFit: 'cover', width: '800px', height: '300px' }} src="https://static.igem.wiki/teams/5642/images/toolbox/deepdiveonduckweed/pxl-20250622-100022837.webp" alt="Duckweed Anatomy Diagram" className=" rounded-lg" />
+                      </div>
+
+
+                </div>
+
+           </div>
+
+
+
+
+           <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mt-16'>
+
+
+              <div className="col-span-1">
+                      <div className="   rounded-lg">
+                        <img style={{ objectFit: 'cover', width: 'auto', height: '400px' }} src="https://static.igem.wiki/teams/5642/images/toolbox/deepdiveonduckweed/why-duckweed.webp" alt="Duckweed Anatomy Diagram" className="object-cover rounded-lg" />
+                      </div>
+
+
+                </div>
+
+              <div className="col-span-2">
+                    <h2 className="text-3xl font-bold mb-8">Why duckweed?</h2>
+
+                    <p className="mb-4">
+                      Duckweed combines several advantageous traits: its compact size, simple body plan, floating lifestyle that facilitates harvesting, rapid clonal propagation, and resilience to a wide range of environmental conditions, including fluctuating light, temperature, pH, and variable nutrient levels [12], [13], [14]. In addition, duckweeds possess comparatively small genomes for monocot plants, with a marked reduction in gene numbers and absence of RNA silencing mechanisms [15]. Together, these features render duckweed an optimal model organism for genetic engineering applications and large-scale cultivation.
+
+                    </p>
+
+                    <p className="mb-4">
+
+                      Moreover, duckweeds can reach high levels of protein [16] or starch [17] content and generally exhibit an outstanding capacity to absorb substances from their surroundings [18]. Taken together, these traits open the door to a wide range of potential applications. Each genus, however, as well as each individual strain, possesses distinct strengths and limitations with respect to practical applications.
+
+                    </p>
+
+                  
+
+              </div>
+                
+
+           </div>
+
+            
+
+           
       </div>
+
+
 
       
 
@@ -265,7 +324,7 @@ const Reference = [
     },
     {
         id: 3,
-        text: "'duckweed', Wiktionary, the free dictionary. July 09, 2025. Accessed: Aug. 04, 2025.",
+        text: "'duckweed', Wiktionary, the free dictionary. July 09, 2025. Accessed: Aug. 04, 2025. [Online]. Available: https://en.wiktionary.org/w/index.php?title=duckweed&oldid=85497111",
         url: "https://en.wiktionary.org/w/index.php?title=duckweed&oldid=85497111"
     },
     {
@@ -346,7 +405,7 @@ const Reference = [
     },
     {
         id: 23,
-        text: "OECD, 'Test No. 221: Lemna sp. Growth Inhibition Test', OECD. Accessed: Aug. 07, 2025.",
+        text: "OECD, 'Test No. 221: Lemna sp. Growth Inhibition Test', OECD. Accessed: Aug. 07, 2025. [Online]. Available: https://www.oecd.org/en/publications/test-no-221-lemna-sp-growth-inhabition-test_9789264016194-en.html",
         url: "https://www.oecd.org/en/publications/test-no-221-lemna-sp-growth-inhabition-test_9789264016194-en.html"
     },
     {
@@ -370,3 +429,5 @@ const Reference = [
         text: "T. P. Michael et al., 'Genome and time-of-day transcriptome of Wolffia australiana link morphological minimization with gene loss and less growth control', Genome Res., vol. 31, no. 2, pp. 225–238, Jan. 2021, doi: 10.1101/gr.266429.120."
     }
 ]
+
+
