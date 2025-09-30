@@ -41,8 +41,11 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Čakám na fotky od Zdenky</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/1.webp" alt="JICnights and Student Meetups" className="  rounded-lg" />
+              </div>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/2.webp" alt="JICnights and Student Meetups" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -75,8 +78,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Velvet Innovation Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/3.webp" alt="JICnights and Student Meetups" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -97,8 +100,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Lifbee Gathering Image</span>
+              <div className=" h-64rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/4.webp" alt="Lifbee Gathering" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -127,8 +130,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Nexteria Contest Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/5.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -151,8 +154,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Boat Networking Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/6.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -182,8 +185,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Prague.bio Conference Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/7.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -207,8 +210,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Czech SynBio Node Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/8.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -238,8 +241,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Czech Hopes Lecture Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/9.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -265,8 +268,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">BrNOC Lecture Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/10.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -289,8 +292,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Easter Hunt Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/11.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -317,8 +320,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">MUNI Day Stand Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/12.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -343,8 +346,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Běstvina Camp Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/13.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -369,8 +372,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Mendel Festival Stand Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/14png.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -398,8 +401,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Science Festival Stand Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/15.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -426,8 +429,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">K-SCUK Camp Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/16.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -455,8 +458,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Garden Party Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/17.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -481,8 +484,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Forbes Conference Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/18.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -505,8 +508,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Dean's Barbecue Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/19.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -532,8 +535,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Researchers' Night Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/20.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -951,8 +954,11 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">BFH European Meetup Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/21.webp" alt="Nexteria Kick-off2" className="  rounded-lg" />
+              </div>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/22.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -981,8 +987,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Prague Meetup Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/23.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -1007,8 +1013,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">ABOA Podcast Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/24.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -1049,8 +1055,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Instagram Feed Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/25.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -1073,8 +1079,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">LinkedIn Profile Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/26.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -1104,8 +1110,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">MUNI TV Interview Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/27.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -1127,9 +1133,7 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Magazine M Article Image</span>
-              </div>
+              
             </div>
           </div>
         </section>
@@ -1159,8 +1163,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Media Coverage Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/28.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -1186,8 +1190,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Duckweed Forum Article Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/29.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
