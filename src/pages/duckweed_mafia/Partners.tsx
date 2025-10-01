@@ -20,17 +20,20 @@ const Partners = () => {
             
             {/* Ally Labels */}
             <div className="relative hidden sm:block">
-              <div className="absolute top-0 left-0 transform -translate-y-32">
-                <span className="text-lg font-semibold uppercase tracking-wide" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>Strategic Ally</span>
+              <div className="absolute top-0 left-0 transform -translate-y-36">
+                <span className="text-2xl font-semibold uppercase tracking-wide bg-gradient-to-r from-green-400 via-green-500 to-green-800 bg-clip-text text-transparent animate-[gradient_3s_linear_infinite]" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>Strategic Ally</span>
               </div>
-              <div className="absolute top-0 right-0 transform -translate-y-32">
-                <span className="text-lg font-semibold uppercase tracking-wide" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>General Ally</span>
+              <div className="absolute top-0 right-0 transform -translate-y-36">
+                <span className="text-2xl font-semibold uppercase tracking-wide bg-gradient-to-r from-green-400 via-green-500 to-green-800 bg-clip-text text-transparent animate-[gradient_3s_linear_infinite]" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>General Ally</span>
               </div>
-              <div className="absolute bottom-0 left-0 transform translate-y-8">
-                <span className="text-lg font-semibold uppercase tracking-wide" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>Main Allies</span>
+              <div className="absolute bottom-0 left-0 transform translate-y-24">
+                <span className="text-2xl font-semibold uppercase tracking-wide bg-gradient-to-r from-green-400 via-green-500 to-green-800 bg-clip-text text-transparent animate-[gradient_3s_linear_infinite]" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>Main Allies</span>
               </div>
-              <div className="absolute bottom-0 right-0 transform translate-y-8">
-                <span className="text-lg font-semibold uppercase tracking-wide" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>Enablement Allies</span>
+              <div className="absolute bottom-0 right-[280px] transform translate-y-[230px]" >
+                <span className="text-2xl font-semibold uppercase tracking-wide bg-gradient-to-r from-green-400 via-green-500 to-green-800 bg-clip-text text-transparent animate-[gradient_3s_linear_infinite]" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>Enablement Allies</span>
+              </div>
+              <div className="absolute bottom-0 right-0 transform translate-y-24">
+                <span className="text-2xl font-semibold uppercase tracking-wide bg-gradient-to-r from-green-400 via-green-500 to-green-800 bg-clip-text text-transparent animate-[gradient_3s_linear_infinite]" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>Speciall Allies</span>
               </div>
             </div>
             
@@ -41,7 +44,7 @@ const Partners = () => {
       </div>
         
         {/* Strategic Ally Section */}
-        <section className="mb-16">
+        <section className="mb-16 mt-64">
             <h1 className="text-3xl font-bold text-gray-800 mt-10 mb-10 justify-center items-center text-center" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
                 STRATEGIC ALLY
             </h1>
@@ -579,6 +582,10 @@ const Partners = () => {
                   {" "}
                   – The Czech branch of the global Thermo Fisher/Fisher Scientific company donated DNA extraction kits for plant and gel samples. These kits accelerated our laboratory work on experiments by streamlining plant DNA isolation. We are especially thankful to site manager <strong>Petr Střelec</strong>, who supported us in making this possible. (Thermo Fisher is a major supplier of life-science reagents and equipment, operating in the Czech Republic under Fisher Scientific).
                 </span>
+                <a href="https://www.thermofisher.com/cz/en/home.html">
+                      {" "}
+                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>https://www.thermofisher.com/cz/en/home.html</span>
+                    </a>
               </p>
             </div>
              <div className="flex justify-center md:col-span-1">
@@ -647,6 +654,10 @@ const Partners = () => {
                   {" "}
                   - DIANA is a Czech biotechnology company that provided us with reverse transcriptase kits essential for producing cDNA from mRNA. This crucial donation has allowed us to accurately and quantitatively evaluate our promoters, which is a vital step in our research. We are especially grateful to the CEO, <strong>Václav Navrátil Ph.D.</strong>, for making this collaboration possible and enabling us to accelerate our experimental work.
                 </span>
+                <a href="https://www.dianabiotech.com/">
+                      {" "}
+                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>https://www.dianabiotech.com/</span>
+                    </a>
               </p>
             </div>
             <div className="flex justify-center md:col-span-1 ">
@@ -675,6 +686,10 @@ const Partners = () => {
                   {" "}
                   - A Slovak biotechnology company synthesized Taqman probes crucial for the quantitative evaluation of our promoters and provided us with invaluable consultation on PCR design. Their expert support and precise reagents ensure the highest standard of reliability and efficiency for our molecular analysis. We are grateful to the CEO, <strong>Pavol Čekan, PhD</strong>, for his direct support enabling us to accelerate our experimental work.
                 </span>
+                <a href="https://www.multiplexdx.com/">
+                      {" "}
+                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>https://www.multiplexdx.com/</span>
+                    </a>
               </p>
             </div>
           </div>
@@ -708,6 +723,10 @@ const Partners = () => {
                   {" "}
                   – We are profoundly thankful to <strong>Mr. Nevřela</strong> and Farma Pecínov for their support. Farma Pecínov is a countryside retreat that combines a working farm with hotel, wellness, and event services, set in the picturesque nature near Benešov. With strong agricultural roots, their belief in our work was shown through the purchase of an official partnership in our crowdfunding campaign — a gesture that gave them the unique opportunity to name our very first NitroDuckweed, which we are going to develop! Curious what the name will be? So are we!
                 </span>
+                <a href=" https://pecinov.com/domovska-stranka/">
+                      {" "}
+                      <span style={{ color: '#3b82f6', fontWeight: 400 }}> https://pecinov.com/domovska-stranka/</span>
+                    </a>
               </p>
             </div>
           </div>
@@ -720,6 +739,10 @@ const Partners = () => {
                   {" "}
                   – A Czech deep-tech venture capital firm specializing in TechBio, the intersection of biotechnology and artificial intelligence. Tensor Ventures is the official sponsor of our Bio 3H Party (hustlers-hipsters-hackers). Their focus on bridging biotech and AI strongly resonates with our vision of innovative, data-driven science. We are particularly grateful to <strong>Knarik Avanesyan, Head of Marketing</strong>, and <strong>Jan Faflík, Senior Associate</strong>, for making this collaboration possible.
                 </span>
+                <a href="https://tensor.ventures/">
+                      {" "}
+                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>https://tensor.ventures/</span>
+                    </a>
               </p>
             </div>
             <div className="flex justify-center md:col-span-1">
@@ -748,6 +771,10 @@ const Partners = () => {
                   {" "}
                   – A leading Czech laboratory-supply company that donated large sterile glass cultivation dishes and inoculation loops, enabling us to grow duckweed at larger scale under sterile conditions. This partnership was crucial in allowing us to continue experiments even before our own container system was fully developed. We are especially thankful to <strong>Tomáš Přikryl, CEO of P-LAB</strong>, for making this collaboration possible.
                 </span>
+                <a href="https://www.p-lab.cz/">
+                      {" "}
+                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>https://www.p-lab.cz/</span>
+                    </a>
               </p>
             </div>
           </div>
@@ -762,6 +789,10 @@ const Partners = () => {
                   {" "}
                   - helped us generously twice granting us space for filming and contributing valuable data to regarding cows feedstock and manure management. This assistance was essential for creating our promotional and presentational video and gaining a deeper understanding of real-world agronomic challenges. We are very grateful to <strong>P. Neužil</strong> for enabling this collaboration, which was vital for linking our biotechnological research with the practical agricultural environment.
                 </span>
+                <a href="https://agronet-nesovice-druzstvo.webnode.cz/">
+                      {" "}
+                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>https://agronet-nesovice-druzstvo.webnode.cz/</span>
+                    </a>
               </p>
             </div>
             <div className="flex justify-center md:col-span-1">
@@ -793,6 +824,10 @@ const Partners = () => {
                   {" "}
                   - A family winery from Mikulov, founded by film producer <strong>Tomáš Vican</strong>, which is particularly famous for its Riesling and natural orange wines. Their generous sponsorship was instrumental in helping us organize a fantastic 3H party. We are incredibly grateful for their support which made our great event possible.
                 </span>
+                <a href="https://www.vican.wine/">
+                      {" "}
+                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>https://www.vican.wine/</span>
+                    </a>
               </p>
             </div>
             
@@ -807,6 +842,10 @@ const Partners = () => {
                   {" "}
                   - Is a specialty coffee roastery from Brno, founded by award-winning barista <strong>Roman Nejedlý</strong>, with a focus on high-quality, ethically sourced coffee. Their generous sponsorship was instrumental in helping us organize a fantastic 3H party. Their amazing coffee was a true highlight of the event, and we can't thank them enough for their partnership.
                 </span>
+                <a href="https://fiftybeans.cz/cs/">
+                      {" "}
+                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>https://fiftybeans.cz/cs/</span>
+                    </a>
               </p>
             </div>
 
@@ -839,7 +878,12 @@ const Partners = () => {
           <p className="text-center text-gray-600 mt-16 italic">
             Each of the above partners has enabled key aspects of our research – from imaging and cultivation to laboratory setup and supplies. We thank them for their crucial contributions and collaboration.
           </p>
+
+                  <img src="https://static.igem.wiki/teams/5642/images/duckweedmafia/partners/roots.webp" alt="Brno City" className="max-w-full h-auto" style={{  }} />
+
         </section>
+
+
         
         
       </div>
