@@ -113,17 +113,10 @@ export default function DuckweedDocument() {
             
 
            </div> 
-
            
-            
            </div>
-           
-
 
           <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
-
-
-          
 
               <div className="col-span-2">
                     <p className="mb-4">
@@ -152,7 +145,7 @@ export default function DuckweedDocument() {
 
               <div className="col-span-1">
                       <div className="   rounded-lg">
-                        <img style={{ objectFit: 'cover', width: 'auto', height: '400px' }} src="https://static.igem.wiki/teams/5642/images/toolbox/deepdiveonduckweed/why-duckweed.webp" alt="Duckweed Anatomy Diagram" className="object-cover rounded-lg" />
+                        <img style={{   maxHeight: '400px' }} src="https://static.igem.wiki/teams/5642/images/toolbox/deepdiveonduckweed/why-duckweed.webp" alt="Duckweed Anatomy Diagram" className=" rounded-lg" />
                       </div>
 
 
@@ -200,7 +193,7 @@ export default function DuckweedDocument() {
                 Spirodela occupies a basal position within the Lemnoidae. Despite having the largest body plan among 
                 duckweeds, it is characterised by a remarkably small genome size and one of the most reduced gene 
                 repertoires of any known plant. <em>S. polyrrhiza</em> possesses a genome of approximately 158 Mb, 
-                comprising 19,623 protein-coding genes [13], which is roughly 30% less than reported for 
+                comprising 19,623 protein-coding genes [19], which is roughly 30% less than reported for 
                 <em>Arabidopsis thaliana</em>. As a result, Spirodela serves as an excellent model for genomic research 
                 and the study of highly conserved core pathways in plants.
               </p>
@@ -219,7 +212,7 @@ export default function DuckweedDocument() {
               <p>
                 <em>Landoltia punctata</em> is the sole representative of the genus Landoltia. It has shown remarkable 
                 ability to rapidly accumulate a high starch content (about 45 – 60 % of dry weight) under optimised 
-                cultivation conditions [14], [15], making it a promising candidate for bioethanol production.
+                cultivation conditions [20], [21], making it a promising candidate for bioethanol production.
               </p>
             </div>
             <div className=" w-full md:w-48  flex items-center justify-center rounded-lg">
@@ -238,8 +231,8 @@ export default function DuckweedDocument() {
                 successfully that they are considered invasive. The most notorious of them is <em>L. minuta</em> [4]. 
                 This very ubiquity has ensured that members of this genus, particularly <em>L. minor</em> and 
                 <em>L. gibba</em>, are already used in a range of practical applications. Examples include their use 
-                in the phytoremediation of polluted water bodies [16] and as model organisms in ecotoxicological 
-                testing [17].
+                in the phytoremediation of polluted water bodies [22] and as model organisms in ecotoxicological 
+                testing [23].
               </p>
             </div>
            
@@ -256,19 +249,19 @@ export default function DuckweedDocument() {
             <div className="flex-1">
               <p className="mb-4">
                 Members of the genus Wolffia are known for their use as animal feed. In Northern Thailand, Laos, and 
-                Myanmar, <em>W. globosa</em> is even a part of traditional diet of local people [18], [19]. Their 
+                Myanmar, <em>W. globosa</em> is even a part of traditional diet of local people [24], [25]. Their 
                 suitability for human consumption is further supported by their excellent protein composition, rich 
-                phytosterol content [20], and the fact that, unlike other duckweed genera, Wolffia species do not 
-                accumulate oxalates as calcium oxalate crystals, which may pose health risks [21]. Top-scoring specie 
+                phytosterol content [26], and the fact that, unlike other duckweed genera, Wolffia species do not 
+                accumulate oxalates as calcium oxalate crystals, which may pose health risks [27]. Top-scoring specie 
                 is however <em>W. microscopica</em> (clone 2005) with its optimal amino acid profile, dietary 
-                stearidonic acid presence [20] and record doubling time of 29.3 hours, gaining it a title of a 
+                stearidonic acid presence [26] and record doubling time of 29.3 hours, gaining it a title of a 
                 fastest-growing angiosperm. Similarly rapid propagation is observed in <em>Wolffia globosa</em> clone 
                 9498 exhibiting a doubling time of 29.8 hours [8].
               </p>
               <p>
                 Another interesting specie is <em>W. australiana</em>, which has the smallest genome within the genus 
                 (354 Mb) and even greater reduction in the number of predicted protein-coding genes (~15 thousand). 
-                This genetic simplification correlates with the minimal tissue complexity and absence of roots [22].
+                This genetic simplification correlates with the minimal tissue complexity and absence of roots [28].
               </p>
             </div>
             <div className=" w-full md:w-48  flex items-center justify-center rounded-lg">
@@ -285,7 +278,7 @@ export default function DuckweedDocument() {
               <p>
                 Wolffiella shares several characteristics with the genus Wolffia. The plant forms extremely small fronds, 
                 lacks roots, and certain species, in particular <em>W. hyalina</em>, have been proposed as a potential 
-                food source for humans due to their high protein content (35%) and favourable amino acid composition [19].
+                food source for humans due to their high protein content (35%) and favourable amino acid composition [25].
               </p>
             </div>
             <div className=" w-full md:w-48  flex items-center justify-center rounded-lg">
