@@ -33,9 +33,22 @@ const appropriateAntibiotic: textSlide[] = [
 ];
 
 
+const dcmn: textSlide[] = [ 
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/watercycle/water-cycle-schema-old.webp",
+        title: "DPIM",
+        description: [
+            "DCMN + 400mg/l of Cefotaxime + 400mg/l of Ticarcillin",
+           
+        ],
+    },
+];
+
+
 const TransformationProtocol = () =>  {
   const [isOpenagrobacteriumInfection, setIsOpenagrobacteriumInfection] = useState(false);
   const [isOpenAntibioticSlides, setIsOpenAntibioticSlides] = useState(false);
+  const [isOpenDcmnSlides, setIsOpenDcmnSlides] = useState(false);
   return (
     <div className="max-w-6xl mx-auto p-6 bg-white text-lg text-justify">
       
@@ -136,11 +149,9 @@ const TransformationProtocol = () =>  {
                   stressed and inefficient at T-DNA transfer.
                 </p>
               </div>
-              <p className="text-gray-700"><strong>4)</strong> Just before infiltration, add Silwet L-77 to Agrobacterium solution (final 
-                concentration: 0.02%).</p>
-              <p className="text-gray-700"><strong>5)</strong> Transfer fronds into Agrobacterium solution. Apply vacuum (−70 kPa) for 5 - 10 
-                minutes (depending on clone - see our vacuum transformation optimization page).</p>
-              <p className="text-gray-700"><strong>6)</strong> Release the vacuum slowly while gently swirling.</p>
+              <p className="text-gray-700"><strong>4)</strong> Transfer fronds into Agrobacterium solution. Apply vacuum (−70 kPa) for 10 minutes.</p>
+              <p className="text-gray-700"><strong>5)</strong> Release the vacuum slowly while gently swirling.</p>
+              <p className="text-gray-700"><strong>6)</strong> Wash infiltrated duckweeds in dH20 for 60 seconds to get rid of AIM with sucrose.</p>
               <div className="bg-red-50 border border-red-300 p-3 mt-4">
                 <p className="text-red-800 font-medium">
                   <strong>NOTE 3:</strong> Swirling during vacuum infiltration ensures dorsal stomata are exposed 
@@ -165,9 +176,8 @@ const TransformationProtocol = () =>  {
               </div>
 
               <div className="space-y-2" style={{fontFamily: 'Urbanist'}}>
-              <p className="text-gray-700"><strong>7)</strong> Split the infiltrated duckweed and Agrobacterium suspension into plates.</p>
-              <p className="text-gray-700"><strong>8)</strong> Add DCMN medium (link na duckweed cultivation protocol) (~25 mL per 
-                plate) to dilute AIM.</p>
+              <p className="text-gray-700"><strong>7)</strong> Put the infiltrated duckweed and Agrobacterium suspension into plates</p>
+              <p className="text-gray-700"><strong>8)</strong> Add <Link className='text-green-600 font-bold' to="/toolbox/predictable-duckweed-protocol/">DCMN</Link> (25 - 30 mL per plate). Do not seal plates.</p>
               <p className="text-gray-700"><strong>9)</strong> Do not seal plates.</p>
               <div className="bg-red-50 border border-red-300 p-3 mt-4">
                 <p className="text-red-800 font-medium">
@@ -198,11 +208,16 @@ const TransformationProtocol = () =>  {
 
           {/* Day 6 */}
           <div className="bg-white p-6 border border-gray-300 border-l-4 border-l-indigo-600">
+            <TextModal
+            slides={dcmn}
+            isOpen={isOpenDcmnSlides}
+            onClose={() => setIsOpenDcmnSlides(false)}
+            />
             <h2 className="text-2xl font-semibold text-gray-900 mb-4" style={{fontFamily: 'Space Grotesk'}}>
               Day 6 • ELIMINATING AGROBACTERIUM
             </h2>
             <div className="space-y-2" style={{fontFamily: 'Urbanist'}}>
-              <p className="text-gray-700"><strong>1)</strong> Transfer fronds to Duckweed Post-Infiltration Medium (<span className="text-red-600 font-semibold"><Link to="/toolbox/predictable-duckweed-protocol/">DPIM</Link></span>).</p>
+              <p className="text-gray-700"><strong>1)</strong> Transfer fronds to Duckweed Post-Infiltration Medium (<span className="text-red-600 font-semibold"><button onClick={() => setIsOpenDcmnSlides(true)}>DPIM</button></span>).</p>
               <p className="text-gray-700"><strong>2)</strong> Incubate at 21°C, 16/8 photoperiod, 200 µmol/m²/s light.</p>
               <p className="text-gray-700"><strong>3)</strong> Refresh medium every 6 days.</p>
             </div>
