@@ -20,9 +20,9 @@ const Navbar = () => {
 
   const menuItems = {
     project: [
-      { label: 'What', path: '/project/what' },
-      { label: 'How', path: '/project/how' },
-      { label: 'Why', path: '/project/why' },
+      { label: 'What', path: '/project/how' },      // What → Why
+      { label: 'How', path: '/project/why' },      // How → What
+      { label: 'Why', path: '/project/what' },       // Why → How
       { label: 'Hardware', path: '/project/why' },
       
     ],
@@ -115,7 +115,7 @@ const Navbar = () => {
             onMouseLeave={handleMouseLeave}
           >
             <button
-              className={`flex items-center space-x-1 text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer
+              className={`flex items-center space-x-1 text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer border
                 ${isActiveGroup(['/toolbox']) ? 'bg-green-100 text-green-800' : 'bg-gray-50 hover:bg-gray-100'}`}
                 style={{ borderColor: '#779E45', fontFamily: 'Urbanist, sans-serif', borderWidth: '2px', color: '#1B1B1B', lineHeight: '140%', fontSize: '16px', fontWeight: '600' }}
             >
@@ -148,7 +148,7 @@ const Navbar = () => {
             onMouseLeave={handleMouseLeave}
           >
             <button
-              className={`flex items-center space-x-1 text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer
+              className={`flex items-center space-x-1 text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer border
                 ${isActiveGroup(['/engagement']) ? 'bg-green-100 text-green-800' : 'bg-gray-50 hover:bg-gray-100'}`}
                 style={{ borderColor: '#779E45', fontFamily: 'Urbanist, sans-serif', borderWidth: '2px', color: '#1B1B1B', lineHeight: '140%', fontSize: '16px', fontWeight: '600' }}
             >
@@ -181,7 +181,7 @@ const Navbar = () => {
             onMouseLeave={handleMouseLeave}
           >
             <button
-              className={`flex items-center space-x-1 text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer
+              className={`flex items-center space-x-1 text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer border
                 ${isActiveGroup(['/duckweed-mafia']) ? 'bg-green-100 text-green-800' : 'bg-gray-50 hover:bg-gray-100'}`}
                 style={{ borderColor: '#779E45', fontFamily: 'Urbanist, sans-serif', borderWidth: '2px', color: '#1B1B1B', lineHeight: '140%', fontSize: '16px', fontWeight: '600' }}
             >
