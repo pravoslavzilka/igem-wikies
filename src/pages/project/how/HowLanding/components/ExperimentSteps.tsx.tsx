@@ -2,7 +2,7 @@ import React from 'react';
 
 const ExperimentSteps: React.FC = () => {
   return (
-    <section className="w-full py-12 lg:py-20 flex justify-center">
+    <section className="w-full py-0 lg:py-0 flex justify-center">
       <div 
         className="w-full max-w-6xl overflow-hidden"
         style={{ aspectRatio: '16/9', minHeight: '300px', maxHeight: '600px' }}
