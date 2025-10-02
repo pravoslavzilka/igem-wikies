@@ -29,11 +29,7 @@ const ComparisonsSection: React.FC<ComparisonsSectionProps> = ({
       {/* Header */}
       <div className="flex flex-col items-center gap-4 w-full max-w-[1184px]">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-gray-900">
-          Our Innovations
         </h2>
-        <p className="text-lg text-gray-600 text-center max-w-2xl">
-          Four breakthrough solutions transforming duckweed research and cultivation
-        </p>
       </div>
 
       {/* All Comparisons Stacked */}
