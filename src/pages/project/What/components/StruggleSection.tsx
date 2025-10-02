@@ -23,11 +23,14 @@ const StruggleSection: React.FC = () => {
               
               {/* First paragraph */}
               <p 
-                className="text-base sm:text-lg leading-[168%] text-black/75 text-justify"
-                style={{ fontFamily: 'Space Grotesk, sans-serif' }}
-              >
-                We had ideas on what to do with duckweed, like engineering it to uptake ammonium faster for manure remediation- nitroduck link or to grow faster and bigger - hanson bbd hp link.
-              </p>
+              className="text-base sm:text-lg leading-[168%] text-black/75 text-justify"
+              style={{ fontFamily: 'Space Grotesk, sans-serif' }}
+            >
+              We had ideas on what to do with duckweed, like engineering it to 
+              <span className="underline font-bold"> uptake ammonium faster for manure remediation </span> 
+              or to 
+              <span className="underline font-bold"> grow faster and bigger </span>.
+            </p>
 
               {/* Second paragraph - highlighted */}
               <p 
