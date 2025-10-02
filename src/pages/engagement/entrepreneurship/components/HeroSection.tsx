@@ -20,7 +20,7 @@ const HeroSection: React.FC = () => {
         {/* Logo */}
         <div className="mb-8 flex justify-center">
           <img 
-            src="LOGO_URL" 
+            src="https://static.igem.wiki/teams/5642/images/engagement/entrepreneurship/nitroduck.webp" 
             alt="Entrepreneurship Logo" 
             className="w-32 h-32 object-contain"
           />

@@ -53,7 +53,7 @@ const DuckweedShowcaseSection: React.FC = () => {
         className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-[120%] text-black mb-8 sm:mb-12 text-center max-w-4xl mx-auto"
         style={{ fontFamily: 'Urbanist, sans-serif' }}
       >
-        This is the superior plant - duckweed
+        This is the (almost) superior plant - duckweed
       </h2>
 
       {/* Desktop layout - hidden on mobile */}
