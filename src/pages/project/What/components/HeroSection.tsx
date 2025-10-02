@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
             className="text-base sm:text-lg font-semibold leading-[140%] text-black/50 mb-2 sm:mb-4"
             style={{ fontFamily: 'Urbanist, sans-serif' }}
           >
-            What
+            Why
           </h2>
           
           {/* Main heading - responsive sizes */}
