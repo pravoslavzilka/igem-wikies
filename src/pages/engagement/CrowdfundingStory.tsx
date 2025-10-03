@@ -130,7 +130,7 @@ export default function CrowdfundingStory() {
           </p>
         </div>
 
-        <div className="flex flex-row items-start justify-center gap-8 mb-12">
+        <div className="md:flex flex-row items-start justify-center gap-8 mb-12">
           {/* Images stacked vertically with labels */}
           <div className="flex flex-col gap-8 items-center">
             <div className="flex flex-col items-center">

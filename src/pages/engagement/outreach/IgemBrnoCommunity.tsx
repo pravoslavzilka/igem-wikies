@@ -45,7 +45,7 @@ export default function IgemBrnoCommunity() {
               </h3>
               <div className=" mt-10 bg-white rounded-full w-36 h-36 mx-auto mb-2 flex items-center justify-center">
                 <div className=" rounded-full flex items-center justify-center">
-                  <span className="text-md "><b>Being part of a community</b></span>
+                  <span className="text-md "><a href="#network"><b>Being part of a community</b></a></span>
                 </div>
               </div>
               
@@ -58,7 +58,7 @@ export default function IgemBrnoCommunity() {
               </h3>
               <div className="bg-white rounded-full w-36 h-36 mx-auto mb-2 flex items-center justify-center">
                 <div className=" rounded-full flex items-center justify-center">
-                  <span className="text-md "><b>Letting the world discover duckweed</b></span>
+                  <span className="text-md "><a href="#communication"><b>Letting the world discover duckweed</b></a></span>
                 </div>
               </div>
               
@@ -71,7 +71,7 @@ export default function IgemBrnoCommunity() {
               </h3>
               <div className="bg-white rounded-full w-36 h-36 mx-auto mb-2 flex items-center justify-center">
                 <div className=" rounded-full flex items-center justify-center">
-                  <span className="text-md "><b><Link to="/engagement/outreach/3h-party">Hosting our own events</Link></b></span>
+                  <span className="text-md "><b><a href="#3hparty">Hosting our own events</a></b></span>
                 </div>
               </div>
               
@@ -85,7 +85,7 @@ export default function IgemBrnoCommunity() {
               </h3>
               <div className="bg-white rounded-full w-36 h-36 mx-auto mb-2 flex items-center justify-center">
                 <div className=" rounded-full flex items-center justify-center">
-                  <span className="text-md "><b>Attending iGEM meetups</b></span>
+                  <span className="text-md "><b><a href="#igemmeetup">Attending iGEM meetups</a></b></span>
                 </div>
               </div>
               
@@ -119,7 +119,7 @@ export default function IgemBrnoCommunity() {
               Circulating <br/> Online
             </h3>
             <div className="bg-white rounded-full w-36 h-36 mx-auto mb-4 flex items-center justify-center text-center">
-              <span className="text-md text-black"><b>Sharing our project online</b></span>
+              <span className="text-md text-black"><a href="#media"><b>Sharing our project online</b></a></span>
             </div>
           </div>
         </div>
@@ -163,9 +163,9 @@ export default function IgemBrnoCommunity() {
 
 
       {/* Header Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16 px-6">
+      <div id='network' className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
+          <h1  className="text-4xl md:text-5xl font-bold mb-4" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
             Creating Network
           </h1>
         </div>
@@ -377,7 +377,7 @@ export default function IgemBrnoCommunity() {
         </section>
 
         {/* Communicating Science Section Header */}
-        <div className="bg-gradient-to-r from-green-500 to-teal-500 text-white py-12 px-8 rounded-lg mb-12 text-center">
+        <div id='communication' className="bg-gradient-to-r from-green-500 to-teal-500 text-white py-12 px-8 rounded-lg mb-12 text-center">
           <h1 className="text-4xl font-bold" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
             Communicating Science
           </h1>
@@ -711,7 +711,7 @@ export default function IgemBrnoCommunity() {
         </div>
 
          {/* Header */}
-      <div className="py-16 px-6">
+      <div id='3hparty' className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             (Bio) Hackers, Hipsters and Hustlers Party: a Silicon Valley for a day in Brno!
@@ -1063,7 +1063,7 @@ export default function IgemBrnoCommunity() {
 
 
         {/* Connecting w/ iGEMers Section Header */}
-        <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white py-12 px-8 rounded-lg mb-12 text-center">
+        <div id='igemmeetup' className="bg-gradient-to-r from-orange-500 to-red-500 text-white py-12 px-8 rounded-lg mb-12 text-center">
           <h1 className="text-4xl font-bold" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
             Connecting w/ iGEMers
           </h1>
@@ -1495,82 +1495,7 @@ export default function IgemBrnoCommunity() {
           </div>
         </section>
 
-        {/* Timeline Grid at bottom */}
-        <section className="mt-16">
-          <h2 className="text-3xl font-bold mb-8 text-center text-gray-800" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
-            Event Timeline
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="bg-blue-50 p-4 rounded-lg text-center">
-              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>JIC Christmas Student Meetup</h4>
-            </div>
-            <div className="bg-purple-50 p-4 rounded-lg text-center">
-              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Velvet Innovation Meetups</h4>
-            </div>
-            <div className="bg-green-50 p-4 rounded-lg text-center">
-              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Lifbee Summer Gathering</h4>
-            </div>
-            <div className="bg-orange-50 p-4 rounded-lg text-center">
-              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Nexteria Kick-off pitch contest</h4>
-            </div>
-            <div className="bg-blue-50 p-4 rounded-lg text-center">
-              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Tech Execs Boat Networking</h4>
-            </div>
-            <div className="bg-green-50 p-4 rounded-lg text-center">
-              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>JIC Summer Student Meetup</h4>
-            </div>
-            <div className="bg-purple-50 p-4 rounded-lg text-center">
-              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Czech SynBio Node Kick-off</h4>
-            </div>
-            <div className="bg-orange-50 p-4 rounded-lg text-center">
-              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Prague.bio Conference</h4>
-            </div>
-            <div className="bg-red-50 p-4 rounded-lg text-center">
-              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Talk at Brno Lecture Night</h4>
-            </div>
-            <div className="bg-yellow-50 p-4 rounded-lg text-center">
-              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Easter Duckweed Hunt</h4>
-            </div>
-            <div className="bg-pink-50 p-4 rounded-lg text-center">
-              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Stand at the MUNI Day 2025</h4>
-            </div>
-            <div className="bg-indigo-50 p-4 rounded-lg text-center">
-              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Lecture at Běstvina summer camp</h4>
-            </div>
-            <div className="bg-teal-50 p-4 rounded-lg text-center">
-              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Stand at Mendel festival 2025</h4>
-            </div>
-            <div className="bg-cyan-50 p-4 rounded-lg text-center">
-              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Stand at Festival of Science and Technology</h4>
-            </div>
-            <div className="bg-lime-50 p-4 rounded-lg text-center">
-              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Lecture at K-SCUK summer camp</h4>
-            </div>
-            <div className="bg-emerald-50 p-4 rounded-lg text-center">
-              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Garden party at SCI and ECON MUNI</h4>
-            </div>
-            <div className="bg-violet-50 p-4 rounded-lg text-center">
-              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Stand at Forbes Next Big Thing conference</h4>
-            </div>
-            <div className="bg-rose-50 p-4 rounded-lg text-center">
-              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Researchers' Night in Brno</h4>
-            </div>
-            <div className="bg-amber-50 p-4 rounded-lg text-center">
-              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Researchers' Night in Bratislava</h4>
-            </div>
-            <div className="bg-sky-50 p-4 rounded-lg text-center">
-              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Recording podcast with ABOA team</h4>
-            </div>
-            <div className="bg-stone-50 p-4 rounded-lg text-center">
-              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>PRAGUE meet-up</h4>
-            </div>
-            <div className="bg-zinc-50 p-4 rounded-lg text-center">
-              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Our stand at BFH European Meetup</h4>
-            </div>
-          </div>
-        </section>
-
-        <section className="mt-16 mb-16">
+        <section id='media' className="mt-32 mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center text-gray-800" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
             Media Highlights
           </h2>
@@ -1650,6 +1575,83 @@ export default function IgemBrnoCommunity() {
             </div>
           </div>
         </section>
+
+        {/* Timeline Grid at bottom */}
+        <section className="mt-32">
+          <h2 className="text-3xl font-bold mb-8 text-center text-gray-800" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
+            Event Timeline
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="bg-blue-50 p-4 rounded-lg text-center">
+              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>JIC Christmas Student Meetup</h4>
+            </div>
+            <div className="bg-purple-50 p-4 rounded-lg text-center">
+              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Velvet Innovation Meetups</h4>
+            </div>
+            <div className="bg-green-50 p-4 rounded-lg text-center">
+              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Lifbee Summer Gathering</h4>
+            </div>
+            <div className="bg-orange-50 p-4 rounded-lg text-center">
+              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Nexteria Kick-off pitch contest</h4>
+            </div>
+            <div className="bg-blue-50 p-4 rounded-lg text-center">
+              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Tech Execs Boat Networking</h4>
+            </div>
+            <div className="bg-green-50 p-4 rounded-lg text-center">
+              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>JIC Summer Student Meetup</h4>
+            </div>
+            <div className="bg-purple-50 p-4 rounded-lg text-center">
+              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Czech SynBio Node Kick-off</h4>
+            </div>
+            <div className="bg-orange-50 p-4 rounded-lg text-center">
+              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Prague.bio Conference</h4>
+            </div>
+            <div className="bg-red-50 p-4 rounded-lg text-center">
+              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Talk at Brno Lecture Night</h4>
+            </div>
+            <div className="bg-yellow-50 p-4 rounded-lg text-center">
+              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Easter Duckweed Hunt</h4>
+            </div>
+            <div className="bg-pink-50 p-4 rounded-lg text-center">
+              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Stand at the MUNI Day 2025</h4>
+            </div>
+            <div className="bg-indigo-50 p-4 rounded-lg text-center">
+              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Lecture at Běstvina summer camp</h4>
+            </div>
+            <div className="bg-teal-50 p-4 rounded-lg text-center">
+              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Stand at Mendel festival 2025</h4>
+            </div>
+            <div className="bg-cyan-50 p-4 rounded-lg text-center">
+              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Stand at Festival of Science and Technology</h4>
+            </div>
+            <div className="bg-lime-50 p-4 rounded-lg text-center">
+              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Lecture at K-SCUK summer camp</h4>
+            </div>
+            <div className="bg-emerald-50 p-4 rounded-lg text-center">
+              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Garden party at SCI and ECON MUNI</h4>
+            </div>
+            <div className="bg-violet-50 p-4 rounded-lg text-center">
+              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Stand at Forbes Next Big Thing conference</h4>
+            </div>
+            <div className="bg-rose-50 p-4 rounded-lg text-center">
+              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Researchers' Night in Brno</h4>
+            </div>
+            <div className="bg-amber-50 p-4 rounded-lg text-center">
+              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Researchers' Night in Bratislava</h4>
+            </div>
+            <div className="bg-sky-50 p-4 rounded-lg text-center">
+              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Recording podcast with ABOA team</h4>
+            </div>
+            <div className="bg-stone-50 p-4 rounded-lg text-center">
+              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>PRAGUE meet-up</h4>
+            </div>
+            <div className="bg-zinc-50 p-4 rounded-lg text-center">
+              <h4 className="font-bold text-sm mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Our stand at BFH European Meetup</h4>
+            </div>
+          </div>
+        </section>
+
+        
 
       </div>
     </div>
