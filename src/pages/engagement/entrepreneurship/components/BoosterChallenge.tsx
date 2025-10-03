@@ -3,7 +3,7 @@ import React from 'react';
 
 const BoosterChallenge: React.FC = () => {
   return (
-    <section className="max-w-6xl mx-auto px-8 py-16 bg-white">
+    <section id="booster-challenge" className="max-w-6xl mx-auto px-8 py-16 bg-white">
       {/* Header */}
       <h2 
         className="text-5xl font-bold mb-12"

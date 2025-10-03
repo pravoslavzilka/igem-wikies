@@ -3,7 +3,7 @@ import React from 'react';
 
 const RefiningTheVision: React.FC = () => {
   return (
-    <section className="max-w-6xl mx-auto px-8 py-16 bg-white">
+    <section id="refining-vision" className="max-w-6xl mx-auto px-8 py-16 bg-white">
       {/* Header */}
       <h3 
         className="text-3xl font-bold mb-8"
