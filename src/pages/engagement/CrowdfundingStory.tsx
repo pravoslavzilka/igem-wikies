@@ -20,7 +20,7 @@ export default function CrowdfundingStory() {
 
           <div >
 
-            <div className="bg-green-600 text-white p-8 rounded-lg">
+            <div className="bg-green-[#6ca033] text-white p-8 rounded-lg" style={{ backgroundColor: '#6ca033' }} >
             <p className="text-lg leading-relaxed">
               Though our journey has been graced by generous patrons, the tireless pursuit of discovery demands more than we alone possess. To carry our vision to Paris's esteemed stage, and to truly gauge the heart and resonance of our endeavor, we now turn to the wider world, inviting all to share in its unfolding…
             </p>
@@ -50,8 +50,8 @@ export default function CrowdfundingStory() {
 
         
 
-        <div className="mb-12">
-          <div className="flex items-start gap-4 mb-8">
+        <div className="">
+          <div className="md:flex items-start gap-4 mb-8">
             <div className="flex-shrink-0 flex items-center justify-center">
               <img className='w-64 h-32 object-cover' src="https://static.igem.wiki/teams/5642/images/engagement/outreach/crowdfunding/donio.webp" />
             </div>
@@ -69,13 +69,13 @@ export default function CrowdfundingStory() {
       </div>
 
       {/* Page 2 */}
-      <div className="max-w-6xl mx-auto px-6 py-12">
+      <div className="max-w-6xl mx-auto mt-[-70px] px-6 py-12">
         <p className="mb-8">
           Before developing any materials, we defined two cornerstones: our <span className="font-bold">target audience</span> and our <span className="font-bold">project's story</span>. To secure financial support, we targeted <span className="font-bold">middle-aged entrepreneurs and tech-optimists</span>. We anchored our narrative in local scientific heritage, connecting it to Gregor Mendel, the father of genetics, who conducted his groundbreaking research right here in Brno—the same city hosting our iGEM project. The story was simple yet powerful: young students from a small country building on a legacy of world-class science to take their idea to the world.
         </p>
 
         <div className="max-w-4xl mx-auto">
-        <div className="grid grid-cols-3 gap-4 mb-12 bg-green-600 text-white p-6 rounded-lg">
+        <div className="grid grid-cols-3 gap-4 mb-12  text-white p-6 rounded-lg" style={{ backgroundColor: '#6ca033' }}>
             <div className="text-center">
             <p className="font-bold text-lg">FF</p>
             <p>family & friends</p>
@@ -124,7 +124,7 @@ export default function CrowdfundingStory() {
           </div>
         </div>
 
-        <div className="bg-green-600 p-6 text-white rounded-lg mb-12">
+        <div className=" p-6 text-white rounded-lg mb-12" style={{ backgroundColor: '#6ca033' }}>
           <p className="text-center font-semibold">
             To ensure our project's story reached a diverse audience, we built a comprehensive media and outreach plan. Our strategy focused on hitting multiple relevant channels, leveraging key partners, and maintaining direct communication with our supporters.
           </p>

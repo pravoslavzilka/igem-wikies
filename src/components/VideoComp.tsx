@@ -97,9 +97,9 @@ const VideoComp = () => {
               Soybean
             </p>
             <div className="rounded-xl overflow-hidden relative w-full" style={{ maxWidth: "100%" }}>
-              <video autoPlay loop muted playsInline>
-                <source src="https://github.com/pravoslavzilka/igem-wikies-off/raw/refs/heads/main/src/soybean%20timeplase2.mp4" type="video/mp4"></source>
-              </video>
+
+              
+              <img src="https://static.igem.wiki/teams/5642/images/homepage/maingifs/soybeantimeplase2-ezgif-com-video-to-webp-converter.webp"  />
             </div>
             
           </div>
@@ -121,9 +121,7 @@ const VideoComp = () => {
             </p>
             
             <div className="rounded-xl overflow-hidden relative w-full" style={{ maxWidth: "100%" }}>
-              <video autoPlay loop muted playsInline>
-                <source src="https://github.com/pravoslavzilka/igem-wikies-off/raw/refs/heads/main/src/duckweed%20timelapse_.mp4" type="video/mp4"></source>
-              </video>
+              <img src="https://static.igem.wiki/teams/5642/images/homepage/maingifs/duckweedtimelapse-ezgif-com-video-to-webp-converter.webp"  />
             </div>
             
           </div>
@@ -158,7 +156,12 @@ const VideoComp = () => {
           ))}
         </div>
       </div>
+
+      
     </div>
+
+
+
   );
 }   
 
