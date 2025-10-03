@@ -3,7 +3,7 @@ import React from 'react';
 
 const PowerGreens: React.FC = () => {
   return (
-    <section className="max-w-6xl mx-auto px-8 py-16 bg-white">
+    <section id="powergreens" className="max-w-6xl mx-auto px-8 py-16 bg-white">
       {/* Main Title */}
       <h2 
         className="text-8xl font-bold mb-4 text-center"
