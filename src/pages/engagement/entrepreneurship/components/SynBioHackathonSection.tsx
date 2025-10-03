@@ -21,7 +21,7 @@ const SynBioHackathonSection: React.FC = () => {
           This meant creating a completely{' '}
           <span className="font-bold">new scientific approach</span> to our project so we had to sit down and hack. That&apos;s where{' '}
           <a 
-            href="#" 
+            href="https://synbee.eu/activity/european-synbio-hackaton" 
             className="text-blue-600 hover:underline"
           >
             SynBee Read-Write-Grow Hackathon
@@ -35,7 +35,7 @@ const SynBioHackathonSection: React.FC = () => {
       <div className="flex justify-center">
         <div className="w-full max-w-2xl">
           <img 
-            src="SYNBIO_HACKATHON_WINNERS_2024_URL" 
+            src="https://static.igem.wiki/teams/5642/images/engagement/entrepreneurship/nitroduck2-3.webp" 
             alt="2024 edition winners - ZOMBIO, ENDOSTIK, NitroDuck"
             className="w-full h-auto rounded-2xl"
           />

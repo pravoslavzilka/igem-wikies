@@ -19,16 +19,16 @@ const OurSuccessesSection: React.FC = () => {
         {/* iGEM Logo */}
         <div className="w-32 h-32 flex items-center justify-center">
           <img 
-            src="IGEM_LOGO_URL" 
+            src="https://static.igem.wiki/teams/5642/images/engagement/entrepreneurship/startupsigem.webp" 
             alt="iGEM"
             className="w-full h-full object-contain"
           />
         </div>
 
         {/* European SynBio Hackathon */}
-        <div className="w-40 h-32 bg-gray-200 rounded-2xl overflow-hidden flex items-center justify-center">
+        <div className="w-42 h-32 bg-gray-200 rounded-2xl overflow-hidden flex items-center justify-center">
           <img 
-            src="EUROPEAN_SYNBIO_HACKATHON_URL" 
+            src="https://static.igem.wiki/teams/5642/images/engagement/entrepreneurship/heckathon.webp" 
             alt="European SynBio Hackathon"
             className="w-full h-full object-cover"
           />
@@ -37,7 +37,7 @@ const OurSuccessesSection: React.FC = () => {
         {/* Lifbee Academy */}
         <div className="w-40 h-32 flex items-center justify-center">
           <img 
-            src="LIFBEE_ACADEMY_URL" 
+            src="https://static.igem.wiki/teams/5642/images/engagement/entrepreneurship/lifbee.webp" 
             alt="Lifbee Academy"
             className="w-full h-full object-contain"
           />
@@ -46,7 +46,7 @@ const OurSuccessesSection: React.FC = () => {
         {/* Start Your Business */}
         <div className="w-40 h-32 flex items-center justify-center">
           <img 
-            src="START_YOUR_BUSINESS_URL" 
+            src="https://static.igem.wiki/teams/5642/images/engagement/entrepreneurship/syb.webp" 
             alt="Start Your Business"
             className="w-full h-full object-contain"
           />
@@ -55,7 +55,7 @@ const OurSuccessesSection: React.FC = () => {
         {/* Booster Challenge */}
         <div className="w-32 h-32 bg-gray-200 rounded-2xl overflow-hidden flex items-center justify-center">
           <img 
-            src="BOOSTER_CHALLENGE_URL" 
+            src="https://static.igem.wiki/teams/5642/images/engagement/entrepreneurship/nitroduck1-4.webp" 
             alt="Booster Challenge"
             className="w-full h-full object-cover"
           />
@@ -68,7 +68,7 @@ const OurSuccessesSection: React.FC = () => {
         <div className="flex flex-col items-center">
           <div className="w-full aspect-video bg-gray-200 rounded-3xl overflow-hidden mb-4">
             <img 
-              src="IGEM_STARTUPS_PHOTO_URL" 
+              src="https://static.igem.wiki/teams/5642/images/engagement/entrepreneurship/nitroduck1-2.webp" 
               alt="iGEM Startups & European SynBio Hackathon"
               className="w-full h-full object-cover"
             />
@@ -85,7 +85,7 @@ const OurSuccessesSection: React.FC = () => {
         <div className="flex flex-col items-center">
           <div className="w-full aspect-video bg-gray-200 rounded-3xl overflow-hidden mb-4">
             <img 
-              src="LIFBEE_POWERGREENS_PHOTO_URL" 
+              src="https://static.igem.wiki/teams/5642/images/engagement/entrepreneurship/nitroduck1-3.webp" 
               alt="Lifbee & PowerGreens"
               className="w-full h-full object-cover"
             />
@@ -105,7 +105,7 @@ const OurSuccessesSection: React.FC = () => {
         <div className="flex flex-col items-center">
           <div className="w-full aspect-video bg-gray-200 rounded-3xl overflow-hidden mb-4">
             <img 
-              src="POWERGREENS_SYB_MUNI_URL" 
+              src="https://static.igem.wiki/teams/5642/images/engagement/entrepreneurship/nitroduck2-4.webp" 
               alt="PowerGreens at SYB MUNI and Beyond"
               className="w-full h-full object-cover"
             />
@@ -122,7 +122,7 @@ const OurSuccessesSection: React.FC = () => {
         <div className="flex flex-col items-center">
           <div className="w-full aspect-video bg-white rounded-3xl overflow-hidden mb-4 flex items-center justify-center">
             <img 
-              src="WHATS_NEXT_LOGO_URL" 
+              src="https://static.igem.wiki/teams/5642/images/engagement/entrepreneurship/nitroduck.webp" 
               alt="What's next?"
               className="w-2/3 h-2/3 object-contain"
             />

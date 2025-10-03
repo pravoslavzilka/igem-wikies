@@ -3,7 +3,7 @@ import React from 'react';
 
 const NitroDuckSection: React.FC = () => {
   return (
-    <section className="max-w-6xl mx-auto px-8 py-16 bg-white">
+    <section className="max-w-6xl mx-auto px-8 py-0 bg-white">
       {/* NitroDuck Header */}
       <h2 
         className="text-6xl font-bold mb-12"
@@ -28,7 +28,7 @@ const NitroDuckSection: React.FC = () => {
           <p className="text-gray-800 leading-relaxed text-lg">
             Either way, we took part in the{' '}
             <a 
-              href="#" 
+              href="https://startups.igem.org" 
               className="text-blue-600 hover:underline"
             >
               iGEM Startups
@@ -45,7 +45,7 @@ const NitroDuckSection: React.FC = () => {
         <div className="flex items-start justify-center">
           <div className="w-full max-w-md aspect-square bg-gray-200 rounded-3xl overflow-hidden">
             <img 
-              src="NITRODUCK_TEAM_PHOTO_URL" 
+              src="https://static.igem.wiki/teams/5642/images/engagement/entrepreneurship/nitroduck1-7.webp" 
               alt="NitroDuck Team"
               className="w-full h-full object-cover"
             />
@@ -86,10 +86,29 @@ const NitroDuckSection: React.FC = () => {
             nitrogen leaks into soils and waters, causing eutrophication and groundwater contamination (4). As a 
             result,{' '}
             <span className="font-bold">
-              around 60% off all nitrogen is not utilized and leaks into the environment in the whole 
+              around 50% off all nitrogen is not utilized and leaks into the environment in the whole 
               process (6), worth 20 billion dollars each year (7).
             </span>
           </p>
+        </div>
+        
+        {/* Problem Figure */}
+        <div className="mt-12 grid md:grid-cols-[3fr,1fr] gap-8 items-start">
+          <div className="w-full">
+            <img 
+              src="https://static.igem.wiki/teams/5642/images/engagement/entrepreneurship/nitroduck1-5.webp" 
+              alt="Figure 1. Schematic representation of nitrogen-related compound handling in agriculture"
+              className="w-full h-auto rounded-3xl"
+            />
+          </div>
+          <div>
+            <p 
+              className="text-justify text-gray-800 text-base leading-relaxed text-lg"
+              style={{ fontFamily: 'Urbanist, sans-serif' }}
+            >
+              <span className="font-semibold">Figure 1.</span> Schematic representation of nitrogen-related compound handling in agriculture.
+            </p>
+          </div>
         </div>
       </div>
     </section>
