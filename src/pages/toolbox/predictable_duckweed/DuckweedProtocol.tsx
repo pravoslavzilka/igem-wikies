@@ -127,9 +127,9 @@ const DuckweedProtocol = () => {
             </ul>
 
             {/* Additional placeholder images */}
-          <div className="mt-16 grid md:grid-cols-1 gap-4 ">
-            <div className="bg-gray-200 h-32 rounded-lg flex items-center justify-center mb-24">
-              <img src='https://static.igem.wiki/teams/5642/images/toolbox/cultivationprotocol/slide1.webp'  />
+          <div className="mt-2 grid md:grid-cols-1 gap-4 ">
+            <div className="bg-gray-200  rounded-lg flex items-center justify-center mb-2 mt-10">
+              <img src='https://static.igem.wiki/teams/5642/images/toolbox/cultivationprotocol/slide2.webp'  />
             </div>
             <p>
               <p className='text-md  mt-2 urbanist'>
@@ -145,8 +145,8 @@ const DuckweedProtocol = () => {
             </p>
 
 
-            <div className="bg-gray-200 mt-10 mb-10 h-32 rounded-lg flex items-center justify-center">
-              <img src='https://static.igem.wiki/teams/5642/images/toolbox/cultivationprotocol/slide2.webp' />
+            <div className="bg-gray-200 mt-10 mb-2  rounded-lg flex items-center justify-center ">
+              <img src='https://static.igem.wiki/teams/5642/images/toolbox/cultivationprotocol/slide1.webp' />
             </div>
 
             <p className='text-md  mt-2 urbanist'>
