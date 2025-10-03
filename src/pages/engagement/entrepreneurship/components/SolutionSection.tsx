@@ -20,9 +20,9 @@ const SolutionSection: React.FC = () => {
         <p>
           That looked terrible! We had to do something there. We searched for bacteria that could utilize the nitrogen and capture it, even make electricity out of it... well, not the greatest ideas. But we found the superior plant -{' '}
           <span className="font-bold">duckweed</span>. You can read all about it on{' '}
-          <a href="#" className="text-blue-600 hover:underline">Deep Dive on Duckweed</a>
+          <a href="#" className="underline">Deep Dive on Duckweed</a>
           {' '}and{' '}
-          <a href="#" className="text-blue-600 hover:underline">Why Duckweed</a>
+          <a href="#" className="underline">Why Duckweed</a>
           {' '}pages.
         </p>
         
@@ -37,9 +37,9 @@ const SolutionSection: React.FC = () => {
           <span className="font-bold">fed back to livestock</span>
           {' '}that produced the manure! This way, we can{' '}
           <span className="font-bold">close the nitrogen loop right on the farm</span>. Regarding the scientific concept of our solution, you can read more in{' '}
-          <a href="#" className="text-blue-600 hover:underline">Ideation</a>
+          <a href="#" className="underline">Ideation</a>
           {' '}and you can take a look how we actually build the{' '}
-          <a href="#" className="text-blue-600 hover:underline">cultivation system</a>
+          <a href="#" className="underline">cultivation system</a>
           {' '}we envisioned a year and half ago.
         </p>
       </div>
@@ -49,7 +49,7 @@ const SolutionSection: React.FC = () => {
         {/* Image */}
         <div className="w-full md:w-2/3">
           <img 
-            src="SOLUTION_FARM_VISUALIZATION_URL" 
+            src="https://static.igem.wiki/teams/5642/images/engagement/entrepreneurship/nitroduck1-6.webp" 
             alt="Duckweed cultivation system visualization"
             className="w-full h-auto rounded-3xl"
           />

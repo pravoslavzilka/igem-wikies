@@ -50,7 +50,7 @@ const IgemStartupSection: React.FC = () => {
 
         <div className="flex justify-center">
           <img 
-            src="IGEM_JAMBOREE_STAGE_PHOTO_URL" 
+            src="https://static.igem.wiki/teams/5642/images/engagement/entrepreneurship/nitroduck2-2.webp" 
             alt="iGEM Jamboree presentation on stage"
             className="w-full h-auto rounded-3xl"
           />
@@ -61,7 +61,7 @@ const IgemStartupSection: React.FC = () => {
       <div className="grid md:grid-cols-2 gap-8 items-start">
         <div className="flex justify-center">
           <img 
-            src="TEAM_PHOTO_JAMBOREE_URL" 
+            src="https://static.igem.wiki/teams/5642/images/engagement/entrepreneurship/nitroduck2-1.webp" 
             alt="Team photo at iGEM Jamboree"
             className="w-full h-auto rounded-3xl"
           />
