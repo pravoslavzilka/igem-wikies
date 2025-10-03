@@ -1,58 +1,70 @@
 import React, { useState, useRef } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Leaf, ChevronDown } from 'lucide-react';
-import "@fontsource/urbanist";
-import "@fontsource/urbanist/600.css";
-import "@fontsource/space-grotesk";
-import { label } from 'framer-motion/client';
-import path from 'path';
+import { ChevronDown } from 'lucide-react';
 
 const Navbar = () => {
-  const location = useLocation();
-  const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
-  const [dropdownVisible, setDropdownVisible] = useState<string | null>(null);
+  const [hoveredMenu, setHoveredMenu] = useState(null);
+  const [dropdownVisible, setDropdownVisible] = useState(null);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
-
-  const isActive = (path: string) => location.pathname === path;
-  const isActiveGroup = (paths: string[]) => paths.some(path => location.pathname.startsWith(path));
+  const [openDropdown, setOpenDropdown] = useState(null);
+  const timeoutRef = useRef(null);
 
   const menuItems = {
-    project: [
-        { label: 'What', path: '/project/what' },
-        { label: 'Why', path: '/project/why' },
-        { label: 'How', path: '/project/how' },
-      
-    ],
-    toolbox: [
-      { label: 'Why plants suck ', path: '/toolbox/why-plants-suck/' },
-      { label: 'Deep dive on duckweed', path: '/toolbox/deep-dive-on-duckweed' },
-      { label: 'Programmable duckweed', path: '/toolbox/programmable-duckweed' },
-    ],
-    engagement: [
-      { label: 'Human practices', path: '/engagement/human-practices' },
-      { label: 'Entrepreneurship', path: '/engagement/entrepreneurship' },
-      { label: 'Outreach', path: '/engagement/Outreach' },
-      { label: 'Sustainability', path: '/engagement/sustainability' }
-    ],
-    'duckweed-mafia': [
-      { label: 'Team', path: '/duckweed-mafia/team' },
-      { label: 'Sponsors and partners', path: '/duckweed-mafia/partners' },
-      { label: 'Cool statistics', path: '/duckweed-mafia/cool-statistics' },
-      { label: 'Safety', path: '/duckweed-mafia/safety' },
-      { label: 'Attributions', path: '/duckweed-mafia/cool-statistics' }
-    ]
+    project: {
+      title: 'Project',
+      items: [
+        { label: 'Why', sublabel: 'Description', path: '/project/why' },
+        { label: 'What', sublabel: 'Contribution', path: '/project/what' },
+        { label: 'How', sublabel: 'Engineering', path: '/project/how' }
+      ]
+    },
+    toolbox: {
+      title: 'Duckweed Toolbox',
+      items: [
+        { label: 'Part Collection', path: '/toolbox/programmable-duckweed/part-collection' },
+        { 
+          label: 'Programmable Duckweed', 
+          path: '/toolbox/programmable-duckweed',
+          subItems: [
+            { label: 'Plant SynBio', path: '/toolbox/programmable-duckweed/plant-synbio' },
+            { label: 'Protocols', path: '/toolbox/protocols' }
+          ]
+        },
+        { 
+          label: 'Predictable Duckweed', 
+          path: '/toolbox/predictable-duckweed',
+          subItems: [
+            { label: 'Hardware', path: '/toolbox/predictable-duckweed/hardware' },
+            { label: 'Model', path: '/toolbox/predictable-duckweed/model' }
+          ]
+        }
+      ]
+    },
+    engagement: {
+      title: 'Engagement',
+      items: [
+        { label: 'Human Practices', path: '/engagement/human-practices' },
+        { label: 'Entrepreneurship', path: '/engagement/entrepreneurship' },
+        { label: 'Outreach', path: '/engagement/outreach' },
+        { label: 'Sustainability', path: '/engagement/sustainability' }
+      ]
+    },
+    'duckweed-mafia': {
+      title: 'Duckweed Mafia',
+      items: [
+        { label: 'Team', path: '/duckweed-mafia/team' },
+        { label: 'Partners', path: '/duckweed-mafia/partners' },
+        { label: 'Attributions', path: '/duckweed-mafia/attributions' },
+        { label: 'Safety', path: '/duckweed-mafia/safety' }
+      ]
+    }
   };
 
-  // Handles mouse enter: show dropdown immediately
-  const handleMouseEnter = (menu: string) => {
+  const handleMouseEnter = (menu) => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     setHoveredMenu(menu);
     setDropdownVisible(menu);
   };
 
-  // Handles mouse leave: delay hiding dropdown for 500ms
   const handleMouseLeave = () => {
     setHoveredMenu(null);
     timeoutRef.current = setTimeout(() => {
@@ -60,151 +72,88 @@ const Navbar = () => {
     }, 200);
   };
 
-  // Toggle dropdown on click (mobile only)
-  const handleDropdownClick = (menu: string) => {
+  const handleDropdownClick = (menu) => {
     setOpenDropdown(openDropdown === menu ? null : menu);
   };
 
   return (
     <nav className="flex items-center justify-between px-4 py-4 bg-white relative z-50">
-      <Link to="/" className="flex items-center space-x-2">
-        <img style={{  height: '60px', marginLeft: '12px' }} src="https://static.igem.wiki/teams/5642/icons/igem-brno-final-transparent.webp" />
-      </Link>
+      <a href="/" className="flex items-center space-x-2">
+        <img 
+          style={{ height: '60px', marginLeft: '12px' }} 
+          src="https://static.igem.wiki/teams/5642/icons/igem-brno-final-transparent.webp"
+          alt="Logo"
+        />
+      </a>
 
       {/* Desktop menu centered */}
       <div className="hidden md:flex flex-1 justify-center">
         <div className="flex items-center space-x-4 mr-2">
-          {/* Project Main Link */}
-          <div 
-            className="relative"
-            onMouseEnter={() => handleMouseEnter('project')}
-            onMouseLeave={handleMouseLeave}
-          >
-            <button
-              className={`flex items-center space-x-1 border text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer
-                ${isActiveGroup(['/project']) ? 'bg-green-100 text-green-800' : 'bg-gray-50 hover:bg-gray-100'}`}
-                style={{ borderColor: '#779E45', fontFamily: 'Urbanist, sans-serif', borderWidth: '2px', color: '#1B1B1B', lineHeight: '140%', fontSize: '16px', fontWeight: '600' }}
+          {Object.entries(menuItems).map(([key, menu]) => (
+            <div 
+              key={key}
+              className="relative"
+              onMouseEnter={() => handleMouseEnter(key)}
+              onMouseLeave={handleMouseLeave}
             >
-              <span>Project</span>
-              <ChevronDown className="w-4 h-4" />
-            </button>
-            {dropdownVisible === 'project' && (
-              <div
-                className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2
-                  transition-all duration-300 ease-in-out overflow-hidden origin-top"
-                style={{ transformOrigin: 'top' }}
+              <button
+                className="flex items-center space-x-1 border text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer bg-gray-50 hover:bg-gray-100"
+                style={{ 
+                  borderColor: '#779E45', 
+                  fontFamily: 'Urbanist, sans-serif', 
+                  borderWidth: '2px', 
+                  color: '#1B1B1B', 
+                  lineHeight: '140%', 
+                  fontSize: '16px', 
+                  fontWeight: '600' 
+                }}
               >
-                {menuItems.project.map((item) => (
-                  <Link
-                    key={item.path}
-                    to={item.path}
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
-
-          {/* Toolbox Main Link */}
-          <div 
-            className="relative"
-            onMouseEnter={() => handleMouseEnter('toolbox')}
-            onMouseLeave={handleMouseLeave}
-          >
-            <button
-              className={`flex items-center space-x-1 text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer border
-                ${isActiveGroup(['/toolbox']) ? 'bg-green-100 text-green-800' : 'bg-gray-50 hover:bg-gray-100'}`}
-                style={{ borderColor: '#779E45', fontFamily: 'Urbanist, sans-serif', borderWidth: '2px', color: '#1B1B1B', lineHeight: '140%', fontSize: '16px', fontWeight: '600' }}
-            >
-              <span>Toolbox</span>
-              <ChevronDown className="w-4 h-4" />
-            </button>
-            {dropdownVisible === 'toolbox' && (
-              <div
-                className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2
-                  transition-all duration-300 ease-in-out overflow-hidden origin-top"
-                style={{ transformOrigin: 'top' }}
-              >
-                {menuItems.toolbox.map((item) => (
-                  <Link
-                    key={item.path}
-                    to={item.path}
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
-
-          {/* Engagement Main Link */}
-          <div 
-            className="relative"
-            onMouseEnter={() => handleMouseEnter('engagement')}
-            onMouseLeave={handleMouseLeave}
-          >
-            <button
-              className={`flex items-center space-x-1 text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer border
-                ${isActiveGroup(['/engagement']) ? 'bg-green-100 text-green-800' : 'bg-gray-50 hover:bg-gray-100'}`}
-                style={{ borderColor: '#779E45', fontFamily: 'Urbanist, sans-serif', borderWidth: '2px', color: '#1B1B1B', lineHeight: '140%', fontSize: '16px', fontWeight: '600' }}
-            >
-              <span>Engagement</span>
-              <ChevronDown className="w-4 h-4" />
-            </button>
-            {dropdownVisible === 'engagement' && (
-              <div
-                className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2
-                  transition-all duration-300 ease-in-out overflow-hidden origin-top"
-                style={{ transformOrigin: 'top' }}
-              >
-                {menuItems.engagement.map((item) => (
-                  <Link
-                    key={item.path}
-                    to={item.path}
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
-
-          {/* Duckweed Mafia Main Link */}
-          <div 
-            className="relative"
-            onMouseEnter={() => handleMouseEnter('duckweed-mafia')}
-            onMouseLeave={handleMouseLeave}
-          >
-            <button
-              className={`flex items-center space-x-1 text-gray-600 hover:text-gray-800 transition-colors px-4 py-2 rounded-full cursor-pointer border
-                ${isActiveGroup(['/duckweed-mafia']) ? 'bg-green-100 text-green-800' : 'bg-gray-50 hover:bg-gray-100'}`}
-                style={{ borderColor: '#779E45', fontFamily: 'Urbanist, sans-serif', borderWidth: '2px', color: '#1B1B1B', lineHeight: '140%', fontSize: '16px', fontWeight: '600' }}
-            >
-              <span>Duckweed mafia</span>
-              <ChevronDown className="w-4 h-4" />
-            </button>
-            {dropdownVisible === 'duckweed-mafia' && (
-              <div
-                className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2
-                  transition-all duration-300 ease-in-out overflow-hidden origin-top"
-                style={{ transformOrigin: 'top' }}
-              >
-                {menuItems['duckweed-mafia'].map((item) => (
-                  <Link
-                    key={item.path}
-                    to={item.path}
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
+                <span>{menu.title}</span>
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              
+              {dropdownVisible === key && (
+                <div
+                  className="absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg border border-gray-200 py-3 min-w-[240px] transition-all duration-300 ease-in-out overflow-hidden origin-top"
+                  style={{ transformOrigin: 'top' }}
+                >
+                  {menu.items.map((item, index) => (
+                    <div key={index}>
+                      <a
+                        href={item.path}
+                        className="block px-4 py-2.5 hover:bg-gray-50 transition-colors group"
+                      >
+                        <div className="font-semibold text-gray-900 group-hover:text-green-600 transition-colors" 
+                             style={{ fontSize: '15px', fontFamily: 'Urbanist, sans-serif' }}>
+                          {item.label}
+                        </div>
+                        {item.sublabel && (
+                          <div className="text-gray-500 text-sm mt-0.5" 
+                               style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                            {item.sublabel}
+                          </div>
+                        )}
+                      </a>
+                      {item.subItems && (
+                        <div className="ml-4 mt-1 mb-2">
+                          {item.subItems.map((subItem, subIndex) => (
+                            <a
+                              key={subIndex}
+                              href={subItem.path}
+                              className="block px-4 py-1.5 text-md text-gray-600 hover:text-green-600 hover:bg-gray-50 transition-colors"
+                              style={{ fontFamily: 'Urbanist, sans-serif' }}
+                            >
+                              {subItem.label}
+                            </a>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
         </div>
       </div>
 
@@ -213,105 +162,77 @@ const Navbar = () => {
         className="md:hidden flex items-center px-2 py-2 rounded-full bg-white-100 text-green-800"
         onClick={() => setMobileOpen((open) => !open)}
         aria-label="Toggle menu"
-        style={{ borderColor: '#779E45', fontFamily: 'Urbanist, sans-serif', borderWidth: '2px', color: '#1B1B1B', lineHeight: '140%', fontSize: '16px', fontWeight: '600' }}
+        style={{ 
+          borderColor: '#779E45', 
+          fontFamily: 'Urbanist, sans-serif', 
+          borderWidth: '2px', 
+          color: '#1B1B1B', 
+          lineHeight: '140%', 
+          fontSize: '16px', 
+          fontWeight: '600' 
+        }}
       >
-        <ChevronDown className={`w-6 h-6 transform transition-transform ${mobileOpen ? 'rotate-180' : ''}`} 
-        />
+        <ChevronDown className={`w-6 h-6 transform transition-transform ${mobileOpen ? 'rotate-180' : ''}`} />
       </button>
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-200 md:hidden animate-slide-down z-40"
-        style={{ fontFamily: 'Urbanist, sans-serif', color: '#1B1B1B', lineHeight: '140%', fontSize: '16px', fontWeight: '600' }}
+        <div 
+          className="absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-200 md:hidden z-40"
+          style={{ 
+            fontFamily: 'Urbanist, sans-serif', 
+            color: '#1B1B1B', 
+            lineHeight: '140%', 
+            fontSize: '16px', 
+            fontWeight: '600' 
+          }}
         >
           <div className="flex flex-col py-2">
-            {/* Only main links visible */}
-            <button
-              className="block px-4 py-2 font-semibold text-green-700 text-left"
-              onClick={() => setOpenDropdown(openDropdown === 'project' ? null : 'project')}
-            >
-              Project <ChevronDown className="inline w-4 h-4" />
-            </button>
-            {openDropdown === 'project' && (
-              <div>
-                {menuItems.project.map((item) => (
-                  <Link
-                    key={item.path}
-                    to={item.path}
-                    className="block px-6 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
-                    onClick={() => { setMobileOpen(false); setOpenDropdown(null); }}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
+            {Object.entries(menuItems).map(([key, menu]) => (
+              <div key={key}>
+                <button
+                  className="block w-full px-4 py-2 font-semibold text-green-700 text-left"
+                  onClick={() => handleDropdownClick(key)}
+                >
+                  {menu.title} <ChevronDown className="inline w-4 h-4" />
+                </button>
+                {openDropdown === key && (
+                  <div>
+                    {menu.items.map((item, index) => (
+                      <div key={index}>
+                        <a
+                          href={item.path}
+                          className="block px-6 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
+                          onClick={() => { setMobileOpen(false); setOpenDropdown(null); }}
+                        >
+                          <div className="font-semibold">{item.label}</div>
+                          {item.sublabel && (
+                            <div className="text-sm text-gray-500">{item.sublabel}</div>
+                          )}
+                        </a>
+                        {item.subItems && (
+                          <div className="ml-4">
+                            {item.subItems.map((subItem, subIndex) => (
+                              <a
+                                key={subIndex}
+                                href={subItem.path}
+                                className="block px-6 py-1.5 text-sm text-gray-600 hover:bg-gray-50 hover:text-green-600 transition-colors"
+                                onClick={() => { setMobileOpen(false); setOpenDropdown(null); }}
+                              >
+                                {subItem.label}
+                              </a>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
-            )}
-            <button
-              className="block px-4 py-2 font-semibold text-green-700 text-left"
-              onClick={() => setOpenDropdown(openDropdown === 'toolbox' ? null : 'toolbox')}
-            >
-              Toolbox <ChevronDown className="inline w-4 h-4" />
-            </button>
-            {openDropdown === 'toolbox' && (
-              <div>
-                {menuItems.toolbox.map((item) => (
-                  <Link
-                    key={item.path}
-                    to={item.path}
-                    className="block px-6 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
-                    onClick={() => { setMobileOpen(false); setOpenDropdown(null); }}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            )}
-            <button
-              className="block px-4 py-2 font-semibold text-green-700 text-left"
-              onClick={() => setOpenDropdown(openDropdown === 'engagement' ? null : 'engagement')}
-            >
-              Engagement <ChevronDown className="inline w-4 h-4" />
-            </button>
-            {openDropdown === 'engagement' && (
-              <div>
-                {menuItems.engagement.map((item) => (
-                  <Link
-                    key={item.path}
-                    to={item.path}
-                    className="block px-6 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
-                    onClick={() => { setMobileOpen(false); setOpenDropdown(null); }}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            )}
-            <button
-              className="block px-4 py-2 font-semibold text-green-700 text-left"
-              onClick={() => setOpenDropdown(openDropdown === 'duckweed-mafia' ? null : 'duckweed-mafia')}
-            >
-              Duckweed mafia <ChevronDown className="inline w-4 h-4" />
-            </button>
-            {openDropdown === 'duckweed-mafia' && (
-              <div>
-                {menuItems['duckweed-mafia'].map((item) => (
-                  <Link
-                    key={item.path}
-                    to={item.path}
-                    className="block px-6 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
-                    onClick={() => { setMobileOpen(false); setOpenDropdown(null); }}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            )}
-            
+            ))}
           </div>
         </div>
       )}
-
-      
     </nav>
   );
 };
