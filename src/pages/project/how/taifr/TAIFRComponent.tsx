@@ -1,8 +1,10 @@
 import React from 'react';
+import References from '../../../../components/References';
+
 
 const TAIFRComponent = () => {
   return (
-    <div className="min-h-screen bg-white text-lg" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+    <div className="min-h-screen bg-white text-lg text-justify" style={{ fontFamily: 'Urbanist, sans-serif' }}>
       {/* Header */}
       <header className="bg-white border-b border-gray-200">
         <div className="max-w-4xl mx-auto px-8 py-8">
@@ -285,8 +287,7 @@ const TAIFRComponent = () => {
                         in duckweed as well! We even found in the literature that it had already
                         been attempted a few times and was called frond-mediated transformation
                         (10), (11), (12) - since one duckweed “leaf” is called a frond. We
-                        contacted experts, including Dr. Ordóñez from GMI Vienna, who we later
-                        realized is an expert in duckweed genetic engineering. Dr. Ordóñez told us
+                        contacted experts, including Dr. Ordóñez from GMI Vienna, who is an expert in duckweed genetic engineering. Dr. Ordóñez told us
                         that he had also tried all those frond-mediated transformation methods,
                         even contacting their authors, but was not able to replicate any of
                         them...{" "}
@@ -555,6 +556,10 @@ const TAIFRComponent = () => {
 
                 
               </div>
+
+              <h3 className="text-1xl font-bold text-gray-800 text-center" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                See what we discovered during the
+              </h3>
               
               <h3 className="text-2xl font-bold text-gray-800 text-center" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
                 REGENERATION ASSAY
@@ -663,9 +668,12 @@ const TAIFRComponent = () => {
                 
               </div>
               
+              <h3 className="text-1xl font-bold text-gray-800 text-center" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                See what we discovered during the
+              </h3>
+            
               <h3 className="text-2xl font-bold text-gray-800 text-center" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
                 EXCISION ASSAY
-
               </h3>
             </div>
           </div>
@@ -687,6 +695,10 @@ const TAIFRComponent = () => {
 
                 
               </div>
+
+              <h3 className="text-1xl font-bold text-gray-800 text-center" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                See what we discovered during the
+              </h3>
               
               <h3 className="text-2xl font-bold text-gray-800 text-center" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
                 MERISTEMATIC ASSAY
@@ -737,24 +749,46 @@ const TAIFRComponent = () => {
         
       </main>
 
-      {/* Footer with References */}
-      <footer className=" py-8 ">
-        <div className="max-w-4xl mx-auto px-8">
-          <h3 className="text-lg font-bold mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-            References
-          </h3>
-          <div className="text-sm space-y-2" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-            <p>1. Gelvin, S. B. (2017). Integration of Agrobacterium T-DNA into the plant genome. Annual Review of Genetics, 51, 195–217. https://doi.org/10.1146/annurev-genet-120215-035320</p>
-            <p>2. Long, Y., Liu, Q., Rong, S., Li, J., & Guo, S. (2022). New insights into tissue culture plant-regeneration mechanisms. Frontiers in Plant Science, 13, 926752. https://doi.org/10.3389/fpls.2022.926752</p>
-            <p>3. Wang, K.-T., Wang, C.-S., Chang, C.-C., & Huang, H.-J. (2021). Agrobacterium-mediated genetic transformation of Lemna aequinoctialis. Plants, 10(8), 1576. https://doi.org/10.3390/plants10081576</p>
-            <p>4. Ziegler, P., Appenroth, K. J., & Sree, K. S. (2023). Survival strategies of duckweeds, the world's smallest angiosperms. Plants, 12(11), 2215. https://doi.org/10.3390/plants12112215</p>
-            <p>5. Bélanger, J.-G., Nivelle, M.-A., & Tardif, M. (2024). A comprehensive review of in planta stable transformation strategies. Plant Methods, 20, 70. https://doi.org/10.1186/s13007-024-01200-8</p>
-            <p className="text-gray-600">...and 12 more references (see full document for complete list)</p>
-          </div>
-        </div>
-      </footer>
+
+
+      <References references={Reference} />
+
+      
     </div>
   );
 };
 
 export default TAIFRComponent;
+
+
+
+const Reference = [
+    {
+        id: 1,
+        text: "Gelvin, S. B. (2017). Integration of Agrobacterium T-DNA into the plant genome. Annual Review of Genetics, 51, 195–217. https://doi.org/10.1146/annurev-genet-120215-035320",
+        url: "https://doi.org/10.1146/annurev-genet-120215-035320"
+    },
+    {
+        id: 2,
+        text: "Long, Y., Liu, Q., Rong, S., Li, J., & Guo, S. (2022). New insights into tissue culture plant-regeneration mechanisms. Frontiers in Plant Science, 13, 926752. https://doi.org/10.3389/fpls.2022.926752",
+        url: "https://doi.org/10.3389/fpls.2022.926752"
+    },
+    {
+        id: 3,
+        text: "Wang, K.-T., Wang, C.-S., Chang, C.-C., & Huang, H.-J. (2021). Agrobacterium-mediated genetic transformation of Lemna aequinoctialis. Plants, 10(8), 1576. https://doi.org/10.3390/plants10081576",
+        url: "https://doi.org/10.3390/plants10081576"
+    },
+    {
+        id: 4,
+        text: "Ziegler, P., Appenroth, K. J., & Sree, K. S. (2023). Survival strategies of duckweeds, the world's smallest angiosperms. Plants, 12(11), 2215. https://doi.org/10.3390/plants12112215",
+        url: "https://doi.org/10.3390/plants12112215"
+    },
+    {
+        id: 5,
+        text: "Bélanger, J.-G., Nivelle, M.-A., & Tardif, M. (2024). A comprehensive review of in planta stable transformation strategies. Plant Methods, 20, 70. https://doi.org/10.1186/s13007-024-01200-8",
+        url: "https://doi.org/10.1186/s13007-024-01200-8"
+    }
+]
+
+
+

@@ -19,14 +19,11 @@ const CallToActionSection: React.FC = () => {
           
           {/* Top message */}
           <p 
-            className="w-full max-w-[784px] text-sm sm:text-base leading-[168%] text-center"
-            style={{ 
-              fontFamily: 'Space Grotesk, sans-serif',
-              color: 'rgba(23, 31, 22, 0.75)'
-            }}
-          >
-            Duckweed has the potential to became a novel crop, but a lot of pieces are missing
-          </p>
+          className="w-full max-w-[784px] text-lg leading-[168%] text-center font-bold text-[#6ca033]"
+          style={{ fontFamily: 'Space Grotesk, sans-serif' }}
+        >
+          Duckweed has the potential to became a novel crop, but a lot of pieces are missing
+        </p>
 
           {/* Call to action heading with underline */}
           <button

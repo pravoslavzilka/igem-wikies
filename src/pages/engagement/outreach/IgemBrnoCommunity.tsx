@@ -1,12 +1,171 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 export default function IgemBrnoCommunity() {
   return (
     <div className="min-h-screen bg-white font-sans text-lg text-justify">
+
+      <div className='max-w-6xl mx-auto p-6 bg-white'>
+
       {/* Header Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16 px-6">
+
+      <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/outreach1.webp" alt="Duckweed Spotlight" className="w-full h-auto" />
+      <div className="p-6">
+        <h1 className="text-4xl font-bold mb-4 " style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+          Duckweed Spotlight
+        </h1>
+        
+        <div className="flex flex-col md:flex-row items-start gap-6">
+          <div className="flex-1" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+            <p className="text-lg mb-4 text-gray-800">
+              <strong>Science isn't done until it's shared</strong> — ideally in a way 
+              that's <strong>understandable</strong> and a little bit <strong>entertaining!</strong>
+            </p>
+            <p className="mb-4 text-gray-800">
+              With this <strong>mindset</strong>, we <strong>kicked off conversations</strong> at 
+              networking events, <strong>prepared programs</strong> for 
+              science-promotion occasions we took part in, 
+              <strong>organized</strong> our own events, and <strong>connected with 
+              fellow iGEMers</strong> along the way!
+            </p>
+          </div>
+          
+          <div className=" rounded-lg flex items-center justify-center">
+            <img style={{ height: "200px", width: "auto" }} src="https://static.igem.wiki/teams/5642/images/engagement/outreach/outreach2.webp" alt="Outreach Image" className="max-w-full max-h-full" />
+          </div>
+        </div>
+      </div>
+
+      {/* Four Pillars Section */}
+      <div className="px-6 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div  className="bg-green-500 text-center p-4 rounded-lg">
+              <h3 className=" font-bold text-2xl mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                Creating Network
+              </h3>
+              <div className=" mt-10 bg-white rounded-full w-36 h-36 mx-auto mb-2 flex items-center justify-center">
+                <div className=" rounded-full flex items-center justify-center">
+                  <span className="text-md "><a href="#network"><b>Being part of a community</b></a></span>
+                </div>
+              </div>
+              
+            </div>
+
+
+            <div  className="bg-green-500 text-center p-4 rounded-lg">
+              <h3 className=" font-bold text-2xl mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                Communicating Science
+              </h3>
+              <div className="bg-white rounded-full w-36 h-36 mx-auto mb-2 flex items-center justify-center">
+                <div className=" rounded-full flex items-center justify-center">
+                  <span className="text-md "><a href="#communication"><b>Letting the world discover duckweed</b></a></span>
+                </div>
+              </div>
+              
+            </div>
+
+
+            <div  className="bg-green-500 text-center p-4 rounded-lg">
+              <h3 className=" font-bold text-2xl mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                Cultivating Community
+              </h3>
+              <div className="bg-white rounded-full w-36 h-36 mx-auto mb-2 flex items-center justify-center">
+                <div className=" rounded-full flex items-center justify-center">
+                  <span className="text-md "><b><a href="#3hparty">Hosting our own events</a></b></span>
+                </div>
+              </div>
+              
+            </div>
+
+
+
+            <div  className="bg-green-500 text-center p-4 rounded-lg">
+              <h3 className=" font-bold text-2xl mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                Connecting w/ iGEMers
+              </h3>
+              <div className="bg-white rounded-full w-36 h-36 mx-auto mb-2 flex items-center justify-center">
+                <div className=" rounded-full flex items-center justify-center">
+                  <span className="text-md "><b><a href="#igemmeetup">Attending iGEM meetups</a></b></span>
+                </div>
+              </div>
+              
+            </div>
+
+
+          
+        </div>
+      </div>
+
+      {/* Viral Section */}
+      <div className="p-6">
+        <h2 className="text-3xl font-bold mb-6 " style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+          Duckweed goes viral!
+        </h2>
+        
+        <div className="flex flex-col md:flex-row gap-6 items-start">
+          <div className="flex-1" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+            <p className="mb-4 text-lg">
+              <strong>Offline</strong> we can reach hundreds, but <strong>online</strong> 
+              we can reach <strong>thousands</strong>. That's why we 
+              shared our story on <strong>Instagram</strong> and 
+              <strong>LinkedIn</strong>, gave interviews for <strong>articles</strong> and 
+              <strong>reports</strong>, joined <strong>YouTube videos</strong>, and even 
+              made it to <strong>TV</strong>!
+            </p>
+          </div>
+          
+          <div className=" bg-green-500 rounded-lg p-6 text-white min-w-64 flex flex-col md:flex-row items-start ">
+            <h3 className="text-3xl font-bold mb-4 mt-10 mr-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              Circulating <br/> Online
+            </h3>
+            <div className="bg-white rounded-full w-36 h-36 mx-auto mb-4 flex items-center justify-center text-center">
+              <span className="text-md text-black"><a href="#media"><b>Sharing our project online</b></a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Statistics Section */}
+      <div className="p-6 mt-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div>
+            <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              3 000+ <br/>people we<br />talked to
+            </h3>
+            
+          </div>
+          
+          <div>
+            <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              30+ <br /> events we<br />participated in
+            </h3>
+            
+          </div>
+          
+          <div>
+            <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              1 000+ <br /> duckweed<br />cookies
+            </h3>
+           
+          </div>
+          
+          <div>
+            <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              100+ <br /> posts we<br />posted
+            </h3>
+            
+          </div>
+        </div>
+        <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/outreach-3.webp" alt="Duckweed Outreach" className="w-full h-auto mt-6" />
+      </div>
+
+      </div>
+
+
+      {/* Header Section */}
+      <div id='network' className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
+          <h1  className="text-4xl md:text-5xl font-bold mb-4" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
             Creating Network
           </h1>
         </div>
@@ -41,8 +200,11 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Čakám na fotky od Zdenky</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/1.webp" alt="JICnights and Student Meetups" className="  rounded-lg" />
+              </div>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/2.webp" alt="JICnights and Student Meetups" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -75,8 +237,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Velvet Innovation Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/3.webp" alt="JICnights and Student Meetups" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -97,8 +259,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Lifbee Gathering Image</span>
+              <div className=" h-64rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/4.webp" alt="Lifbee Gathering" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -127,8 +289,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Nexteria Contest Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/5.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -151,8 +313,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Boat Networking Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/6.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -182,8 +344,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Prague.bio Conference Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/7.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -207,15 +369,15 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Czech SynBio Node Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/8.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
         </section>
 
         {/* Communicating Science Section Header */}
-        <div className="bg-gradient-to-r from-green-500 to-teal-500 text-white py-12 px-8 rounded-lg mb-12 text-center">
+        <div id='communication' className="bg-gradient-to-r from-green-500 to-teal-500 text-white py-12 px-8 rounded-lg mb-12 text-center">
           <h1 className="text-4xl font-bold" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
             Communicating Science
           </h1>
@@ -238,8 +400,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Czech Hopes Lecture Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/9.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -265,8 +427,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">BrNOC Lecture Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/10.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -289,8 +451,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Easter Hunt Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/11.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -317,8 +479,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">MUNI Day Stand Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/12.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -343,8 +505,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Běstvina Camp Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/13.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -369,8 +531,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Mendel Festival Stand Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/14png.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -398,8 +560,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Science Festival Stand Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/15.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -426,8 +588,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">K-SCUK Camp Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/16.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -455,8 +617,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Garden Party Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/17.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -481,8 +643,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Forbes Conference Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/18.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -505,8 +667,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Dean's Barbecue Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/19.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -532,8 +694,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Researchers' Night Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/20.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -549,7 +711,7 @@ export default function IgemBrnoCommunity() {
         </div>
 
          {/* Header */}
-      <div className="py-16 px-6">
+      <div id='3hparty' className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             (Bio) Hackers, Hipsters and Hustlers Party: a Silicon Valley for a day in Brno!
@@ -901,7 +1063,7 @@ export default function IgemBrnoCommunity() {
 
 
         {/* Connecting w/ iGEMers Section Header */}
-        <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white py-12 px-8 rounded-lg mb-12 text-center">
+        <div id='igemmeetup' className="bg-gradient-to-r from-orange-500 to-red-500 text-white py-12 px-8 rounded-lg mb-12 text-center">
           <h1 className="text-4xl font-bold" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
             Connecting w/ iGEMers
           </h1>
@@ -951,8 +1113,11 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">BFH European Meetup Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/21.webp" alt="Nexteria Kick-off2" className="  rounded-lg" />
+              </div>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/22.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -981,8 +1146,8 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Prague Meetup Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/23.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -1003,12 +1168,12 @@ export default function IgemBrnoCommunity() {
                 developing to reach their goals.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                You can listen to the full ABOA Archives podcast episode with Tereza on Spotify.
+                You can listen to the full ABOA Archives podcast episode with Tereza on <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank' href='https://open.spotify.com/episode/7M5fEDIMieV2dH6tcS3Myr?si=763f5c6f44544899'>Spotify</a>.
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">ABOA Podcast Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/24.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -1037,20 +1202,34 @@ export default function IgemBrnoCommunity() {
           </h2>
           <div className="flex flex-col md:flex-row gap-8 mb-8">
             <div className="flex-1">
-              <p className="text-gray-700 leading-relaxed mb-4">
-                On Instagram, iGEM Brno connected with a broad and younger audience through visually engaging content. 
-                Photos, short videos, and infographics helped us showcase our work in a clear and appealing way. By sharing 
-                behind-the-scenes glimpses of our team and lab, we gave followers an authentic look at what it means to be 
-                part of iGEM – and why science is so exciting.
-              </p>
-              <p className="text-gray-700 leading-relaxed">
-                We teamed up with dozens of science communicators to help raise awareness of SynBio even faster. We 
-                gained 750 followers and up to 180 000 impressions!
-              </p>
+              <>
+                <p style={{ marginBottom: '1rem' }}>
+                  <span style={{ fontWeight: 400 }}>On Instagram, </span>
+                  <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank' href="https://www.instagram.com/igem_brno/">
+                    <span style={{ fontWeight: 400 }}>iGEM Brno</span>
+                  </a>
+                  <span style={{ fontWeight: 400 }}>
+                    {" "}
+                    connected with a broad and younger audience through visually engaging
+                    content. Photos, short videos, and infographics helped us showcase our
+                    work in a clear and appealing way. By sharing behind-the-scenes glimpses
+                    of our team and lab, we gave followers an authentic look at what it means
+                    to be part of iGEM – and why science is so exciting.
+                  </span>
+                </p>
+                <p style={{ marginBottom: '1rem' }}>
+                  <span style={{ fontWeight: 400 }}>
+                    We teamed up with dozens of science communicators to help raise awareness
+                    of SynBio even faster. We gained 750 followers and up to 180 000
+                    impressions!{" "}
+                  </span>
+                </p>
+              </>
+
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Instagram Feed Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/25.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -1064,7 +1243,7 @@ export default function IgemBrnoCommunity() {
           <div className="flex flex-col md:flex-row gap-8 mb-8">
             <div className="flex-1">
               <p className="text-gray-700 leading-relaxed">
-                LinkedIn of iGEM Brno served as our professional stage to present the project in a more expert setting. It 
+                LinkedIn of <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank' href="https://www.linkedin.com/company/igembrno/">iGEM Brno</a> served as our professional stage to present the project in a more expert setting. It
                 allowed us to reach scientists, thank our partners, and strengthen our team's reputation within the academic 
                 and professional community.
               </p>
@@ -1073,11 +1252,10 @@ export default function IgemBrnoCommunity() {
               </p>
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">LinkedIn Profile Image</span>
-              </div>
-            </div>
+          
           </div>
+          </div>
+          
         </section>
 
         {/* Media */}
@@ -1091,21 +1269,52 @@ export default function IgemBrnoCommunity() {
           </h3>
           <div className="flex flex-col md:flex-row gap-8 mb-8">
             <div className="flex-1">
-              <p className="text-gray-700 leading-relaxed mb-4">
-                In April 2025 we managed to partner up with Stisk Online - student multimedia newspaper and MUNI TV - 
-                university-wide student online television. In a short report, we introduced our project, took the audience into 
-                our laboratory, gave a glimpse behind the scenes of duckweed cultivation and highlighted the importance of 
-                our work for sustainable agriculture.
-              </p>
-              <p className="text-gray-700 leading-relaxed">
-                In June, our project was featured in Magazine M, the news portal of Masaryk University. The article was 
-                based on an interview with Matúš, Barča, and Zdenka, who shared insights about our work and its vision for 
-                the future.
-              </p>
+              <>
+                <p style={{ marginBottom: '1rem' }}>
+                  <span style={{ fontWeight: 400 }}>
+                    In April 2025 we managed to partner up with{" "}
+                  </span>
+                  <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank' href="https://youtu.be/eELDWK--g2U?si=bI57_H19ox2hweJD">
+                    <span style={{ fontWeight: 400 }}>Stisk Online</span>
+                  </a>
+                  <span style={{ fontWeight: 400 }}>
+                    {" "}
+                    - student multimedia newspaper and{" "}
+                  </span>
+                  <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank' href="https://youtu.be/EdtBBsQFri4?si=I_ObJwaHtYgVfukB">
+                    <span style={{ fontWeight: 400 }}>MUNI TV</span>
+                  </a>
+                  <span style={{ fontWeight: 400 }}>
+                    {" "}
+                    - university-wide student online television. In&nbsp; a short report, we
+                    introduced our project, took the audience into our laboratory, gave a
+                    glimpse behind the scenes of duckweed cultivation and highlighted the
+                    importance of our work for sustainable agriculture.&nbsp;
+                  </span>
+                </p>
+                <p style={{ marginBottom: '1rem' }}>
+                  <span style={{ fontWeight: 400 }}>
+                    In June, our project was featured in Magazine M, the news portal of
+                    Masaryk University.{" "}
+                  </span>
+                  <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank' href="https://www.em.muni.cz/student/18118">
+                    <span style={{ fontWeight: 400 }}>The article </span>
+                  </a>
+                  <span style={{ fontWeight: 400 }}>
+                    was based on an interview with Matúš, Barča, and Zdenka, who shared
+                    insights about our work and its vision for the future.
+                  </span>
+                </p>
+
+                <p style={{ marginBottom: '1rem' }}>
+                  As our project is also related to engineering, we were also featured in <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank' href="https://www.fme.vutbr.cz/fakulta/zfsi/75795">BUT Faculty of Mechanical Engineering news</a>, where our teammates Pravo and Andrej study. Article highlighted the interdisciplinary nature of our team and how a hardware is applied in our synthetic biology project.
+                </p>
+              </>
+
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">MUNI TV Interview Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/27.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -1118,17 +1327,34 @@ export default function IgemBrnoCommunity() {
           </h3>
           <div className="flex flex-col md:flex-row gap-8 mb-8">
             <div className="flex-1">
-              <p className="text-gray-700 leading-relaxed">
-                At the very beginning of our iGEM journey, the Czech SynBio Node community shared information about the 
-                goals of our project on its website. In August, our team was mentioned in an article about iGEM in the Czech 
-                Republic by BIOTRIN, an association supporting the promotion and development of biotechnology. The 
-                purpose of the association is to provide both the general public and professionals with information about 
-                scientific research and other findings of modern technologies, mainly in connection with GMOs and NBTs.
+              <p>
+                <span style={{ fontWeight: 400 }}>
+                  At the very beginning of our iGEM journey, the Czech SynBio Node community
+                  shared information about the goals of our project on its{" "}
+                </span>
+                <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank' href="https://czechsynbionode.cz/igem-returns-to-brno/">
+                  <span style={{ fontWeight: 400 }}>website</span>
+                </a>
+                <span style={{ fontWeight: 400 }}>
+                  . In August, our team was mentioned in an{" "}
+                </span>
+                <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank' href="https://www.biotrin.cz/igem-svetova-soutez-v-synteticke-biologii-a-nase-ceske-uspechy/">
+                  <span style={{ fontWeight: 400 }}>article</span>
+                </a>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  about iGEM in the Czech Republic by BIOTRIN, an association supporting the
+                  promotion and development of biotechnology. The purpose of the association
+                  is to provide both the general public and professionals with information
+                  about scientific research and other findings of modern technologies, mainly
+                  in connection with GMOs and NBTs.
+                </span>
               </p>
+
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Magazine M Article Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/26.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
@@ -1141,27 +1367,90 @@ export default function IgemBrnoCommunity() {
           </h3>
           <div className="flex flex-col md:flex-row gap-8 mb-8">
             <div className="flex-1">
-              <p className="text-gray-700 leading-relaxed mb-4">
-                To boost the success of our crowdfunding campaign Mendel 2.0, we reached out to journalists who were 
-                inspired by our project's mission. Thanks to their interest, our story quickly gained media attention across 
-                Slovakia and the Czech Republic.
-              </p>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                The campaign launched on September 3rd, with the first article published the same day in the Slovak daily 
-                Startitup. A day later, Hospodářské noviny in the Czech Republic wrote about the "Duckweed Mafia." From 
-                there, the story of a motivated Czechoslovak team aiming to spotlight local science began spreading fast.
-              </p>
-              <p className="text-gray-700 leading-relaxed">
-                On September 16th, our teammates Matúš and Miro appeared live on Slovak Television's morning news. 
-                Soon after, Czech Radio prepared an interview with Klárka, Matúš, Jonáš, and Marko, which aired on 
-                Radiožurnál on September 27th. The campaign and its success were also covered by Ekolist, a Czech online 
-                daily focused on the environment, ecology, and sustainability.
-              </p>
+              <>
+                <p style={{ marginTop: '1rem' }}>
+                  <span style={{ marginTop: '1rem', fontWeight: 400 }}>
+                    To boost the success of our crowdfunding campaign{" "}
+                  </span>
+                  <strong>Mendel 2.0</strong>
+                  <span style={{ fontWeight: 400 }}>
+                    , we reached out to journalists who were inspired by our project’s
+                    mission. Thanks to their interest, our story quickly gained media
+                    attention across Slovakia and the Czech Republic.
+                  </span>
+                </p>
+                <p style={{ marginTop: '1rem' }}>
+                  <span style={{ marginTop: '1rem', fontWeight: 400 }}>The campaign launched on </span>
+                  <strong>September 3rd</strong>
+                  <span style={{ fontWeight: 400 }}>
+                    , with the first article published the same day in the Slovak daily{" "}
+                  </span>
+                  <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank' href="https://www.startitup.sk/mladi-vedci-odisli-zo-slovenska-v-brne-vyvijaju-revolucny-projekt-ktory-moze-zmenit-buducnost-polnohospodarstva/">
+                    <em>
+                      <span style={{ fontWeight: 400 }}>Startitup</span>
+                    </em>
+                  </a>
+                  <span style={{ fontWeight: 400 }}>. A day later, </span>
+                  <em>
+                    <span style={{ fontWeight: 400 }}>Hospodářské noviny</span>
+                  </em>
+                  <span style={{ fontWeight: 400 }}>
+                    {" "}
+                    in the Czech Republic wrote about the
+                  </span>
+                  <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank' href="https://domaci.hn.cz/c1-67782400-zabincova-mafie-studenti-z-brna-vyvinuli-prevratne-krmivo-na-mezinarodni-soutez-vybiraji-od-darcu">
+                    <span style={{ fontWeight: 400 }}> “Duckweed Mafia.”</span>
+                  </a>
+                  <span style={{ fontWeight: 400 }}>
+                    {" "}
+                    From there, the story of a motivated Czechoslovak team aiming to spotlight
+                    local science began spreading fast.
+                  </span>
+                </p>
+                <p style={{ marginTop: '1rem' }}>
+                  <span style={{ fontWeight: 400 }}>On </span>
+                  <strong>September 16th</strong>
+                  <span style={{ fontWeight: 400 }}>
+                    , our teammates Matúš and Miro appeared live on{" "}
+                  </span>
+                  <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank' href="https://www.stvr.sk/televizia/archiv/14026/554573#2714">
+                    <span style={{ fontWeight: 400 }}>Slovak Television’s morning news</span>
+                  </a>
+                  <span style={{ fontWeight: 400 }}>
+                    . Soon after, Czech Radio prepared an interview with Klárka, Matúš, Jonáš,
+                    and Marko, which aired on{" "}
+                  </span>
+                  <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank' href="https://radiozurnal.rozhlas.cz/okrehkem-proti-odlesnovani-nenapadna-rostlina-z-hladin-rybniku-se-mohla-zmenit-9560479">
+                    <em>
+                      <span style={{ fontWeight: 400 }}>Radiožurnál</span>
+                    </em>
+                  </a>
+                  <span style={{ fontWeight: 400 }}> on </span>
+                  <strong>September 27th</strong>
+                  <span style={{ fontWeight: 400 }}>
+                    . The campaign and its success were also covered by{" "}
+                  </span>
+                  <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank' href="https://ekolist.cz/cz/zpravodajstvi/zpravy/studenti-chteji-na-soutezi-v-parizi-predstavit-zabinec-penize-vybrali-rychle">
+                    <em>
+                      <span style={{ fontWeight: 400 }}>Ekolist</span>
+                    </em>
+                  </a>
+                  <span style={{ fontWeight: 400 }}>
+                    , a Czech online daily focused on the environment, ecology, and
+                    sustainability.
+                  </span>
+                </p>
+              </>
+
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Media Coverage Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/28.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
+
+              
+              
+            
             </div>
           </div>
         </section>
@@ -1173,28 +1462,122 @@ export default function IgemBrnoCommunity() {
           </h3>
           <div className="flex flex-col md:flex-row gap-8 mb-8">
             <div className="flex-1">
-              <p className="text-gray-700 leading-relaxed">
-                Duckweed Forum is a quarterly journal published by the International Steering Committee on Duckweed 
-                Research and Applications (ISCDRA). It features expert articles, updates on ongoing projects, community 
-                news, and reviews of key publications, making it a central source of information for anyone interested in 
-                duckweed.
-              </p>
-              <p className="text-gray-700 leading-relaxed mt-4">
-                One of the issues included an interview with our team, conducted by Tsipi Shoham, PhD – CEO and 
-                Co-founder of GreenOnyx (the main sponsor of Duckweed Hackers). We are grateful that this interview 
-                introduced our work to the global duckweed community — for the first, but hopefully not the last, time.
-              </p>
+              <>
+                <p style={{ marginTop: '1rem' }}>
+                  <span style={{ fontWeight: 400 }}>
+                    Duckweed Forum is a quarterly journal published by the International
+                    Steering Committee on Duckweed Research and Applications (ISCDRA). It
+                    features expert articles, updates on ongoing projects, community news, and
+                    reviews of key publications, making it a central source of information for
+                    anyone interested in duckweed.
+                  </span>
+                </p>
+                <p style={{ marginTop: '1rem' }}>
+                  <span style={{ fontWeight: 400 }}>One of the issues included an </span>
+                  <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank' href="http://www.ruduckweed.org/uploads/1/0/8/9/10896289/duckweed_forum_issue_50.pdf">
+                    <span style={{ fontWeight: 400 }}>interview with our team</span>
+                  </a>
+                  <span style={{ fontWeight: 400 }}>
+                    , conducted by Tsipi Shoham, PhD – CEO and Co-founder of GreenOnyx (the
+                    main sponsor of Duckweed Hackers). We are grateful that this interview
+                    introduced our work to the global duckweed community — for the first, but
+                    hopefully not the last, time.
+                  </span>
+                </p>
+              </>
+
             </div>
             <div className="md:w-1/3">
-              <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Duckweed Forum Article Image</span>
+              <div className=" h-64 rounded-lg flex items-center justify-center">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/29.webp" alt="Nexteria Kick-off" className="  rounded-lg" />
               </div>
             </div>
           </div>
         </section>
 
+        <section id='media' className="mt-32 mb-16">
+          <h2 className="text-3xl font-bold mb-8 text-center text-gray-800" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
+            Media Highlights
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg text-center">
+              <div className=" h-32 rounded-lg flex items-center justify-center mb-4">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/bottom/munitv.webp" alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg" />
+              </div>
+              <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a target='_blank' href="https://youtu.be/EdtBBsQFri4?si=I_ObJwaHtYgVfukB">Interview for MUNI TV</a></h4>
+            </div>
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg text-center">
+              <div className=" h-32 rounded-lg flex items-center justify-center mb-4">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/bottom/muni.webp" alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg" />
+              </div>
+              <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a target='_blank' href="https://www.em.muni.cz/student/18118">Article in Magazine M</a></h4>
+            </div>
+            <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg text-center">
+              <div className=" h-32 rounded-lg flex items-center justify-center mb-4">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/bottom/forum.webp" alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg" />
+              </div>
+              <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a target='_blank' href="http://www.ruduckweed.org/uploads/1/0/8/9/10896289/duckweed_forum_issue_50.pdf">Article in Duckweed Forum</a></h4>
+            </div>
+            <div className="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-lg text-center">
+              <div className=" h-32 rounded-lg flex items-center justify-center mb-4">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/bottom/radio.webp" alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg" />
+              </div>
+              <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a target='_blank' href="https://radiozurnal.rozhlas.cz/okrehkem-proti-odlesnovani-nenapadna-rostlina-z-hladin-rybniku-se-mohla-zmenit-9560479">Featured on Radiožurnál</a></h4>
+            </div>
+            <div className="bg-gradient-to-br from-teal-50 to-teal-100 p-6 rounded-lg text-center">
+              <div className=" h-32 rounded-lg flex items-center justify-center mb-4">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/bottom/ekolist.webp" alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg" />
+              </div>
+              <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a target='_blank' href="https://ekolist.cz/cz/zpravodajstvi/zpravy/studenti-chteji-na-soutezi-v-parizi-predstavit-zabinec-penize-vybrali-rychle">Article in Ekolist</a></h4>
+            </div>
+            <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-lg text-center">
+              <div className=" h-32 rounded-lg flex items-center justify-center mb-4">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/bottom/rtvs.webp" alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg" />
+              </div>
+              <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a target='_blank' href="https://www.stvr.sk/televizia/archiv/14026/554573#2714">Slovak Television Morning News</a></h4>
+            </div>
+            <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 p-6 rounded-lg text-center">
+              <div className=" h-32 rounded-lg flex items-center justify-center mb-4">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/bottom/startitup.webp" alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg" />
+              </div>
+              <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a target='_blank' href="https://www.startitup.sk/mladi-vedci-odisli-zo-slovenska-v-brne-vyvijaju-revolucny-projekt-ktory-moze-zmenit-buducnost-polnohospodarstva/">Featured in Startit up</a></h4>
+            </div>
+            <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 p-6 rounded-lg text-center">
+              <div className=" h-32 rounded-lg flex items-center justify-center mb-4">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/bottom/biotron.webp" alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg" />
+              </div>
+              <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a target='_blank' href="https://www.biotrin.cz/igem-svetova-soutez-v-synteticke-biologii-a-nase-ceske-uspechy/">Appearance in Biotron</a></h4>
+            </div>
+            <div className="bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-lg text-center">
+              <div className=" h-32 rounded-lg flex items-center justify-center mb-4">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/bottom/hn.webp" alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg" />
+              </div>
+              <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a target='_blank' href="https://domaci.hn.cz/c1-67782400-zabincova-mafie-studenti-z-brna-vyvinuli-prevratne-krmivo-na-mezinarodni-soutez-vybiraji-od-darcu">Article in Hospodářské noviny</a></h4>
+            </div>
+            <div className="bg-gradient-to-br from-cyan-50 to-cyan-100 p-6 rounded-lg text-center">
+              <div className=" h-32 rounded-lg flex items-center justify-center mb-4">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/bottom/sn-mka-obrazovky-2025-10-01-205522.webp" alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg" />
+              </div>
+              <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a target='_blank' href="https://www.fme.vutbr.cz/fakulta/zfsi/75795">BUT FME News</a></h4>
+            </div>
+            <div className="bg-gradient-to-br from-cyan-50 to-cyan-100 p-6 rounded-lg text-center">
+              <div className=" h-32 rounded-lg flex items-center justify-center mb-4">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/bottom/stisk.webp" alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg" />
+              </div>
+              <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a target='_blank' href="https://youtu.be/eELDWK--g2U?si=bI57_H19ox2hweJD">Stisk online interview</a></h4>
+            </div>
+            <div className="bg-gradient-to-br from-cyan-50 to-cyan-100 p-6 rounded-lg text-center">
+              <div className=" h-32 rounded-lg flex items-center justify-center mb-4">
+                <img src="https://static.igem.wiki/teams/5642/images/engagement/outreach/allevents/bottom/sybnode.webp" alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg" />
+              </div>
+              <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a target='_blank' href="https://czechsynbionode.cz/igem-returns-to-brno/">SynbioNode notice</a></h4>
+            </div>
+          </div>
+        </section>
+
         {/* Timeline Grid at bottom */}
-        <section className="mt-16">
+        <section className="mt-32">
           <h2 className="text-3xl font-bold mb-8 text-center text-gray-800" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
             Event Timeline
           </h2>
@@ -1268,38 +1651,7 @@ export default function IgemBrnoCommunity() {
           </div>
         </section>
 
-        {/* Media highlights grid */}
-        <section className="mt-16 mb-16">
-          <h2 className="text-3xl font-bold mb-8 text-center text-gray-800" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
-            Media Highlights
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg text-center">
-              <div className="bg-gray-200 h-32 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-gray-500">Instagram Feed</span>
-              </div>
-              <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Part of our Instagram feed</h4>
-            </div>
-            <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg text-center">
-              <div className="bg-gray-200 h-32 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-gray-500">MUNI TV</span>
-              </div>
-              <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Interview for MUNI TV</h4>
-            </div>
-            <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg text-center">
-              <div className="bg-gray-200 h-32 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-gray-500">Magazine M</span>
-              </div>
-              <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Article in Magazine M</h4>
-            </div>
-            <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg text-center md:col-span-3">
-              <div className="bg-gray-200 h-32 rounded-lg flex items-center justify-center mb-4 mx-auto max-w-md">
-                <span className="text-gray-500">Duckweed Forum</span>
-              </div>
-              <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}>Article in Duckweed Forum</h4>
-            </div>
-          </div>
-        </section>
+        
 
       </div>
     </div>

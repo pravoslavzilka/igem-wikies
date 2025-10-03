@@ -1,11 +1,8 @@
-import React, { useState, useEffect, useCallback } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
+import React from "react";
+import { ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { pagesData } from "./data/pagesData";
 import ComparisonCard from "./components/ComparisonCard";
-import TabNavigation from "./components/TabNavigation";
-import PageIndicators from "./components/PageIndicators";
 
 interface ComparisonsSectionProps {
   transformationImageUrl?: string;
@@ -20,10 +17,6 @@ const ComparisonsSection: React.FC<ComparisonsSectionProps> = ({
   cultivationImageUrl,
   optimizationImageUrl
 }) => {
-  const [currentPage, setCurrentPage] = useState<number>(0);
-
-  const tabNames = ["Transformation", "Promoters", "Cultivation", "Optimization"];
-  
   const imageUrls = [
     transformationImageUrl,
     promotersImageUrl,
@@ -31,184 +24,115 @@ const ComparisonsSection: React.FC<ComparisonsSectionProps> = ({
     optimizationImageUrl
   ];
 
-  // Auto-scroll functionality
-  const nextPageAuto = useCallback(() => {
-    setCurrentPage((prev: number) => (prev + 1) % pagesData.length);
-  }, []);
-
-  useEffect(() => {
-    const interval = setInterval(nextPageAuto, 15000); // 15 seconds
-    return () => clearInterval(interval);
-  }, [nextPageAuto]);
-
-  // Manual navigation with timer reset
-  const nextPage = () => {
-    setCurrentPage((prev: number) => (prev + 1) % pagesData.length);
-    // Timer will be reset automatically by useEffect dependency
-  };
-
-  const prevPage = () => {
-    setCurrentPage((prev: number) => (prev - 1 + pagesData.length) % pagesData.length);
-    // Timer will be reset automatically by useEffect dependency
-  };
-
-  const goToPage = (index: number) => {
-    setCurrentPage(index);
-    // Timer will be reset automatically by useEffect dependency
-  };
-
   return (
-    <section className="flex flex-col items-center py-12 sm:py-16 lg:py-20 px-4 sm:px-8 lg:px-32 gap-6 sm:gap-8 lg:gap-12 w-full min-h-[642px] bg-white relative">
+    <section className="flex flex-col items-center py-12 sm:py-16 lg:py-20 px-4 sm:px-8 lg:px-32 gap-12 sm:gap-16 lg:gap-20 w-full bg-white">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-6 w-full max-w-[1184px]">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-[120%] text-center text-black w-full sm:w-[284px]">
-          Before
-        </h2>
-        <div className="hidden sm:flex items-center justify-center w-full sm:w-[484px]">
-          <Link 
-            to={pagesData[currentPage].pageUrl}
-            onClick={() => window.scrollTo(0, 0)}
-            className="group flex items-center gap-2 text-2xl sm:text-3xl lg:text-4xl font-semibold leading-[120%] text-center text-[#779E45] hover:text-[#5d7a33] transition-colors"
-          >
-            {pagesData[currentPage].pageTitle}
-            <ExternalLink className="w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 group-hover:scale-110 transition-transform" />
-          </Link>
-        </div>
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-[120%] text-center text-black w-full sm:w-[284px]">
-          Now
+      <div className="flex flex-col items-center gap-4 w-full max-w-[1184px]">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-gray-900">
         </h2>
       </div>
 
-      {/* Navigation Arrows - Hide on mobile */}
-      <button
-        onClick={prevPage}
-        className="hidden sm:block absolute left-4 lg:left-8 top-1/2 transform -translate-y-1/2 z-10 p-2 lg:p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-      >
-        <ChevronLeft className="w-5 h-5 lg:w-6 lg:h-6 text-gray-600" />
-      </button>
-
-      <button
-        onClick={nextPage}
-        className="hidden sm:block absolute right-4 lg:right-8 top-1/2 transform -translate-y-1/2 z-10 p-2 lg:p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-      >
-        <ChevronRight className="w-5 h-5 lg:w-6 lg:h-6 text-gray-600" />
-      </button>
-
-      {/* Page Content */}
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={currentPage}
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -50 }}
-          transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="w-full max-w-[1184px]"
-        >
-          {/* Mobile: Page Title with Link */}
-          <div className="block sm:hidden w-full text-center mb-6">
-            <Link 
-              to={pagesData[currentPage].pageUrl}
-              onClick={() => window.scrollTo(0, 0)}
-              className="group inline-flex items-center gap-2 text-xl font-semibold text-[#779E45] hover:text-[#5d7a33] transition-colors"
-            >
-              {pagesData[currentPage].pageTitle}
-              <ExternalLink className="w-5 h-5 group-hover:scale-110 transition-transform" />
-            </Link>
-          </div>
-
-          {/* Desktop Layout */}
-          <div className="hidden lg:flex justify-between items-center gap-4 h-[280px]">
-            {/* Before Card */}
-            <ComparisonCard
-              type="before"
-              time={pagesData[currentPage].beforeTime}
-              description={pagesData[currentPage].beforeDescription}
-              details={pagesData[currentPage].beforeDetails}
-            />
-
-            {/* Center Image */}
-            <div className="w-[484px] h-[280px] rounded-xl flex items-center justify-center overflow-hidden">
-              {imageUrls[currentPage] ? (
-                <img 
-                  src={imageUrls[currentPage]} 
-                  alt={`${pagesData[currentPage].title} visualization`}
-                  className="w-full h-full object-contain"
-                  onError={(e) => {
-                    console.log(`Failed to load image for ${pagesData[currentPage].title}`);
-                    e.currentTarget.style.display = 'none';
-                  }}
-                />
-              ) : (
-                <div className="text-gray-500 text-lg bg-gradient-to-r from-green-50 to-green-100 w-full h-full flex items-center justify-center">
-                  [{pagesData[currentPage].title} Visualization]
-                </div>
-              )}
+      {/* All Comparisons Stacked */}
+      <div className="flex flex-col gap-16 w-full max-w-[1184px]">
+        {pagesData.map((page, index) => (
+          <div key={page.id} className="flex flex-col gap-6">
+            {/* Page Title with Link - All Screens */}
+            <div className="w-full text-center">
+              <Link 
+                to={page.pageUrl}
+                onClick={() => window.scrollTo(0, 0)}
+                className="group inline-flex items-center gap-2 text-2xl sm:text-3xl font-semibold text-[#779E45] hover:text-[#5d7a33] transition-colors"
+              >
+                {page.pageTitle}
+                <ExternalLink className="w-5 h-5 sm:w-6 sm:h-6 group-hover:scale-110 transition-transform" />
+              </Link>
             </div>
 
-            {/* After Card */}
-            <ComparisonCard
-              type="after"
-              time={pagesData[currentPage].afterTime}
-              description={pagesData[currentPage].afterDescription}
-              details={pagesData[currentPage].afterDetails}
-              accentColor={pagesData[currentPage].accentColor}
-            />
-          </div>
-
-          {/* Mobile & Tablet Layout */}
-          <div className="flex flex-col lg:hidden gap-6">
-            {/* Center Image First */}
-            <div className="w-full max-w-[400px] mx-auto h-[240px] sm:h-[280px] rounded-xl flex items-center justify-center overflow-hidden">
-              {imageUrls[currentPage] ? (
-                <img 
-                  src={imageUrls[currentPage]} 
-                  alt={`${pagesData[currentPage].title} visualization`}
-                  className="w-full h-full object-contain"
-                  onError={(e) => {
-                    console.log(`Failed to load image for ${pagesData[currentPage].title}`);
-                    e.currentTarget.style.display = 'none';
-                  }}
-                />
-              ) : (
-                <div className="text-gray-500 text-base bg-gradient-to-r from-green-50 to-green-100 w-full h-full flex items-center justify-center">
-                  [{pagesData[currentPage].title} Visualization]
-                </div>
-              )}
-            </div>
-
-            {/* Before and After Cards Side by Side */}
-            <div className="grid grid-cols-2 gap-4 w-full">
+            {/* Desktop Layout */}
+            <div className="hidden lg:flex justify-between items-center gap-4 h-[280px]">
+              {/* Before Card */}
               <ComparisonCard
                 type="before"
-                time={pagesData[currentPage].beforeTime}
-                description={pagesData[currentPage].beforeDescription}
-                details={pagesData[currentPage].beforeDetails}
+                time={page.beforeTime}
+                description={page.beforeDescription}
+                details={page.beforeDetails}
               />
+
+              {/* Center Image */}
+              <div className="w-[484px] h-[280px] rounded-xl flex items-center justify-center overflow-hidden">
+                {imageUrls[index] ? (
+                  <img 
+                    src={imageUrls[index]} 
+                    alt={`${page.title} visualization`}
+                    className="w-full h-full object-contain"
+                    onError={(e) => {
+                      console.log(`Failed to load image for ${page.title}`);
+                      e.currentTarget.style.display = 'none';
+                    }}
+                  />
+                ) : (
+                  <div className="text-gray-500 text-lg bg-gradient-to-r from-green-50 to-green-100 w-full h-full flex items-center justify-center">
+                    [{page.title} Visualization]
+                  </div>
+                )}
+              </div>
+
+              {/* After Card */}
               <ComparisonCard
                 type="after"
-                time={pagesData[currentPage].afterTime}
-                description={pagesData[currentPage].afterDescription}
-                details={pagesData[currentPage].afterDetails}
-                accentColor={pagesData[currentPage].accentColor}
+                time={page.afterTime}
+                description={page.afterDescription}
+                details={page.afterDetails}
+                accentColor={page.accentColor}
               />
             </div>
+
+            {/* Mobile & Tablet Layout */}
+            <div className="flex flex-col lg:hidden gap-6">
+              {/* Center Image First */}
+              <div className="w-full max-w-[400px] mx-auto h-[240px] sm:h-[280px] rounded-xl flex items-center justify-center overflow-hidden">
+                {imageUrls[index] ? (
+                  <img 
+                    src={imageUrls[index]} 
+                    alt={`${page.title} visualization`}
+                    className="w-full h-full object-contain"
+                    onError={(e) => {
+                      console.log(`Failed to load image for ${page.title}`);
+                      e.currentTarget.style.display = 'none';
+                    }}
+                  />
+                ) : (
+                  <div className="text-gray-500 text-base bg-gradient-to-r from-green-50 to-green-100 w-full h-full flex items-center justify-center">
+                    [{page.title} Visualization]
+                  </div>
+                )}
+              </div>
+
+              {/* Before and After Cards Side by Side */}
+              <div className="grid grid-cols-2 gap-4 w-full">
+                <ComparisonCard
+                  type="before"
+                  time={page.beforeTime}
+                  description={page.beforeDescription}
+                  details={page.beforeDetails}
+                />
+                <ComparisonCard
+                  type="after"
+                  time={page.afterTime}
+                  description={page.afterDescription}
+                  details={page.afterDetails}
+                  accentColor={page.accentColor}
+                />
+              </div>
+            </div>
+
+            {/* Separator between sections (except last one) */}
+            {index < pagesData.length - 1 && (
+              <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mt-8"></div>
+            )}
           </div>
-        </motion.div>
-      </AnimatePresence>
-
-      {/* Tab Navigation */}
-      <TabNavigation
-        tabNames={tabNames}
-        currentPage={currentPage}
-        goToPage={goToPage}
-      />
-
-      {/* Page Indicators */}
-      <PageIndicators
-        totalPages={pagesData.length}
-        currentPage={currentPage}
-        goToPage={goToPage}
-      />
+        ))}
+      </div>
     </section>
   );
 };

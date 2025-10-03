@@ -4,6 +4,7 @@ import ComparisonsSection from "./ComparisonsSection";
 import IgemNevadaSection from "./components/IgemNevadaSection";
 import Goal6ExperimentalResults from "./components/ExperimentSteps.tsx";
 import ProgressAndFindings from "./components/ProgressAndFindings.tsx";
+
 interface HowLandingProps {
   heroImageUrl?: string;
   transformationImageUrl?: string;
@@ -13,26 +14,30 @@ interface HowLandingProps {
 }
 
 const HowLanding: React.FC<HowLandingProps> = ({
-  heroImageUrl = "https://static.igem.wiki/teams/5642/images/how/howlanding/header-pic-how.webp",
   transformationImageUrl = "https://static.igem.wiki/teams/5642/images/how/howlanding/igem-graf-02.webp",
-  promotersImageUrl = "https://static.igem.wiki/teams/5642/images/how/native-promoters.webp",
+  promotersImageUrl = "https://static.igem.wiki/teams/5642/images/how/promoters-how.webp",
   cultivationImageUrl = "https://static.igem.wiki/teams/5642/images/how/howlanding/cultivator.webp",
   optimizationImageUrl = "https://static.igem.wiki/teams/5642/images/how/howlanding/predictor-how-graf.webp"
 }) => {
   return (
     <div className="relative w-full bg-white" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-      <HeroSection heroImageUrl={heroImageUrl} />
+      <HeroSection />
       <ComparisonsSection 
         transformationImageUrl={transformationImageUrl}
         promotersImageUrl={promotersImageUrl}
         cultivationImageUrl={cultivationImageUrl}
         optimizationImageUrl={optimizationImageUrl}
       />
-      <IgemNevadaSection />
-      <Goal6ExperimentalResults />
-      <ProgressAndFindings />
+      <div className="-mt-8 lg:-mt-12">
+        <IgemNevadaSection />
+      </div>
+      <div className="-mt-8 lg:-mt-12">
+        <Goal6ExperimentalResults />
+      </div>
+      <div className="-mt-8 lg:-mt-12">
+        <ProgressAndFindings />
+      </div>
       <br />
-      
     </div>
   );
 };

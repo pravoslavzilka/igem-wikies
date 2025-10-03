@@ -9,15 +9,15 @@ const accordionData = [
     content: [
       "Czech - and more broadly - European livestock production is heavily reliant on imported high-protein feeds. 66 % of the EU's high‑protein animal feed is imported, and the most widely used source - soybean - accounts for 96 % (1). That is roughly 33 million tons of soy products, at the cost of costing around 14 billion euros (2).",
       "Rising feed costs are hitting farmers hard—feed makes up 55 % of the production cost in poultry, 32% in pigs, and over 14% in cattle (3). Even though meat and milk prices are high, livestock producers continue to see shrinking profit margins (4).",
-      "Quality protein feed is becoming less affordable. Read more on the farmers' burden - farmer HP link"
+      "Quality protein feed is becoming less affordable. Read more on the farmers' burden - Human Practices Page"
     ]
   },
   {
     title: "And the costs go far beyond just money",
     content: [
-      "Conservationists emphasized that Europe's demand for animal feed is a major driver of deforestation abroad. Approximately 75 % of global soybean production is used for animal feed, and its cultivation has been directly linked to large-scale environmental degradation (5).",
+      "Conservationists emphasized that Europe's demand for animal feed is a major driver of deforestation abroad, with approximately 75% of global soybean production used for animal feed and its cultivation directly linked to large-scale environmental degradation (5)..",
       "In Brazil alone, over 5 million hectares of Key Biodiversity Areas – particularly within the tropical savannas of the Cerrado region – have been cleared to make way for soybean monocultures (6).",
-      "These vast soybean plantations not only threaten biodiversity but also contribute to the displacement of Indigenous communities, destruction of native ecosystems, and long-term soil erosion (7). Our soy-based animal feed fuels deforestation and biodiversity losses. Read more on the environmental toll - conservationist HP"
+      "These vast soybean plantations not only threaten biodiversity, but agribusinesses themselves rely on natural resources like water and soil - resources now at risk from unsustainable practices. In response, a new business model is emerging in the Cerrado, where stakeholders aim to boost productivity sustainably through improved practices and new technologies."
     ]
   },
   {

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import References from '../../../components/References';
 
 const DuckweedProtocol = () => {
   return (
@@ -26,12 +27,9 @@ const DuckweedProtocol = () => {
             <span style={{ fontWeight: 400 }}>
               The protocol was greatly inspired by the work of our advisor,&nbsp;
               Dr. Ordonez, who shared a wealth of duckweed knowledge&nbsp;
-              with us – some of it already is already{" "}
+              with us – some of it is already published (2)
             </span>
-            <a style={{ fontWeight: 400, color: 'blue' }} href="https://www.biorxiv.org/content/10.1101/2025.08.28.672806v1.full">
-              <span style={{ fontWeight: 400 }}>published</span>
-            </a>
-            <span style={{ fontWeight: 400 }}>.</span>
+            
           </p>
         </>
 
@@ -87,206 +85,9 @@ const DuckweedProtocol = () => {
               </p>
 
             </div>
+            <img className='mt-8' src='https://static.igem.wiki/teams/5642/images/toolbox/cultivationprotocol/2025-10-01-155700.webp' />
 
-            {/* Stock Solutions Table */}
-            <div className="mt-6">
-              <div className="inline-block border-2 border-black bg-white">
-                {/* Header */}
-                <div className="bg-green-500 text-white text-center py-2 px-4 font-bold">
-                  Modified N-medium
-                </div>
-                
-                {/* Subheader */}
-                <div className="bg-green-300 flex">
-                  <div className="flex-1 text-center py-2 px-4 font-semibold border-r border-black">
-                    Stock solutions (*) (**)
-                  </div>
-                  <div className="w-20 bg-green-500 text-white text-center py-2 px-2 font-bold">
-                    FINAL
-                  </div>
-                </div>
-                
-                {/* Column headers */}
-                <div className="bg-green-300 flex border-t border-black">
-                  <div className="w-24 text-center py-2 px-2 font-semibold border-r border-black">
-                    Stock solution
-                  </div>
-                  <div className="w-32 text-center py-2 px-2 font-semibold border-r border-black">
-                    Compound
-                  </div>
-                  <div className="w-16 text-center py-2 px-2 font-semibold border-r border-black">
-                    [g/L]
-                  </div>
-                  <div className="w-16 text-center py-2 px-2 font-semibold border-r border-black">
-                    [mM]
-                  </div>
-                  <div className="w-20 bg-green-500 text-white text-center py-2 px-2 font-bold">
-                  </div>
-                </div>
-                
-                {/* Data rows */}
-                <div className="bg-green-200">
-                  {/* Row 1 */}
-                  <div className="flex border-t border-black">
-                    <div className="w-24 text-center py-2 px-2 border-r border-black font-semibold">
-                      #1
-                    </div>
-                    <div className="w-32 text-center py-2 px-2 border-r border-black">
-                      KH₂PO₄
-                    </div>
-                    <div className="w-16 text-center py-2 px-2 border-r border-black">
-                      27,22
-                    </div>
-                    <div className="w-16 text-center py-2 px-2 border-r border-black">
-                      200
-                    </div>
-                    <div className="w-20 text-center py-2 px-2 font-semibold">
-                      1 mM
-                    </div>
-                  </div>
-                  
-                  {/* Row 2 */}
-                  <div className="flex border-t border-black">
-                    <div className="w-24 text-center py-2 px-2 border-r border-black font-semibold">
-                      #2
-                    </div>
-                    <div className="w-32 text-center py-2 px-2 border-r border-black">
-                      Ca(NO₃)₂*4H₂O
-                    </div>
-                    <div className="w-16 text-center py-2 px-2 border-r border-black">
-                      47,23
-                    </div>
-                    <div className="w-16 text-center py-2 px-2 border-r border-black">
-                      200
-                    </div>
-                    <div className="w-20 text-center py-2 px-2 font-semibold">
-                      1 mM
-                    </div>
-                  </div>
-                  
-                  {/* Row 3 - KNO₃ */}
-                  <div className="flex border-t border-black">
-                    <div className="w-24 text-center py-2 px-2 border-r border-black font-semibold">
-                      #3
-                    </div>
-                    <div className="w-32 text-center py-2 px-2 border-r border-black">
-                      KNO₃
-                    </div>
-                    <div className="w-16 text-center py-2 px-2 border-r border-black">
-                      161,8
-                    </div>
-                    <div className="w-16 text-center py-2 px-2 border-r border-black">
-                      1600
-                    </div>
-                    <div className="w-20 text-center py-2 px-2 font-semibold">
-                      8 mM
-                    </div>
-                  </div>
-                  
-                  {/* Row 4 - H₃BO₃ */}
-                  <div className="flex border-t border-black">
-                    <div className="w-24 text-center py-2 px-2 border-r border-black">
-                    </div>
-                    <div className="w-32 text-center py-2 px-2 border-r border-black">
-                      H₃BO₃
-                    </div>
-                    <div className="w-16 text-center py-2 px-2 border-r border-black">
-                      0,0618
-                    </div>
-                    <div className="w-16 text-center py-2 px-2 border-r border-black">
-                      1
-                    </div>
-                    <div className="w-20 text-center py-2 px-2 font-semibold">
-                      5 uM
-                    </div>
-                  </div>
-                  
-                  {/* Row 5 - MnCl₂*4H₂O */}
-                  <div className="flex border-t border-black">
-                    <div className="w-24 text-center py-2 px-2 border-r border-black">
-                    </div>
-                    <div className="w-32 text-center py-2 px-2 border-r border-black">
-                      MnCl₂*4H₂O
-                    </div>
-                    <div className="w-16 text-center py-2 px-2 border-r border-black">
-                      0,5145
-                    </div>
-                    <div className="w-16 text-center py-2 px-2 border-r border-black">
-                      2,6
-                    </div>
-                    <div className="w-20 text-center py-2 px-2 font-semibold">
-                      13 uM
-                    </div>
-                  </div>
-                  
-                  {/* Row 6 - Na₂MoO₄*2H₂O */}
-                  <div className="flex border-t border-black">
-                    <div className="w-24 text-center py-2 px-2 border-r border-black">
-                    </div>
-                    <div className="w-32 text-center py-2 px-2 border-r border-black">
-                      Na₂MoO₄*2H₂O
-                    </div>
-                    <div className="w-16 text-center py-2 px-2 border-r border-black">
-                      0,018
-                    </div>
-                    <div className="w-16 text-center py-2 px-2 border-r border-black">
-                      0,08
-                    </div>
-                    <div className="w-20 text-center py-2 px-2 font-semibold">
-                      0,4 uM
-                    </div>
-                  </div>
-                  
-                  {/* Row 7 - MgSO₄*7H₂O */}
-                  <div className="flex border-t border-black">
-                    <div className="w-24 text-center py-2 px-2 border-r border-black">
-                    </div>
-                    <div className="w-32 text-center py-2 px-2 border-r border-black">
-                      MgSO₄*7H₂O
-                    </div>
-                    <div className="w-16 text-center py-2 px-2 border-r border-black">
-                      49,3
-                    </div>
-                    <div className="w-16 text-center py-2 px-2 border-r border-black">
-                      200
-                    </div>
-                    <div className="w-20 text-center py-2 px-2 font-semibold">
-                      1 mM
-                    </div>
-                  </div>
-                  
-                  {/* Row 8 - Fe(II)NaEDTA */}
-                  <div className="flex border-t border-black">
-                    <div className="w-24 text-center py-2 px-2 border-r border-black font-semibold">
-                      #4
-                    </div>
-                    <div className="w-32 text-center py-2 px-2 border-r border-black">
-                      Fe(II)NaEDTA
-                    </div>
-                    <div className="w-16 text-center py-2 px-2 border-r border-black">
-                      1,835
-                    </div>
-                    <div className="w-16 text-center py-2 px-2 border-r border-black">
-                      5
-                    </div>
-                    <div className="w-20 text-center py-2 px-2 font-semibold">
-                      25 uM
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <p className="text-md text-gray-600 mt-2 urbanist">
-                <p>
-                <strong>Table 1. </strong>
-                <span style={{ fontWeight: 400 }}>
-                  Chemical composition of the stock solution from which DCMN is prepared. Keep
-                  stock solutions in fridge to avoid their contamination.&nbsp;
-                </span>
-              </p>
-
-              </p>
-            </div>
+            
           </div>
 
           {/* Material & Equipment */}
@@ -326,13 +127,13 @@ const DuckweedProtocol = () => {
             </ul>
 
             {/* Additional placeholder images */}
-          <div className="mt-10 grid md:grid-cols-1 gap-4 mb-8">
-            <div className="bg-gray-200 h-32 rounded-lg flex items-center justify-center">
-              <span className="text-gray-500 text-xs urbanist text-center">Petri dish setup</span>
+          <div className="mt-2 grid md:grid-cols-1 gap-4 ">
+            <div className="bg-gray-200  rounded-lg flex items-center justify-center mb-2 mt-10">
+              <img src='https://static.igem.wiki/teams/5642/images/toolbox/cultivationprotocol/slide2.webp'  />
             </div>
             <p>
               <p className='text-md  mt-2 urbanist'>
-                <strong>Picture 2. </strong>
+                <strong>Figure 2. </strong>
                 <span style={{ fontWeight: 400 }}>
                   (1) Petri dish with sterile duckweed culture kept as a backup; (2) Ø14 cm
                   glass crystallization pot for maintaining a larger amount of duckweed,
@@ -344,12 +145,12 @@ const DuckweedProtocol = () => {
             </p>
 
 
-            <div className="bg-gray-200 h-32 rounded-lg flex items-center justify-center">
-              <span className="text-gray-500 text-xs urbanist text-center">Glass panel + tray</span>
+            <div className="bg-gray-200 mt-10 mb-2  rounded-lg flex items-center justify-center ">
+              <img src='https://static.igem.wiki/teams/5642/images/toolbox/cultivationprotocol/slide1.webp' />
             </div>
 
             <p className='text-md  mt-2 urbanist'>
-              <strong>Picture 3. </strong>
+              <strong>Figure 3. </strong>
               <span style={{ fontWeight: 400 }}>Culture of </span>
               <em>
                 <span style={{ fontWeight: 400 }}>Spirodela polyrhiza </span>
@@ -375,7 +176,7 @@ const DuckweedProtocol = () => {
           
           
           <p>
-            <strong>Picture 1. </strong>
+            <strong>Figure 1. </strong>
             <span style={{ fontWeight: 400 }}>
               The level of iGEM Brno’s duckweed cultivation at the end of summer should
               not be called “small-scale.” Fortunately, by then our CULTIVATOR was
@@ -412,7 +213,7 @@ const DuckweedProtocol = () => {
                     <strong>1. DISHES</strong>
                     <span style={{ fontWeight: 400 }}>
                       {" "}
-                      (Petri, Ø7 cm) with sterile solid MS medium for each duckweed clone or
+                      (Petri, Ø7 cm) with sterile solid MS medium (1) for each  duckweed clone or
                       transgenic line. This is important because:
                     </span>
                   </li>
@@ -581,9 +382,8 @@ const DuckweedProtocol = () => {
             </h2>
             <div className="urbanist text-gray-700 space-y-3 text-md">
               
-              <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-                <li style={{ fontWeight: 400 }}>
-                  <ul>
+              
+                  <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
                     <li style={{ fontWeight: 400 }}>
                       <span style={{ fontWeight: 400 }}>Spill all duckweed from </span>
                       <strong>trays</strong>
@@ -594,8 +394,7 @@ const DuckweedProtocol = () => {
                       </span>
                     </li>
                     <li style={{ fontWeight: 400 }}>
-                      <span style={{ fontWeight: 400 }}>
-                        Pour new medium into the trays and return duckweed to ~75% confluence
+                      <span style={{ fontWeight: 400 }}>Pour new medium into the trays and return duckweed to ~75% confluence
                         → suitable for transformation on the{" "}
                       </span>
                       <strong>1st</strong>
@@ -608,22 +407,15 @@ const DuckweedProtocol = () => {
                       <span style={{ fontWeight: 400 }}>).</span>
                     </li>
                     <li style={{ fontWeight: 400 }}>
-                      <span style={{ fontWeight: 400 }}>Discard leftover duckweed.</span>
+                      Discard leftover duckweed.
                     </li>
+                    
                   </ul>
-                </li>
-              </ul>
+                
 
             </div>
             
-            <div className="bg-gray-50 p-4 rounded-lg mt-4">
-              <p className="text-md text-gray-700 urbanist">
-                <strong>Transformation:</strong> up to 3 days afterwards at 20to (2) 75% 
-                confluence - suitable for transformation up to a week 
-                afterwards at 75% (3) 82% confluence - Not longer 
-                suitable for transformation.
-              </p>
-            </div>
+            
           </div>
 
           {/* Monthly Workflow */}
@@ -633,9 +425,8 @@ const DuckweedProtocol = () => {
             </h2>
             <div className="urbanist text-gray-700 space-y-3 text-md">
               <ul style={{ listStyleType: 'disc', paddingLeft: '20px' } }>
-                <li style={{ fontWeight: 400 }}>
-                  <ul>
-                    <ul>
+                
+                  
                       <li style={{ fontWeight: 400 }}>
                         <span style={{ fontWeight: 400 }}>
                           Every month subculture sterile fronds.
@@ -675,9 +466,8 @@ const DuckweedProtocol = () => {
                         <strong>two new plates</strong>
                         <span style={{ fontWeight: 400 }}> (4 fronds per plate).</span>
                       </li>
-                    </ul>
-                  </ul>
-                </li>
+                    
+                
                 <li>
                   <strong>Discard</strong>
                   <span style={{ fontWeight: 400 }}> the </span>
@@ -728,66 +518,28 @@ const DuckweedProtocol = () => {
         </div>
       </div>
 
-      {/* References */}
-      <div className="mt-12 border-t pt-8">
-        <h2 className="text-xl font-semibold text-gray-900 mb-4 space-grotesk" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-          REFERENCES
-        </h2>
-        <div className="urbanist text-gray-700 text-md space-y-2">
-          
-          <ul>
-            <li style={{ fontWeight: 400 }}>
-              <ol style={{ listStyleType: 'decimal', paddingLeft: '20px' }}>
-                <li>
-                  <span style={{ fontWeight: 400 }}>
-                    Barragán-Borrero, V., de Santana Lopes, A., Batista, E. D. R., Höfer,
-                    M., Elias, R., Chakraborty, A., Ponce-Mañe, A., Descombes, C.,
-                    Diezma-Navas, L., Petraki, L., Huber, M., Xu, S., &amp; Marí-Ordóñez,
-                    A. (2025, August 28).{" "}
-                  </span>
-                  <em>
-                    <span style={{ fontWeight: 400 }}>
-                      Strain, procedures, and tools for reproducible genetic
-                      transformation and genome editing of
-                    </span>
-                  </em>{" "}
-                  <em>
-                    <span style={{ fontWeight: 400 }}>Spirodela polyrhiza</span>
-                  </em>
-                  <span style={{ fontWeight: 400 }}> (L.) Schleid. bioRxiv. </span>
-                  <a style={{ fontWeight: 400, color: 'blue', textDecoration: 'underline' }} href="https://doi.org/10.1101/2025.08.28.672806">
-                    <span style={{ fontWeight: 400 }}>
-                      https://doi.org/10.1101/2025.08.28.672806
-                    </span>
-                  </a>
-                </li>
-              </ol>
-              <span style={{ fontWeight: 400 }}>2. </span>
-              <span style={{ fontWeight: 400 }}>
-                Murashige, T., &amp; Skoog, F. (1962).{" "}
-              </span>
-              <em>
-                <span style={{ fontWeight: 400 }}>
-                  A revised medium for rapid growth and bio assays with tobacco tissue
-                  cultures
-                </span>
-              </em>
-              <span style={{ fontWeight: 400 }}>. </span>
-              <em>
-                <span style={{ fontWeight: 400 }}>Physiologia Plantarum</span>
-              </em>
-              <span style={{ fontWeight: 400 }}>, </span>
-              <em>
-                <span style={{ fontWeight: 400 }}>15</span>
-              </em>
-              <span style={{ fontWeight: 400 }}>(3), 473–497.</span>
-            </li>
-          </ul>
 
-        </div>
-      </div>
+      <References references={Reference} />  
+
+      
     </div>
   );
 };
 
 export default DuckweedProtocol;
+
+
+
+
+const Reference = [
+    {
+        id: 1,
+        text: "Barragán-Borrero, V., de Santana Lopes, A., Batista, E. D. R., Höfer, M., Elias, R., Chakraborty, A., Ponce-Mañe, A., Descombes, C., Diezma-Navas, L., Petraki, L., Huber, M., Xu, S., & Marí-Ordóñez, A. (2025, August 28). Strain, procedures, and tools for reproducible genetic transformation and genome editing of Spirodela polyrhiza (L.) Schleid. bioRxiv. https://doi.org/10.1101/2025.08.28.672806",
+        url: "https://doi.org/10.1101/2025.08.28.672806"
+    },
+    {
+        id: 2,
+        text: "Murashige, T., & Skoog, F. (1962). A revised medium for rapid growth and bio assays with tobacco tissue cultures. Physiologia Plantarum, 15(3), 473–497."
+    }
+]
+

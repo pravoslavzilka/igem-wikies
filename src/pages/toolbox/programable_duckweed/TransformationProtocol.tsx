@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import TextModal, {textSlide} from '../../../components/ui/TextModal.tsx';
+import { Link } from 'react-router-dom';
+import References from '../../../components/References.tsx';
 
 
 
@@ -10,7 +12,6 @@ const agrobacteriumInfection: textSlide[] = [
         description: [
             "50g/l sucrose",
             "1 g/l MgCl2 (10mM final)",
-            "Opaque acrylic to suppress algae growth",
             "pH 5.2 - 5.5 (measure by pH strips as there is not enough salts to properly measure by pH meter)",
             "40 mg/l acetosyringone",
         ],
@@ -32,9 +33,22 @@ const appropriateAntibiotic: textSlide[] = [
 ];
 
 
+const dcmn: textSlide[] = [ 
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/watercycle/water-cycle-schema-old.webp",
+        title: "DPIM",
+        description: [
+            "DCMN + 400mg/l of Cefotaxime + 400mg/l of Ticarcillin",
+           
+        ],
+    },
+];
+
+
 const TransformationProtocol = () =>  {
   const [isOpenagrobacteriumInfection, setIsOpenagrobacteriumInfection] = useState(false);
   const [isOpenAntibioticSlides, setIsOpenAntibioticSlides] = useState(false);
+  const [isOpenDcmnSlides, setIsOpenDcmnSlides] = useState(false);
   return (
     <div className="max-w-6xl mx-auto p-6 bg-white text-lg text-justify">
       
@@ -45,8 +59,7 @@ const TransformationProtocol = () =>  {
         
         <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-8">
           <p className="text-gray-800 leading-relaxed" style={{fontFamily: 'Urbanist'}}>
-            This protocol follows and builds on the approach described by Arturo 
-            Mari-Ordonez (Dombey <em>et al.</em>, 2025) from the Gregor Mendel Institute in Vienna.
+            This protocol follows and builds on the approach described by Ordóñez Lab (1)  from the Gregor Mendel Institute in Vienna.
           </p>
         </div>
 
@@ -111,21 +124,7 @@ const TransformationProtocol = () =>  {
                 <li>1:500 dilution typically reaches OD₆₀₀ = 0.7 in 12 - 18 hours (depending on your construct)</li>
                 <li>1:100 dilution typically reaches OD₆₀₀ = 0.7 in 6 - 12 hours</li>
               </ul>
-              <p className="text-gray-700"><strong>3)</strong> Pellet culture by centrifugation (20 min, 3000 g). Leave ~0.1 cm LB above pellet 
-                to avoid stress.</p>
-              <p className="text-gray-700"><strong>4)</strong> Resuspend pellet gently in <button onClick={() => setIsOpenagrobacteriumInfection(true)} className=" text-bold"><span className='text-green-600'><b>AIM</b></span></button> (Agrobacterium Infiltration Medium).</p>
-              <ul className="text-gray-700 space-y-1 ml-6 list-disc">
-                <li>Resuspend to final OD₆₀₀ = 0.7</li>
-                <li>25-30 ml of Agrobacterium solution (OD₆₀₀ = 0.7) results in 2 plates of transformed duckweed (confluence 50-75 %)</li>
-              </ul>
-              <p className="text-gray-700"><strong>5)</strong> Add acetosyringone to final concentration of 40 mg/L. Adjust pH to 5.5. 
-                Incubate 1 h at 28°C, 100 rpm, protected from light.</p>
-              <div className="bg-red-50 border border-red-300 p-3 mt-4">
-                <p className="text-red-800 font-medium">
-                  <strong>NOTE 2:</strong> Do not let Agrobacterium grow over OD₆₀₀ = 3. Overgrown cells are 
-                  stressed and inefficient at T-DNA transfer.
-                </p>
-              </div>
+              
             </div>
           </div>
 
@@ -135,11 +134,24 @@ const TransformationProtocol = () =>  {
               Day 3 • VACUUM INFILTRATION
             </h2>
             <div className="space-y-2" style={{fontFamily: 'Urbanist'}}>
-              <p className="text-gray-700"><strong>1)</strong> Just before infiltration, add Silwet L-77 to Agrobacterium solution (final 
-                concentration: 0.02%).</p>
-              <p className="text-gray-700"><strong>2)</strong> Transfer fronds into Agrobacterium solution. Apply vacuum (−70 kPa) for 5 - 10 
-                minutes (depending on clone - see our vacuum transformation optimization page).</p>
-              <p className="text-gray-700"><strong>3)</strong> Release the vacuum slowly while gently swirling.</p>
+              <p className="text-gray-700"><strong>1)</strong> Pellet culture by centrifugation (20 min, 3000 g). Leave ~0.1 cm LB above pellet 
+                to avoid stress.</p>
+              <p className="text-gray-700"><strong>2)</strong> Resuspend pellet gently in <button onClick={() => setIsOpenagrobacteriumInfection(true)} className=" text-bold"><span className='text-green-600'><b>AIM</b></span></button> (Agrobacterium Infiltration Medium).</p>
+              <ul className="text-gray-700 space-y-1 ml-6 list-disc">
+                <li>Resuspend to final OD₆₀₀ = 0.7</li>
+                <li>25-30 ml of Agrobacterium solution (OD₆₀₀ = 0.7) results in 2 plates of transformed duckweed (confluence 50-75 %)</li>
+              </ul>
+              <p className="text-gray-700"><strong>3)</strong> Add acetosyringone to final concentration of 40 mg/L. Adjust pH to 5.5. 
+                Incubate 1 h at 28°C, 100 rpm, protected from light.</p>
+              <div className="bg-red-50 border border-red-300 p-3 mt-4">
+                <p className="text-red-800 font-medium">
+                  <strong>NOTE 2:</strong> Do not let Agrobacterium grow over OD₆₀₀ = 3. Overgrown cells are 
+                  stressed and inefficient at T-DNA transfer.
+                </p>
+              </div>
+              <p className="text-gray-700"><strong>4)</strong> Transfer fronds into Agrobacterium solution. Apply vacuum (−70 kPa) for 10 minutes.</p>
+              <p className="text-gray-700"><strong>5)</strong> Release the vacuum slowly while gently swirling.</p>
+              <p className="text-gray-700"><strong>6)</strong> Wash infiltrated duckweeds in dH20 for 60 seconds to get rid of AIM with sucrose.</p>
               <div className="bg-red-50 border border-red-300 p-3 mt-4">
                 <p className="text-red-800 font-medium">
                   <strong>NOTE 3:</strong> Swirling during vacuum infiltration ensures dorsal stomata are exposed 
@@ -162,26 +174,21 @@ const TransformationProtocol = () =>  {
                   <p className="text-sm text-gray-600">Vacuum infiltration</p>
                 </div>
               </div>
-            </div>
-          </div>
 
-          {/* Day 3 - Post-infiltration */}
-          <div className="bg-white p-6 border border-gray-300 border-l-4 border-l-orange-600">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4" style={{fontFamily: 'Space Grotesk'}}>
-              Day 3 • POST-INFILTRATION HANDLING
-            </h2>
-            <div className="space-y-2" style={{fontFamily: 'Urbanist'}}>
-              <p className="text-gray-700"><strong>1)</strong> Split the infiltrated duckweed and Agrobacterium suspension into plates.</p>
-              <p className="text-gray-700"><strong>2)</strong> Add DCMN medium (link na duckweed cultivation protocol) (~25 mL per 
-                plate) to dilute AIM.</p>
-              <p className="text-gray-700"><strong>3)</strong> Do not seal plates.</p>
+              <div className="space-y-2" style={{fontFamily: 'Urbanist'}}>
+              <p className="text-gray-700"><strong>7)</strong> Put the infiltrated duckweed and Agrobacterium suspension into plates</p>
+              <p className="text-gray-700"><strong>8)</strong> Add <Link className='text-green-600 font-bold' to="/toolbox/predictable-duckweed-protocol/">DCMN</Link> (25 - 30 mL per plate). Do not seal plates.</p>
+              
               <div className="bg-red-50 border border-red-300 p-3 mt-4">
                 <p className="text-red-800 font-medium">
                   <strong>NOTE 4:</strong> Unsealed plates allow easier medium changes and microscopy.
                 </p>
               </div>
             </div>
+            </div>
           </div>
+
+          
 
           {/* Day 4-5 */}
           <div className="bg-white p-6 border border-gray-300 border-l-4 border-l-teal-600">
@@ -201,11 +208,16 @@ const TransformationProtocol = () =>  {
 
           {/* Day 6 */}
           <div className="bg-white p-6 border border-gray-300 border-l-4 border-l-indigo-600">
+            <TextModal
+            slides={dcmn}
+            isOpen={isOpenDcmnSlides}
+            onClose={() => setIsOpenDcmnSlides(false)}
+            />
             <h2 className="text-2xl font-semibold text-gray-900 mb-4" style={{fontFamily: 'Space Grotesk'}}>
               Day 6 • ELIMINATING AGROBACTERIUM
             </h2>
             <div className="space-y-2" style={{fontFamily: 'Urbanist'}}>
-              <p className="text-gray-700"><strong>1)</strong> Transfer fronds to Duckweed Post-Infiltration Medium (<span className="text-red-600 font-semibold">DPIM</span>).</p>
+              <p className="text-gray-700"><strong>1)</strong> Transfer fronds to Duckweed Post-Infiltration Medium (<span className="text-red-600 font-semibold"><button onClick={() => setIsOpenDcmnSlides(true)}>DPIM</button></span>).</p>
               <p className="text-gray-700"><strong>2)</strong> Incubate at 21°C, 16/8 photoperiod, 200 µmol/m²/s light.</p>
               <p className="text-gray-700"><strong>3)</strong> Refresh medium every 6 days.</p>
             </div>
@@ -235,8 +247,21 @@ const TransformationProtocol = () =>  {
       </div>
       </div>
     </div>
+
+    <References references={Reference} />
+
     </div>
   );
 }
 
 export default TransformationProtocol;
+
+
+
+const Reference = [
+    {
+        id: 1,
+        text: "Barragán-Borrero, V., de Santana Lopes, A., Rodrigues Batista, E. D., Höfer, M., Elias, R., Chakraborty, A., Ponce-Mañe, A., Descombes, C., Diezma-Navas, L., Petraki, L., Huber, M., Xu, S., & Marí-Ordóñez, A. (2025). Strain, procedures, and tools for reproducible genetic transformation and genome editing of Spirodela polyrhiza (L.) Schleid [Preprint]. bioRxiv. https://doi.org/10.1101/2025.08.28.672806",
+        url: "https://doi.org/10.1101/2025.08.28.672806"
+    }
+]

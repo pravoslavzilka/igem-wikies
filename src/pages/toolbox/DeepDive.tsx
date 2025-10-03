@@ -110,22 +110,74 @@ export default function DuckweedDocument() {
               reproduce sexually by flowering, however, it is rare in nature [9].
             </p>
 
-            <p className="mb-6">
-              Duckweeds inhabit the surface of small and shallow water bodies across a wide latitudinal 
-              range, from tropical to boreal zones. Local dispersal is facilitated by flowing water and 
-              occasionally strong winds, while transfer on long-distance or between isolated water 
-              bodies is frequently mediated epizoochorously by birds [10] and aquatic mammals [11]. 
-              Combined with rapid vegetative propagation, these dispersal mechanisms enable efficient 
-              colonisation and potential invasion of new aquatic habitats.
-            </p>
+            
 
            </div> 
+           
+           </div>
+
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+
+              <div className="col-span-2">
+                    <p className="mb-4">
+                      Duckweeds inhabit the surface of small and shallow water bodies across a wide latitudinal range, from tropical to boreal zones. Local dispersal is facilitated by flowing water and occasionally strong winds, while transfer on long-distance or between isolated water bodies is frequently mediated epizoochorously by birds [10] and aquatic mammals [11]. Combined with rapid vegetative propagation, these dispersal mechanisms enable efficient colonisation and potential invasion of new aquatic habitats.
+
+                    </p>
+
+                  
+
+              </div>
+                <div className="col-span-1">
+                      <div className="  rounded-lg">
+                        <img style={{ objectFit: 'cover', width: '800px', height: '300px' }} src="https://static.igem.wiki/teams/5642/images/toolbox/deepdiveonduckweed/pxl-20250622-100022837.webp" alt="Duckweed Anatomy Diagram" className=" rounded-lg" />
+                      </div>
+
+
+                </div>
+
+           </div>
+
+
+
+
+           <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mt-16'>
+
+
+              <div className="col-span-1">
+                      <div className="   rounded-lg">
+                        <img style={{   maxHeight: '400px' }} src="https://static.igem.wiki/teams/5642/images/toolbox/deepdiveonduckweed/why-duckweed.webp" alt="Duckweed Anatomy Diagram" className=" rounded-lg" />
+                      </div>
+
+
+                </div>
+
+              <div className="col-span-2">
+                    <h2 className="text-3xl font-bold mb-8">Why duckweed?</h2>
+
+                    <p className="mb-4">
+                      Duckweed combines several advantageous traits: its compact size, simple body plan, floating lifestyle that facilitates harvesting, rapid clonal propagation, and resilience to a wide range of environmental conditions, including fluctuating light, temperature, pH, and variable nutrient levels [12], [13], [14]. In addition, duckweeds possess comparatively small genomes for monocot plants, with a marked reduction in gene numbers and absence of RNA silencing mechanisms [15]. Together, these features render duckweed an optimal model organism for genetic engineering applications and large-scale cultivation.
+
+                    </p>
+
+                    <p className="mb-4">
+
+                      Moreover, duckweeds can reach high levels of protein [16] or starch [17] content and generally exhibit an outstanding capacity to absorb substances from their surroundings [18]. Taken together, these traits open the door to a wide range of potential applications. Each genus, however, as well as each individual strain, possesses distinct strengths and limitations with respect to practical applications.
+
+                    </p>
+
+                  
+
+              </div>
+                
+
+           </div>
+
+            
 
            
-            
-           </div>
-           
       </div>
+
+
 
       
 
@@ -141,7 +193,7 @@ export default function DuckweedDocument() {
                 Spirodela occupies a basal position within the Lemnoidae. Despite having the largest body plan among 
                 duckweeds, it is characterised by a remarkably small genome size and one of the most reduced gene 
                 repertoires of any known plant. <em>S. polyrrhiza</em> possesses a genome of approximately 158 Mb, 
-                comprising 19,623 protein-coding genes [13], which is roughly 30% less than reported for 
+                comprising 19,623 protein-coding genes [19], which is roughly 30% less than reported for 
                 <em>Arabidopsis thaliana</em>. As a result, Spirodela serves as an excellent model for genomic research 
                 and the study of highly conserved core pathways in plants.
               </p>
@@ -160,7 +212,7 @@ export default function DuckweedDocument() {
               <p>
                 <em>Landoltia punctata</em> is the sole representative of the genus Landoltia. It has shown remarkable 
                 ability to rapidly accumulate a high starch content (about 45 – 60 % of dry weight) under optimised 
-                cultivation conditions [14], [15], making it a promising candidate for bioethanol production.
+                cultivation conditions [20], [21], making it a promising candidate for bioethanol production.
               </p>
             </div>
             <div className=" w-full md:w-48  flex items-center justify-center rounded-lg">
@@ -179,8 +231,8 @@ export default function DuckweedDocument() {
                 successfully that they are considered invasive. The most notorious of them is <em>L. minuta</em> [4]. 
                 This very ubiquity has ensured that members of this genus, particularly <em>L. minor</em> and 
                 <em>L. gibba</em>, are already used in a range of practical applications. Examples include their use 
-                in the phytoremediation of polluted water bodies [16] and as model organisms in ecotoxicological 
-                testing [17].
+                in the phytoremediation of polluted water bodies [22] and as model organisms in ecotoxicological 
+                testing [23].
               </p>
             </div>
            
@@ -197,19 +249,19 @@ export default function DuckweedDocument() {
             <div className="flex-1">
               <p className="mb-4">
                 Members of the genus Wolffia are known for their use as animal feed. In Northern Thailand, Laos, and 
-                Myanmar, <em>W. globosa</em> is even a part of traditional diet of local people [18], [19]. Their 
+                Myanmar, <em>W. globosa</em> is even a part of traditional diet of local people [24], [25]. Their 
                 suitability for human consumption is further supported by their excellent protein composition, rich 
-                phytosterol content [20], and the fact that, unlike other duckweed genera, Wolffia species do not 
-                accumulate oxalates as calcium oxalate crystals, which may pose health risks [21]. Top-scoring specie 
+                phytosterol content [26], and the fact that, unlike other duckweed genera, Wolffia species do not 
+                accumulate oxalates as calcium oxalate crystals, which may pose health risks [27]. Top-scoring specie 
                 is however <em>W. microscopica</em> (clone 2005) with its optimal amino acid profile, dietary 
-                stearidonic acid presence [20] and record doubling time of 29.3 hours, gaining it a title of a 
+                stearidonic acid presence [26] and record doubling time of 29.3 hours, gaining it a title of a 
                 fastest-growing angiosperm. Similarly rapid propagation is observed in <em>Wolffia globosa</em> clone 
                 9498 exhibiting a doubling time of 29.8 hours [8].
               </p>
               <p>
                 Another interesting specie is <em>W. australiana</em>, which has the smallest genome within the genus 
                 (354 Mb) and even greater reduction in the number of predicted protein-coding genes (~15 thousand). 
-                This genetic simplification correlates with the minimal tissue complexity and absence of roots [22].
+                This genetic simplification correlates with the minimal tissue complexity and absence of roots [28].
               </p>
             </div>
             <div className=" w-full md:w-48  flex items-center justify-center rounded-lg">
@@ -226,7 +278,7 @@ export default function DuckweedDocument() {
               <p>
                 Wolffiella shares several characteristics with the genus Wolffia. The plant forms extremely small fronds, 
                 lacks roots, and certain species, in particular <em>W. hyalina</em>, have been proposed as a potential 
-                food source for humans due to their high protein content (35%) and favourable amino acid composition [19].
+                food source for humans due to their high protein content (35%) and favourable amino acid composition [25].
               </p>
             </div>
             <div className=" w-full md:w-48  flex items-center justify-center rounded-lg">
@@ -265,7 +317,7 @@ const Reference = [
     },
     {
         id: 3,
-        text: "'duckweed', Wiktionary, the free dictionary. July 09, 2025. Accessed: Aug. 04, 2025.",
+        text: "'duckweed', Wiktionary, the free dictionary. July 09, 2025. Accessed: Aug. 04, 2025. [Online]. Available: https://en.wiktionary.org/w/index.php?title=duckweed&oldid=85497111",
         url: "https://en.wiktionary.org/w/index.php?title=duckweed&oldid=85497111"
     },
     {
@@ -346,7 +398,7 @@ const Reference = [
     },
     {
         id: 23,
-        text: "OECD, 'Test No. 221: Lemna sp. Growth Inhibition Test', OECD. Accessed: Aug. 07, 2025.",
+        text: "OECD, 'Test No. 221: Lemna sp. Growth Inhibition Test', OECD. Accessed: Aug. 07, 2025. [Online]. Available: https://www.oecd.org/en/publications/test-no-221-lemna-sp-growth-inhabition-test_9789264016194-en.html",
         url: "https://www.oecd.org/en/publications/test-no-221-lemna-sp-growth-inhabition-test_9789264016194-en.html"
     },
     {
@@ -370,3 +422,5 @@ const Reference = [
         text: "T. P. Michael et al., 'Genome and time-of-day transcriptome of Wolffia australiana link morphological minimization with gene loss and less growth control', Genome Res., vol. 31, no. 2, pp. 225–238, Jan. 2021, doi: 10.1101/gr.266429.120."
     }
 ]
+
+

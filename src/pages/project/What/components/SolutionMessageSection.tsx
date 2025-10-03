@@ -4,7 +4,7 @@ const SolutionMessageSection: React.FC = () => {
   const synBioSolutions = [
     "Engineering bacteria to fix nitrogen faster",
     "Engineering soybean for enhanced protein content", 
-    "Drought resistance"
+    "Engineering soybean for drought resistance"
   ];
 
   return (
@@ -43,7 +43,8 @@ const SolutionMessageSection: React.FC = () => {
 
         {/* Bottom message */}
         <p 
-          className="text-base sm:text-lg leading-[168%] text-center text-black/75 max-w-none"
+          className="text-base sm:text-xl leading-[168%] text-center text-[#6ca033] max-w-none font-bold"
+
           style={{ fontFamily: 'Space Grotesk, sans-serif' }}
         >
           But that would only reinforce the unsustainable status quo. We wanted to uproot it!
