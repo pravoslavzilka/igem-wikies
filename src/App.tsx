@@ -32,7 +32,7 @@ import ToolboxDownloads from './pages/toolbox/Downloads';
 
 import SustainabilityDocument from './pages/project/Why/Sustainability';
 
-import LivingLayersDocument from './pages/project/how/Cultivator';
+import LivingLayersDocument from './pages/project/how/Cultivator/Cultivator.tsx';
 import WhyPlantsSuck from './pages/toolbox/WhyPlantsSuck';
 import DuckweedProtocol from './pages/toolbox/predictable_duckweed/DuckweedProtocol';
 import TransformationProtocol from './pages/toolbox/programable_duckweed/TransformationProtocol';

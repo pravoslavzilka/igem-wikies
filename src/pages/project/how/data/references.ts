@@ -25,4 +25,9 @@ export const cultivatorReferences: Reference[] = [
         text: "GitHub - MartinPavella/BioReactorNode ",
         url: "https://github.com/MartinPavella/BioReactorNode"
     },
+    {
+        id: 5,
+        text: "GitHub - pravoslavzilka/igem-hardware-models ",
+        url: "https://github.com/pravoslavzilka/igem-hardware-models"
+    },
 ]
