@@ -25,7 +25,7 @@ const ComparisonsSection: React.FC<ComparisonsSectionProps> = ({
   ];
 
   return (
-    <section className="flex flex-col items-center py-12 sm:py-16 lg:py-20 px-4 sm:px-8 lg:px-32 gap-12 sm:gap-16 lg:gap-20 w-full bg-white">
+    <section className="flex flex-col items-center pt-0 pb-12 sm:pb-16 lg:pb-20 px-4 sm:px-8 lg:px-32 gap-6 sm:gap-8 lg:gap-10 w-full bg-white">
       {/* Header */}
       <div className="flex flex-col items-center gap-4 w-full max-w-[1184px]">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-gray-900">
@@ -33,15 +33,15 @@ const ComparisonsSection: React.FC<ComparisonsSectionProps> = ({
       </div>
 
       {/* All Comparisons Stacked */}
-      <div className="flex flex-col gap-16 w-full max-w-[1184px]">
+      <div className="flex flex-col gap-8 w-full max-w-[1184px]">
         {pagesData.map((page, index) => (
-          <div key={page.id} className="flex flex-col gap-6">
+          <div key={page.id} className="flex flex-col gap-2">
             {/* Page Title with Link - All Screens */}
             <div className="w-full text-center">
               <Link 
                 to={page.pageUrl}
                 onClick={() => window.scrollTo(0, 0)}
-                className="group inline-flex items-center gap-2 text-2xl sm:text-3xl font-semibold text-[#779E45] hover:text-[#5d7a33] transition-colors"
+                className="group inline-flex items-center gap-2 text-2xl sm:text-3xl font-semibold text-[#779E45] hover:text-[#5d7a33] transition-colors uppercase"
               >
                 {page.pageTitle}
                 <ExternalLink className="w-5 h-5 sm:w-6 sm:h-6 group-hover:scale-110 transition-transform" />
@@ -88,7 +88,7 @@ const ComparisonsSection: React.FC<ComparisonsSectionProps> = ({
             </div>
 
             {/* Mobile & Tablet Layout */}
-            <div className="flex flex-col lg:hidden gap-6">
+            <div className="flex flex-col lg:hidden gap-4">
               {/* Center Image First */}
               <div className="w-full max-w-[400px] mx-auto h-[240px] sm:h-[280px] rounded-xl flex items-center justify-center overflow-hidden">
                 {imageUrls[index] ? (
@@ -128,7 +128,7 @@ const ComparisonsSection: React.FC<ComparisonsSectionProps> = ({
 
             {/* Separator between sections (except last one) */}
             {index < pagesData.length - 1 && (
-              <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mt-8"></div>
+              <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mt-4"></div>
             )}
           </div>
         ))}

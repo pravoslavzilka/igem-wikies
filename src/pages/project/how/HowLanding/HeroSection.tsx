@@ -9,10 +9,10 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
     <section className="w-full bg-white py-8 sm:py-12 lg:py-16 px-4 sm:px-8 lg:px-32">
       <div className="max-w-7xl mx-auto">
         {/* Text Container */}
-        <div className="mb-6 sm:mb-8 lg:mb-12">
+        <div className="mb-0">
           {/* How label */}
           <h2 
-            className="text-base sm:text-lg font-semibold leading-[140%] text-black/50 mb-2 sm:mb-4"
+            className="text-base sm:text-lg font-semibold leading-[140%] text-black/50 mb-2 sm:mb-3"
             style={{ fontFamily: 'Urbanist, sans-serif' }}
           >
             What
@@ -28,7 +28,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
           
           {/* Subtitle */}
           <p 
-            className="text-sm sm:text-base lg:text-lg leading-[140%] text-black/75 mt-4 max-w-3xl"
+            className="text-sm sm:text-base lg:text-lg leading-[140%] text-black/75 mt-3 max-w-3xl"
             style={{ fontFamily: 'Urbanist, sans-serif' }}
           >
             To make protein feed more affordable & accessible to anyone.

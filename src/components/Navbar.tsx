@@ -20,10 +20,9 @@ const Navbar = () => {
 
   const menuItems = {
     project: [
-      { label: 'What', path: '/project/how' },      // What → Why
-      { label: 'How', path: '/project/why' },      // How → What
-      { label: 'Why', path: '/project/what' },       // Why → How
-      { label: 'Hardware', path: '/project/why' },
+        { label: 'What', path: '/project/what' },
+        { label: 'Why', path: '/project/why' },
+        { label: 'How', path: '/project/how' },
       
     ],
     toolbox: [

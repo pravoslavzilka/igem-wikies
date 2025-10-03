@@ -66,9 +66,9 @@ function App() {
           <Route path="/" element={<Home />} />
 
           {/* Project Routes */}
-          <Route path="/project/what/" element={<ProjectWhat />} />
-          <Route path="/project/why/" element={<ProjectWhy />} />
-          <Route path="/project/how/" element={<HowLanding />} />
+          <Route path="/project/what/" element={<HowLanding />} />
+          <Route path="/project/why/" element={<ProjectWhat />} />
+          <Route path="/project/how/" element={<ProjectWhy />} />
 
 
           {/* How Routes */}
