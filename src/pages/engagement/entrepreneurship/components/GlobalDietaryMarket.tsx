@@ -104,31 +104,22 @@ const GlobalDietaryMarket: React.FC = () => {
         </div>
       </div>
 
-      {/* Green Box with Text */}
-      <div 
-        className="bg-[#25512b] text-white p-8 rounded-2xl text-center mb-16"
-        style={{ fontFamily: 'Urbanist, sans-serif' }}
-      >
-        <p className="text-lg font-semibold leading-relaxed">
-          We stepped onto a stage with our project once again and pitched it. We were awarded with 40 000 Czech crowns for its further development.
-        </p>
-      </div>
-
-      {/* Two Images at Bottom */}
-      <div className="grid md:grid-cols-2 gap-8">
-        {/* Left Image */}
-        <div className="w-full rounded-3xl overflow-hidden">
-          <img 
-            src="PLACEHOLDER_AWARD_IMAGE_1" 
-            alt="Award ceremony"
-            className="w-full h-full object-cover"
-          />
+      {/* Two Columns: Green Box and Image */}
+      <div className="grid md:grid-cols-2 gap-8 mb-16">
+        {/* Left - Green Box with Text */}
+        <div 
+          className="bg-[#25512b] text-white p-8 flex items-center justify-center"
+          style={{ fontFamily: 'Urbanist, sans-serif', borderRadius: '40px' }}
+        >
+          <p className="text-lg font-semibold leading-relaxed text-center">
+            We stepped onto a stage with our project once again and pitched it. We were awarded with 40 000 Czech crowns for its further development.
+          </p>
         </div>
 
-        {/* Right Image */}
-        <div className="w-full rounded-3xl overflow-hidden">
+        {/* Right - Image */}
+        <div className="w-full overflow-hidden" style={{ borderRadius: '40px' }}>
           <img 
-            src="https://static.igem.wiki/teams/5642/images/engagement/powergreens/powergreens2.webp" 
+            src="https://static.igem.wiki/teams/5642/images/engagement/powergreens/muniaward.webp" 
             alt="Project presentation"
             className="w-full h-full object-cover"
           />

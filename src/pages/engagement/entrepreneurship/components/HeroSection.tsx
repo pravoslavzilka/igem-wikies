@@ -6,7 +6,7 @@ const HeroSection: React.FC = () => {
     <div 
       className="relative w-full h-screen flex items-center justify-center"
       style={{
-        backgroundImage: 'url(BACKGROUND_IMAGE_URL)',
+        backgroundImage: 'url(https://static.igem.wiki/teams/5642/images/engagement/entrepreneurship/duck-08567.webp)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'

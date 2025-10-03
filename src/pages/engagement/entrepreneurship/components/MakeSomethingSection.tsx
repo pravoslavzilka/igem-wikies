@@ -25,16 +25,6 @@ const MakeSomethingSection: React.FC = () => {
           <span className="underline">Real World Confrontation</span> page in human practices.
         </p>
       </div>
-
-      {/* Green Box */}
-      <div 
-        className="bg-green-600 text-white p-8 rounded-2xl text-center"
-        style={{ fontFamily: 'Urbanist, sans-serif' }}
-      >
-        <p className="text-xl font-semibold leading-relaxed">
-          We went through a lot of pivots and throughout the way explored more duckweed use cases. Read further to see how we ventured into the FoodTech industry!
-        </p>
-      </div>
     </section>
   );
 };

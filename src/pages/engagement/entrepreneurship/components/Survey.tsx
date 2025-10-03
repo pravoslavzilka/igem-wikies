@@ -23,7 +23,7 @@ const Survey: React.FC = () => {
       <div className="grid md:grid-cols-2 gap-12 mb-12">
         {/* Left - Pie Chart Image */}
         <div className="flex items-center justify-center">
-          <div className="w-full max-w-md">
+          <div className="w-full">
             <img 
               src="https://static.igem.wiki/teams/5642/images/engagement/powergreens/piechartedit2.webp" 
               alt="Survey results pie chart"
