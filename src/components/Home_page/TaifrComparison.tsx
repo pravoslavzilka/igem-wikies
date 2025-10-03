@@ -1,28 +1,24 @@
 import React, { useRef, useEffect, useState } from "react";
 
 const TaifrComparison = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [playVideo, setPlayVideo] = useState(false);
+  const imgRef = useRef(null);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    const observer = new window.IntersectionObserver(
+    const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setPlayVideo(true);
-          } else {
-            setPlayVideo(false);
+            setLoaded(true); // load image when visible
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.5 } // 50% in view required
     );
-    if (videoRef.current) {
-      observer.observe(videoRef.current);
-    }
-    return () => {
-      if (videoRef.current) observer.unobserve(videoRef.current);
-    };
+
+    if (imgRef.current) observer.observe(imgRef.current);
+
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -31,23 +27,14 @@ const TaifrComparison = () => {
         {/* Top image placeholder */}
         <div className="w-full h-80  rounded-lg flex items-center justify-center ">
           <div className="text-center md:mb-32">
-            
-            <video
-              ref={videoRef}
-              autoPlay={playVideo}
-              loop
-              muted
-              playsInline
-              className="rounded-lg w-full"
-              style={{
-                width: window.innerWidth < 768 ? "100%" : "80%",
-                height: "auto",
-                margin: "0 auto",
-                display: "block"
-              }}
-            >
-              <source src="https://github.com/pravoslavzilka/igem-wikies-off/raw/refs/heads/main/src/IGEM_graf_video_updated.mp4" type="video/mp4"></source>
-            </video>
+            <img
+             alt="TAIFR Comparison" className="h-full"
+             ref={imgRef}
+              src={loaded ? "https://static.igem.wiki/teams/5642/images/homepage/maingifs/igem-graf-video-updated-ezgif-com-video-to-webp-converter.webp" : ""}
+              data-src="https://static.igem.wiki/teams/5642/images/homepage/maingifs/igem-graf-video-updated-ezgif-com-video-to-webp-converter.webp"
+             
+             
+             />
           </div>
         </div>
          <h1 className="text-4xl font-bold text-gray-800 leading-tight text-center" style={{fontFamily: 'Space Grotesk, sans-serif', fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem" }}>
