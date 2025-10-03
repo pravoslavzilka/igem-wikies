@@ -40,10 +40,6 @@ const Home = () => {
 
       <ChatAnimation />
 
-      <div className="mx-4 mt-8 rounded-3xl overflow-hidden">
-        <FadeCard />
-      </div>
-
       <TaifrComparison />
 
       <Tools />

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-const ChatAnimation = ({ messageDelay = 800 }) => {
+const ChatAnimation = ({ messageDelay = 2000 }) => {
   const [messages, setMessages] = useState([]);
   const [showFinalClaim, setShowFinalClaim] = useState(false);
   const [hasStarted, setHasStarted] = useState(false);
@@ -13,7 +13,7 @@ const ChatAnimation = ({ messageDelay = 800 }) => {
       text: 'Duckweed is set to end soybean dominance! So why are we still feeding cows soybeans?',
       color: 'bg-gradient-to-r from-green-600 to-green-500',
       align: 'right',
-      avatar: '🧬'
+      avatar: 'https://static.igem.wiki/teams/5642/images/homepage/chat/profile-pic.webp'
     },
     {
       sender: 'Mr. Repisky (Slovak farmer)',
@@ -21,7 +21,7 @@ const ChatAnimation = ({ messageDelay = 800 }) => {
       color: 'bg-gray-200 text-gray-800',
       align: 'left',
       highlight: ['duckweed yields', '10x higher'],
-      avatar: '👨‍🌾'
+      avatar: 'https://static.igem.wiki/teams/5642/images/homepage/chat/farmer.webp'
     },
     {
       sender: 'iGEM Brno',
@@ -29,7 +29,7 @@ const ChatAnimation = ({ messageDelay = 800 }) => {
       color: 'bg-gradient-to-r from-green-600 to-green-500',
       align: 'right',
       highlight: ['can\'t match 3000 years'],
-      avatar: '🧬'
+      avatar: 'https://static.igem.wiki/teams/5642/images/homepage/chat/profile-pic.webp'
     },
     {
       sender: 'Prof. Klink (Brazil ecologist)',
@@ -37,7 +37,7 @@ const ChatAnimation = ({ messageDelay = 800 }) => {
       color: 'bg-gray-200 text-gray-800',
       align: 'left',
       highlight: ['Cerrado', 'we can\'t wait 3000 years'],
-      avatar: '👨‍🔬'
+      avatar: 'https://static.igem.wiki/teams/5642/images/homepage/chat/profile-picsd.webp'
     },
     {
       sender: 'iGEM Brno',
@@ -45,14 +45,7 @@ const ChatAnimation = ({ messageDelay = 800 }) => {
       color: 'bg-gradient-to-r from-green-600 to-green-500',
       align: 'right',
       highlight: ['make the crop from the weed'],
-      avatar: '🧬'
-    },
-    {
-      sender: 'iGEM Brno',
-      text: 'But we couldn\'t do it... Duckweed engineering takes too long and it just... sucks!',
-      color: 'bg-gradient-to-r from-green-600 to-green-500',
-      align: 'right',
-      avatar: '🧬'
+      avatar: 'https://static.igem.wiki/teams/5642/images/homepage/chat/profile-pic.webp'
     }
   ];
 
@@ -122,22 +115,24 @@ const ChatAnimation = ({ messageDelay = 800 }) => {
     };
   }, [hasStarted, messageDelay]);
 
-  const highlightText = (text, highlights) => {
+  const highlightText = (text, highlights, sender) => {
     if (!highlights || highlights.length === 0) return text;
-    
+
     let result = text;
     highlights.forEach(phrase => {
       result = result.replace(
         new RegExp(`(${phrase})`, 'gi'),
-        '<span class="font-bold text-green-700">$1</span>'
+        sender === 'iGEM Brno'
+          ? '<span class="font-bold text-black">$1</span>'
+          : '<span class="font-bold text-green-700">$1</span>'
       );
     });
-    
+
     return <span dangerouslySetInnerHTML={{ __html: result }} />;
   };
 
   return (
-    <div className="min-h-screen p-4 md:p-8">
+    <div className="min-h-screen p-4 md:p-8" style={{ fontFamily: 'Urbanist, sans-serif' }}>
       <div className="max-w-4xl mx-auto space-y-8">
         {/* Chat Box */}
         <div ref={chatContainerRef} className="bg-white rounded-2xl p-6 md:p-8 min-h-[600px]">
@@ -159,7 +154,7 @@ const ChatAnimation = ({ messageDelay = 800 }) => {
                   {/* Avatar */}
                   <div className="flex-shrink-0">
                     <div className="w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-xl shadow-md">
-                      {msg.avatar}
+                      <img src={msg.avatar} alt="Avatar" className="w-full h-full object-cover rounded-full" />
                     </div>
                   </div>
 
@@ -171,11 +166,13 @@ const ChatAnimation = ({ messageDelay = 800 }) => {
                       {msg.sender}
                     </div>
                     <div
-                      className={`${msg.color} rounded-2xl px-4 py-3 shadow-md ${
-                        msg.color.includes('gray') ? '' : 'text-white'
-                      }`}
+                      style={{
+                        backgroundColor: msg.sender === 'iGEM Brno' ? '#779E45' : '#F0F0F0',
+                        color: msg.sender === 'iGEM Brno' ? '#fff' : '#222'
+                      }}
+                      className={`rounded-2xl px-4 py-3 shadow-md`}
                     >
-                      {msg.highlight ? highlightText(msg.text, msg.highlight) : msg.text}
+                      {msg.highlight ? highlightText(msg.text, msg.highlight, msg.sender) : msg.text}
                     </div>
                   </div>
                 </div>
@@ -187,11 +184,15 @@ const ChatAnimation = ({ messageDelay = 800 }) => {
 
         {/* Final Claim - Appears below the chat */}
         {showFinalClaim && (
-          <div className="animate-fade-in-up">
-            <div className="rounded-3xl p-8 md:p-12">
-              <h2 className="text-3xl md:text-5xl font-bold text-center text-gray-900 leading-tight">
+          <div className="animate-fade-in-up rounded-lg" style={{ backgroundColor: '#F5F5F5' }}>
+            <div className="rounded-2xl p-8 md:p-12">
+              
+              <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl md:text-3xl font-bold text-center text-gray-900 leading-tight">
+                <span style={{ color: '#779E45' }}>But we couldn't do it...</span> Duckweed engineering takes too long and it just... sucks!
+              </h2>
+              <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl mt-12 md:text-3xl font-bold text-center text-gray-900 leading-tight">
                 The fastest-growing plant on Earth<br />
-                deserves the <span className="text-green-600">equally fast engineering</span>!
+                deserves the <span style={{ color: '#779E45' }}>equally fast engineering</span>!
               </h2>
             </div>
           </div>
