@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-const ChatAnimation = () => {
+const ChatAnimation = ({ messageDelay = 800 }) => {
   const [messages, setMessages] = useState([]);
   const [showFinalClaim, setShowFinalClaim] = useState(false);
   const [hasStarted, setHasStarted] = useState(false);
@@ -13,7 +13,7 @@ const ChatAnimation = () => {
       text: 'Duckweed is set to end soybean dominance! So why are we still feeding cows soybeans?',
       color: 'bg-gradient-to-r from-green-600 to-green-500',
       align: 'right',
-      delay: 800
+      avatar: '🧬'
     },
     {
       sender: 'Mr. Repisky (Slovak farmer)',
@@ -21,7 +21,7 @@ const ChatAnimation = () => {
       color: 'bg-gray-200 text-gray-800',
       align: 'left',
       highlight: ['duckweed yields', '10x higher'],
-      delay: 1000
+      avatar: '👨‍🌾'
     },
     {
       sender: 'iGEM Brno',
@@ -29,7 +29,7 @@ const ChatAnimation = () => {
       color: 'bg-gradient-to-r from-green-600 to-green-500',
       align: 'right',
       highlight: ['can\'t match 3000 years'],
-      delay: 900
+      avatar: '🧬'
     },
     {
       sender: 'Prof. Klink (Brazil ecologist)',
@@ -37,7 +37,7 @@ const ChatAnimation = () => {
       color: 'bg-gray-200 text-gray-800',
       align: 'left',
       highlight: ['Cerrado', 'we can\'t wait 3000 years'],
-      delay: 700
+      avatar: '👨‍🔬'
     },
     {
       sender: 'iGEM Brno',
@@ -45,14 +45,14 @@ const ChatAnimation = () => {
       color: 'bg-gradient-to-r from-green-600 to-green-500',
       align: 'right',
       highlight: ['make the crop from the weed'],
-      delay: 800
+      avatar: '🧬'
     },
     {
       sender: 'iGEM Brno',
       text: 'But we couldn\'t do it... Duckweed engineering takes too long and it just... sucks!',
       color: 'bg-gradient-to-r from-green-600 to-green-500',
       align: 'right',
-      delay: 900
+      avatar: '🧬'
     }
   ];
 
@@ -80,6 +80,16 @@ const ChatAnimation = () => {
     };
   }, [hasStarted]);
 
+  // Auto-scroll to latest message within chat container only
+  useEffect(() => {
+    if (messagesEndRef.current) {
+      const chatContainer = messagesEndRef.current.parentElement;
+      if (chatContainer) {
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+      }
+    }
+  }, [messages]);
+
   // Animation logic
   useEffect(() => {
     if (!hasStarted) return;
@@ -94,7 +104,7 @@ const ChatAnimation = () => {
         currentIndex++;
         
         if (currentIndex < chatMessages.length) {
-          const timeoutId = setTimeout(showNextMessage, currentMsg.delay);
+          const timeoutId = setTimeout(showNextMessage, messageDelay);
           timeouts.push(timeoutId);
         } else {
           // Show final claim after last message
@@ -110,7 +120,7 @@ const ChatAnimation = () => {
     return () => {
       timeouts.forEach(id => clearTimeout(id));
     };
-  }, [hasStarted]);
+  }, [hasStarted, messageDelay]);
 
   const highlightText = (text, highlights) => {
     if (!highlights || highlights.length === 0) return text;
@@ -127,12 +137,12 @@ const ChatAnimation = () => {
   };
 
   return (
-    <div className="min-h-screen  p-4 md:p-8">
+    <div className="min-h-screen p-4 md:p-8">
       <div className="max-w-4xl mx-auto space-y-8">
         {/* Chat Box */}
-        <div ref={chatContainerRef} className="bg-white rounded-2xl  p-6 md:p-8 min-h-[600px]">
+        <div ref={chatContainerRef} className="bg-white rounded-2xl p-6 md:p-8 min-h-[600px]">
           <div className="mb-6 pb-4 border-b border-gray-200">
-            
+            {/* Header removed as requested */}
           </div>
 
           <div className="space-y-4 overflow-y-auto max-h-[500px]">
@@ -143,18 +153,30 @@ const ChatAnimation = () => {
                   msg.align === 'right' ? 'justify-end' : 'justify-start'
                 } animate-fade-in`}
               >
-                <div className="max-w-[85%]">
-                  <div className={`text-xs font-semibold mb-1 ${
-                    msg.align === 'right' ? 'text-right' : 'text-left'
-                  } text-gray-600`}>
-                    {msg.sender}
+                <div className={`flex gap-3 max-w-[85%] ${
+                  msg.align === 'right' ? 'flex-row-reverse' : 'flex-row'
+                }`}>
+                  {/* Avatar */}
+                  <div className="flex-shrink-0">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-xl shadow-md">
+                      {msg.avatar}
+                    </div>
                   </div>
-                  <div
-                    className={`${msg.color} rounded-2xl px-4 py-3 shadow-md ${
-                      msg.color.includes('gray') ? '' : 'text-white'
-                    }`}
-                  >
-                    {msg.highlight ? highlightText(msg.text, msg.highlight) : msg.text}
+
+                  {/* Message Content */}
+                  <div className="flex flex-col">
+                    <div className={`text-xs font-semibold mb-1 ${
+                      msg.align === 'right' ? 'text-right' : 'text-left'
+                    } text-gray-600`}>
+                      {msg.sender}
+                    </div>
+                    <div
+                      className={`${msg.color} rounded-2xl px-4 py-3 shadow-md ${
+                        msg.color.includes('gray') ? '' : 'text-white'
+                      }`}
+                    >
+                      {msg.highlight ? highlightText(msg.text, msg.highlight) : msg.text}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -166,7 +188,7 @@ const ChatAnimation = () => {
         {/* Final Claim - Appears below the chat */}
         {showFinalClaim && (
           <div className="animate-fade-in-up">
-            <div className=" rounded-3xl p-8 md:p-12 ">
+            <div className="rounded-3xl p-8 md:p-12">
               <h2 className="text-3xl md:text-5xl font-bold text-center text-gray-900 leading-tight">
                 The fastest-growing plant on Earth<br />
                 deserves the <span className="text-green-600">equally fast engineering</span>!
