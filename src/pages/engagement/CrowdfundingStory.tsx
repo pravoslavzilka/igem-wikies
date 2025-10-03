@@ -96,7 +96,7 @@ export default function CrowdfundingStory() {
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div className="h-64 overflow-hidden flex items-center justify-center rounded rounded-lg">
-            <span className="text-gray-500"><img  src='https://static.igem.wiki/teams/5642/images/engagement/outreach/crowdfunding/video.webp' className='w-full h-full object-cover rounded-lg' /></span>
+            <span className="text-gray-500 rounded"><img  src='https://static.igem.wiki/teams/5642/images/engagement/outreach/crowdfunding/video.webp' className='w-full h-full object-cover rounded-lg' /></span>
           </div>
           
           <div>
@@ -110,58 +110,64 @@ export default function CrowdfundingStory() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-          <div className="bg-gray-200 h-24 flex items-center justify-center">
-            <span className="text-gray-500">[Gmail]</span>
+          <div className="  flex items-center justify-center overflow-hidden">
+            <img className='h-32 w-36 object-cover' src='https://static.igem.wiki/teams/5642/images/engagement/outreach/crowdfunding/gmail.webp' />
           </div>
-          <div className="bg-gray-200 h-24 flex items-center justify-center">
-            <span className="text-gray-500">[Newspaper]</span>
+          <div className="  flex items-center justify-center overflow-hidden">
+            <img className='h-32 w-36 object-cover' src='https://static.igem.wiki/teams/5642/images/engagement/outreach/crowdfunding/newspaper.webp' />
           </div>
-          <div className="bg-gray-200 h-24 flex items-center justify-center">
-            <span className="text-gray-500">[Instagram]</span>
+          <div className="  flex items-center justify-center overflow-hidden">
+            <img className='h-32 w-36 object-cover' src='https://static.igem.wiki/teams/5642/images/engagement/outreach/crowdfunding/linkedin.webp' />
           </div>
-          <div className="bg-gray-200 h-24 flex items-center justify-center">
-            <span className="text-gray-500">[LinkedIn]</span>
+          <div className="  flex items-center justify-center overflow-hidden">
+            <img className='h-32 w-36 object-cover' src='https://static.igem.wiki/teams/5642/images/engagement/outreach/crowdfunding/instagram.webp' />
           </div>
         </div>
 
-        <div className="bg-green-100 p-6 rounded-lg mb-12">
+        <div className="bg-green-600 p-6 text-white rounded-lg mb-12">
           <p className="text-center font-semibold">
             To ensure our project's story reached a diverse audience, we built a comprehensive media and outreach plan. Our strategy focused on hitting multiple relevant channels, leveraging key partners, and maintaining direct communication with our supporters.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <div className="bg-gray-200 h-64 flex items-center justify-center">
-            <span className="text-gray-500">[Campaign Poster]</span>
+        <div className="flex flex-row items-start justify-center gap-8 mb-12">
+          {/* Images stacked vertically with labels */}
+          <div className="flex flex-col gap-8 items-center">
+            <div className="flex flex-col items-center">
+              <img src='https://static.igem.wiki/teams/5642/images/engagement/outreach/crowdfunding/instagram-1.webp' className="w-[400px] mb-2" />
+              <span className="text-gray-700 text-base">Instagram</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <img src='https://static.igem.wiki/teams/5642/images/engagement/outreach/crowdfunding/ln.webp' className="w-[400px] mb-2" />
+              <span className="text-gray-700 text-base">LinkedIn</span>
+            </div>
           </div>
-          
-          <div>
-            <h4 className="font-bold text-lg mb-3">Instagram:</h4>
-            <p className="mb-3 text-sm">
-              Raising awareness mostly among students, core issues our project addresses, visually compelling content.
-            </p>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
-              <li>We achieved a total reach of over 200,000 unique people.</li>
-              <li>Our account gained 250 new followers.</li>
-              <li>The campaign included over 15 ours and collab posts with high-impact.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="mb-12">
-          <h4 className="font-bold text-lg mb-3">LinkedIn:</h4>
-          <p className="mb-3">
-            Professional hub, building credibility within the academic and professional communities:
-          </p>
-          <ul className="list-disc pl-5 space-y-2">
-            <li>We strategically spotlighted our individual partners and collaborators, telling their unique stories.</li>
-            <li>We shared narrative updates from our team members</li>
-            <li>Skyrocketed our LinkedIn followers by 100% while locking in collaborations with dozens of top-tier investors and professors.</li>
-          </ul>
-        </div>
-
-        <div className="mb-12">
-          <h4 className="font-bold text-lg mb-3">The Newsletter Loop</h4>
+          {/* Text next to images */}
+          <div className="flex flex-col gap-8 max-w-xl">
+            <div>
+              <h4 className="font-bold text-2xl mb-3">Instagram:</h4>
+              <p className="mb-3 ">
+                Raising awareness mostly among students, core issues our project addresses, visually compelling content.
+              </p>
+              <ul className="list-disc pl-5 space-y-2 ">
+                <li>We achieved a total reach of over 200,000 unique people.</li>
+                <li>Our account gained 250 new followers.</li>
+                <li>The campaign included over 15 ours and collab posts with high-impact.</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-bold text-2xl mb-3 mt-4">LinkedIn:</h4>
+              <p className="mb-3">
+                Professional hub, building credibility within the academic and professional communities:
+              </p>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>We strategically spotlighted our individual partners and collaborators, telling their unique stories.</li>
+                <li>We shared narrative updates from our team members</li>
+                <li>Skyrocketed our LinkedIn followers by 100% while locking in collaborations with dozens of top-tier investors and professors.</li>
+              </ul>
+            </div>
+            <div className="mb-12">
+          <h4 className="font-bold text-2xl mb-3">The Newsletter Loop</h4>
           <p className="mb-3">
             Reaching individuals beyond social platforms, we built a reliable direct communication channel:
           </p>
@@ -170,16 +176,12 @@ export default function CrowdfundingStory() {
             <li>We then sent targeted newsletters to this list, ensuring that everyone interested in our project—especially those not regularly active on social media—remained fully informed and connected to our mission.</li>
           </ul>
         </div>
-
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <div className="bg-gray-200 h-48 flex items-center justify-center">
-            <span className="text-gray-500">[LinkedIn Post Screenshot]</span>
-          </div>
-          <div className="bg-gray-200 h-48 flex items-center justify-center">
-            <span className="text-gray-500">[Team Celebration Image]</span>
           </div>
         </div>
-      </div>
+
+        
+
+        </div>
 
       {/* Page 3 */}
       <div className="max-w-4xl mx-auto px-6 py-12">
@@ -197,110 +199,21 @@ export default function CrowdfundingStory() {
         </ol>
 
         <p className="mb-12">
-          This strategy helped us secure features in leading publications like <a href="#" className="text-blue-600 underline">Startitup</a> and <a href="#" className="text-blue-600 underline">Hospodářské noviny</a>. We were also greatly supported by Ms. Maria Stracenska in amplifying our story within the Slovak media.
+          This strategy helped us secure features in leading publications like <a href="https://www.startitup.sk/mladi-vedci-odisli-zo-slovenska-v-brne-vyvijaju-revolucny-projekt-ktory-moze-zmenit-buducnost-polnohospodarstva/" className="text-blue-600 underline">Startitup</a> and <a href="https://domaci.hn.cz/c1-67782400-zabincova-mafie-studenti-z-brna-vyvinuli-prevratne-krmivo-na-mezinarodni-soutez-vybiraji-od-darcu" className="text-blue-600 underline">Hospodářské noviny</a>. We were also greatly supported by Ms. Maria Stracenska in amplifying our story within the Slovak media.
         </p>
 
         <h3 className="text-2xl text-center font-bold mb-8" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
           Support from the heart, or for a reward? Both move us forward.
         </h3>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <div className="bg-green-600 text-white p-8 rounded-lg">
-            <p className="leading-relaxed">
-              Our community could support us in two ways: by getting a cool reward, or just by helping us out. We loved giving rewards, but we were also so thankful for the trust from people who didn't ask for anything. Let´s have a look at some prizes. Which would you buy?
-            </p>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            <div className="bg-gray-200 h-32"></div>
-            <div className="bg-gray-200 h-32"></div>
-            <div className="bg-gray-200 h-32"></div>
-            <div className="bg-gray-200 h-32"></div>
-          </div>
-        </div>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
-          <div className="border rounded-lg overflow-hidden">
-            <div className="bg-gray-200 h-40 flex items-center justify-center">
-              <span className="text-gray-500">[Team Photo]</span>
-            </div>
-            <div className="p-4">
-              <p className="text-orange-500 text-sm mb-2">DONATE 100 CZK OR MORE</p>
-              <p className="font-bold">It feels good to support students!</p>
-            </div>
-          </div>
-          
-          <div className="border rounded-lg overflow-hidden">
-            <div className="bg-gray-200 h-40 flex items-center justify-center">
-              <span className="text-gray-500">[Duckweed Cookbook]</span>
-            </div>
-            <div className="p-4">
-              <p className="text-orange-500 text-sm mb-2">DONATE 500 CZK OR MORE</p>
-              <p className="font-bold">Duckweed cookbook</p>
-            </div>
-          </div>
-          
-          <div className="border rounded-lg overflow-hidden">
-            <div className="bg-gray-200 h-40 flex items-center justify-center">
-              <span className="text-gray-500">[Cookbook + Postcard]</span>
-            </div>
-            <div className="p-4">
-              <p className="text-orange-500 text-sm mb-2">DONATE 600 CZK OR MORE</p>
-              <p className="font-bold">Duckweed cookbook + postcard from the iGEM Brno team</p>
-            </div>
-          </div>
+        <img src='https://static.igem.wiki/teams/5642/images/engagement/outreach/crowdfunding/crowd-photos-min.webp' />
 
-          <div className="border rounded-lg overflow-hidden">
-            <div className="bg-gray-200 h-40 flex items-center justify-center">
-              <span className="text-gray-500">[Gift Set]</span>
-            </div>
-            <div className="p-4">
-              <p className="text-orange-500 text-sm mb-2">DONATE 2,500 CZK OR MORE</p>
-              <p className="font-bold">Duckweed gift set</p>
-            </div>
-          </div>
+        
 
-          <div className="border rounded-lg overflow-hidden">
-            <div className="bg-gray-200 h-40 flex items-center justify-center">
-              <span className="text-gray-500">[Duckweed Sample]</span>
-            </div>
-            <div className="p-4">
-              <p className="text-orange-500 text-sm mb-2">DONATE 1,500 CZK OR MORE</p>
-              <p className="font-bold">Do you want duckweed? Enjoy!</p>
-            </div>
-          </div>
+        
 
-          <div className="border rounded-lg overflow-hidden">
-            <div className="bg-gray-200 h-40 flex items-center justify-center">
-              <span className="text-gray-500">[Merch Photo]</span>
-            </div>
-            <div className="p-4">
-              <p className="text-orange-500 text-sm mb-2">DONATE 5,000 CZK OR MORE</p>
-              <p className="font-bold">Limited merch + Your name in the final presentation in Paris + duckweed gift set</p>
-            </div>
-          </div>
-
-          <div className="border rounded-lg overflow-hidden">
-            <div className="bg-gray-200 h-40 flex items-center justify-center">
-              <span className="text-gray-500">[Chinese Characters]</span>
-            </div>
-            <div className="p-4">
-              <p className="text-orange-500 text-sm mb-2">DONATE 10,000 CZK OR MORE</p>
-              <p className="font-bold">Chinese lessons + duckweed gift set</p>
-            </div>
-          </div>
-
-          <div className="border rounded-lg overflow-hidden">
-            <div className="bg-gray-200 h-40 flex items-center justify-center">
-              <span className="text-gray-500">[Landscape Photo]</span>
-            </div>
-            <div className="p-4">
-              <p className="text-orange-500 text-sm mb-2">DONATE 10,000 CZK OR MORE</p>
-              <p className="font-bold">Agrotourism in Zaječová + duckweed gift set</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-green-600 text-white p-6 rounded-lg mb-12">
+        <div className="bg-green-600 text-white p-6 mt-16 rounded-lg mb-12">
           <p className="text-center italic">
             The icing on the cake was our personal presence at dozens of events, connecting the worlds of science, innovation, and business. We made sure to be at key gatherings, no matter where they were held.
           </p>
