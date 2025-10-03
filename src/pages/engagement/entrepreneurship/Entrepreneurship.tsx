@@ -19,6 +19,10 @@ import GlobalDietaryMarket from './components/GlobalDietaryMarket';
 import BoosterChallenge from './components/BoosterChallenge';
 import WhatsNext from './components/WhatsNext';
 
+// Import References component
+import References from '../../../components/References';
+import { entrepreneurshipReferences } from './data/entrepreneurship-references';
+
 import "@fontsource/urbanist";
 import "@fontsource/urbanist/400.css";
 import "@fontsource/urbanist/500.css";
@@ -50,6 +54,9 @@ const Entrepreneurship: React.FC = () => {
       
       {/* Final section */}
       <WhatsNext />
+
+      {/* References section */}
+      <References references={entrepreneurshipReferences} />
     </div>
   );
 };
