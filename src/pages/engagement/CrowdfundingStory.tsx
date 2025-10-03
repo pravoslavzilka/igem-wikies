@@ -29,7 +29,7 @@ export default function CrowdfundingStory() {
 
           <div>
              <div className="bg-gray flex items-center justify-center">
-                    <span> Campaign photo missing </span>
+                 <img className='mt-10' src='https://static.igem.wiki/teams/5642/images/engagement/outreach/crowdfunding/crowdfundig-final.webp' />
              </div>   
           </div>
 
@@ -249,10 +249,10 @@ export default function CrowdfundingStory() {
             An achievement this monumental deserves a heartfelt thank you. We are thrilled to announce that we have reached our goal, raising over
           </p>
           <p className="text-5xl font-bold mb-6" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-            €12,000
+            336 000 CZK
           </p>
           <p className="text-lg mb-6">
-            with the help of more than <span className="font-bold">350</span> incredible supporters.
+            with the help of more than <span className="font-bold">359</span> incredible supporters.
           </p>
           <p className="text-lg">
             Your collective generosity has unlocked the gates to Paris for us. We are deeply humbled and immensely grateful for your contribution to this dream
