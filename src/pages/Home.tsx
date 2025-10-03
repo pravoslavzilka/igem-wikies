@@ -8,6 +8,7 @@ import ModelShow from '../components/Home_page/ModelShow';
 import ToolboxShow from '../components/Home_page/ToolboxShow';
 import VideoShow from '../components/Home_page/VideoShow';
 import Transition from '../components/Home_page/Transition';
+import ChatAnimation from '../components/Home_page/ChatAnimation';
 
 
 import "@fontsource/urbanist";
@@ -36,6 +37,8 @@ const Home = () => {
       <Transition />
 
       <FeaturesWidget />
+
+      <ChatAnimation />
 
       <div className="mx-4 mt-8 rounded-3xl overflow-hidden">
         <FadeCard />
