@@ -13,10 +13,10 @@ const RefiningTheVision: React.FC = () => {
       </h3>
 
       {/* Content Grid */}
-      <div className="grid md:grid-cols-[2fr,1fr] gap-8 mb-16">
+      <div className="grid md:grid-cols-[1.7fr,1fr] gap-8 mb-16">
         {/* Left Column - Text */}
         <div 
-          className="space-y-4 text-justify text-gray-800 leading-relaxed text-base"
+          className="space-y-4 text-justify text-gray-800 leading-relaxed text-lg"
           style={{ fontFamily: 'Urbanist, sans-serif' }}
         >
           <p>
@@ -38,7 +38,7 @@ const RefiningTheVision: React.FC = () => {
         <div className="flex items-start justify-center">
           <div className="w-full rounded-3xl overflow-hidden">
             <img 
-              src="PLACEHOLDER_IMAGE_URL" 
+              src="https://static.igem.wiki/teams/5642/images/engagement/entrepreneurship/powergreens2.webp" 
               alt="Presentation at SYB MUNI"
               className="w-full h-full object-cover"
             />
@@ -84,7 +84,7 @@ const RefiningTheVision: React.FC = () => {
 
         {/* Right - Text */}
         <div 
-          className="space-y-4 text-justify text-gray-800 leading-relaxed text-base"
+          className="space-y-4 text-justify text-gray-800 leading-relaxed text-lg"
           style={{ fontFamily: 'Urbanist, sans-serif' }}
         >
           <p>
