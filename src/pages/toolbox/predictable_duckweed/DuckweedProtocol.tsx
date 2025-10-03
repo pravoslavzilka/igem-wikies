@@ -415,14 +415,7 @@ const DuckweedProtocol = () => {
 
             </div>
             
-            <div className="bg-gray-50 p-4 rounded-lg mt-4">
-              <p className="text-md text-gray-700 urbanist">
-                <strong>Transformation:</strong> up to 3 days afterwards at 20to (2) 75% 
-                confluence - suitable for transformation up to a week 
-                afterwards at 75% (3) 82% confluence - Not longer 
-                suitable for transformation.
-              </p>
-            </div>
+            
           </div>
 
           {/* Monthly Workflow */}
