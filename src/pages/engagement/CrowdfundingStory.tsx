@@ -213,7 +213,7 @@ export default function CrowdfundingStory() {
 
         
 
-        <div className="bg-green-600 text-white p-6 mt-16 rounded-lg mb-12">
+        <div className=" text-white p-6 mt-16 rounded-lg mb-12" style={{ backgroundColor: '#6ca033' }}>
           <p className="text-center italic">
             The icing on the cake was our personal presence at dozens of events, connecting the worlds of science, innovation, and business. We made sure to be at key gatherings, no matter where they were held.
           </p>
@@ -244,7 +244,7 @@ export default function CrowdfundingStory() {
 
       {/* Page 4 */}
       <div className="max-w-4xl mx-auto px-6 py-12">
-        <div className="bg-green-600 text-white p-12 rounded-lg text-center">
+        <div className=" text-white p-12 rounded-lg text-center" style={{ backgroundColor: '#6ca033' }}>
           <p className="text-lg mb-6">
             An achievement this monumental deserves a heartfelt thank you. We are thrilled to announce that we have reached our goal, raising over
           </p>
