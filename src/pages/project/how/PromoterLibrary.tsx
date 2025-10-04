@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import References from '../../../components/References';
 
 
@@ -83,22 +82,22 @@ const PromoterLibrary = () => {
         <p>
           It is not only hard to get the gene of interest into duckweed. The next bottleneck is achieving high and stable 
           expression of the transgene. The strength and stability of protein expression is influenced by genetic 
-          regulatory parts such as 5'UTRs, 3'UTRs and terminators, but is mostly determined by promoters[1].
+          regulatory parts such as 5'UTRs, 3'UTRs and terminators, but is mostly determined by promoters [1].
         </p>
 
         <p>
           Plant engineering knows a lot of these parts but they are, unsurprisingly, centered around only a few species 
           like <em>Arabidopsis</em>, tobacco, and maize. And when it comes to duckweed, these do not work ideally. Even the 
           most widely used promoter in plant genetic engineering, the Cauliflower mosaic virus 35S promoter (CaMV 
-          35S), yields only weak expression[2]. This is probably a result of the epigenetic silencing of the foreign 
-          genetic parts in duckweed environment, which is observed also for other monocot species[3]. Several 
-          monocot promoters, such as maize ubiquitin (ZmUbI1) work decently[4], but it is reasonable to assume that 
-          endogenous parts from duckweed would increase both strength and stability of expression[4].
+          35S), yields only weak expression [2]. This is probably a result of the epigenetic silencing of the foreign 
+          genetic parts in duckweed environment, which is observed also for other monocot species [3]. Several 
+          monocot promoters, such as maize ubiquitin (rZmUBI) work decently [4], but it is reasonable to assume that 
+          endogenous parts from duckweed would increase both strength and stability of expression [4].
         </p>
 
         <p>
-          After literature search, we found only one native duckweed promoter isolated and used in a scientific study[5]. 
-          It showed higher expression compared to the 35S promoter. In our consultation with Phyllotechnicals, CSO 
+          After literature search, we found only one native duckweed promoter isolated and used in a scientific study [5]. 
+          It showed higher expression compared to the r35S promoter. In our consultation with Phyllocauticals, CSO 
           Lynn Dyckey mentioned that they also use proprietary native duckweed promoters for recombinant protein 
           expression.
         </p>
@@ -123,11 +122,11 @@ const PromoterLibrary = () => {
 
        
 
-        <h1 className="text-4xl font-bold mb-4 mt-10" style={{ fontFamily: "Space Grotesk, sans-serif" }}>In silico workflow</h1>
+        <h1 className="text-4xl font-bold mb-4 mt-10" style={{ fontFamily: "Space Grotesk, sans-serif" }}>In silico promoter identification</h1>
         <p className="leading-relaxed" style={{ fontFamily: "Urbanist, sans-serif" }}>Initially, we tried to develop our own workflow for identification of highly expressed genes and their promoters in multiple duckweed species. We successfully identified the highest expressing genes and extracted their promoters based on transcriptomics data, isolated them and even tried to clone them in front of the RUBY reporter.  
         However, we were not successful so we needed to refine our workflow. After extensive literature research and consultations with Dr. Veronika Jedlíčková, iGEM Marburg 2024 team and Dr. Eric Yang, we discovered that we made several mistakes in our in silico workflow, for example not including MoClo compatibility filtering but most importantly, not comparing data across different transcriptomes. 
-        We implemented the feedback we received and proceeded with the workflow we are presenting. You can see the graphical representation of our workflow in the Figure X. 
-        In our in silico promoter identification of promoter sequences, we drawn an inspiration from the brilliant workflow of the endogenous part identification in Taraxacum presented by the iGEM Marburg 2024 team with their project Tarakate and the article by Zhou et al., 2023 [].
+        We implemented the feedback we received and proceeded with the workflow we are presenting. You can see the graphical representation of our workflow in the schema below. 
+        In our in silico promoter identification of promoter sequences, we drawn an inspiration from the brilliant workflow of the endogenous part identification in Taraxacum presented by the iGEM Marburg 2024 team with their project Tarakate and the article by Zhou et al., 2023 [6].
         </p>
 
         <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/yellow-simple-success-flowchart-instagram-post.webp" alt="Workflow Diagram" className="my-8 mx-auto" />
@@ -137,7 +136,7 @@ const PromoterLibrary = () => {
                 
 
        <p className="text-justify leading-relaxed text-gray-800 mb-4">
-          To find strong and stable promoter sequence that could drive expression of the gene of interest in the whole plant, it is ideal to analyze wider set of different transcriptomic data, which can help identify genes with the desired characteristics [1]. Such characteristics include high expression level, low expression variability across tissues, housekeeping functions, and consistent expression across developmental stages. The usual approach is to compare transcriptomic data (a) from different tissues, (b) in different developmental stages of the plant, or (c) combination of both, which allows the usage of single reference genome. However, we were not able to find such comprehensive data for duckweed species; therefore, we had to search for a different approach.
+          To find strong and stable promoter sequence that could drive expression of the gene of interest in the whole plant, it is ideal to analyze wider set of different transcriptomic data, which can help identify genes with the desired characteristics [7]. Such characteristics include high expression level, low expression variability across tissues, housekeeping functions, and consistent expression across developmental stages. The usual approach is to compare transcriptomic data (a) from different tissues, (b) in different developmental stages of the plant, or (c) combination of both, which allows the usage of single reference genome. However, we were not able to find such comprehensive data for duckweed species; therefore, we had to search for a different approach.
 
         </p>
 
@@ -146,10 +145,7 @@ const PromoterLibrary = () => {
       
       
         <p className="text-justify leading-relaxed text-gray-800 mb-4">
-          We decided to find genes that are stably expressed not across tissues, but rather across different Lemnoideae species. We gathered raw transcriptomic data and reference genomes from the Lemna.org [2] database for species L. gibba 7742, L. japonica 7182, L. minor 9252 and added data of S. polyrhiza 9509 obtained from study [3] of our advisor Arturo Marí-Ordóñez. We used this dataset to proceed with further analysis.
-        </p>
-        <p className="text-justify leading-relaxed text-gray-800 mb-4">
-          The concepts of circular economy and sustainable agricultural practices have been at the very core of our project since its inception. As a result, our work aligns closely with several Sustainable Development Goals.
+          We decided to find genes that are stably expressed not across tissues, but rather across different Lemnoideae species. We gathered raw transcriptomic data and reference genomes from the Lemna.org [8] (Fig. 1) database for species L. gibba 7742, L. japonica 7182, L. minor 9252 and added data of S. polyrhiza 9509 obtained from study [9] of our advisor Arturo Marí-Ordóñez. We used this dataset to proceed with further analysis.
         </p>
       </div>
       <div className="md:w-1/2 flex flex-col gap-2 mt-4 md:mt-0 justify-center items-center m-10">
@@ -176,7 +172,7 @@ const PromoterLibrary = () => {
 
 
         <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
-          First the quality of input data was checked using FastQC v0.12.1 [4] executed from MultiQC v1.27 [5] wrapper- no alarming contents were observed. Trimming wrapper Trim Galore! (0.6.10) [6] utilizes trimming engine Cutadapt (4.9) [7] to run thorough trimming workflow (Fig. 2). This includes omitting adapters - relicts from sequencing reads identification - low quality read-end bases and handling of pair-end reads. Again we ran FastQC on trimmed data to check for properly executed trimming shown by adapter content metric.
+          First the quality of input data was checked using FastQC v0.12.1 [10] executed from MultiQC v1.27 [11] wrapper- no alarming contents were observed. Trimming wrapper Trim Galore! (0.6.10) [12] utilizes Cutadapt (4.9) [13] engine to run thorough trimming workflow (Fig. 2). This includes omitting adapters - relicts from sequencing reads identification - low quality read-end bases and handling of pair-end reads. Again we ran FastQC on trimmed data to check for properly executed trimming shown by adapter content metric.
 
         </p>
 
@@ -195,7 +191,7 @@ const PromoterLibrary = () => {
 
 
         <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
-          Such curated reads are prepared for mapping and assessment of expression level. Several approaches are currently available and after discussion we were considering two aligning softwares - Salmon [8] and STAR [9].  Salmon advantages from quasi-mapping of reads to transcriptome, which ensures faster calculation and lower resource dependencies. However, we have decided to use robust full-genome mapping executed by STAR (2.7.1a) software, since the transcriptome of Lemnoideae species is not reliably annotated. The STAR aligner requires index generation - preprocessing of specific files used by STAR algorithm. The reads are then aligned to reference genome (Fig. 3) and output in format of genome-read-map file BAM, that is to be analysed to quantify expression levels.
+          Such curated reads are prepared for mapping and assessment of expression level. Several approaches are currently available and after discussion we were considering two aligning softwares - Salmon [14] and STAR [15].  Salmon advantages from quasi-mapping of reads to transcriptome, which ensures faster calculation and lower resource dependencies. However, we have decided to use robust full-genome mapping executed by STAR (2.7.1a) software, since the transcriptome of Lemnoideae species is not reliably annotated. The STAR aligner requires index generation - preprocessing of specific files used by STAR algorithm. The reads are then aligned to reference genome (Fig. 3) and output in format of genome-read-map file BAM, that is to be analysed to quantify expression levels.
 
         </p>
 
@@ -210,7 +206,7 @@ const PromoterLibrary = () => {
             </div>
 
         <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
-          FeatureCounts [10] (2.0.8) software is used for read quantification and is a common part of RNA seq analysis workflow that utilizes STAR aligner. We have ran the Rsubread::featureCount in R with feature type set to “transcript”. The final feature-count table were exported in csv with expression level provided as raw counts. 
+          FeatureCounts [16] (2.0.8) software is used for read quantification and is a common part of RNA seq analysis workflow that utilizes STAR aligner. We have ran the Rsubread::featureCount in R with feature type set to "transcript". The final feature-count table were exported in csv with expression level provided as raw counts. 
 
 
         </p>
@@ -230,7 +226,7 @@ const PromoterLibrary = () => {
  
             <div className="flex items-center">
               <p className="text-gray-700 leading-relaxed" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                 The whole workflow is shown step-by-step in the Fig. 5 for clarity.
+                 The whole RNAseq data analysis workflow is displayed step-by-step in the Fig. 5 for clarity.
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg">
@@ -266,15 +262,15 @@ const PromoterLibrary = () => {
               </div>
 
               <p className="text-sm text-gray-600 mt-3 p-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                <strong>Fig 6:</strong>   Schematic overview of the OrthoFinder 2 workflow used for orthology inference and identification of orthogroups from proteomes of Lemnoideae species (taken from OrthoFinder tutorials by David Emms (<Link target='_blank' style={{ color: '#3b82f6' }} to="https://davidemms.github.io">https://davidemms.github.io</Link>).
+                <strong>Fig 6:</strong>   Schematic overview of the OrthoFinder 2 workflow used for orthology inference and identification of orthogroups from proteomes of Lemnoideae species (taken from OrthoFinder tutorials by David Emms (<a target='_blank' style={{ color: '#3b82f6' }} href="https://davidemms.github.io">https://davidemms.github.io</a>).
               </p>
             </div>
 
             <div className="flex items-center">
               <p className=" leading-relaxed" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                 The first step needed for the direct comparison of transcriptomes of different species is the identification of orthologous genes. We decided to use OrthoFinder (OF), a software tool for phylogenetic orthology inference. Orthogroups proposed by OF consist of phylogenetically close genes, suggesting they likely share identical functions even in different species. OF uses proteomes of individual species for the analysis. We have provided proteomes from Lemna.org and from study of Arturo Marí-Ordóñez mentioned above [3]. The analysis ran using OrthoFinder 2.5.5 with default settings.
+                 The first step needed for the direct comparison of transcriptomes of different species is the identification of orthologous genes. We decided to use OrthoFinder (OF), a software tool for phylogenetic orthology inference. Orthogroups proposed by OF consist of phylogenetically close genes, suggesting they likely share identical functions even in different species. OF uses proteomes of individual species for the analysis. We have provided proteomes from Lemna.org and from study of Arturo Marí-Ordóñez mentioned above [9]. The analysis ran using OrthoFinder 2.5.5 with default settings.
                   <br /><br />
-                          Orthogroups consist not only of orthologous genes – similar genes originating from different species – but also paralogous genes, which originate from the same species and result from gene duplications or pseudogene formation. To obtain a single expression level per orthogroup, we have proposed several strategies for the treatment of paralogs. After discussion with Eric Yang and based on his publication [12], only the highest expressed gene from each species in an orthogroup was considered - this avoids distortion of the expression level caused by pseudogenes and inactive duplicated genes.
+                          Orthogroups consist not only of orthologous genes – similar genes originating from different species – but also paralogous genes, which originate from the same species and result from gene duplications or pseudogene formation. To obtain a single expression level per orthogroup, we have proposed several strategies for the treatment of paralogs. After discussion with Eric Yang and based on his publication [17], only the highest expressed gene from each species in an orthogroup was considered - this avoids distortion of the expression level caused by pseudogenes and inactive duplicated genes.
 
               </p>
               
@@ -290,7 +286,7 @@ const PromoterLibrary = () => {
         <h1 className="text-3xl font-bold mb-6 mt-16" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Data normalization</h1>
 
         <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
-          Before proceeding with the analysis, data normalization is essential since transcriptomic data can differ significantly depending on the sequencing depth, the experimental method used, and other variables. That is why raw counts of transcripts from RNAseq experiments are not directly comparable. To address this, we have proceeded with DESeq2 size factor normalization, which accounts for differences in sequencing depth and RNA composition across samples. The exact normalization protocol can be found in the study by Anders and Huber (2010) [13].
+          Before proceeding with the analysis, data normalization is essential since transcriptomic data can differ significantly depending on the sequencing depth, the experimental method used, and other variables. That is why raw counts of transcripts from RNAseq experiments are not directly comparable. To address this, we have proceeded with DESeq2 size factor normalization, which accounts for differences in sequencing depth and RNA composition across samples. The exact normalization protocol can be found in the study by Anders and Huber (2010) [18].
         </p>
 
         <h1 className="text-3xl font-bold mb-6 mt-16" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Stability and strength assessment</h1>
@@ -309,7 +305,7 @@ const PromoterLibrary = () => {
         </p>
 
         <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
-          Orthogroups in the 95th percentile of expression average and CV lower than 30% were picked as candidates for promoter search. As shown in Figure 7 (CV /mean expression) and Figure 8 (CV/log₂ mean  10), these filtering criteria yielded a subset of 124 candidate genes that were further analyzed as potential promoter sources.
+          Orthogroups in the 95th percentile of expression average and CV lower than 30% were picked as candidates for promoter search. As shown in Figure 7 (CV /mean expression) and Figure 8 (CV/log₂ mean), these filtering criteria yielded a subset of 124 candidate genes that were further analyzed as potential promoter sources.
         </p>
 
 
@@ -347,7 +343,7 @@ const PromoterLibrary = () => {
         <h1 className="text-3xl font-bold mb-6 mt-16" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Functional annotation</h1>
 
         <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
-          Candidate genes for promoter search and evaluation are the highest-expressed, but the biological context was not known. In order to reduce the noise introduced by unannotated genes, we performed functional annotation analysis with eggNOGmapper (<Link className='text-blue-500 hover:underline' target='_blank' to="http://eggnog-mapper.embl.de/">http://eggnog-mapper.embl.de/</Link>) [14] [15], a tool providing ontology-based annotation with GO terms and KEGG pathways across a wide range of species. The second reason for such analysis was to account for the fact that the ideal promoters are likely to be associated with housekeeping genes known for their stable expression. 
+          Candidate genes for promoter search and evaluation are the highest-expressed, but the biological context was not known. In order to reduce the noise introduced by unannotated genes, we performed functional annotation analysis with eggNOGmapper (<a className='text-blue-500 hover:underline' target='_blank' href="http://eggnog-mapper.embl.de/">http://eggnog-mapper.embl.de/</a>) [19] [20], a tool providing ontology-based annotation with GO terms and KEGG pathways across a wide range of species. The second reason for such analysis was to account for the fact that the ideal promoters are likely to be associated with housekeeping genes known for their stable expression. 
         </p>
 
 
@@ -595,10 +591,6 @@ const PromoterLibrary = () => {
             </tbody>
           </table>
           <div className="bg-gray-50 rounded-lg">
-              
-              
-              
-
               <p className="text-sm text-gray-600 mt-3 p-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
                 <strong>Fig 9:</strong>   Summarized table of candidate genes identified by our workflow. Twenty orthogroups with rlog normalized expression mean above 10, the lowest coefficient of variance and reasonable ontology of all genes included are shown in the table. Genes with MoClo compatible promoter regions are marked green and were directly selected for experimental evaluation, all unmarked are incompatible. Orange marked genes were chosen for synthesis without BbsI restriction sites - such synthesized promoters regions were also experimentally evaluated.
               </p>
@@ -627,7 +619,7 @@ const PromoterLibrary = () => {
 
             <div className="flex items-center">
               <p className=" leading-relaxed" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                          The distance of promoter region from transcription starting site (TSS) varies strongly, from tens of bp to several kbp. The gold standard is to search for promoter sequences within 2kbp upstream of the TSS. However, it is known that the untranslated region (UTR), located between the TSS and the start codon (ATG), also influences gene expression levels, particularly through post-transcriptional regulation mechanisms (Dassi et al., 2024) [16], and we had to take this into account since the exact UTR length is not annotated for most genes.
+                          The distance of promoter region from transcription starting site (TSS) varies strongly, from tens of bp to several kbp. The gold standard is to search for promoter sequences within 2kbp upstream of the TSS. However, it is known that the untranslated region (UTR), located between the TSS and the start codon (ATG), also influences gene expression levels, particularly through post-transcriptional regulation mechanisms (Dassi et al., 2024) [21], and we had to take this into account since the exact UTR length is not annotated for most genes.
 
                 <br/><br/>
                  Therefore, we evaluated promoter sequences concatenated with the UTR, which could be directly ligated to the gene during transformation experiments. For laboratory evaluation, the promoter+UTR regions were defined as 2 kbp upstream from the ATG (start of the coding sequence, CDS).
@@ -696,51 +688,51 @@ const Reference = [
     },
     {
         id: 6,
-        text: "Villao-Uzho L, Chávez-Navarrete T, Pacheco-Coello R, Sánchez-Timm E, Santos-Ordóñez E. Plant Promoters: Their Identification, Characterization, and Role in Gene Regulation. Genes (Basel). 2023 Jun 6;14(6):1226. doi: 10.3390/genes14061226. PMID: 37372407; PMCID: PMC10298551."
+        text: "Yasmeen E, Wang J, Riaz M, Zhang L, Zuo K. Designing artificial synthetic promoters for accurate, smart, and versatile gene expression in plants. Plant Commun. 2023 Jul 10;4(4):100558. doi: 10.1016/j.xplc.2023.100558. Epub 2023 Feb 9. PMID: 36760129; PMCID: PMC10363483."
     },
     {
         id: 7,
+        text: "Villao-Uzho L, Chávez-Navarrete T, Pacheco-Coello R, Sánchez-Timm E, Santos-Ordóñez E. Plant Promoters: Their Identification, Characterization, and Role in Gene Regulation. Genes (Basel). 2023 Jun 6;14(6):1226. doi: 10.3390/genes14061226. PMID: 37372407; PMCID: PMC10298551."
+    },
+    {
+        id: 8,
         text: "Ernst E, Abramson B, Acosta K, Hoang PTN, Mateo-Elizalde C, Schubert V, Pasaribu B, Hartwick N, Colt K, Aylward A, Ramu U, Birchler JA, Schubert I, Lam E, Michael TP, Martienssen RA. The genomes and epigenomes of aquatic plants (Lemnaceae) promote triploid hybridization and clonal reproduction. bioRxiv 2023.08.02.551673; doi: https://doi.org/10.1101/2023.08.02.551673",
         url: "https://doi.org/10.1101/2023.08.02.551673"
     },
     {
-        id: 8,
+        id: 9,
         text: "Dombey R, Buendía-Ávila D, Barragán-Borrero V, Diezma-Navas L, Ponce-Mañe A, Vargas-Guerrero JM, Elias R, Marí-Ordóñez A. Atypical epigenetic and small RNA control of degenerated transposons and their fragments in clonally reproducing Spirodela polyrhiza. Genome Res. 2025 Mar 18;35(3):522-544. doi: 10.1101/gr.279532.124. PMID: 40037843; PMCID: PMC11960707."
     },
     {
-        id: 9,
+        id: 10,
         text: "Andrews, S. (2010). FastQC: A Quality Control Tool for High Throughput Sequence Data [Online]. Available online at: http://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
         url: "http://www.bioinformatics.babraham.ac.uk/projects/fastqc/"
     },
     {
-        id: 10,
+        id: 11,
         text: "Ewels P, Magnusson M, Lundin S, Käller M. MultiQC: summarize analysis results for multiple tools and samples in a single report. Bioinformatics. 2016 Oct 1;32(19):3047-8. doi: 10.1093/bioinformatics/btw354. Epub 2016 Jun 16. PMID: 27312411; PMCID: PMC5039924."
     },
     {
-        id: 11,
+        id: 12,
         text: "Felix Krueger, Frankie James, Phil Ewels, Ebrahim Afyounian, Michael Weinstein, Benjamin Schuster-Boeckler, Gert Hulselmans, & sclamons. (2023). FelixKrueger/TrimGalore: v0.6.10 - add default decompression path (0.6.10). Zenodo. https://doi.org/10.5281/zenodo.7598955",
         url: "https://doi.org/10.5281/zenodo.7598955"
     },
     {
-        id: 12,
+        id: 13,
         text: "Martin, M. (2011). Cutadapt removes adapter sequences from high-throughput sequencing reads. EMBnet.journal, 17(1), pp. 10-12. doi:https://doi.org/10.14806/ej.17.1.200",
         url: "https://doi.org/10.14806/ej.17.1.200"
     },
     {
-        id: 13,
+        id: 14,
         text: "Patro, R., Duggal, G., Love, M. I., Irizarry, R. A., & Kingsford, C. (2017). Salmon provides fast and bias-aware quantification of transcript expression. Nature Methods."
     },
     {
-        id: 14,
+        id: 15,
         text: "Dobin, Alexander et al. \"STAR: ultrafast universal RNA-seq aligner.\" Bioinformatics (Oxford, England) vol. 29,1 (2013): 15-21. doi:10.1093/bioinformatics/bts635"
     },
     {
-        id: 15,
-        text: "Liao Y, Smyth GK and Shi W (2014). featureCounts: an efficient general purpose program for assigning sequence reads to genomic features. Bioinformatics, 30(7):923-30."
-    },
-    {
         id: 16,
-        text: "Loll A, Reinwald H, Ayobahan SU, Göckener B, Salinas G, Schäfers C, Schlich K, Hamscher G, Eilebrecht S. Short-Term Test for Toxicogenomic Analysis of Ecotoxic Modes of Action in Lemna minor. Environ Sci Technol. 2022 Aug 16;56(16):11504-11515. doi: 10.1021/acs.est.2c01777. Epub 2022 Aug 4. PMID: 35926083; PMCID: PMC9386900."
+        text: "Liao Y, Smyth GK and Shi W (2014). featureCounts: an efficient general purpose program for assigning sequence reads to genomic features. Bioinformatics, 30(7):923-30."
     },
     {
         id: 17,
@@ -763,5 +755,3 @@ const Reference = [
         text: "Yao C, Yin Y, Li Q, Zhang H, Zhang Y, Shao Q, Liu Q, Ren Y, Cai M. Nucleotide distribution analysis of 5'UTRs in genome-scale directs their redesign and expression regulation in yeast. Metab Eng. 2025 Mar;88:113-123. doi: 10.1016/j.ymben.2024.12.008. Epub 2024 Dec 28. PMID: 39733855."
     }
 ]
-
-
