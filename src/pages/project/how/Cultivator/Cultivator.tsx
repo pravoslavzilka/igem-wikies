@@ -8,6 +8,7 @@ import CultivatorSec3 from "./Sec3.tsx";
 import CultivatorSec4 from "./Sec4.tsx";
 import CultivatorSec5 from "./Sec5.tsx";
 import CultivatorSec6 from "./Sec6.tsx";
+import CultivatorBillOfMaterials from "./BillOfMaterials.tsx";
 
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
@@ -64,6 +65,8 @@ export default function LivingLayers() {
                     ></iframe>
                 </div>
             </div>
+
+            <CultivatorBillOfMaterials/>
 
 
             <References references={cultivatorReferences}/>
