@@ -8,7 +8,7 @@ export default function HumanPracticesPage7() {
                 className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-8">
                 {/* Dr. Přerovská pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-1.webp"
                     name="Dr. Tereza Přerovská"
                     subtitle="Chromatin Molecular Complexes Laboratory"
                     location="Plant Developmental Biology"
@@ -25,7 +25,7 @@ export default function HumanPracticesPage7() {
 
                 {/* Prof. Kan Wang pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-2.webp"
                     name="Prof. Kan Wang"
                     subtitle="Iowa State University"
                     location="Plant Transformation and Genome Editing"
@@ -78,7 +78,7 @@ export default function HumanPracticesPage7() {
 
                             <div className="flex justify-center">
                                 <img
-                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-3.webp"
                                     alt="Group photo after Prof. Wang lecture"
                                     className="rounded-2xl max-w-md"
                                 />
@@ -113,7 +113,7 @@ export default function HumanPracticesPage7() {
 
                 {/* iGEM Marburg 2024 pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-5.webp"
                     name="iGEM Marburg 2024"
                     subtitle="European iGEM Meetup in Frankfurt"
                 >
@@ -163,7 +163,7 @@ export default function HumanPracticesPage7() {
                             </div>
                             <div className="flex justify-center">
                                 <img
-                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-8.webp"
                                     alt="Second photo with iGEM Marburg"
                                     className="rounded-2xl max-w-md"
                                 />
@@ -174,7 +174,7 @@ export default function HumanPracticesPage7() {
 
                 {/* Dr. Eric Yang pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-6.webp"
                     name="Dr. Eric Yang"
                     subtitle="University of Missouri"
                     location="Synthetic Biology and Genetic Circuits"
@@ -216,7 +216,7 @@ export default function HumanPracticesPage7() {
 
                             <div className="flex justify-center">
                                 <img
-                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-4.webp"
                                     alt="Group selfie with Dr. Eric Yang"
                                     className="rounded-2xl max-w-md"
                                 />
@@ -236,7 +236,7 @@ export default function HumanPracticesPage7() {
                 className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-12">
                 {/* Dr. Veronika Jedličková */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-7.webp"
                     name="Dr. Veronika Jedličková"
                     subtitle="Central European Institute of Technology"
                     location="Hormonal Crosstalk in Plant Development"
@@ -259,7 +259,7 @@ export default function HumanPracticesPage7() {
 
                 {/* Dr. Markéta Šámalová */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-9.webp"
                     name="Dr. Markéta Šámalová"
                     subtitle="Department of Experimental Plant Biology"
                     location="Plant Molecular Biology"
@@ -279,7 +279,7 @@ export default function HumanPracticesPage7() {
 
                 {/* Dr. Petra Procházková Schrumpfová */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-10.webp"
                     name="Dr. Petra Procházková Schrumpfová"
                     subtitle="Chromatin Molecular Complexes Laboratory"
                     location="Plant Developmental Biology"

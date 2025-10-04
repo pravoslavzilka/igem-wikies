@@ -69,7 +69,7 @@ export default function HumanPracticesPage9() {
             <div className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif]">
                 {/* Keith Slotkin pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/5-1.webp"
                     name="Dr. Keith Slotkin"
                     subtitle="PI at Donald Danforth Plant Science Center"
                     location="Transposons and DNA methylation in plants"
@@ -121,7 +121,7 @@ export default function HumanPracticesPage9() {
                         {/* Bottom image inside the expanded content */}
                         <div className="flex justify-center">
                             <img
-                                src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                                src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/5-2.webp"
                                 alt="Discussion related to the PING-PONG system"
                                 className="rounded-2xl max-w-2xl"
                             />
@@ -248,7 +248,7 @@ export default function HumanPracticesPage9() {
             <div className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif]">
                 {/* Arturo Research Group pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/5-3.webp"
                     name="Research group of Dr. Arturo Mari-Ordóñez"
                     subtitle="GMI Vienna"
                     location="Mechanisms of recognition and silencing of transposons in plants"
@@ -295,7 +295,7 @@ export default function HumanPracticesPage9() {
                         {/* Meeting photo */}
                         <div className="flex justify-center">
                             <img
-                                src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                                src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/5-4.webp"
                                 alt="Meeting with Dr. Arturo Mari-Ordóñez research group at GMI Vienna"
                                 className="rounded-2xl max-w-2xl"
                             />
@@ -321,7 +321,7 @@ export default function HumanPracticesPage9() {
                         <div className="grid md:grid-cols-2 gap-8 items-start">
                             <div className="flex justify-center">
                                 <img
-                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/5-5.webp"
                                     alt="Team photo at GMI Vienna"
                                     className="rounded-2xl max-w-md"
                                 />

@@ -151,7 +151,7 @@ export default function HumanPracticesPage10() {
 
                 {/* Hanson pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/10-1.webp"
                     name="Dr. Andrew D. Hanson"
                     subtitle="Professor at University of Florida"
                     location="Biochemistry and plant metabolism"
@@ -193,7 +193,7 @@ export default function HumanPracticesPage10() {
                             {/* Zoom call image */}
                             <div className="flex justify-center">
                                 <img
-                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/10-2.webp"
                                     alt="Zoom call with Prof. Andrew Hanson"
                                     className="rounded-2xl max-w-md"
                                 />

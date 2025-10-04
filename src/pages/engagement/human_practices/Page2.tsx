@@ -30,7 +30,7 @@ export default function HumanPracticesPage2() {
                     {/* Centered diagram */}
                     <div className="mb-6 flex justify-center">
                         <img
-                            src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/nitroduckweed-concept-copy.webp"
+                            src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/2-5.webp"
                             alt="Scheme of ammonium-resistant duckweed concept"
                             className="max-w-full rounded-lg"
                         />
@@ -47,7 +47,7 @@ export default function HumanPracticesPage2() {
 
                 {/* Professor Hanson pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/2-1.webp"
                     name="Dr. Andrew D. Hanson"
                     subtitle="Professor at University of Florida"
                     location="Biochemistry and plant metabolism"
@@ -76,7 +76,7 @@ export default function HumanPracticesPage2() {
                         {/* Right column */}
                         <div className="flex justify-center items-center">
                             <img
-                                src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                                src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/2-2.webp"
                                 alt="Call with Prof. Andrew D. Hanson"
                                 className="rounded-2xl"
                             />
@@ -116,7 +116,7 @@ export default function HumanPracticesPage2() {
                 {/* Centered image */}
                 <div className="flex justify-center mb-8">
                     <img
-                        src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                        src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/2-3.webp"
                         alt="iGEM Startup Showcase in Paris"
                         className="rounded-2xl  max-w-full"
                     />
@@ -185,7 +185,7 @@ export default function HumanPracticesPage2() {
                     {/* Image */}
                     <div className="flex justify-center">
                         <img
-                            src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                            src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/2-4.webp"
                             alt="Duckweed biomass illustration"
                             className="rounded-2xl  max-w-xs"
                         />
@@ -208,7 +208,7 @@ export default function HumanPracticesPage2() {
                 {/* Image */}
                 <div className="mb-6 px-6">
                     <img
-                        src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/simple-chloroplast-transformation-copy.webp"
+                        src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/2-6.webp"
                         alt="Chloroplast engineering illustration"
                         className="rounded-2xl mx-auto max-w-xl"
                     />
