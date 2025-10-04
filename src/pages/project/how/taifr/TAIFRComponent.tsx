@@ -73,14 +73,7 @@ const TAIFRComponent = () => {
               <p>
                 <strong>Figure 2. </strong>
                 <span style={{ fontWeight: 400 }}>
-                    TAIFR is a system that uses PONG transposase to deliver the gene of interest
-                    (GOI) into a duckweed nucleus. The GOI is flanked by two halves of PONG’s
-                    target - the mPing transposon. PONG cleaves this construct, and it performs
-                    a random double-strand break (DSB) in the genomic DNA in TAA sites and then
-                    inserts the construct into this site. Then, selection pressure favours the
-                    transformed cells, which propagate more and give rise to a new transformed
-                    generation of duckweeds, thanks to duckweed unique capability for rapid
-                    asexual propagation. All of this takes 4 weeks.
+                    TAIFR is a system that uses PONG transposase to deliver the gene of interest (GOI) into a duckweed nucleus. The GOI is flanked by two halves of PONG’s target - the mPing transposon. PONG cleaves this construct, and it performs a random double-strand break (DSB) in the genomic DNA in TAA sites and then inserts the construct into this site. Then, selection pressure favours the transformed cells, which propagate more and give rise to a new transformed generation of duckweeds, thanks to duckweed unique capability for rapid asexual propagation. 
                 </span>
                 </p>
 
@@ -117,18 +110,25 @@ const TAIFRComponent = () => {
           <p className="text-gray-700 leading-relaxed text-justify" style={{ fontFamily: 'Urbanist, sans-serif' }}>
             <p>
                 <strong>Figure 3. </strong>
-                <span style={{ fontWeight: 400 }}>
-                    Co-transformation of constructs pIB002 (GFP-NPTII) and pIB003 (PONG) into
+                <p>
+                  <span style={{ fontWeight: 400 }}>
+                    Transformation of construct pIB005 (mPing bordered GFP linked to NPTII) into
                     wild-type{" "}
-                </span>
-                <em>
+                  </span>
+                  <em>
                     <span style={{ fontWeight: 400 }}>Spirodela polyrhiza </span>
-                </em>
-                <span style={{ fontWeight: 400 }}>
-                    (1) results in transient GFP expression (2). Upon neomycin selection, some
-                    transformed duckweed give rise to new GFP-positive fronds 3–4 weeks post
-                    infiltration (3). GFP expression was further confirmed by Western blot (4).
-                </span>
+                  </em>
+                  <span style={{ fontWeight: 400 }}>
+                    results in transient GFP expression (1). Its co-transformation with pIB003
+                    (PONG transposase ) results in no transient GFP expression (2), but 12 - 18
+                    days post infiltration spots of GFP fluorescence appea  rs (3) as results of
+                    insertion of mPing bordered cassette into duckweed nuclear genome. Insertion
+                    was further confirmed by PCR/Western blot (4).{" "}
+                  </span>
+                  <span style={{ fontWeight: 400 }}>Read more here</span>
+                  <span style={{ fontWeight: 400 }}>.</span>
+                </p>
+
                 </p>
 
             </p>
@@ -316,17 +316,50 @@ const TAIFRComponent = () => {
             So, what is the real bottleneck?
           </h2>
           
-          <p className="text-gray-700 leading-relaxed mb-4 text-justify" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-             There are few possible bottlenecks explaining why we cannot perform frond-mediated transformation in duckweed:
-           
-          </p>
+          <>
+            <p>
+              <span style={{ fontWeight: 400 }}>
+                There are few possible bottlenecks explaining why we cannot perform
+                frond-mediated transformation in duckweed:
+              </span>
+            </p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <ul className='list-disc list-inside'>
+              <li style={{ fontWeight: 400 }}>
+                <em>
+                  <em>
+                    <span style={{ fontWeight: 400 }}>Agrobacterium</span>
+                  </em>
+                  <span style={{ fontWeight: 400 }}> cannot infect duckweed cells.</span>
+                </em>
+              </li>
+            
+              <li style={{ fontWeight: 400 }}>
+                <em>
+                  <span style={{ fontWeight: 400 }}>Agrobacterium</span>
+                </em>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  cannot transfer its T-DNA into duckweed nuclei.
+                </span>
+              </li>
+            
+              <li style={{ fontWeight: 400 }}>
+                <em>
+                  <span style={{ fontWeight: 400 }}>Agrobacterium</span>
+                </em>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  proteins cannot insert T-DNA into the nuclear genome in the duckweed
+                  context.
+                </span>
+              </li>
+            </ul>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+          </>
 
-          <ul className="list-disc list-inside text-gray-700 space-y-2 mb-4 ml-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-            <li>Agrobacterium cannot infect duckweed cells.</li>
-            <li>Agrobacterium cannot transfer its T-DNA into duckweed nuclei.</li>
-            <li>Agrobacterium proteins cannot insert T-DNA into the nuclear genome in the duckweed context.</li>
-            <li>Agrobacterium can infect duckweed cells, but not those with meristematic activity (cells that give rise to new fronds).</li>
-          </ul>
 
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
@@ -339,34 +372,35 @@ const TAIFRComponent = () => {
             <div className="col-span-2  ">
                  <p className="text-gray-700 leading-relaxed mb-6 text-justify mt-10" style={{ fontFamily: 'Urbanist, sans-serif' }}>
                     <p>
-                        <span style={{ fontWeight: 400 }}>
-                            The possible reasons for the above-mentioned bottlenecks could be that, as
-                            duckweed is an aquatic plant,{" "}
-                        </span>
-                        <em>
-                            <span style={{ fontWeight: 400 }}>Agrobacterium</span>
-                        </em>
-                        <span style={{ fontWeight: 400 }}>
-                            {" "}
-                            is simply not evolutionarily adapted to infect with duckweed cells.
-                            Alternatively, duckweed may possess a strong immune system that kills{" "}
-                        </span>
-                        <em>
-                            <span style={{ fontWeight: 400 }}>Agrobacterium</span>
-                        </em>
-                        <span style={{ fontWeight: 400 }}>
-                            {" "}
-                            in the intracellular space or destroys its proteins within cells, thus
-                            hindering{" "}
-                        </span>
-                        <em>
-                            <span style={{ fontWeight: 400 }}>Agrobacterium’s</span>
-                        </em>
-                        <span style={{ fontWeight: 400 }}>
-                            {" "}
-                            ability to transfer and integrate T-DNA.
-                        </span>
-                        </p>
+                      <span style={{ fontWeight: 400 }}>
+                        The possible reasons for the above-mentioned bottlenecks could be that, as
+                        duckweed is an aquatic plant,{" "}
+                      </span>
+                      <em>
+                        <span style={{ fontWeight: 400 }}>Agrobacterium</span>
+                      </em>
+                      <span style={{ fontWeight: 400 }}>
+                        {" "}
+                        is simply not evolutionarily adapted to infect with duckweed cells.
+                        Alternatively, duckweed may possess a strong immune system that kills{" "}
+                      </span>
+                      <em>
+                        <span style={{ fontWeight: 400 }}>Agrobacterium</span>
+                      </em>
+                      <span style={{ fontWeight: 400 }}>
+                        {" "}
+                        in the intracellular space or destroys its proteins within cells, thus
+                        hindering{" "}
+                      </span>
+                      <em>
+                        <span style={{ fontWeight: 400 }}>Agrobacterium’s</span>
+                      </em>
+                      <span style={{ fontWeight: 400 }}>
+                        {" "}
+                        ability to transfer and integrate T-DNA.
+                      </span>
+                    </p>
+
                 
                 </p>
             </div>
@@ -377,42 +411,37 @@ const TAIFRComponent = () => {
             {/* First column (1/5 width) */}
             <div className="col-span-3  p-4 rounded">
                 <>
-                <p>
+                  <p>
                     <span style={{ fontWeight: 400 }}>
-                    We investigated the literature and discussed all these possible
-                    bottlenecks with Dr. Ordóñez. Given the experimentally confirmed fact (see
-                    Figure 6) of strong transient GFP expression in duckweed cells,{" "}
+                      We investigated the literature and discussed all these possible
+                      bottlenecks with Dr. Ordóñez. Given the experimentally confirmed fact (see
+                      Fig. 6) of strong transient GFP expression in duckweed cells,{" "}
                     </span>
                     <em>
-                    <span style={{ fontWeight: 400 }}>Agrobacterium</span>
+                      <span style={{ fontWeight: 400 }}>Agrobacterium</span>
                     </em>
                     <span style={{ fontWeight: 400 }}>
-                    {" "}
-                    is indeed able to infect duckweed cells and even transfer its T-DNA into
-                    the nucleus, as T-DNA can be transcribed into mRNA only in the nucleus,
-                    where RNA polymerases exist (13). Thus, only two possible bottlenecks
-                    remain:{" "}
+                      {" "}
+                      is indeed able to infect duckweed cells and even transfer its T-DNA into
+                      the nucleus, as T-DNA can be transcribed into mRNA only in the nucleus,
+                      where RNA polymerases exist (13). Thus, only two possible bottlenecks
+                      remain:{" "}
                     </span>
                     <strong>
-                    <em>Agrobacterium</em>
+                      <em>Agrobacterium</em>
                     </strong>
                     <strong>
-                    {" "}
-                    cannot insert its T-DNA into the duckweed nuclear genome in frond context
+                      {" "}
+                      cannot insert its T-DNA into the duckweed nuclear genome in frond context
                     </strong>
-                    <span style={{ fontWeight: 400 }}>, or it can, but those </span>
-                    <strong>cells are not meristematic </strong>
-                    <span style={{ fontWeight: 400 }}>
-                    and therefore do not give rise to a new frond.&nbsp;
-                    </span>
-                </p>
-                <p>&nbsp;</p>
-                <p>
-                    <span style={{ fontWeight: 400 }}>
-                    We set out to address both bottlenecks!
-                    </span>
-                </p>
+                    <span style={{ fontWeight: 400 }}>.</span>
+                  </p>
+                  <p>&nbsp;</p>
+                  <p>
+                    <span style={{ fontWeight: 400 }}>We set out to address that!</span>
+                  </p>
                 </>
+
 
             </div>
 
@@ -422,13 +451,16 @@ const TAIFRComponent = () => {
                             Right image 
                 </div>
                 <p className='text-sm'>
-                    <strong>Figure 6. </strong>
-                    <span style={{ fontWeight: 400 }}>
+                    <p>
+                      <strong>Figure 6. </strong>
+                      <span style={{ fontWeight: 400 }}>
                         Strong transient expression of GFP driven by rZmUBI promoter in fronds of{" "}
-                    </span>
-                    <em>
+                      </span>
+                      <em>
                         <span style={{ fontWeight: 400 }}>Spirodela polyrhiza 7428</span>
-                    </em>
+                      </em>
+                    </p>
+
                     </p>
             
             </div>
@@ -439,78 +471,84 @@ const TAIFRComponent = () => {
 
         {/* How did the TAIFR design originated? */}
         <section className="mb-8">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+          <h2 className="text-4xl font-bold text-gray-800 mb-8" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             How did the TAIFR design originated?
           </h2>
           
-          <p>
-            <span style={{ fontWeight: 400 }}>As we identified the inability of </span>
-            <em>
-                <span style={{ fontWeight: 400 }}>Agrobacterium </span>
-            </em>
-            <span style={{ fontWeight: 400 }}>
-                infection machinery to insert T-DNA into duckweed genome, as one of the most
-                probable bottleneck of frond-mediated transformation, we went searching for
-                any possible DNA insertion method ☺. Very soon, we landed on transposases,
-                especially class II type - enzymes capable of recognizing, cutting, moving,
-                and inserting transposons: DNA segments bordered with inverted terminal
-                repeats of unique sequence, depending on the type of the transposon (14).
-                Transposons are often used in plant biotechnology for insertional
-                mutagenesis (15).
-            </span>
-            </p>
+          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-4'>
 
+            <div className='col-span-3 '>
 
-          <p style={{ marginTop: '1rem' }}>
-            <span style={{ fontWeight: 400 }}>
-                But could they also be used for inserting DNA into the plant nuclear genome?
-                Of course, yes! Meeting Dr. Ordóñez was a pure luck, but we were about to
-                get even luckier… Less than a year ago, Dr. Slotkin published an amazing
-                article in Nature: Transposase-assisted target-site integration for
-                efficient plant genome engineering (16).
-            </span>
-            </p>
-
-
-          <p style={{ marginTop: '1rem' }}>
-            <span style={{ fontWeight: 400 }}>
-                Dr. Slotkin’s lab used the so-called PING-PONG system fused with Cas9 to
-                insert DNA into the Arabidopsis and soybean genomes site-specifically, with
-                37% efficiency in{" "}
-            </span>
-            <em>
-                <span style={{ fontWeight: 400 }}>Arabidopsis</span>
-            </em>
-            <span style={{ fontWeight: 400 }}>
-                ! What an achievement! He also managed to insert cargo bordered by halves of
-                the mPing transposon (16).
-            </span>
-            </p>
-
-
-          
-
-
-  
-
-          {/* Figure 7 - Right aligned */}
-          <div className="float-right ml-6 mb-4 w-48">
-            <div className="w-64 h-40 overflow-hidden rounded-lg">
-              <img src="https://static.igem.wiki/teams/5642/images/how/taifr/dsc05068-3527973337.webp" alt="Figure 7" className="w-full h-full object-cover " />
-            </div>
-            <p className="text-sm text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-              <p>
-                <strong>Figure 7. </strong>
-                <span style={{ fontWeight: 400 }}>
-                    Dr. Keith Slotkin from The Donald Danforth Plant Science Center
-                </span>
+              <>
+                <p>
+                  <span style={{ fontWeight: 400 }}>As we identified the inability of </span>
+                  <em>
+                    <span style={{ fontWeight: 400 }}>Agrobacterium </span>
+                  </em>
+                  <span style={{ fontWeight: 400 }}>
+                    infection machinery to insert T-DNA into duckweed genome, as one of the
+                    most probable bottleneck of frond-mediated transformation, we went
+                    searching for any possible DNA insertion method ☺. Very soon, we landed on
+                    transposases, especially class II type - enzymes capable of recognizing,
+                    cutting, moving, and inserting transposons: DNA segments bordered with
+                    inverted terminal repeats of unique sequence, depending on the type of the
+                    transposon (14). Transposons are often used in plant biotechnology for
+                    insertional mutagenesis (15).
+                  </span>
                 </p>
+                <p>&nbsp;</p>
+                <p>
+                  <span style={{ fontWeight: 400 }}>
+                    But could they also be used for inserting DNA into the plant nuclear
+                    genome? Of course, yes! Meeting Dr. Ordóñez was a pure luck, but we were
+                    about to get even luckier… Less than a year ago, Dr. Slotkin published an
+                    amazing article in Nature: Transposase-assisted target-site integration
+                    for efficient plant genome engineering (16).
+                  </span>
+                </p>
+                <p>&nbsp;</p>
+                <p>
+                  <span style={{ fontWeight: 400 }}>
+                    Dr. Slotkin’s lab used the so-called PING-PONG system fused with Cas9 to
+                    insert DNA into the Arabidopsis and soybean genomes site-specifically,
+                    with 37% efficiency in{" "}
+                  </span>
+                  <em>
+                    <span style={{ fontWeight: 400 }}>Arabidopsis</span>
+                  </em>
+                  <span style={{ fontWeight: 400 }}>
+                    ! What an achievement! He also managed to insert cargo bordered by halves
+                    of the mPing transposon (16).
+                  </span>
+                </p>
+              </>
+            </div>
 
-            </p>
+            <div className='col-span-1 p-4 rounded'>
+                {/* Figure 7 - Right aligned */}
+                  <div className="float-right ml-6 mb-4 w-48">
+                    <div className="w-64 h-64 overflow-hidden rounded-lg">
+                      <img src="https://static.igem.wiki/teams/5642/images/how/taifr/dsc05068-3527973337.webp" alt="Figure 7" className="w-full h-full object-cover rounded-full" />
+                    </div>
+                    <p className="text-sm text-gray-700 mt-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                      <p>
+                        <strong>Figure 7. </strong>
+                        <span style={{ fontWeight: 400 }}>
+                            Dr. Keith Slotkin from The Donald Danforth Plant Science Center
+                        </span>
+                        </p>
+
+                    </p>
+                  </div>        
+
+            </div>    
+
           </div>
 
+
           <p style={{ marginTop: '1rem' }}>
-            <span style={{ fontWeight: 400 }}>
+            <p>
+              <span style={{ fontWeight: 400 }}>
                 So, how does the PING-PONG system work? Transposase PING (consisting of two
                 ORFs linked by T2A linker peptide) is expressed transiently in the plant
                 cell. It recognizes the terminal inverted repeats of the mPing transposon,
@@ -522,211 +560,39 @@ const TAIFRComponent = () => {
                 Cas9 (16). We adopted Dr. Slotkin’s design but omitted Cas9, as for our
                 purposes even random insertions would be a great achievement in the
                 beginning.&nbsp;
-            </span>
+              </span>
+            </p>
+
             </p>
         </section>
 
 
-        <section className="mb-8 ">
-          <div className=" grid grid-cols-1 md:grid-cols-3 gap-4">
-            {/* Left side - Question and diagram */}
-            <div className="col-span-1">
-              <h3 className="text-lg font-bold text-gray-800 mb-4 leading-tight" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-               Can we insert transgene into duckweed genome and regenerate transgenic cells into whole plant?
-
-              </h3>
-              
-              {/* Circular diagram placeholder */}
-              <div className="relative w-64 h-64 mx-auto mb-4">
-                <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regeneration-assay.webp" alt="TAIFR Cycle" className="w-64 h-64 object-contain" />
-
-                
-              </div>
-
-              <h3 className="text-1xl font-bold text-gray-800 text-center" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-                See what we discovered during the
-              </h3>
-              
-              <h3 className="text-2xl font-bold text-gray-800 text-center" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-                REGENERATION ASSAY
-              </h3>
-            </div>
-
-            {/* Right side - Text content */}
-            <div className="col-span-2 text-gray-700">
-              <p className="text-gray-700 leading-relaxed mb-4 text-justify" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                We designed our first assay <u>The Regeneration Assay</u>.
-              </p>
-              
-              <p style={{ marginTop: '1rem' }}>
-                <span style={{ fontWeight: 400 }}>
-                    In short, duckweed was co-transformed with two{" "}
-                </span>
-                <em>
-                    <span style={{ fontWeight: 400 }}>Agrobacterium</span>
-                </em>
-                <span style={{ fontWeight: 400 }}>
-                    {" "}
-                    lines. The first carried GFP linked to neomycin resistance between
-                    transposable mPing elements - this is the{" "}
-                </span>
-                <strong>PING part</strong>
-                <span style={{ fontWeight: 400 }}>
-                    . The second carried the PONG transposase under the monocot-specific
-                    promoter rZmUBI, which should recognize, cut, move, and insert this cassette
-                    into the duckweed nuclear genome – this is the{" "}
-                </span>
-                <strong>PONG part</strong>
-                <span style={{ fontWeight: 400 }}>.</span>
-                </p>
-
-
+        <section className="mb-8 mt-16">
+          <div className="text-center py-6 px-8 bg-green-100 rounded-lg">
+            <h2 className="text-2xl font-bold text-green-800" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               <>
-                <p style={{ marginTop: '1rem' }}>
-                    <span style={{ fontWeight: 400 }}>
-                    From duckweed antibiotic sensitivity tests performed by Dr. Ordóñez, we
-                    knew that neomycin, especially its synthetic form G418 - kills duckweed
-                    most effectively (Marí-Ordóñez, unpublished). That is why we placed the
-                    gene for its resistance, NPTII, into our cassette for insertion into the
-                    duckweed nuclear genome.
-                    </span>
+                <p>
+                  <span style={{ fontWeight: 400 }}>We adopted and modified the </span>
+                  <strong>PING-PONG</strong>
+                  <span style={{ fontWeight: 400 }}> design, combining it with a </span>
+                  <strong>novel regeneration approach</strong>
+                  <span style={{ fontWeight: 400 }}> to develop our </span>
+                  <strong>TAIFR </strong>
+                  <span style={{ fontWeight: 400 }}>
+                    method. In practice, we carried out{" "}
+                  </span>
+                  <strong>4.5 DBTL cycles</strong>
+                  <span style={{ fontWeight: 400 }}>.&nbsp;</span>
                 </p>
-                
-                <p style={{ marginTop: '1rem' }}>
-                    <span style={{ fontWeight: 400 }}>
-                    After the, hopefully, successful insertion, we would select
-                    transgene-positive cells by neomycin selection, trying to favor transgenic
-                    cells over non-transgenic ones in a way that would not kill them all
-                    immediately, allowing the few transgenic cells to survive and give rise to
-                    new fronds.
-                    </span>
+                <p className='mt-10'>
+                  <span className='text-1xl ' style={{ fontWeight: 400, }}>The results are shown below</span>
+                  <span style={{ fontWeight: 400 }}>.</span>
                 </p>
-                </>
+              </>
 
-            </div>
+            </h2>
           </div>
-        </section>     
-
-
-
-        <section className="mb-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            
-
-            {/* Right side - Text content */}
-            <div className="col-span-2 text-gray-700">
-              
-              
-              <p style={{ marginTop: '1rem' }}>
-                <span style={{ fontWeight: 400 }}>
-                    We were lucky to get Dr. Slotkin on a call (
-                </span>
-                <span style={{ fontWeight: 400 }}>read more in Human Practices</span>
-                <span style={{ fontWeight: 400 }}>
-                    ) to discuss our design with him. He told us that there is no reason this
-                    could not work in duckweed - it is definitely worth giving a try. But we
-                    should first perform{" "}
-                </span>
-                <strong>The Excision Assay</strong>
-                <span style={{ fontWeight: 400 }}>
-                    {" "}
-                    to see whether the PONG transposase is even able to act on mPing in the
-                    duckweed nuclear environment, and to check whether any duckweed-native
-                    transposases might act upon mPing sequences, potentially ruining our
-                    efforts.
-                </span>
-                </p>
-
-
-            </div>
-            {/* Left side - Question and diagram */}
-            <div className="col-span-1">
-              <h3 className="text-lg font-bold text-gray-800 mb-4 leading-tight" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-               But wait… Is PONG transposase actually able to recognize and excise mPing in duckweed?
-
-
-              </h3>
-              
-              {/* Circular diagram placeholder */}
-              <div className="relative w-64 h-64 mx-auto mb-4">
-                <img src="https://static.igem.wiki/teams/5642/images/how/taifr/taifr-cycles.webp" alt="TAIFR Cycle" className="w-64 h-64 object-contain" />
-
-                
-              </div>
-              
-              <h3 className="text-1xl font-bold text-gray-800 text-center" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-                See what we discovered during the
-              </h3>
-            
-              <h3 className="text-2xl font-bold text-gray-800 text-center" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-                EXCISION ASSAY
-              </h3>
-            </div>
-          </div>
-        </section>     
-
-
-        <section className="mb-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {/* Left side - Question and diagram */}
-            <div className="col-span-1">
-              <h3 className="text-lg font-bold text-gray-800 mb-4 leading-tight" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-               And what if Agrobacterium cannot reach the meristematic tissue?
-
-              </h3>
-              
-              {/* Circular diagram placeholder */}
-              <div className="relative w-64 h-64 mx-auto mb-4">
-                <img src="https://static.igem.wiki/teams/5642/images/how/taifr/meristematic.webp" alt="TAIFR Cycle" className="w-64 h-64 object-contain" />
-
-                
-              </div>
-
-              <h3 className="text-1xl font-bold text-gray-800 text-center" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-                See what we discovered during the
-              </h3>
-              
-              <h3 className="text-2xl font-bold text-gray-800 text-center" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-                MERISTEMATIC ASSAY
-
-              </h3>
-            </div>
-
-            {/* Right side - Text content */}
-            <div className="col-span-2 text-gray-700">
-              
-              <p style={{ marginTop: '1rem' }}>
-                <span style={{ fontWeight: 400 }}>
-                    To address the second possible bottleneck of frond-mediated transformation
-                    in duckweed, we also designed{" "}
-                </span>
-                <strong>The Meristematic Assay</strong>
-                <span style={{ fontWeight: 400 }}>
-                    , utilizing an already established GFP-stable line of{" "}
-                </span>
-                <em>
-                    <span style={{ fontWeight: 400 }}>Spirodela polyrhiza 162</span>
-                </em>
-                <span style={{ fontWeight: 400 }}>
-                    , generated by callus-mediated transformation and kindly provided by Dr.
-                    Ordóñez. We aimed to test whether knocking out GFP using Cas9 guided by GFP
-                    gRNAs would result in decreased or even lost fluorescence in subsequent
-                    generations - thus confirming that{" "}
-                </span>
-                <em>
-                    <span style={{ fontWeight: 400 }}>Agrobacterium</span>
-                </em>
-                <span style={{ fontWeight: 400 }}>
-                    {" "}
-                    can reach the meristematic cells of duckweed.
-                </span>
-                </p>
-
-
-            </div>
-          </div>
-        </section>        
-
+        </section>
 
 
         
