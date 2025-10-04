@@ -99,9 +99,11 @@ export default function CultivatorSec5() {
                 <div className="flex justify-center mb-6">
                     <img
                         src="https://static.igem.wiki/teams/5642/images/how/cultivator/tech/communication-schema.webp"
-                        className="max-w-lg rounded-lg object-contain"
+                        alt="Cultivator communication schema"
+                        className="w-full max-w-[700px] rounded-lg object-contain px-2 sm:px-0"
                     />
                 </div>
+
 
                 <p className="text-justify">
                     Each <span className="font-bold text-[#6ca033]">ESP32</span> handles specific
@@ -140,9 +142,10 @@ export default function CultivatorSec5() {
 
 
             {/* === Suitcase Section === */}
-            <div className="max-w-6xl mx-auto p-8 space-y-16">
+            <div className="max-w-6xl mx-auto p-6 md:p-8 space-y-16">
+                {/* === Compact and Safe Power Hub === */}
                 <h2
-                    className="font-bold text-green-700 mb-4 text-center"
+                    className="font-bold text-green-700 mb-6 text-center"
                     style={{
                         fontFamily: "Space Grotesk, sans-serif",
                         fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem",
@@ -152,51 +155,55 @@ export default function CultivatorSec5() {
                 </h2>
 
                 <div className="grid md:grid-cols-2 gap-8 items-center">
-                    {/* Suitcase image placeholder */}
-                    <div className="flex justify-center mb-6">
+                    {/* Suitcase image */}
+                    <div className="flex justify-center mb-6 md:mb-0">
                         <img
                             src="https://static.igem.wiki/teams/5642/images/how/cultivator/tech/case-far.webp"
-                            className="max-w-lg rounded-lg object-contain"
+                            className="w-full max-w-md rounded-lg object-contain"
+                            alt="Cultivator suitcase"
                         />
                     </div>
-                    <div className="space-y-4 items-center">
+
+                    {/* Text column */}
+                    <div className="space-y-4 text-lg font-[Urbanist,sans-serif] leading-relaxed">
                         <p className="text-justify">
                             The main power and communication components are housed in a{" "}
-                            <span className="font-bold text-[#6ca033]">portable suitcase module</span>. It
-                            contains the <span className="font-bold">Raspberry Pi</span>, Wi-Fi router, and
-                            regulated power supply, all connected through a single external power cable.
+                            <span className="font-bold text-[#6ca033]">portable suitcase module</span>.
+                            It contains the <span className="font-bold">Raspberry Pi</span>, Wi-Fi router,
+                            and regulated power supply — all connected through a single external power cable.
                         </p>
+
                         <p className="text-justify">
                             All data transmission between the suitcase and cultivator occurs{" "}
-                            <span className="font-bold text-[#6ca033]">wirelessly</span>. For safety, the
-                            suitcase integrates <span className="font-bold">circuit breakers</span> and{" "}
+                            <span className="font-bold text-[#6ca033]">wirelessly</span>.
+                            For safety, the suitcase integrates <span
+                            className="font-bold">circuit breakers</span> and{" "}
                             <span className="font-bold">current protection systems</span> that automatically
-                            cut off power during electrical faults, ensuring{" "}
+                            cut power during electrical faults, ensuring{" "}
                             <span className="font-bold text-[#6ca033]">complete operational safety</span>.
                         </p>
 
-                        <div className="flex justify-center mb-6">
+                        <div className="flex justify-center md:justify-start">
                             <img
                                 src="https://static.igem.wiki/teams/5642/images/how/cultivator/tech/case-open-1.webp"
-                                className="max-w-lg rounded-lg object-contain"
+                                className="w-full max-w-md rounded-lg object-contain"
+                                alt="Open suitcase module"
                             />
                         </div>
-                        <div className="mt-6 flex justify-center md:justify-center">
+
+                        <div className="flex justify-center mt-6">
                             <button
                                 onClick={() => setIsOpenSuitcaseSlides(true)}
-                                className="text-green-600 hover:text-green-800 font-semibold text-2xl underline"
+                                className="text-green-600 hover:text-green-800 font-semibold text-lg md:text-2xl underline"
                             >
                                 View the suitcase contents
                             </button>
                         </div>
-
                     </div>
                 </div>
 
-
-                {/* === Waterproof Electronics Boxes === */}
-                <div className="space-y-2">
-
+                {/* === Distributed Control Units === */}
+                <div className="space-y-6">
                     <h2
                         className="font-bold text-green-700 mb-4 text-center"
                         style={{
@@ -207,75 +214,71 @@ export default function CultivatorSec5() {
                         Distributed Control Units
                     </h2>
 
-
-                    <p className="text-justify">
+                    <p className="text-justify font-[Urbanist,sans-serif] text-lg leading-relaxed">
                         Additional control electronics are housed directly on the cultivator in{" "}
                         <span className="font-bold text-[#6ca033]">two waterproof boxes</span>, each
                         containing an <span className="font-bold">ESP32 microcontroller</span>.
                     </p>
 
-
-                    <div className="grid md:grid-cols-2 gap-8 items-start">
-                        {/* Left column: placeholders */}
-
-                        <div className="space-y-6">
-                            <span className="font-semibold">The first box primarily includes:</span>
-                            <ul className="list-disc list-inside ml-6 space-y-1 text-base">
+                    {/* Descriptive grid */}
+                    <div
+                        className="grid md:grid-cols-2 gap-8 items-start font-[Urbanist,sans-serif] text-lg leading-relaxed">
+                        <div className="space-y-4">
+                            <span className="font-semibold block">The first box primarily includes:</span>
+                            <ul className="list-disc list-inside ml-4 space-y-1 text-base">
                                 <li>Five relays for switching grow lights on each layer</li>
                                 <li>Five relays for actuating electromagnetic valves</li>
                                 <li>Five connectors for PROBE sensor outputs</li>
                             </ul>
-
-
                         </div>
 
-                        {/* Right column: text */}
                         <div className="space-y-4">
-                            <span className="font-semibold">The second box contains:</span>
-                            <ul className="list-disc list-inside ml-6 space-y-1 text-base">
+                            <span className="font-semibold block">The second box contains:</span>
+                            <ul className="list-disc list-inside ml-4 space-y-1 text-base">
                                 <li>Electronics for measuring water conductivity</li>
                                 <li>
-                                    MOSFET transistors for controlling the{" "}
-                                    <span className="font-bold text-[#6ca033]">peristaltic and circulation pumps</span>
+                                    MOSFET transistors for controlling{" "}
+                                    <span className="font-bold text-[#6ca033]">
+              peristaltic and circulation pumps
+            </span>
                                 </li>
                                 <li>
                                     A PWM (Pulse Width Modulation) DC motor driver for the{" "}
                                     <span className="font-bold">harvesting pump</span>
                                 </li>
                             </ul>
-
-
                         </div>
                     </div>
 
-
-                    <div className="grid md:grid-cols-2 gap-8 items-start">
-                        <div className="flex justify-center mb-6">
+                    {/* Image grid */}
+                    <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 mt-6">
+                        <div className="flex justify-center">
                             <img
                                 src="https://static.igem.wiki/teams/5642/images/how/cultivator/tech/box-1.webp"
-                                className="max-w-lg rounded-lg object-contain"
+                                className="w-full max-w-md rounded-lg object-contain"
+                                alt="Electronics box 1"
                             />
                         </div>
-                        <div className="flex justify-center mb-6">
-
+                        <div className="flex justify-center">
                             <img
                                 src="https://static.igem.wiki/teams/5642/images/how/cultivator/tech/box-2.webp"
-                                className="max-w-lg rounded-lg object-contain"
+                                className="w-full max-w-md rounded-lg object-contain"
+                                alt="Electronics box 2"
                             />
                         </div>
                     </div>
 
-                    <div className="mt-6 flex justify-center md:justify-center">
+                    <div className="flex justify-center mt-6">
                         <button
                             onClick={() => setIsOpenSchematicsSlides(true)}
-                            className="text-green-600 hover:text-green-800 font-semibold text-2xl underline"
+                            className="text-green-600 hover:text-green-800 font-semibold text-lg md:text-2xl underline"
                         >
                             View the detailed schematics
                         </button>
                     </div>
-
                 </div>
             </div>
+
             <ImageViewer
                 slides={guiSlides}
                 isOpen={isOpenGUISlides}

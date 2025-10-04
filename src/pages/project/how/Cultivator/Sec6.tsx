@@ -27,31 +27,37 @@ export default function CultivatorSec5() {
             </p>
 
             {/* Positive feedback */}
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div className="flex justify-center mb-6">
+            <div className="grid md:grid-cols-2 gap-8 items-center px-2 sm:px-8 md:px-0">
+                {/* Left: image */}
+                <div className="flex justify-center mb-6 md:mb-0">
                     <img
                         src="https://static.igem.wiki/teams/5642/images/how/cultivator/testing/ut-1-cropped.webp"
-                        className="max-w-lg rounded-lg object-contain"
+                        alt="Researchers testing the cultivator"
+                        className="w-full max-w-[600px] rounded-lg object-contain"
                     />
                 </div>
-                <div>
 
+                {/* Right: text */}
+                <div className="space-y-4 font-[Urbanist,sans-serif] text-lg leading-relaxed md:pr-4">
                     <p className="text-justify">
                         The researchers commended several aspects of the system. They especially praised our{" "}
                         <span className="font-bold text-[#6ca033]">web application</span> for being{" "}
                         <span className="font-bold">intuitive and user-friendly</span>,
                         making it simple to control every function of the cultivator remotely.
                     </p>
+
                     <p className="text-justify">
                         They appreciated the system’s{" "}
                         <span className="font-bold text-[#6ca033]">modular design</span>,
                         which allows easy scaling, maintenance, and upgrades without requiring specialized tools.
                     </p>
+
                     <p className="text-justify">
                         Automatic harvesting proved to be{" "}
                         <span className="font-bold text-[#6ca033]">extremely valuable</span>,
                         significantly reducing the hands-on time required for culture management.
                     </p>
+
                     <p className="text-justify">
                         Even more impressive for them was the{" "}
                         <span className="font-bold text-[#6ca033]">automatic subculturing feature</span>,
@@ -60,9 +66,9 @@ export default function CultivatorSec5() {
                         <span className="font-bold text-[#6ca033]">PROBE biomass monitoring system</span>{" "}
                         was recognized as both essential and innovative for accurate growth tracking.
                     </p>
-
                 </div>
             </div>
+
 
             <p className="text-justify">
                 Another important highlight was the{" "}
@@ -73,20 +79,20 @@ export default function CultivatorSec5() {
 
 
             {/* Implemented Improvements Section */}
-            <div className="grid md:grid-cols-2 gap-8 items-center my-12">
+            <div className="grid md:grid-cols-2 gap-8 items-center my-12 px-3 sm:px-6 md:px-0">
                 {/* Left column: bulletpoints */}
-                <div className="space-y-4 font-[Urbanist,sans-serif] text-lg leading-relaxed items-center">
+                <div className="space-y-5 font-[Urbanist,sans-serif] text-lg leading-relaxed w-full md:w-[95%] mx-auto">
                     <h3
-                        className="font-bold text-green-700 mb-4 text-center"
+                        className="font-bold text-green-700 mb-4 text-center md:text-left"
                         style={{
                             fontFamily: "Space Grotesk, sans-serif",
-                            fontSize: window.innerWidth < 768 ? "1.5rem" : "1.75rem",
+                            fontSize: window.innerWidth < 768 ? "1.6rem" : "1.8rem",
                         }}
                     >
                         Implemented Improvements
                     </h3>
 
-                    <p>
+                    <p className="text-justify">
                         The user testing session provided valuable insights, several of which we’ve already
                         integrated into the final design:
                     </p>
@@ -113,10 +119,11 @@ export default function CultivatorSec5() {
                 </div>
 
                 {/* Right column: image */}
-                <div className="flex justify-center mb-6 items-center">
+                <div className="flex justify-center md:justify-end mb-6 md:mb-0">
                     <img
                         src="https://static.igem.wiki/teams/5642/images/how/cultivator/testing/ut-5-cropped.webp"
-                        className="max-w-lg rounded-lg object-contain"
+                        alt="Implemented improvements being tested"
+                        className="w-full max-w-[650px] rounded-lg object-contain"
                     />
                 </div>
             </div>
@@ -147,12 +154,14 @@ export default function CultivatorSec5() {
                 </p>
 
             </div>
-            <div className="flex justify-center mb-6">
+            <div className="flex justify-center mb-6 px-2 sm:px-4 md:px-0">
                 <img
                     src="https://static.igem.wiki/teams/5642/images/how/cultivator/testing/ut-2.webp"
-                    className="max-w-4xl rounded-lg object-contain"
+                    alt="Researchers examining the cultivator"
+                    className="w-full max-w-[900px] rounded-lg object-contain"
                 />
             </div>
+
 
             {/* Closing paragraph */}
             <p className="text-justify">
