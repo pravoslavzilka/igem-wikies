@@ -164,7 +164,11 @@ export default function CultivatorSec3() {
                             className="font-bold text-[#6ca033]">electrical conductivity</span> drifts
                             outside the defined range, our optimized{" "}
                             <span
-                                className="font-bold text-[#6ca033]">Duckweed Cultivation Medium – Nitrogen (DCMN) </span>
+                                className="font-bold text-[#6ca033] underline">
+                                <a href="/toolbox/predictable-duckweed-protocol/">
+                                Duckweed Cultivation Medium – Nitrogen (DCMN){" "}
+                                </a>
+                            </span>
                             is automatically injected into the reservoir.
                             The medium is divided into <span
                             className="font-bold">three separate stock solutions</span> to
