@@ -46,6 +46,10 @@ export default function RegenerationAssayPoster() {
         </div>
 
         {/* Figure 1 */}
+        <div>
+            <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/dbtl.webp" alt="Regeneration Assay Poster Title" className="max-w-full h-auto mb-12" />
+        </div>        
+
         <div className="mb-12 ">
           <div className="bg-gray-200  flex items-center justify-center mb-4">
             <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/regeneration-assay-copy.webp" alt="Figure 1: TAIFR Design Diagram" className="max-w-full h-auto" />
@@ -112,43 +116,53 @@ export default function RegenerationAssayPoster() {
 
         {/* DBTL 1 Section */}
         <div className="mb-12 ">
-          <h2 className="text-4xl font-bold mb-6" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>DBTL 1</h2>
+          <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-4xl font-bold mb-6" >DBTL 1</h2>
           
-          <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>DESIGN of pIB001</h3>
-          <p className="mb-4 leading-relaxed">
-            To test if we can insert gene using our TAIFR design, we designed construct pIB001. It 
-            contains a cassette flanked on both sides by the non-transposable element mPing. Inside 
-            the cassette, there is a resistance gene against neomycin (NPTII) followed by green 
-            fluorescent protein (GFP), both genes are linked by a self-cleaving 2A peptide derived 
-            from porcine teschovirus-1 (p2a), allowing for their parallel expression. This design 
-            minimizes the overall cassette size, resulting in higher transformation efficiency. Open 
-            reading frame of NPTII-p2a-GFP is driven by the ubiquitin promoter from Zea mays 
-            (rZmUBI) and terminated by terminator sequence from Cauliflower Mosaic Virus (t35S). 
-            Expression cassette is bordered by T-DNA allowing for Agrobacterium-mediated 
-            transformation and lies in binary vector, allowing for replication both in E.coli and 
-            Agrobacterium tumefaciens.
-          </p>
-          
-          <div className="grid grid-cols-2 gap-6 mb-6">
-            <div className="bg-gray-200 h-48 flex items-center justify-center">
-              <span className="text-gray-500">[pIB001 Plasmid Diagram]</span>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4" >DESIGN of pIB001</h3>
+          <div className='grid grid-cols-1 md:grid-cols-5 gap-4 mb-6'>
+            <div className='col-span-4  flex items-center justify-center'>
+                <p className="mb-4 leading-relaxed">
+                    To test if we can insert gene using our TAIFR design, we designed construct pIB001. It 
+                    contains a cassette flanked on both sides by the non-transposable element mPing. Inside 
+                    the cassette, there is a resistance gene against neomycin (NPTII) followed by green 
+                    fluorescent protein (GFP), both genes are linked by a self-cleaving 2A peptide derived 
+                    from porcine teschovirus-1 (p2a), allowing for their parallel expression. This design 
+                    minimizes the overall cassette size, resulting in higher transformation efficiency. Open 
+                    reading frame of NPTII-p2a-GFP is driven by the ubiquitin promoter from Zea mays 
+                    (rZmUBI) and terminated by terminator sequence from Cauliflower Mosaic Virus (t35S). 
+                    Expression cassette is bordered by T-DNA allowing for Agrobacterium-mediated 
+                    transformation and lies in binary vector, allowing for replication both in E.coli and 
+                    Agrobacterium tumefaciens.
+                </p>    
             </div>
-            <div className="bg-gray-200 h-48 flex items-center justify-center">
-              <span className="text-gray-500">[pEGe Plasmid Diagram]</span>
+
+            <div className='col-span-1  flex items-center justify-center'>
+                <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/pib001-copy.webp" alt="Figure X: pIB001 Map" className="max-w-full h-auto" />    
             </div>
+
           </div>
 
-          <h3 className="text-2xl font-bold mb-4">DESIGN OF pEGe</h3>
-          <p className="mb-6 leading-relaxed">
-            For the mPing element or for the 5' and 3' borders of mPing-flanked cassette to move and 
-            be inserted, PONG transposase is crucial. In the construct pEGe, two subunits of PONG 
-            transposase are separated by the self-cleaving 2A peptide from Thosea asigna (t2a) and 
-            they expression is driven by the ubiquitin promoter from Zea mays (rZmUBI) and 
-            terminated by terminator sequence of octopine synthase (tOCS) from Agrobacterium 
-            tumefaciens.
-          </p>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold pt-8">DESIGN OF pEGe</h3>
 
-          <h3 className="text-2xl font-bold mb-4">BUILD – cloning of pIB001</h3>
+          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6'>
+            <div className='col-span-3  flex items-center justify-center'>
+                <p className="mb-6 leading-relaxed">
+                    For the mPing element or for the 5' and 3' borders of mPing-flanked cassette to move and 
+                    be inserted, PONG transposase is crucial. In the construct pEGe, two subunits of PONG 
+                    transposase are separated by the self-cleaving 2A peptide from Thosea asigna (t2a) and 
+                    they expression is driven by the ubiquitin promoter from Zea mays (rZmUBI) and 
+                    terminated by terminator sequence of octopine synthase (tOCS) from Agrobacterium 
+                    tumefaciens.
+                </p>    
+
+            </div>            
+            <div className='col-span-1  flex items-center justify-center'>
+               <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/pege-copy.webp" alt="Figure Y: pEGe Map" className="max-w-full h-auto" />     
+            </div>
+          </div>    
+          
+
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">BUILD – cloning of pIB001</h3>
           <p className="mb-2 leading-relaxed">We used Modular Cloning, based on Golden Gate.</p>
           
           <p className="mb-2 font-semibold">Parts:</p>
@@ -179,7 +193,7 @@ export default function RegenerationAssayPoster() {
             sequencing.</li>
           </ul>
 
-          <h3 className="text-2xl font-bold mb-4">BUILD – cloning of pEGe</h3>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">BUILD – cloning of pEGe</h3>
           <p className="mb-4 leading-relaxed">
             At the time we conducted the first cycle of the regeneration assay, gene synthesis was not yet available for iGEM teams. 
             To accelerate the initial iteration, we modified an existing construct bearing the PONG transposase - pEarleyGate 
@@ -218,7 +232,7 @@ export default function RegenerationAssayPoster() {
             confirmed by whole plasmid sequencing.</li>
           </ul>
 
-          <h3 className="text-2xl font-bold mb-4">TEST – transformation</h3>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">TEST – transformation</h3>
           <p className="mb-6 leading-relaxed">
             We co-transformed pIB001 with pEGe into Spirodela polyrhiza 0162, Spirodela polyrhiza 7428, and Spirodela polyrhiza 
             9509. We also included the following controls: pIB001 alone, pEGe alone as a negative control, pIB001 with pEGe without 
@@ -231,38 +245,18 @@ export default function RegenerationAssayPoster() {
             pEGe.
           </p>
 
-          <div className="grid grid-cols-3 gap-4 mb-6">
-            <div className="bg-gray-200 h-32 flex flex-col items-center justify-center">
-              <span className="text-gray-500 text-xs mb-2">[Image]</span>
-              <p className="text-xs">p101</p>
+
+          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6'>
+            <div className='col-span-4  flex items-center justify-center'>
+                <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure5upper.webp" alt="Figure X: pAMO101 Map" className="max-w-full h-auto" />
             </div>
-            <div className="bg-gray-200 h-32 flex flex-col items-center justify-center">
-              <span className="text-gray-500 text-xs mb-2">[Image]</span>
-              <p className="text-xs">pEGe</p>
-            </div>
-            <div className="bg-gray-200 h-32 flex flex-col items-center justify-center">
-              <span className="text-gray-500 text-xs mb-2">[Image]</span>
-              <p className="text-xs">pIB001 6dpi</p>
-            </div>
-          </div>
-          
-          <div className="grid grid-cols-3 gap-4 mb-6">
-            <div className="bg-gray-200 h-32 flex flex-col items-center justify-center">
-              <span className="text-gray-500 text-xs mb-2">[Image]</span>
-              <p className="text-xs">pIB001 x pEGe 6dpi</p>
-            </div>
-            <div className="bg-gray-200 h-32 flex flex-col items-center justify-center">
-              <span className="text-gray-500 text-xs mb-2">[Image]</span>
-              <p className="text-xs">pIB001 12dpi</p>
-            </div>
-            <div className="bg-gray-200 h-32 flex flex-col items-center justify-center">
-              <span className="text-gray-500 text-xs mb-2">[Image]</span>
-              <p className="text-xs">pIB001 x pEGe 12dpi</p>
-            </div>
+
           </div>
 
-          <div className="border-2 border-gray-300 p-4 bg-white mb-6">
-            <p className="text-sm leading-relaxed">
+          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6'>
+
+            <div className='col-span-2  flex items-center justify-center'>
+              <p className="text-base leading-relaxed">
               <strong>Figure 5.</strong> The transformations in the first DBTL cycle of the regeneration assay revealed that the design of 
               pIB001, where GFP as a fluorescent marker is linked via p2a to NPTII as a selection marker at its 3′ end - 
               results in no GFP expression at 6 dpi (3) and only very weak, delayed expression at 12 dpi (5). The lack of 
@@ -271,35 +265,55 @@ export default function RegenerationAssayPoster() {
               genome, since we omitted the required TTA sites at the beginning and the end of mPing for insertion. The 
               positive control, pAMO101 (1), produced fluorescence, while pEGe (2) alone did not produce fluorescence, as 
               expected.
-            </p>
+            </p>      
+
+            </div>
+            <div className='col-span-2  flex items-center justify-center'>
+                <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure5bottom.webp" alt="Figure X: pAMO101 Map" className="max-w-full h-auto" />
+            </div>
+
           </div>
 
-          <div className="bg-gray-200 h-64 flex items-center justify-center mb-6">
-            <span className="text-gray-500">[Graph of fluorescences]</span>
-          </div>
-
-          <h3 className="text-2xl font-bold mb-4">LEARN</h3>
           
-          <div className="mb-6">
-            <p className="font-semibold mb-2">Why was the fluorescence in our pIB001 construct so much weaker and delayed compared with the positive control pAMO101?</p>
-            <p className="mb-4 leading-relaxed">
-              We discussed our results with our advisor, Dr. Ordóñez, who explained that when a gene in an open reading frame is 
-              placed after another gene and linked viac the p2a sequence - a linker that enables the expression of multiple genes from 
-              a single promoter - the downstream gene often shows weaker and delayed expression compared to the first gene 
-              in the frame. In our design, GFP (the fluorescent marker) was cloned downstream of NPTII and the p2a linker.
-            </p>
-          </div>
+          
+          
 
-          <div className="mb-6">
-            <p className="font-semibold mb-2">Why was there some fluorescence in pIB001 alone, but no fluorescence when pIB001 was co-transformed with pEGe?</p>
-            <p className="mb-4 leading-relaxed">
-              We concluded that this was likely caused by the excision activity of the PONG transposase provided by pEGe. PONG 
-              may have excised the mPing-bordered cassette containing NPTII-p2a-GFP, preventing the expression machinery from 
-              transiently expressing it. However, this remains an assumption, since we had no marker confirming PONG 
-              expression. If our assumption was correct, then PONG likely excised the mPing-bordered cassette. But we were not 
-              sure… That is why we started a parallel DBTL cycle, termed <strong>The Excision Assay</strong> to find out if our PONG is not 
-              only expressed, but has excision activity towards mPing element in duckweed context.
-            </p>
+         
+
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4 mt-24">LEARN</h3>
+          
+          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6'>
+            <div className='col-span-2 items-center justify-center'> 
+                <div className="mb-6">
+                        <p className="font-semibold mb-2">Why was the fluorescence in our pIB001 construct so much weaker and delayed compared with the positive control pAMO101?</p>
+                        <p className="mb-4 leading-relaxed">
+                        We discussed our results with our advisor, Dr. Ordóñez, who explained that when a gene in an open reading frame is 
+                        placed after another gene and linked viac the p2a sequence - a linker that enables the expression of multiple genes from 
+                        a single promoter - the downstream gene often shows weaker and delayed expression compared to the first gene 
+                        in the frame. In our design, GFP (the fluorescent marker) was cloned downstream of NPTII and the p2a linker.
+                        </p>
+                    </div>
+
+                    <div className="mb-6 mt-12  ">
+                        <p className="font-semibold mb-2">Why was there some fluorescence in pIB001 alone, but no fluorescence when pIB001 was co-transformed with pEGe?</p>
+                        <p className="mb-4 leading-relaxed">
+                        We concluded that this was likely caused by the excision activity of the PONG transposase provided by pEGe. PONG 
+                        may have excised the mPing-bordered cassette containing NPTII-p2a-GFP, preventing the expression machinery from 
+                        transiently expressing it. However, this remains an assumption, since we had no marker confirming PONG 
+                        expression. If our assumption was correct, then PONG likely excised the mPing-bordered cassette. But we were not 
+                        sure… That is why we started a parallel DBTL cycle, termed <strong>The Excision Assay</strong> to find out if our PONG is not 
+                        only expressed, but has excision activity towards mPing element in duckweed context.
+                        </p>
+                    </div>    
+                </div>
+            <div className='col-span-2  items-center justify-center'>
+
+
+                 <p className="text-base leading-relaxed">
+              <strong>Figure 6.</strong> sadsad
+            </p>  
+                
+            </div>    
           </div>
 
           <div className="mb-6">
@@ -319,10 +333,10 @@ export default function RegenerationAssayPoster() {
         </div>
 
         {/* DBTL 2 Section */}
-        <div className="mb-12 bg-gray-50 p-8 rounded-lg">
-          <h2 className="text-4xl font-bold mb-6">DBTL 2</h2>
+        <div className="mb-12 mt-24">
+          <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-4xl font-bold mb-6">DBTL 2</h2>
           
-          <h3 className="text-2xl font-bold mb-4">DESIGN of The Excision Assay</h3>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of The Excision Assay</h3>
           <p className="mb-6 leading-relaxed">
             As during DBTL 1 cycle, there was no fluorescence signal when pIB001 (mPing bordered GFP-p2a-NPTII) was 
             co-transformed with pEGe (PONG transposase), we assumed, that absence of fluorescence is due to excision activity of 
@@ -336,12 +350,14 @@ export default function RegenerationAssayPoster() {
             (YFP + mPing) indicates failure.
           </p>
 
-          <h3 className="text-2xl font-bold mb-4">DESIGN of pIB003</h3>
+          <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/excision-assay-copy.webp" alt="Excision Assay Diagram" className="max-w-full h-auto mb-6" />
+
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of pIB003</h3>
           <p className="mb-6 leading-relaxed">
             We performed DBTL cycle 2 in parallel with DBTL cycle 3, where the design and construction of PONG are described.
           </p>
 
-          <h3 className="text-2xl font-bold mb-4">DESIGN of pIB004</h3>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of pIB004</h3>
           <p className="mb-6 leading-relaxed">
             Construct pIB004 is carrying a gene for yellow fluorescent protein (YFP), interrupted in the middle by the transposon 
             element mPing from Oryza sativa. Expression of the interrupted YFP is driven by ubiquitin promoter from Zea mays
@@ -350,17 +366,7 @@ export default function RegenerationAssayPoster() {
             vector, allowing for replication both in E.coli and Agrobacterium tumefaciens.
           </p>
 
-          <div className="grid grid-cols-3 gap-4 mb-6">
-            <div className="bg-gray-200 h-48 flex items-center justify-center">
-              <span className="text-gray-500">[p003 Diagram]</span>
-            </div>
-            <div className="bg-gray-200 h-48 flex items-center justify-center">
-              <span className="text-gray-500">[p004 Diagram]</span>
-            </div>
-            <div className="bg-gray-200 h-48 flex items-center justify-center">
-              <span className="text-gray-500">[P003 x p004 Result]</span>
-            </div>
-          </div>
+          
 
           <div className="border-2 border-gray-300 p-4 bg-white mb-6">
             <p className="text-sm leading-relaxed">
@@ -381,50 +387,200 @@ export default function RegenerationAssayPoster() {
               by the Roman statesman and philosopher Cicero, with words
             </p>
           </div>
+        
+        <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">BUILD – cloning of pIB004</h3>
+          <p className="mb-2 leading-relaxed">We used Modular Cloning based on Golden Gate.</p>
+          
+          <p className="mb-2 font-semibold">Parts:</p>
+          <p className="mb-4 leading-relaxed">
+           For the first iteration, we sourced mPing sequence from pEarleyGate 100RMOA mPing from Hancock Lab. The Level 0 part t35S (pF11P1) was from Plant Parts II and Infrastructure Kit deposited by Stuttmann Lab. The Level 0 parts pE1P2 and pH12P2 were from the CRISPR/Cas Toolkit for Plants deposited by Nekrasov Lab. 
+          </p>
+          
+          <p className="mb-2 font-semibold">Acceptors:</p>
+          <p className="mb-4 leading-relaxed">
+            pE1T, pH2T, pB3T, pH4T and end-linker pB5T from the MoClo Toolkit deposited by Patron's Lab. From Ordóñez’s Lab we have been gifted construct pAMO101 carrying GFP under the Zea mays ubiquitin promoter (rZmUBI) terminated by cauliflower mosaic virus terminator sequence (t35S).
+          </p>
+
+          <div className='mb-6 mt-16 text-2xl' style={{ fontFamily: 'Space Grotesk, sans-serif' }} > 
+            <b>1st iteration: insertion of mPing before GFP by SpeI into pAMO101</b>
+          </div>     
+          <p>To test whether PONG can excise mPing positioned upstream of GFP, we first had insert it to this desired location. To this end, we planned to use the SpeI restriction site conveniently located between rZmUbi and GFP in pAMO101.
+                </p>
+          
+          <p className="mb-2 font-semibold mt-4">Steps:</p>
+          <ul className="mb-6 leading-relaxed list-disc pl-6 space-y-2">
+            <li>Transposable element mPing was amplified from pEG with primers o41 and o42 introducing SpeI recognition sites and purified from gel.</li>
+            <li>Restriction cloning of p101 and mPing was performed with SpeI. The plasmid was dephosphorylated using rSAP to prevent self closure of the empty plasmid.</li>
+            
+          </ul>
+
+
+          <p className="mb-2 font-semibold mt-4 ">Outcome:</p>
+          <p className='pb-8'>
+            After several PCR optimizations, we amplified mPing with SpeI sites and performed restriction cloning, but no colonies grew after transformation. We suspected low insert concentration/purity or poor transformation efficiency. To increase yield, we column-purified the PCR product (without gel extraction), which produced several colonies. Colony PCR confirmed positives, but after re-streaking and overnight cultures, none grew. Following consultation, we re-streaked on plates with lower antibiotic concentration, which gave colonies, but the plasmid proved unstable and was lost in later generations. Analytical restriction revealed multiple mPing insertions, likely impairing plasmid replication and bacterial growth—evidenced by poor culture growth and minimal plasmid yield.
+
+          </p>
+
+
+          <div>
+            <div className='mb-6 mt-12 text-2xl' style={{ fontFamily: 'Space Grotesk, sans-serif' }} > 
+                <b>2nd iteration: </b>
+            </div>     
+            <p>
+                We took advantage of type II restriction sites to create unmatched overlapping ends, thus not allowing for multiple insertion, and inserted mPing as an N-terminal tag of the reporter gene β-glucuronidase (GUS) - with the difference that this N-terminal tag contained stop codons, requiring PONG excision for GUS to function. 
+            </p>
+            
+            <p className="mb-2 font-semibold mt-4">Steps:</p>
+            <ul className="mb-6 leading-relaxed list-disc pl-6 space-y-2">
+                <li>Amplification of mPing from pEG using primers o97 and o98 with MoClo N-terminus overhangs.
+                </li>
+
+                <li>
+                    Digestion and ligation of product into L0 acceptor pE1T using BbsI, yielding pE1T_mPing.
+
+                </li>
+                <li>
+                    Digestion and ligation of pE1T_mPing, pE1P2, pH12P2 and pF11P1 withL1 acceptor pB3T using BsaI, yielded the plasmid pB3T_rZmUBI-mPing-GUS-t35S.
+
+                </li>
+                <li>
+                    Digestion and ligation of above mentioned Level 1 construct into acceptor pH4t with end-linker pB5T using Bsbi resulted into pIB004_rZmUBI-mPing-GUS-t35S. The assembly was confirmed by sequencing.
+                    Digestion and ligation of above mentioned Level 1 construct into acceptor pH4t with end-linker pB5T using Bsbi resulted into pIB004_rZmUBI-mPing-GUS-t35S. The assembly was confirmed by sequencing.
+
+                </li>
+                
+            </ul>
+
+
+            <p className="mb-2 font-semibold mt-4 ">Outcome:</p>
+            <p className='pb-8'>
+                We obtained the correctly assembled construct pIB004_rZmUBI-mPing-GUS-t35S, verified by whole plasmid sequencing. However, we realized that since our mPing, when cloned as an N-terminal tag has a start codon at the 3’ end (downstream of all stop codons) that fits the reading frame of the downstream GUS gene. This could lead to the expression of GUS (or any other reporter) even in the absence of PONG excision activity. Therefore, we abandoned this approach and did not perform any plant transformations.
+            </p>
+          </div>
+
+
+          <div>
+            <div className='mb-6 text-2xl mt-12' style={{ fontFamily: 'Space Grotesk, sans-serif' }} > 
+                <b className='text-1xl'>3rd iteration: inserting mPing into YFP by synthesis </b>
+            </div>     
+            <p>
+                Since placing mPing as an N-terminal tag could allow reporter expression even without Pong-mediated excision, we instead inserted mPing within the reporter gene. The YFP sequence was synthesized with mPing positioned in the middle, disrupting translation and rendering the protein non-functional (non-fluorescent).
+            </p>
+            
+            <p className="mb-2 font-semibold mt-4">Steps:</p>
+            <ul className="mb-6 leading-relaxed list-disc pl-6 space-y-2">
+                <li>Digestion and ligation of synthetized YFP interrupted by mPing with pH2T Level 0 acceptor using BbsI, resulted into pH2T_YFP-mPing-YFP.
+
+                </li>
+
+                <li>
+                    Digestion and ligation of pH2T_YFP-mPing-YFP, pE1P2, and pF11P1 with the L1 acceptor pB3T using BsaI, resulted the plasmid pB3T_rZmUBI-YFP-mPing-YFP-t35S.
+                </li>
+                <li>
+                    The digestion and ligation of above mentioned construct with Level 2 acceptor pH4T and pB5T end-linker using BbsI, resulted into pIB004_rZmUBI-YFP-mPing-YFP-t35S. 
+
+                </li>
+                
+                
+            </ul>
+
+
+            <p className="mb-2 font-semibold mt-4 ">Outcome:</p>
+            <p className='pb-8'>
+                The assembly was confirmed by sequencing and ready to be transformed to Agrobacterium and the to duckweed to perform the Excision Assay.            </p>
+          </div>
+
+
+
+
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">TEST - transformation</h3>
+
+          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6'>
+            <div className='col-span-2  items-center justify-center'>
+                <p>
+                    We performed two iterations of transformation (TEST) of the Excision Assay. We always did two controls.
+                </p>
+                <ul className='list-disc pl-6 space-y-2 mt-4'>
+                    <li>pIB004 alone (negative control): if we would detect fluorescence without co-transformation of pIB003, the mPing disruption of YFP coding frame would not be sufficient, thus this construct would not be relevant for the Excision Assay</li>
+                    <li>pIB003: proving that PONG got expressed by presence of RFP fluorescent signal.</li>
+                </ul>
+
+            </div>
+            <div className='col-span-2  flex items-center justify-center'>
+
+            </div>
+          </div>      
+
+          <p className="mb-2 leading-relaxed">We used Modular Cloning based on Golden Gate.</p>
+          
+          <p className="mb-2 font-semibold">Parts:</p>
+          <p className="mb-4 leading-relaxed">
+            Level 0 part t35S (pF11P1) was from the CRISPR/Cas Toolkit for Plants deposited by Nekrasov Lab. Level 0 part 
+            rZmUBI (pE1P2) was from Plant Parts II and Infrastructure Kit deposited by Stuttmann Lab.
+          </p>
+          
+          <p className="mb-2 font-semibold">Acceptors:</p>
+          <p className="mb-4 leading-relaxed">
+            We used acceptors pF2T, pG1T, pB3T, pH4T and end-linker pB5T from MoClo Plant Parts Kit deposited by Patron's 
+            Lab.
+          </p>
+          
+          <p className="mb-2 font-semibold">Steps:</p>
+          <ul className="mb-6 leading-relaxed list-disc pl-6 space-y-2">
+            <li>The codon-optimized PONG was cloned into Level 0 acceptor pF2T using BbsI, yielding pF2T_PONG.</li>
+            <li>The codon-optimized RFP with p2a was cloned into Level 0 acceptor pG1T using BbsI, yielding pG1T_p2a-RFP.</li>
+            <li>Digestion and ligation of pF2T_PONG, pG1T_p2a-RFP, pE1P2, and pF11P1 with acceptor pB3T using BsaI resulted 
+            into Level 1 construct pB3T_rZmUBI-PONG-p2a-RFP-tNOS.</li>
+            <li>Digestion and ligation of pB3T_rZmUBI-PONG-p2a-RFP-tNOS with end-linker pB5T with acceptor pH4T using BbsI 
+            resulted into Level 2 construct pIB003_rZmUBI-PONG-p2a-RFP-t35S. The assembly was confirmed by sequencing.</li>
+          </ul>
+
+        
         </div>
 
         {/* DBTL 3 Section */}
-        <div className="mb-12 bg-gray-50 p-8 rounded-lg">
-          <h2 className="text-4xl font-bold mb-6">DBTL 3</h2>
+        <div className="mb-12 mt-24">
+          <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-4xl font-bold mb-6">DBTL 3</h2>
           
-          <h3 className="text-2xl font-bold mb-4">DESIGN of pIB002</h3>
-          <p className="mb-4 leading-relaxed">
-            Plasmid pIB002 contains a cassette flanked on both sides by the non-transposable 
-            element mPing with correct TTA sites at the 5' end of 0.5mPing and at the 3' end of 
-            1.0mPing. Inside the cassette, there is a fluorescent marker (GFP) and a resistance gene 
-            against neomycin (NPTII). Both GFP and NPTII are linked via a self-cleaving 2A peptide 
-            (derived from porcine teschovirus-1, p2a), allowing their parallel expression. The 
-            GFP-p2a-NPTII ORF is driven by the ubiquitin promoter from Zea mays (rZmUBI) and 
-            terminated by terminator sequence from Cauliflower Mosaic Virus (t35S). This design 
-            minimizes the overall cassette size, resulting in higher insertion efficiency. Expression 
-            cassette is bordered by T-DNA allowing for Agrobacterium-mediated transformation and 
-            lies in binary vector, allowing for replication both in E. coli and in Agrobacterium 
-            tumefaciens.
-          </p>
+          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6'>
+            <div className='col-span-3  items-center justify-center'>
+                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of pIB002</h3>
+                <p className="mb-4 leading-relaxed">
+                    Plasmid pIB002 contains a cassette flanked on both sides by the non-transposable 
+                    element mPing with correct TTA sites at the 5' end of 0.5mPing and at the 3' end of 
+                    1.0mPing. Inside the cassette, there is a fluorescent marker (GFP) and a resistance gene 
+                    against neomycin (NPTII). Both GFP and NPTII are linked via a self-cleaving 2A peptide 
+                    (derived from porcine teschovirus-1, p2a), allowing their parallel expression. The 
+                    GFP-p2a-NPTII ORF is driven by the ubiquitin promoter from Zea mays (rZmUBI) and 
+                    terminated by terminator sequence from Cauliflower Mosaic Virus (t35S). This design 
+                    minimizes the overall cassette size, resulting in higher insertion efficiency. Expression 
+                    cassette is bordered by T-DNA allowing for Agrobacterium-mediated transformation and 
+                    lies in binary vector, allowing for replication both in E. coli and in Agrobacterium 
+                    tumefaciens.
+                </p>
 
-          <h3 className="text-2xl font-bold mb-4">DESIGN OF p003</h3>
-          <p className="mb-6 leading-relaxed">
-            Plasmid pIB003 is carrying ORFs for two PONG transposase subunits, separated by 
-            self-cleaving 2A peptide from Thosea asigna virus (t2a) with nuclear localization sequence 
-            (NLS), linked with red fluorescent protein (RFP) by a self-cleaving 2A peptide derived from 
-            porcine teschovirus-1 (p2a). Expression of PONG-p2a-RFP is driven by ubiquitin promoter 
-            from Zea mays (rZmUBI) and terminated by terminator sequence derived from Cauliflower 
-            Mosaic Virus (t35S). Both PONG and p2a-RFP are duckweed-codon optimized. 
-            Expression cassette is bordered by T-DNA allowing for Agrobacterium-mediated 
-            transformation and lies in binary vector, allowing for replication both in E.c oli and in 
-            Agrobacterium tumefaciens.
-          </p>
+                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN OF p003</h3>
+                <p className="mb-6 leading-relaxed">
+                    Plasmid pIB003 is carrying ORFs for two PONG transposase subunits, separated by 
+                    self-cleaving 2A peptide from Thosea asigna virus (t2a) with nuclear localization sequence 
+                    (NLS), linked with red fluorescent protein (RFP) by a self-cleaving 2A peptide derived from 
+                    porcine teschovirus-1 (p2a). Expression of PONG-p2a-RFP is driven by ubiquitin promoter 
+                    from Zea mays (rZmUBI) and terminated by terminator sequence derived from Cauliflower 
+                    Mosaic Virus (t35S). Both PONG and p2a-RFP are duckweed-codon optimized. 
+                    Expression cassette is bordered by T-DNA allowing for Agrobacterium-mediated 
+                    transformation and lies in binary vector, allowing for replication both in E.c oli and in 
+                    Agrobacterium tumefaciens.
+                </p>
+            </div>
+            <div className='col-span-1  flex items-center justify-center'>
 
-          <div className="grid grid-cols-2 gap-6 mb-6">
-            <div className="bg-gray-200 h-48 flex items-center justify-center">
-              <span className="text-gray-500">[pIB002 Plasmid Diagram]</span>
             </div>
-            <div className="bg-gray-200 h-48 flex items-center justify-center">
-              <span className="text-gray-500">[pIB003 Plasmid Diagram]</span>
-            </div>
+
           </div>
 
-          <h3 className="text-2xl font-bold mb-4">BUILD – cloning of pIB002</h3>
+          
+
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">BUILD – cloning of pIB002</h3>
           <p className="mb-2 leading-relaxed">We used Modular Cloning based on Golden Gate.</p>
           
           <p className="mb-2 font-semibold">Parts:</p>
@@ -455,7 +611,7 @@ export default function RegenerationAssayPoster() {
             pIB002_0.5mPing-rZmUBI-GFP-p2a-NPTII-t35S-1.0mPing. The assembly was confirmed by sequencing.</li>
           </ul>
 
-          <h3 className="text-2xl font-bold mb-4">BUILD – cloning of pIB003</h3>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">BUILD – cloning of pIB003</h3>
           <p className="mb-2 leading-relaxed">We used Modular Cloning based on Golden Gate.</p>
           
           <p className="mb-2 font-semibold">Parts:</p>
@@ -480,7 +636,7 @@ export default function RegenerationAssayPoster() {
             resulted into Level 2 construct pIB003_rZmUBI-PONG-p2a-RFP-t35S. The assembly was confirmed by sequencing.</li>
           </ul>
 
-          <h3 className="text-2xl font-bold mb-4">TESTING – transformation</h3>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">TESTING – transformation</h3>
           <p className="mb-4 leading-relaxed">
             We co-transformed Spirodela polyrhiza 7428 with pIB002 x pIB003 and included 5 controls:
           </p>
@@ -538,7 +694,7 @@ export default function RegenerationAssayPoster() {
             <span className="text-gray-500">[Graph of fluorescences]</span>
           </div>
 
-          <h3 className="text-2xl font-bold mb-4">LEARN</h3>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">LEARN</h3>
           
           <div className="mb-6">
             <p className="font-semibold mb-2">Our constructs are functional! What's next?</p>
@@ -571,7 +727,7 @@ export default function RegenerationAssayPoster() {
             </p>
           </div>
 
-          <h3 className="text-2xl font-bold mb-4">TESTING – neomycin test</h3>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">TESTING – neomycin test</h3>
           <p className="mb-4 leading-relaxed">
             As we built the first functional construct to perform our regeneration assay (pIB002), we needed to design the 
             appropriate regeneration conditions. Our design includes the NPTII gene, based on previous 
@@ -617,9 +773,9 @@ export default function RegenerationAssayPoster() {
 
         {/* DBTL 4 Section */}
         <div className="mb-12 bg-gray-50 p-8 rounded-lg">
-          <h2 className="text-4xl font-bold mb-6">DBTL 4</h2>
+          <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-4xl font-bold mb-6">DBTL 4</h2>
           
-          <h3 className="text-2xl font-bold mb-4">DESIGN of pIB005</h3>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of pIB005</h3>
           <p className="mb-6 leading-relaxed">
             Plasmid pIB005 contains a cassette flanked on both sides by the non-transposable 
             element mPing. Inside the cassette, there is a fluorescent marker (GFP) and a resistance 
@@ -647,7 +803,7 @@ export default function RegenerationAssayPoster() {
             <span className="text-gray-500">[pIB005 Plasmid Diagram]</span>
           </div>
 
-          <h3 className="text-2xl font-bold mb-4">BUILD - cloning of pIB005</h3>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">BUILD - cloning of pIB005</h3>
           <p className="mb-4 leading-relaxed">
             We let the whole composite part to be synthetized as clonal DNA thanks to Ansa Biotechnologies superior 
             synthetizing capabilities. Then we used Modular Cloning based on Golden Gate to introduce the composite part binary 
@@ -668,7 +824,7 @@ export default function RegenerationAssayPoster() {
             assembly was confirmed by sequencing.</li>
           </ul>
 
-          <h3 className="text-2xl font-bold mb-4">TEST – transformation</h3>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">TEST – transformation</h3>
           <p className="mb-4 leading-relaxed">
             Altogether, we did 6 iterations of transformation (TEST) DBTL 4 cycle of The Regeneration Assay to 
             fine-tune conditions in way that cells that got inserted by our transposase assisted system will give rise to a 
@@ -747,7 +903,7 @@ export default function RegenerationAssayPoster() {
             </p>
           </div>
 
-          <h3 className="text-2xl font-bold mb-4">LEARN</h3>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">LEARN</h3>
           <p className="mb-4 leading-relaxed">
             We placed hundreds of co-transformed duckweeds under different post-infiltration conditions (see Figure xy) 
             and waited.
@@ -821,9 +977,9 @@ export default function RegenerationAssayPoster() {
 
         {/* DBTL 5 Section */}
         <div className="mb-12 bg-gray-50 p-8 rounded-lg">
-          <h2 className="text-4xl font-bold mb-6">DBTL 5</h2>
+          <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-4xl font-bold mb-6">DBTL 5</h2>
           
-          <h3 className="text-2xl font-bold mb-4">DESIGN of The Meristematic Assay</h3>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of The Meristematic Assay</h3>
           <p className="mb-6 leading-relaxed">
             We are using plant codon optimized Cas9 to knock out GFP expression in stable lines previously established to 
             express this fluorescent protein, obtained from Ordóñez Lab. The gradual decrease of the green signal in subsequent 
@@ -839,7 +995,7 @@ export default function RegenerationAssayPoster() {
             <span className="text-gray-500">[Meristematic Assay Diagram showing transformation and generations]</span>
           </div>
 
-          <h3 className="text-2xl font-bold mb-4">DESIGN of pIB006</h3>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of pIB006</h3>
           <p className="mb-6 leading-relaxed">
             Plasmid pIB006 contains three expression cassettes designed for rapid and 
             customizable gene knockouts using the CRISPR/Cas9 system. The first cassette 
@@ -863,7 +1019,7 @@ export default function RegenerationAssayPoster() {
             <span className="text-gray-500">[pIB006 Plasmid Diagram]</span>
           </div>
 
-          <h3 className="text-2xl font-bold mb-4">BUILD – cloning of pIB006</h3>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">BUILD – cloning of pIB006</h3>
           
           <p className="mb-2 font-semibold">Designing of gRNAs</p>
           <p className="mb-4 leading-relaxed">
@@ -956,7 +1112,7 @@ export default function RegenerationAssayPoster() {
             pIB006 with inserted gRNA for knock-out of GFP in Spirodela polyrhiza line with stably inserted GFP.</li>
           </ul>
 
-          <h3 className="text-2xl font-bold mb-4">TEST</h3>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">TEST</h3>
           <p className="mb-6 leading-relaxed">
             Due to multiple cloning setbacks, we were unable to finalize this assay before the Wiki Freeze. We successfully 
             assembled the construct and performed a digest-and-ligate reaction to insert our GFP-knockout oligonucleotides, 
@@ -964,7 +1120,7 @@ export default function RegenerationAssayPoster() {
             before we head to Paris.
           </p>
 
-          <h3 className="text-2xl font-bold mb-4">LEARN</h3>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">LEARN</h3>
           <p className="mb-6 leading-relaxed">
             What began as an attempt to test whether Agrobacterium can reach duckweed meristematic cells led us to realize 
             that a ready-to-use, duckweed-optimized CRISPR construct could be a widely useful tool in duckweed research 
@@ -975,8 +1131,8 @@ export default function RegenerationAssayPoster() {
 
         {/* What Are We Going To Do Section */}
         <div className="mb-12 bg-blue-50 p-8 rounded-lg border-2 border-blue-500">
-          <h2 className="text-4xl font-bold mb-6">WHAT ARE WE GOING TO DO</h2>
-          <h3 className="text-2xl font-bold mb-4">to enable Frond Regeneration (FR) part of our TAIFR method?</h3>
+          <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-4xl font-bold mb-6">WHAT ARE WE GOING TO DO</h2>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">to enable Frond Regeneration (FR) part of our TAIFR method?</h3>
           
           <p className="mb-4 leading-relaxed">There are two possible scenarios ahead of us:</p>
           
@@ -1006,7 +1162,7 @@ export default function RegenerationAssayPoster() {
 
         {/* Pcr/western blot placeholder */}
         <div className="mb-12 bg-gray-50 p-8 rounded-lg">
-          <h3 className="text-2xl font-bold mb-4 text-center">Pcr/western blot</h3>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4 text-center">Pcr/western blot</h3>
           <div className="bg-gray-200 h-96 flex items-center justify-center">
             <span className="text-gray-500 text-xl">[Western Blot Results Placeholder]</span>
           </div>
