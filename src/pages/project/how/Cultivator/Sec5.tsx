@@ -130,7 +130,7 @@ export default function CultivatorSec5() {
                 <div className="mt-6 flex justify-center md:justify-center">
                     <button
                         onClick={() => setIsOpenGUISlides(true)}
-                        className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
+                        className="text-green-600 hover:text-green-800 font-semibold text-2xl underline"
                     >
                         Check out the GUI
                     </button>
@@ -184,7 +184,7 @@ export default function CultivatorSec5() {
                         <div className="mt-6 flex justify-center md:justify-center">
                             <button
                                 onClick={() => setIsOpenSuitcaseSlides(true)}
-                                className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
+                                className="text-green-600 hover:text-green-800 font-semibold text-2xl underline"
                             >
                                 View the suitcase contents
                             </button>
@@ -268,7 +268,7 @@ export default function CultivatorSec5() {
                     <div className="mt-6 flex justify-center md:justify-center">
                         <button
                             onClick={() => setIsOpenSchematicsSlides(true)}
-                            className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
+                            className="text-green-600 hover:text-green-800 font-semibold text-2xl underline"
                         >
                             View the detailed schematics
                         </button>
