@@ -21,12 +21,13 @@ const Navbar = () => {
     toolbox: {
       title: 'Duckweed Toolbox',
       items: [
-        { label: 'Part Collection', path: '/toolbox/programmable-duckweed/part-collection' },
+        
+        { label: 'Plant SynBio', path: '/toolbox/programmable-duckweed/plant-synbio' },
         { 
           label: 'Programmable Duckweed', 
           path: '/toolbox/programmable-duckweed',
           subItems: [
-            { label: 'Plant SynBio', path: '/toolbox/programmable-duckweed/plant-synbio' },
+            { label: 'Part Collection', path: '/toolbox/programmable-duckweed/part-collection' },
             { label: 'Protocols', path: '/toolbox/protocols' }
           ]
         },
