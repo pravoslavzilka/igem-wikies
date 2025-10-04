@@ -15,7 +15,7 @@ const Navbar = () => {
       items: [
         { label: 'Why', sublabel: 'Description', path: '/project/why' },
         { label: 'What', sublabel: 'Contribution', path: '/project/what' },
-        { label: 'How', sublabel: 'Engineering', path: '/project/how' }
+        { label: 'How', sublabel: 'Engineering', path: '/engineering' }
       ]
     },
     toolbox: {

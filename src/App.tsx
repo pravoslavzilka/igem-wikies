@@ -15,6 +15,10 @@ import HowLanding from './pages/project/how/HowLanding';
 import Taifr from './pages/project/how/Taifr';
 import TAIFRComponent from './pages/project/how/taifr/TAIFRComponent';
 import PromoterLibrary from './pages/project/how/PromoterLibrary';
+import RegenerationAssayPoster from './pages/project/how/taifr/RegenerationAssayPoster';
+
+import TaifrMain from './pages/project/how/taifr/TaifrMain';
+import TaifrEngineering from './pages/project/how/taifr/TaifrEngineering';
 
 import LimitingBiomass from './pages/project/how/predictor/LimitingBiomass';
 import MediumChange from './pages/project/how/predictor/MediumChange';
@@ -74,10 +78,13 @@ function App() {
           {/* How Routes */}
           <Route path="/project/how/cultivator/" element={<LivingLayersDocument />} />
 
+          <Route path="/engineering" element={<TaifrEngineering />} />
+
           <Route path="/project/how/taifr/" element={<Taifr />} />
-          <Route path="/project/how/taifr/overview" element={<TAIFRComponent />} />
+          <Route path="/project/how/taifr/overview" element={<TaifrMain />} />
           <Route path="/project/how/promoters/" element={<PromoterLibrary />} />
           <Route path="/project/how/promoters-in-silico/" element={<PromotersSilico />} />
+          <Route path="/project/how/taifr/regeneration-assay-poster/" element={<RegenerationAssayPoster />} />
 
           <Route path="/project/how/predictor/in-silico-cultivation/" element={<PredictorMain />} />
           <Route path="/project/how/predictor/limiting-biomass/" element={<LimitingBiomass />} />
