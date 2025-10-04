@@ -30,7 +30,7 @@ const ModelShow = () => {
               
               <div className="text-md text-justify text-gray-600 leading-relaxed mb-8" style={{ fontFamily: 'Urbanist, sans-serif', fontSize: '19px', lineHeight: '140%' }}>
                 <p>
-                  The cultivator is guided by PREDICTOR - a model trained on months of cultivation experiments conducted under controlled conditions. It can now estimate the optimal cultivation settings in the cultivator based on your desired yield and the species being used.
+                  The cultivator is guided by <b>PREDICTOR</b> - a model trained on months of cultivation experiments conducted under controlled conditions. It can now estimate the optimal cultivation settings in the cultivator based on your desired yield and the species being used.
                 </p>
               </div>
 

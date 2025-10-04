@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [hoveredMenu, setHoveredMenu] = useState(null);
@@ -78,13 +79,13 @@ const Navbar = () => {
 
   return (
     <nav className="flex items-center justify-between px-4 py-4 bg-white relative z-50">
-      <a href="/" className="flex items-center space-x-2">
+      <Link to="/" className="flex items-center space-x-2">
         <img 
           style={{ height: '60px', marginLeft: '12px' }} 
           src="https://static.igem.wiki/teams/5642/icons/igem-brno-final-transparent.webp"
           alt="Logo"
         />
-      </a>
+      </Link>
 
       {/* Desktop menu centered */}
       <div className="hidden md:flex flex-1 justify-center">
@@ -119,8 +120,8 @@ const Navbar = () => {
                 >
                   {menu.items.map((item, index) => (
                     <div key={index}>
-                      <a
-                        href={item.path}
+                      <Link
+                        to={item.path}
                         className="block px-4 py-2.5 hover:bg-gray-50 transition-colors group"
                       >
                         <div className="font-semibold text-gray-900 group-hover:text-green-600 transition-colors" 
@@ -133,18 +134,18 @@ const Navbar = () => {
                             {item.sublabel}
                           </div>
                         )}
-                      </a>
+                      </Link>
                       {item.subItems && (
                         <div className="ml-4 mt-1 mb-2">
                           {item.subItems.map((subItem, subIndex) => (
-                            <a
+                            <Link
                               key={subIndex}
-                              href={subItem.path}
+                              to={subItem.path}
                               className="block px-4 py-1.5 text-md text-gray-600 hover:text-green-600 hover:bg-gray-50 transition-colors"
                               style={{ fontFamily: 'Urbanist, sans-serif' }}
                             >
                               {subItem.label}
-                            </a>
+                            </Link>
                           ))}
                         </div>
                       )}
@@ -200,8 +201,8 @@ const Navbar = () => {
                   <div>
                     {menu.items.map((item, index) => (
                       <div key={index}>
-                        <a
-                          href={item.path}
+                        <Link
+                          to={item.path}
                           className="block px-6 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
                           onClick={() => { setMobileOpen(false); setOpenDropdown(null); }}
                         >
@@ -209,18 +210,18 @@ const Navbar = () => {
                           {item.sublabel && (
                             <div className="text-sm text-gray-500">{item.sublabel}</div>
                           )}
-                        </a>
+                        </Link>
                         {item.subItems && (
                           <div className="ml-4">
                             {item.subItems.map((subItem, subIndex) => (
-                              <a
+                              <Link
                                 key={subIndex}
-                                href={subItem.path}
+                                to={subItem.path}
                                 className="block px-6 py-1.5 text-sm text-gray-600 hover:bg-gray-50 hover:text-green-600 transition-colors"
                                 onClick={() => { setMobileOpen(false); setOpenDropdown(null); }}
                               >
                                 {subItem.label}
-                              </a>
+                              </Link>
                             ))}
                           </div>
                         )}

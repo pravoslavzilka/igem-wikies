@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 const ChatAnimation = ({ messageDelay = 2000 }) => {
-  const [messages, setMessages] = useState([]);
+  const [activeMessageIndex, setActiveMessageIndex] = useState(-1);
   const [showFinalClaim, setShowFinalClaim] = useState(false);
   const [hasStarted, setHasStarted] = useState(false);
   const chatContainerRef = useRef(null);
@@ -41,7 +41,7 @@ const ChatAnimation = ({ messageDelay = 2000 }) => {
     },
     {
       sender: 'iGEM Brno',
-      text: 'Hopefully, we have SynBio. We set out to boost duckweed yields, to make the crop from the weed!',
+      text: 'Thankfully, we have SynBio. We set out to boost duckweed yields, to make the crop from the weed!',
       color: 'bg-gradient-to-r from-green-600 to-green-500',
       align: 'right',
       highlight: ['make the crop from the weed'],
@@ -75,13 +75,13 @@ const ChatAnimation = ({ messageDelay = 2000 }) => {
 
   // Auto-scroll to latest message within chat container only
   useEffect(() => {
-    if (messagesEndRef.current) {
+    if (messagesEndRef.current && activeMessageIndex >= 0) {
       const chatContainer = messagesEndRef.current.parentElement;
       if (chatContainer) {
         chatContainer.scrollTop = chatContainer.scrollHeight;
       }
     }
-  }, [messages]);
+  }, [activeMessageIndex]);
 
   // Animation logic
   useEffect(() => {
@@ -92,8 +92,7 @@ const ChatAnimation = ({ messageDelay = 2000 }) => {
 
     const showNextMessage = () => {
       if (currentIndex < chatMessages.length) {
-        const currentMsg = chatMessages[currentIndex];
-        setMessages(prev => [...prev, currentMsg]);
+        setActiveMessageIndex(currentIndex);
         currentIndex++;
         
         if (currentIndex < chatMessages.length) {
@@ -141,43 +140,46 @@ const ChatAnimation = ({ messageDelay = 2000 }) => {
           </div>
 
           <div className="space-y-4 overflow-y-auto max-h-[500px]">
-            {messages.map((msg, index) => (
-              <div
-                key={index}
-                className={`flex ${
-                  msg.align === 'right' ? 'justify-end' : 'justify-start'
-                } animate-fade-in`}
-              >
-                <div className={`flex gap-3 max-w-[85%] ${
-                  msg.align === 'right' ? 'flex-row-reverse' : 'flex-row'
-                }`}>
-                  {/* Avatar */}
-                  <div className="flex-shrink-0">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-xl shadow-md">
-                      <img src={msg.avatar} alt="Avatar" className="w-full h-full object-cover rounded-full" />
+            {chatMessages.map((msg, index) => {
+              const isActive = index <= activeMessageIndex;
+              return (
+                <div
+                  key={index}
+                  className={`flex ${
+                    msg.align === 'right' ? 'justify-end' : 'justify-start'
+                  } transition-opacity duration-500 ${isActive ? 'opacity-100' : 'opacity-30'}`}
+                >
+                  <div className={`flex gap-3 max-w-[85%] ${
+                    msg.align === 'right' ? 'flex-row-reverse' : 'flex-row'
+                  }`}>
+                    {/* Avatar */}
+                    <div className="flex-shrink-0">
+                      <div className="w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-xl shadow-md">
+                        <img src={msg.avatar} alt="Avatar" className="w-full h-full object-cover rounded-full" />
+                      </div>
                     </div>
-                  </div>
 
-                  {/* Message Content */}
-                  <div className="flex flex-col">
-                    <div className={`text-xs font-semibold mb-1 ${
-                      msg.align === 'right' ? 'text-right' : 'text-left'
-                    } text-gray-600`}>
-                      {msg.sender}
-                    </div>
-                    <div
-                      style={{
-                        backgroundColor: msg.sender === 'iGEM Brno' ? '#779E45' : '#F0F0F0',
-                        color: msg.sender === 'iGEM Brno' ? '#fff' : '#222'
-                      }}
-                      className={`rounded-2xl px-4 py-3 shadow-md`}
-                    >
-                      {msg.highlight ? highlightText(msg.text, msg.highlight, msg.sender) : msg.text}
+                    {/* Message Content */}
+                    <div className="flex flex-col">
+                      <div className={`text-xs font-semibold mb-1 ${
+                        msg.align === 'right' ? 'text-right' : 'text-left'
+                      } text-gray-600`}>
+                        {msg.sender}
+                      </div>
+                      <div
+                        style={{
+                          backgroundColor: msg.sender === 'iGEM Brno' ? '#779E45' : '#F0F0F0',
+                          color: msg.sender === 'iGEM Brno' ? '#fff' : '#222'
+                        }}
+                        className={`rounded-2xl px-4 py-3 shadow-md`}
+                      >
+                        {msg.highlight ? highlightText(msg.text, msg.highlight, msg.sender) : msg.text}
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
             <div ref={messagesEndRef} />
           </div>
         </div>

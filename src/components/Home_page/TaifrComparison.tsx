@@ -1,4 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
+
 
 const TaifrComparison = () => {
   const imgRef = useRef(null);
@@ -44,18 +47,18 @@ const TaifrComparison = () => {
         <div className="grid grid-cols-1 mt-4 lg:grid-cols-5 gap-8 ">
           
           {/* Left side - Main headline */}
-          <div className="lg:col-span-2 justify-center items-center flex flex-col">
+          <div className="lg:col-span-2 justify-center items-right flex flex-col">
             
             <div className="text-base text-gray-600 leading-relaxed mt-[-50px]">
               <div className="flex justify-end text-right space-x-4 ">
               
               <div style={{fontFamily: 'Space Grotesk, sans-serif' }}>
-                <div className="font-bold text-xl text-gray-800">Dr. Arturo Marí-Ordóñez</div>
+                <div className="font-bold text-xl text-gray-800">Dr. Marí-Ordóñez</div>
                 <div className="text-gray-600 mt-1">Principal Investigator</div>
-                <div className="text-gray-600">at the Gregor Mendel Institute in Vienna</div>
+                <div className="text-gray-600">at GMI Vienna</div>
               </div>
               <div className="w-24 h-24 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
-                <img src="https://static.igem.wiki/teams/5642/images/what/arturo-mari-ordonez.webp" alt="Dr. Arturo Marí-Ordóñez" className="rounded-full" />
+                <img src="https://static.igem.wiki/teams/5642/images/homepage/261c5c2f7503581c5df39f6f0a694861db5ae9eb.webp" alt="Dr. Arturo Marí-Ordóñez" className="rounded-full" />
               </div>
             </div>
             </div>   
@@ -66,7 +69,7 @@ const TaifrComparison = () => {
             <div className="text-base text-gray-600 leading-relaxed mb-8 md:ml-10 md:mr-10">
               <p className="mb-4" style={{ fontFamily: 'Urbanist, sans-serif', fontSize: '19px' }}>
                 
-                <blockquote className="relative text-gray-600 text-1xl font-semibold ">
+                <blockquote className="relative text-gray-600 text-lg font-semibold ">
                   <span className="absolute text-green-600 -left-6 -top-6 text-6xl  select-none">
                     “
                   </span>
@@ -76,6 +79,14 @@ const TaifrComparison = () => {
                   </span>
                 </blockquote>
               </p>
+              <Link to="/project/how/taifr/overview" onClick={() => window.scrollTo(0, 0)}>
+                              <button
+                                className=" mt-4 hover:bg-green-700 text-white px-6 py-3 rounded-full font-medium transition-colors duration-200"
+                                style={{ fontFamily: "Urbanist, sans-serif", backgroundColor: "#22531C" }}
+                              >
+                                See how TAIFR works 
+                              </button>
+                            </Link>
             </div>
             
           </div>
