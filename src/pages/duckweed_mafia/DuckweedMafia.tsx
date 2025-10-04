@@ -136,26 +136,26 @@ const DuckweedMafiaTeam = () => {
       members: [
         {
           name: "Martin Pavella",
-          role: "cultivator developer, machine learning software architect",
+          role: "cultivator developer, machine learning software architect, wikies coder",
           description: "Martin often feels torn between sacrificing everything for work and progress, and simply settling into a quiet and peaceful life. At the same time, he can’t help but push himself to keep learning about how the world truly works. He is trying to figure out where he fits in it, and how he can do the most for the benefit of humanity, nature, and for the people close to him. He loves math and technology, especially the way they can make difficult problems feel so simple in hindsight.",
           image:"https://static.igem.wiki/teams/5642/images/duckweedmafia/team/dsc00657.webp"
         },
         {
           name: "Pravoslav Žilka",
-          role: "Cultivator engineer. 3d modeling, faculty of mechanical engineering",
+          role: "Cultivator engineer, 3d modeling, faculty of mechanical engineering, wikies coder",
           description: "Finding elegance in complex systems, Pravo seeks patterns that reveal simplicity hidden within apparent chaos. His goal is to make use of all the remaining space and possibilities that time has to offer before the inevitable thermal dead end, turning limitations into opportunities for discovery. By embracing both the beauty of structure and the urgency of finitude, his paradigm views progress not as endless expansion, but as the art of shaping meaning and innovation within the boundaries of existence.",
           image:"https://static.igem.wiki/teams/5642/images/duckweedmafia/team/dsc00750.webp"
         },
         
         {
           name: "Andrej Žabka",
-          role: "Cultivator developer, electronics designer, CAD",
+          role: "Cultivator developer, electronics designer, CAD, wikies coder",
           description: "Once Andrej discovers something that sparks his curiosity, he doesn’t let go — days blur into nights as he dives deep until he masters it. Drawn to the intersection of mechanics, electronics and creativity, he has worked with CNC machines, designed artistic pieces and built custom interactive systems blending engineering with storytelling. From automation and exhibition electronics to precise CAD models, he treats each task as both a technical puzzle and a chance to create something meaningful — technology as a way to give form to ideas that connect people with innovation.",
           image:"https://static.igem.wiki/teams/5642/images/duckweedmafia/team/1000008679.webp"
         },
         {
           name: "David Kopecký",
-          role: "Cultivation modelling, Machine learning engineer, philosopher",
+          role: "Cultivation modelling, Machine learning engineer, philosopher, wikies coder",
           description: "Aiming for large-scale, long-term and sustainable success of humanity, holding ancestors proud, provide future generations with a high-tech sandbox and a clear mind. Focusing on biochemistry-related problems via a machine learning lens. Offering his creations to be broken by real-life scenarios and iteratively sharpened to the cutting-edge.",
           image:"https://static.igem.wiki/teams/5642/images/duckweedmafia/team/dsc05367.webp"
         },
