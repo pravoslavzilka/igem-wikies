@@ -6,12 +6,12 @@ export default function RegenerationAssayPoster() {
       
       <div className="max-w-7xl mx-auto">
         {/* Title */}
-        <h1 style={{ fontFamily: 'Space Grotesk, sans-serif'}} className="text-6xl font-bold text-center mb-8 tracking-tight">
+        <h1 style={{ fontFamily: 'Space Grotesk, sans-serif'}} className="text-6xl mt-24 font-bold text-center mb-8 tracking-tight">
           REGENERATION ASSAY
         </h1>
         
         {/* Introduction */}
-        <div className="mb-12 text-lg leading-relaxed">
+        <div className="mb-12 mt-24 text-lg leading-relaxed">
           <p className="mb-4">
             Duckweed, the fastest-growing higher plant, holds great promise for biotechnological applications, but its genetic 
             engineering has been slow and inefficient (<a href="#" className="text-blue-600 underline">read more here</a>). To overcome this, we developed <strong>TAIFR (Transposase 
@@ -46,9 +46,9 @@ export default function RegenerationAssayPoster() {
         </div>
 
         {/* Figure 1 */}
-        <div className="mb-12 border-2 border-gray-300 p-6 bg-gray-50">
-          <div className="bg-gray-200 h-96 flex items-center justify-center mb-4">
-            <span className="text-gray-500 text-xl">[Figure 1: pIB005 Construct Diagram]</span>
+        <div className="mb-12 ">
+          <div className="bg-gray-200  flex items-center justify-center mb-4">
+            <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/regeneration-assay-copy.webp" alt="Figure 1: TAIFR Design Diagram" className="max-w-full h-auto" />
           </div>
           <p className="text-sm leading-relaxed">
             <strong>Figure 1:</strong> In pIB005, we flanked the green fluorescent protein (GFP) gene, used as a visual marker, and the 
@@ -63,61 +63,19 @@ export default function RegenerationAssayPoster() {
           </p>
         </div>
 
-        {/* DBTL Cycles Diagram */}
-        <div className="mb-12">
-          <div className="grid grid-cols-4 gap-4 mb-8">
-            <div className="border-2 border-green-500 rounded-lg p-4 bg-green-50">
-              <h3 className="text-center font-bold mb-2">DBTL 1</h3>
-              <div className="bg-gray-200 h-32 flex items-center justify-center mb-2">
-                <span className="text-gray-500 text-xs">[Cycle Diagram]</span>
-              </div>
-              <p className="text-xs"><strong>OUTCOME:</strong> Delayed and weak fluorescence, absence of reporter of transposase activity and we were not sure if PONG really has excision activity</p>
-            </div>
-            
-            <div className="border-2 border-green-500 rounded-lg p-4 bg-green-50">
-              <h3 className="text-center font-bold mb-2">DBTL 2</h3>
-              <div className="bg-gray-200 h-32 flex items-center justify-center mb-2">
-                <span className="text-gray-500 text-xs">[Cycle Diagram]</span>
-              </div>
-              <p className="text-xs"><strong>OUTCOME:</strong> The Excision Assay showed that PONG is excising mPing bordered sequences in the context of duckweed</p>
-            </div>
-            
-            <div className="border-2 border-green-500 rounded-lg p-4 bg-green-50">
-              <h3 className="text-center font-bold mb-2">DBTL 3</h3>
-              <div className="bg-gray-200 h-32 flex items-center justify-center mb-2">
-                <span className="text-gray-500 text-xs">[Cycle Diagram]</span>
-              </div>
-              <p className="text-xs"><strong>OUTCOME:</strong> Stronger and earlier fluorescence signals but non-modular design. GFP is non-swappable and resistance non-excisable</p>
-            </div>
-            
-            <div className="border-2 border-green-500 rounded-lg p-4 bg-green-50">
-              <h3 className="text-center font-bold mb-2">DBTL 4</h3>
-              <div className="bg-gray-200 h-32 flex items-center justify-center mb-2">
-                <span className="text-gray-500 text-xs">[Cycle Diagram]</span>
-              </div>
-              <p className="text-xs"><strong>OUTCOME:</strong> Improved, modular design: swappable CDS and resistance gene with restriction cloning and Cre/lox system</p>
-            </div>
-          </div>
-          
-          <div className="flex justify-center gap-8 text-center">
-            <div className="border-2 border-blue-500 rounded-lg p-4 bg-blue-50 w-64">
-              <h3 className="font-bold mb-2">½ of DBTL 5</h3>
-              <p className="text-sm">Pcr/western blot<br/>Using our CRISPR construct to determine whether Agrobacterium can reach the meristematic cells of duckweed</p>
-            </div>
-            
-            <div className="border-2 border-blue-500 rounded-lg p-4 bg-blue-50 w-64">
-              <h3 className="font-bold mb-2">DBTL 4.1 - 4.6</h3>
-              <p className="text-sm">Regenerating the patches of transformed duckweed cells into a whole transgenic frond</p>
-            </div>
-          </div>
-        </div>
+        
 
         {/* Figure 2 */}
-        <div className="mb-12 border-2 border-gray-300 p-6 bg-gray-50">
-          <div className="bg-gray-200 h-80 flex items-center justify-center mb-4">
-            <span className="text-gray-500 text-xl">[Figure 2: Transformation Process Diagram]</span>
+        <div className="mb-12 ">
+          <div className=" flex items-center justify-center mb-4">
+            <div>
+                   <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure2.webp" alt="Figure 2-1: Wild-type Spirodela polyrhiza 7428" className="max-w-full h-auto" />     
+                
+                
+
+             </div>   
           </div>
-          <p className="text-sm leading-relaxed">
+          <p className="text-sm mt-10 leading-relaxed">
             <strong>Figure 2.</strong> Transformation of pIB005 (mPing-bordered rZmUBI-GFP-p2a-NPTII-t35S) into wild-type Spirodela 
             polyrhiza 7428 (1) results in transient expression of GFP (2). Co-transformation with pIB003 (PONG transposase) 
             leads to excision of the mPing-bordered translational unit, resulting in no transient fluorescence (3). After two to 
@@ -126,52 +84,37 @@ export default function RegenerationAssayPoster() {
           </p>
         </div>
 
-        {/* Figure 3 */}
-        <div className="mb-12 border-2 border-gray-300 p-6 bg-gray-50">
-          <div className="grid grid-cols-3 gap-4 mb-4">
-            <div className="bg-gray-200 h-48 flex flex-col items-center justify-center">
-              <span className="text-gray-500 text-sm mb-2">[Image 1]</span>
-              <p className="text-xs text-center px-2">wtSp7 – no fluorescence</p>
+        <div className='grid md:grid-cols-4 gap-4 mb-12 pt-12'>
+
+            <div className='col-span-2   flex items-center justify-center'>
+
             </div>
-            <div className="bg-gray-200 h-48 flex flex-col items-center justify-center">
-              <span className="text-gray-500 text-sm mb-2">[Image 2]</span>
-              <p className="text-xs text-center px-2">pIB005 – fluorescence</p>
+
+            <div className='col-span-2   flex items-center justify-center'>
+            <p className="text-sm leading-relaxed">
+                <strong>Figure 3.</strong> After two to three weeks following co-transformation of Spirodela polyhriza 7458 by pIB005 
+                (mPing-bordered rZmUBI-GFP-p2a-NPTII-t35S) with pIB003 (PONG), speckles of GFP fluorescence appear in 
+                fronds as a result of random insertions of the mPing-bordered translational unit into the duckweed 
+                nuclear genome in several frond cells. Stable nuclear genome insertion was confirmed by PCR (3). Even if 
+                duckweeds are not fully transgenic, expression of NPTII from random insertions within fronds enables the fronds 
+                to survive on selection with 5 to 10 mg/L G418 (2), in comparison with non-transformed Spirodela polyrhiza 
+                7428 on 10 mg/L G418 (1).
+            </p>
+
             </div>
-            <div className="bg-gray-200 h-48 flex flex-col items-center justify-center">
-              <span className="text-gray-500 text-sm mb-2">[Image 3]</span>
-              <p className="text-xs text-center px-2">pIB005 x pIB003 – no fluorescence</p>
-            </div>
-          </div>
-          <div className="grid grid-cols-3 gap-4 mb-4">
-            <div className="bg-gray-200 h-48 flex flex-col items-center justify-center">
-              <span className="text-gray-500 text-sm mb-2">[Image 4]</span>
-              <p className="text-xs text-center px-2">pIB005 x pIB003 – speckels fluorescence after 2 – 3 weeks</p>
-            </div>
-            <div className="bg-gray-200 h-48 flex flex-col items-center justify-center">
-              <span className="text-gray-500 text-sm mb-2">[Image 5]</span>
-              <p className="text-xs text-center px-2">Sp7 dead on 10neo</p>
-            </div>
-            <div className="bg-gray-200 h-48 flex flex-col items-center justify-center">
-              <span className="text-gray-500 text-sm mb-2">[Image 6]</span>
-              <p className="text-xs text-center px-2">Sp7 co-transformed by pIB005 x pIB003 green on 10mg/l neo</p>
-            </div>
-          </div>
-          <p className="text-sm leading-relaxed">
-            <strong>Figure 3.</strong> After two to three weeks following co-transformation of Spirodela polyhriza 7458 by pIB005 
-            (mPing-bordered rZmUBI-GFP-p2a-NPTII-t35S) with pIB003 (PONG), speckles of GFP fluorescence appear in 
-            fronds as a result of random insertions of the mPing-bordered translational unit into the duckweed 
-            nuclear genome in several frond cells. Stable nuclear genome insertion was confirmed by PCR (3). Even if 
-            duckweeds are not fully transgenic, expression of NPTII from random insertions within fronds enables the fronds 
-            to survive on selection with 5 to 10 mg/L G418 (2), in comparison with non-transformed Spirodela polyrhiza 
-            7428 on 10 mg/L G418 (1).
-          </p>
+
+
+
+ 
+        
+          
         </div>
 
         {/* DBTL 1 Section */}
-        <div className="mb-12 bg-gray-50 p-8 rounded-lg">
-          <h2 className="text-4xl font-bold mb-6">DBTL 1</h2>
+        <div className="mb-12 ">
+          <h2 className="text-4xl font-bold mb-6" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>DBTL 1</h2>
           
-          <h3 className="text-2xl font-bold mb-4">DESIGN of pIB001</h3>
+          <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>DESIGN of pIB001</h3>
           <p className="mb-4 leading-relaxed">
             To test if we can insert gene using our TAIFR design, we designed construct pIB001. It 
             contains a cassette flanked on both sides by the non-transposable element mPing. Inside 

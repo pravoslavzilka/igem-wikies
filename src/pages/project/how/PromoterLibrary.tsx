@@ -65,7 +65,7 @@ const PromoterLibrary = () => {
           </div>
           <div className="flex items-center space-x-4 ">
             <div className="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
-              <img src="https://static.igem.wiki/teams/5642/images/what/arturo-mari-ordonez.webp" alt="Dr. Arturo Marí-Ordóñez" className="rounded-full" />
+              <img src="https://static.igem.wiki/teams/5642/images/homepage/261c5c2f7503581c5df39f6f0a694861db5ae9eb.webp" alt="Dr. Arturo Marí-Ordóñez" className="rounded-full" />
             </div>
             <div style={{fontFamily: 'Space Grotesk, sans-serif' }}>
               <div className="font-bold text-xl text-gray-800">Dr. Arturo Marí-Ordóñez</div>
@@ -88,8 +88,7 @@ const PromoterLibrary = () => {
         <p>
           Plant engineering knows a lot of these parts but they are, unsurprisingly, centered around only a few species 
           like <em>Arabidopsis</em>, tobacco, and maize. And when it comes to duckweed, these do not work ideally. Even the 
-          most widely used promoter in plant genetic engineering, the Cauliflower mosaic virus 35S promoter (CaMV 
-          35S), yields only weak expression [2]. This is probably a result of the epigenetic silencing of the foreign 
+          most widely used promoter in plant genetic engineering, the Cauliflower mosaic virus 35S promoter (r35S), yields only weak expression [2]. This is probably a result of the epigenetic silencing of the foreign 
           genetic parts in duckweed environment, which is observed also for other monocot species [3]. Several 
           monocot promoters, such as maize ubiquitin (rZmUBI) work decently [4], but it is reasonable to assume that 
           endogenous parts from duckweed would increase both strength and stability of expression [4].
