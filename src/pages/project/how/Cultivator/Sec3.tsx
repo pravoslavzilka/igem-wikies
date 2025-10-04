@@ -205,7 +205,7 @@ export default function CultivatorSec3() {
                         <div className="mt-6 flex justify-center md:justify-center">
                             <button
                                 onClick={() => setIsOpenNutrientSlides(true)}
-                                className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
+                                className="text-green-600 hover:text-green-800 font-semibold text-2xl underline"
                             >
                                 See how our nutrient system works in detail.
                             </button>
@@ -226,7 +226,7 @@ export default function CultivatorSec3() {
                         <div className="mt-6 flex justify-center md:justify-center">
                             <button
                                 onClick={() => setIsOpenIterationSlides(true)}
-                                className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
+                                className="text-green-600 hover:text-green-800 font-semibold text-2xl underline"
                             >
                                 See all 4 design iterations of the additive station
                             </button>

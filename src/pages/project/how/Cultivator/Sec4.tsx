@@ -162,7 +162,7 @@ export default function CultivatorSec4() {
                         <div className="mt-6 flex justify-center md:justify-center">
                             <button
                                 onClick={() => setIsOpenLightSlides(true)}
-                                className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
+                                className="text-green-600 hover:text-green-800 font-semibold text-2xl underline"
                             >
                                 See which lights we experimented with.
                             </button>
@@ -222,7 +222,7 @@ export default function CultivatorSec4() {
                         <div className="mt-6 flex justify-center md:justify-center">
                             <button
                                 onClick={() => setIsOpenPROBESlides(true)}
-                                className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
+                                className="text-green-600 hover:text-green-800 font-semibold text-2xl underline"
                             >
                                 See the design iterations we went through.
                             </button>

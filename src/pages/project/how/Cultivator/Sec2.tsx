@@ -201,7 +201,7 @@ export default function CultivatorSec2() {
                     <div className="mt-6 flex justify-center md:justify-center">
                         <button
                             onClick={() => setIsOpenHarvestingSlides(true)}
-                            className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
+                            className="text-green-600 hover:text-green-800 font-semibold text-2xl underline"
                         >
                             See the design iterations we went through
                         </button>
@@ -254,7 +254,7 @@ export default function CultivatorSec2() {
                     <div className="mt-6 flex justify-center md:justify-center">
                         <button
                             onClick={() => setIsOpenCycleSlides(true)}
-                            className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
+                            className="text-green-600 hover:text-green-800 font-semibold text-2xl underline"
                         >
                             See the whole water circulation system.
                         </button>
