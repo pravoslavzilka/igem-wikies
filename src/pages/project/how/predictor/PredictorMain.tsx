@@ -911,6 +911,8 @@ const [TT, setTT] = useState(40); // Terminal time (days)
           REFERENCES
         </h2>
 
+        
+
         <ul className="list-none list-inside text-gray-700 leading-relaxed max-w-3xl mx-auto space-y-3" style={{ fontFamily: 'Urbanist, sans-serif' }}>
           <li>
             [1] Smith, J., & Brown, T. (2005). Aquatic plant ecology: A review. <i>Aquatic Botany, 81</i>(3), 245-260. <a href="https://doi.org/10.1016/j.aquabot.2004.12.002" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">https://doi.org/10.1016/j.aquabot.2004.12.002</a>
