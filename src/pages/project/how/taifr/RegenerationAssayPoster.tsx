@@ -54,7 +54,7 @@ export default function RegenerationAssayPoster() {
           <div className="bg-gray-200  flex items-center justify-center mb-4">
             <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/regeneration-assay-copy.webp" alt="Figure 1: TAIFR Design Diagram" className="max-w-full h-auto" />
           </div>
-          <p className="text-sm leading-relaxed">
+          <p className="text-base leading-relaxed">
             <strong>Figure 1:</strong> In pIB005, we flanked the green fluorescent protein (GFP) gene, used as a visual marker, and the 
             neomycin resistance gene (NPTII), used as a selectable marker, with halves of the non-transposable element mPing. 
             This created an expression cassette that could be recognized, excised, moved and inserted by PONG into the 
@@ -79,7 +79,7 @@ export default function RegenerationAssayPoster() {
 
              </div>   
           </div>
-          <p className="text-sm mt-10 leading-relaxed">
+          <p className="text-base mt-10 leading-relaxed">
             <strong>Figure 2.</strong> Transformation of pIB005 (mPing-bordered rZmUBI-GFP-p2a-NPTII-t35S) into wild-type Spirodela 
             polyrhiza 7428 (1) results in transient expression of GFP (2). Co-transformation with pIB003 (PONG transposase) 
             leads to excision of the mPing-bordered translational unit, resulting in no transient fluorescence (3). After two to 
@@ -90,27 +90,26 @@ export default function RegenerationAssayPoster() {
 
         <div className='grid md:grid-cols-4 gap-4 mb-12 pt-12'>
 
-            <div className='col-span-2   flex items-center justify-center'>
+            
+
+            <div className='col-span-2  items-center justify-center'>
+              <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure3.webp" alt="Figure 3: Regenerated Transgenic Frond" className="max-w-full h-auto" />
+
+                <p className="text-base leading-relaxed mt-10">
+                    <strong>Figure 3.</strong> Fronds of Spirodela polyrhiza 7428 (Sp7428) were co-transformed with two Agrobacterium cultures: one carrying pIB005 (mPing-bordered GFP-p2a-NPTII unit) and the other carrying pIB003 (PONG transposase). GFP fluorescence spots appeared 12 days post-infiltration (dpi) (see Fig. 2.4). At 18 dpi, all transformed fronds were transferred to medium containing 5 mg/L G418 - ten times higher than the tolerance threshold of Sp7428 (0.5 mg/L). As a control, fronds transformed only with pIB003 (no resistance gene present) were placed on the same concentration at the same time. By 24 dpi, all non-transformed fronds had died (1), while some transformed fronds - specifically the daughter fronds - survived and appeared healthy (2), though smaller. Surprisingly, these daughter fronds showed no GFP fluorescence, not even as localized spots - that is why we performed PCR to find out if transgene was there.
+                </p>
 
             </div>
 
             <div className='col-span-2   flex items-center justify-center'>
-            <p className="text-sm leading-relaxed">
-                <strong>Figure 3.</strong> After two to three weeks following co-transformation of Spirodela polyhriza 7458 by pIB005 
-                (mPing-bordered rZmUBI-GFP-p2a-NPTII-t35S) with pIB003 (PONG), speckles of GFP fluorescence appear in 
-                fronds as a result of random insertions of the mPing-bordered translational unit into the duckweed 
-                nuclear genome in several frond cells. Stable nuclear genome insertion was confirmed by PCR (3). Even if 
-                duckweeds are not fully transgenic, expression of NPTII from random insertions within fronds enables the fronds 
-                to survive on selection with 5 to 10 mg/L G418 (2), in comparison with non-transformed Spirodela polyrhiza 
-                7428 on 10 mg/L G418 (1).
-            </p>
+                <p className="text-base leading-relaxed mt-10">
+                    <strong>Figure 4. </strong> 
+                     PCR for GFP on genomic DNA from RA4.1 (duckweeds co-transformed by pIB005 and pIB003) surviving on 5mg/L of G418 (toxic amount) showed that gene for GFP was present, while ts expression (green fluorescence) was not observable in daughter healthy fronds.
+                </p>
 
             </div>
 
 
-
- 
-        
           
         </div>
 
@@ -353,53 +352,45 @@ export default function RegenerationAssayPoster() {
           <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/excision-assay-copy.webp" alt="Excision Assay Diagram" className="max-w-full h-auto mb-6" />
 
           <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of pIB003</h3>
-          <p className="mb-6 leading-relaxed">
-            We performed DBTL cycle 2 in parallel with DBTL cycle 3, where the design and construction of PONG are described.
-          </p>
-
-          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of pIB004</h3>
-          <p className="mb-6 leading-relaxed">
-            Construct pIB004 is carrying a gene for yellow fluorescent protein (YFP), interrupted in the middle by the transposon 
-            element mPing from Oryza sativa. Expression of the interrupted YFP is driven by ubiquitin promoter from Zea mays
-            (rZmUBI) and terminated by t35S, terminator with polyadenylation signal, derived from Cauliflower mosaic virus. 
-            Expression cassette is bordered by T-DNA allowing for Agrobacterium-mediated transformation and lies in binary 
-            vector, allowing for replication both in E.coli and Agrobacterium tumefaciens.
-          </p>
-
           
 
-          <div className="border-2 border-gray-300 p-4 bg-white mb-6">
-            <p className="text-sm leading-relaxed">
-              <strong>Figure 7.</strong> [Figure caption placeholder]
-            </p>
-          </div>
+          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6'>
+            <div className='col-span-3 items-center justify-center'>
+                <p className="mb-6 leading-relaxed">
+                    We performed DBTL cycle 2 in parallel with DBTL cycle 3, where the design and construction of PONG are described.
+                </p>
 
-          <div className="bg-gray-200 h-64 flex items-center justify-center mb-6">
-            <span className="text-gray-500">[Pcr/western blot]</span>
-          </div>
+                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of pIB004</h3>
+                <p className="mb-6 leading-relaxed">
+                    Construct pIB004 is carrying a gene for yellow fluorescent protein (YFP), interrupted in the middle by the transposon 
+                    element mPing from Oryza sativa. Expression of the interrupted YFP is driven by ubiquitin promoter from Zea mays
+                    (rZmUBI) and terminated by t35S, terminator with polyadenylation signal, derived from Cauliflower mosaic virus. 
+                    Expression cassette is bordered by T-DNA allowing for Agrobacterium-mediated transformation and lies in binary 
+                    vector, allowing for replication both in E.coli and Agrobacterium tumefaciens.
+                </p>
 
-          <div className="border-2 border-gray-300 p-4 bg-white mb-6">
-            <p className="text-sm leading-relaxed">
-              <strong>Figure 8.</strong> Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web
-              development. Its purpose is to permit a page layout to be designed, independently of the copy that will
-              subsequently populate it, or to demonstrate various fonts of a typeface without meaningful text that could be
-              distracting. Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text
-              by the Roman statesman and philosopher Cicero, with words
-            </p>
+                
+                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">BUILD – cloning of pIB004</h3>
+                <p className="mb-2 leading-relaxed">We used Modular Cloning based on Golden Gate.</p>
+                
+                <p className="mb-2 font-semibold">Parts:</p>
+                <p className="mb-4 leading-relaxed">
+                For the first iteration, we sourced mPing sequence from pEarleyGate 100RMOA mPing from Hancock Lab. The Level 0 part t35S (pF11P1) was from Plant Parts II and Infrastructure Kit deposited by Stuttmann Lab. The Level 0 parts pE1P2 and pH12P2 were from the CRISPR/Cas Toolkit for Plants deposited by Nekrasov Lab. 
+                </p>
+                
+                <p className="mb-2 font-semibold">Acceptors:</p>
+                <p className="mb-4 leading-relaxed">
+                    pE1T, pH2T, pB3T, pH4T and end-linker pB5T from the MoClo Toolkit deposited by Patron's Lab. From Ordóñez’s Lab we have been gifted construct pAMO101 carrying GFP under the Zea mays ubiquitin promoter (rZmUBI) terminated by cauliflower mosaic virus terminator sequence (t35S).
+                </p>
+
+            </div>
+
+            <div className='col-span-1 items-center justify-center'>
+                <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/pib003.webp" alt="Figure Y: pIB003 Map" className="max-w-full h-auto" />
+                <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/pib004-copy.webp" alt="Figure Y: pIB004 Map" className="max-w-full h-auto mt-6" />
+            </div>        
+
           </div>
-        
-        <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">BUILD – cloning of pIB004</h3>
-          <p className="mb-2 leading-relaxed">We used Modular Cloning based on Golden Gate.</p>
-          
-          <p className="mb-2 font-semibold">Parts:</p>
-          <p className="mb-4 leading-relaxed">
-           For the first iteration, we sourced mPing sequence from pEarleyGate 100RMOA mPing from Hancock Lab. The Level 0 part t35S (pF11P1) was from Plant Parts II and Infrastructure Kit deposited by Stuttmann Lab. The Level 0 parts pE1P2 and pH12P2 were from the CRISPR/Cas Toolkit for Plants deposited by Nekrasov Lab. 
-          </p>
-          
-          <p className="mb-2 font-semibold">Acceptors:</p>
-          <p className="mb-4 leading-relaxed">
-            pE1T, pH2T, pB3T, pH4T and end-linker pB5T from the MoClo Toolkit deposited by Patron's Lab. From Ordóñez’s Lab we have been gifted construct pAMO101 carrying GFP under the Zea mays ubiquitin promoter (rZmUBI) terminated by cauliflower mosaic virus terminator sequence (t35S).
-          </p>
 
           <div className='mb-6 mt-16 text-2xl' style={{ fontFamily: 'Space Grotesk, sans-serif' }} > 
             <b>1st iteration: insertion of mPing before GFP by SpeI into pAMO101</b>
@@ -636,49 +627,42 @@ export default function RegenerationAssayPoster() {
             resulted into Level 2 construct pIB003_rZmUBI-PONG-p2a-RFP-t35S. The assembly was confirmed by sequencing.</li>
           </ul>
 
-          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">TESTING – transformation</h3>
-          <p className="mb-4 leading-relaxed">
-            We co-transformed Spirodela polyrhiza 7428 with pIB002 x pIB003 and included 5 controls:
-          </p>
-          <ul className="mb-6 leading-relaxed list-disc pl-6">
-            <li>pAMO101: positive control</li>
-            <li>pIB002</li>
-            <li>pIB003</li>
-            <li>pIB002 x pIB003</li>
-            <li>wild type Spirodela polyrhiza 7428: negative control</li>
-          </ul>
+         
 
-          <div className="grid grid-cols-2 gap-4 mb-6">
-            <div>
-              <div className="grid grid-cols-2 gap-4 mb-4">
-                <div className="bg-gray-200 h-32 flex flex-col items-center justify-center">
-                  <span className="text-gray-500 text-xs mb-2">[Image]</span>
-                  <p className="text-xs">pAMO101</p>
-                </div>
-                <div className="bg-gray-200 h-32 flex flex-col items-center justify-center">
-                  <span className="text-gray-500 text-xs mb-2">[Image]</span>
-                  <p className="text-xs">pIB003</p>
-                </div>
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-gray-200 h-32 flex flex-col items-center justify-center">
-                  <span className="text-gray-500 text-xs mb-2">[Image]</span>
-                  <p className="text-xs">pIB002</p>
-                </div>
-                <div className="bg-gray-200 h-32 flex flex-col items-center justify-center">
-                  <span className="text-gray-500 text-xs mb-2">[Image]</span>
-                  <p className="text-xs">pIB002 x pIB003 no fluorescence 6dpi</p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-gray-200 h-72 flex flex-col items-center justify-center">
-              <span className="text-gray-500 text-sm mb-2">[Large Image]</span>
-              <p className="text-xs">pIB002 x pIB003 speckles</p>
-            </div>
-          </div>
+         <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6 mt-32'>
+            <div className='col-span-2  items-center justify-center'>   
+                 <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">TESTING – transformation</h3>
+                <p className="mb-4 leading-relaxed">
+                    We co-transformed Spirodela polyrhiza 7428 with pIB002 x pIB003 and included 5 controls:
+                </p>
+                <ul className="mb-6 leading-relaxed list-disc pl-6">
+                    <li>pAMO101: positive control</li>
+                    <li>pIB002</li>
+                    <li>pIB003</li>
+                    <li>pIB002 x pIB003</li>
+                    <li>wild type Spirodela polyrhiza 7428: negative control</li>
+                </ul>
 
-          <div className="border-2 border-gray-300 p-4 bg-white mb-6">
-            <p className="text-sm leading-relaxed">
+                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">TESTING – transformation</h3>
+                 <p className="mb-4 leading-relaxed">
+                    As we built the first functional construct to perform our regeneration assay (pIB002), we needed to design the appropriate regeneration conditions. Our design includes the NPTII gene, based on previous assessments of antibiotic effects by Dr. Ordóñez, which showed that duckweed is most sensitive to neomycin. We therefore had to determine the critical concentration at which duckweeds are killed by neomycin. In addition, we needed to evaluate whether natural neomycin sulphate is sufficient or whether synthetic G418 is required. For these purposes, we designed and performed the neomycin test. We subjected three clones of Spirodela polyrhiza (0162, 7428, and 9509) to different concentrations of neomycin sulphate and G418, ranging from 0 to 100 mg/L. All combinations were tested in biological triplicates using 12-well plates.
+                </p>
+
+            </div>
+
+            <div className='col-span-2  flex items-center justify-center'>
+
+            </div>
+
+         </div>
+
+
+         <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6 mt-32'>
+            <div className='col-span-2  items-center justify-center'>  
+
+            </div>
+            <div className='col-span-2  flex items-center justify-center'>
+              <p className="text-base leading-relaxed">
               <strong>Figure 9.</strong> The positive control (pAMO101) showed GFP fluorescence (1), although reduced compared with 
               DBTL 1 (<a href="#" className="text-blue-600 underline">see explanation here</a>). The improved design of pIB002, with GFP as the first gene in the 
               translational unit, resulted in visible fluorescence (3) comparable to the fluorescence of positive control. The 
@@ -688,68 +672,58 @@ export default function RegenerationAssayPoster() {
               spots appeared, randomly distributed on duckweed fronds (5), probably as a result of insertion of the 
               mPing-bordered translational unit (rZmUBI-GFP-p2a-NPTII-t35S).
             </p>
-          </div>
-
-          <div className="bg-gray-200 h-64 flex items-center justify-center mb-6">
-            <span className="text-gray-500">[Graph of fluorescences]</span>
-          </div>
-
-          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">LEARN</h3>
-          
-          <div className="mb-6">
-            <p className="font-semibold mb-2">Our constructs are functional! What's next?</p>
-            <p className="mb-4 leading-relaxed">
-              In comparison with the first DBTL cycle, we can now observe functionality of both constructs required for molecular PING-PONG. GFP in pIB002 exhibits more fluorescence compared to the first DBTL cycle (3), while RFP in pIB003 is faintly visible (2), confirming that PONG is expressed. The mPing-bordered translational unit (rZmUBI-GFP-p2a-NPTII-t35S) is not only being excised (4) but also likely inserted, as GFP spots appear randomly distributed in duckweed fronds between 12 and 18 dpi (5). Regeneration attempts can begin as soon as we determine the exact neomycin concentration that kills wild-type duckweed.
-            </p>
-          </div>
-
-          <div className="mb-6">
-            <p className="font-semibold mb-2">Synthetic neomycin (G418) kills duckweed at concentrations above 0.5 mg/L</p>
-            <p className="mb-4 leading-relaxed">
-              This was observed in our neomycin test conducted on three clones of Spirodela polyrhiza (162, 7428, 9509) using both natural (sulphate) and synthetic (G418) forms of neomycin (see Fig. xy).
-            </p>
-          </div>
-
-          <div className="mb-6">
-            <p className="font-semibold mb-2">But wait - is our PING-PONG construct design modular and user-friendly?</p>
-            <p className="mb-4 leading-relaxed">
-              This was a question we have been asked before beginning regeneration attempts. If we succeed in regenerating an entire transgenic frond from cells carrying our cassette containing NPTII, we would not be able to insert any additional transgenes into those duckweed transgenic lines using our TAIFR method, since it relies on neomycin selection (facilitated by the NPTII gene), which would already be present in every duckweed cell. Thus, our initial design prevented transgene stacking in duckweed.
-            </p>
-          </div>
-
-          <div className="mb-6">
-            <p className="font-semibold mb-2">And what if we - or anyone else - wanted to insert something other than GFP?</p>
-            <p className="mb-4 leading-relaxed">
-              Our design of pIB002 only allowed GFP delivery into duckweed. While it could be rebuilt from scratch using Level 0 parts and Golden Gate cloning, such an approach would be time-consuming and inefficient.
-            </p>
-            <p className="leading-relaxed">
-              To address these two shortcomings, we developed pIB005 - a customizable TAIFR construct that enables transgene stacking in duckweed – we opened DBTL cycle 4 of our Regeneration Assay.
-            </p>
-          </div>
-
-          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">TESTING – neomycin test</h3>
-          <p className="mb-4 leading-relaxed">
-            As we built the first functional construct to perform our regeneration assay (pIB002), we needed to design the 
-            appropriate regeneration conditions. Our design includes the NPTII gene, based on previous 
-            assessments of antibiotic effects by Dr. Ordóñez, which showed that duckweed is most sensitive to neomycin. 
-            We therefore had to determine the critical concentration at which duckweeds are killed by 
-            neomycin. In addition, we needed to evaluate whether natural neomycin sulphate is sufficient or whether 
-            synthetic G418 is required. For these purposes, we designed and performed the neomycin test. We 
-            subjected three clones of Spirodela polyrhiza (0162, 7428, and 9509) to different concentrations of 
-            neomycin sulphate and G418, ranging from 0 to 100 mg/L. All combinations were tested in biological 
-            triplicates using 12-well plates.
-          </p>
-
-          <div className="border-2 border-gray-300 p-4 bg-white mb-6">
-            <div className="bg-gray-200 h-64 flex items-center justify-center mb-4">
-              <span className="text-gray-500">[Neomycin Test Results Table/Graph]</span>
             </div>
-            <p className="text-sm leading-relaxed">
-              <strong>Figure 11.</strong> The neomycin sensitivity test on Spirodela polyrhiza clones (162, 7428, and 9509) showed that 
-              they are much more sensitive to the synthetic form of neomycin (G418). The response was consistent, with all 
-              fronds killed at concentrations at and above 0.5 mg/L of G418 in all three clones. The test was performed twice, 
-              each time with three biological replicates.
-            </p>
+         </div>    
+
+        
+
+    
+
+          
+
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4 mt-24">LEARN</h3>
+          
+          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6 mt-8'>
+            <div className='col-span-3  items-center justify-center'>
+                <div className="mb-6">
+                    <p className="font-semibold mb-2">Our constructs are functional! What's next?</p>
+                    <p className="mb-4 leading-relaxed">
+                    In comparison with the first DBTL cycle, we can now observe functionality of both constructs required for molecular PING-PONG. GFP in pIB002 exhibits more fluorescence compared to the first DBTL cycle (3), while RFP in pIB003 is faintly visible (2), confirming that PONG is expressed. The mPing-bordered translational unit (rZmUBI-GFP-p2a-NPTII-t35S) is not only being excised (4) but also likely inserted, as GFP spots appear randomly distributed in duckweed fronds between 12 and 18 dpi (5). Regeneration attempts can begin as soon as we determine the exact neomycin concentration that kills wild-type duckweed.
+                    </p>
+                </div>
+
+                <div className="mb-6">
+                    <p className="font-semibold mb-2">Synthetic neomycin (G418) kills duckweed at concentrations above 0.5 mg/L</p>
+                    <p className="mb-4 leading-relaxed">
+                    This was observed in our neomycin test conducted on three clones of Spirodela polyrhiza (162, 7428, 9509) using both natural (sulphate) and synthetic (G418) forms of neomycin (see Fig. xy).
+                    </p>
+                </div>
+
+                <div className="mb-6">
+                    <p className="font-semibold mb-2">But wait - is our PING-PONG construct design modular and user-friendly?</p>
+                    <p className="mb-4 leading-relaxed">
+                    This was a question we have been asked before beginning regeneration attempts. If we succeed in regenerating an entire transgenic frond from cells carrying our cassette containing NPTII, we would not be able to insert any additional transgenes into those duckweed transgenic lines using our TAIFR method, since it relies on neomycin selection (facilitated by the NPTII gene), which would already be present in every duckweed cell. Thus, our initial design prevented transgene stacking in duckweed.
+                    </p>
+                </div>
+
+                <div className="mb-6">
+                    <p className="font-semibold mb-2">And what if we - or anyone else - wanted to insert something other than GFP?</p>
+                    <p className="mb-4 leading-relaxed">
+                    Our design of pIB002 only allowed GFP delivery into duckweed. While it could be rebuilt from scratch using Level 0 parts and Golden Gate cloning, such an approach would be time-consuming and inefficient.
+                    </p>
+                    <p className="leading-relaxed">
+                    To address these two shortcomings, we developed pIB005 - a customizable TAIFR construct that enables transgene stacking in duckweed – we opened DBTL cycle 4 of our Regeneration Assay.
+                    </p>
+                </div>
+            </div>
+            <div className='col-span-1 items-center justify-center p-2'>
+                <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure11.webp" alt="Description of image" />
+                <p className='text-base mt-8 leading-relaxed'>
+                    <b>Figure 11.</b> The neomycin sensitivity test on Spirodela polyrhiza clones (162, 7428, and 9509) showed that they are much more sensitive to the synthetic form of neomycin (G418). The response was consistent, with all fronds killed at concentrations at and above 0.5 mg/L of G418 in all three clones. The test was performed twice, each time with three biological replicates.
+
+                </p>
+            </div>
+
           </div>
 
           <p className="mb-4 leading-relaxed">
@@ -772,36 +746,43 @@ export default function RegenerationAssayPoster() {
         </div>
 
         {/* DBTL 4 Section */}
-        <div className="mb-12 bg-gray-50 p-8 rounded-lg">
+        <div className="mb-12 mt-32">
           <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-4xl font-bold mb-6">DBTL 4</h2>
           
-          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of pIB005</h3>
-          <p className="mb-6 leading-relaxed">
-            Plasmid pIB005 contains a cassette flanked on both sides by the non-transposable 
-            element mPing. Inside the cassette, there is a fluorescent marker (GFP) and a resistance 
-            gene against neomycin (NPTII). Both GFP and NPTII are linked by a self-cleaving 2A 
-            peptide (derived from porcine teschovirus-1), allowing their parallel expression. The 
-            GFP-p2A-NPTII ORF is driven by the ubiquitin promoter from Zea mays (rZmUBI) and 
-            terminated by the Cauliflower Mosaic Virus terminator sequence (t35S). This design 
-            minimizes the overall cassette size, resulting in higher insertion efficiency. The gene for 
-            GFP in the cassette is bordered by Esp3I restriction sites, allowing seamless swapping of 
-            the first coding sequence (CDS1) in the translational unit. This design enables 
-            customization of which gene is inserted and expressed in duckweed using our TAIFR 
-            method. The second CDS of the translational unit (p2A-NPTII) is bordered by lox sites - 
-            specifically mutated sequences, with lox71 at the 5′ end and lox66 at the 3′ end. Upon 
-            expression of Cre recombinase, this design enables excision of the selection marker 
-            (NPTII) from transgenic duckweed, allowing transgene stacking in a single line using our 
-            TAIFR method. Excision of p2A-NPTII from transgenic duckweed lines results in a mutated 
-            lox site that is no longer recognizable by Cre recombinase, thereby allowing repeated 
-            insertion of the TAIFR translational unit and excision of the selection marker (NPTII).The 
-            entire expression cassette is bordered by T-DNA for Agrobacterium-mediated 
-            transformation and is housed in a binary vector, allowing replication in both E. coli and 
-            Agrobacterium tumefaciens.
-          </p>
+          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6'>
+            <div className='col-span-3  items-center justify-center'>
+                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of pIB005</h3>
+                <p className="mb-6 leading-relaxed">
+                    Plasmid pIB005 contains a cassette flanked on both sides by the non-transposable 
+                    element mPing. Inside the cassette, there is a fluorescent marker (GFP) and a resistance 
+                    gene against neomycin (NPTII). Both GFP and NPTII are linked by a self-cleaving 2A 
+                    peptide (derived from porcine teschovirus-1), allowing their parallel expression. The 
+                    GFP-p2A-NPTII ORF is driven by the ubiquitin promoter from Zea mays (rZmUBI) and 
+                    terminated by the Cauliflower Mosaic Virus terminator sequence (t35S). This design 
+                    minimizes the overall cassette size, resulting in higher insertion efficiency. The gene for 
+                    GFP in the cassette is bordered by Esp3I restriction sites, allowing seamless swapping of 
+                    the first coding sequence (CDS1) in the translational unit. This design enables 
+                    customization of which gene is inserted and expressed in duckweed using our TAIFR 
+                    method. The second CDS of the translational unit (p2A-NPTII) is bordered by lox sites - 
+                    specifically mutated sequences, with lox71 at the 5′ end and lox66 at the 3′ end. Upon 
+                    expression of Cre recombinase, this design enables excision of the selection marker 
+                    (NPTII) from transgenic duckweed, allowing transgene stacking in a single line using our 
+                    TAIFR method. Excision of p2A-NPTII from transgenic duckweed lines results in a mutated 
+                    lox site that is no longer recognizable by Cre recombinase, thereby allowing repeated 
+                    insertion of the TAIFR translational unit and excision of the selection marker (NPTII).The 
+                    entire expression cassette is bordered by T-DNA for Agrobacterium-mediated 
+                    transformation and is housed in a binary vector, allowing replication in both E. coli and 
+                    Agrobacterium tumefaciens.
+                </p>    
+            </div>
 
-          <div className="bg-gray-200 h-48 flex items-center justify-center mb-6">
-            <span className="text-gray-500">[pIB005 Plasmid Diagram]</span>
+            <div className='col-span-1  flex items-center justify-center'>
+              <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/pib005-copy.webp" alt="pIB005 Plasmid Diagram" className="max-w-full h-auto" />
+            </div>
+
           </div>
+
+          
 
           <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">BUILD - cloning of pIB005</h3>
           <p className="mb-4 leading-relaxed">
@@ -824,125 +805,162 @@ export default function RegenerationAssayPoster() {
             assembly was confirmed by sequencing.</li>
           </ul>
 
-          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">TEST – transformation</h3>
-          <p className="mb-4 leading-relaxed">
-            Altogether, we did 6 iterations of transformation (TEST) DBTL 4 cycle of The Regeneration Assay to 
-            fine-tune conditions in way that cells that got inserted by our transposase assisted system will give rise to a 
-            new transgenic frond. In each iteration we did following controls:
-          </p>
-          <ul className="mb-4 leading-relaxed list-disc pl-6">
-            <li>pIB005 without neomycin</li>
-            <li>pIB005 with neomycin (5mg/L)</li>
-            <li>pIB005 x pIB003 without neomycin</li>
-          </ul>
-          <p className="mb-4 leading-relaxed">
-            In the first iteration we did four additional control:
-          </p>
-          <ul className="mb-6 leading-relaxed list-disc pl-6">
-            <li>pAMO101: positive control (same as in DBTL 1 and 3 - not displayed here)</li>
-            <li>pIB003 (same as in DBTL 2 and 3 - not displayed here)</li>
-            <li>non-transformed Sp7428 with neomycin (5mg/L): negative control 1</li>
-            <li>non-transformed Sp7428 without neomycin: negative control 2</li>
-          </ul>
-
-          <p className="mb-6 leading-relaxed">
-            We observed that addition of neomycin (G418) is causing increased autofluorescence of 
-            chlorophyl – fortunately, this type of fluorescence is easily distinguishable from the GFP fluorescence (see 
-            differences in pictures 1 and 4, 2 and 5, 3 and 6).
-          </p>
-
-          <div className="grid grid-cols-3 gap-4 mb-6">
-            <div className="bg-gray-200 h-32 flex flex-col items-center justify-center">
-              <span className="text-gray-500 text-xs mb-2">[Image]</span>
-              <p className="text-xs">non-transformed Sp7428</p>
-            </div>
-            <div className="bg-gray-200 h-32 flex flex-col items-center justify-center">
-              <span className="text-gray-500 text-xs mb-2">[Image]</span>
-              <p className="text-xs">non-transformed Sp7428 + neo</p>
-            </div>
-            <div className="bg-gray-200 h-32 flex flex-col items-center justify-center">
-              <span className="text-gray-500 text-xs mb-2">[Image]</span>
-              <p className="text-xs">pIB005</p>
-            </div>
-          </div>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4 mt-24">TEST – transformation</h3>
           
-          <div className="grid grid-cols-3 gap-4 mb-6">
-            <div className="bg-gray-200 h-32 flex flex-col items-center justify-center">
-              <span className="text-gray-500 text-xs mb-2">[Image]</span>
-              <p className="text-xs">pIB005 + neo</p>
-            </div>
-            <div className="bg-gray-200 h-32 flex flex-col items-center justify-center">
-              <span className="text-gray-500 text-xs mb-2">[Image]</span>
-              <p className="text-xs">pIB005 x pIB003</p>
-            </div>
-            <div className="bg-gray-200 h-32 flex flex-col items-center justify-center">
-              <span className="text-gray-500 text-xs mb-2">[Image]</span>
-              <p className="text-xs">pIB005 x pIB003 + neo</p>
-            </div>
-          </div>
 
-          <div className="border-2 border-gray-300 p-4 bg-white mb-6">
-            <p className="text-sm leading-relaxed">
+          <div className='grid grid-cols-1 md:grid-cols-5 gap-6 mb-6'>
+            <div className='col-span-2  items-center justify-center'>
+                <p className="mb-4 leading-relaxed">
+                    Altogether, we did 6 iterations of transformation (TEST) DBTL 4 cycle of The Regeneration Assay to 
+                    fine-tune conditions in way that cells that got inserted by our transposase assisted system will give rise to a 
+                    new transgenic frond. In each iteration we did following controls:
+                </p>
+                <ul className="mb-4 leading-relaxed list-disc pl-6">
+                    <li>pIB005 without neomycin</li>
+                    <li>pIB005 with neomycin (5mg/L)</li>
+                    <li>pIB005 x pIB003 without neomycin</li>
+                </ul>
+                <p className="mb-4 leading-relaxed">
+                    In the first iteration we did four additional control:
+                </p>
+                <ul className="mb-6 leading-relaxed list-disc pl-6">
+                    <li>pAMO101: positive control (same as in DBTL 1 and 3 - not displayed here)</li>
+                    <li>pIB003 (same as in DBTL 2 and 3 - not displayed here)</li>
+                    <li>non-transformed Sp7428 with neomycin (5mg/L): negative control 1</li>
+                    <li>non-transformed Sp7428 without neomycin: negative control 2</li>
+                </ul>
+
+                <p className="mb-6 leading-relaxed">
+                    We observed that addition of neomycin (G418) is causing increased autofluorescence of 
+                    chlorophyl – fortunately, this type of fluorescence is easily distinguishable from the GFP fluorescence (see 
+                    differences in pictures 1 and 4, 2 and 5, 3 and 6).
+                </p>
+
+             </div>
+            <div className='col-span-3 items-center justify-center'>
+              <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure12.webp" alt="Description of image" className="max-w-full h-auto" />
+
+               <p className="text-base leading-relaxed mt-12">
               <strong>Figure 12.</strong> Transformation with the new pIB005 construct resulted in GFP expression (2), similar to that observed with its predecessor pIB002. The amount of GFP expression decreased when G418 was added (5), while chlorophyll autofluorescence increased (5) due to damage of chloroplast protein synthesis by G418, as also seen in non-transformed Sp7428 treated with G418 (4). As in DBTL 3, no fluorescence was observed when pIB005 was co-transformed with pIB003 6dpi, due to the excision activity of the PONG transposase. As in both non-transformed and pIB005-transformed Sp7428, the addition of G418 increased chlorophyll autofluorescence (6). All photos are taken 6 days post infiltration (6dpi).
-            </p>
+            </p>         
+            
+            </div>   
           </div>
 
-          <div className="bg-gray-200 h-96 flex items-center justify-center mb-6">
-            <span className="text-gray-500">[Figure 13: Iteration Table/Timeline]</span>
-          </div>
 
-          <div className="border-2 border-gray-300 p-4 bg-white mb-6">
-            <p className="text-sm leading-relaxed">
-              <strong>Figure 13.</strong> We performed six iterations of the transformation (TESTING) in the DBTL4 cycle of our Regeneration 
-              Assay to identify the exact conditions that favuor regeneration of cells in which the transgene containing the NPTII
-              gene (conferring G418 resistance) was inserted using our transposase-assisted insertion assay. We tested different 
-              concentrations of synthetic neomycin (G418), varying the timing of its addition (DPI = days post-infiltration), as well as 
-              different hormones known to promote cell proliferation (the cytokinin TDZ = thidiazuron and zeatin, and the auxin 
-              2,4-dichlorophenoxyacetic acid). We also tested different timings of hormone application (DBI = days before 
-              infiltration).
+          <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure13.webp" alt="Description of image" className="max-w-full h-auto mb-6" />              
+
+          <div className=" mb-6">
+            <p className="text-base leading-relaxed">
+              <strong>Figure 13.</strong> <p>
+                <span style={{ fontWeight: 400 }}>
+                    We performed six iterations of the transformation (TESTING) in the DBTL4
+                    cycle of our Regeneration Assay to identify the exact conditions that favuor
+                    regeneration of cells in which the transgene containing the{" "}
+                </span>
+                <strong>NPTII</strong>
+                <span style={{ fontWeight: 400 }}> gene (conferring </span>
+                <strong>G418</strong>
+                <span style={{ fontWeight: 400 }}>
+                    {" "}
+                    resistance) was inserted using our transposase-assisted insertion assay. We
+                    tested different concentrations of synthetic neomycin (G418), varying the
+                    timing of its addition (
+                </span>
+                <strong>DPI</strong>
+                <span style={{ fontWeight: 400 }}>
+                    {" "}
+                    = days post-infiltration), as well as different hormones known to promote
+                    cell proliferation (the cytokinin TDZ ={" "}
+                </span>
+                <strong>thidiazuron </strong>
+                <span style={{ fontWeight: 400 }}>and </span>
+                <strong>zeatin</strong>
+                <span style={{ fontWeight: 400 }}>, and the auxin </span>
+                <strong>2,4-dichlorophenoxyacetic acid</strong>
+                <span style={{ fontWeight: 400 }}>
+                    ). We also tested different timings of hormone application (
+                </span>
+                <strong>DBI</strong>
+                <span style={{ fontWeight: 400 }}> = days before infiltration).</span>
+                </p>
+
             </p>
           </div>
 
           <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">LEARN</h3>
-          <p className="mb-4 leading-relaxed">
-            We placed hundreds of co-transformed duckweeds under different post-infiltration conditions (see Figure xy) 
-            and waited.
-          </p>
+          <>
+            <p>
+                <span style={{ fontWeight: 400 }}>We placed </span>
+                <strong>
+                hundreds of co-transformed duckweeds under different post-infiltration
+                conditions{" "}
+                </strong>
+                <span style={{ fontWeight: 400 }}>(see Figure xy) and waited.</span>
+            </p>
+            <p className='mt-8'>
+                <br />
+                <strong>In RA3.1</strong>
+                <span style={{ fontWeight: 400 }}>
+                , fluorescence from pIB005 was observed. Similarly to the DBTL 3 cycle, no
+                fluorescence appeared when pIB005 was co-transformed with pIB003 at 6 days
+                post-infiltration (dpi). Between 12 – 18dpi, GFP spots were visible again,
+                but still no transgenic daughter fronds appeared. After 18 dpi, we
+                transferred all duckweeds from RA3.1 onto 5 mg/L G418, and after 24 dpi,
+                onto 10 mg/L G418. Both{" "}
+                </span>
+                <strong>concentrations exceeded the survival threshold </strong>
+                <span style={{ fontWeight: 400 }}>
+                (0.5 mg/L) determined during the neomycin sensitivity test (see Fig. xy),
+                by 10-fold and 20-fold, respectively. The majority of duckweeds died, but{" "}
+                </span>
+                <strong>
+                a substantial number of green, healthy-looking daughter fronds survived,
+                at 20-fold higher G418 concentrations{" "}
+                </strong>
+                <span style={{ fontWeight: 400 }}>
+                (see Fig. Xy). However, no whole-frond GFP fluorescence was observed. Why?
+                </span>
+            </p>
+            </>
 
-          <p className="mb-4 leading-relaxed">
-            In RA3.1, fluorescence from pIB005 was observed. Similarly to the DBTL 3 cycle, no fluorescence appeared when 
-            pIB005 was co-transformed with pIB003 at 6 days post-infiltration (dpi). Between 12 – 18dpi, GFP spots were visible 
-            again, but still no transgenic daughter fronds appeared. After 18 dpi, we transferred all duckweeds from RA3.1 onto 5 
-            mg/L G418, and after 24 dpi, onto 10 mg/L G418. Both concentrations exceeded the survival threshold (0.5 mg/L) 
-            determined during the neomycin sensitivity test (see Fig. xy), by 10-fold and 20-fold, respectively. The majority of 
-            duckweeds died, but a substantial number of green, healthy-looking daughter fronds survived, at 20-fold higher 
-            G418 concentrations (see Fig. Xy). However, no whole-frond GFP fluorescence was observed. Why?
-          </p>
 
-          <div className="bg-gray-200 h-48 flex items-center justify-center mb-4">
-            <span className="text-gray-500">[pIB005 x pIB003 speckels Figure 14]</span>
-          </div>
+          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6 mt-8'>
+            <div className='col-span-2  items-center justify-center'>
 
-          <div className="grid grid-cols-2 gap-4 mb-6">
-            <div className="bg-gray-200 h-48 flex flex-col items-center justify-center">
-              <span className="text-gray-500 text-sm mb-2">[Image]</span>
-              <p className="text-xs">pIB003 x pIB005 + neo on light</p>
+                 <div className="bg-gray-200 h-48 flex flex-col items-center justify-center">
+                    <span className="text-gray-500 text-base mb-2">[Image]</span>
+                    <p className="text-xs">pIB003 x pIB005 + neo on light</p>
+                    </div>       
+
+                 <p className="text-base leading-relaxed">
+                    <strong>Figure 15.</strong> The surviving healthy Sp7428 daughter fronds (1) resulted from pIB005 × pIB003 
+                    co-transformation in RA3.1, compared with non-transformed Sp7428 dead fronds (2). Both 
+                    samples were cultivated on G418: first at 0.25 mg/L for 18 days, then for 6 days at 5 mg/L, and finally for 6 
+                    days at 10 mg/L. These concentrations are 10-fold and 20-fold higher, respectively, than the survival threshold 
+                    of Sp7428 (0.5mg/L of G418).
+                    </p>       
             </div>
-            <div className="bg-gray-200 h-48 flex flex-col items-center justify-center">
-              <span className="text-gray-500 text-sm mb-2">[Image]</span>
-              <p className="text-xs">Non transformed Sp7428 + neo on light</p>
-            </div>
-          </div>
 
-          <div className="border-2 border-gray-300 p-4 bg-white mb-6">
-            <p className="text-sm leading-relaxed">
+            <div className='col-span-2  items-center justify-center'>
+
+                 <div className="bg-gray-200 h-48 flex flex-col items-center justify-center">
+                <span className="text-gray-500 text-base mb-2">[Image]</span>
+                <p className="text-xs">pIB003 x pIB005 + neo on light</p>
+                </div>       
+
+                <p className="text-base leading-relaxed">
               <strong>Figure 15.</strong> The surviving healthy Sp7428 daughter fronds (1) resulted from pIB005 × pIB003 
               co-transformation in RA3.1, compared with non-transformed Sp7428 dead fronds (2). Both 
               samples were cultivated on G418: first at 0.25 mg/L for 18 days, then for 6 days at 5 mg/L, and finally for 6 
               days at 10 mg/L. These concentrations are 10-fold and 20-fold higher, respectively, than the survival threshold 
               of Sp7428 (0.5mg/L of G418).
             </p>
+
+            </div>
+
           </div>
+
 
           <p className="mb-6 leading-relaxed">
             To determine whether our translational cassette was truly inserted (as suggested by the GFP spots and survival at 
@@ -954,8 +972,16 @@ export default function RegenerationAssayPoster() {
             Western Blot specific for GFP.
           </p>
 
-          <div className="bg-gray-200 h-64 flex items-center justify-center mb-6">
-            <span className="text-gray-500">[PCR Figure 16]</span>
+          <div className='grid grid-cols-1 md:grid-cols-5 gap-4 mb-6 mt-8'>
+            <div className='col-span-4  items-center justify-center'>
+                <div className="bg-gray-200 h-64 flex items-center justify-center mb-6">
+                    <span className="text-gray-500">[PCR Figure 16]</span>
+                </div>
+            </div>
+            <div className='col-span-1  flex items-center justify-center'>
+                <p className='text-base leading-relaxed'>
+                    Figure 16. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, </p>
+            </div>
           </div>
 
           <p className="mb-6 leading-relaxed">
@@ -976,7 +1002,7 @@ export default function RegenerationAssayPoster() {
         </div>
 
         {/* DBTL 5 Section */}
-        <div className="mb-12 bg-gray-50 p-8 rounded-lg">
+        <div className="mb-12 mt-32">
           <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-4xl font-bold mb-6">DBTL 5</h2>
           
           <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of The Meristematic Assay</h3>
@@ -991,33 +1017,38 @@ export default function RegenerationAssayPoster() {
             more here</a>) will insert transgene into duckweed nuclear genome.
           </p>
 
-          <div className="bg-gray-200 h-96 flex items-center justify-center mb-6">
-            <span className="text-gray-500">[Meristematic Assay Diagram showing transformation and generations]</span>
+          <div className="  mb-6">
+            <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/meristematic-assay-copy.webp" alt="Description of image" className="max-w-full h-auto" />
           </div>
 
-          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of pIB006</h3>
-          <p className="mb-6 leading-relaxed">
-            Plasmid pIB006 contains three expression cassettes designed for rapid and 
-            customizable gene knockouts using the CRISPR/Cas9 system. The first cassette 
-            encodes a plant codon-optimized Cas9 driven by the Zea mays ubiquitin promoter 
-            (rZmUBI) and terminated by the Cauliflower Mosaic Virus terminator (t35S).The 
-            second cassette carries the neomycin resistance gene (NPTII) for antibiotic selection. 
-            Expression of NPTII is controlled by the nopaline synthase promoter (rNOS) from 
-            Agrobacterium tumefaciens and terminated by the terminator sequence nopaline 
-            synthase gene (tNOS) from Agrobacterium tumefaciens. The third cassette provides 
-            the CRISPR guide RNA transcription unit. It consists of the Oryza sativa U6 promoter 
-            (rOsU6) followed by a customizable filler sequence flanked by Esp3I restriction sites, 
-            a tracrRNA scaffold, and a polyadenylation signal. This design allows seamless 
-            replacement of the filler sequence with user-defined gRNA oligonucleotides using a 
-            simple digest-and-ligate reaction with Esp3I-compatible overhangs. The entire 
-            expression cassette is bordered by T-DNA for Agrobacterium-mediated transformation 
-            and is housed in a binary vector, allowing replication in both E. coli and Agrobacterium 
-            tumefaciens.
-          </p>
-
-          <div className="bg-gray-200 h-48 flex items-center justify-center mb-6">
-            <span className="text-gray-500">[pIB006 Plasmid Diagram]</span>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4 mt-16">DESIGN of pIB006</h3>
+          
+          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6'>
+            <div className='col-span-3  items-center justify-center'>
+                <p className="mb-6 leading-relaxed">
+                    Plasmid pIB006 contains three expression cassettes designed for rapid and 
+                    customizable gene knockouts using the CRISPR/Cas9 system. The first cassette 
+                    encodes a plant codon-optimized Cas9 driven by the Zea mays ubiquitin promoter 
+                    (rZmUBI) and terminated by the Cauliflower Mosaic Virus terminator (t35S).The 
+                    second cassette carries the neomycin resistance gene (NPTII) for antibiotic selection. 
+                    Expression of NPTII is controlled by the nopaline synthase promoter (rNOS) from 
+                    Agrobacterium tumefaciens and terminated by the terminator sequence nopaline 
+                    synthase gene (tNOS) from Agrobacterium tumefaciens. The third cassette provides 
+                    the CRISPR guide RNA transcription unit. It consists of the Oryza sativa U6 promoter 
+                    (rOsU6) followed by a customizable filler sequence flanked by Esp3I restriction sites, 
+                    a tracrRNA scaffold, and a polyadenylation signal. This design allows seamless 
+                    replacement of the filler sequence with user-defined gRNA oligonucleotides using a 
+                    simple digest-and-ligate reaction with Esp3I-compatible overhangs. The entire 
+                    expression cassette is bordered by T-DNA for Agrobacterium-mediated transformation 
+                    and is housed in a binary vector, allowing replication in both E. coli and Agrobacterium 
+                    tumefaciens.
+                </p>
+            </div>
+            <div className='col-span-1  flex items-center justify-center'>
+                <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/pib006-copy.webp" alt="pIB006 Plasmid Diagram" className="max-w-full h-auto" />    
+            </div>        
           </div>
+
 
           <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">BUILD – cloning of pIB006</h3>
           
@@ -1160,13 +1191,7 @@ export default function RegenerationAssayPoster() {
           </div>
         </div>
 
-        {/* Pcr/western blot placeholder */}
-        <div className="mb-12 bg-gray-50 p-8 rounded-lg">
-          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4 text-center">Pcr/western blot</h3>
-          <div className="bg-gray-200 h-96 flex items-center justify-center">
-            <span className="text-gray-500 text-xl">[Western Blot Results Placeholder]</span>
-          </div>
-        </div>
+        
       </div>
     </div>
   );
