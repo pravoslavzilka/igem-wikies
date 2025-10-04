@@ -3,6 +3,9 @@ import References from "../../../components/References.tsx";
 import {cultivatorReferences} from "./data/references.ts";
 import {useState} from "react";
 
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
 const traySlides: ImageSlide[] = [
     {
         src: "https://static.igem.wiki/teams/5642/images/how/cultivator/trays/tray-template-iteration-1.webp",
@@ -218,6 +221,17 @@ export default function LivingLayers() {
     const [isOpenGUISlides, setIsOpenGUISlides] = useState(false);
     const [isOpenSuitcaseSlides, setIsOpenSuitcaseSlides] = useState(false);
     const [isOpenSchematicsSlides, setIsOpenSchematicsSlides] = useState(false);
+
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+        const element = document.getElementById(location.hash.substring(1));
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+        }
+    }, [location]);
 
     return (
         <div className="bg-white text-gray-900 leading-relaxed text-justify">
@@ -607,6 +621,7 @@ export default function LivingLayers() {
                 </div>
 
                 {/* Section 2: Biomass monitoring */}
+                <section id="PROBE">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                     {/* Image placeholder */}
                     <div className="flex justify-center">
@@ -649,6 +664,7 @@ export default function LivingLayers() {
                         onClose={() => setIsOpenPROBESlides(false)}
                     />
                 </div>
+                </section>
 
                 {/* Section 3: Probe system */}
                 <div>
