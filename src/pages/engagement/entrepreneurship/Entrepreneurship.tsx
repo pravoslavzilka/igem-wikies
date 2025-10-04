@@ -11,6 +11,18 @@ import SolutionSection from './components/SolutionSection';
 import MarketCustomerSection from './components/MarketCustomerSection';
 import MarketDiagram from './components/MarketDiagram';
 
+// New components
+import PowerGreens from './components/PowerGreens';
+import RefiningTheVision from './components/RefiningTheVision';
+import Survey from './components/Survey';
+import GlobalDietaryMarket from './components/GlobalDietaryMarket';
+import BoosterChallenge from './components/BoosterChallenge';
+import WhatsNext from './components/WhatsNext';
+
+// Import References component
+import References from '../../../components/References';
+import { entrepreneurshipReferences } from './data/entrepreneurship-references';
+
 import "@fontsource/urbanist";
 import "@fontsource/urbanist/400.css";
 import "@fontsource/urbanist/500.css";
@@ -32,6 +44,19 @@ const Entrepreneurship: React.FC = () => {
       <UnitEconomicsSection />
       <SynBioHackathonSection />
       <MakeSomethingSection />
+      
+      {/* New sections */}
+      <PowerGreens />
+      <RefiningTheVision />
+      <Survey />
+      <GlobalDietaryMarket />
+      <BoosterChallenge />
+      
+      {/* Final section */}
+      <WhatsNext />
+
+      {/* References section */}
+      <References references={entrepreneurshipReferences} />
     </div>
   );
 };

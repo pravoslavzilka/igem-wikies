@@ -64,7 +64,7 @@ const StatusSection = ({
                         <div className="w-8 h-8 lg:w-12 lg:h-12 bg-orange-500 rounded-full"></div>
                       </div>
                       <p className="text-gray-600 text-sm">
-                        {activeStatusAccordion ? `${statusAccordionData[activeStatusAccordion]?.title} image` : 'Tu dať default STATUS IMG'}
+                        {activeStatusAccordion ? `${statusAccordionData[activeStatusAccordion]?.title} image` : 'Default Status Image'}
                       </p>
                     </div>
                   </div>
