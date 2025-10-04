@@ -87,8 +87,9 @@ const probeSlides: ImageSlide[] = [
         title: "PROBE iteration #2",
         rightNote: [
             "First full-size PROBE",
-            "40 x 90 cm",
             "The LDR casings alternate with connective pieces with 12 cm gaps.",
+            "40 x 90 cm",
+            "3.5 mm jack connector"
         ]
     },
     {
@@ -99,16 +100,20 @@ const probeSlides: ImageSlide[] = [
             "22 cm tubes",
             "50% fewer 3D printed parts",
             "Connective pieces are 3 cm long",
-            "Much more robust design"
+            "Much more robust design",
+            "40 x 90 cm",
+            "3.5 mm jack connector"
         ]
     },
     {
         src: "https://static.igem.wiki/teams/5642/images/how/cultivator/probe/probe-4.webp",
         title: "PROBE iteration #4",
         rightNote: [
-            "Same tube lengths as design #3",
+            "Same tube lengths as iteration #3",
             "Connective pieces are 4 cm long",
             "The extra overlap eliminates the need to use glue, resulting in much faster manufacturing",
+            "40 x 90 cm",
+            "3.5 mm jack connector"
         ]
     }
 ];
