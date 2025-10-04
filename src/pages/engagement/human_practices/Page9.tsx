@@ -10,7 +10,7 @@ export default function HumanPracticesPage9() {
                 className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-12">
                 {/* Vojtěch Florián */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/9-5.webp"
                     name="Vojtěch Florián"
                     subtitle="Brno University of Technology"
                     location="Reverse engineering and additive technologies"
@@ -28,7 +28,7 @@ export default function HumanPracticesPage9() {
 
                 {/* Dr. Martin Malý */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/9-1.webp"
                     name="Dr. Martin Malý"
                     subtitle="Brno University of Technology"
                     location="Reverse engineering and additive technologies"
@@ -51,7 +51,7 @@ export default function HumanPracticesPage9() {
 
                 {/* Pavel Zach */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/9-2.webp"
                     name="Pavel Zach"
                     subtitle="Technical University of Valencia"
                     location="Synthetic Biology and Control Engineering"
@@ -82,7 +82,7 @@ export default function HumanPracticesPage9() {
 
                 {/* Prof. Marcel Jansen */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/9-3.webp"
                     name="prof. Marcel Jansen"
                     subtitle="University College Cork"
                     location="Duckweed cultivation for applied research"
@@ -124,7 +124,7 @@ export default function HumanPracticesPage9() {
                             <div className="space-y-4">
                                 <div className="flex justify-center">
                                     <img
-                                        src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                                        src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/9-4.webp"
                                         alt="Call with prof. Marcel Jansen"
                                         className="rounded-2xl max-w-md"
                                     />

@@ -53,7 +53,7 @@ export default function HumanPracticesPage8() {
 
                 {/* Kateřina Patloková pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/8-1.webp"
                     name="Kateřina Patloková"
                     subtitle="Mendel University"
                     location="Duckweed cultivation"
@@ -98,7 +98,7 @@ export default function HumanPracticesPage8() {
                                 </div>
                                 <div className="flex justify-center">
                                     <img
-                                        src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                                        src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/8-2.webp"
                                         alt="Duckweed cultivation system"
                                         className="rounded-2xl max-w-md"
                                     />
@@ -108,7 +108,7 @@ export default function HumanPracticesPage8() {
                             <div className="grid md:grid-cols-2 gap-8 items-center">
                                 <div className="flex justify-center items-center">
                                     <img
-                                        src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                                        src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/8-3.webp"
                                         alt="Duckweed cultivation system"
                                         className="rounded-2xl max-w-md"
                                     />
@@ -169,7 +169,7 @@ export default function HumanPracticesPage8() {
                 className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-12">
                 {/* Dr. Vojtěch Mrázek */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/8-4.webp"
                     name="Dr. Vojtěch Mrázek"
                     subtitle="Brno University of Technology"
                     location="Evolvable Hardware"
@@ -188,9 +188,26 @@ export default function HumanPracticesPage8() {
                     </div>
                 </ExpandablePill>
 
+
+                <ExpandablePill
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/8-8.webp"
+                    name="Petr Botek"
+                    location="Light Design"
+                >
+                    <div className="leading-relaxed text-lg space-y-4">
+                        <p>
+                            <span className="font-bold">Petr</span> helped us with choosing the right lights for
+                            our{" "}
+                            <a href="#" className="text-green-700 underline hover:text-green-900">
+                                CULTIVATOR
+                            </a> so that our duckweeds can grow happily and produce large amounts of biomass.
+                        </p>
+                    </div>
+                </ExpandablePill>
+
                 {/* Dr. Stanislav Véchet */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/8-7.webp"
                     name="Dr. Stanislav Véchet"
                     subtitle="Brno University of Technology"
                     location="Autonomous systems"
@@ -209,7 +226,7 @@ export default function HumanPracticesPage8() {
 
                 {/* Marek Mertuš */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/8-6.webp"
                     name="Marek Mertuš"
                     subtitle="Danubias Fructi"
                     location="Agronomist at Danubias Fructi"
@@ -237,7 +254,7 @@ export default function HumanPracticesPage8() {
                         {/* Right column: image */}
                         <div className="flex justify-center">
                             <img
-                                src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                                src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/8-5.webp"
                                 alt="Marek Mertuš consultation on fertilizers"
                                 className="rounded-2xl max-w-md"
                             />

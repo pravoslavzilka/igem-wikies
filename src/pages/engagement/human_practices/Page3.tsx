@@ -16,7 +16,7 @@ export default function HumanPracticesPage3() {
 
                 {/* Karen McDonald pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/3-1.webp"
                     name="Dr. Karen McDonald"
                     subtitle="Professor at UC Davis"
                     location="Recombinant protein production in plants"
@@ -51,7 +51,7 @@ export default function HumanPracticesPage3() {
                             </div>
                             <div className="flex justify-center">
                                 <img
-                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/3-2.webp"
                                     alt="Zoom call with Karen McDonald and Tressa Smalley"
                                     className="rounded-2xl max-w-md"
                                 />
@@ -86,7 +86,7 @@ export default function HumanPracticesPage3() {
             <div className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif]">
                 {/* René Inckemann pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/3-3.webp"
                     name="Dr. René Inckemann"
                     subtitle="Postdoctoral researcher at Stanford University"
                     location="Plant synthetic biology and chloroplast engineering"
@@ -120,7 +120,7 @@ export default function HumanPracticesPage3() {
                             </div>
                             <div className="flex justify-center">
                                 <img
-                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/3-4.webp"
                                     alt="Zoom call with René Inckemann"
                                     className="rounded-2xl max-w-md"
                                 />
@@ -159,7 +159,7 @@ export default function HumanPracticesPage3() {
             <div className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif]">
                 {/* Julia-Eva Fortmueller pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/3-5.webp"
                     name="Julia-Eva Fortmueller"
                     subtitle="Ph.D. candidate at Weizmann Institute of Science"
                     location="Duckweed genetic engineering and protein production"
@@ -200,7 +200,7 @@ export default function HumanPracticesPage3() {
                             {/* Right image */}
                             <div className="flex justify-center">
                                 <img
-                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/3-6.webp"
                                     alt="Meeting with Julia-Eva Fortmueller"
                                     className="rounded-2xl max-w-md"
                                 />
@@ -244,9 +244,9 @@ export default function HumanPracticesPage3() {
                     <p>
                         But before we dived deep into more SynBio concepts, we managed to land a call
                         with <span className="font-bold">master duckweed cultivators from <a
-                                href="https://www.plantiblefoods.com/"
-                                className="text-green-700 underline hover:text-green-900"
-                            >
+                        href="https://www.plantiblefoods.com/"
+                        className="text-green-700 underline hover:text-green-900"
+                    >
                                 Plantible Foods
                             </a>{" "}. </span>
                         Despite the fact that we were not focusing on the right genetic bottleneck of duckweed
