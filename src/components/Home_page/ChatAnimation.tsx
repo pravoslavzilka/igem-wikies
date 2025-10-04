@@ -41,7 +41,7 @@ const ChatAnimation = ({ messageDelay = 2000 }) => {
     },
     {
       sender: 'iGEM Brno',
-      text: 'Thankfully, we have SynBio. We set out to boost duckweed yields, to make the crop from the weed!',
+      text: 'Hopefully, we have SynBio. We set out to boost duckweed yields, to make the crop from the weed!',
       color: 'bg-gradient-to-r from-green-600 to-green-500',
       align: 'right',
       highlight: ['make the crop from the weed'],
@@ -185,20 +185,18 @@ const ChatAnimation = ({ messageDelay = 2000 }) => {
         </div>
 
         {/* Final Claim - Appears below the chat */}
-        {showFinalClaim && (
-          <div className="animate-fade-in-up rounded-lg" style={{ backgroundColor: '#F5F5F5' }}>
-            <div className="rounded-2xl p-8 md:p-12">
-              
-              <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl md:text-3xl font-bold text-center text-gray-900 leading-tight">
-                <span style={{ color: '#779E45' }}>But we couldn't do it...</span> Duckweed engineering takes too long and it just... sucks!
-              </h2>
-              <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl mt-12 md:text-3xl font-bold text-center text-gray-900 leading-tight">
-                The fastest-growing plant on Earth<br />
-                deserves the <span style={{ color: '#779E45' }}>equally fast engineering</span>!
-              </h2>
-            </div>
+        <div className={`rounded-lg transition-opacity duration-1000 ${showFinalClaim ? 'opacity-100' : 'opacity-30'}`} style={{ backgroundColor: '#F5F5F5' }}>
+          <div className="rounded-2xl p-8 md:p-12">
+            
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl md:text-3xl font-bold text-center text-gray-900 leading-tight">
+              <span style={{ color: '#779E45' }}>But we couldn't do it...</span> Duckweed engineering takes too long and it just... sucks!
+            </h2>
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl mt-12 md:text-3xl font-bold text-center text-gray-900 leading-tight">
+              The fastest-growing plant on Earth<br />
+              deserves the <span style={{ color: '#779E45' }}>equally fast engineering</span>!
+            </h2>
           </div>
-        )}
+        </div>
       </div>
 
       <style jsx>{`
