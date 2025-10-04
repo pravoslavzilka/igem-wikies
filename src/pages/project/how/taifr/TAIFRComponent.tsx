@@ -578,7 +578,6 @@ const TAIFRComponent = () => {
 
 
 
-      <References references={Reference} />
 
       
     </div>
