@@ -181,6 +181,7 @@ export default function CultivatorSec4() {
                 </div>
 
                 {/* === Biomass Monitoring Section === */}
+                <section id="PROBE">
                 <h2
                     className="font-bold text-green-700 mb-4 text-center"
                     style={{
@@ -230,6 +231,7 @@ export default function CultivatorSec4() {
 
 
                 </div>
+                </section>
 
                 {/* === Probe System Details === */}
                 <div className="space-y-4">

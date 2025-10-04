@@ -9,8 +9,23 @@ import CultivatorSec4 from "./Sec4.tsx";
 import CultivatorSec5 from "./Sec5.tsx";
 import CultivatorSec6 from "./Sec6.tsx";
 
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
 
 export default function LivingLayers() {
+    
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+        const element = document.getElementById(location.hash.substring(1));
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+        }
+    }, [location]);
+
     return (
         <div className="bg-white text-gray-900 leading-relaxed text-justify font-[Urbanist,sans-serif] text-lg">
             {/* Full-width hero image with floating title */}

@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { useState } from "react";
 import Chart from 'chart.js/auto';
 import { area } from 'framer-motion/client';
-
 
 const PredictorMain = () => {
 
@@ -13,6 +13,7 @@ const [TT, setTT] = useState(40); // Terminal time (days)
   const [HR, setHR] = useState(0.5); // Harvest ratio
   const [W0, setW0] = useState(100); // Initial biomass
   const [Area, setArea] = useState(10); // Initial cultivation area size in m^2
+  const [Species, setSpecies] = useState('Japonica')
   const [biomassValues, setBiomassValues] = useState<number[]>([]);
   const [harvestValues, setHarvestValues] = useState<number[]>([]);
   const [harvestTimes, setHarvestTimes] = useState<number[]>([]);
@@ -28,7 +29,8 @@ const [TT, setTT] = useState(40); // Terminal time (days)
     TT: number,
     HP: number,
     HR: number,
-    W0: number
+    W0: number,
+    PlantSpecies: String
   ): [number, number[], number[], number[]] => {
     const dt = 1;
     const times = Array.from({ length: TT }, (_, i) => i);
@@ -38,6 +40,14 @@ const [TT, setTT] = useState(40); // Terminal time (days)
     let storage = 0;
     let nextHarvestTime = HP;
     let biomass = W0;
+    let growth_multiplier = 0.0;
+
+    if (PlantSpecies == "Japonica"){
+      growth_multiplier = 1;
+    }
+    else if (PlantSpecies == "Minor"){
+      growth_multiplier = 0.8;
+    }
 
     for (const t of times) {
       if (t >= nextHarvestTime) {
@@ -51,7 +61,7 @@ const [TT, setTT] = useState(40); // Terminal time (days)
       }
 
       const gr = 0.3;
-      const dW = gr * biomass * (1 - biomass / 1300) * dt;
+      const dW = (growth_multiplier * gr) * biomass * (1 - biomass / 1300) * dt;
       biomass += dW;
       biomassValues.push(biomass);
     }
@@ -63,10 +73,11 @@ const [TT, setTT] = useState(40); // Terminal time (days)
   };
 
   useEffect(() => {
-  const [storage, biomass, harvest, harvestTimes] = runSingle(TT, HP, HR, W0); // Capture storage
+  const [storage, biomass, harvest, harvestTimes] = runSingle(TT, HP, HR, W0, Species); // Capture storage
   setBiomassValues(biomass);
   setHarvestValues(harvest);
   setHarvestTimes(harvestTimes);
+  setSpecies(Species);
 
   // Biomass Plot
   if (biomassCanvasRef.current) {
@@ -353,9 +364,7 @@ const [TT, setTT] = useState(40); // Terminal time (days)
     if (harvestChartRef.current) harvestChartRef.current.destroy();
     if (storageChartRef.current) storageChartRef.current.destroy();
   };
-}, [TT, HP, HR, W0, Area]);
-
-
+}, [TT, HP, HR, W0, Area, Species]);
 
   return (
 <div className="max-w-6xl mx-auto p-6 bg-white text-lg text-justify" style={{ fontFamily: 'Urbanist, sans-serif' }}>
@@ -364,17 +373,17 @@ const [TT, setTT] = useState(40); // Terminal time (days)
         className="text-4xl font-bold mb-8 text-gray-900"
         style={{ fontFamily: 'Space Grotesk, sans-serif' }}
       >
-        IN SILICO DUCKWEED CULTIVATION
+        PREDICTOR
       </h1>
 
       <div className="mt-8">
         <h2 className="text-2xl font-bold mb-4 text-gray-900" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-          Our PREDICTOR, a real-life data–based model, enables predictable large-scale duckweed cultivation
+          Our IN SILICO DUCKWEED CULTIVATION toolbox, based on experimental knowledge, enables predictable large-scale duckweed cultivation
         </h2>
         <div className="flex justify-center mb-6">
           <img
             src="https://static.igem.wiki/teams/5642/images/how/predictor/page0-new-2.webp"
-            alt="Duckweed cultivation workflow"
+            alt="Duckweed technology"
             className="w-full max-w-3xl rounded-xl"
           />
         </div>
@@ -519,7 +528,7 @@ const [TT, setTT] = useState(40); // Terminal time (days)
 
           <div className="mb-5">
             <label className="block mb-2 text-sm font-medium text-gray-700" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-              Cultivation area (g/m²): <span className="inline-block ml-1 px-2 py-0.5 rounded bg-gray-100 text-gray-800">{Area}</span>
+              Cultivation area (m²): <span className="inline-block ml-1 px-2 py-0.5 rounded bg-gray-100 text-gray-800">{Area}</span>
             </label>
             <input
               type="range"
@@ -531,6 +540,21 @@ const [TT, setTT] = useState(40); // Terminal time (days)
               className="w-full accent-black"
             />
           </div>
+
+          <div className="mb-5">
+            <label className="block mb-2 text-sm font-medium text-gray-700" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              Duckweed species: 
+            </label>
+            <select
+              value={Species}
+              onChange={(e) => setSpecies(String(e.target.value))}
+              className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
+              style={{ fontFamily: 'Space Grotesk, sans-serif' }}
+            >
+              <option value="Japonica">L. Japonica</option>
+              <option value="Minor">L. Minor</option>
+            </select>
+          </div>
         </div>
 
         {/* Storage Plot */}
@@ -539,7 +563,7 @@ const [TT, setTT] = useState(40); // Terminal time (days)
             STORAGE PLOT
           </h3>
           <p className="mb-4 text-sm text-gray-700 leading-relaxed" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-            Total harvested biomass during cultivation
+            Total harvested biomass during cultivation (fresh wet weight)
           </p>
           <div className="w-full h-[250px] md:h-[300px]">
             <canvas
@@ -548,6 +572,7 @@ const [TT, setTT] = useState(40); // Terminal time (days)
             />
           </div>
         </div>
+        
       </div>
 
       {/* Biomass and Harvest Plots */}
@@ -836,15 +861,15 @@ const [TT, setTT] = useState(40); // Terminal time (days)
           >
             Visit Web Application
           </a>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-red-600 text-white font-semibold text-lg py-3 px-6 rounded-lg hover:bg-red-700 transition-colors duration-200"
-            style={{ fontFamily: 'Space Grotesk, sans-serif' }}
-          >
-            PROBE - an efficient alternative
-          </a>
+          <Link
+          to="/project/how/Cultivator#PROBE"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-red-600 text-white font-semibold text-lg py-3 px-6 rounded-lg hover:bg-red-700 transition-colors duration-200"
+          style={{ fontFamily: 'Space Grotesk, sans-serif' }}
+        >
+          PROBE - an efficient alternative
+        </Link>
         </div>
       </section>
 
@@ -885,6 +910,8 @@ const [TT, setTT] = useState(40); // Terminal time (days)
         <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
           REFERENCES
         </h2>
+
+        
 
         <ul className="list-none list-inside text-gray-700 leading-relaxed max-w-3xl mx-auto space-y-3" style={{ fontFamily: 'Urbanist, sans-serif' }}>
           <li>
