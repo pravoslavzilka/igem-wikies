@@ -454,7 +454,7 @@ const TAIFRComponent = () => {
             How did the TAIFR design originated?
           </h2>
           
-          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-4'>
+          <div className='grid md:grid-cols-1 md:grid-cols-4 gap-4 mb-4'>
 
             <div className='col-span-3 '>
 
