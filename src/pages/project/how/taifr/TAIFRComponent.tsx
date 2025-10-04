@@ -84,27 +84,8 @@ const TAIFRComponent = () => {
 
         {/* Figure 3 Bottom - Four circles */}
         <section className="mb-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-4">
-            <div className="text-center">
-              <div className="bg-gray-200 rounded-full w-32 h-32 mx-auto mb-2 flex items-center justify-center">
-                <span className="text-gray-600 text-xs" style={{ fontFamily: 'Urbanist, sans-serif' }}>1</span>
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="bg-gray-200 rounded-full w-32 h-32 mx-auto mb-2 flex items-center justify-center">
-                <span className="text-gray-600 text-xs" style={{ fontFamily: 'Urbanist, sans-serif' }}>2</span>
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="bg-gray-200 rounded-full w-32 h-32 mx-auto mb-2 flex items-center justify-center">
-                <span className="text-gray-600 text-xs" style={{ fontFamily: 'Urbanist, sans-serif' }}>3</span>
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="bg-gray-200 rounded-full w-32 h-32 mx-auto mb-2 flex items-center justify-center">
-                <span className="text-gray-600 text-xs" style={{ fontFamily: 'Urbanist, sans-serif' }}>4</span>
-              </div>
-            </div>
+          <div>
+            <img src="https://static.igem.wiki/teams/5642/images/how/taifr/figure3.webp" alt="Figure 3 - Co-transformation Results" className="mx-auto" />
           </div>
           
           <p className="text-gray-700 leading-relaxed text-justify" style={{ fontFamily: 'Urbanist, sans-serif' }}>
@@ -148,87 +129,85 @@ const TAIFRComponent = () => {
             Why duckweed genetic engineering takes so long?
           </h2>
           
-          <p>
-            <span style={{ fontWeight: 400 }}>
-                Most of the genetic engineering in plant biotechnology is mediated by callus
-                - dedifferentiated plant tissue that is more susceptible to infection by{" "}
-            </span>
-            <em>
-                <span style={{ fontWeight: 400 }}>Agrobacterium tumefaciens </span>
-            </em>
-            <span style={{ fontWeight: 400 }}>
-                - a natural plant pathogen capable of transferring and integrating
-                T-DNA–bordered DNA into the plant nuclear genome (1). Such infected callus
-                is then regenerated into a mature plant using hormone combinations (unique
-                for each species or even cultivar). This process takes from weeks to months,
-                depending on the plant species being used, but often callus-mediated
-                transformation is not even possible due to the inability of many species to
-                regenerate into mature plants (2).
-            </span>
-            </p>
+          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-4'>
 
-            <p className='mt-10 mb-10'>
-                <span style={{ fontWeight: 400 }}>Duckweed (</span>
-                <em>
-                    <span style={{ fontWeight: 400 }}>Lemnoideae</span>
-                </em>
-                <span style={{ fontWeight: 400 }}>
-                    ) genetic engineering is also mediated by callus and{" "}
-                </span>
-                <em>
-                    <span style={{ fontWeight: 400 }}>Agrobacterium</span>
-                </em>
-                <span style={{ fontWeight: 400 }}>
-                    {" "}
-                    (3). Unfortunately, one such iteration cycle takes around 5 months. Callus
-                    must be induced and formed (2 months), then transformed by{" "}
-                </span>
-                <em>
-                    <span style={{ fontWeight: 400 }}>Agrobacterium</span>
-                </em>
-                <span style={{ fontWeight: 400 }}>
-                    , positive transformants selected and grown (1.5 months), and then
-                    regenerated into mature plants (1.5 months). Understandably, such a lengthy
-                    process - often resulting in genome duplication or somaclonal mutations
-                    (Marí-Ordóñez, personal communication) discourages scientists or iGEMers
-                    from even considering to work with duckweed, a plant with vast
-                    biotechnological potential.
-                </span>
+            <div className='col-span-3 mt-10 rounded'>
+               <p>
+                  <span style={{ fontWeight: 400 }}>
+                      Most of the genetic engineering in plant biotechnology is mediated by callus
+                      - dedifferentiated plant tissue that is more susceptible to infection by{" "}
+                  </span>
+                  <em>
+                      <span style={{ fontWeight: 400 }}>Agrobacterium tumefaciens </span>
+                  </em>
+                  <span style={{ fontWeight: 400 }}>
+                      - a natural plant pathogen capable of transferring and integrating
+                      T-DNA–bordered DNA into the plant nuclear genome (1). Such infected callus
+                      is then regenerated into a mature plant using hormone combinations (unique
+                      for each species or even cultivar). This process takes from weeks to months,
+                      depending on the plant species being used, but often callus-mediated
+                      transformation is not even possible due to the inability of many species to
+                      regenerate into mature plants (2).
+                  </span>
+                  </p>
+
+                  <p className='mt-10 mb-10'>
+                      <span style={{ fontWeight: 400 }}>Duckweed (</span>
+                      <em>
+                          <span style={{ fontWeight: 400 }}>Lemnoideae</span>
+                      </em>
+                      <span style={{ fontWeight: 400 }}>
+                          ) genetic engineering is also mediated by callus and{" "}
+                      </span>
+                      <em>
+                          <span style={{ fontWeight: 400 }}>Agrobacterium</span>
+                      </em>
+                      <span style={{ fontWeight: 400 }}>
+                          {" "}
+                          (3). Unfortunately, one such iteration cycle takes around 5 months. Callus
+                          must be induced and formed (2 months), then transformed by{" "}
+                      </span>
+                      <em>
+                          <span style={{ fontWeight: 400 }}>Agrobacterium</span>
+                      </em>
+                      <span style={{ fontWeight: 400 }}>
+                          , positive transformants selected and grown (1.5 months), and then
+                          regenerated into mature plants (1.5 months). Understandably, such a lengthy
+                          process - often resulting in genome duplication or somaclonal mutations
+                          (Marí-Ordóñez, personal communication) discourages scientists or iGEMers
+                          from even considering to work with duckweed, a plant with vast
+                          biotechnological potential.
+                      </span>
                 </p>
+            </div>
 
-
-
-          {/* Figures 4 and 5 side by side */}
-          <div className="grid grid-cols-2 gap-6 mb-6">
-            <div className="text-center">
-              <div className="bg-gray-200 rounded-lg h-48 mb-2 flex items-center justify-center">
-                <p className="text-gray-600 text-sm" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                  [Figure 4]
-                </p>
+            <div className='col-span-1 p-4 rounded'>
+               <div className="text-center">
+              <div className=" rounded-lg mb-2 flex items-center justify-center">
+                <img style={{  width: 'auto' }} src="https://static.igem.wiki/teams/5642/images/how/taifr/figure-4.webp" alt="Figure 4" className="" />
               </div>
+              <p>
+                <p className='text-sm text-gray-700 text-justify' style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                  <strong>Figure 4. Calli of wild-type&nbsp; </strong>
+                  <em>
+                    <span style={{ fontWeight: 400 }}>Spirodela polyrhiza</span>
+                  </em>
+                  <span style={{ fontWeight: 400 }}>
+                    {" "}
+                    162 – Sp162 (1) and Sp162 transgenic RUBY-line (2)
+                  </span>
+                </p>
+
+
+              </p>
              
             </div>
-            <div className="text-center">
-              <div className="bg-gray-200 rounded-lg h-48 mb-2 flex items-center justify-center">
-                <p className="text-gray-600 text-sm" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                  [Figure 5]
-                </p>
-              </div>
-              
-            </div>
+            
+
+          </div>
            
 
           </div>
-           <p>
-                <strong>Figure 4. Calli of wild-type&nbsp; </strong>
-                <em>
-                    <span style={{ fontWeight: 400 }}>Spirodela polyrhiza</span>
-                </em>
-                <span style={{ fontWeight: 400 }}>
-                    {" "}
-                    162 – Sp162 (1) and Sp162 transgenic RUBY-line (2)
-                </span>
-                </p>
         </section>
 
         {/* Could it be accelerated? */}
@@ -447,10 +426,10 @@ const TAIFRComponent = () => {
 
             {/* Second column (4/5 width) */}
             <div className="col-span-1  p-4 rounded">
-                <div className='bg-gray-200 rounded-lg h-48 mb-2 flex items-center justify-center'>
-                            Right image 
+                <div className=' flex items-center justify-center'>
+                    <img style={{ height: '200px', width: 'auto' }} src="https://static.igem.wiki/teams/5642/images/how/taifr/figure-6.webp" alt="Figure 6" className="" />
                 </div>
-                <p className='text-sm'>
+                <p className='text-sm mt-4'>
                     <p>
                       <strong>Figure 6. </strong>
                       <span style={{ fontWeight: 400 }}>
@@ -594,10 +573,6 @@ const TAIFRComponent = () => {
           </div>
         </section>
 
-
-        
-
-        
         
       </main>
 
