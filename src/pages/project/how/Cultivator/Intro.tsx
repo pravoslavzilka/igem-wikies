@@ -88,7 +88,7 @@ export default function CultivatorIntro() {
                     <p>
                         With complete documentation, build plans, and source code available, any lab can reproduce
                         and adapt the cultivator for their own work –{" "}
-                        <span className="font-bold">for about $1000 in materials.</span>
+                        <span className="font-bold">for about $1,000 in materials.</span>
                     </p>
                 </div>
             </div>
