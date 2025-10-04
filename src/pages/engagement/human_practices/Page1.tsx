@@ -179,7 +179,7 @@ export default function HumanPracticesPage1() {
                 {/* Image */}
                 <div className="mb-6 px-6">
                     <img
-                        src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                        src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/1-1.webp"
                         alt="NitroDuck farm visualization"
                         className="rounded-2xl  mx-auto"
                     />
@@ -216,7 +216,7 @@ export default function HumanPracticesPage1() {
                         </p>
 
                         <img
-                            src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                            src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/1-2.webp"
                             alt="Meeting with farmer Jakub Neužil"
                             className="rounded-2xl  mt-4"
                         />

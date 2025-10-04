@@ -7,7 +7,7 @@ export default function HumanPracticesPage6() {
             <div className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif]">
                 {/* Django Mangalam pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/4-1.webp"
                     name="Django Mangalam"
                     subtitle="Farmlord at Plantible Foods"
                     location="Duckweed large-scale cultivation"
@@ -26,7 +26,7 @@ export default function HumanPracticesPage6() {
                             </div>
                             <div className="flex justify-center">
                                 <img
-                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/4-2.webp"
                                     alt="Zoom call with Django Mangalam"
                                     className="rounded-2xl max-w-md"
                                 />
@@ -65,7 +65,7 @@ export default function HumanPracticesPage6() {
                             {/* Greenhouse photo */}
                             <div className="flex justify-center">
                                 <img
-                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/4-3.webp"
                                     alt="Plantible greenhouse ponds"
                                     className="rounded-2xl max-w-md"
                                 />
@@ -235,7 +235,7 @@ export default function HumanPracticesPage6() {
             <div className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif]">
                 {/* Arturo pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/4-4.webp"
                     name="Dr. Arturo Mari-Ordóñez"
                     subtitle="PI at Gregor Mendel Institute Vienna"
                     location="Transposons and gene silencing in duckweed"
@@ -294,7 +294,7 @@ export default function HumanPracticesPage6() {
                             <div className="space-y-4">
                                 <div className="flex justify-center">
                                     <img
-                                        src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                                        src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/4-5.webp"
                                         alt="Zoom call with Arturo Mari-Ordóñez"
                                         className="rounded-2xl max-w-md"
                                     />

@@ -25,7 +25,7 @@ export default function HumanPracticesPage6() {
                     {/* Right column: image */}
                     <div className="flex justify-center">
                         <img
-                            src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                            src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-1.webp"
                             alt="Hands-on session at GMI with duckweed infiltration"
                             className="rounded-2xl max-w-md"
                         />
@@ -55,7 +55,7 @@ export default function HumanPracticesPage6() {
 
                 {/* Dr. Boisivon pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-2.webp"
                     name="Dr. Hélène Robert Boisivon"
                     subtitle="Central European Institute of Technology"
                     location="Plant Synthetic Biology"
@@ -72,7 +72,7 @@ export default function HumanPracticesPage6() {
 
                 {/* Matúš Pešta pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-3.webp"
                     name="MSc. Matúš Pešta"
                     subtitle="Microbial Bioengineering Laboratory"
                     location="Bacterial Synthetic Biology"
@@ -89,7 +89,7 @@ export default function HumanPracticesPage6() {
 
                 {/* Dr. Miguel da Silva pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-4.webp"
                     name="Dr. Miguel da Silva"
                     subtitle="Microbial Bioengineering Laboratory"
                     location="Bacterial Metabolic Engineering"
@@ -111,7 +111,7 @@ export default function HumanPracticesPage6() {
 
                 {/* Dr. Ieremenko pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-5.webp"
                     name="Dr. Anastasiia Ieremenko"
                     subtitle="Microbial Bioengineering Laboratory"
                     location="Bacterial Metabolic Engineering"
@@ -127,7 +127,7 @@ export default function HumanPracticesPage6() {
 
                 {/* Barbora Jankovičová pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-6.webp"
                     name="MSc. Barbora Jankovičová"
                     subtitle="Microbial Bioengineering Laboratory"
                     location="Bacterial Metabolic Engineering"
