@@ -1,7 +1,10 @@
 export default function CultivatorSec5() {
     return (
         <div
-            className="max-w-6xl mx-auto p-8 bg-white text-gray-900 font-[Urbanist,sans-serif] text-lg leading-relaxed space-y-8">
+            className="max-w-6xl mx-auto p-8 bg-white text-gray-900 font-[Urbanist,sans-serif] text-lg leading-relaxed space-y-8"
+            id="user-testing"
+        >
+
             {/* Section heading */}
             <h2
                 className="font-bold text-green-700 text-center mb-6"
@@ -14,17 +17,35 @@ export default function CultivatorSec5() {
             </h2>
 
             {/* Intro paragraph */}
-            <p className="text-justify">
+            <p className="text-justify font-[Urbanist,sans-serif] text-lg leading-relaxed">
                 To evaluate the usability and reliability of our{" "}
                 <span className="font-bold text-[#6ca033]">autonomous duckweed cultivator</span>,
-                we invited several plant scientists to test the system in person. Among them were{" "}
+                we invited several plant scientists working also with duckweed to test the system in person.
+                Among them were{" "}
                 <span className="font-bold">prof. Miloš Barták</span> of{" "}
                 <span className="font-bold">Masaryk University in Brno</span>, and{" "}
                 <span className="font-bold">Kateřina Patloková</span> with{" "}
                 <span className="font-bold">Vojtěch Ferby</span> of{" "}
-                <span className="font-bold">Mendel University in Brno</span>. Their visit allowed us to gather{" "}
-                hands-on feedback from the people who would most directly benefit from this technology.
+                <span className="font-bold">Mendel University in Brno</span>.
+                Their visit allowed us to gather hands-on feedback from the people who would most directly
+                benefit from this technology.
             </p>
+
+            <p className="text-justify font-[Urbanist,sans-serif] text-lg leading-relaxed mt-4">
+                Furthermore, we discussed the design of our cultivator with{" "}
+                <span className="font-bold">prof. Jansen</span>, a world-renowned
+                duckweed scientist, whose insights helped us align our system with current trends in
+                plant physiology and automation.
+                You can read more about these discussions and other expert consultations{" "}
+                <a
+                    href="/engagement/human-practices#hw-and-cultivation"
+                    className="text-[#6ca033] font-semibold hover:underline transition-colors underline"
+                >
+                    on our Human Practices page
+                </a>
+                .
+            </p>
+
 
             {/* Positive feedback */}
             <div className="grid md:grid-cols-2 gap-8 items-center px-2 sm:px-8 md:px-0">

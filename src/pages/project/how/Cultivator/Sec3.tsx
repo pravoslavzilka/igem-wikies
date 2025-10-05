@@ -162,7 +162,7 @@ export default function CultivatorSec3() {
                         <p>
                             When the water’s <span
                             className="font-bold text-[#6ca033]">electrical conductivity</span> drifts
-                            outside the defined range, our optimized{" "}
+                            outside the defined range, the optimized{" "}
                             <span
                                 className="font-bold text-[#6ca033] underline">
                                 <a href="/toolbox/predictable-duckweed-protocol/">

@@ -1,4 +1,4 @@
-export default function CultivatorBillOfMaterials() {
+export default function CultivatorBuildSection() {
     const materials = [
         {name: "Aluminum support frame", amount: "30 m"},
         {name: "Acrylic sheet (opaque, 4 mm)", amount: "5 pcs (65×115 cm)"},
@@ -37,7 +37,10 @@ export default function CultivatorBillOfMaterials() {
     ];
 
     return (
-        <div className="max-w-6xl mx-auto p-8 bg-white text-gray-900 font-[Urbanist,sans-serif]">
+        <div className="max-w-6xl mx-auto p-8 bg-white text-gray-900 font-[Urbanist,sans-serif]"
+            id="build-section"
+        >
+            {/* === Section heading === */}
             <h2
                 className="font-bold text-green-700 mb-6 text-center"
                 style={{
@@ -45,18 +48,90 @@ export default function CultivatorBillOfMaterials() {
                     fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem",
                 }}
             >
-                Bill of Materials
+                How to Build Your Own Cultivator
             </h2>
 
+            {/* === Intro text === */}
+            <div className="text-lg leading-relaxed text-justify space-y-4">
+                <p>
+                    To make our work fully reproducible, we’ve made{" "}
+                    <span className="font-bold text-[#6ca033]">
+            every resource for building your own autonomous duckweed cultivator
+          </span>{" "}
+                    freely available. You can explore and download the complete source code,
+                    3D models, and blueprints directly from our public repositories.
+                </p>
+
+                <p>
+                    All control software and firmware are open-source and can be found here:
+                    <br/>
+                    <a
+                        href="https://github.com/MartinPavella/BioReactorManager"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#6ca033] font-semibold underline hover:text-green-700"
+                    >
+                        → Cultivator Control Server
+                    </a>{" "}
+                    and{" "}
+                    <a
+                        href="https://github.com/MartinPavella/BioReactorNode"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#6ca033] font-semibold underline hover:text-green-700"
+                    >
+                        Cultivator Firmware for ESP32
+                    </a>
+                    .
+                </p>
+
+                <p>
+                    All{" "}
+                    <span className="font-bold text-[#6ca033]">
+            3D models, laser-cutting blueprints, and fabrication guides
+          </span>{" "}
+                    are stored in a dedicated repository:
+                    <br/>
+                    <a
+                        href="https://github.com/pravoslavzilka/igem-hardware-models"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#6ca033] font-semibold underline hover:text-green-700"
+                    >
+                        → Cultivator Hardware & CAD Files
+                    </a>
+                    .
+                </p>
+
+                <p>
+                    With these resources, anyone can{" "}
+                    <span className="font-bold text-[#6ca033]">
+            build, program, and operate the cultivator
+          </span>{" "}
+                    using off-the-shelf components and standard tools.
+                </p>
+            </div>
+
+            {/* === Bill of Materials === */}
+            <h3
+                className="font-bold text-green-700 mt-12 mb-4 text-center"
+                style={{
+                    fontFamily: "Space Grotesk, sans-serif",
+                    fontSize: window.innerWidth < 768 ? "1.4rem" : "1.8rem",
+                }}
+            >
+                Bill of Materials
+            </h3>
+
             <p className="text-lg mb-6 text-justify">
-                The complete <span className="font-bold text-[#6ca033]">Bill of Materials (BOM)</span> lists
-                every component used to build our autonomous cultivator. The design prioritizes{" "}
-                <span className="font-bold">accessibility</span>, using{" "}
-                <span className="font-bold text-[#6ca033]">readily available and affordable parts</span> that
-                can be sourced from standard suppliers or online marketplaces.
+                The following{" "}
+                <span className="font-bold text-[#6ca033]">Bill of Materials (BOM)</span> lists
+                every component used in our prototype. All parts are{" "}
+                <span className="font-bold">affordable and readily available</span> from standard
+                suppliers or online marketplaces.
             </p>
 
-            {/* Scrollable table container */}
+            {/* Scrollable table */}
             <div className="border border-gray-300 rounded-lg shadow-md overflow-hidden">
                 <div className="overflow-y-auto max-h-80">
                     <table className="min-w-full border-collapse text-[0.95rem]">

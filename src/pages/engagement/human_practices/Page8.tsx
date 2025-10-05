@@ -6,7 +6,9 @@ export default function HumanPracticesPage8() {
         <div>
 
             <div
-                className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-12">
+                className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-12"
+                id="hw-and-cultivation"
+            >
                 {/* Section Title */}
                 <h2
                     className="font-bold"
