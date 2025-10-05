@@ -61,15 +61,23 @@ const ComparisonsSection: React.FC<ComparisonsSectionProps> = ({
               {/* Center Image */}
               <div className="w-[484px] h-[280px] rounded-xl flex items-center justify-center overflow-hidden">
                 {imageUrls[index] ? (
-                  <img 
-                    src={imageUrls[index]} 
-                    alt={`${page.title} visualization`}
-                    className="w-full h-full object-contain"
-                    onError={(e) => {
-                      console.log(`Failed to load image for ${page.title}`);
-                      e.currentTarget.style.display = 'none';
-                    }}
-                  />
+                    <a
+                      href={page.pageUrl}
+                      rel="noopener noreferrer"
+                      className="block w-full h-full"
+                    >
+                      <img
+                        src={imageUrls[index]}
+                        alt={`${page.title} visualization`}
+                        className="w-full h-full object-contain cursor-pointer transition-transform hover:scale-[1.02]"
+                        onError={(e) => {
+                          console.log(`Failed to load image for ${page.title}`);
+                          e.currentTarget.style.display = 'none';
+                        }}
+                      />
+                    </a>
+
+
                 ) : (
                   <div className="text-gray-500 text-lg bg-gradient-to-r from-green-50 to-green-100 w-full h-full flex items-center justify-center">
                     [{page.title} Visualization]
