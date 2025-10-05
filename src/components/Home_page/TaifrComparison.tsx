@@ -28,13 +28,13 @@ const TaifrComparison = () => {
     <div className="p-2 md:p-10 min-h-screen md:mt-60 mb-20">
       <div className="md:max-w-7xl mx-auto">
         {/* Top image placeholder */}
-        <div className="w-full h-80  rounded-lg flex items-center justify-center ">
+        <div className=" rounded-lg h-96 flex items-center justify-center ">
           <div className="text-center md:mb-32">
             <img
-             alt="TAIFR Comparison" className="h-full"
+             alt="TAIFR Comparison" className="max-h-[700px]"
              ref={imgRef}
-              src={loaded ? "https://static.igem.wiki/teams/5642/images/homepage/maingifs/igem-graf-video-updated-ezgif-com-video-to-webp-converter.webp" : ""}
-              data-src="https://static.igem.wiki/teams/5642/images/homepage/maingifs/igem-graf-video-updated-ezgif-com-video-to-webp-converter.webp"
+              src={loaded ? "https://static.igem.wiki/teams/5642/images/homepage/maingifs/igem-taifr-2.webp" : ""}
+              data-src="https://static.igem.wiki/teams/5642/images/homepage/maingifs/igem-taifr-2.webp"
              
              
              />
@@ -49,7 +49,7 @@ const TaifrComparison = () => {
           {/* Left side - Main headline */}
           <div className="lg:col-span-2 justify-center items-right flex flex-col">
             
-            <div className="text-base text-gray-600 leading-relaxed mt-[-50px]">
+            <div className="text-base text-gray-600 leading-relaxed mt-12 md:mt-[-50px]">
               <div className="flex justify-end text-right space-x-4 ">
               
               <div style={{fontFamily: 'Space Grotesk, sans-serif' }}>

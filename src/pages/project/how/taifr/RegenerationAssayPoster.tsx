@@ -24,6 +24,10 @@ export default function RegenerationAssayPoster() {
             borders of mPing transposon into duckweed nuclear genome. Neomycin selection pressure then favours transformed 
             cells, which regenerate into new transgenic fronds thanks to duckweeds' unique fast asexual propagation ability.
           </p>
+
+          <div>
+            <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/dbtls-of-taifr-1.webp" alt="Regeneration Assay Poster Title" className="max-w-full h-auto mb-12" />
+        </div>  
           
           <p className="mb-4">
             To develop TAIFR, we performed the Regeneration Assay, consisting of four and half DBTL cycles, which resulted in a 
@@ -46,9 +50,7 @@ export default function RegenerationAssayPoster() {
         </div>
 
         {/* Figure 1 */}
-        <div>
-            <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/dbtl.webp" alt="Regeneration Assay Poster Title" className="max-w-full h-auto mb-12" />
-        </div>        
+                
 
         <div className="mb-12 ">
           <div className="bg-gray-200  flex items-center justify-center mb-4">
@@ -96,16 +98,17 @@ export default function RegenerationAssayPoster() {
               <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure3.webp" alt="Figure 3: Regenerated Transgenic Frond" className="max-w-full h-auto" />
 
                 <p className="text-base leading-relaxed mt-10">
-                    <strong>Figure 3.</strong> Fronds of Spirodela polyrhiza 7428 (Sp7428) were co-transformed with two Agrobacterium cultures: one carrying pIB005 (mPing-bordered GFP-p2a-NPTII unit) and the other carrying pIB003 (PONG transposase). GFP fluorescence spots appeared 12 days post-infiltration (dpi) (see Fig. 2.4). At 18 dpi, all transformed fronds were transferred to medium containing 5 mg/L G418 - ten times higher than the tolerance threshold of Sp7428 (0.5 mg/L). As a control, fronds transformed only with pIB003 (no resistance gene present) were placed on the same concentration at the same time. By 24 dpi, all non-transformed fronds had died (1), while some transformed fronds - specifically the daughter fronds - survived and appeared healthy (2), though smaller. Surprisingly, these daughter fronds showed no GFP fluorescence, not even as localized spots - that is why we performed PCR to find out if transgene was there.
-                </p>
+                    <strong>Figure 3.</strong> Fronds of Spirodela polyrhiza 7428 (Sp7428) were co-transformed with two Agrobacterium cultures: one carrying pIB005 (mPing-bordered GFP-p2a-NPTII unit) and the other carrying pIB003 (PONG transposase). GFP fluorescence spots appeared 12 days post-infiltration (dpi) (see Fig. 2.4). At 18 dpi, all transformed fronds were transferred to medium containing 5 mg/L G418 - ten times higher than the tolerance threshold of Sp7428 (0.5 mg/L). As a control, fronds transformed only with pIB003 (no resistance gene present) were placed on the same concentration at the same time. By 24 dpi, all non-transformed fronds had died (1), while some transformed fronds - specifically the daughter fronds - survived and appeared healthy (2), though smaller. Surprisingly, these daughter fronds showed no GFP fluorescence, not even as localized spots - that is why we performed PCR to find out if transgene was there
+                    </p>
 
             </div>
 
             <div className='col-span-2   flex items-center justify-center'>
                 <p className="text-base leading-relaxed mt-10">
                     <strong>Figure 4. </strong> 
-                     PCR for GFP on genomic DNA from RA4.1 (duckweeds co-transformed by pIB005 and pIB003) surviving on 5mg/L of G418 (toxic amount) showed that gene for GFP was present, while ts expression (green fluorescence) was not observable in daughter healthy fronds.
-                </p>
+                     PCR for GFP on genomic DNA from RA4.1 (duckweeds co-transformed with pIB005 and pIB003) surviving on 5 mg/L G418 (toxic concentration) confirmed the presence of the GFP gene linked to the NPTII gene (G418 resistance). However, GFP expression (green fluorescence) was observed only as randomly distributed spots, likely in amounts sufficient to confer resistance to G418.
+
+                     </p>
 
             </div>
 
@@ -281,7 +284,7 @@ export default function RegenerationAssayPoster() {
 
           <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4 mt-24">LEARN</h3>
           
-          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6'>
+          <div className='grid grid-cols-1 md:grid-cols-4 gap-8 mb-6'>
             <div className='col-span-2 items-center justify-center'> 
                 <div className="mb-6">
                         <p className="font-semibold mb-2">Why was the fluorescence in our pIB001 construct so much weaker and delayed compared with the positive control pAMO101?</p>
@@ -307,9 +310,11 @@ export default function RegenerationAssayPoster() {
                 </div>
             <div className='col-span-2  items-center justify-center'>
 
+              <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure6.webp" alt="Figure 6: pIB001 Map" className="max-w-full h-auto mb-4" />
 
-                 <p className="text-base leading-relaxed">
-              <strong>Figure 6.</strong> sadsad
+
+             <p className="text-base leading-relaxed">
+              <strong>Figure 6.</strong> Microscopy images were captured from all plates in the transformation step of the DBTL cycle 1 Regeneration Assay using a GFP filter (excitation ~509 nm) on a ZEISS AxioZoom V16 microscope. Each transformation event consisted of two plates representing biological replicates. To normalize background signal differences between plates, two groups of fronds were selected from each: one group showing no visible fluorescence, and a second group showing any detectable fluorescence, if present. The fluorescence intensity corresponding to pixels of each individual frond was quantified using the ZEN Blue software. The graph displays the difference in mean fluorescence intensity between the two groups, averaged across both biological replicates for each treatment. These values represent changes in fluorescence intensity among different transformation events, corresponding to different constructs or construct combinations applied to Spirodela polyrhiza 7428.
             </p>  
                 
             </div>    
@@ -351,26 +356,31 @@ export default function RegenerationAssayPoster() {
 
           <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/excision-assay-copy.webp" alt="Excision Assay Diagram" className="max-w-full h-auto mb-6" />
 
-          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of pIB003</h3>
+         
           
 
           <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6'>
             <div className='col-span-3 items-center justify-center'>
-                <p className="mb-6 leading-relaxed">
-                    We performed DBTL cycle 2 in parallel with DBTL cycle 3, where the design and construction of PONG are described.
-                </p>
+                
 
                 <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of pIB004</h3>
                 <p className="mb-6 leading-relaxed">
-                    Construct pIB004 is carrying a gene for yellow fluorescent protein (YFP), interrupted in the middle by the transposon 
-                    element mPing from Oryza sativa. Expression of the interrupted YFP is driven by ubiquitin promoter from Zea mays
-                    (rZmUBI) and terminated by t35S, terminator with polyadenylation signal, derived from Cauliflower mosaic virus. 
-                    Expression cassette is bordered by T-DNA allowing for Agrobacterium-mediated transformation and lies in binary 
-                    vector, allowing for replication both in E.coli and Agrobacterium tumefaciens.
+                    Construct pIB004 is carrying a gene for yellow fluorescent protein (YFP), interrupted in the middle by the transposon element mPing from Oryza sativa. Expression of the interrupted YFP is driven by ubiquitin promoter from Zea mays (rZmUBI) and terminated by t35S, terminator with polyadenylation signal, derived from Cauliflower mosaic virus. Expression cassette is bordered by T-DNA allowing for Agrobacterium-mediated transformation and lies in binary vector, allowing for replication both in E.coli and Agrobacterium tumefaciens.
                 </p>
 
                 
-                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">BUILD – cloning of pIB004</h3>
+                
+
+            </div>
+
+            <div className='col-span-1 items-center justify-center'>
+                <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/pib004-copy.webp" alt="Figure Y: pIB004 Map" className="max-w-full h-auto mt-6" />
+            </div>  
+
+
+          </div>
+
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">BUILD – cloning of pIB004</h3>
                 <p className="mb-2 leading-relaxed">We used Modular Cloning based on Golden Gate.</p>
                 
                 <p className="mb-2 font-semibold">Parts:</p>
@@ -382,15 +392,6 @@ export default function RegenerationAssayPoster() {
                 <p className="mb-4 leading-relaxed">
                     pE1T, pH2T, pB3T, pH4T and end-linker pB5T from the MoClo Toolkit deposited by Patron's Lab. From Ordóñez’s Lab we have been gifted construct pAMO101 carrying GFP under the Zea mays ubiquitin promoter (rZmUBI) terminated by cauliflower mosaic virus terminator sequence (t35S).
                 </p>
-
-            </div>
-
-            <div className='col-span-1 items-center justify-center'>
-                <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/pib003.webp" alt="Figure Y: pIB003 Map" className="max-w-full h-auto" />
-                <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/pib004-copy.webp" alt="Figure Y: pIB004 Map" className="max-w-full h-auto mt-6" />
-            </div>        
-
-          </div>
 
           <div className='mb-6 mt-16 text-2xl' style={{ fontFamily: 'Space Grotesk, sans-serif' }} > 
             <b>1st iteration: insertion of mPing before GFP by SpeI into pAMO101</b>
@@ -486,45 +487,71 @@ export default function RegenerationAssayPoster() {
 
           <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">TEST - transformation</h3>
 
-          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6'>
+          <div className='grid grid-cols-1 md:grid-cols-4 gap-8 mb-6'>
             <div className='col-span-2  items-center justify-center'>
                 <p>
-                    We performed two iterations of transformation (TEST) of the Excision Assay. We always did two controls.
+                   We performed two iterations of transformation (TEST) of the Excision Assay. We always did two controls.
                 </p>
                 <ul className='list-disc pl-6 space-y-2 mt-4'>
-                    <li>pIB004 alone (negative control): if we would detect fluorescence without co-transformation of pIB003, the mPing disruption of YFP coding frame would not be sufficient, thus this construct would not be relevant for the Excision Assay</li>
-                    <li>pIB003: proving that PONG got expressed by presence of RFP fluorescent signal.</li>
+                    <li>pIB004 (negative control): if we would detect fluorescence without co-transformation of pIB003, the mPing disruption of YFP coding frame would not be sufficient, thus this construct would not be relevant for the Excision Assay</li>
+                    <li>pEGe (negative control ): proving that potential fluorescence of YFP is not from caused by presence of pEGe itself</li>
                 </ul>
 
-            </div>
-            <div className='col-span-2  flex items-center justify-center'>
+                <p className="mb-2 mt-10 leading-relaxed">Unfortunately, we did not observed the restoration of YFP fluorescence (see Fig. 7.3) followed by co-transformation of pIB003 with pIB004 in any of two iterations we performed, both on Spirodela polyrhiza 7428 and Lemna gibba 7742.</p>
+
+                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4 mt-12">LEARN</h3>  
+
+                <p>
+                  <b>Was PONG unable to excise mPing, given that no restoration of YFP fluorescence was observed in our Excision Assay?</b>
+                </p>
+
+                <p className='mt-4 leading-relaxed'>
+                  We discussed this question with Dr. Slotkin. He noted that, in contrast to his team’s design, where mPing was excised from a stably integrated GFP–mPing–GFP coding sequence in the Arabidopsis thaliana genome - we attempted to excise mPing from a transiently expressed sequence, freely present in duckweed nuclei due to T-DNA borders and Agrobacterium-mediated delivery. This means that restoration of YFP fluorescence in such a transient context would not be moleculary favoured state, thus it would occur too infrequently to be detectable at the whole-frond level. Therefore, we still could not determine whether PONG exhibited excision activity in the duckweed system. Dr. Slotkin advised performing the Excision Assay using PCR instead. Amplifying the region spanning the 5′ and 3′ ends of the YFP–mPing–YFP sequence would yield a single band if mPing were not excised, and two bands of different lengths if excision occurred.
+                </p>
 
             </div>
-          </div>      
+            <div className='col-span-2  items-center justify-center'>
+                <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure7.webp" alt="Figure 7.3: Excision Assay Results" className="max-w-full h-auto mb-4" />
+                <p className='text-base leading-relaxed'>
+                  <b>Figure 7. </b>
+                  In both iterations of the Excision Assay, we transformed two controls into Spirodela polyrhiza 7428 (Sp7428). The first, pIB004, served as a negative control - since the mPing-disrupted YFP coding sequence should not produce fluorescence (1) when transformed without the PONG transposase. The second, pEGe alone, served as a control that desired YFP fluorescence was no caused by the presence or activity of pEGe itself (2). Co-transformation of both constructs was expected to restore YFP fluorescence; however, this was not observed (3) in either of the two iterations.
+                </p>
+            
+            </div>
+          </div> 
 
-          <p className="mb-2 leading-relaxed">We used Modular Cloning based on Golden Gate.</p>
-          
-          <p className="mb-2 font-semibold">Parts:</p>
-          <p className="mb-4 leading-relaxed">
-            Level 0 part t35S (pF11P1) was from the CRISPR/Cas Toolkit for Plants deposited by Nekrasov Lab. Level 0 part 
-            rZmUBI (pE1P2) was from Plant Parts II and Infrastructure Kit deposited by Stuttmann Lab.
-          </p>
-          
-          <p className="mb-2 font-semibold">Acceptors:</p>
-          <p className="mb-4 leading-relaxed">
-            We used acceptors pF2T, pG1T, pB3T, pH4T and end-linker pB5T from MoClo Plant Parts Kit deposited by Patron's 
-            Lab.
-          </p>
-          
-          <p className="mb-2 font-semibold">Steps:</p>
-          <ul className="mb-6 leading-relaxed list-disc pl-6 space-y-2">
-            <li>The codon-optimized PONG was cloned into Level 0 acceptor pF2T using BbsI, yielding pF2T_PONG.</li>
-            <li>The codon-optimized RFP with p2a was cloned into Level 0 acceptor pG1T using BbsI, yielding pG1T_p2a-RFP.</li>
-            <li>Digestion and ligation of pF2T_PONG, pG1T_p2a-RFP, pE1P2, and pF11P1 with acceptor pB3T using BsaI resulted 
-            into Level 1 construct pB3T_rZmUBI-PONG-p2a-RFP-tNOS.</li>
-            <li>Digestion and ligation of pB3T_rZmUBI-PONG-p2a-RFP-tNOS with end-linker pB5T with acceptor pH4T using BbsI 
-            resulted into Level 2 construct pIB003_rZmUBI-PONG-p2a-RFP-t35S. The assembly was confirmed by sequencing.</li>
-          </ul>
+
+          <div className='grid grid-cols-1 md:grid-cols-4 gap-8 mb-6'>
+            <div className='col-span-2  items-center justify-center'> 
+              <p>
+                  <b>
+                    Why was the band representing YFP with mPing excised thinner than the one representing the original sequence with mPing present?
+                  </b>
+                    
+                  </p>
+
+                <p className='mt-4 leading-relaxed'>
+                  When we performed PCR on the Excision Assay (see Fig. 8), we detected two bands of different lengths (~1200 bp and ~750 bp). The smaller band, representing the YFP sequence without mPing (thus indicating excision), was much thinner. This could suggest that excision is not very efficient or frequent. Alternatively, as Dr. Slotkin suggested, excision might occur efficiently, but repair of the excised sequence may be disfavored. Consequently, only a small proportion of sequences would have their YFP coding frame properly restored, resulting in fewer templates available for PCR amplification of the 750 bp band. 
+                 </p>
+
+                 <p className='mt-4 leading-relaxed'>
+
+                  However, this remained only a hypothesis, as we could not confirm the second explanation. Therefore, we decided to improve the pEGe design by codon-optimizing PONG for duckweed and making its expression detectable through fusion with RFP via a p2a linker.
+                 </p>
+
+
+            </div>
+            <div className='col-span-2  items-center justify-center'> 
+                <img src="" alt="Figure 7.3: Excision Assay Results" className="max-w-full h-auto mb-4" />
+                <p className='text-base leading-relaxed'>
+                  <b>Figure 8. </b>
+                      Using primers o136 and o137, we amplified genomic DNA isolated from Spirodela polyrhiza 7428 co-transformed with pIB004 and pEGe. The forward primer (o136) is specific to the 5′ end of the YFP–mPing–YFP sequence, while the reverse primer (o137) targets the 3′ end of the same sequence. When mPing is present within the YFP coding sequence, the expected amplicon length is 1178 bp; when mPing is excised, the expected product is 748 bp.PCR analysis of the Excision Assay produced two bands—one approximately 1200 bp (a) and one approximately 750 bp (b)—indicating that PONG successfully excised mPing from the YFP sequence in the duckweed nucleus, thus confirming its functionality. However, the excision efficiency appears to be low, as the ~750 bp band (representing YFP without mPing) was visibly weaker than the original longer band where PONG had not acted.       
+                </p>
+            </div>
+
+
+          </div>  
+
 
         
         </div>
@@ -550,6 +577,20 @@ export default function RegenerationAssayPoster() {
                     tumefaciens.
                 </p>
 
+                
+            </div>
+            <div className='col-span-1   items-center justify-center'>
+                <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/pib002-copy.webp" alt="Figure X: pIB002 and pIB003 Maps" className="max-w-full h-auto" />
+
+            </div>
+
+          </div>
+
+
+          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6'>
+            <div className='col-span-3  items-center justify-center'>
+                
+
                 <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN OF p003</h3>
                 <p className="mb-6 leading-relaxed">
                     Plasmid pIB003 is carrying ORFs for two PONG transposase subunits, separated by 
@@ -563,7 +604,8 @@ export default function RegenerationAssayPoster() {
                     Agrobacterium tumefaciens.
                 </p>
             </div>
-            <div className='col-span-1  flex items-center justify-center'>
+            <div className='col-span-1   items-center justify-center'>
+               <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/pib003.webp" alt="Figure X: pIB002 and pIB003 Maps" className="max-w-full h-auto" />
 
             </div>
 
@@ -629,7 +671,7 @@ export default function RegenerationAssayPoster() {
 
          
 
-         <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6 mt-32'>
+         <div className='grid grid-cols-1 md:grid-cols-4 gap-8 mb-6 mt-32'>
             <div className='col-span-2  items-center justify-center'>   
                  <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">TESTING – transformation</h3>
                 <p className="mb-4 leading-relaxed">
@@ -643,25 +685,30 @@ export default function RegenerationAssayPoster() {
                     <li>wild type Spirodela polyrhiza 7428: negative control</li>
                 </ul>
 
-                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">TESTING – transformation</h3>
+                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4 mt-12">TESTING – neomycin test</h3>
                  <p className="mb-4 leading-relaxed">
                     As we built the first functional construct to perform our regeneration assay (pIB002), we needed to design the appropriate regeneration conditions. Our design includes the NPTII gene, based on previous assessments of antibiotic effects by Dr. Ordóñez, which showed that duckweed is most sensitive to neomycin. We therefore had to determine the critical concentration at which duckweeds are killed by neomycin. In addition, we needed to evaluate whether natural neomycin sulphate is sufficient or whether synthetic G418 is required. For these purposes, we designed and performed the neomycin test. We subjected three clones of Spirodela polyrhiza (0162, 7428, and 9509) to different concentrations of neomycin sulphate and G418, ranging from 0 to 100 mg/L. All combinations were tested in biological triplicates using 12-well plates.
                 </p>
 
+
+
+                 <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4 mt-24">LEARN</h3>
+                <div className="mb-6">
+                    <p className="font-semibold mb-2">Our constructs are functional! What's next?</p>
+                    <p className="mb-4 leading-relaxed">
+                    In comparison with the first DBTL cycle, we can now observe functionality of both constructs required for molecular PING-PONG. GFP in pIB002 exhibits more fluorescence compared to the first DBTL cycle (3), while RFP in pIB003 is faintly visible (2), confirming that PONG is expressed. The mPing-bordered translational unit (rZmUBI-GFP-p2a-NPTII-t35S) is not only being excised (4) but also likely inserted, as GFP spots appear randomly distributed in duckweed fronds between 12 and 18 dpi (5). Regeneration attempts can begin as soon as we determine the exact neomycin concentration that kills wild-type duckweed.
+                    </p>
+                </div>
+
+
+
             </div>
 
-            <div className='col-span-2  flex items-center justify-center'>
+            <div className='col-span-2   items-center justify-center'>
 
-            </div>
+              <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure9-1.webp" alt="Figure 9: Regeneration Assay Results" className="max-w-full h-auto mb-4" />
+              <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure9-2.webp" alt="Figure 9: Regeneration Assay Results" className="max-w-full h-auto mb-4" />
 
-         </div>
-
-
-         <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6 mt-32'>
-            <div className='col-span-2  items-center justify-center'>  
-
-            </div>
-            <div className='col-span-2  flex items-center justify-center'>
               <p className="text-base leading-relaxed">
               <strong>Figure 9.</strong> The positive control (pAMO101) showed GFP fluorescence (1), although reduced compared with 
               DBTL 1 (<a href="#" className="text-blue-600 underline">see explanation here</a>). The improved design of pIB002, with GFP as the first gene in the 
@@ -672,25 +719,17 @@ export default function RegenerationAssayPoster() {
               spots appeared, randomly distributed on duckweed fronds (5), probably as a result of insertion of the 
               mPing-bordered translational unit (rZmUBI-GFP-p2a-NPTII-t35S).
             </p>
+            
             </div>
-         </div>    
 
-        
+         </div>
 
-    
 
-          
-
-          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4 mt-24">LEARN</h3>
+         
           
           <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6 mt-8'>
             <div className='col-span-3  items-center justify-center'>
-                <div className="mb-6">
-                    <p className="font-semibold mb-2">Our constructs are functional! What's next?</p>
-                    <p className="mb-4 leading-relaxed">
-                    In comparison with the first DBTL cycle, we can now observe functionality of both constructs required for molecular PING-PONG. GFP in pIB002 exhibits more fluorescence compared to the first DBTL cycle (3), while RFP in pIB003 is faintly visible (2), confirming that PONG is expressed. The mPing-bordered translational unit (rZmUBI-GFP-p2a-NPTII-t35S) is not only being excised (4) but also likely inserted, as GFP spots appear randomly distributed in duckweed fronds between 12 and 18 dpi (5). Regeneration attempts can begin as soon as we determine the exact neomycin concentration that kills wild-type duckweed.
-                    </p>
-                </div>
+                
 
                 <div className="mb-6">
                     <p className="font-semibold mb-2">Synthetic neomycin (G418) kills duckweed at concentrations above 0.5 mg/L</p>
@@ -848,46 +887,59 @@ export default function RegenerationAssayPoster() {
           </div>
 
 
-          <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure13.webp" alt="Description of image" className="max-w-full h-auto mb-6" />              
+          <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure13-2.webp" alt="Description of image" className="max-w-full h-auto mb-6" />              
 
           <div className=" mb-6">
             <p className="text-base leading-relaxed">
-              <strong>Figure 13.</strong> <p>
-                <span style={{ fontWeight: 400 }}>
-                    We performed six iterations of the transformation (TESTING) in the DBTL4
-                    cycle of our Regeneration Assay to identify the exact conditions that favuor
-                    regeneration of cells in which the transgene containing the{" "}
-                </span>
-                <strong>NPTII</strong>
-                <span style={{ fontWeight: 400 }}> gene (conferring </span>
-                <strong>G418</strong>
-                <span style={{ fontWeight: 400 }}>
-                    {" "}
-                    resistance) was inserted using our transposase-assisted insertion assay. We
-                    tested different concentrations of synthetic neomycin (G418), varying the
-                    timing of its addition (
-                </span>
-                <strong>DPI</strong>
-                <span style={{ fontWeight: 400 }}>
-                    {" "}
-                    = days post-infiltration), as well as different hormones known to promote
-                    cell proliferation (the cytokinin TDZ ={" "}
-                </span>
-                <strong>thidiazuron </strong>
-                <span style={{ fontWeight: 400 }}>and </span>
-                <strong>zeatin</strong>
-                <span style={{ fontWeight: 400 }}>, and the auxin </span>
-                <strong>2,4-dichlorophenoxyacetic acid</strong>
-                <span style={{ fontWeight: 400 }}>
-                    ). We also tested different timings of hormone application (
-                </span>
-                <strong>DBI</strong>
-                <span style={{ fontWeight: 400 }}> = days before infiltration).</span>
-                </p>
+              <strong>Figure 13.</strong> 
+                Microscopy images were captured from all plates in the transformation step of the DBTL cycle 4 of Regeneration Assay using a GFP filter (excitation ~509 nm) on a ZEISS AxioZoom V16 microscope. Each transformation event consisted of two plates representing biological replicates. To normalize background signal differences between plates, two groups of fronds were selected from each: one group showing no visible fluorescence, and a second group showing any detectable fluorescence, if present. The fluorescence intensity corresponding to pixels of each individual frond was quantified using the ZEN Blue software. The graph displays the difference in mean fluorescence intensity between the two groups, averaged across both biological replicates for each treatment. These values represent changes in fluorescence intensity among different transformation events, corresponding to different constructs or construct combinations applied to Spirodela polyrhiza 7428.
 
             </p>
           </div>
 
+
+
+          <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure13.webp" alt="Description of image" className="max-w-full h-auto mb-6" />
+
+         <p className='mt-10 mb-6 leading-relaxed text-base'>
+          <p>
+            <strong>Figure 14. </strong>
+            <span style={{ fontWeight: 400 }}>
+              We performed six iterations of the transformation (TESTING) in the DBTL4
+              cycle of our Regeneration Assay to identify the exact conditions that favuor
+              regeneration of cells in which the transgene containing the{" "}
+            </span>
+            <strong>NPTII</strong>
+            <span style={{ fontWeight: 400 }}> gene (conferring </span>
+            <strong>G418</strong>
+            <span style={{ fontWeight: 400 }}>
+              {" "}
+              resistance) was inserted using our transposase-assisted insertion assay. We
+              tested different concentrations of synthetic neomycin (G418), varying the
+              timing of its addition (
+            </span>
+            <strong>DPI</strong>
+            <span style={{ fontWeight: 400 }}>
+              {" "}
+              = days post-infiltration), as well as different hormones known to promote
+              cell proliferation (the cytokinin TDZ ={" "}
+            </span>
+            <strong>thidiazuron </strong>
+            <span style={{ fontWeight: 400 }}>and </span>
+            <strong>zeatin</strong>
+            <span style={{ fontWeight: 400 }}>, and the auxin </span>
+            <strong>2,4-dichlorophenoxyacetic acid</strong>
+            <span style={{ fontWeight: 400 }}>
+              ). We also tested different timings of hormone application (
+            </span>
+            <strong>DBI</strong>
+            <span style={{ fontWeight: 400 }}> = days before infiltration).</span>
+          </p>
+
+
+         </p>
+         
+         
           <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">LEARN</h3>
           <>
             <p>
@@ -925,36 +977,22 @@ export default function RegenerationAssayPoster() {
             </>
 
 
-          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6 mt-8'>
+          <div className='grid grid-cols-1 md:grid-cols-4 gap-8 mb-6 mt-8'>
             <div className='col-span-2  items-center justify-center'>
 
-                 <div className="bg-gray-200 h-48 flex flex-col items-center justify-center">
-                    <span className="text-gray-500 text-base mb-2">[Image]</span>
-                    <p className="text-xs">pIB003 x pIB005 + neo on light</p>
-                    </div>       
+                 <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure14.webp" alt="Description of image" className="max-w-full h-auto mb-4" />      
 
                  <p className="text-base leading-relaxed">
-                    <strong>Figure 15.</strong> The surviving healthy Sp7428 daughter fronds (1) resulted from pIB005 × pIB003 
-                    co-transformation in RA3.1, compared with non-transformed Sp7428 dead fronds (2). Both 
-                    samples were cultivated on G418: first at 0.25 mg/L for 18 days, then for 6 days at 5 mg/L, and finally for 6 
-                    days at 10 mg/L. These concentrations are 10-fold and 20-fold higher, respectively, than the survival threshold 
-                    of Sp7428 (0.5mg/L of G418).
+                    <strong>Figure 15.</strong> Co-transformation of pIB005 and pIB003 results in no detectable transient GFP fluorescence 6 days post-infiltration (see Fig. 12.3). However, between 12 and 18 dpi, randomly distributed spots of GFP fluorescence appear, probably resulting from the insertion of the mPing-bordered cassette (rZmUBI-GFP-p2a-NPTII-t35S) into the nuclear genome facilitated by the PONG transposase. To confirm this assumption, we performed PCR to determine whether the mPing-bordered cassette had been inserted into the genome.
                     </p>       
             </div>
 
             <div className='col-span-2  items-center justify-center'>
 
-                 <div className="bg-gray-200 h-48 flex flex-col items-center justify-center">
-                <span className="text-gray-500 text-base mb-2">[Image]</span>
-                <p className="text-xs">pIB003 x pIB005 + neo on light</p>
-                </div>       
+                 <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure16.webp" alt="Description of image" className="max-w-full h-auto mb-4" />     
 
-                <p className="text-base leading-relaxed">
-              <strong>Figure 15.</strong> The surviving healthy Sp7428 daughter fronds (1) resulted from pIB005 × pIB003 
-              co-transformation in RA3.1, compared with non-transformed Sp7428 dead fronds (2). Both 
-              samples were cultivated on G418: first at 0.25 mg/L for 18 days, then for 6 days at 5 mg/L, and finally for 6 
-              days at 10 mg/L. These concentrations are 10-fold and 20-fold higher, respectively, than the survival threshold 
-              of Sp7428 (0.5mg/L of G418).
+                <p className="text-base leading-relaxed ">
+              <strong>Figure 16.</strong> The surviving healthy Sp7428 daughter fronds (1) resulted from pIB005 × pIB003 co-transformation in RA3.1, compared with non-transformed Sp7428 dead fronds (2). Both samples were cultivated on G418: first at 0.25 mg/L for 18 days, then for 6 days at 5 mg/L, and finally for 6 days at 10 mg/L. These concentrations are 10-fold and 20-fold higher, respectively, than the survival threshold of Sp7428 (0.5mg/L of G418).
             </p>
 
             </div>
@@ -975,12 +1013,12 @@ export default function RegenerationAssayPoster() {
           <div className='grid grid-cols-1 md:grid-cols-5 gap-4 mb-6 mt-8'>
             <div className='col-span-4  items-center justify-center'>
                 <div className="bg-gray-200 h-64 flex items-center justify-center mb-6">
-                    <span className="text-gray-500">[PCR Figure 16]</span>
+                    <span className="text-gray-500">[PCR Figure 17]</span>
                 </div>
             </div>
             <div className='col-span-1  flex items-center justify-center'>
                 <p className='text-base leading-relaxed'>
-                    Figure 16. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, </p>
+                    Figure 17. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, </p>
             </div>
           </div>
 
@@ -1000,6 +1038,15 @@ export default function RegenerationAssayPoster() {
             created the Duckweed Transformation Protocol page: so that other iGEM teams will not repeat the same mistake.
           </p>
         </div>
+
+
+        <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure17.webp" alt="Description of image" className="max-w-full h-auto mb-6" />
+        <p className='text-base leading-relaxed mb-12 mt-10'>
+          <b>Figure 17. </b>After three DBTL cycles of the “PING part” (mPing-bordered cargo rZmUBI-GFP-p2a-NPTII-t35S) of our TAIFR method, we built and tested a functional and user-friendly composite part, pIB005, which—compared to pIB001 and pIB002—showed the greatest difference in fluorescence between groups of “non-shining” and “shining” duckweeds, normalized on each plate. However, the intensity of its fluorescence was approximately half that of the positive control (pAMO101). We do not yet fully understand the reason for this, but a probable explanation is a difference in the plasmid backbone, resulting in a lower copy number of the binary vector in Agrobacterium, and consequently, a smaller amount of T-DNA transferred to duckweed. Nevertheless, the fluorescence of pIB005 is clearly visible and is expressed as early as in the positive control. Combined with GFP being swappable as the CDS1 part (with no stop codon) and the excisability of the p2a-NPTII resistance marker via mutated lox71 and lox66 sites (not yet tested), this composite part represents a crucial element of our TAIFR method.
+        </p>      
+
+
+
 
         {/* DBTL 5 Section */}
         <div className="mb-12 mt-32">
