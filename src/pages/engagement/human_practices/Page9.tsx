@@ -149,7 +149,8 @@ export default function HumanPracticesPage9() {
             </div>
 
 
-            <div className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed font-[Urbanist,sans-serif]">
+            <div
+                className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed font-[Urbanist,sans-serif] space-y-4">
                 {/* Green Header */}
                 <div
                     id="real-world-check"
@@ -172,12 +173,11 @@ export default function HumanPracticesPage9() {
                     {/* Hover circles (4 on top, 3 centered below) */}
                     <div className="flex flex-col items-center space-y-6 mb-12">
                         {/* Row 1: 4 items */}
-                        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 place-items-center">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
                             {[
                                 {label: "Farmers & Agriculture Specialists", href: "#farmers"},
                                 {label: "Safety & Regulations", href: "#safety"},
                                 {label: "Duckweed as a Biotechnology Platform", href: "#platform"},
-                                {label: "CULTIVATOR User Testing", href: "#cultivator-testing"},
                             ].map(({label, href}) => (
                                 <a
                                     key={label}
@@ -200,13 +200,12 @@ export default function HumanPracticesPage9() {
                         </div>
 
                         {/* Row 2: 3 items (centered) */}
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 place-items-center">
                             {[
-                                {label: "Entrepreneurship", href: "#entrepreneurship"},
                                 {label: "Excellence in iGEM", href: "#excellence"},
                                 {
                                     label: "Building CzechoSlovak SynBio Community from the Ground Up",
-                                    href: "#community"
+                                    href: "#czsk-community"
                                 },
                             ].map(({label, href}) => (
                                 <a
@@ -230,38 +229,53 @@ export default function HumanPracticesPage9() {
                         </div>
                     </div>
 
-                    {/* Farmers & Agriculture Specialists section */}
-                    <section id="farmers">
+                    <div className="space-y-12">
+
                         <h2
-                            className="font-bold mb-4"
+                            className="font-bold"
                             style={{
                                 fontFamily: "Space Grotesk, sans-serif",
                                 fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem",
                             }}
+                            id="farmers"
                         >
                             Farmers & Agriculture Specialists
                         </h2>
-                    </section>
 
-                    <p>
-                        The first person from a real world we spoke to was a farmer{" "}
-                        <a
-                            href="#"
-                            className="text-green-700 underline hover:text-green-900"
-                        >
-                            Jakub Neužil
-                        </a>
-                        . He told us that the problem we want to focus on needs to be solved, besides many
-                        more insights. However, we really wanted to understand, what other problems are
-                        farmers facing, how does the operation on the farm look like regarding their manure
-                        treatment and feed they are using. Of course, we asked what would it mean to
-                        implement our solution on their farm and use duckweed as a next protein crop for
-                        feeding their livestock.
+                        <p className="text-lg">
+                            The first person from a real <span className="font-bold">world of agriculture</span> we
+                            spoke to was a farmer{" "}
+                            <a href="#" className="underline hover:text-gray-700">
+                                Jakub Neužil
+                            </a>
+                            . He told us many valuable insights, and agreed that the problem we are focusing on has to
+                            be solved.
+                            However, we really wanted to understand, <span className="font-bold">what other problems are farmers facing,</span>{" "}
+                            how does the operation on the farm look like regarding their{" "}
+                            <span className="font-bold">manure treatment and the kind of feed they are using.</span>
+                        </p>
+
+                    </div>
+                    <p className="text-lg">
+                        To gain a comprehensive perspective, we spoke (by phone) with <span className="font-bold">40 farmers</span> from
+                        the Czech Republic and Slovakia. Curious what we were asking and what did we find out?
                     </p>
 
-                    <p className="mt-6">
-                        Anyway, read further to see what we were asking and what we found out!
+                    <p className="text-lg font-bold">What type of feed do you use as a source of protein?</p>
+
+                    <p className="text-lg">
+                        Our research showed that 50% of the surveyed farms use <span
+                        className="font-bold">soy</span> at least partly as a
+                        protein source. However, only 15% rely on it as their main protein source, primarily due to
+                        its{" "}
+                        <span className="font-bold">high cost.</span> The most common protein source is <span
+                        className="font-bold">rapeseed,</span>{" "}
+                        used by 30% of the farms. Another 7.5% combine <span
+                        className="font-bold">rapeseed and soy</span> in a 1:1 ratio.
+                        Around 20% of the farms operate organically, with their cattle grazing freely on{" "}
+                        <span className="font-bold">pastures.</span>
                     </p>
+
                 </div>
             </div>
         </div>

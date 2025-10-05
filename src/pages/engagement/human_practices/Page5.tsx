@@ -45,7 +45,7 @@ export default function HumanPracticesPage9() {
                         in research and industry – painfully slow genetic engineering. To make it faster,
                         we had to leave callus out of the process and somehow obtain stable transformants
                         directly from fronds (more information about frond-mediated transformation at{" "}
-                        <a href="#" className="text-green-700 underline hover:text-green-900">
+                        <a href="/project/how/taifr/overview" className="text-green-700 underline hover:text-green-900">
                             TAIFR page
                         </a>
                         ). Why couldn’t duckweed, with its strong regeneration, produce transgenic offsprings
@@ -140,25 +140,22 @@ export default function HumanPracticesPage9() {
                     <p>
                         Take a look how we are building our own version of fast and reliable system for
                         duckweed transformation –{" "}
-                        <a href="#" className="text-green-700 underline hover:text-green-900">
+                        <a href="/project/how/taifr/overview" className="text-green-700 underline hover:text-green-900">
                             TAIFR
                         </a>
                         , identified and created strong endogenous duckweed{" "}
-                        <a href="#" className="text-green-700 underline hover:text-green-900">
+                        <a href="/project/how/promoters" className="text-green-700 underline hover:text-green-900">
                             PROMOTERS
                         </a>
                         , eased scaling of duckweed cultivation with our{" "}
-                        <a href="#" className="text-green-700 underline hover:text-green-900">
+                        <a href="/project/how/cultivator" className="text-green-700 underline hover:text-green-900">
                             CULTIVATOR
                         </a>{" "}
                         and{" "}
-                        <a href="#" className="text-green-700 underline hover:text-green-900">
+                        <a href="/project/how/predictor/in-silico-cultivation" className="text-green-700 underline hover:text-green-900">
                             PREDICTOR
                         </a>
-                        . Watch how we made
-                        <a href="#" className="text-green-700 underline hover:text-green-900">
-                            duckweed programmable and predictable!
-                        </a>
+                        . Watch how we made duckweed programmable and predictable!
                     </p>
                 </div>
             </div>
@@ -204,7 +201,7 @@ export default function HumanPracticesPage9() {
                     <p>
                         We knew we would be using a version of TATSI for direct frond transformation of
                         duckweed and proposed a solution optimized for it –{" "}
-                        <a href="#" className="text-green-700 underline hover:text-green-900">
+                        <a href="/project/how/taifr/overview" className="text-green-700 underline hover:text-green-900">
                             TAIFR
                         </a>{" "}
                         (Transposase-Assisted Insertion and Frond Regeneration).
@@ -225,7 +222,7 @@ export default function HumanPracticesPage9() {
 
                     <p>
                         We also designed{" "}
-                        <a href="#" className="text-green-700 underline hover:text-green-900">
+                        <a href="engineering" className="text-green-700 underline hover:text-green-900">
                             regeneration assay
                         </a>
                         , that is meant to insert the gene of interest into the duckweed genome, together
@@ -318,12 +315,12 @@ export default function HumanPracticesPage9() {
                         </p>
 
                         {/* Two-column layout with image + text */}
-                        <div className="grid md:grid-cols-2 gap-8 items-start">
+                        <div className="grid md:grid-cols-2 gap-8 items-center">
                             <div className="flex justify-center">
                                 <img
-                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/5-5.webp"
+                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-1.webp"
                                     alt="Team photo at GMI Vienna"
-                                    className="rounded-2xl max-w-md"
+                                    className="rounded-2xl max-w-sm"
                                 />
                             </div>
 

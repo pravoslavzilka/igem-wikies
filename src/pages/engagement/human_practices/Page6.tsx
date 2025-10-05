@@ -25,7 +25,7 @@ export default function HumanPracticesPage6() {
                     {/* Right column: image */}
                     <div className="flex justify-center">
                         <img
-                            src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-1.webp"
+                            src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-2.webp"
                             alt="Hands-on session at GMI with duckweed infiltration"
                             className="rounded-2xl max-w-md"
                         />
@@ -53,9 +53,30 @@ export default function HumanPracticesPage6() {
             <div
                 className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-8">
 
+                {/* Dr. Moravec pill */}
+                <ExpandablePill
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-3.webp"
+                    name="Dr. Tomáš Moravec"
+                    subtitle="Institute of Experimental Botany"
+                    location="Plant Transformations and Molecular Biology"
+                    defaultOpen={true}
+                >
+                    <p className="text-lg">
+                        <span className="font-bold">Dr. Moravec</span> helped us to a great extent in the beginning when
+                        we were
+                        struggling with the basics of{" "}
+                        <span className="font-bold ">plant transformations and cloning</span>.
+                        He advised us on our plasmid designs and transformation processes – read more at{" "}
+                        <a href="#" className="text-green-700 underline hover:text-green-900">
+                            Attribution page
+                        </a>.
+                    </p>
+                </ExpandablePill>
+
+
                 {/* Dr. Boisivon pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-2.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-4.webp"
                     name="Dr. Hélène Robert Boisivon"
                     subtitle="Central European Institute of Technology"
                     location="Plant Synthetic Biology"
@@ -72,7 +93,7 @@ export default function HumanPracticesPage6() {
 
                 {/* Matúš Pešta pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-3.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-8.webp"
                     name="MSc. Matúš Pešta"
                     subtitle="Microbial Bioengineering Laboratory"
                     location="Bacterial Synthetic Biology"
@@ -89,7 +110,7 @@ export default function HumanPracticesPage6() {
 
                 {/* Dr. Miguel da Silva pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-4.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-7.webp"
                     name="Dr. Miguel da Silva"
                     subtitle="Microbial Bioengineering Laboratory"
                     location="Bacterial Metabolic Engineering"

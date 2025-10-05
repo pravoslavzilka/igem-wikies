@@ -18,9 +18,12 @@ export default function HumanPracticesPage1() {
                     Integrated human practices
                 </h1>
 
-                {/* Big leaf image placeholder */}
-                <div className="mx-auto mb-6 h-40 w-40 bg-green-200 rounded-full flex items-center justify-center">
-                    <span className="text-green-700 text-4xl">🌿</span>
+                <div className="mb-6 px-6">
+                    <img
+                        src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/2/stakeholders-copy.webp"
+                        alt="Human Practices"
+                        className="rounded-2xl  mx-auto"
+                    />
                 </div>
 
                 {/* Subhead staggered */}
@@ -33,7 +36,7 @@ export default function HumanPracticesPage1() {
                             fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem",
                         }}
                     >
-                        XYZ stakeholders
+                        over 50 stakeholders
                     </p>
                     <p className="text-lg font-[Urbanist,sans-serif]">
                         to make something the world actually needs
@@ -151,7 +154,7 @@ export default function HumanPracticesPage1() {
                         <span className="font-bold">iGEM Startups</span> program last year (you
                         can read more about it in our{" "}
                         <a
-                            href="http://localhost:4176/engagement/entrepreneurship"
+                            href="/engagement/entrepreneurship"
                             className="text-green-700 underline hover:text-green-900"
                         >
                             entrepreneurship

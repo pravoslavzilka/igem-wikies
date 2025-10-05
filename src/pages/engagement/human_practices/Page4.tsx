@@ -95,22 +95,19 @@ export default function HumanPracticesPage6() {
                     We knew that the <span className="font-bold">duckweed cultivation </span>
                     was going to be a pain. That’s why we dedicated the whole subteam to this quest –
                     our{" "}
-                    <a
-                        href="/cultivation/hustlers"
-                        className="text-green-700 underline hover:text-green-900"
-                    >
+                    <span className="font-bold">
                         Cultivation Hustlers
-                    </a>
+                    </span>
                     . You can read how they perfected the cultivation{" "}
                     <a
-                        href="/cultivation/hardware"
+                        href="/project/how/cultivator"
                         className="text-green-700 underline hover:text-green-900"
                     >
                         hardware
                     </a>{" "}
                     and{" "}
                     <a
-                        href="/cultivation/software"
+                        href="/project/how/predictor/in-silico-cultivation"
                         className="text-green-700 underline hover:text-green-900"
                     >
                         software
