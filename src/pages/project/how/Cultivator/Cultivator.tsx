@@ -8,34 +8,39 @@ import CultivatorSec3 from "./Sec3.tsx";
 import CultivatorSec4 from "./Sec4.tsx";
 import CultivatorSec5 from "./Sec5.tsx";
 import CultivatorSec6 from "./Sec6.tsx";
-import CultivatorBillOfMaterials from "./BillOfMaterials.tsx";
+import CultivatorBuildSection from "./BillOfMaterials.tsx";
 
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import {useEffect} from 'react';
+import {useLocation} from 'react-router-dom';
 
 
 export default function LivingLayers() {
-    
+
     const location = useLocation();
 
     useEffect(() => {
         if (location.hash) {
-        const element = document.getElementById(location.hash.substring(1));
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
+            const element = document.getElementById(location.hash.substring(1));
+            if (element) {
+                element.scrollIntoView({behavior: 'smooth'});
+            }
         }
     }, [location]);
 
     return (
         <div className="bg-white text-gray-900 leading-relaxed text-justify font-[Urbanist,sans-serif] text-lg">
-            {/* Full-width hero image with floating title */}
-            <CultivatorHeader/>
+            <style>
+                {`
+          html {
+            scroll-behavior: smooth;
+          }
+        `}
+            </style>
 
+            <CultivatorHeader/>
             <CultivatorIntro/>
 
             <hr className="my-8 w-1/2 mx-auto border-t-2 border-gray-400"/>
-
 
             <CultivatorSec1/>
             <CultivatorSec2/>
@@ -43,6 +48,7 @@ export default function LivingLayers() {
             <CultivatorSec4/>
             <CultivatorSec5/>
             <CultivatorSec6/>
+            <CultivatorBuildSection/>
 
             <div className="max-w-4xl mx-auto text-center py-12">
                 {/* Heading */}
@@ -65,8 +71,6 @@ export default function LivingLayers() {
                     ></iframe>
                 </div>
             </div>
-
-            <CultivatorBillOfMaterials/>
 
 
             <References references={cultivatorReferences}/>
