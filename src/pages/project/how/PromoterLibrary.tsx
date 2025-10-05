@@ -11,6 +11,11 @@ const PromoterLibrary = () => {
 
         {/* Header */}
       <h1 className="text-4xl font-bold text-center mb-8" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+        PRMOTERS
+      </h1>
+
+
+      <h1 className="text-3xl font-bold mt-24 mb-8" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
         Duckweed promoter library
       </h1>
 
