@@ -98,6 +98,7 @@ const probeSlides: ImageSlide[] = [
         rightNote: [
             "The Light Dependent Resistors are mounted directly into the plastic tubes",
             "22 cm tubes",
+            "Full grid layout",
             "50% fewer 3D printed parts",
             "Connective pieces are 3 cm long",
             "Much more robust design",

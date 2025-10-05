@@ -3,8 +3,87 @@ import {useState} from "react";
 
 const guiSlides: ImageSlide[] = [
     {
-        src: "",
-        title: "TODO",
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/ui/1.webp",
+        title: "Home Tab",
+        rightNote: [
+            "Provides basic high level controls",
+            "Turn the Autonomous Cultivation on/off",
+            "Turn all lights on/off",
+            "Harvest all layers",
+            "Turn off all the lights, valves, pumps and automatic routines"
+        ]
+    },
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/ui/2.webp",
+        title: "Harvest Tab",
+        rightNote: [
+            "Harvest the individual layers",
+            "Stops at the optimal duckweed density which maximizes growth"
+        ]
+    },
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/ui/3.webp",
+        title: "Monitor Tab",
+        rightNote: [
+            "The top of the tab displays the development of the medium pH and electrical conductivity (EC)",
+        ]
+    },
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/ui/4.webp",
+        title: "Monitor Tab",
+        rightNote: [
+            "The lower portion of the tab displays the growth of duckweed for all individual layers",
+        ]
+    },
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/ui/5.webp",
+        title: "Fine Controls Tab",
+        rightNote: [
+            "Control all individual parts of the cultivator manually",
+            "The top of the page provides control over the lights, valves and the harvesting pump",
+            "Mainly for maintenance and development purposes",
+        ]
+    },
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/ui/6.webp",
+        title: "Fine Controls Tab",
+        rightNote: [
+            "The lower portion of the tab enables manual additive injection, medium mixing, and data collection",
+        ]
+    },
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/ui/7.webp",
+        title: "Config Tab",
+        rightNote: [
+            "The Config tab allows the researcher to configure the autonomous cultivation",
+            "Set the times the lights are turned on and off",
+            "Set how often the biomass, medium pH, and medium EC are measured",
+        ]
+    },
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/ui/8.webp",
+        title: "Config Tab",
+        rightNote: [
+            "Set how often and how much the medium in the individual layers is stirred",
+            "Set how often and how much the medium in the reservoir is mixed",
+        ]
+    },
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/ui/9.webp",
+        title: "Config Tab",
+        rightNote: [
+            "Set custom names to the additives that are currently being used",
+        ]
+    },
+    {
+        src: "https://static.igem.wiki/teams/5642/images/how/cultivator/ui/10.webp",
+        title: "Config Tab",
+        rightNote: [
+            "Set the target pH and EC for the medium",
+            "The cultivator will periodically check the state of the medium and inject nutrients as needed to maintain the settings automatically",
+            "Set the dosages for all the additives individually",
+            "Set how long the medium in the reservoir is stirred after injecting the additives"
+        ]
     },
 ];
 
