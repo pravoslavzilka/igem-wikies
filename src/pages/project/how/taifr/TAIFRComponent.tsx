@@ -24,12 +24,12 @@ const TAIFRComponent = () => {
         {/* Figure 2 - Full width centered */}
         <section className="mb-8 md:mt-24">
           <div className="text-center mb-6">
-            <div className="rounded-lg h-96 mb-4 flex items-center justify-center mx-auto">
-              <img src="https://static.igem.wiki/teams/5642/images/homepage/maingifs/igem-graf-video-updated-ezgif-com-video-to-webp-converter.webp" alt="Figure 1 - TAIFR Cover" className=' ' style={{  }} />
+            <div className="rounded-lg md:h-96 mb-4 flex items-center justify-center mx-auto">
+              <img src="https://static.igem.wiki/teams/5642/images/homepage/maingifs/igem-taifr-2.webp" alt="Figure 1 - TAIFR Cover" className=' ' style={{  }} />
             </div>
           </div>
           
-          <p>
+          <p className='md:mt-32'>
                 <strong style={{ fontWeight: 700, fontSize: '1.5rem' }}>To enable any biotechnological application based on <span style={{ color: '#6ca033' }}>duckweed</span> </strong>
                 <strong></strong>
                 <span style={{ fontWeight: 400 }}>
