@@ -202,12 +202,6 @@ export default function CultivatorSec5() {
                     control options accessible from any device on the network.
                 </p>
 
-                <p className="text-justify">
-                    All software, firmware, and design files are{" "}
-                    <span className="font-bold text-[#6ca033]">fully open-source</span> and available on our
-                    GitHub repositories [3, 4, 5], enabling others to reproduce or build upon our system.
-                </p>
-
                 <div className="mt-6 flex justify-center md:justify-center">
                     <button
                         onClick={() => setIsOpenGUISlides(true)}
@@ -216,6 +210,13 @@ export default function CultivatorSec5() {
                         Check out the GUI
                     </button>
                 </div>
+
+                <p className="text-justify">
+                    All software, firmware, and design files are{" "}
+                    <span className="font-bold text-[#6ca033]">fully open-source</span> and available on our
+                    GitHub repositories [3, 4, 5], enabling others to reproduce or build upon our system.
+                </p>
+
 
             </div>
 

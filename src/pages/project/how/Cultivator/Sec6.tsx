@@ -39,7 +39,7 @@ export default function CultivatorSec5() {
                 You can read more about these discussions and other expert consultations{" "}
                 <a
                     href="/engagement/human-practices#hw-and-cultivation"
-                    className="text-[#6ca033] font-semibold hover:underline transition-colors underline"
+                    className="text-[#6ca033] font-semibold hover:text-green-700 transition-colors underline"
                 >
                     on our Human Practices page
                 </a>
@@ -150,37 +150,41 @@ export default function CultivatorSec5() {
             </div>
 
 
-            <div className="space-y-2">
-                <p className="text-justify">
-                    The experts also proposed several directions for{" "}
-                    <span className="font-bold text-[#6ca033]">future development</span>.
-                    These included minimizing edges and corners for easier cleaning,
-                    incorporating a{" "}
-                    <span className="font-bold">double-bottom tray design</span> to protect the PROBE sensors from
-                    algae,
-                    and enabling an{" "}
-                    <span className="font-bold">automatic water replacement cycle every two months</span> to maintain
-                    optimal quality.
-                    They also suggested that the{" "}
-                    <span className="font-bold">harvesting apparatus</span> could be placed{" "}
-                    <span className="font-bold text-[#6ca033]">below the water surface</span>{" "}
-                    to minimize stress on the duckweed during collection.
-                </p>
+            <div className="grid md:grid-cols-2 gap-8 items-center my-12 px-3 sm:px-6 md:px-0">
+                <div className="flex justify-center md:justify-end mb-6 md:mb-0">
+                    <img
+                        src="https://static.igem.wiki/teams/5642/images/how/cultivator/testing/ut-3-cropped.webp"
+                        alt="Implemented improvements being tested"
+                        className="w-full max-w-[650px] rounded-lg object-contain"
+                    />
+                </div>
 
-                <p className="text-justify">
-                    Finally, to improve hygiene and reduce humidity buildup, the researchers recommended
-                    adding a small{" "}
-                    <span className="font-bold text-[#6ca033]">ventilation fan</span> to each layer — an enhancement
-                    we plan to integrate in future iterations.
-                </p>
+                <div className="space-y-2">
+                    <p className="text-justify">
+                        The experts also proposed several directions for{" "}
+                        <span className="font-bold text-[#6ca033]">future development</span>.
+                        These included minimizing edges and corners for easier cleaning,
+                        incorporating a{" "}
+                        <span className="font-bold">double-bottom tray design</span> to protect the PROBE sensors from
+                        algae,
+                        and enabling an{" "}
+                        <span className="font-bold">automatic water replacement cycle every two months</span> to
+                        maintain
+                        optimal quality.
+                        They also suggested that the{" "}
+                        <span className="font-bold">harvesting apparatus</span> could be placed{" "}
+                        <span className="font-bold text-[#6ca033]">below the water surface</span>{" "}
+                        to minimize stress on the duckweed during collection.
+                    </p>
 
-            </div>
-            <div className="flex justify-center mb-6 px-2 sm:px-4 md:px-0">
-                <img
-                    src="https://static.igem.wiki/teams/5642/images/how/cultivator/testing/ut-2.webp"
-                    alt="Researchers examining the cultivator"
-                    className="w-full max-w-[900px] rounded-lg object-contain"
-                />
+                    <p className="text-justify">
+                        Finally, to improve hygiene and reduce humidity buildup, the researchers recommended
+                        adding a small{" "}
+                        <span className="font-bold text-[#6ca033]">ventilation fan</span> to each layer — an enhancement
+                        we plan to integrate in future iterations.
+                    </p>
+
+                </div>
             </div>
 
 
@@ -193,6 +197,14 @@ export default function CultivatorSec5() {
                 helping us build a system that truly meets the needs of plant scientists —
                 bridging automation, precision, and sustainability in one platform.
             </p>
+
+            <div className="flex justify-center mb-6 px-2 sm:px-4 md:px-0">
+                <img
+                    src="https://static.igem.wiki/teams/5642/images/how/cultivator/testing/ut-2.webp"
+                    alt="Researchers examining the cultivator"
+                    className="w-full max-w-[900px] rounded-lg object-contain"
+                />
+            </div>
         </div>
     );
 }
