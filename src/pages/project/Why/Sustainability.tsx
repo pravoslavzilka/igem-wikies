@@ -101,7 +101,49 @@ const SustainabilityDocument = () => {
                 <h2 className="text-xl font-bold text-gray-900" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Responsible Consumption and Production</h2>
               </div>
               <p className="text-justify leading-relaxed text-gray-800 mb-4">
-                The circular economy, lying at the core of SDG 12, aims to create closed-loop product systems in which resources are continuously reused, recycled, and repurposed, thereby minimising the environmental burden of waste [7]. This model likewise underpins the <strong>NitroDuck</strong> project, which targets ammonium-rich liquid manure, a waste stream that, under conventional management practices, represents a significant source of nitrogen pollution in aquatic ecosystems. As an alternative, we introduced the use of liquid manure as a nutrient source for growing duckweed. This not only reduces adverse impact on environment (aligning with Target 12.4), but more importantly, valorises waste by converting it into a resource suitable for use as livestock feed which is consistent with Target 12.5. In addition, our duckweed cultivation system ensures efficient land use through its vertical design, which occupies only a small area, and optimises water use through an incorporated circulation system, both aligning with the Target 12.2.
+                
+                <p>
+                  <span style={{ fontWeight: 400 }}>
+                    The circular economy, lying at the core of SDG 12, aims to create
+                    closed-loop product systems in which resources are continuously reused,
+                    recycled, and repurposed, thereby minimising the environmental burden of
+                    waste [7]. This model likewise underpins the NitroDuck project, which
+                    targets ammonium-rich liquid manure, a waste stream that, under conventional
+                    management practices, represents a significant source of nitrogen pollution
+                    in aquatic ecosystems. As an alternative, we introduced the use of liquid
+                    manure as a nutrient source for growing duckweed. This not only{" "}
+                  </span>
+                  <strong>reduces waste with adverse impact</strong>
+                  <span style={{ fontWeight: 400 }}>
+                    {" "}
+                    on environment, but more importantly,{" "}
+                  </span>
+                  <strong>valorises waste</strong>
+                  <span style={{ fontWeight: 400 }}>
+                    {" "}
+                    by converting it into a resource suitable for use as livestock feed which is
+                    consistent with{" "}
+                  </span>
+                  <strong>Target 12.5</strong>
+                  <span style={{ fontWeight: 400 }}>
+                    . In addition, our duckweed cultivation system ensures{" "}
+                  </span>
+                  <strong>efficient land use</strong>
+                  <span style={{ fontWeight: 400 }}>
+                    {" "}
+                    through its vertical design, which occupies only a small area, and{" "}
+                  </span>
+                  <strong>optimises water use</strong>
+                  <span style={{ fontWeight: 400 }}>
+                    {" "}
+                    through an incorporated circulation system, both aligning with the{" "}
+                  </span>
+                  <strong>Target 12.2</strong>
+                  <span style={{ fontWeight: 400 }}>.</span>
+                </p>
+
+                
+                
               </p>
               <p className="text-justify leading-relaxed text-gray-800">
                 Finally, through outreach and educational activities of iGEM Brno team, we raise awareness of more sustainable agriculture practices and promote innovation in nutrient recycling and feed production, supporting also Target 12.8.
