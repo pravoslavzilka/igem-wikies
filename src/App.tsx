@@ -57,6 +57,7 @@ import CrowdfundingStory from './pages/engagement/CrowdfundingStory';
 import Partners from './pages/duckweed_mafia/Partners';
 import DuckweedSafety from './pages/duckweed_mafia/DuckweedSafety';
 import DuckweedMafia from './pages/duckweed_mafia/DuckweedMafia';
+import DuckweedToolbox from "./pages/toolbox/DuckweedToolbox..tsx";
 
 
 
@@ -104,6 +105,8 @@ function App() {
           <Route path="/toolbox/programable-duckweed-protocol/" element={<TransformationProtocol />} />
           <Route path="/toolbox/agrobacterium-mediated-transformation-protocol/" element={<AgrobacteriumProtocol />} />
           <Route path="/toolbox/vacuum-infiltration-testing/" element={<VacuumInfiltrationTesting />} />
+
+          <Route path="/toolbox/programmable-duckweed/plant-synbio" element={<DuckweedToolbox />} />
 
 
 
