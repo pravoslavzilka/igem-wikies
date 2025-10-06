@@ -11,11 +11,11 @@ const PromoterLibrary = () => {
 
         {/* Header */}
       <h1 className="text-4xl font-bold text-center mb-8" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-        PRMOTERS
+        PROMOTERS
       </h1>
 
 
-      <h1 className="text-3xl font-bold mt-24 mb-8" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+      <h1 className="text-3xl font-bold mt-24 mb-8 text-center" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
         Duckweed promoter library
       </h1>
 
@@ -30,10 +30,7 @@ const PromoterLibrary = () => {
         duckweed species. We created 15 constructs to test and quantify their expression.
       </p>
 
-      <p className="text-center text-md mb-8 leading-relaxed" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-        Now, anyone can easily use one of our native duckweed promoters to express any gene of
-        interest!
-      </p>
+ 
 
       {/* Why Section */}
       <div className="mb-8">
