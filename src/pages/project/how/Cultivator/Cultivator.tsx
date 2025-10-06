@@ -50,7 +50,7 @@ export default function LivingLayers() {
             <CultivatorSec6/>
             <CultivatorBuildSection/>
 
-            <div className="max-w-4xl mx-auto text-center py-12">
+            <div className="max-w-4xl mx-auto text-center py-12 space-y-12">
                 {/* Heading */}
                 <h2 className="text-2xl font-bold text-green-600 mb-6"
                     style={{
@@ -63,13 +63,14 @@ export default function LivingLayers() {
                 {/* Video embed */}
                 <div className="relative w-full aspect-video max-w-6xl mx-auto rounded-lg overflow-hidden shadow-lg">
                     <iframe
-                        className="absolute inset-0 w-full h-full"
-                        src="https://www.youtube.com/watch?v=0VAylWxDQfk"
-                        title="Duckweed Cultivator Demo"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        title="Brno Czech Republic: Routine of Duckweed Scientist (2025) [English]"
+                        src="https://video.igem.org/videos/embed/hzm6HwsSLh8cFgNbbXwcck"
+                        className="absolute top-0 left-0 w-full h-full"
+                        sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
                         allowFullScreen
                     ></iframe>
                 </div>
+
             </div>
 
 
