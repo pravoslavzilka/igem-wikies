@@ -183,39 +183,56 @@ export default function CultivatorSec5() {
                     />
                 </div>
 
+                <div className="grid md:grid-cols-2 gap-8 items-center">
+                    <div className="space-y-6 max-w-md">
+                        <p className="text-justify">
+                            Each <span className="font-bold text-[#6ca033]">ESP32</span> handles specific
+                            subsystems—such as LED grow lights, electromagnetic valves, or pumps—based on
+                            commands sent by the Raspberry Pi. The result is a{" "}
+                            <span
+                                className="font-bold text-[#6ca033]">modular and fault-tolerant architecture</span>{" "}
+                            that simplifies maintenance and scalability.
+                        </p>
 
-                <p className="text-justify">
-                    Each <span className="font-bold text-[#6ca033]">ESP32</span> handles specific
-                    subsystems—such as LED grow lights, electromagnetic valves, or pumps—based on
-                    commands sent by the Raspberry Pi. The result is a{" "}
-                    <span className="font-bold text-[#6ca033]">modular and fault-tolerant architecture</span>{" "}
-                    that simplifies maintenance and scalability.
-                </p>
-
-                <p className="text-justify">
-                    Users interact with the system through a{" "}
-                    <span className="font-bold text-[#6ca033]">
+                        <p className="text-justify">
+                            Users interact with the system through a{" "}
+                            <span className="font-bold text-[#6ca033]">
             web-based graphical interface (GUI)
           </span>
-                    , hosted directly on the Raspberry Pi. The GUI offers a{" "}
-                    <span className="font-bold">real-time dashboard</span> with live system data and
-                    control options accessible from any device on the network.
-                </p>
+                            , hosted directly on the Raspberry Pi. The GUI offers a{" "}
+                            <span className="font-bold">real-time dashboard</span> with live system data and
+                            control options accessible from any device on the network.
+                        </p>
 
-                <div className="mt-6 flex justify-center md:justify-center">
-                    <button
-                        onClick={() => setIsOpenGUISlides(true)}
-                        className="text-green-600 hover:text-green-800 font-semibold text-2xl underline"
-                    >
-                        Check out the GUI
-                    </button>
+                        <p className="text-justify">
+                            All software, firmware, and design files are{" "}
+                            <span className="font-bold text-[#6ca033]">fully open-source</span> and available on our
+                            GitHub repositories [3, 4, 5], enabling others to reproduce or build upon our system.
+                        </p>
+                    </div>
+
+                    <div>
+
+                        <div className="flex justify-center mb-6 md:mb-0">
+                            <img
+                                src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/cultivator-gui-1.webp"
+                                className="w-full max-w-4xl rounded-lg object-contain"
+                                alt="Cultivator suitcase"
+                            />
+                        </div>
+
+
+                        <div className="mt-6 flex justify-center md:justify-center">
+                            <button
+                                onClick={() => setIsOpenGUISlides(true)}
+                                className="text-green-600 hover:text-green-800 font-semibold text-2xl underline"
+                            >
+                                Check out the GUI
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
-
-                <p className="text-justify">
-                    All software, firmware, and design files are{" "}
-                    <span className="font-bold text-[#6ca033]">fully open-source</span> and available on our
-                    GitHub repositories [3, 4, 5], enabling others to reproduce or build upon our system.
-                </p>
 
 
             </div>
