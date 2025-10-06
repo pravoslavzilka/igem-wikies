@@ -7,7 +7,7 @@ export default function RegenerationAssayPoster() {
       <div className="max-w-7xl mx-auto">
         {/* Title */}
         <h1 style={{ fontFamily: 'Space Grotesk, sans-serif'}} className="text-6xl mt-24 font-bold text-center mb-8 tracking-tight">
-          REGENERATION ASSAY
+          TAIFR - engineering
         </h1>
         
         {/* Introduction */}
@@ -32,8 +32,7 @@ export default function RegenerationAssayPoster() {
           <p className="mb-4">
             To develop TAIFR, we performed the Regeneration Assay, consisting of four and half DBTL cycles, which resulted in a 
             pair of customizable parts that enable anyone to insert any gene into the duckweed nuclear genome (<a href="#" className="text-blue-600 underline">discover more 
-            about parts here</a>). We confirmed stable insertion of our transgene into the duckweed nuclear genome by observing 
-            fluorescence signal (see Fig. xy), PCR (see Fig. xy), and by the fact that fronds transformed by the TAIFR method survived 
+            about parts here</a>). We confirmed stable insertion of our transgene into the duckweed nuclear genome by observing fluorescence signal (see Fig. 2), PCR (see Fig. 3) and by the fact that fronds transformed by the TAIFR method survived 
             10 - 20-fold higher neomycin concentrations than the wild-type duckweeds. Although we succeeded in the first part of 
             TAIFR (transposase-assisted insertion), we did not in the second (whole transgenic frond regeneration), partly due to five 
             failed regeneration iterations caused by transformation-efficiency issues (<a href="#" className="text-blue-600 underline">read more here</a>), and partly because we were 
@@ -98,16 +97,16 @@ export default function RegenerationAssayPoster() {
               <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure3.webp" alt="Figure 3: Regenerated Transgenic Frond" className="max-w-full h-auto" />
 
                 <p className="text-base leading-relaxed mt-10">
-                    <strong>Figure 3.</strong> Fronds of Spirodela polyrhiza 7428 (Sp7428) were co-transformed with two Agrobacterium cultures: one carrying pIB005 (mPing-bordered GFP-p2a-NPTII unit) and the other carrying pIB003 (PONG transposase). GFP fluorescence spots appeared 12 days post-infiltration (dpi) (see Fig. 2.4). At 18 dpi, all transformed fronds were transferred to medium containing 5 mg/L G418 - ten times higher than the tolerance threshold of Sp7428 (0.5 mg/L). As a control, fronds transformed only with pIB003 (no resistance gene present) were placed on the same concentration at the same time. By 24 dpi, all non-transformed fronds had died (1), while some transformed fronds - specifically the daughter fronds - survived and appeared healthy (2), though smaller. Surprisingly, these daughter fronds showed no GFP fluorescence, not even as localized spots - that is why we performed PCR to find out if transgene was there
+                    <strong>Figure 3.</strong> Fronds of Spirodela polyrhiza 7428 (Sp7428) were co-transformed with two Agrobacterium cultures: one carrying pIB005 (mPing-bordered GFP-p2a-NPTII unit) and the other carrying pIB003 (PONG transposase). GFP fluorescence spots appeared after 12th day post-infiltration (dpi) (see Fig. 2.4). At 18 dpi, all transformed fronds were transferred to medium containing 5 mg/L G418 - ten times higher than the tolerance threshold of Sp7428 (0.5 mg/L). As a control, fronds transformed only with pIB003 (no resistance gene present) were placed on the same concentration at the same time. By 24 dpi, all non-transformed fronds had died (1), while some transformed fronds - specifically the daughter fronds - survived and appeared healthy (2), though smaller. Surprisingly, these daughter fronds showed no GFP fluorescence, not even as localized spots - that is why we performed PCR to find out if transgene was there
                     </p>
 
             </div>
 
-            <div className='col-span-2   flex items-center justify-center'>
+            <div className='col-span-2  items-center justify-center'>
+              <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/taifr-pcr-simplified.webp" alt="Figure 4: PCR for GFP on Genomic DNA from Regenerated Frond" className="max-w-full h-auto" />
                 <p className="text-base leading-relaxed mt-10">
                     <strong>Figure 4. </strong> 
-                     PCR for GFP on genomic DNA from RA4.1 (duckweeds co-transformed with pIB005 and pIB003) surviving on 5 mg/L G418 (toxic concentration) confirmed the presence of the GFP gene linked to the NPTII gene (G418 resistance). However, GFP expression (green fluorescence) was observed only as randomly distributed spots, likely in amounts sufficient to confer resistance to G418.
-
+                    Genomic DNA isolated from Spirodela polyrhiza 7428 at 30 days post co-transformation with pIB005 and pIB003 (iteration RA4.1) was amplified using primers o128 and o129, tested for the presence of GFP - presumably inserted into the genome via PONG transposase activity from pIB003. It yielded the expected 250 bp product in 9 out of 20 samples. The first negative control (genomic DNA from non-transformed S. polyrhiza) did not yield any bands, as expected. The second negative control (water instead of DNA) also showed no amplification. The positive control (pIB005 construct) yielded the expected 250 bp band.
                      </p>
 
             </div>
@@ -128,7 +127,7 @@ export default function RegenerationAssayPoster() {
                     contains a cassette flanked on both sides by the non-transposable element mPing. Inside 
                     the cassette, there is a resistance gene against neomycin (NPTII) followed by green 
                     fluorescent protein (GFP), both genes are linked by a self-cleaving 2A peptide derived 
-                    from porcine teschovirus-1 (p2a), allowing for their parallel expression. This design 
+                    from <em>porcine teschovirus-1</em> (p2a), allowing for their parallel expression. This design 
                     minimizes the overall cassette size, resulting in higher transformation efficiency. Open 
                     reading frame of NPTII-p2a-GFP is driven by the ubiquitin promoter from Zea mays 
                     (rZmUBI) and terminated by terminator sequence from Cauliflower Mosaic Virus (t35S). 
@@ -237,13 +236,11 @@ export default function RegenerationAssayPoster() {
           <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">TEST – transformation</h3>
           <p className="mb-6 leading-relaxed">
             We co-transformed pIB001 with pEGe into Spirodela polyrhiza 0162, Spirodela polyrhiza 7428, and Spirodela polyrhiza 
-            9509. We also included the following controls: pIB001 alone, pEGe alone as a negative control, pIB001 with pEGe without 
-            neomycin addition, and pAMO101 alone (rZmUBI-GFP-t35S from Dr. Ordóñez) as a positive control. Under fluorescence 
+            9509. We also included the following controls: pIB001 alone, pEGe alone as a negative control, and pAMO101 alone (rZmUBI-GFP-t35S from Dr. Ordóñez) as a positive control. Under fluorescence 
             microscopy, we observed green fluorescence in pAMO101 around 6 days post-infiltration. No fluorescence was observed 
             in pEGe alone, as expected. However, in pIB001 alone or in pIB001 co-transformed with pEGe, fluorescence was 
             expected but not observed. We repeated the microscopic observation at 12 days post-infiltration (12 dpi), and we detected 
-            a small amount of fluorescence in pIB001. However, the fluorescence intensity of pIB001 was significantly lower compared 
-            to pAMO101 (see Fig. XY). Importantly, no fluorescence was detected in duckweed co-transformed with pIB001 and 
+            a small amount of fluorescence in pIB001. However, the fluorescence intensity of pIB001 was significantly lower compared to pAMO101 (see Fig. 5). Importantly, no fluorescence was detected in duckweed co-transformed with pIB001 and 
             pEGe.
           </p>
 
@@ -354,7 +351,7 @@ export default function RegenerationAssayPoster() {
             (YFP + mPing) indicates failure.
           </p>
 
-          <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/excision-assay-copy.webp" alt="Excision Assay Diagram" className="max-w-full h-auto mb-6" />
+          <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/excision-assay-copy2.webp" alt="Excision Assay Diagram" className="max-w-full h-auto mb-6" />
 
          
           
@@ -396,7 +393,7 @@ export default function RegenerationAssayPoster() {
           <div className='mb-6 mt-16 text-2xl' style={{ fontFamily: 'Space Grotesk, sans-serif' }} > 
             <b>1st iteration: insertion of mPing before GFP by SpeI into pAMO101</b>
           </div>     
-          <p>To test whether PONG can excise mPing positioned upstream of GFP, we first had insert it to this desired location. To this end, we planned to use the SpeI restriction site conveniently located between rZmUbi and GFP in pAMO101.
+          <p>To test whether PONG can excise mPing positioned upstream of GFP, we first had insert it to this desired location. To this end, we planned to use the SpeI restriction site conveniently located between rZmUBI and GFP in pAMO101.
                 </p>
           
           <p className="mb-2 font-semibold mt-4">Steps:</p>
@@ -437,7 +434,6 @@ export default function RegenerationAssayPoster() {
                 </li>
                 <li>
                     Digestion and ligation of above mentioned Level 1 construct into acceptor pH4t with end-linker pB5T using Bsbi resulted into pIB004_rZmUBI-mPing-GUS-t35S. The assembly was confirmed by sequencing.
-                    Digestion and ligation of above mentioned Level 1 construct into acceptor pH4t with end-linker pB5T using Bsbi resulted into pIB004_rZmUBI-mPing-GUS-t35S. The assembly was confirmed by sequencing.
 
                 </li>
                 
@@ -446,7 +442,7 @@ export default function RegenerationAssayPoster() {
 
             <p className="mb-2 font-semibold mt-4 ">Outcome:</p>
             <p className='pb-8'>
-                We obtained the correctly assembled construct pIB004_rZmUBI-mPing-GUS-t35S, verified by whole plasmid sequencing. However, we realized that since our mPing, when cloned as an N-terminal tag has a start codon at the 3’ end (downstream of all stop codons) that fits the reading frame of the downstream GUS gene. This could lead to the expression of GUS (or any other reporter) even in the absence of PONG excision activity. Therefore, we abandoned this approach and did not perform any plant transformations.
+                We obtained the correctly assembled construct pIB004_rZmUBI-mPing-GUS-t35S, verified by whole plasmid sequencing. However, the insertion of mPing as N-terminal tag somehow created start codon, that fits the reading frame of the downstream GUS gene at the end of mPing, after all those stop codons… Therefore, we abandoned this approach and did not perform any plant transformations.
             </p>
           </div>
 
@@ -531,8 +527,8 @@ export default function RegenerationAssayPoster() {
                   </p>
 
                 <p className='mt-4 leading-relaxed'>
-                  When we performed PCR on the Excision Assay (see Fig. 8), we detected two bands of different lengths (~1200 bp and ~750 bp). The smaller band, representing the YFP sequence without mPing (thus indicating excision), was much thinner. This could suggest that excision is not very efficient or frequent. Alternatively, as Dr. Slotkin suggested, excision might occur efficiently, but repair of the excised sequence may be disfavored. Consequently, only a small proportion of sequences would have their YFP coding frame properly restored, resulting in fewer templates available for PCR amplification of the 750 bp band. 
-                 </p>
+                   When we performed PCR on the Excision Assay (see Fig. 8), we detected two bands of different lengths (936bp and 490bp). The smaller band, representing the YFP sequence without mPing (thus indicating excision), was much thinner. This could suggest that excision is not very efficient or frequent. Alternatively, as Dr. Slotkin suggested, excision might occur efficiently, but repair of the excised sequence may be disfavored. Consequently, only a small proportion of sequences would have their YFP coding frame properly restored, resulting in fewer templates available for PCR amplification of the 490bp band.
+                   </p>
 
                  <p className='mt-4 leading-relaxed'>
 
@@ -542,10 +538,10 @@ export default function RegenerationAssayPoster() {
 
             </div>
             <div className='col-span-2  items-center justify-center'> 
-                <img src="" alt="Figure 7.3: Excision Assay Results" className="max-w-full h-auto mb-4" />
+                <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/excision-assay-pcr.webp" alt="Figure 7.3: Excision Assay Results" className="max-w-full h-auto mb-4" />
                 <p className='text-base leading-relaxed'>
                   <b>Figure 8. </b>
-                      Using primers o136 and o137, we amplified genomic DNA isolated from Spirodela polyrhiza 7428 co-transformed with pIB004 and pEGe. The forward primer (o136) is specific to the 5′ end of the YFP–mPing–YFP sequence, while the reverse primer (o137) targets the 3′ end of the same sequence. When mPing is present within the YFP coding sequence, the expected amplicon length is 1178 bp; when mPing is excised, the expected product is 748 bp.PCR analysis of the Excision Assay produced two bands—one approximately 1200 bp (a) and one approximately 750 bp (b)—indicating that PONG successfully excised mPing from the YFP sequence in the duckweed nucleus, thus confirming its functionality. However, the excision efficiency appears to be low, as the ~750 bp band (representing YFP without mPing) was visibly weaker than the original longer band where PONG had not acted.       
+                  Using primers o136 and o137, we amplified genomic DNA isolated from Spirodela polyrhiza 7428 co-transformed with pIB004 and pEGe. The forward primer (o136) is specific to the 5′ end of the YFP–mPing–YFP sequence, while the reverse primer (o137) targets the 3′ end of the same sequence. When mPing is present within the YFP coding sequence, the expected amplicon length is 936 bp; when mPing is excised, the expected product is 490 bp. PCR analysis of the excision assay produced two bands — one slightly below 1000 bp and one slightly below 500 bp — indicating that PONG successfully excised mPing from the YFP sequence in the duckweed nucleus, thus confirming its functionality. The control (pIB004 alone) yielded only the longer band (936 bp), as mPing remained within the YFP sequence and could not be excised due to the absence of PONG (from pEGe). The control (pEGe alone) did not yield any band, as YFP is not included in its construct. The resulting image represents a stitch of two gels, used to illustrate a slight increase in the size of the restored YFP band between DNA samples collected at 6 dpi and 18 dpi. We hypothesize that the band increased in size because PONG had more time to act upon mPing within the YFP sequence.
                 </p>
             </div>
 
@@ -568,7 +564,7 @@ export default function RegenerationAssayPoster() {
                     element mPing with correct TTA sites at the 5' end of 0.5mPing and at the 3' end of 
                     1.0mPing. Inside the cassette, there is a fluorescent marker (GFP) and a resistance gene 
                     against neomycin (NPTII). Both GFP and NPTII are linked via a self-cleaving 2A peptide 
-                    (derived from porcine teschovirus-1, p2a), allowing their parallel expression. The 
+                    (derived from <em>porcine teschovirus-1</em>, p2a), allowing their parallel expression. The 
                     GFP-p2a-NPTII ORF is driven by the ubiquitin promoter from Zea mays (rZmUBI) and 
                     terminated by terminator sequence from Cauliflower Mosaic Virus (t35S). This design 
                     minimizes the overall cassette size, resulting in higher insertion efficiency. Expression 
@@ -596,11 +592,11 @@ export default function RegenerationAssayPoster() {
                     Plasmid pIB003 is carrying ORFs for two PONG transposase subunits, separated by 
                     self-cleaving 2A peptide from Thosea asigna virus (t2a) with nuclear localization sequence 
                     (NLS), linked with red fluorescent protein (RFP) by a self-cleaving 2A peptide derived from 
-                    porcine teschovirus-1 (p2a). Expression of PONG-p2a-RFP is driven by ubiquitin promoter 
+                    <em>porcine teschovirus-1</em> (p2a). Expression of PONG-p2a-RFP is driven by ubiquitin promoter 
                     from Zea mays (rZmUBI) and terminated by terminator sequence derived from Cauliflower 
                     Mosaic Virus (t35S). Both PONG and p2a-RFP are duckweed-codon optimized. 
                     Expression cassette is bordered by T-DNA allowing for Agrobacterium-mediated 
-                    transformation and lies in binary vector, allowing for replication both in E.c oli and in 
+                    transformation and lies in binary vector, allowing for replication both in E.coli and in 
                     Agrobacterium tumefaciens.
                 </p>
             </div>
@@ -682,7 +678,6 @@ export default function RegenerationAssayPoster() {
                     <li>pIB002</li>
                     <li>pIB003</li>
                     <li>pIB002 x pIB003</li>
-                    <li>wild type Spirodela polyrhiza 7428: negative control</li>
                 </ul>
 
                 <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4 mt-12">TESTING – neomycin test</h3>
@@ -734,7 +729,7 @@ export default function RegenerationAssayPoster() {
                 <div className="mb-6">
                     <p className="font-semibold mb-2">Synthetic neomycin (G418) kills duckweed at concentrations above 0.5 mg/L</p>
                     <p className="mb-4 leading-relaxed">
-                    This was observed in our neomycin test conducted on three clones of Spirodela polyrhiza (162, 7428, 9509) using both natural (sulphate) and synthetic (G418) forms of neomycin (see Fig. xy).
+                    This was observed in our neomycin test conducted on three clones of Spirodela polyrhiza (162, 7428, 9509) using both natural (sulphate) and synthetic (G418) forms of neomycin (see Fig. 11).
                     </p>
                 </div>
 
@@ -766,7 +761,7 @@ export default function RegenerationAssayPoster() {
           </div>
 
           <p className="mb-4 leading-relaxed">
-            <strong>There were spots of GFP fluorescence in transformed duckweeds, likely as a results of genomic insertion. 
+            <strong>There were spots of GFP fluorescence in transformed duckweeds (see Fig. 15), as a results of genomic insertion.
             However, what if Agrobacterium is unable to reach the meristematic cells of duckweed, and the PING-PONG 
             system therefore cannot insert the transgene into cells with the sufficient capacity to give rise to a whole new 
             transgenic frond?</strong>
@@ -795,7 +790,7 @@ export default function RegenerationAssayPoster() {
                     Plasmid pIB005 contains a cassette flanked on both sides by the non-transposable 
                     element mPing. Inside the cassette, there is a fluorescent marker (GFP) and a resistance 
                     gene against neomycin (NPTII). Both GFP and NPTII are linked by a self-cleaving 2A 
-                    peptide (derived from porcine teschovirus-1), allowing their parallel expression. The 
+                    peptide (derived from <em>porcine teschovirus-1</em>), allowing their parallel expression. The 
                     GFP-p2A-NPTII ORF is driven by the ubiquitin promoter from Zea mays (rZmUBI) and 
                     terminated by the Cauliflower Mosaic Virus terminator sequence (t35S). This design 
                     minimizes the overall cassette size, resulting in higher insertion efficiency. The gene for 
@@ -899,7 +894,7 @@ export default function RegenerationAssayPoster() {
 
 
 
-          <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure13.webp" alt="Description of image" className="max-w-full h-auto mb-6" />
+          <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure14.webp" alt="Description of image" className="max-w-full h-auto mb-6" />
 
          <p className='mt-10 mb-6 leading-relaxed text-base'>
           <p>
@@ -948,7 +943,7 @@ export default function RegenerationAssayPoster() {
                 hundreds of co-transformed duckweeds under different post-infiltration
                 conditions{" "}
                 </strong>
-                <span style={{ fontWeight: 400 }}>(see Figure xy) and waited.</span>
+                <span style={{ fontWeight: 400 }}>(see Figure 14) and waited.</span>
             </p>
             <p className='mt-8'>
                 <br />
@@ -963,7 +958,7 @@ export default function RegenerationAssayPoster() {
                 </span>
                 <strong>concentrations exceeded the survival threshold </strong>
                 <span style={{ fontWeight: 400 }}>
-                (0.5 mg/L) determined during the neomycin sensitivity test (see Fig. xy),
+                (0.5 mg/L) determined during the neomycin sensitivity test (see Fig. 11),
                 by 10-fold and 20-fold, respectively. The majority of duckweeds died, but{" "}
                 </span>
                 <strong>
@@ -1002,25 +997,16 @@ export default function RegenerationAssayPoster() {
 
           <p className="mb-6 leading-relaxed">
             To determine whether our translational cassette was truly inserted (as suggested by the GFP spots and survival at 
-            10 mg/L G418), we performed PCR to check for the presence of the GFP gene (using primers o128 and o129) and 
-            the NPTII-1.0mPing sequence (using primers o156 and o157) in the surviving duckweeds. All samples were positive 
-            (see Fig. xy). However, we realized this could also have been due to residual Agrobacterium containing our binary 
-            vectors. To test this, we performed another PCR using primers (o55 and o56) specific for Agrobacterium genomic 
-            DNA. Unfortunately, Agrobacterium DNA was detected in all samples (see Fig. xy). This is why we proceeded with a 
-            Western Blot specific for GFP.
+            10 mg/L G418), we performed PCR to check for the presence of the GFP gene (using primers o128 and o129). As our advisor, Dr. Ordonez, found that Agrobacterium can survive in duckweeds for a prolonged period (up to several weeks), we aimed to eliminate the possibility of detecting GFP originating from the presence of our binary vector pIB005 in residual Agrobacterium cells within the duckweeds. First, we continuously grew the duckweeds on DPIM medium containing high concentrations (400 mg/L) of Ticarcillin and Cefotaxime, which makes it very difficult for Agrobacterium to survive. Second, at 24 days post-infiltration (6 days before DNA isolation), we washed and transferred all surviving duckweeds into fresh well plates to further minimize bacterial contamination. Third, we ran the isolated genomic DNA on a gel for 2 hours and excised only the uppermost band, thereby separating Agrobacterium DNA (smaller and thus migrating faster) from plant genomic DNA (larger and migrating more slowly). Finally, using the same DNA samples, we performed another PCR with primers o55 and o56, which are specific to Agrobacterium genomic DNA, to confirm the absence of its contamination. Our measures ensured the removal of Agrobacterium in 17 out of the 20 samples tested (see lower part of Fig. 17). We detected GFP in 9 out of 20 DNA samples from duckweed subjected to our regeneration assay, and in 7 of these, no Agrobacterium DNA was present. Thus, we confirmed that our Transposase-Assisted Insertion system is indeed capable of inserting an mPing-bounded transgene into the duckweed frond.
           </p>
 
-          <div className='grid grid-cols-1 md:grid-cols-5 gap-4 mb-6 mt-8'>
-            <div className='col-span-4  items-center justify-center'>
-                <div className="bg-gray-200 h-64 flex items-center justify-center mb-6">
-                    <span className="text-gray-500">[PCR Figure 17]</span>
-                </div>
-            </div>
-            <div className='col-span-1  flex items-center justify-center'>
-                <p className='text-base leading-relaxed'>
-                    Figure 17. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, </p>
-            </div>
-          </div>
+          
+                <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure17-2.webp" alt="Description of image" className="max-w-full h-auto mb-4" />
+            
+          <p className='text-base leading-relaxed mb-12'>
+                    <b>Figure 17. </b>
+                    Genomic DNA isolated from Spirodela polyrhiza 7428 at 30 days post co-transformation with pIB005 and pIB003 (iteration RA4.1) was separated on a gel from to avoid conceivable Agrobacterium DNA contamination, purified, and subsequently subjected to two PCR reactions. The first reaction (upper gel), using primers o128 and o129, tested for the presence of GFP - presumably inserted into the genome via PONG transposase activity from pIB003. It yielded the expected 250 bp product in 9 out of 20 samples. The second reaction (lower gel), using primers o55 and o56, tested for the presence of Agrobacterium DNA in the samples to rule out the possibility that GFP was present in the form of the binary vector pIB005 residing in Agrobacterium. This reaction produced the expected product in 3 out of 20 samples, indicating that GFP detection in 7 out of 20 samples resulted from Transposase-Assisted Insertion. The first negative control (genomic DNA from non-transformed S. polyrhiza) did not yield any bands, as expected. The second negative control (water instead of DNA) also showed no amplification. The positive control (pIB005 construct) yielded the expected 250 bp band.
+                </p>
 
           <p className="mb-6 leading-relaxed">
             Wondering how the regeneration attempts turned out in RA3.2, 3.3, 3.4, 3.5, and 3.6? We are too… As the Wiki 
@@ -1043,7 +1029,26 @@ export default function RegenerationAssayPoster() {
         <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure17.webp" alt="Description of image" className="max-w-full h-auto mb-6" />
         <p className='text-base leading-relaxed mb-12 mt-10'>
           <b>Figure 17. </b>After three DBTL cycles of the “PING part” (mPing-bordered cargo rZmUBI-GFP-p2a-NPTII-t35S) of our TAIFR method, we built and tested a functional and user-friendly composite part, pIB005, which—compared to pIB001 and pIB002—showed the greatest difference in fluorescence between groups of “non-shining” and “shining” duckweeds, normalized on each plate. However, the intensity of its fluorescence was approximately half that of the positive control (pAMO101). We do not yet fully understand the reason for this, but a probable explanation is a difference in the plasmid backbone, resulting in a lower copy number of the binary vector in Agrobacterium, and consequently, a smaller amount of T-DNA transferred to duckweed. Nevertheless, the fluorescence of pIB005 is clearly visible and is expressed as early as in the positive control. Combined with GFP being swappable as the CDS1 part (with no stop codon) and the excisability of the p2a-NPTII resistance marker via mutated lox71 and lox66 sites (not yet tested), this composite part represents a crucial element of our TAIFR method.
-        </p>      
+        </p>    
+
+
+        <p className="mb-4 leading-relaxed">
+            <strong>There were spots of GFP fluorescence in transformed duckweeds (see Fig. 15), as a results of genomic insertion.
+            However, what if Agrobacterium is unable to reach the meristematic cells of duckweed, and the PING-PONG 
+            system therefore cannot insert the transgene into cells with the sufficient capacity to give rise to a whole new 
+            transgenic frond?</strong>
+          </p>
+
+          <p className="mb-4 leading-relaxed">
+            This is what our advisor, Dr. Ordóñez, proposed when we showed him the results. We could probably favour them 
+            sufficiently by antibiotic (neomycin) selection to force them to give rise to a new frond. But what if this is not possible? 
+            To answer the question of whether Agrobacterium can reach and infect the meristematic cells of duckweed, we designed 
+            the Meristematic Assay, which we decided to run in parallel with DBTL cycle no. 4 of The Regeneration Assay. The aim of 
+            the Meristematic Assay is to knock-out a previously stably inserted GFP in Spirodela polyrhiza 0162 strain and observe 
+            daughter fronds not exhibiting GFP fluorescence. These stable lines were gifted to us by Ordóñez Lab. If successful, we 
+            would have certainty that Agrobacterium can indeed reach the meristematic cells. If not, we would need to develop a new 
+            strategy. Thus, we initiated DBTL cycle no. 5, termed the Meristematic Assay. <a href="#" className="text-blue-600 underline">Read more here</a>.
+          </p>  
 
 
 
@@ -1101,7 +1106,7 @@ export default function RegenerationAssayPoster() {
           
           <p className="mb-2 font-semibold">Designing of gRNAs</p>
           <p className="mb-4 leading-relaxed">
-            Using the CRISPOR software, we designed three pairs of gRNA oligonucleotides for GFP knock-out with Esp3I 
+            Using the <a href="https://crispor.gi.ucsc.edu/" target='_blank' className="text-blue-600 underline">CRISPOR software</a>, we designed three pairs of gRNA oligonucleotides for GFP knock-out with Esp3I 
             compatible overhangs to be first hybridized one with the other and then inserted to pIB006:
           </p>
           <ul className="mb-6 leading-relaxed list-disc pl-6">
@@ -1113,7 +1118,7 @@ export default function RegenerationAssayPoster() {
           <p className="mb-2 font-semibold">1st iteration: replacing GFP for RFP</p>
           <p className="mb-4 leading-relaxed">
             Our first strategy was to modify Dr. Ordoñez's plasmid pAMO142. It carries a plant codon-optimized Cas9 (with 
-            introns) linked to GFP via a self-cleaving p2a peptide (from porcine teschovirus-1) for parallel expression, driven by 
+            introns) linked to GFP via a self-cleaving p2a peptide (from <em>porcine teschovirus-1</em>) for parallel expression, driven by 
             rZmUBI and terminated by t35S. Because GFP was the knock-out target and its fluorescence would confound 
             detection, we aimed to replace it with RFP. We planned to PCR-amplify pAMO142 minus eGFP using primers 
             matching the 5′/3′ ends of RFP (pB10P1, MoClo Plant Part Kit, Marillonet Lab), PCR-amplify RFP with overlaps to 

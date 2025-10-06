@@ -28,7 +28,7 @@ const Navbar = () => {
           path: '/toolbox/programmable-duckweed',
           subItems: [
             { label: 'Part Collection', path: '/toolbox/programmable-duckweed/part-collection' },
-            { label: 'Protocols', path: '/toolbox/protocols' }
+            { label: 'Measurement', path: '/toolbox/protocols' }
           ]
         },
         { 

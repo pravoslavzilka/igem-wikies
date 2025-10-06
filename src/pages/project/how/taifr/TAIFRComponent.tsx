@@ -102,8 +102,7 @@ const TAIFRComponent = () => {
                     results in transient GFP expression (1). Its co-transformation with pIB003
                     (PONG transposase ) results in no transient GFP expression (2), but 12 - 18
                     days post infiltration spots of GFP fluorescence appea  rs (3) as results of
-                    insertion of mPing bordered cassette into duckweed nuclear genome. Insertion
-                    was further confirmed by PCR/Western blot (4).{" "}
+                    insertion of mPing bordered cassette into duckweed nuclear genome. Insertion was further confirmed by PCR.
                   </span>
                   <span style={{ fontWeight: 400 }}>Read more here</span>
                   <span style={{ fontWeight: 400 }}>.</span>
