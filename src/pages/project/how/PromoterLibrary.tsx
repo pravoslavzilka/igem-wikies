@@ -20,10 +20,8 @@ const PromoterLibrary = () => {
       </h1>
 
       {/* Main Image Placeholder */}
-      <div className="w-full h-64 bg-gray-200 border-2 border-gray-300 mb-6 flex items-center justify-center">
-        <span className="text-gray-500 text-lg" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-          [Duckweed Research Image Placeholder]
-        </span>
+      <div className="flex mx-auto items-center justify-content-center">
+        <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/promotres-circular-copy.webp" alt="Duckweed Promoter Library" className="max-h-[400px] object-contain mx-auto" />
       </div>
 
       {/* Description Text */}
