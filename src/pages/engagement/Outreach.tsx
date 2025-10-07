@@ -26,7 +26,7 @@ export default function Outreach() {
                                 With this <strong>mindset</strong>, we <strong>kicked off conversations</strong> at
                                 networking events, <strong>prepared programs</strong> for
                                 science-promotion occasions we took part in,
-                                <strong>organized</strong> our own events, and <strong>connected with
+                                <strong> organized</strong> our own events, and <strong>connected with
                                 fellow iGEMers</strong> along the way!
                             </p>
                         </div>
@@ -1039,7 +1039,8 @@ export default function Outreach() {
                                     <span style={{fontWeight: 400}}>
                   , one of the few true venture capitalists in CZ/SK, from
                 </span>
-                                    <a className="hover:underline text-[#6ca033]" href="https://www.linkedin.com/company/zakastartup/">
+                                    <a className="hover:underline text-[#6ca033]"
+                                       href="https://www.linkedin.com/company/zakastartup/">
                                         {" "}
                                         <strong>ZAKA VC</strong>
                                     </a>
@@ -1076,7 +1077,9 @@ export default function Outreach() {
                                 <li style={{fontWeight: 400, marginTop: '1rem'}}>
                                     <strong>Mitch Altman</strong>
                                     <span style={{fontWeight: 400}}>
-                  , a legendary founder of Cornfield Electronics and a pioneer of the
+                  , a legendary founder of <a className="hover:underline text-[#6ca033]"
+                                              href="https://www.cornfieldelectronics.com/cfe/cfe.main.php"
+                                              target="blank">Cornfield Electronics</a> and a pioneer of the
                   hackerspace movement from San Francisco. Discussion:{" "}
                 </span>
                                     <em>
@@ -1187,7 +1190,7 @@ export default function Outreach() {
                 forward with our vision.
               </span>
                             </p>
-                            <p>
+                            <p className="mb-6">
               <span style={{fontWeight: 400}}>
                 One of our guests captured the feeling perfectly, saying,{" "}
               </span>
@@ -1205,17 +1208,17 @@ export default function Outreach() {
               <span style={{fontWeight: 400}}>
                 But that wouldn’t have been possible without our{" "}
               </span>
-                                <strong>main sponsor, Tensor Ventures</strong>
+                                <b>main sponsor, <a className="hover:underline text-[#6ca033]" href="https://tensor.ventures/" target="blank">Tensor Ventures</a></b>
                                 <span style={{fontWeight: 400}}>
-                , who believed in us and funded the even and others:{" "}
+                , who believed in us and funded the event and others:{" "}
               </span>
                                 <strong>iGEM Prague</strong>
                                 <span style={{fontWeight: 400}}> for bringing the beer; </span>
-                                <strong>Vican Winery</strong>
+                                <b><a className="hover:underline text-[#6ca033]" href="https://www.vican.wine/" target="blank">Vican Winery</a></b>
                                 <span style={{fontWeight: 400}}> for donating the premium wine; </span>
-                                <strong>Fiftybeans</strong>
+                                <b><a className="hover:underline text-[#6ca033]" href="https://fiftybeans.cz/en/espresso" target="blank">Fiftybeans</a></b>
                                 <span style={{fontWeight: 400}}> and </span>
-                                <strong>Rebelbean</strong>
+                                <b><a className="hover:underline text-[#6ca033]" href="https://www.rebelbean.cz/" target="blank">Rebelbean</a></b>
                                 <span style={{fontWeight: 400}}>
                 {" "}
                                     for the exceptional coffee; and, most importantly,{" "}
@@ -1260,11 +1263,11 @@ export default function Outreach() {
                                 </div>
                             </div>
                         </div>
-                        <p className="mt-4 text-md italic " style={{fontFamily: 'Urbanist, sans-serif'}}>
-                            <strong className="font-bold">Mitch Altman, a legendary hacker of hardware got a bacteria
+                        <p className="mt-4 text-md" style={{fontFamily: 'Urbanist, sans-serif'}}>
+                            Mitch Altman, a legendary hacker of hardware got a bacteria
                                 hacking course from iGEM Brno and a private excursion from our enablement partner-
                                 Thermofisher, which produce around 20 % of global electron microscopy just from BRNO
-                                facility.</strong>
+                                facility.
                         </p>
                     </section>
 
@@ -1286,7 +1289,7 @@ export default function Outreach() {
                                 </div>
                             </div>
                         </div>
-                        <p className="mt-4 text-md italic " style={{fontFamily: 'Urbanist, sans-serif'}}>
+                        <p className="mt-4 text-md " style={{fontFamily: 'Urbanist, sans-serif'}}>
                             <p>
                                 <em>
                                     <span style={{fontWeight: 400}}>The partners of 3H Party: </span>
