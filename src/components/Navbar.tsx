@@ -25,7 +25,7 @@ const Navbar = () => {
         { label: 'Plant SynBio', path: '/plant' },
         { 
           label: 'Programmable Duckweed', 
-          path: '/toolbox/programmable-duckweed',
+          path: '/plant#programmable',
           subItems: [
             { label: 'Part Collection', path: '/toolbox/programmable-duckweed/part-collection' },
             { label: 'Measurement', path: '/measurement' }
@@ -33,7 +33,7 @@ const Navbar = () => {
         },
         { 
           label: 'Predictable Duckweed', 
-          path: '/toolbox/predictable-duckweed',
+          path: '/plant#predictable',
           subItems: [
             { label: 'Hardware', path: '/hardware' },
             { label: 'Model', path: '/model' }
@@ -121,8 +121,8 @@ const Navbar = () => {
                 >
                   {menu.items.map((item, index) => (
                     <div key={index}>
-                      <Link
-                        to={item.path}
+                      <a
+                        href={item.path}
                         className="block px-4 py-2.5 hover:bg-gray-50 transition-colors group"
                       >
                         <div className="font-semibold text-gray-900 group-hover:text-green-600 transition-colors" 
@@ -135,7 +135,7 @@ const Navbar = () => {
                             {item.sublabel}
                           </div>
                         )}
-                      </Link>
+                      </a>
                       {item.subItems && (
                         <div className="ml-4 mt-1 mb-2">
                           {item.subItems.map((subItem, subIndex) => (
