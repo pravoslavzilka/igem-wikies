@@ -28,9 +28,9 @@ const UnitEconomicsSection: React.FC = () => {
           We estimated the electricity usage of our system and based on the data available in literature, we calculated the{' '}
           <span className="font-bold">unit cost</span> for duckweed-based feed to be around{' '}
           <span className="font-bold">$4 per kilogram</span> of duckweed biomass, translating to approximately{' '}
-          <span className="font-bold">$10 per kilogram</span> of duckweed protein. Compared to soybean (1), we would have to achieve around{' '}
+          <span className="font-bold">$10 per kilogram</span> of duckweed protein. Compared to soybean [1], we would have to achieve around{' '}
           <span className="font-bold">5x increase</span> in production of duckweed biomass to make our solution comparable. This is why we set out to make{' '}
-          <a className="underline">biomass-boosted duckweed</a>.
+          <a href="/human-practices#boosted-duckweed" className="underline">biomass-boosted duckweed</a>.
         </p>
       </div>
     </section>

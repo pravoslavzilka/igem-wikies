@@ -157,6 +157,7 @@ export default function HumanPracticesPage2() {
                         fontFamily: "Space Grotesk, sans-serif",
                         fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem",
                     }}
+                    id="boosted-duckweed"
                 >
                     Biomass-boosted Duckweed
                 </h2>
