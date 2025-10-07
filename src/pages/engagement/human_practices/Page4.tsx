@@ -11,6 +11,7 @@ export default function HumanPracticesPage6() {
                     name="Django Mangalam"
                     subtitle="Farmlord at Plantible Foods"
                     location="Duckweed large-scale cultivation"
+                    defaultOpen={true}
                 >
                     <div className="leading-relaxed text-lg space-y-6">
                         {/* Intro with Zoom call image beside */}
@@ -236,6 +237,7 @@ export default function HumanPracticesPage6() {
                     name="Dr. Arturo Mari-Ordóñez"
                     subtitle="PI at Gregor Mendel Institute Vienna"
                     location="Transposons and gene silencing in duckweed"
+                    defaultOpen={true}
                 >
                     <div className="leading-relaxed text-lg space-y-6">
                         <p>

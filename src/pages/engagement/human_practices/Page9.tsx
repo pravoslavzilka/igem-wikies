@@ -86,6 +86,7 @@ export default function HumanPracticesPage9() {
                     name="prof. Marcel Jansen"
                     subtitle="University College Cork"
                     location="Duckweed cultivation for applied research"
+                    defaultOpen={true}
                 >
                     <div className="leading-relaxed text-lg space-y-6">
                         <p>

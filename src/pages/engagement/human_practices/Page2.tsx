@@ -51,6 +51,7 @@ export default function HumanPracticesPage2() {
                     name="Dr. Andrew D. Hanson"
                     subtitle="Professor at University of Florida"
                     location="Biochemistry and plant metabolism"
+                    defaultOpen={true}
                 >
                     <div className="grid md:grid-cols-2 gap-8 leading-relaxed text-lg">
                         {/* Left column */}

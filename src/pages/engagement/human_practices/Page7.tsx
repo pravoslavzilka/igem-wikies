@@ -12,7 +12,7 @@ export default function HumanPracticesPage7() {
                     name="Dr. Tereza Přerovská"
                     subtitle="Chromatin Molecular Complexes Laboratory"
                     location="Plant Developmental Biology"
-                    defaultOpen={true}
+                    defaultOpen={false}
                 >
                     <p className="text-lg">
                         <span className="font-bold">Dr. Přerovská </span>
@@ -113,6 +113,7 @@ export default function HumanPracticesPage7() {
                     image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-5.webp"
                     name="iGEM Marburg 2024"
                     subtitle="European iGEM Meetup in Frankfurt"
+                    defaultOpen={true}
                 >
                     <div className="leading-relaxed text-lg space-y-10">
 

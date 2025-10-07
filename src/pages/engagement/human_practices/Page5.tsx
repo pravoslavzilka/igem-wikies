@@ -74,6 +74,7 @@ export default function HumanPracticesPage9() {
                     name="Dr. Keith Slotkin"
                     subtitle="PI at Donald Danforth Plant Science Center"
                     location="Transposons and DNA methylation in plants"
+                    defaultOpen={true}
                 >
                     <div className="leading-relaxed text-lg space-y-6">
                         <p>
@@ -223,6 +224,7 @@ export default function HumanPracticesPage9() {
                     name="Research group of Dr. Arturo Mari-Ordóñez"
                     subtitle="GMI Vienna"
                     location="Mechanisms of recognition and silencing of transposons in plants"
+                    defaultOpen={true}
                 >
                     <div className="leading-relaxed text-lg space-y-6">
                         <p>

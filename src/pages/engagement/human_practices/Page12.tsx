@@ -46,7 +46,7 @@ export default function HumanPracticesPage12() {
                     name="Dr. Andrew D. Hanson"
                     subtitle="professor at University of Florida"
                     location="biochemistry and plant metabolism"
-                    defaultOpen={false}
+                    defaultOpen={true}
                 >
                     <div className="leading-relaxed text-lg space-y-6">
                         <p>
@@ -148,6 +148,7 @@ export default function HumanPracticesPage12() {
                 name="Ing. Hana Jiřáková, Ph.D"
                 subtitle="Head of the Department of Genetically Modified Organisms"
                 location="at the Ministry of the Environment of the Czech Republic"
+                defaultOpen={true}
             >
                 <div className="leading-relaxed text-lg space-y-6">
                     <p>
