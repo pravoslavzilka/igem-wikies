@@ -1039,7 +1039,7 @@ export default function Outreach() {
                                     <span style={{fontWeight: 400}}>
                   , one of the few true venture capitalists in CZ/SK, from
                 </span>
-                                    <a style={{color: '#4F46E5'}} href="https://www.linkedin.com/company/zakastartup/">
+                                    <a className="hover:underline text-[#6ca033]" href="https://www.linkedin.com/company/zakastartup/">
                                         {" "}
                                         <strong>ZAKA VC</strong>
                                     </a>
@@ -1054,13 +1054,13 @@ export default function Outreach() {
                   , an experienced startup founder and the worst nightmare of academia,
                   from
                 </span>
-                                    <a style={{color: '#4F46E5'}}
+                                    <a className="hover:underline text-[#6ca033]"
                                        href="https://www.linkedin.com/company/presto-ventures/">
                                         {" "}
                                         <strong>Presto Ventures</strong>
                                     </a>
                                     <span style={{fontWeight: 400}}> &amp;</span>
-                                    <a style={{color: '#4F46E5'}}
+                                    <a className="hover:underline text-[#6ca033]"
                                        href="https://www.linkedin.com/company/czech-startup-association/">
                                         {" "}
                                         <strong>Czech Startup Association</strong>
@@ -1450,7 +1450,8 @@ export default function Outreach() {
                             </p>
                             <p className="text-gray-700 leading-relaxed">
                                 You can listen to the full ABOA Archives podcast episode with Tereza on <a
-                                style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank'
+                                className="hover:underline text-[#6ca033]"
+                                target='_blank'
                                 href='https://open.spotify.com/episode/7M5fEDIMieV2dH6tcS3Myr?si=763f5c6f44544899'>Spotify</a>.
                             </p>
                         </div>
@@ -1494,7 +1495,7 @@ export default function Outreach() {
                             <>
                                 <p style={{marginBottom: '1rem'}}>
                                     <span style={{fontWeight: 400}}>On Instagram, </span>
-                                    <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank'
+                                    <a className="hover:underline text-[#6ca033]" target='_blank'
                                        href="https://www.instagram.com/igem_brno/">
                                         <span style={{fontWeight: 400}}>iGEM Brno</span>
                                     </a>
@@ -1536,7 +1537,7 @@ export default function Outreach() {
                     <div className="flex flex-col md:flex-row gap-8 mb-8">
                         <div className="flex-1">
                             <p className="text-gray-700 leading-relaxed">
-                                LinkedIn of <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank'
+                                LinkedIn of <a className="hover:underline text-[#6ca033]" target='_blank'
                                                href="https://www.linkedin.com/company/igembrno/">iGEM Brno</a> served as
                                 our professional stage to present the project in a more expert setting. It
                                 allowed us to reach scientists, thank our partners, and strengthen our team's reputation
@@ -1572,7 +1573,7 @@ export default function Outreach() {
                   <span style={{fontWeight: 400}}>
                     In April 2025 we managed to partner up with{" "}
                   </span>
-                                    <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank'
+                                    <a className="hover:underline text-[#6ca033]" target='_blank'
                                        href="https://youtu.be/eELDWK--g2U?si=bI57_H19ox2hweJD">
                                         <span style={{fontWeight: 400}}>Stisk Online</span>
                                     </a>
@@ -1580,7 +1581,7 @@ export default function Outreach() {
                     {" "}
                                         - student multimedia newspaper and{" "}
                   </span>
-                                    <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank'
+                                    <a className="hover:underline text-[#6ca033]" target='_blank'
                                        href="https://youtu.be/EdtBBsQFri4?si=I_ObJwaHtYgVfukB">
                                         <span style={{fontWeight: 400}}>MUNI TV</span>
                                     </a>
@@ -1597,7 +1598,7 @@ export default function Outreach() {
                     In June, our project was featured in Magazine M, the news portal of
                     Masaryk University.{" "}
                   </span>
-                                    <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank'
+                                    <a className="hover:underline text-[#6ca033]" target='_blank'
                                        href="https://www.em.muni.cz/student/18118">
                                         <span style={{fontWeight: 400}}>The article </span>
                                     </a>
@@ -1609,7 +1610,7 @@ export default function Outreach() {
 
                                 <p style={{marginBottom: '1rem'}}>
                                     As our project is also related to engineering, we were also featured in <a
-                                    style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank'
+                                    className="hover:underline text-[#6ca033]" target='_blank'
                                     href="https://www.fme.vutbr.cz/fakulta/zfsi/75795">BUT Faculty of Mechanical
                                     Engineering news</a>, where our teammates Pravo and Andrej study. Article
                                     highlighted the interdisciplinary nature of our team and how a hardware is applied
@@ -1641,14 +1642,14 @@ export default function Outreach() {
                   At the very beginning of our iGEM journey, the Czech SynBio Node community
                   shared information about the goals of our project on its{" "}
                 </span>
-                                <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank'
+                                <a className="hover:underline text-[#6ca033]" target='_blank'
                                    href="https://czechsynbionode.cz/igem-returns-to-brno/">
                                     <span style={{fontWeight: 400}}>website</span>
                                 </a>
                                 <span style={{fontWeight: 400}}>
                   . In August, our team was mentioned in an{" "}
                 </span>
-                                <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank'
+                                <a className="hover:underline text-[#6ca033]" target='_blank'
                                    href="https://www.biotrin.cz/igem-svetova-soutez-v-synteticke-biologii-a-nase-ceske-uspechy/">
                                     <span style={{fontWeight: 400}}>article</span>
                                 </a>
@@ -1699,7 +1700,7 @@ export default function Outreach() {
                                     <span style={{fontWeight: 400}}>
                     , with the first article published the same day in the Slovak daily{" "}
                   </span>
-                                    <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank'
+                                    <a className="hover:underline text-[#6ca033]" target='_blank'
                                        href="https://www.startitup.sk/mladi-vedci-odisli-zo-slovenska-v-brne-vyvijaju-revolucny-projekt-ktory-moze-zmenit-buducnost-polnohospodarstva/">
                                         <em>
                                             <span style={{fontWeight: 400}}>Startitup</span>
@@ -1713,7 +1714,7 @@ export default function Outreach() {
                     {" "}
                                         in the Czech Republic wrote about the
                   </span>
-                                    <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank'
+                                    <a className="hover:underline text-[#6ca033]" target='_blank'
                                        href="https://domaci.hn.cz/c1-67782400-zabincova-mafie-studenti-z-brna-vyvinuli-prevratne-krmivo-na-mezinarodni-soutez-vybiraji-od-darcu">
                                         <span style={{fontWeight: 400}}> “Duckweed Mafia.”</span>
                                     </a>
@@ -1729,7 +1730,7 @@ export default function Outreach() {
                                     <span style={{fontWeight: 400}}>
                     , our teammates Matúš and Miro appeared live on{" "}
                   </span>
-                                    <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank'
+                                    <a className="hover:underline text-[#6ca033]" target='_blank'
                                        href="https://www.stvr.sk/televizia/archiv/14026/554573#2714">
                                         <span style={{fontWeight: 400}}>Slovak Television’s morning news</span>
                                     </a>
@@ -1737,7 +1738,7 @@ export default function Outreach() {
                     . Soon after, Czech Radio prepared an interview with Klárka, Matúš, Jonáš,
                     and Marko, which aired on{" "}
                   </span>
-                                    <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank'
+                                    <a className="hover:underline text-[#6ca033]" target='_blank'
                                        href="https://radiozurnal.rozhlas.cz/okrehkem-proti-odlesnovani-nenapadna-rostlina-z-hladin-rybniku-se-mohla-zmenit-9560479">
                                         <em>
                                             <span style={{fontWeight: 400}}>Radiožurnál</span>
@@ -1748,7 +1749,7 @@ export default function Outreach() {
                                     <span style={{fontWeight: 400}}>
                     . The campaign and its success were also covered by{" "}
                   </span>
-                                    <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank'
+                                    <a className="hover:underline text-[#6ca033]" target='_blank'
                                        href="https://ekolist.cz/cz/zpravodajstvi/zpravy/studenti-chteji-na-soutezi-v-parizi-predstavit-zabinec-penize-vybrali-rychle">
                                         <em>
                                             <span style={{fontWeight: 400}}>Ekolist</span>
@@ -1794,7 +1795,7 @@ export default function Outreach() {
                                 </p>
                                 <p style={{marginTop: '1rem'}}>
                                     <span style={{fontWeight: 400}}>One of the issues included an </span>
-                                    <a style={{color: '#3b82f6', textDecoration: 'underline'}} target='_blank'
+                                    <a className="hover:underline text-[#6ca033]" target='_blank'
                                        href="http://www.ruduckweed.org/uploads/1/0/8/9/10896289/duckweed_forum_issue_50.pdf">
                                         <span style={{fontWeight: 400}}>interview with our team</span>
                                     </a>
@@ -1832,6 +1833,7 @@ export default function Outreach() {
                                     alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg"/>
                             </div>
                             <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a
+                                className="hover:underline text-[#6ca033]"
                                 target='_blank' href="https://youtu.be/EdtBBsQFri4?si=I_ObJwaHtYgVfukB">Interview for
                                 MUNI TV</a></h4>
                         </div>
@@ -1842,6 +1844,7 @@ export default function Outreach() {
                                     alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg"/>
                             </div>
                             <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a
+                                className="hover:underline text-[#6ca033]"
                                 target='_blank' href="https://www.em.muni.cz/student/18118">Article in Magazine M</a>
                             </h4>
                         </div>
@@ -1852,6 +1855,7 @@ export default function Outreach() {
                                     alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg"/>
                             </div>
                             <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a
+                                className="hover:underline text-[#6ca033]"
                                 target='_blank'
                                 href="http://www.ruduckweed.org/uploads/1/0/8/9/10896289/duckweed_forum_issue_50.pdf">Article
                                 in Duckweed Forum</a></h4>
@@ -1863,6 +1867,7 @@ export default function Outreach() {
                                     alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg"/>
                             </div>
                             <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a
+                                className="hover:underline text-[#6ca033]"
                                 target='_blank'
                                 href="https://radiozurnal.rozhlas.cz/okrehkem-proti-odlesnovani-nenapadna-rostlina-z-hladin-rybniku-se-mohla-zmenit-9560479">Featured
                                 on Radiožurnál</a></h4>
@@ -1874,6 +1879,7 @@ export default function Outreach() {
                                     alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg"/>
                             </div>
                             <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a
+                                className="hover:underline text-[#6ca033]"
                                 target='_blank'
                                 href="https://ekolist.cz/cz/zpravodajstvi/zpravy/studenti-chteji-na-soutezi-v-parizi-predstavit-zabinec-penize-vybrali-rychle">Article
                                 in Ekolist</a></h4>
@@ -1885,6 +1891,7 @@ export default function Outreach() {
                                     alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg"/>
                             </div>
                             <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a
+                                className="hover:underline text-[#6ca033]"
                                 target='_blank' href="https://www.stvr.sk/televizia/archiv/14026/554573#2714">Slovak
                                 Television Morning News</a></h4>
                         </div>
@@ -1895,6 +1902,7 @@ export default function Outreach() {
                                     alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg"/>
                             </div>
                             <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a
+                                className="hover:underline text-[#6ca033]"
                                 target='_blank'
                                 href="https://www.startitup.sk/mladi-vedci-odisli-zo-slovenska-v-brne-vyvijaju-revolucny-projekt-ktory-moze-zmenit-buducnost-polnohospodarstva/">Featured
                                 in Startit up</a></h4>
@@ -1906,6 +1914,7 @@ export default function Outreach() {
                                     alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg"/>
                             </div>
                             <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a
+                                className="hover:underline text-[#6ca033]"
                                 target='_blank'
                                 href="https://www.biotrin.cz/igem-svetova-soutez-v-synteticke-biologii-a-nase-ceske-uspechy/">Appearance
                                 in Biotron</a></h4>
@@ -1917,6 +1926,7 @@ export default function Outreach() {
                                     alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg"/>
                             </div>
                             <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a
+                                className="hover:underline text-[#6ca033]"
                                 target='_blank'
                                 href="https://domaci.hn.cz/c1-67782400-zabincova-mafie-studenti-z-brna-vyvinuli-prevratne-krmivo-na-mezinarodni-soutez-vybiraji-od-darcu">Article
                                 in Hospodářské noviny</a></h4>
@@ -1928,6 +1938,7 @@ export default function Outreach() {
                                     alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg"/>
                             </div>
                             <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a
+                                className="hover:underline text-[#6ca033]"
                                 target='_blank' href="https://www.fme.vutbr.cz/fakulta/zfsi/75795">BUT FME News</a></h4>
                         </div>
                         <div className="bg-gradient-to-br from-cyan-50 to-cyan-100 p-6 rounded-lg text-center">
@@ -1937,6 +1948,7 @@ export default function Outreach() {
                                     alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg"/>
                             </div>
                             <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a
+                                className="hover:underline text-[#6ca033]"
                                 target='_blank' href="https://youtu.be/eELDWK--g2U?si=bI57_H19ox2hweJD">Stisk online
                                 interview</a></h4>
                         </div>
@@ -1947,6 +1959,7 @@ export default function Outreach() {
                                     alt="Nexteria Kick-off" className="object-cover h-32 w-64 rounded-lg"/>
                             </div>
                             <h4 className="font-bold mb-2" style={{fontFamily: 'Space Grotesk, sans-serif'}}><a
+                                className="hover:underline text-[#6ca033]"
                                 target='_blank' href="https://czechsynbionode.cz/igem-returns-to-brno/">SynbioNode
                                 notice</a></h4>
                         </div>
