@@ -75,7 +75,7 @@ function App() {
           {/* Project Routes */}
           <Route path="/contribution" element={<HowLanding />} />
           <Route path="/project/description" element={<ProjectWhat />} />
-          <Route path="/whyduckweed" element={<ProjectWhy />} />
+          <Route path="/plant/why-duckweed" element={<ProjectWhy />} />
 
 
           {/* How Routes */}
@@ -98,8 +98,8 @@ function App() {
 
 
           {/* Toolbox Routes */}
-          <Route path="/toolbox/deep-dive-on-duckweed/" element={<DeepDiveDocument />} />
-          <Route path="/toolbox/why-plants-suck/" element={<WhyPlantsSuck />} />
+          <Route path="/plant/deep-dive-on-duckweed" element={<DeepDiveDocument />} />
+          <Route path="/plant/why-plant-suck" element={<WhyPlantsSuck />} />
           <Route path="/toolbox/tools" element={<ToolboxTools />} />
           <Route path="/toolbox/resources" element={<ToolboxResources />} />
           <Route path="/toolbox/downloads" element={<ToolboxDownloads />} />

@@ -59,9 +59,9 @@ export default function DuckweedDocument() {
         <div className="flex flex-col md:flex-row items-start gap-6 mb-6">
           <div className="flex-1">
             <div className="bg-green-50 border-l-4 border-green-500 p-4 mb-4">
-              <p className="text-lg italic">
-                The duckweed was supposedly named based on the observation that it often serves as food for 
-                ducks. The name appears in Middle English as <em>dokemete</em>, literally "duck meat" or duck food [3]
+              <p className="text-lg">
+                <b>The duckweed</b> was supposedly named based on the observation that it often serves as <b>food for
+                ducks</b> . The name appears in Middle English as <em>dokemete</em>, literally <b>"duck meat" or duck food</b> [3]
               </p>
             </div>
           </div>
@@ -73,9 +73,9 @@ export default function DuckweedDocument() {
             <p className="mb-4">
               All of them share a common, highly reduced and simplified body plan. Instead of the stems and true 
               leaves, duckweeds are growing as one or a few flat bodies called fronds, measuring from under 1 mm in 
-              <em>W. angusta</em> to around 15 mm in <em>S. polyrrhiza</em> in diameter. Frond shape is genus-specific, 
+              <em> W. angusta</em> to around 15 mm in <em>S. polyrrhiza</em> in diameter. Frond shape is genus-specific, 
               ranging from oval to hemispherical, boat-shaped, or tongue-shaped [4]. While <em>Wolffiella</em> and 
-              <em>Wolffia</em> species are often rootless, others produce adventitious roots [5].
+              <em> Wolffia</em> species are often rootless, others produce adventitious roots [5].
             </p>
           </div>
           {/* Anatomy diagram placeholder */}
