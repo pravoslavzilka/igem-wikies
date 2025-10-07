@@ -185,15 +185,6 @@ export default function Page5() {
                                         under controlled conditions.
                                     </p>
 
-                                    <h3
-                                        className="font-bold"
-                                        style={{
-                                            fontFamily: "Space Grotesk, sans-serif",
-                                            fontSize: window.innerWidth < 768 ? "1.3rem" : "1.5rem",
-                                        }}
-                                    >
-                                        Limiting Biomass experiment
-                                    </h3>
 
                                     <p className="text-justify">
                                         The first set of experiments aimed to determine the growth rates and the
@@ -204,11 +195,7 @@ export default function Page5() {
                                         mathematical approximation of population growth.
                                     </p>
 
-                                    <p className="text-justify">
-                                        The limiting biomass density is defined as the biomass density at which
-                                        duckweed growth effectively stops, that is, when biomass increments over
-                                        time become negligible.
-                                    </p>
+
                                 </div>
 
                                 {/* === Right column (image + caption) === */}

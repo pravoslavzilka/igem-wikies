@@ -150,124 +150,130 @@ export default function Page2() {
 
                 {/* Content (visible when open) */}
                 {open && (
-                    <div className="grid md:grid-cols-[2fr_1fr] gap-10 items-start">
-                        {/* === LEFT: TEXT === */}
-                        <div className="space-y-4 text-base md:text-lg">
-                            <ol className="list-decimal list-inside space-y-3">
-                                <li>
-                                    Amplify or synthesize your target coding sequence so that its ends
-                                    contain restriction sites enabling cleavage by <strong>Esp3I</strong>,
-                                    which will result in an <strong>AATG</strong> overhang on the 5′ end
-                                    and a <strong>TTCG</strong> overhang on the 3′ end. See these overhangs
-                                    in Fig. Xy.
-                                </li>
-                                <li>
-                                    Digest and ligate your sequence with our composite part{" "}
-                                    <strong>pIB005</strong> using the <strong>Esp3I enzyme</strong> and
-                                    transform the reaction into competent <em>E. coli</em> cells.
-                                    Incubate overnight, prepare overnight cultures, and isolate plasmids
-                                    using conventional protocols. See Fig. Xy for the exact digestion
-                                    protocol.
-                                </li>
-                            </ol>
+                    <div className="justify-center">
+                        <div className="grid md:grid-cols-[2fr_1fr] gap-10 items-start">
+                            {/* === LEFT: TEXT === */}
+                            <div className="space-y-4 text-base md:text-lg">
+                                <ol className="list-decimal list-inside space-y-3">
+                                    <li>
+                                        Amplify or synthesize your target coding sequence so that its ends
+                                        contain restriction sites enabling cleavage by <strong>Esp3I</strong>,
+                                        which will result in an <strong>AATG</strong> overhang on the 5′ end
+                                        and a <strong>TTCG</strong> overhang on the 3′ end. See these overhangs
+                                        in Fig. Xy.
+                                    </li>
+                                    <li>
+                                        Digest and ligate your sequence with our composite part{" "}
+                                        <strong>pIB005</strong> using the <strong>Esp3I enzyme</strong> and
+                                        transform the reaction into competent <em>E. coli</em> cells.
+                                        Incubate overnight, prepare overnight cultures, and isolate plasmids
+                                        using conventional protocols. See Fig. Xy for the exact digestion
+                                        protocol.
+                                    </li>
+                                </ol>
 
-                            <div className="border border-gray-300 rounded-lg p-4 text-sm md:text-base">
-                                You will obtain a <strong>modified pIB005 construct</strong> containing
-                                your desired sequence in place of the original GFP. The expression of
-                                your gene in duckweed will be driven by the{" "}
-                                <strong>rZmUBI promoter</strong> and terminated by the{" "}
-                                <strong>t35S terminator</strong>, allowing seamless transient expression
-                                in duckweed.
+                                <div className="border border-gray-300 rounded-lg p-4 text-sm md:text-base">
+                                    You will obtain a <strong>modified pIB005 construct</strong> containing
+                                    your desired sequence in place of the original GFP. The expression of
+                                    your gene in duckweed will be driven by the{" "}
+                                    <strong>rZmUBI promoter</strong> and terminated by the{" "}
+                                    <strong>t35S terminator</strong>, allowing seamless transient expression
+                                    in duckweed.
+                                </div>
+
+                                <ul className="list-disc list-inside space-y-3">
+                                    <li>
+                                        Transform the obtained <strong>modified pIB005</strong> construct,
+                                        original pIB005 (as transformation efficiency control), and{" "}
+                                        <strong>pIB003</strong> construct into electropotent{" "}
+                                        <em>Agrobacterium</em> cells using our{" "}
+                                        <u>
+                                            <a href="/toolbox/agrobacterium-mediated-transformation-protocol/">
+                                                Electroporation Protocol
+                                            </a></u>.
+                                    </li>
+                                    <li>
+                                        Select positive <em>Agrobacterium</em> colonies using primers o160 and
+                                        o161 for all three constructs. Inoculate a pre-culture, prepare
+                                        glycerol stocks, and establish a main culture.
+                                    </li>
+                                    <li>
+                                        Depending on your desired outcome and using{" "}
+                                        <u>
+                                            <a href="/toolbox/programable-duckweed-protocol/">
+                                                Duckweed Transformation Protocol
+                                            </a></u>, transform duckweed with{" "}
+                                        <em>Agrobacterium</em> containing:
+                                        <ul className="list-disc list-inside ml-6 mt-2 space-y-1">
+                                            <li>
+                                                <strong>Transformation efficiency:</strong> original pIB005
+                                                <ul className="list-disc list-inside ml-6 mt-1">
+                                                    <li>
+                                                        After 6 days post-transformation, observe green fluorescence
+                                                        (~509 nm excitation).
+                                                    </li>
+                                                    <li>
+                                                        If signal is present in duckweeds transformed by non-modified
+                                                        pIB005, you successfully transformed your first duckweeds.
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <strong>Transient expression of your gene:</strong> modified pIB005
+                                                <ul className="list-disc list-inside ml-6 mt-1">
+                                                    <li>
+                                                        If transformation efficiency is sufficient, test expression
+                                                        between day 6–18 post-infiltration.
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <strong>Transgene insertion into nuclear genome:</strong> modified
+                                                pIB005 + pIB003
+                                                <ul className="list-disc list-inside ml-6 mt-1">
+                                                    <li>
+                                                        Wait about 12 days for PONG transposase from pIB003 to excise
+                                                        and move the mPing cassette into the nuclear genome.
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
 
-                            <ul className="list-disc list-inside space-y-3">
-                                <li>
-                                    Transform the obtained <strong>modified pIB005</strong> construct,
-                                    original pIB005 (as transformation efficiency control), and{" "}
-                                    <strong>pIB003</strong> construct into electropotent{" "}
-                                    <em>Agrobacterium</em> cells using our{" "}
-                                    <u>
-                                        <a href="/toolbox/agrobacterium-mediated-transformation-protocol/">
-                                            Electroporation Protocol
-                                        </a></u>.
-                                </li>
-                                <li>
-                                    Select positive <em>Agrobacterium</em> colonies using primers o160 and
-                                    o161 for all three constructs. Inoculate a pre-culture, prepare
-                                    glycerol stocks, and establish a main culture.
-                                </li>
-                                <li>
-                                    Depending on your desired outcome and using{" "}
-                                    <u>
-                                        <a href="/toolbox/programable-duckweed-protocol/">
-                                            Duckweed Transformation Protocol
-                                        </a></u>, transform duckweed with{" "}
-                                    <em>Agrobacterium</em> containing:
-                                    <ul className="list-disc list-inside ml-6 mt-2 space-y-1">
-                                        <li>
-                                            <strong>Transformation efficiency:</strong> original pIB005
-                                            <ul className="list-disc list-inside ml-6 mt-1">
-                                                <li>
-                                                    After 6 days post-transformation, observe green fluorescence
-                                                    (~509 nm excitation).
-                                                </li>
-                                                <li>
-                                                    If signal is present in duckweeds transformed by non-modified
-                                                    pIB005, you successfully transformed your first duckweeds.
-                                                </li>
-                                            </ul>
-                                        </li>
 
-                                        <li>
-                                            <strong>Transient expression of your gene:</strong> modified pIB005
-                                            <ul className="list-disc list-inside ml-6 mt-1">
-                                                <li>
-                                                    If transformation efficiency is sufficient, test expression
-                                                    between day 6–18 post-infiltration.
-                                                </li>
-                                            </ul>
-                                        </li>
+                            {/* === RIGHT COLUMN === */}
+                            <div className="space-y-4 flex flex-col items-center">
+                                <img
+                                    src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/protocol-pib005.webp"
+                                    alt="pIB003 diagram 1"
+                                    className="w-full max-w-xs object-contain"
+                                />
+                                <p className="text-sm italic text-center  max-w-xs text-gray-700">
+                                    <strong>Figure 1.</strong> End sequences your gene of interest must
+                                    have to be swappable with GFP in our pIB005 construct (1). The simplified
+                                    protocol for digestion and ligation of your gene into pIB005 (2).
+                                </p>
 
-                                        <li>
-                                            <strong>Transgene insertion into nuclear genome:</strong> modified
-                                            pIB005 + pIB003
-                                            <ul className="list-disc list-inside ml-6 mt-1">
-                                                <li>
-                                                    Wait about 12 days for PONG transposase from pIB003 to excise
-                                                    and move the mPing cassette into the nuclear genome.
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+
+                            </div>
                         </div>
-
-
-                        {/* === RIGHT COLUMN === */}
-                        <div className="space-y-4 flex flex-col items-center">
-                            <img
-                                src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/protocol-pib005.webp"
-                                alt="pIB003 diagram 1"
-                                className="w-full max-w-xs object-contain"
-                            />
-                            <p className="text-sm italic text-center  max-w-xs text-gray-700">
-                                <strong>Figure 1.</strong> End sequences your gene of interest must
-                                have to be swappable with GFP in our pIB005 construct (1). The simplified
-                                protocol for digestion and ligation of your gene into pIB005 (2).
-                            </p>
-                            <img
-                                src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/pib005-copy-1.webp"
-                                alt="pIB005 diagram 2"
-                                className="w-full max-w-xs object-contain"
-                            />
-                            <img
-                                src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/pib003-1.webp"
-                                alt="pIB003 diagram"
-                                className="w-full max-w-xs object-contain"
-                            />
-
-
+                        <div className="flex justify-center">
+                            <div className="grid md:grid-cols-2 gap-10 items-start justify-items-center">
+                                <img
+                                    src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/pib003-1.webp"
+                                    alt="pIB003 diagram"
+                                    className="w-full max-w-md object-contain"
+                                />
+                                <img
+                                    src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/pib005-copy-1.webp"
+                                    alt="pIB005 diagram 2"
+                                    className="w-full max-w-md object-contain"
+                                />
+                            </div>
                         </div>
                     </div>
                 )}
@@ -370,6 +376,28 @@ export default function Page2() {
                                     killed at ≥ 0.5 mg/L of G418 in all three clones. These tests were
                                     performed twice, each time with three biological replicates.
                                 </p>
+
+                                <img
+                                    src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/figure16.webp"
+                                    alt="figure 4 part 1"
+                                    className="w-full md:w-5/6 object-contain mb-3"
+                                />
+                                <p className="text-sm italic text-gray-800 text-justify">
+                                    <strong>Figure 4.</strong> Fronds of
+                                    <em> Spirodela polyrhiza 7428 (Sp7428)</em> were co-transformed with two{" "}
+                                    <em>Agrobacterium</em> cultures: one carrying pIB005 (mPing-bordered{" "}
+                                    GFP-p2a-NPTII unit) and the other carrying pIB003 (PONG transposase).
+                                    GFP fluorescence appeared 12 days post-infiltration (dpi). At 18 dpi, all
+                                    transformed fronds were transferred
+                                    to medium containing 5 mg/L G418 – ten times higher than the tolerance threshold
+                                    of Sp7428 (0.5 mg/L).
+                                    Transformed fronds survived, while controls died within 24 days. Some
+                                    transformed daughter fronds remained
+                                    healthy yet smaller, indicating potential stable integration – confirmed later
+                                    by PCR testing.
+                                </p>
+
+
                             </div>
 
                             {/* Right chart */}
@@ -384,63 +412,38 @@ export default function Page2() {
 
                         {/* === Figure 4 (bottom section) === */}
                         <div className="space-y-8">
-                            <div className="grid md:grid-cols-2 gap-8">
-                                {/* Figure 4 */}
-                                <div className="flex flex-col items-center text-center">
-                                    <img
-                                        src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/figure16.webp"
-                                        alt="figure 4 part 1"
-                                        className="w-full md:w-5/6 object-contain mb-3"
-                                    />
-                                    <p className="text-sm italic text-gray-800 text-justify max-w-[90%]">
-                                        <strong>Figure 4.</strong> Fronds of
-                                        <em> Spirodela polyrhiza 7428 (Sp7428)</em> were co-transformed with two{" "}
-                                        <em>Agrobacterium</em> cultures: one carrying pIB005 (mPing-bordered{" "}
-                                        GFP-p2a-NPTII unit) and the other carrying pIB003 (PONG transposase).
-                                        GFP fluorescence appeared 12 days post-infiltration (dpi). At 18 dpi, all
-                                        transformed fronds were transferred
-                                        to medium containing 5 mg/L G418 – ten times higher than the tolerance threshold
-                                        of Sp7428 (0.5 mg/L).
-                                        Transformed fronds survived, while controls died within 24 days. Some
-                                        transformed daughter fronds remained
-                                        healthy yet smaller, indicating potential stable integration – confirmed later
-                                        by PCR testing.
-                                    </p>
-                                </div>
-
-                                {/* Figure 5 */}
-                                <div className="flex flex-col items-center text-center">
-                                    <img
-                                        src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/taifr-pcrs.webp"
-                                        alt="figure 4 part 2"
-                                        className="w-full md:w-5/6 object-contain mb-3"
-                                    />
-                                    <p className="text-sm italic text-gray-800 text-justify max-w-[90%]">
-                                        <strong>Figure 5.</strong> Genomic DNA isolated from <em>Spirodela polyrhiza
-                                        7428</em> at 30 days post
-                                        co-transformation with pIB005 and pIB003 (iteration RA4.1) was separated on a
-                                        gel to avoid conceivable{" "}
-                                        <em>Agrobacterium</em> DNA contamination, purified, and subsequently subjected
-                                        to two PCR reactions.
-                                        The first reaction (upper gel), using primers o128 and o129, tested for the
-                                        presence of GFP – presumably
-                                        inserted into the genome via PONG transposase activity from pIB003. It yielded
-                                        the expected 250 bp product
-                                        in 9 out of 20 samples. The second reaction (lower gel), using primers o55 and
-                                        o56, tested for the presence
-                                        of <em>Agrobacterium</em> DNA in the samples to rule out the possibility that
-                                        GFP was present as the binary
-                                        vector pIB005 residing in <em>Agrobacterium</em>. This reaction produced the
-                                        expected product in 3 out of 20
-                                        samples, indicating that GFP detection in 7 out of 20 samples resulted from
-                                        Transposase-Assisted Insertion.
-                                        The first negative control (non-transformed <em>S. polyrhiza</em> DNA) did not
-                                        yield any bands, as expected.
-                                        The second negative control (water instead of DNA) also showed no amplification.
-                                        The positive control (pIB005
-                                        construct) yielded the expected 250 bp band.
-                                    </p>
-                                </div>
+                            {/* Figure 5 */}
+                            <div className="flex flex-col items-center text-center">
+                                <img
+                                    src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/taifr-pcrs.webp"
+                                    alt="figure 4 part 2"
+                                    className="w-full md:w-5/6 object-contain mb-3"
+                                />
+                                <p className="text-sm italic text-gray-800 text-justify max-w-[90%]">
+                                    <strong>Figure 5.</strong> Genomic DNA isolated from <em>Spirodela polyrhiza
+                                    7428</em> at 30 days post
+                                    co-transformation with pIB005 and pIB003 (iteration RA4.1) was separated on a
+                                    gel to avoid conceivable{" "}
+                                    <em>Agrobacterium</em> DNA contamination, purified, and subsequently subjected
+                                    to two PCR reactions.
+                                    The first reaction (upper gel), using primers o128 and o129, tested for the
+                                    presence of GFP – presumably
+                                    inserted into the genome via PONG transposase activity from pIB003. It yielded
+                                    the expected 250 bp product
+                                    in 9 out of 20 samples. The second reaction (lower gel), using primers o55 and
+                                    o56, tested for the presence
+                                    of <em>Agrobacterium</em> DNA in the samples to rule out the possibility that
+                                    GFP was present as the binary
+                                    vector pIB005 residing in <em>Agrobacterium</em>. This reaction produced the
+                                    expected product in 3 out of 20
+                                    samples, indicating that GFP detection in 7 out of 20 samples resulted from
+                                    Transposase-Assisted Insertion.
+                                    The first negative control (non-transformed <em>S. polyrhiza</em> DNA) did not
+                                    yield any bands, as expected.
+                                    The second negative control (water instead of DNA) also showed no amplification.
+                                    The positive control (pIB005
+                                    construct) yielded the expected 250 bp band.
+                                </p>
                             </div>
                         </div>
 

@@ -27,7 +27,7 @@ export default function VacuumInfiltrationTesting() {
       </div>
 
       {/* Figure 1 and Protocol Callout */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
         <div className="col-span-2">
           <div className="border-2 border-gray-300 rounded-lg p-4 bg-gray-50">
             <div className="w-full  h-64  rounded overflow-hidden">

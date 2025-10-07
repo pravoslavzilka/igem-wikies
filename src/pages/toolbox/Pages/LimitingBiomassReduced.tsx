@@ -9,30 +9,11 @@ export default function LimitingBiomassReduced() {
             </h1>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                {/* Left Column - Text Content */}
-                <div className="space-y-8">
-                    {/* Rationale Section */}
-                    <section>
-                        <h2 className="text-xl font-semibold mb-4 text-gray-900"
-                            style={{fontFamily: 'Space Grotesk, sans-serif'}}>
-                            Rationale
-                        </h2>
-                        <p>
-              <span style={{fontWeight: 400}}>
-                Limiting biomass density is key parameter for further mathematical
-                modelling of duckweed growth since it directly appears in the logistic
-                growth equation, which is the best known mathematical
-                approximation of population growth. The limiting biomass density is
-                defined as biomass density when the duckweed growth effectively
-                stops, that is when the biomass increments over time become
-                negligible.{" "}
-              </span>
-                        </p>
-
-                    </section>
-
-
-                </div>
+                <p className="text-justify">
+                    The limiting biomass density is defined as the biomass density at which
+                    duckweed growth effectively stops, that is, when biomass increments over
+                    time become negligible.
+                </p>
 
                 {/* Right Column - Image */}
                 <div className="lg:ml-8">
@@ -98,37 +79,41 @@ export default function LimitingBiomassReduced() {
                 </h2>
 
                 {/* Combined results section */}
-                <div className="space-y-8 mt-6">
+                <div className="space-y-8 max-w-2xl mx-auto">
                     {/* Main Results Section */}
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                        {/* Graph */}
-                        <div className="bg-gray-50 rounded-lg">
-                            <div className="rounded">
-                                <img src="https://static.igem.wiki/teams/5642/images/how/predictor/graf-final-8.webp"
-                                     alt="Growth Curve" className="w-full h-auto"/>
-                            </div>
-                            <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                                <strong>Figure 2:</strong> Experimentally measured growth curve of <em>Lemna
-                                japonica</em> (8627), displaying the mean values of biomass measured during experiments
-                                in a large and a small tray.
-                            </p>
+                    <div className="bg-gray-50 max-w-2xl mx-auto rounded-lg shadow-sm">
+                        {/* Image */}
+                        <div className="rounded overflow-hidden">
+                            <img
+                                src="https://static.igem.wiki/teams/5642/images/how/predictor/graf-final-medium-change.webp"
+                                alt="Medium Change Graph"
+                                className="w-full h-auto rounded"
+                            />
                         </div>
 
-                        {/* Text */}
-                        <p className="mt-4">
-              <span style={{fontWeight: 400}}>
-                In the next iteration of the experiment, limiting biomass experiments
-                on ascertaining the growth curve of <em>Lemna gibba</em>, <em>Lemna obscura</em>,{" "}
-                  <em>Lemna valdiviana</em>, <em>Wolffia globosa</em>, and <em>Wolffia hyalina</em> were
-                performed in the same way.
-              </span>
+                        {/* Caption */}
+                        <p className="text-sm text-gray-700 text-justify font-[Urbanist,sans-serif] leading-relaxed p-4">
+                            <strong>Fig. 2.</strong> Experimentally measured growth curve of{" "}
+                            <em>Lemna japonica</em> (8627), showing the mean biomass values obtained during experiments
+                            conducted in both large and small trays. The curve demonstrates that the fastest growth
+                            occurred
+                            at a biomass density of approximately <strong>650 g/m²</strong>, which, according to the
+                            mathematical definition of a logistic growth curve, represents the midpoint between zero and
+                            the
+                            saturation biomass. Therefore, the <strong>limiting biomass density</strong> was determined
+                            to be
+                            around <strong>1300 g/m²</strong>. To determine the{" "}
+                            <strong>effective growth rate (r₀)</strong> from the growth curve, we calculated the natural
+                            logarithm of the population size at each time point, plotted these values, and fitted a
+                            straight
+                            line to the points corresponding to the exponential phase of growth. The slope of this line
+                            represented the effective growth rate, which was <strong>r₀ = 0.21 d⁻¹</strong>.
                         </p>
-
                     </div>
 
 
                     {/* Additional species results */}
-                    <div className="mt-12">
+                    <div className="mt-12 max-w-2xl mx-auto">
                         <div className="bg-gray-50 rounded-lg">
                             <div className="rounded">
                                 <img src="https://static.igem.wiki/teams/5642/images/how/predictor/graf-final-9.webp"
