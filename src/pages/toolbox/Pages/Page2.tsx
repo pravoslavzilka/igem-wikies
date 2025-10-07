@@ -1,9 +1,28 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {ChevronDown, ChevronUp} from "lucide-react"; // npm install lucide-react
 
 export default function Page2() {
     const [open, setOpen] = useState(false);
     const [open1, setOpen1] = useState(false);
+
+
+     useEffect(() => {
+            // Listen for custom event from main page
+            const openHandler = (e: CustomEvent) => {
+                if (e.detail === "how-to-use-taifr") {
+                    setOpen(true);
+                    const el = document.getElementById("how-to-use-taifr");
+                    if (el) el.scrollIntoView({behavior: "smooth", block: "start"});
+                }
+                
+            };
+    
+            window.addEventListener("openSection", openHandler as EventListener);
+    
+            return () => {
+                window.removeEventListener("openSection", openHandler as EventListener);
+            };
+        }, []);
 
     return (
         <div>
@@ -137,6 +156,7 @@ export default function Page2() {
                     <h2
                         className="font-bold text-2xl md:text-3xl"
                         style={{fontFamily: "Space Grotesk, sans-serif"}}
+                        id="how-to-use-taifr"
                     >
                         How can you use <span className="underline">TAIFR</span>?
                     </h2>

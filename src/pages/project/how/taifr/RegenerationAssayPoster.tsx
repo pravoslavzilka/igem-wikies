@@ -14,9 +14,9 @@ export default function RegenerationAssayPoster() {
         <div className="mb-12 mt-24 text-lg leading-relaxed">
           <p className="mb-4">
             Duckweed, the fastest-growing higher plant, holds great promise for biotechnological applications, but its genetic 
-            engineering has been slow and inefficient (<a href="#" className="text-blue-600 underline">read more here</a>). To overcome this, we developed <strong>TAIFR (Transposase 
+            engineering has been slow and inefficient (<a href="/toolbox/why-plants-suck" className='hover:underline text-[#6ca033]'>read more here</a>). To overcome this, we developed <strong>TAIFR (Transposase 
             Assisted Insertion and Frond Regeneration)</strong>, a method that aims to reduce the time to generate stable transgenic 
-            duckweed lines from 5 months to just 1 month (<a href="#" className="text-blue-600 underline">read more here</a>).
+            duckweed lines from 5 months to just 1 month (<a href="#" className='hover:underline text-[#6ca033]'>read more here</a>).
           </p>
           
           <p className="mb-4">
@@ -31,11 +31,11 @@ export default function RegenerationAssayPoster() {
           
           <p className="mb-4">
             To develop TAIFR, we performed the Regeneration Assay, consisting of four and half DBTL cycles, which resulted in a 
-            pair of customizable parts that enable anyone to insert any gene into the duckweed nuclear genome (<a href="#" className="text-blue-600 underline">discover more 
+            pair of customizable parts that enable anyone to insert any gene into the duckweed nuclear genome (<a target='_blank' href="https://registry.igem.org/collections/018233cf-683e-4523-920f-688cde419bed" className='hover:underline text-[#6ca033]'>discover more 
             about parts here</a>). We confirmed stable insertion of our transgene into the duckweed nuclear genome by observing fluorescence signal (see Fig. 2), PCR (see Fig. 3) and by the fact that fronds transformed by the TAIFR method survived 
             10 - 20-fold higher neomycin concentrations than the wild-type duckweeds. Although we succeeded in the first part of 
             TAIFR (transposase-assisted insertion), we did not in the second (whole transgenic frond regeneration), partly due to five 
-            failed regeneration iterations caused by transformation-efficiency issues (<a href="#" className="text-blue-600 underline">read more here</a>), and partly because we were 
+            failed regeneration iterations caused by transformation-efficiency issues (<a href="#" className="hover:underline text-[#6ca033]">read more here</a>), and partly because we were 
             unsure whether Agrobacterium tumefaciens can reach meristematic cells (which give rise to new daughter fronds).
           </p>
           
@@ -956,9 +956,9 @@ export default function RegenerationAssayPoster() {
 
 
          </p>
-         
-         
-          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">LEARN</h3>
+
+
+          <h3 id="dbtl-4-learn" style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">LEARN</h3>
           <>
             <p>
                 <span style={{ fontWeight: 400 }}>We placed </span>
