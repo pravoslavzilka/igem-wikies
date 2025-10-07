@@ -3,10 +3,17 @@ import "@fontsource/space-grotesk";
 
 // Cow image components
 const CowIcon = ({ src }: { src: string }) => {
-  // Responsive cow size
-  const height = window.innerWidth < 500 ? 16 : window.innerWidth < 1500 ? 17 : 18;
+  // Použijeme Tailwind triedy (alebo fixné in-line style) pre lepšiu konzistenciu,
+  // ale pre zachovanie pôvodnej responzívnej logiky ju len mierne upravím.
+  // Výška 18px pri väčších obrazovkách (desktop)
+  const baseHeight = 18;
   return (
-    <img src={src} alt="cow" height={height} style={{ display: "inline-block", height }} />
+    <img 
+      src={src} 
+      alt="cow" 
+      style={{ display: "inline-block", height: baseHeight }} 
+      className="h-4 sm:h-[17px] lg:h-[18px]" // Pridané Tailwind triedy pre responzívnu veľkosť
+    />
   );
 };
 
@@ -47,22 +54,23 @@ const Comparison = () => {
       : <CowIcon key={i} src="https://static.igem.wiki/teams/5642/icons/homepage/other/vector-f.webp" />
   );
 
-  const colGap = window.innerWidth < 500 ? "8px" : window.innerWidth < 1500 ? "18px" : "32px";
-  const rowGap = window.innerWidth < 500 ? "20px" : window.innerWidth < 1500 ? "13px" : "16px";
+  // Zjednotené medzery (colGap, rowGap) pre menšie monitory a desktop
+  const colGap = window.innerWidth < 768 ? "8px" : "18px";
+  const rowGap = window.innerWidth < 768 ? "20px" : "13px";
   const tablesGap = cols === 10 ? "8rem" : "2rem";
 
+  // Zjednotená štruktúra Features - odstránené tooltip a color
   const Features = [
-    { title: "High nutrient uptake", description:"Great phytoremediation potential", icon: "https://static.igem.wiki/teams/5642/icons/homepage/features/fi-9997472.webp", tooltip: "High nutritional value", color: "#FFB2FF" },
-    { title: "Wide pH and temperature cultivation range", description:"", icon: "https://static.igem.wiki/teams/5642/icons/homepage/features/fi-9997473.webp", tooltip: "" },
-    { title: "Small genome for a monocot plant", description:"150 - 500 Mbp", icon: "https://static.igem.wiki/teams/5642/icons/features/fi-7006038.webp", tooltip: "" },
-    { title: "No gene silencing", description:"", icon: "https://static.igem.wiki/teams/5642/icons/homepage/features/fi-11294443.webp", tooltip: "" },
+    { title: "High nutrient uptake", description:"Great phytoremediation potential", icon: "https://static.igem.wiki/teams/5642/icons/homepage/features/fi-9997472.webp" },
+    { title: "Wide pH and temperature cultivation range", description:"", icon: "https://static.igem.wiki/teams/5642/icons/homepage/features/fi-9997473.webp" },
+    { title: "Small genome for a monocot plant", description:"150 - 500 Mbp", icon: "https://static.igem.wiki/teams/5642/icons/features/fi-7006038.webp" },
+    { title: "No gene silencing", description:"", icon: "https://static.igem.wiki/teams/5642/icons/homepage/features/fi-11294443.webp" },
   ];
 
   return (
     <div
       className="bg-white"
       style={{
-        // FIX: Zabezpečuje, že komponent bude vždy navrchu a bude mať nepriehľadné pozadie
         position: "relative",
         zIndex: 10,
         padding: "2rem",
@@ -74,11 +82,9 @@ const Comparison = () => {
       }}
     >
       <h2
-        className="font-bold text-center"
+        className="font-bold text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-tight px-2" // Zjednotené responzívne triedy pre veľkosť textu
         style={{
           fontFamily: "Space Grotesk",
-          fontSize: window.innerWidth < 768 ? "1.5rem" : "2.0rem",
-          lineHeight: window.innerWidth < 768 ? "120%" : "normal",
           marginTop: window.innerWidth < 768 ? "1.5rem" : "1.9rem",
           marginBottom: window.innerWidth < 768 ? "1.5rem" : "2rem",
         }}
@@ -130,39 +136,51 @@ const Comparison = () => {
       <div
         style={{
           fontFamily: "Space Grotesk",
-          fontSize: window.innerWidth < 768 ? "1rem" : "1.7rem",
           marginTop: window.innerWidth < 768 ? "1.5rem" : "3rem",
         }}
-        className="text-center font-bold"
+        className="text-center font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl"
       >
         <h2 style={{fontFamily: "Space Grotesk"}}>Duckweeds could save <span style={{ color: "#779E45" }}>farmers money </span>
         and protect <span style={{ color: "#779E45" }}>Cerrado ecosystems</span></h2>
       </div>
 
-      <div className="mt-6 px-2 md:px-8" style={{ display: window.innerWidth < 768 ? 'none' : 'block' }}>
-        <div className="flex flex-wrap justify-center gap-y-10 gap-x-8 md:gap-x-16">
+      {/* Features section - OPRAVENÉ MIN-WIDTH A GAP PRE ZABEZPEČENIE JEDNOHO RIADKU */}
+      <div className="hidden md:block w-full mt-8 px-4 sm:px-6 md:px-8 overflow-hidden">
+        <div className="flex flex-wrap justify-center gap-y-8 sm:gap-y-10 gap-x-12 md:gap-x-10 lg:gap-x-14 max-w-7xl mx-auto">
           {Features.map((feature, idx) => (
             <div
               key={idx}
-              className="flex flex-col items-center text-center min-w-[180px] max-w-xs"
+              // ZVÄČŠENÁ MINIMÁLNA ŠÍRKA pre zaistenie jedného riadku na bežných desktopoch
+              className="flex flex-col items-center text-center min-w-[200px] sm:min-w-[200px] max-w-xs" 
             >
               <img
                 src={feature.icon}
                 alt={feature.title}
-                className="mb-4"
+                className="mb-3 sm:mb-4"
                 style={{ width: 56, height: 56 }}
               />
-              <div
-                className="font-semibold text-black mb-2"
-                style={{ fontFamily: "Space Grotesk, sans-serif", fontSize: "1.1rem" }}
+              <div 
+                className="flex flex-col justify-end items-center w-full"
+                style={{ minHeight: '65px' }} 
               >
-                {feature.title}
-              </div>
-              {feature.description && (
-                <div className="bg-[#F6F6F6] rounded-full px-6 py-2 text-sm font-medium text-gray-700" style={{ fontFamily: "Urbanist, sans-serif" }}>
-                  {feature.description}
+                <div
+                  className="font-semibold text-black px-2 mb-2" 
+                  style={{ 
+                    fontFamily: "Space Grotesk, sans-serif", 
+                    fontSize: "1.1rem" 
+                  }}
+                >
+                  {feature.title}
                 </div>
-              )}
+                {feature.description && (
+                  <div 
+                    className="bg-[#F6F6F6] rounded-full px-6 py-2 text-sm font-medium text-gray-700" 
+                    style={{ fontFamily: "Urbanist, sans-serif" }}
+                  >
+                    {feature.description}
+                  </div>
+                )}
+              </div>
             </div>
           ))}
         </div>

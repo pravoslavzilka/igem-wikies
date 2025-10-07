@@ -1,16 +1,17 @@
 import React from "react";
 
 const VideoComp = () => {
+  // Odstránené tooltips pre zjednotenie štruktúry s Comparison.tsx
   const Features = [
-    { title: "Grows on water surface", description:"", icon: "https://static.igem.wiki/teams/5642/icons/homepage/features/fi-2352851.webp" , tooltip: "Low cost for everyone" },
-    { title: "The smallest flowering plant", description:"some species just 0,5 mm", icon: "https://static.igem.wiki/teams/5642/icons/homepage/features/fi-4264454.webp", tooltip: "" },
-    { title: "The fastest growing flowering plant", description:"16-48 h biomass doubling time", icon: "https://static.igem.wiki/teams/5642/icons/homepage/features/fi-8165228.webp", tooltip: "Sustainable"},
-    { title: "High protein content", description:"20-45% of dry weight", icon: "https://static.igem.wiki/teams/5642/icons/homepage/features/fi-4300772.webp", tooltip: "Rich in vitamins and minerals" },
+    { title: "Grows on water surface", description:"Low cost for everyone", icon: "https://static.igem.wiki/teams/5642/icons/homepage/features/fi-2352851.webp" },
+    { title: "The smallest flowering plant", description:"some species just 0,5 mm", icon: "https://static.igem.wiki/teams/5642/icons/homepage/features/fi-4264454.webp" },
+    { title: "The fastest growing flowering plant", description:"16-48 h biomass doubling time", icon: "https://static.igem.wiki/teams/5642/icons/homepage/features/fi-8165228.webp" },
+    { title: "High protein content", description:"20-45% of dry weight", icon: "https://static.igem.wiki/teams/5642/icons/homepage/features/fi-4300772.webp" },
   ];
 
   return (
     <div className="py-8 sm:py-12 md:py-16 bg-white mt-5 md:mt-0 overflow-x-hidden" style={{ position: "relative" }}>
-      {/* Decorative background icons */}
+      {/* Decorative background icons zostáva */}
       <img
         src="https://static.igem.wiki/teams/5642/icons/fi-11618743.webp"
         alt=""
@@ -59,6 +60,7 @@ const VideoComp = () => {
       />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+        {/* Nadpisy a videá zostávajú bez zmeny */}
         <div className="text-center mb-6 sm:mb-8 md:mb-12 mt-4 md:mt-0">
           <h2
             className="font-bold text-gray-800 mb-4 text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-tight px-2"
@@ -123,9 +125,9 @@ const VideoComp = () => {
         </div>
       </div>
       
-      {/* Features section - skrytá na mobile */}
+      {/* Features section - OPRAVA ZAROVNANIA (pre konzistentnosť) */}
       <div className="hidden md:block w-full mt-4 px-4 sm:px-6 md:px-8 overflow-hidden">
-        <div className="flex flex-wrap justify-center gap-y-8 sm:gap-y-10 gap-x-6 sm:gap-x-8 md:gap-x-12 lg:gap-x-16 max-w-7xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-y-8 sm:gap-y-10 gap-x-8 md:gap-x-16 lg:gap-x-20 max-w-7xl mx-auto">
           {Features.map((feature, idx) => (
             <div
               key={idx}
@@ -137,23 +139,30 @@ const VideoComp = () => {
                 className="mb-3 sm:mb-4"
                 style={{ width: 56, height: 56 }}
               />
-              <div
-                className="font-semibold text-black mb-2 px-2"
-                style={{ 
-                  fontFamily: "Space Grotesk, sans-serif", 
-                  fontSize: "clamp(0.95rem, 2vw, 1.1rem)" 
-                }}
+              {/* Flex kontajner pre titulok a popis s pevnou minimálnou výškou */}
+              <div 
+                className="flex flex-col justify-end items-center w-full"
+                style={{ minHeight: '65px' }} // Pevná výška pre titulok + popis box
               >
-                {feature.title}
-              </div>
-              {feature.description && (
-                <div 
-                  className="bg-[#F6F6F6] rounded-full px-4 sm:px-6 py-1.5 sm:py-2 text-xs sm:text-sm font-medium text-gray-700" 
-                  style={{ fontFamily: "Urbanist, sans-serif" }}
+                <div
+                  className="font-semibold text-black px-2 mb-2" 
+                  style={{ 
+                    fontFamily: "Space Grotesk, sans-serif", 
+                    fontSize: "1.1rem" // Zjednotená veľkosť písma
+                  }}
                 >
-                  {feature.description}
+                  {feature.title}
                 </div>
-              )}
+                {/* Box s popisom */}
+                {feature.description && (
+                  <div 
+                    className="bg-[#F6F6F6] rounded-full px-6 py-2 text-sm font-medium text-gray-700" 
+                    style={{ fontFamily: "Urbanist, sans-serif" }}
+                  >
+                    {feature.description}
+                  </div>
+                )}
+              </div>
             </div>
           ))}
         </div>
