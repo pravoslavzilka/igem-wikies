@@ -98,8 +98,8 @@ function App() {
 
 
           {/* Toolbox Routes */}
-          <Route path="/plant/deep-dive-on-duckweed" element={<DeepDiveDocument />} />
-          <Route path="/plant/why-plant-suck" element={<WhyPlantsSuck />} />
+          <Route path="/toolbox/deep-dive-on-duckweed" element={<DeepDiveDocument />} />
+          <Route path="/toolbox/why-plant-suck" element={<WhyPlantsSuck />} />
           <Route path="/toolbox/tools" element={<ToolboxTools />} />
           <Route path="/toolbox/resources" element={<ToolboxResources />} />
           <Route path="/toolbox/downloads" element={<ToolboxDownloads />} />

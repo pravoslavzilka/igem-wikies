@@ -4,7 +4,7 @@ import React from 'react';
 const CallToActionSection: React.FC = () => {
   const handleLinkClick = () => {
     // Redirect to project/how/ page
-    window.location.href = '/project/how/';
+    window.location.href = '/project/how/taifr/overview';
   };
 
   return (
