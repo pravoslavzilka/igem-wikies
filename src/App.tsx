@@ -73,23 +73,23 @@ function App() {
           <Route path="/" element={<Home />} />
 
           {/* Project Routes */}
-          <Route path="/project/what/" element={<HowLanding />} />
-          <Route path="/project/why/" element={<ProjectWhat />} />
+          <Route path="/contribution" element={<HowLanding />} />
+          <Route path="/project/description" element={<ProjectWhat />} />
           <Route path="/project/how/" element={<ProjectWhy />} />
 
 
           {/* How Routes */}
-          <Route path="/project/how/cultivator/" element={<LivingLayersDocument />} />
+          <Route path="/hardware" element={<LivingLayersDocument />} />
 
           <Route path="/engineering" element={<TaifrEngineering />} />
 
           <Route path="/project/how/taifr/" element={<Taifr />} />
           <Route path="/project/how/taifr/overview" element={<TaifrMain />} />
-          <Route path="/project/how/promoters/" element={<PromoterLibrary />} />
+          <Route path="/measurement" element={<PromoterLibrary />} />
           <Route path="/project/how/promoters-in-silico/" element={<PromotersSilico />} />
           <Route path="/project/how/taifr/regeneration-assay-poster/" element={<RegenerationAssayPoster />} />
 
-          <Route path="/project/how/predictor/in-silico-cultivation/" element={<PredictorMain />} />
+          <Route path="/model" element={<PredictorMain />} />
           <Route path="/project/how/predictor/limiting-biomass/" element={<LimitingBiomass />} />
           <Route path="/project/how/predictor/medium-change/" element={<MediumChange />} />
           <Route path="/project/how/predictor/harvesting-strategy/" element={<HarvestingStrategy />} />
@@ -108,27 +108,27 @@ function App() {
           <Route path="/toolbox/agrobacterium-mediated-transformation-protocol/" element={<AgrobacteriumProtocol />} />
           <Route path="/toolbox/vacuum-infiltration-testing/" element={<VacuumInfiltrationTesting />} />
 
-          <Route path="/toolbox/programmable-duckweed/plant-synbio" element={<DuckweedToolbox />} />
+          <Route path="/plant" element={<DuckweedToolbox />} />
           <Route path="/toolbox/programmable-duckweed/part-collection" element={<PartCollection />} />
 
 
 
 
-          <Route path="/engagement/sustainability" element={<SustainabilityDocument />} />
+          <Route path="/sustainability" element={<SustainabilityDocument />} />
 
           {/* Engagement Routes */}
 
 
           <Route path="/engagement/outreach/3h-party" element={<ThreeHParty />} />
           <Route path="/engagement/outreach" element={<Outreach />} />
-          <Route path="/engagement/human-practices" element={<HumanPractices />} />
+          <Route path="/human-practices" element={<HumanPractices />} />
           <Route path="/engagement/outreach/igem-brno-community" element={<IgemBrnoCommunity />} />
-          <Route path="/engagement/entrepreneurship" element={<Entrepreneurship />} />
+          <Route path="/entrepreneurship" element={<Entrepreneurship />} />
           <Route path='/engagement/crowdfunding' element={<CrowdfundingStory/>} />
 
           {/* Duckweed Mafia Routes */}
           <Route path="/duckweed-mafia/partners" element={<Partners />} />
-          <Route path="/duckweed-mafia/safety" element={<DuckweedSafety />} />
+          <Route path="/safety-and-security" element={<DuckweedSafety />} />
           <Route path="/duckweed-mafia/team" element={<DuckweedMafia/>} />
           <Route path="/attributions" element={<Attributions />} />
 

@@ -13,8 +13,8 @@ const Navbar = () => {
     project: {
       title: 'Project',
       items: [
-        { label: 'Why', sublabel: 'Description', path: '/project/why' },
-        { label: 'What', sublabel: 'Contribution', path: '/project/what' },
+        { label: 'Why', sublabel: 'Description', path: '/project/description' },
+        { label: 'What', sublabel: 'Contribution', path: '/contribution' },
         { label: 'How', sublabel: 'Engineering', path: '/engineering' }
       ]
     },
@@ -22,21 +22,21 @@ const Navbar = () => {
       title: 'Duckweed Toolbox',
       items: [
         
-        { label: 'Plant SynBio', path: '/toolbox/programmable-duckweed/plant-synbio' },
+        { label: 'Plant SynBio', path: '/plant' },
         { 
           label: 'Programmable Duckweed', 
           path: '/toolbox/programmable-duckweed',
           subItems: [
             { label: 'Part Collection', path: '/toolbox/programmable-duckweed/part-collection' },
-            { label: 'Measurement', path: '/toolbox/protocols' }
+            { label: 'Measurement', path: '/measurement' }
           ]
         },
         { 
           label: 'Predictable Duckweed', 
           path: '/toolbox/predictable-duckweed',
           subItems: [
-            { label: 'Hardware', path: '/toolbox/predictable-duckweed/hardware' },
-            { label: 'Model', path: '/toolbox/predictable-duckweed/model' }
+            { label: 'Hardware', path: '/hardware' },
+            { label: 'Model', path: '/model' }
           ]
         }
       ]
@@ -44,10 +44,10 @@ const Navbar = () => {
     engagement: {
       title: 'Engagement',
       items: [
-        { label: 'Human Practices', path: '/engagement/human-practices' },
-        { label: 'Entrepreneurship', path: '/engagement/entrepreneurship' },
+        { label: 'Human Practices', path: '/human-practices' },
+        { label: 'Entrepreneurship', path: '/entrepreneurship' },
         { label: 'Outreach', path: '/engagement/outreach' },
-        { label: 'Sustainability', path: '/engagement/sustainability' }
+        { label: 'Sustainability', path: '/sustainability' }
       ]
     },
     'duckweed-mafia': {
@@ -56,7 +56,7 @@ const Navbar = () => {
         { label: 'Team', path: '/duckweed-mafia/team' },
         { label: 'Partners', path: '/duckweed-mafia/partners' },
         { label: 'Attributions', path: '/attributions' },
-        { label: 'Safety', path: '/duckweed-mafia/safety' }
+        { label: 'Safety', path: '/safety-and-security' }
       ]
     }
   };
