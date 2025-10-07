@@ -55,7 +55,7 @@ const Navbar = () => {
       items: [
         { label: 'Team', path: '/duckweed-mafia/team' },
         { label: 'Partners', path: '/duckweed-mafia/partners' },
-        { label: 'Attributions', path: '/duckweed-mafia/attributions' },
+        { label: 'Attributions', path: '/attributions' },
         { label: 'Safety', path: '/duckweed-mafia/safety' }
       ]
     }

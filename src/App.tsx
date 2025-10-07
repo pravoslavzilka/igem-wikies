@@ -59,6 +59,7 @@ import Partners from './pages/duckweed_mafia/Partners';
 import DuckweedSafety from './pages/duckweed_mafia/DuckweedSafety';
 import DuckweedMafia from './pages/duckweed_mafia/DuckweedMafia';
 import DuckweedToolbox from "./pages/toolbox/DuckweedToolbox..tsx";
+import Attributions from './pages/duckweed_mafia/Attributions';
 
 
 
@@ -129,6 +130,7 @@ function App() {
           <Route path="/duckweed-mafia/partners" element={<Partners />} />
           <Route path="/duckweed-mafia/safety" element={<DuckweedSafety />} />
           <Route path="/duckweed-mafia/team" element={<DuckweedMafia/>} />
+          <Route path="/attributions" element={<Attributions />} />
 
         </Routes>
 
