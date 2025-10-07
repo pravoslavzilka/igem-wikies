@@ -230,7 +230,7 @@ export default function HumanPracticesPage6() {
                     </p>
                 </div>
             </div>
-            <div className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif]">
+            <div className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif]" id="arturo">
                 {/* Arturo pill */}
                 <ExpandablePill
                     image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/4-4.webp"

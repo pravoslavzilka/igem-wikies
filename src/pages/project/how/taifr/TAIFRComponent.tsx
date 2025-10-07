@@ -30,7 +30,7 @@ const TAIFRComponent = () => {
           </div>
           
           <p className='md:mt-32'>
-                <strong style={{ fontWeight: 700, fontSize: '1.5rem' }}>To enable any biotechnological application based on <span style={{ color: '#6ca033' }}>duckweed</span> </strong>
+                <strong style={{ fontWeight: 700, fontSize: '1.5rem' }}>To enable any biotechnological application based on <span style={{ color: '#6ca033' }}>duckweed</span></strong>
                 <strong></strong>
                 <span style={{ fontWeight: 400 }}>
                     , the fastest-growing higher plant, we had to develop a method for its rapid
@@ -56,7 +56,7 @@ const TAIFRComponent = () => {
                 </span>
                 <span style={{ fontWeight: 400 }}>
                     , and leveraging duckweed unique regeneration ability to produce new
-                    transgenic fronds in planta.
+                    transgenic fronds <em>in planta</em>.
                 </span>
                 </p>
 
@@ -72,7 +72,7 @@ const TAIFRComponent = () => {
               <p>
                 <strong>Figure 2. </strong>
                 <span style={{ fontWeight: 400 }}>
-                    TAIFR is a system that uses PONG transposase to deliver the gene of interest (GOI) into a duckweed nucleus. The GOI is flanked by two halves of PONG’s target - the mPing transposon. PONG cleaves this construct, and it performs a random double-strand break (DSB) in the genomic DNA in TAA sites and then inserts the construct into this site. Then, selection pressure favours the transformed cells, which propagate more and give rise to a new transformed generation of duckweeds, thanks to duckweed unique capability for rapid asexual propagation. 
+                    TAIFR is a system that uses PONG transposase to deliver the gene of interest (GOI) into duckweed nucleus. The GOI is flanked by two halves of PONG’s target - the mPing transposon. PONG cleaves this construct, and it performs a random double-strand break (DSB) in the genomic DNA in TAA sites and then inserts the construct into this site. Then, selection pressure favours the transformed cells, which propagate more and give rise to a new transformed generation of duckweeds, thanks to duckweed unique capability for rapid asexual propagation. 
                 </span>
                 </p>
 
@@ -90,24 +90,23 @@ const TAIFRComponent = () => {
           <p className="text-gray-700 leading-relaxed text-justify" style={{ fontFamily: 'Urbanist, sans-serif' }}>
             <p>
                 <strong>Figure 3. </strong>
-                <p>
+                
                   <span style={{ fontWeight: 400 }}>
-                    Transformation of construct pIB005 (mPing bordered GFP linked to NPTII) into
+                    Transformation of construct pIB005 (mPing-bordered GFP linked to NPTII) into
                     wild-type{" "}
                   </span>
                   <em>
                     <span style={{ fontWeight: 400 }}>Spirodela polyrhiza </span>
                   </em>
                   <span style={{ fontWeight: 400 }}>
-                    results in transient GFP expression (1). Its co-transformation with pIB003
-                    (PONG transposase ) results in no transient GFP expression (2), but 12 - 18
-                    days post infiltration spots of GFP fluorescence appea  rs (3) as results of
-                    insertion of mPing bordered cassette into duckweed nuclear genome. Insertion was further confirmed by PCR.
+                    7428 results in transient GFP expression (1). Its co-transformation with pIB003
+                    (PONG transposase) results in no transient GFP expression (2), but 12 - 18
+                    days post infiltration spots of GFP fluorescence appears (3) as results of
+                    insertion of mPing-bordered cassette into duckweed nuclear genome. Insertion was further confirmed by PCR.
                   </span>
-                  <span style={{ fontWeight: 400 }}>Read more here</span>
+                  <span style={{ fontWeight: 400 }}> <a className='hover:underline text-[#6ca033]' href="#dbtl-4-learn">Read more here</a></span>
                   <span style={{ fontWeight: 400 }}>.</span>
-                </p>
-
+               
                 </p>
 
             </p>
@@ -116,7 +115,7 @@ const TAIFRComponent = () => {
         <section className="mb-8">
           <div className="text-center py-6 px-8 bg-green-100 rounded-lg">
             <h2 className="text-2xl font-bold text-green-800" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-              Discover how you can use our TAIFR parts and protocol engineer duckweed
+              <a className='hover:underline text-[#6ca033]' href="/plant#how-to-use-taifr">Discover how you can use our TAIFR parts and protocol engineer duckweed</a>
             </h2>
           </div>
         </section>
@@ -133,7 +132,7 @@ const TAIFRComponent = () => {
                <p>
                   <span style={{ fontWeight: 400 }}>
                       Most of the genetic engineering in plant biotechnology is mediated by callus
-                      - dedifferentiated plant tissue that is more susceptible to infection by{" "}
+                      - de-differentiated plant tissue that is more susceptible to infection by{" "}
                   </span>
                   <em>
                       <span style={{ fontWeight: 400 }}>Agrobacterium tumefaciens </span>
@@ -230,7 +229,7 @@ const TAIFRComponent = () => {
                 {" "}
                 and then selecting meristematic cells carrying the transgene and
                 resistance gene to give rise to a new shoot of fully transgenic plants.
-                This is called in-planta mediated genetic engineering (5). It has been
+                This is called <em>in-planta</em> mediated genetic engineering (5). It has been
                 demonstrated in pea (6), peanut (7), soybean (8), and sweet potato
                 (9).&nbsp;
                 </span>
@@ -246,7 +245,7 @@ const TAIFRComponent = () => {
                      <p>
                         <br />
                         <span style={{ fontWeight: 400 }}>
-                        So, we in iGEM Brno thought: let’s try in-planta mediated transformation
+                        So, we in iGEM Brno thought: let’s try <em>in-planta</em> mediated transformation
                         in duckweed as well! We even found in the literature that it had already
                         been attempted a few times and was called frond-mediated transformation
                         (10), (11), (12) - since one duckweed “leaf” is called a frond. We
@@ -255,7 +254,7 @@ const TAIFRComponent = () => {
                         even contacting their authors, but was not able to replicate any of
                         them...{" "}
                         </span>
-                        <span style={{ fontWeight: 400 }}>Read more at Human Practices page</span>
+                        <span style={{ fontWeight: 400 }}><a className='hover:underline text-[#6ca033]' href="/human-practices#arturo">Read more at Human Practices page</a></span>
                         <span style={{ fontWeight: 400 }}>.</span>
                     </p>
                 </div>
@@ -479,8 +478,8 @@ const TAIFRComponent = () => {
                     But could they also be used for inserting DNA into the plant nuclear
                     genome? Of course, yes! Meeting Dr. Ordóñez was a pure luck, but we were
                     about to get even luckier… Less than a year ago, Dr. Slotkin published an
-                    amazing article in Nature: Transposase-assisted target-site integration
-                    for efficient plant genome engineering (16).
+                    amazing article in Nature: <a target='_blank' className='hover:underline text-[#6ca033]' href="https://www.nature.com/articles/s41586-024-07613-8">Transposase-assisted target-site integration
+                    for efficient plant genome engineering</a> (16).
                   </span>
                 </p>
                 <p>&nbsp;</p>
