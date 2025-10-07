@@ -23,9 +23,9 @@ const IntroTextSection: React.FC = () => {
               className="text-base sm:text-lg leading-[168%] text-black/75 text-justify"
               style={{ fontFamily: 'Space Grotesk, sans-serif' }}
             >
-              In both our countries, agricultural land takes up around half of all territory. 
+              In both our countries, <b>agricultural land</b> takes up around <b>half of all territory</b>. 
               A lot of us grew up in villages, surrounded by farms, fields, livestock and farmers. 
-              We saw the challenges around us and realized that they are a part of much bigger, global issues.
+              We saw the <b>challenges around us</b> and realized that they are a part of much bigger, <b>global issues</b>.
             </p>
           </div>
           

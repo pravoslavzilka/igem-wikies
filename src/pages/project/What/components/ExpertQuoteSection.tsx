@@ -23,7 +23,7 @@ const ExpertQuoteSection: React.FC = () => {
       accentColor: "#9DD019"
     },
     {
-      name: "Arturo Mari Ordoñez",
+      name: "Arturo Mari-Ordóñez",
       institution: "Gregor Mendel Institute",
       quote: "Duckweeds are monocotyledonous plants. Most available plant parts are designed for dicotyledons and often don't work in duckweeds. There's a general shortage of working duckweed parts.",
       photo: "https://static.igem.wiki/teams/5642/images/what/arturo.webp",
@@ -32,7 +32,7 @@ const ExpertQuoteSection: React.FC = () => {
     {
       name: "Django Mangalam",
       institution: "Plantible Foods",
-      quote: "Duckweed cultivation is very hard to get right, they're quite tricky to work with. There's a million parameters to fine-tune. At PlantibleFoods, we have been perfecting it in ponds for almost ten years.",
+      quote: "Duckweed cultivation comes with some unique challenges. Especially at scale, maintaining optimal growth condition requires constant monitoring and fine controls of a number of parameters. At Plantible, we have been perfecting it for almost ten years in ponds!",
       photo: "https://static.igem.wiki/teams/5642/images/what/django.webp",
       accentColor: "#9DD019"
     }

@@ -41,7 +41,7 @@ export default function HumanPracticesPage1() {
                         fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem",
                     }}
                 >
-                    Integrated human practices
+                    Integrated Human Practices
                 </h1>
 
                 <div className="mb-6 px-6">
@@ -116,6 +116,7 @@ export default function HumanPracticesPage1() {
                         fontFamily: "Space Grotesk, sans-serif",
                         fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem",
                     }}
+                    id="ideation"
                 >
                     Starting at the end: NitroDuck
                 </h2>

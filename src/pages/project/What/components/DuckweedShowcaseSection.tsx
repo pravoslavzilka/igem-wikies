@@ -133,7 +133,7 @@ const DuckweedShowcaseSection: React.FC = () => {
 
         {/* Call to action link */}
         <a 
-          href="#"
+          href="/toolbox/deep-dive-on-duckweed"
           className="absolute text-base leading-[168%] text-center text-black/75 left-1/2 bottom-[120px] transform -translate-x-1/2 hover:text-green-700 transition-colors cursor-pointer"
           style={{ fontFamily: 'Space Grotesk, sans-serif' }}
         >
@@ -173,7 +173,7 @@ const DuckweedShowcaseSection: React.FC = () => {
         {/* Call to action link */}
         <div className="text-center">
           <a 
-            href="#"
+            href="/toolbox/deep-dive-on-duckweed"
             className="text-base leading-[168%] text-black/75 hover:text-green-700 transition-colors cursor-pointer"
             style={{ fontFamily: 'Space Grotesk, sans-serif' }}
           >
