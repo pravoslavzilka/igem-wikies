@@ -1,31 +1,24 @@
 export default function LimitingBiomassReduced() {
 
     return (
-        <div className="max-w-6xl mx-auto p-8 bg-white text-lg text-justify"
+        <div className="max-w-6xl mx-auto p-8 bg-white text-lg text-justify space-y-6"
              style={{fontFamily: 'Urbanist, sans-serif'}}>
             {/* Header */}
             <h1 className="text-4xl font-bold mb-12 text-gray-900" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
                 Limiting biomass density experiment
             </h1>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <p className="text-justify">
-                    The limiting biomass density is defined as the biomass density at which
-                    duckweed growth effectively stops, that is, when biomass increments over
-                    time become negligible.
-                </p>
 
-                {/* Right Column - Image */}
-                <div className="lg:ml-8">
-                    <div className="bg-gray-100 rounded-lg overflow-hidden">
-                        <img
-                            src="https://static.igem.wiki/teams/5642/images/how/predictor/pxl-20250820-164200119.webp"
-                            alt="Researcher conducting duckweed experiment"
-                            className="w-full h-auto"
-                        />
-                    </div>
-
+            {/* Right Column - Image */}
+            <div className="lg:ml-8">
+                <div className="bg-gray-100 rounded-lg overflow-hidden max-w-lg mx-auto">
+                    <img
+                        src="https://static.igem.wiki/teams/5642/images/how/predictor/pxl-20250820-164200119.webp"
+                        alt="Researcher conducting duckweed experiment"
+                        className="w-full h-auto"
+                    />
                 </div>
+
             </div>
             {/* Methodology Section */}
             <section>
