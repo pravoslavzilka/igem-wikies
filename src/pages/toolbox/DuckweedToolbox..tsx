@@ -4,8 +4,21 @@ import Page3 from "./Pages/Page3.tsx";
 import Page4 from "./Pages/Page4.tsx";
 import Page5 from "./Pages/Page5.tsx";
 import References from "../../components/References.tsx";
+import {useEffect} from "react";
 
 export default function DuckweedToolbox() {
+    useEffect(() => {
+        // Wait until the page is fully mounted, then check the hash
+        const hash = window.location.hash.replace("#", "");
+        if (hash) {
+            // Fire a custom event so the right section can open itself
+            setTimeout(() => {
+                window.dispatchEvent(
+                    new CustomEvent("openSection", {detail: hash})
+                );
+            }, 300); // small delay to ensure subpages are mounted
+        }
+    }, []);
     return (
         <div>
             <Page1/>

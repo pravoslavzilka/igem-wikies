@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {ChevronDown, ChevronUp} from "lucide-react";
 import TransformationProtocolReduced from "./TransformationProtocolReduced.tsx";
 import VacuumInfiltrationTestingReduced from "./VacuumInfiltrationTestingReduced.tsx"; // npm install lucide-react
@@ -7,6 +7,28 @@ export default function Page3() {
     const [open, setOpen] = useState(false);
     const [open1, setOpen1] = useState(false);
     const [open2, setOpen2] = useState(false);
+
+    useEffect(() => {
+        // Listen for custom event from main page
+        const openHandler = (e: CustomEvent) => {
+            if (e.detail === "duckweed-transformation") {
+                setOpen(true);
+                const el = document.getElementById("duckweed-transformation");
+                if (el) el.scrollIntoView({behavior: "smooth", block: "start"});
+            }
+            if (e.detail === "vacuum-testing") {
+                setOpen1(true);
+                const el = document.getElementById("vacuum-testing");
+                if (el) el.scrollIntoView({behavior: "smooth", block: "start"});
+            }
+        };
+
+        window.addEventListener("openSection", openHandler as EventListener);
+
+        return () => {
+            window.removeEventListener("openSection", openHandler as EventListener);
+        };
+    }, []);
 
     return (
         <div>
@@ -57,6 +79,7 @@ export default function Page3() {
                         <h2
                             className="font-bold text-2xl md:text-3xl"
                             style={{fontFamily: "Space Grotesk, sans-serif"}}
+                            id="duckweed-transformation"
                         >
                             How you can TRANSFORM duckweed?
                         </h2>
@@ -83,6 +106,7 @@ export default function Page3() {
                         <h2
                             className="font-bold text-2xl md:text-3xl"
                             style={{fontFamily: "Space Grotesk, sans-serif"}}
+                            id="vacuum-testing"
                         >
                             How did we optimize duckweed TRANSFORMATION protocol?
                         </h2>

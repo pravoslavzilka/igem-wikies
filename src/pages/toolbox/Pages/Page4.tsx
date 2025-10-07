@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {ChevronDown, ChevronUp} from "lucide-react";
 import DuckweedProtocolReduced from "./DuckweedProtocolReduced.tsx";
 import MediumChangeReduced from "./MediumChangeReduced.tsx";
@@ -8,6 +8,28 @@ export default function Page4() {
     const [open1, setOpen1] = useState(false);
     const [open2, setOpen2] = useState(false);
     const [open3, setOpen3] = useState(false);
+
+    useEffect(() => {
+        // Listen for custom event from main page
+        const openHandler = (e: CustomEvent) => {
+            if (e.detail === "duckweed-cultivation") {
+                setOpen(true);
+                const el = document.getElementById("duckweed-cultivation");
+                if (el) el.scrollIntoView({behavior: "smooth", block: "start"});
+            }
+            if (e.detail === "media-exchange") {
+                setOpen1(true);
+                const el = document.getElementById("media-exchange");
+                if (el) el.scrollIntoView({behavior: "smooth", block: "start"});
+            }
+        };
+
+        window.addEventListener("openSection", openHandler as EventListener);
+
+        return () => {
+            window.removeEventListener("openSection", openHandler as EventListener);
+        };
+    }, []);
 
     return (
         <div>
@@ -92,6 +114,7 @@ export default function Page4() {
                         <h2
                             className="font-bold text-2xl md:text-3xl"
                             style={{fontFamily: "Space Grotesk, sans-serif"}}
+                            id="duckweed-cultivation"
                         >
                             How you can CULTIVATE duckweed?
                         </h2>
@@ -120,6 +143,7 @@ export default function Page4() {
                     <h2
                         className="font-bold text-2xl md:text-3xl"
                         style={{fontFamily: "Space Grotesk, sans-serif"}}
+                        id="media-exchange"
                     >
                         How did we optimize duckweed{" "}
                         <span className="underline">CULTIVATION</span> protocol?
