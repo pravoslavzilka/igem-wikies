@@ -94,6 +94,7 @@ export default function HumanPracticesPage15() {
                     rightImage="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/2/15-7.webp"
                     title="Baru Jankovičová and Matúš Pešta"
                     subtitle="iGEM Brno 2021"
+                    defaultOpen={true}
                 >
                     <div className="gap-8 items-start leading-relaxed text-lg space-y-6">
 

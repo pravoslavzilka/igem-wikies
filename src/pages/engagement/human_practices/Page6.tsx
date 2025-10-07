@@ -60,7 +60,7 @@ export default function HumanPracticesPage6() {
                     name="Dr. Tomáš Moravec"
                     subtitle="Institute of Experimental Botany"
                     location="Plant Transformations and Molecular Biology"
-                    defaultOpen={true}
+                    defaultOpen={false}
                 >
                     <p className="text-lg">
                         <span className="font-bold">Dr. Moravec</span> helped us to a great extent in the beginning when
@@ -81,7 +81,7 @@ export default function HumanPracticesPage6() {
                     name="Dr. Hélène Robert Boisivon"
                     subtitle="Central European Institute of Technology"
                     location="Plant Synthetic Biology"
-                    defaultOpen={true}
+                    defaultOpen={false}
                 >
                     <p className="text-lg">
                         <span className="font-bold">Dr. Boisivon </span> addressed multiple questions from us regarding
@@ -100,7 +100,7 @@ export default function HumanPracticesPage6() {
                     name="MSc. Matúš Pešta"
                     subtitle="Microbial Bioengineering Laboratory"
                     location="Bacterial Synthetic Biology"
-                    defaultOpen={true}
+                    defaultOpen={false}
                 >
                     <p className="text-lg">
                         <span className="font-bold">Matúš </span>
@@ -117,7 +117,7 @@ export default function HumanPracticesPage6() {
                     name="Dr. Miguel da Silva"
                     subtitle="Microbial Bioengineering Laboratory"
                     location="Bacterial Metabolic Engineering"
-                    defaultOpen={true}
+                    defaultOpen={false}
                 >
                     <p className="text-lg">
                         We consulted <span className="font-bold">Dr. da Silva </span> about right conditions for
@@ -139,7 +139,7 @@ export default function HumanPracticesPage6() {
                     name="Dr. Anastasiia Ieremenko"
                     subtitle="Microbial Bioengineering Laboratory"
                     location="Bacterial Metabolic Engineering"
-                    defaultOpen={true}
+                    defaultOpen={false}
                 >
                     <p className="text-lg">
                         <span className="font-bold">Dr. Ieremenko </span>
@@ -155,7 +155,7 @@ export default function HumanPracticesPage6() {
                     name="MSc. Barbora Jankovičová"
                     subtitle="Microbial Bioengineering Laboratory"
                     location="Bacterial Metabolic Engineering"
-                    defaultOpen={true}
+                    defaultOpen={false}
                 >
                     <p className="text-lg">
                         <span className="font-bold">Baru </span>, as a student leader of two previous{" "}

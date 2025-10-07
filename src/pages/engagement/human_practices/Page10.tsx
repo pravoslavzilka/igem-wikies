@@ -51,7 +51,7 @@ export default function HumanPracticesPage10() {
                 rightName="Ing. Jakub Doležal"
                 rightSubtitle="Head of Farm"
                 centerImage="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/2/10-1.webp"
-                defaultOpen={false}
+                defaultOpen={true}
             >
                 <div className="leading-relaxed text-lg space-y-6">
                     <p>

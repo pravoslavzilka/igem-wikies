@@ -19,7 +19,7 @@ export default function HumanPracticesPage1() {
         {
             id: "real-world-check",
             title: "REAL WORLD CHECK",
-            subtitle: "Where does our project stand when facing the stakeholders that are affected the most?\n",
+            subtitle: "How does our project hold up when it comes to those most affected?\n",
             imgSrc: "https://static.igem.wiki/teams/5642/images/toolbox/toolbox/rwc.webp",
         },
     ];

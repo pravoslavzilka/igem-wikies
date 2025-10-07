@@ -348,6 +348,7 @@ export default function HumanPracticesPage11() {
                     name="prof. Carlos Klink"
                     subtitle="Professor at Dept. of Ecology at the University of Brasília"
                     location="Founder of Cerrado Initiative"
+                    defaultOpen={true}
                 >
                     <div className="leading-relaxed text-lg space-y-6">
                         <p>

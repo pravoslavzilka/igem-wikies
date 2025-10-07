@@ -59,6 +59,7 @@ export default function HumanPracticesPage8() {
                     name="Ing. Kateřina Patloková"
                     subtitle="Mendel University"
                     location="Duckweed cultivation"
+                    defaultOpen={true}
                 >
                     <div className="leading-relaxed text-lg space-y-8">
                         {/* Text with portrait */}

@@ -45,6 +45,7 @@ export default function HumanPracticesPage13() {
                     name="Tsipi Shoham"
                     subtitle="CEO at GreenOnyx"
                     location="Vertically cultivating duckweed for human consumption"
+                    defaultOpen={true}
                 >
                     <div className="leading-relaxed text-lg space-y-6">
                         <p>
@@ -122,6 +123,7 @@ export default function HumanPracticesPage13() {
                     name="Lynn Dickey"
                     subtitle="CTO at Phylloceuticals"
                     location="Production of therapeutics in duckweed"
+                    defaultOpen={true}
                 >
                     <div className="leading-relaxed text-lg space-y-6">
                         <p>

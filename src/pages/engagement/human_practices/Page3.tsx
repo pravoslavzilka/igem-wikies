@@ -163,6 +163,7 @@ export default function HumanPracticesPage3() {
                     name="Julia-Eva Fortmueller"
                     subtitle="Ph.D. candidate at Weizmann Institute of Science"
                     location="Duckweed genetic engineering and protein production"
+                    defaultOpen={true}
                 >
                     <div className="leading-relaxed text-lg space-y-6">
                         {/* Two-column layout with text + image */}
