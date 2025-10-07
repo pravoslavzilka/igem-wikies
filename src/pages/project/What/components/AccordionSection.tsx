@@ -8,8 +8,8 @@ const accordionData = [
     title: "Running a farm is less and less profitable",
     content: [
       "Czech - and more broadly - European livestock production is heavily reliant on imported high-protein feeds. 66 % of the EU's high‑protein animal feed is imported, and the most widely used source - soybean - accounts for 96 % (1). That is roughly 33 million tons of soy products, at the cost of costing around 14 billion euros (2).",
-      "Rising feed costs are hitting farmers hard—feed makes up 55 % of the production cost in poultry, 32% in pigs, and over 14% in cattle (3). Even though meat and milk prices are high, livestock producers continue to see shrinking profit margins (4).",
-      "Quality protein feed is becoming less affordable. Read more on the farmers' burden - Human Practices Page"
+      "Rising feed costs are hitting farmers hard - feed makes up 55 % of the production cost in poultry, 32% in pigs, and over 14% in cattle (3). Even though meat and milk prices are high, livestock producers continue to see shrinking profit margins (4).",
+      "Quality protein feed is becoming less affordable."
     ]
   },
   {
