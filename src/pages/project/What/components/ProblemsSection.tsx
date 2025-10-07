@@ -74,7 +74,7 @@ const ProblemsSection: React.FC = () => {
     {
       title: "Deforestation caused by protein crops",
       image: "https://static.igem.wiki/teams/5642/images/what/problem-deforestation.webp",
-      quote: "15 millions hectares of Brazil’s tropical savannas of Cerrado is lost due to soybean fields, but over the past 50 years, agribusiness has greatly improved quality of life in the region",
+      quote: "15 millions hectares of Brazil’s tropical savannas of Cerrado has been lost due to soybean fields, but over the past 50 years, agribusiness has greatly improved quality of life in the region",
       author: "Prof. Carlos Klink",
       avatar: "https://static.igem.wiki/teams/5642/images/what/carlos-klink.webp"
     },
@@ -83,7 +83,7 @@ const ProblemsSection: React.FC = () => {
       image: "https://static.igem.wiki/teams/5642/images/what/problem-nitrogen.webp",
       quote: "We tend to think manure is free fertilizer, but in reality, much of the nitrogen just disappears into the air or water. It's money and nutrients lost.",
       author: "Ing. Jakub Neužil",
-      avatar: "https://static.igem.wiki/teams/5642/images/people/jakub-neuzil.jpg"
+      avatar: "https://static.igem.wiki/teams/5642/images/why/avatar.webp"
     }
   ];
 
