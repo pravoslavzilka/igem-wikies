@@ -31,12 +31,11 @@ export default function Page2() {
                     duckweeds, as
                     monocot plants. To address this limitation, we developed a specialized part collection containing
                     constructs
-                    for strong transient expression within a week, inserting transgene within three week, under
+                    for strong transient expression within a week, inserting transgene within two to three weeks, under
                     unsterile
                     conditions using our customizable{" "}
                     <span className="font-bold ">PING/PONG TAIFR system</span>. This toolkit also includes
-                    user-friendly <span className="font-bold">CRISPR/Cas9 knock-out components</span> and a set of seven
-                    endogenous duckweed <span className="italic">promoter + 5’ UTR parts</span>.
+                    user-friendly <span className="font-bold">CRISPR/Cas9 knock-out components</span>.
                 </p>
 
                 {/* Subsection */}
@@ -62,7 +61,7 @@ export default function Page2() {
                             the fastest-growing higher plant, we had to develop a method for its rapid and efficient
                             genetic
                             engineering. We designed and are developing{" "}
-                            <span className="font-bold ">TAIFR</span>, a method that reduces the time
+                            <span className="font-bold ">TAIFR</span>, a method that aims to reduce the time
                             required to
                             generate a stable transgenic duckweed line from{" "}
                             <span className="font-bold">5 months to just 1 month</span> by omitting the lengthy callus
@@ -113,14 +112,12 @@ export default function Page2() {
                         />
                         <p className="text-sm italic mt-2 text-center text-gray-700">
                             <span className="font-bold">Figure 1.</span> TAIFR is a system that uses PONG transposase to
-                            deliver the
-                            gene of interest (GOI) into a duckweed nucleus. The GOI is flanked by two halves of PONG’s
-                            target – the
-                            mPing transposon. PONG cleaves this construct, performs a double-strand break (DSB) in the
-                            genomic DNA, and
-                            inserts the construct into this site. Then, selection pressure favours the transformed
-                            cells, which
-                            propagate more and give rise to a new transformed generation of duckweeds.
+                            deliver the gene of interest (GOI) into a duckweed nucleus. The GOI is flanked by two halves
+                            of PONG’s target – the mPing transposon. PONG cleaves this construct, performs a
+                            double-strand break (DSB) in the genomic DNA, and inserts the construct into this site.
+                            Then, selection pressure favours the transformed cells, which propagate more and give rise
+                            to a new transformed generation of duckweeds. Our TAIFR method builds on the TATSI method
+                            developed by Slotkin's Lab (1).
                         </p>
                     </div>
                 </div>
@@ -248,14 +245,15 @@ export default function Page2() {
                             {/* === RIGHT COLUMN === */}
                             <div className="space-y-4 flex flex-col items-center">
                                 <img
-                                    src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/protocol-pib005.webp"
+                                    src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/taifr-protocol.webp"
                                     alt="pIB003 diagram 1"
                                     className="w-full max-w-xs object-contain"
                                 />
                                 <p className="text-sm italic text-center  max-w-xs text-gray-700">
-                                    <strong>Figure 1.</strong> End sequences your gene of interest must
-                                    have to be swappable with GFP in our pIB005 construct (1). The simplified
-                                    protocol for digestion and ligation of your gene into pIB005 (2).
+                                    <strong>Figure 1.</strong> End sequences your gene of interest must have to be
+                                    swappable with GFP in our pIB005 construct (1). Green codon (ATG) represent start
+                                    codon of your gene. The simplified protocol for digestion and ligation of your gene
+                                    into pIB005 (2).
                                 </p>
 
 
@@ -370,7 +368,7 @@ export default function Page2() {
                                     <strong>Figure 3.</strong> To determine the threshold concentration of
                                     neomycin that would kill duckweeds, thus providing a selection
                                     pressure for presence of mPing cargo (containing gene for NPTII),
-                                    we performed the neomycin test. Sensitivity tests on
+                                    we performed the neomycin test. Sensitivity tests on{" "}
                                     <em>Spirodela polyrhiza</em> clones (162, 7428, and 9509) showed that
                                     they are much more sensitive to G418 than expected, with all fronds
                                     killed at ≥ 0.5 mg/L of G418 in all three clones. These tests were

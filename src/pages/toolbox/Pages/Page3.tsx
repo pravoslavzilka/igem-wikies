@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {ChevronDown, ChevronUp} from "lucide-react";
-import TransformationProtocol from "../programable_duckweed/TransformationProtocol.tsx";
-import VacuumInfiltrationTesting from "../programable_duckweed/VacuumInfiltrationTesting.tsx"; // npm install lucide-react
+import TransformationProtocolReduced from "./TransformationProtocolReduced.tsx";
+import VacuumInfiltrationTestingReduced from "./VacuumInfiltrationTestingReduced.tsx"; // npm install lucide-react
 
 export default function Page3() {
     const [open, setOpen] = useState(false);
@@ -29,8 +29,8 @@ export default function Page3() {
                         </h2>
 
                         <p className="text-justify">
-                            We built on the duckweed transformation approaches described by{" "}
-                            <i>Ordoñez Lab</i> (Barragán-Borrero et al., 2025) from the Gregor Mendel Institute
+                            We built on the duckweed transformation approaches described by Ordoñez Lab (2){" "}
+                            from the Gregor Mendel Institute{" "}
                             in Vienna. We simplified the protocol, tested it on 12 clones, and used three{" "}
                             <i>Agrobacterium</i> strains.
                         </p>
@@ -68,7 +68,7 @@ export default function Page3() {
 
                     {/* Expandable content */}
                     {open && (
-                        <TransformationProtocol/>
+                        <TransformationProtocolReduced/>
                     )}
                 </div>
 
@@ -94,7 +94,7 @@ export default function Page3() {
 
                     {/* Expandable content */}
                     {open1 && (
-                        <VacuumInfiltrationTesting/>
+                        <VacuumInfiltrationTestingReduced/>
                     )}
                 </div>
             </div>
@@ -234,7 +234,7 @@ export default function Page3() {
                                         .
                                     </li>
                                     <li>
-                                        Select positive <i>Agrobacterium</i> colonies using primers o147 and o148.
+                                        Select positive <i>Agrobacterium</i> colonies using primers o160 and o161.
                                         Inoculate
                                         a pre-culture from a positive colony, prepare sufficient{" "}
                                         <span className="font-bold">glycerol stocks</span> for future transformations,
@@ -259,7 +259,7 @@ export default function Page3() {
                             <div className="flex flex-col justify-start items-center space-y-4">
                                 <div className="flex justify-center">
                                     <img
-                                        src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/protocol-pib006.webp"
+                                        src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/crispr-protocol.webp"
                                         alt="Duckweed transformation setup"
                                         className="rounded-lg object-contain w-full max-w-xs"
                                     />
@@ -267,9 +267,8 @@ export default function Page3() {
 
                                 <p className="text-sm text-gray-600 italic text-center max-w-xs">
                                     <span className="font-bold">Figure 1.</span> End sequences your oligos for gRNA must
-                                    have to be insertable into our pIB006 construct. The simplified protocol for
-                                    digestion
-                                    and ligation of your gene into pIB006.
+                                    have to be insertable into our pIB006 construct (1). The simplified protocol (2) for
+                                    digestion and ligation of your gene into pIB006.
                                 </p>
                             </div>
                         </div>
@@ -280,16 +279,21 @@ export default function Page3() {
                             duckweed for the functionality of the gene you targeted for knockout!
                         </div>
 
-                        <p className="text-justify text-base">
+                        <p className="text-lg leading-relaxed font-[Urbanist,sans-serif]">
                             Unfortunately, we didn’t have the chance to test the functionality of our{" "}
-                            <span className="font-bold">pIB006 part</span>, as we designed and built it during
+                            <span className="font-bold">pIB006 part</span>, except for digesting and ligating the gRNA
+                            into it,
+                            which we successfully performed twice. We also didn’t have the opportunity to transform{" "}
+                            <span className="font-bold">pIB006</span> into duckweed, as it was designed and built during
                             the{" "}
                             <span className="font-bold">fifth (final) DBTL cycle of TAIFR</span>, just as the Wiki
-                            Freeze was approaching. However, there is no logical constraint as to why it shouldn’t
-                            work, since <span className="font-bold italic">Cas9</span>, driven by the{" "}
+                            Freeze was
+                            approaching. However, there is no logical reason it shouldn’t work, since{" "}
+                            <span className="font-bold italic">Cas9</span>, driven by the{" "}
                             <span className="font-bold italic">rZmUBI promoter</span> and terminated by the{" "}
                             <span className="font-bold italic">t35S terminator</span>, has been successfully used to
-                            knock out genes in duckweed.
+                            knock out
+                            genes in duckweed.
                         </p>
                     </div>
                 )}

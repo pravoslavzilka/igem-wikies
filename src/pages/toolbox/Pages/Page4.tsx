@@ -233,7 +233,7 @@ export default function Page4() {
                         {/* App screenshots */}
                         <div className="flex justify-center">
                             <img
-                                src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/cultivator-gui-1.webp"
+                                src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/slide3.webp"
                                 alt="Nitroduck BioReactor mobile app interface"
                                 className="w-full max-w-4xl object-contain rounded-lg"
                             />
@@ -264,7 +264,7 @@ export default function Page4() {
                                 {/* === Left Column: Image === */}
                                 <div className="flex justify-center">
                                     <img
-                                        src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/cultivator-gui2.webp"
+                                        src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/slide4.webp"
                                         alt="Nitroduck BioReactor monitoring interface"
                                         className="w-full max-w-xl object-contain rounded-lg"
                                     />

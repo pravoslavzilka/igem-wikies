@@ -31,8 +31,9 @@ export default function Page5() {
                     <div>
 
                         <p className="text-justify mb-4">
-                            Duckweed growth rates vary widely across species, nutrient levels, and
-                            environmental conditions. That’s why every duckweed company or research
+                            Duckweed growth rates vary widely across species, nutrient levels, and environmental
+                            conditions (4, 5, 6, 7 and 8). That’s why every duckweed company or
+                            research
                             group must overcome lengthy optimization before they can tap into the
                             power of duckweed.
                         </p>
