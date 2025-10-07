@@ -1,4 +1,4 @@
-import {useState} from "react";
+import React, {useState} from "react";
 import {ChevronDown, ChevronUp} from "lucide-react"; // npm install lucide-react
 
 export default function Page2() {
@@ -37,10 +37,12 @@ export default function Page2() {
                     <span className="font-bold ">PING/PONG TAIFR system</span>. This toolkit also includes
                     user-friendly <span className="font-bold">CRISPR/Cas9 knock-out components</span>.
                 </p>
-
+            </div>
+            <div
+                className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-8">
                 {/* Subsection */}
                 <h3
-                    className="font-bold text-[#6ca033]"
+                    className="font-bold text-[#6ca033] mt-14"
                     style={{
                         fontFamily: "Space Grotesk, sans-serif",
                         fontSize: window.innerWidth < 768 ? "1.4rem" : "1.8rem",
@@ -48,7 +50,7 @@ export default function Page2() {
                     id="taifr"
 
                 >
-                    TAIFR, a method for inserting a gene into duckweed
+                    TAIFR - method for inserting a gene into duckweed
                 </h3>
 
                 <div className="grid md:grid-cols-2 gap-8 items-start">
