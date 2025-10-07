@@ -16,7 +16,7 @@ export default function HumanPracticesPage6() {
                             to get our hands on the superior plant and learn how to infiltrate it with{" "}
                             <span className="italic">Agrobacterium </span> – both with vacuum and with a syringe.
                             You can read all about it in our{" "}
-                            <a href="#" className="text-green-700 underline hover:text-green-900">
+                            <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                                 protocols page
                             </a>.
                         </p>
@@ -33,7 +33,8 @@ export default function HumanPracticesPage6() {
                 </div>
 
                 {/* Green highlight divider */}
-                <div className="bg-green-700 text-white font-bold text-center px-6 py-4 rounded mb-12 text-lg">
+                <div className="text-white font-bold text-center px-6 py-4 rounded mb-12 text-2xl"
+                     style={{backgroundColor: '#6ca033'}}>
                     Continue reading and watch, how we kept learning from all the amazing scientists to improve our
                     work.
                 </div>
@@ -67,7 +68,7 @@ export default function HumanPracticesPage6() {
                         struggling with the basics of{" "}
                         <span className="font-bold ">plant transformations and cloning</span>.
                         He advised us on our plasmid designs and transformation processes – read more at{" "}
-                        <a href="#" className="text-green-700 underline hover:text-green-900">
+                        <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                             Attribution page
                         </a>.
                     </p>
@@ -83,11 +84,13 @@ export default function HumanPracticesPage6() {
                     defaultOpen={true}
                 >
                     <p className="text-lg">
-                        <span className="font-bold">Dr. Boisivon </span>
-                        addressed multiple questions from us regarding plant biology. We made great use of her
-                        knowledge in the space of <span className="font-bold">plant hormones </span> when we were
-                        designing different conditions for enhanced frond regeneration of duckweed throughout
-                        selection with hormone additions.
+                        <span className="font-bold">Dr. Boisivon </span> addressed multiple questions from us regarding
+                        plant biology. We made great use of
+                        her knowledge in the space of <span className="font-bold">plant hormones </span> when we were
+                        designing different conditions for
+                        enhanced frond regeneration of duckweed throughout selection with hormone additions. Besides
+                        this, Dr. Boisivon helped us immensely by providing lab space, lab consumables and tolerating
+                        our sometimes, too intense iGEM work. Read more at Attribution page.
                     </p>
                 </ExpandablePill>
 
@@ -119,11 +122,11 @@ export default function HumanPracticesPage6() {
                     <p className="text-lg">
                         We consulted <span className="font-bold">Dr. da Silva </span> about right conditions for
                         Gibson assembly cloning for our{" "}
-                        <a href="#" className="text-green-700 underline hover:text-green-900">
+                        <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                             meristematic assay
                         </a>{" "}
                         and{" "}
-                        <a href="#" className="text-green-700 underline hover:text-green-900">
+                        <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                             excision assay
                         </a>{" "}
                         in their first iterations.
@@ -159,7 +162,7 @@ export default function HumanPracticesPage6() {
                         <span className="font-bold">iGEM teams from Brno </span>, knew the struggles we
                         were going through very well. She was always helpful with{" "}
                         <span className="font-bold">designing special PCR conditions </span> and
-                        cloning strategies for excision assay and our first versions of p004 and p003.
+                        cloning strategies for excision assay and our first versions of pIB003 and pIB004.
                     </p>
                 </ExpandablePill>
             </div>

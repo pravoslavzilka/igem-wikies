@@ -8,7 +8,7 @@ export default function HumanPracticesPage12() {
 
             (
             <div
-                className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-12">
+                className="max-w-6xl mx-auto bg-white text-lg text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-12">
 
                 {/* Section Title */}
                 <h2
@@ -25,7 +25,7 @@ export default function HumanPracticesPage12() {
                 {/* Intro paragraph */}
                 <p>
                     When we pivoted our project to making{" "}
-                    <a href="#" className="text-green-700 underline hover:text-green-900">
+                    <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                         duckweed programmable
                     </a>
                     , we wanted to hear an opinion of the person that{" "}
@@ -34,7 +34,7 @@ export default function HumanPracticesPage12() {
                     <span className="font-bold">professor Andrew D. Hanson.</span> Fortunately, he liked making
                     duckweed programmable! And we got a very valuable advice from him on how to ensure biosafe
                     operation of our vertical{" "}
-                    <a href="#" className="text-green-700 underline hover:text-green-900">
+                    <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                         CULTIVATORs
                     </a>{" "}
                     around the world, even at farms.
@@ -72,21 +72,21 @@ export default function HumanPracticesPage12() {
                                     You can take a look at our{" "}
                                     <a
                                         href="#"
-                                        className="text-green-700 underline hover:text-green-900"
+                                        className="text-[#538b5e] underline hover:text-[#25512b]"
                                     >
                                         Safety
                                     </a>{" "}
                                     page to see, how we integrated this feedback into our project and are making{" "}
                                     <a
                                         href="#"
-                                        className="text-green-700 underline hover:text-green-900"
+                                        className="text-[#538b5e] underline hover:text-[#25512b]"
                                     >
                                         duckweed biosafe
                                     </a>{" "}
                                     with our{" "}
                                     <a
                                         href="#"
-                                        className="text-green-700 underline hover:text-green-900"
+                                        className="text-[#538b5e] underline hover:text-[#25512b]"
                                     >
                                         CRISPR construct!
                                     </a>
@@ -111,7 +111,7 @@ export default function HumanPracticesPage12() {
                                         As we are writing this page, we are realizing how great of an impact his
                                         initial feedback had on us and our project.
                                     </p>
-                                    <p className="italic">
+                                    <p>
                                         ‘Build something that will make a difference’. <br/>
                                         That’s what he told us. And we are trying our best to make him proud.
                                     </p>
@@ -266,7 +266,7 @@ export default function HumanPracticesPage12() {
                     GMOs and that is exactly what we tried to do with our{" "}
                     <a
                         href="#"
-                        className="text-green-700 underline hover:text-green-900"
+                        className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         Outreach
                     </a>{" "}
@@ -278,7 +278,7 @@ export default function HumanPracticesPage12() {
                     Read all about it in{" "}
                     <a
                         href="#"
-                        className="text-green-700 underline hover:text-green-900"
+                        className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         Why duckweed!
                     </a>{" "}

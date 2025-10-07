@@ -19,7 +19,7 @@ import HumanPracticesPage16 from "./Page16.tsx";
 
 export default function HumanPractices() {
     return (
-        <div>
+        <div className="text-justify">
             <HumanPracticesPage1/>
             <HumanPracticesPage2/>
             <HumanPracticesPage3/>

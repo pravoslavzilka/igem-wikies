@@ -37,7 +37,7 @@ export default function HumanPracticesPage9() {
                         <p>
                             <span className="font-bold">Dr. Martin Malý</span> was our regular mentor in terms of
                             material usage and material processing for different purposes in the{" "}
-                            <a href="#" className="text-green-700 underline hover:text-green-900">
+                            <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                                 CULTIVATOR
                             </a>
                             , such as the structure, the plastic layers, the water jets, etc. For spraying duckweed
@@ -62,7 +62,7 @@ export default function HumanPracticesPage9() {
                             <span className="font-bold">Czech iGEM team back in 2015.</span> When he
                             heard that another one emerged ten years later, he contacted us immediately. With his
                             expertise in software, hardware and SynBio, he was helpful with perfecting our{" "}
-                            <a href="#" className="text-green-700 underline hover:text-green-900">
+                            <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                                 PREDICTOR
                             </a>.
                         </p>
@@ -95,7 +95,7 @@ export default function HumanPracticesPage9() {
                             And <span className="font-bold">professor Jansen</span> is one of those that are constantly
                             designing new systems for its cultivation.
                             We had to get his feedback on our{" "}
-                            <a href="#" className="text-green-700 underline hover:text-green-900">
+                            <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                                 CULTIVATOR
                             </a>, right?
                         </p>
@@ -146,6 +146,23 @@ export default function HumanPracticesPage9() {
 
                     </div>
                 </ExpandablePill>
+
+                <ExpandablePill
+                    image="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/bartak.webp"
+                    name="Prof. Miloš Barták, PhD"
+                    subtitle="Masaryk University Brno"
+                    location="Photosynthesis"
+                >
+                    <div className="leading-relaxed text-lg space-y-4">
+                        <p>
+                            <span className="font-bold">Professor Barták</span> is a world-renowned
+                            expert on chlorophyll fluorescence and the light-dependent reactions of photosynthesis. We
+                            reached out to him regarding the design of our duckweed lighting experiment. He helped us
+                            with the experimental design and lent us his PAR meter, which we used to better understand
+                            the light available to us.
+                        </p>
+                    </div>
+                </ExpandablePill>
             </div>
 
 
@@ -154,14 +171,14 @@ export default function HumanPracticesPage9() {
                 {/* Green Header */}
                 <div
                     id="real-world-check"
-                    className="bg-green-300 text-gray-900 font-bold px-6 py-4 rounded-t-xl"
-                    style={{fontFamily: "Space Grotesk, sans-serif", fontSize: "2rem"}}
+                    className="text-gray-900 font-bold px-6 py-4 rounded-t-xl"
+                    style={{fontFamily: "Space Grotesk, sans-serif", fontSize: "2rem", backgroundColor: '#6ca033'}}
                 >
                     Real World Check
                 </div>
 
                 {/* Intro text */}
-                <div className="p-8 text-lg leading-relaxed">
+                <div className="p-8 text-lg leading-relaxed space-y-6">
                     <p className="mb-6">
                         We built complicated and sophisticated stuff. But for what? To apply it in a real
                         world! And that’s why we were constantly checking whether we are really building
@@ -175,7 +192,10 @@ export default function HumanPracticesPage9() {
                         {/* Row 1: 4 items */}
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
                             {[
-                                {label: "Farmers & Agriculture Specialists", href: "#farmers"},
+                                {
+                                    label: "The soybean problem from both side (Czech & Brazilian stakeholders)",
+                                    href: "#farmers"
+                                },
                                 {label: "Safety & Regulations", href: "#safety"},
                                 {label: "Duckweed as a Biotechnology Platform", href: "#platform"},
                             ].map(({label, href}) => (
@@ -190,7 +210,7 @@ export default function HumanPracticesPage9() {
                                     <div
                                         className={`w-40 h-40 rounded-full border border-gray-400 flex items-center justify-center 
                       text-center p-4 text-sm leading-tight transition-colors
-                      ${hovered === label ? "bg-green-200 text-green-700" : "bg-gray-50"}`}
+                      ${hovered === label ? "bg-green-200 text-[#538b5e]" : "bg-gray-50"}`}
                                         style={{fontFamily: "Space Grotesk, sans-serif"}}
                                     >
                                         {label}
@@ -219,7 +239,7 @@ export default function HumanPracticesPage9() {
                                     <div
                                         className={`w-40 h-40 rounded-full border border-gray-400 flex items-center justify-center 
                       text-center p-4 text-sm leading-tight transition-colors
-                      ${hovered === label ? "bg-green-200 text-green-700" : "bg-gray-50"}`}
+                      ${hovered === label ? "bg-green-200 text-[#538b5e]" : "bg-gray-50"}`}
                                         style={{fontFamily: "Space Grotesk, sans-serif"}}
                                     >
                                         {label}
@@ -239,7 +259,7 @@ export default function HumanPracticesPage9() {
                             }}
                             id="farmers"
                         >
-                            Farmers & Agriculture Specialists
+                            The soybean problem from both side (Czech & Brazilian stakeholders)
                         </h2>
 
                         <p className="text-lg">
@@ -256,25 +276,35 @@ export default function HumanPracticesPage9() {
                         </p>
 
                     </div>
-                    <p className="text-lg">
-                        To gain a comprehensive perspective, we spoke (by phone) with <span className="font-bold">40 farmers</span> from
-                        the Czech Republic and Slovakia. Curious what we were asking and what did we find out?
-                    </p>
+                    <div className="space-y-12">
 
-                    <p className="text-lg font-bold">What type of feed do you use as a source of protein?</p>
+                        <p className="text-lg">
+                            To gain a comprehensive perspective, we spoke (by phone) with <span className="font-bold">40 farmers</span> from
+                            the Czech Republic and Slovakia. Curious what we were asking and what did we find out?
+                        </p>
 
-                    <p className="text-lg">
-                        Our research showed that 50% of the surveyed farms use <span
-                        className="font-bold">soy</span> at least partly as a
-                        protein source. However, only 15% rely on it as their main protein source, primarily due to
-                        its{" "}
-                        <span className="font-bold">high cost.</span> The most common protein source is <span
-                        className="font-bold">rapeseed,</span>{" "}
-                        used by 30% of the farms. Another 7.5% combine <span
-                        className="font-bold">rapeseed and soy</span> in a 1:1 ratio.
-                        Around 20% of the farms operate organically, with their cattle grazing freely on{" "}
-                        <span className="font-bold">pastures.</span>
-                    </p>
+                        <h2
+                            className="font-bold"
+                            style={{
+                                fontFamily: "Space Grotesk, sans-serif",
+                                fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem",
+                            }}>
+                            What type of feed do you use as a source of protein?
+                        </h2>
+
+                        <p className="text-lg">
+                            Our research showed that 50% of the surveyed farms use <span
+                            className="font-bold">soy</span> at least partly as a
+                            protein source. However, only 15% rely on it as their main protein source, primarily due to
+                            its{" "}
+                            <span className="font-bold">high cost.</span> The most common protein source is <span
+                            className="font-bold">rapeseed,</span>{" "}
+                            used by 30% of the farms. Another 7.5% combine <span
+                            className="font-bold">rapeseed and soy</span> in a 1:1 ratio.
+                            Around 20% of the farms operate organically, with their cattle grazing freely on{" "}
+                            <span className="font-bold">pastures.</span>
+                        </p>
+                    </div>
 
                 </div>
             </div>

@@ -1,12 +1,11 @@
 import React from "react";
 import ExpandablePill from "./ExpandablePill";
-import ExpandablePillNoImage from "./ExpandablePillNoImage";
 
 export default function HumanPracticesPage11() {
     return (
         <div>
             <div
-                className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-10">
+                className="max-w-6xl mx-auto text-lg bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-10">
 
                 {/* Intro paragraphs */}
                 <p>
@@ -24,10 +23,11 @@ export default function HumanPracticesPage11() {
                 </p>
 
                 {/* Expandable pill */}
-                <ExpandablePillNoImage
+                <ExpandablePill
                     name="Dr. Ludmila Křížová"
                     subtitle="Department of Biochemistry"
                     location="Cow feed digestibility and processing"
+                    image="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/krizova.webp"
                 >
                     <div className="leading-relaxed text-lg space-y-6">
                         <p>
@@ -61,7 +61,7 @@ export default function HumanPracticesPage11() {
                             directly with feed.
                         </p>
                     </div>
-                </ExpandablePillNoImage>
+                </ExpandablePill>
                 <p className="text-lg leading-relaxed font-[Urbanist,sans-serif]">
                     After hearing these insights, we realized we know even less about how feed works than we initially
                     thought. To address the <span className="font-bold">digestibility problem</span>, we contacted{" "}
@@ -73,7 +73,7 @@ export default function HumanPracticesPage11() {
                     Read more about our collaboration in{" "}
                     <a
                         href="#"
-                        className="text-green-700 underline hover:text-green-900"
+                        className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         Building CzechoSlovak SynBio Community from the Bottom Up
                     </a>
@@ -81,9 +81,259 @@ export default function HumanPracticesPage11() {
                 </p>
             </div>
 
+            <ExpandablePill
+                name="Milan Nahalka"
+                subtitle="SIGI Trade"
+                location="Animal feed nutrition"
+                image="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/sigi.webp"
+            >
+                <div className="leading-relaxed font-[Urbanist,sans-serif] text-lg space-y-6">
+                    <p>
+                        Mr. Nahalka collaborates with several farms in eastern Slovakia, for which he{" "}
+                        <span className="font-bold">tailors feed rations individually.</span>
+                    </p>
+
+                    <p>
+                        During our first phone call we introduced him to the superplant duckweed. He{" "}
+                        <span className="font-bold">had not heard of using duckweed in animal feed</span>{" "}
+                        before, but its high protein content motivated him to learn more.
+                    </p>
+
+                    <p>
+                        We agreed that, based on the literature, we would prepare documentation on{" "}
+                        <span className="font-bold">duckweed’s biochemical composition</span> so he could
+                        assess its <span className="font-bold">digestibility</span> and suggest specific
+                        ways to include it in a <span className="font-bold">feed ration</span>.
+                    </p>
+
+                    <p>
+                        Literature data made Mr. Nahalka even more enthusiastic about duckweed: the
+                        combination of <span className="font-bold">macro- and micronutrients</span> is{" "}
+                        ideal for cattle, and the fact that including it in the diet can{" "}
+                        <span className="font-bold">reduce methane production</span> was taken as the
+                        cherry on top.<sup>**</sup>
+                    </p>
+
+                    <p>
+                        However, to determine the exact composition of a feed mix in which duckweed would
+                        serve as the primary protein source, he wants to{" "}
+                        <span className="font-bold">
+            analyze the composition of duckweed himself
+          </span>{" "}
+                        and use the results directly in the{" "}
+                        <span className="font-bold">feed-formulation software</span> he uses. We will
+                        provide the duckweed sample for analysis.
+                    </p>
+
+                    <p>
+                        As usual, the discussion then turned to price. Mr. Nahalka was clear: “If you can
+                        reach a price comparable to or better than soy,{" "}
+                        <span className="font-bold italic">
+            I believe duckweed is the future of protein feed.
+          </span>
+                        ”
+                    </p>
+
+                    {/* Notes and footnotes */}
+                    <p className="text-gray-600 text-base mt-6">
+                        *The data in the tables come from the analysis of{" "}
+                        <em>Spirodela polyrrhiza</em> (21).
+                    </p>
+
+                    <p className="text-gray-900 ">
+                        Supplementation with <em>Wolffia globosa</em> powder (DWP) at a level of 4% of
+                        the substrate dry matter represents a promising strategy to{" "}
+                        <span className="font-bold">
+            improve rumen fermentation, enhance nutrient digestibility,
+          </span>{" "}
+                        and effectively{" "}
+                        <span className="font-bold">
+            reduce methanogen populations and methane emissions
+          </span>{" "}
+                        under in vitro conditions (22).
+                    </p>
+
+
+                    {/* Two-column table layout */}
+                    <div className="grid md:grid-cols-2 gap-8  text-gray-900">
+                        {/* Column 1 */}
+                        <div className="space-y-8">
+
+                            <div className="overflow-x-auto">
+                                <table className="w-full border border-gray-300 rounded-lg text-sm">
+                                    <caption className="text-center font-semibold mb-2 p-2">
+                                        Table 2. Amino acid composition of greater duckweed (<em>Spirodela
+                                        polyrrhiza</em>), g/kg DM
+                                    </caption>
+                                    <tbody>
+                                    <tr>
+                                        <td>Histidine (HIS)</td>
+                                        <td>15.6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Threonine (THR)</td>
+                                        <td>28.9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Arginine (ARG)</td>
+                                        <td>34.8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tyrosine (TYR)</td>
+                                        <td>22.8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Valine (VAL)</td>
+                                        <td>29.1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Leucine (LEU)</td>
+                                        <td>35.3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Isoleucine (ILE)</td>
+                                        <td>23.9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Methionine (MET)</td>
+                                        <td>12.7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lysine (LYS)</td>
+                                        <td>35.9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total EAA</td>
+                                        <td>238.9</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        {/* Column 2 */}
+                        <div className="overflow-x-auto">
+                            <div className="overflow-x-auto">
+                                <table className="w-full border border-gray-300 rounded-lg text-sm">
+                                    <caption className="text-center font-semibold mb-2 p-2">
+                                        Table 1. Main composition of greater duckweed (<em>Spirodela polyrrhiza</em>), %
+                                        dry weight
+                                    </caption>
+                                    <tbody>
+                                    <tr>
+                                        <td>Dry matter, DM</td>
+                                        <td>6.6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Organic matter</td>
+                                        <td>82.1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Crude protein</td>
+                                        <td>31.3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Crude fiber</td>
+                                        <td>5.7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Crude ash</td>
+                                        <td>17.9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Crude fat</td>
+                                        <td>2.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>NDF</td>
+                                        <td>52.9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ADF</td>
+                                        <td>21.1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Starch</td>
+                                        <td>7.8</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-8  text-gray-900 items-center">
+                        <div className="overflow-x-auto">
+                            <p className="text-gray-900 ">
+                                The duckweed powder (DWP) showed a rich content of{" "}
+                                <span className="font-bold">bioactive compounds</span>, indicating its potential
+                                as a functional feed ingredient. The analysis revealed that DWP contained
+                                significant amounts of{" "}
+                                <span className="font-bold">
+            total phenolic compounds (TPC)
+          </span>{" "}
+                                — 56.13 mg GAE/g DE,{" "}
+                                <span className="font-bold">total flavonoids (TFC)</span> — 11.64 mg QE/g DE, and{" "}
+                                <span className="font-bold">condensed tannins (TCT)</span> — 11.33 mg CE/g DE
+                                (22).
+                            </p>
+                        </div>
+                        <div className="overflow-x-auto">
+                            <table className="w-full border border-gray-300 rounded-lg text-sm">
+                                <caption className="text-center font-semibold mb-2 p-2">
+                                    Table 3. Macro- and micronutrients (g/100 g crude ash) in greater duckweed (<em>Spirodela
+                                    polyrrhiza</em>)
+                                </caption>
+                                <tbody>
+                                <tr>
+                                    <td>Calcium</td>
+                                    <td>16.3 ± 0.20</td>
+                                </tr>
+                                <tr>
+                                    <td>Magnesium</td>
+                                    <td>3.8 ± 0.05</td>
+                                </tr>
+                                <tr>
+                                    <td>Phosphorus</td>
+                                    <td>3.6 ± 0.07</td>
+                                </tr>
+                                <tr>
+                                    <td>Sodium</td>
+                                    <td>4.9 ± 0.23</td>
+                                </tr>
+                                <tr>
+                                    <td>Copper</td>
+                                    <td>0.012</td>
+                                </tr>
+                                <tr>
+                                    <td>Zinc</td>
+                                    <td>0.08</td>
+                                </tr>
+                                <tr>
+                                    <td>Iron</td>
+                                    <td>0.39</td>
+                                </tr>
+                                <tr>
+                                    <td>Total micronutrients</td>
+                                    <td>0.48 ± 0.02</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    {/* Final footnote */}
+                    <p className="text-gray-600 text-base mt-4">
+                        **From conversations with farmers, we know that some milk buyers require the inclusion
+                        of 3-nitrooxypropanol (3-NOP) in feed to reduce methane production in the animals’
+                        digestive systems.
+                    </p>
+                </div>
+            </ExpandablePill>
+
 
             <div
-                className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-12">
+                className="max-w-6xl mx-auto bg-white text-lg text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-12">
                 {/* Intro paragraph */}
                 <p>
                     Amazing! Seems like duckweed is a suitable feed... A suitable feed to replace unsustainable
@@ -172,6 +422,14 @@ export default function HumanPracticesPage11() {
                         </div>
                     </div>
                 </ExpandablePill>
+
+                <p>
+                    We found out what Czechoslovak farmers needed, and we knew that it could be beneficial even for
+                    farmers in Brazil. But what had to be done if we truly wanted to bring this technology to life? The
+                    genetically engineered, fastest-growing plant on Earth — used for real-world applications? We had to
+                    make duckweed not only more productive, but also safe… and possibly compliant with regulations.
+                </p>
+
             </div>
         </div>
     );

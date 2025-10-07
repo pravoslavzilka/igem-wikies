@@ -4,14 +4,14 @@ import StaticPill from "./StaticPill.tsx";
 
 export default function HumanPracticesPage14() {
     return (
-        <div>
+        <div className="text-lg">
             <div
                 className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-12">
 
                 {/* Intro paragraph */}
                 <p>
                     We continued to speak to a lot of people in the{" "}
-                    <a href="#" className="text-green-700 underline hover:text-green-900">
+                    <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                         biomanufacturing
                     </a>{" "}
                     field. We won’t elaborate too much on every valuable conversation, but here they are.
