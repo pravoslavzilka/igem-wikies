@@ -229,10 +229,37 @@ const PARTNERS_DATA = {
     },
     {
       company: {
+        name: "SAPMU",
+        logo: "https://static.igem.wiki/teams/5642/images/homepage/footer/SAPMU-logo.webp",
+        alt: "SAPMU Logo",
+        url: "https://www.muni.cz/en/alumni/spolek-absolventu-a-pratel-mu/about-us/about-sapmu",
+        category: "Special Partner"
+      }
+    },
+    {
+      company: {
         name: "Agronet Nesovice",
         logo: "https://static.igem.wiki/teams/5642/images/homepage/footer/agronet-nesovice.webp",
         alt: "Agronet Nesovice Logo",
         url: "https://agronet-nesovice-druzstvo.webnode.cz/",
+        category: "Special Partner"
+      }
+    },
+        {
+      company: {
+        name: "Zabcice",
+        logo: "https://static.igem.wiki/teams/5642/images/homepage/footer/Zabcice-logo.webp",
+        alt: "Zabcice Logo",
+        url: "https://szp.mendelu.cz/en/homepage/",
+        category: "Special Partner"
+      }
+    },
+        {
+      company: {
+        name: "MUNI Arts",
+        logo: "https://static.igem.wiki/teams/5642/images/homepage/footer/MUNI-arts-logo.webp",
+        alt: "MUNI Arts Logo",
+        url: "https://www.phil.muni.cz/en/",
         category: "Special Partner"
       }
     },
@@ -326,7 +353,7 @@ const PartnersSection: React.FC<PartnersSectionProps> = ({ title, partners, isSt
         {partners.map(({ company, label }, index) => (
           <div
             key={`${title || 'partners'}-${index}`}
-            className={`flex items-center justify-center min-h-0 ${isSpecialPartners ? 'w-24 sm:w-32 md:w-36' : ''}`}
+            className={`flex items-center justify-center min-h-0 ${isSpecialPartners ? 'w-20 sm:w-24 md:w-27' : ''}`}
           >
             <LogoCard company={company} label={label} isStrategic={isStrategic} />
           </div>
