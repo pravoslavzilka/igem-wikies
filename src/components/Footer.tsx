@@ -230,7 +230,7 @@ const PARTNERS_DATA = {
     {
       company: {
         name: "SAPMU",
-        logo: "https://static.igem.wiki/teams/5642/images/homepage/footer/SAPMU-logo.webp",
+        logo: "https://static.igem.wiki/teams/5642/images/homepage/footer/sapmu-logo.webp",
         alt: "SAPMU Logo",
         url: "https://www.muni.cz/en/alumni/spolek-absolventu-a-pratel-mu/about-us/about-sapmu",
         category: "Special Partner"
@@ -248,7 +248,7 @@ const PARTNERS_DATA = {
         {
       company: {
         name: "Zabcice",
-        logo: "https://static.igem.wiki/teams/5642/images/homepage/footer/Zabcice-logo.webp",
+        logo: "https://static.igem.wiki/teams/5642/images/homepage/footer/zabcice-logo.webp",
         alt: "Zabcice Logo",
         url: "https://szp.mendelu.cz/en/homepage/",
         category: "Special Partner"
@@ -257,7 +257,7 @@ const PARTNERS_DATA = {
         {
       company: {
         name: "MUNI Arts",
-        logo: "https://static.igem.wiki/teams/5642/images/homepage/footer/MUNI-arts-logo.webp",
+        logo: "https://static.igem.wiki/teams/5642/images/homepage/footer/muni-arts-logo.webp",
         alt: "MUNI Arts Logo",
         url: "https://www.phil.muni.cz/en/",
         category: "Special Partner"
