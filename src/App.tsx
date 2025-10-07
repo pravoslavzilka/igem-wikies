@@ -122,7 +122,6 @@ function App() {
           <Route path="/engagement/outreach/3h-party" element={<ThreeHParty />} />
           <Route path="/engagement/outreach" element={<Outreach />} />
           <Route path="/human-practices" element={<HumanPractices />} />
-          <Route path="/engagement/outreach/igem-brno-community" element={<IgemBrnoCommunity />} />
           <Route path="/entrepreneurship" element={<Entrepreneurship />} />
           <Route path='/engagement/crowdfunding' element={<CrowdfundingStory/>} />
 
