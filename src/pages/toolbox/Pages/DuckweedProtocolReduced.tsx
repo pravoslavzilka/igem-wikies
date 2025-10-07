@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import References from '../../../components/References';
 
 const DuckweedProtocolReduced = () => {
     return (
@@ -418,7 +417,7 @@ const DuckweedProtocolReduced = () => {
                                     <span style={{fontWeight: 400}}> of </span>
                                     <strong>MS medium </strong>
                                     <span style={{fontWeight: 400}}>
-                          (2) with 3 g/l Phytagel or 6g/l Plant Agar
+                          (3) with 3 g/l Phytagel or 6g/l Plant Agar
                         </span>
                                 </li>
                                 <li style={{fontWeight: 400}}>
@@ -499,25 +498,10 @@ const DuckweedProtocolReduced = () => {
             </div>
 
 
-            <References references={Reference}/>
-
-
         </div>
     );
 };
 
 export default DuckweedProtocolReduced;
 
-
-const Reference = [
-    {
-        id: 1,
-        text: "Barragán-Borrero, V., de Santana Lopes, A., Batista, E. D. R., Höfer, M., Elias, R., Chakraborty, A., Ponce-Mañe, A., Descombes, C., Diezma-Navas, L., Petraki, L., Huber, M., Xu, S., & Marí-Ordóñez, A. (2025, August 28). Strain, procedures, and tools for reproducible genetic transformation and genome editing of Spirodela polyrhiza (L.) Schleid. bioRxiv. https://doi.org/10.1101/2025.08.28.672806",
-        url: "https://doi.org/10.1101/2025.08.28.672806"
-    },
-    {
-        id: 2,
-        text: "Murashige, T., & Skoog, F. (1962). A revised medium for rapid growth and bio assays with tobacco tissue cultures. Physiologia Plantarum, 15(3), 473–497."
-    }
-]
 

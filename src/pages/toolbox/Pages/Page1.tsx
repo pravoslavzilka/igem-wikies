@@ -248,7 +248,7 @@ export default function Page1() {
                             hides immense <span className="font-bold">biotechnological potential.</span> Being a rich
                             source of plant-based protein with a full amino acid spectrum, which we aimed to use to
                             address the affordability of protein feedstock — is just one of duckweed’s superior
-                            characteristics (read more at{" "}
+                            characteristics (read more and see references at {" "}
                             <a href="/toolbox/deep-dive-on-duckweed/" className="underline">
                                 Deep dive on duckweed page
                             </a>
@@ -358,7 +358,9 @@ export default function Page1() {
             </span>{" "}
                             It grows fast, scales easily, and lacks a complex genome or strong transgene silencing.
                             This makes it perfectly positioned to provide solutions in agriculture,
-                            pharmaceuticals, and even in accelerating basic plant science at lower cost.{" "}
+                            pharmaceuticals, and even in accelerating basic plant science at lower cost{" "}
+                            (read more and see references at <a href="/project/why/" className="underline">Why{" "}
+                            duckweed page</a>){" "}
                             <span className="font-bold">
               But duckweed also has its own challenges, which we set out to address in our iGEM
               project.

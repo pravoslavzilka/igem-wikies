@@ -97,7 +97,10 @@ export default function CultivatorIntro() {
 
                 <div className="font-[Urbanist,sans-serif] text-lg leading-relaxed space-y-4">
                     <p className="text-justify">
-                        With complete documentation, build plans, and source code available, any lab can reproduce
+                        With complete documentation (<a href="" className="underline">access here</a>), build plans (<a
+                        href="" className="underline">access here</a>), and source code (
+                        <a href="" className="underline">access{" "}
+                        here</a>) available, any lab can reproduce{" "}
                         and adapt the cultivator for their own work –{" "}
                         <span className="font-bold">for about $1,000 in materials.</span>
                     </p>

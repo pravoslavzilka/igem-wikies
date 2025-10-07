@@ -4,15 +4,6 @@ export default function HarvestingStrategyReduced() {
         <div className="max-w-6xl mx-auto p-6 bg-white text-lg text-justify"
              style={{fontFamily: 'Urbanist, sans-serif'}}>
 
-            {/* Rationale Section */}
-            <div className="mb-8">
-                <h2 className="text-2xl font-bold mb-4 text-gray-900" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
-                    Rationale
-                </h2>
-                <p className="text-gray-700 leading-relaxed mb-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                    <span style={{fontWeight: "400"}}>Not only cultivation conditions but also a harvesting strategy should be optimized to ensure smooth duckweed cultivation. That's why we explored different harvesting strategies (with different harvesting frequencies and ratios) to determine which one leads to the maximum biomass yields, as duckweed grows the fastest at a certain surface confluence. The goal is to maintain the long-term sustainability of duckweed culture.</span>
-                </p>
-            </div>
 
             {/* Methodology Section */}
             <div className="mb-8">
