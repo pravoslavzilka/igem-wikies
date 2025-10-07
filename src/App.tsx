@@ -29,6 +29,7 @@ import PredictorMain from './pages/project/how/predictor/PredictorMain';
 import DeepDiveDocument from './pages/toolbox/DeepDive';
 import PromotersSilico from './pages/toolbox/PromotersSilico'
 import VacuumInfiltrationTesting from './pages/toolbox/programable_duckweed/VacuumInfiltrationTesting';
+import PartCollection from './pages/toolbox/programable_duckweed/PartCollection';
 
 import ToolboxTools from './pages/toolbox/Tools';
 import ToolboxResources from './pages/toolbox/Resources';
@@ -107,6 +108,7 @@ function App() {
           <Route path="/toolbox/vacuum-infiltration-testing/" element={<VacuumInfiltrationTesting />} />
 
           <Route path="/toolbox/programmable-duckweed/plant-synbio" element={<DuckweedToolbox />} />
+          <Route path="/toolbox/programmable-duckweed/part-collection" element={<PartCollection />} />
 
 
 
