@@ -20,9 +20,9 @@ const SolutionSection: React.FC = () => {
         <p>
           That looked terrible! We had to do something there. We searched for bacteria that could utilize the nitrogen and capture it, even make electricity out of it... well, not the greatest ideas. But we found the superior plant -{' '}
           <span className="font-bold">duckweed</span>. You can read all about it on{' '}
-          <a href="#" className="underline">Deep Dive on Duckweed</a>
+          <a href="/toolbox/deep-dive-on-duckweed/" className="underline">Deep Dive on Duckweed</a>
           {' '}and{' '}
-          <a href="#" className="underline">Why Duckweed</a>
+          <a href="/whyduckweed" className="underline">Why Duckweed</a>
           {' '}pages.
         </p>
         
@@ -37,9 +37,9 @@ const SolutionSection: React.FC = () => {
           <span className="font-bold">fed back to livestock</span>
           {' '}that produced the manure! This way, we can{' '}
           <span className="font-bold">close the nitrogen loop right on the farm</span>. Regarding the scientific concept of our solution, you can read more in{' '}
-          <a href="#" className="underline">Ideation</a>
+          <a href="/human-practices#ideation" className="underline">Ideation</a>
           {' '}and you can take a look how we actually build the{' '}
-          <a href="#" className="underline">cultivation system</a>
+          <a href="/hardware" className="underline">cultivation system</a>
           {' '}we envisioned a year and half ago.
         </p>
       </div>

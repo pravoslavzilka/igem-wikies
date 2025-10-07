@@ -21,7 +21,8 @@ const SynBioHackathonSection: React.FC = () => {
           This meant creating a completely{' '}
           <span className="font-bold">new scientific approach</span> to our project so we had to sit down and hack. That&apos;s where{' '}
           <a 
-            href="https://synbee.eu/activity/european-synbio-hackaton" 
+            href="https://synbee.eu/activity/european-synbio-hackaton"
+            target="blank"
             className="text-blue-600 hover:underline"
           >
             SynBee Read-Write-Grow Hackathon

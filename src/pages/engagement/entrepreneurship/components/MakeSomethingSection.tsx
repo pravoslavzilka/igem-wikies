@@ -22,7 +22,7 @@ const MakeSomethingSection: React.FC = () => {
           <span className="font-bold">talk to users</span> of our product as soon and as frequently as possible. That&apos;s why we went out and{' '}
           <span className="font-bold">started to speak</span> with the ones that would be using NitroDuck if we would make it profitable – farmers. We talked to{' '}
           <span className="font-bold">more than 30 farmers</span> and asked them what they need from out solution to use it and make them satisfied. Read all about it in our{' '}
-          <span className="underline">Real World Confrontation</span> page in human practices.
+          <span className="underline"><a href="/human-practices#real-world-check">Real World Check</a></span> page in human practices.
         </p>
       </div>
     </section>
