@@ -39,8 +39,9 @@ export default function Outreach() {
       {/* Four Pillars Section */}
       <div className="px-6 py-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-          <div  className="bg-green-500 text-center p-4 rounded-lg">
-              <h3 className=" font-bold text-2xl mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+
+          <div  className="bg-[#538b5e] text-center p-4 rounded-lg">
+              <h3 className=" font-bold text-2xl mb-4 text-white" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
                 Creating Network
               </h3>
               <div className=" mt-10 bg-white rounded-full w-36 h-36 mx-auto mb-2 flex items-center justify-center">
@@ -52,8 +53,8 @@ export default function Outreach() {
             </div>
 
 
-            <div  className="bg-green-500 text-center p-4 rounded-lg">
-              <h3 className=" font-bold text-2xl mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+            <div  className="bg-[#538b5e] text-center p-4 rounded-lg">
+              <h3 className=" font-bold text-2xl mb-4 text-white" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
                 Communicating Science
               </h3>
               <div className="bg-white rounded-full w-36 h-36 mx-auto mb-2 flex items-center justify-center">
@@ -65,8 +66,8 @@ export default function Outreach() {
             </div>
 
 
-            <div  className="bg-green-500 text-center p-4 rounded-lg">
-              <h3 className=" font-bold text-2xl mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+            <div  className="bg-[#538b5e] text-center p-4 rounded-lg">
+              <h3 className=" font-bold text-2xl mb-4 text-white" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
                 Cultivating Community
               </h3>
               <div className="bg-white rounded-full w-36 h-36 mx-auto mb-2 flex items-center justify-center">
@@ -79,8 +80,8 @@ export default function Outreach() {
 
 
 
-            <div  className="bg-green-500 text-center p-4 rounded-lg">
-              <h3 className=" font-bold text-2xl mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+            <div  className="bg-[#538b5e] text-center p-4 rounded-lg">
+              <h3 className=" font-bold text-2xl mb-4 text-white" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
                 Connecting w/ iGEMers
               </h3>
               <div className="bg-white rounded-full w-36 h-36 mx-auto mb-2 flex items-center justify-center">
@@ -113,9 +114,18 @@ export default function Outreach() {
               made it to <strong>TV</strong>!
             </p>
           </div>
+
+          <div className=" bg-[#538b5e] rounded-lg p-6 text-white min-w-64 flex flex-col md:flex-row items-start ">
+            <h3 className="text-3xl font-bold mb-4 mt-10 mr-4 text-white" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              Crowdfunding
+            </h3>
+            <div className="bg-white rounded-full w-36 h-36 mx-auto mb-4 flex items-center justify-center text-center">
+              <span className="text-md text-black"><Link to="/engagement/crowdfunding"><b>Bringing 21 iGEMers to Paris</b></Link></span>
+            </div>
+          </div>
           
-          <div className=" bg-green-500 rounded-lg p-6 text-white min-w-64 flex flex-col md:flex-row items-start ">
-            <h3 className="text-3xl font-bold mb-4 mt-10 mr-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+          <div className=" bg-[#538b5e] rounded-lg p-6 text-white min-w-64 flex flex-col md:flex-row items-start ">
+            <h3 className="text-3xl font-bold mb-4 mt-10 mr-4 text-white" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               Circulating <br/> Online
             </h3>
             <div className="bg-white rounded-full w-36 h-36 mx-auto mb-4 flex items-center justify-center text-center">

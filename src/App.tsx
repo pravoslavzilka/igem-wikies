@@ -75,7 +75,7 @@ function App() {
           {/* Project Routes */}
           <Route path="/contribution" element={<HowLanding />} />
           <Route path="/project/description" element={<ProjectWhat />} />
-          <Route path="/project/how/" element={<ProjectWhy />} />
+          <Route path="/whyduckweed" element={<ProjectWhy />} />
 
 
           {/* How Routes */}
