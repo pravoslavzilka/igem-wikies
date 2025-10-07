@@ -12,7 +12,7 @@ const IgemNevadaSection: React.FC = () => {
               className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-[120%] text-black"
               style={{ fontFamily: 'Urbanist, sans-serif' }}
             >
-              iGEM Nevada 2009 Team
+             <a target='_blank' href="https://2009.igem.org/Team:Nevada/Project">iGEM Nevada 2009 Team</a>
             </h2>
           </div>
 
@@ -22,7 +22,7 @@ const IgemNevadaSection: React.FC = () => {
               className="text-base sm:text-lg leading-[168%] text-black/75 text-justify"
               style={{ fontFamily: 'Space Grotesk, sans-serif' }}
             >
-              Struggled to transform and genetically engineer duckweed, as many other scientists worldwide have. As reported in their notebook, <strong>duckweed callus induction and formation simply took too long for their iGEM timeline</strong>. Many other iGEM teams might have liked to start projects based on duckweed <strong>but were discouraged by the time-consuming</strong> and hardship of duckweed genetic engineering or the lack of available parts.
+              Struggled to transform and genetically engineer duckweed, as many other scientists worldwide have. As reported in their notebook, <strong>duckweed callus induction and formation simply took too long for their iGEM timeline</strong>. Many other iGEM teams might have wanted to start projects based on duckweed <strong>but were discouraged by how time-consuming</strong> and hard duckweed genetic engineering is or by the lack of available parts.
             </p>
           </div>
           
