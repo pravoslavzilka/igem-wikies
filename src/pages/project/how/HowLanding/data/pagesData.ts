@@ -18,7 +18,7 @@ export const pagesData: PageData[] = [
     id: 1,
     title: "Transformation Speed",
     pageTitle: "TAIFR",
-    pageUrl: "/project/how/taifr",
+    pageUrl: "/project/how/taifr/overview/",
     beforeTime: "5 months",
     beforeDescription: "to get a stable line of transgenic duckweed",
     beforeDetails: "Duckweed genetic engineering is painfully slow, laborious and unpredictable.",
