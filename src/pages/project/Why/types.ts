@@ -1,3 +1,5 @@
+import {ReactElement} from "react";
+
 export interface WhyProps {
   heroImageUrl?: string | null;
   firstSectionImageUrl?: string | null;
@@ -16,7 +18,7 @@ export interface WhyProps {
 export interface AccordionData {
   [key: string]: {
     title: string;
-    content: string[];
+    content: ReactElement[];
     imageUrl: string | null;
   };
 }
@@ -24,7 +26,7 @@ export interface AccordionData {
 export interface AccordionItemProps {
   id: string;
   title: string;
-  content: string[];
+  content: ReactElement[];
   isActive: boolean;
   onClick: (id: string | null) => void;
   showContent?: boolean;
