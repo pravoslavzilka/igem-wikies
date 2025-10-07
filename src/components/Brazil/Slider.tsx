@@ -29,23 +29,22 @@ const Slider: React.FC<SliderProps> = ({
   };
 
   return (
-    <div className="mt-8">
-      <div className="relative px-2">
-        <input
-          type="range"
-          min="0"
-          max="100"
-          value={sliderValue}
-          onChange={handleInputChange}
-          disabled={isDisabled}
-          className={`absolute inset-0 w-full h-8 opacity-0 z-10 ${
-            isDisabled 
-              ? 'cursor-not-allowed' 
-              : 'cursor-pointer'
-          }`}
-          style={{ top: '-4px' }}
-        />
+    <div className="w-full px-2 py-4">
+      <div className="relative">
+        {/* Invisible input for interaction (ak nie je disabled) */}
+        {!isDisabled && (
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value={sliderValue}
+            onChange={handleInputChange}
+            className="absolute inset-0 w-full h-8 opacity-0 z-10 cursor-pointer"
+            style={{ top: '-4px' }}
+          />
+        )}
         
+        {/* Visual slider */}
         <div className="relative pointer-events-none">
           <div className="flex justify-between items-end">
             {ticks.map((tickValue, index) => {
@@ -54,8 +53,6 @@ const Slider: React.FC<SliderProps> = ({
               const isFirstOrLast = index === 0 || index === numberOfTicks - 1;
               const tickOpacity = isDisabled ? 0.5 : 1;
 
-              // --- OPRAVA: Logika pre veľkosť paličiek je teraz oddelená od stavu 'isActive' ---
-              // Veľkosť je konštantná a závisí len od pozície paličky.
               const sizeClass = isCenter
                 ? 'h-6 w-1'
                 : isFirstOrLast
@@ -65,7 +62,7 @@ const Slider: React.FC<SliderProps> = ({
               return (
                 <div
                   key={tickValue}
-                  className={`transition-colors duration-300 ${sizeClass}`} // Použije sa nová, pevná veľkostná trieda
+                  className={`transition-colors duration-300 ${sizeClass}`}
                   style={{ 
                     backgroundColor: isActive 
                       ? CONFIG.colors.accent 
@@ -77,6 +74,7 @@ const Slider: React.FC<SliderProps> = ({
             })}
           </div>
           
+          {/* Slider handle */}
           <div
             className={`absolute bottom-0 transform -translate-x-1/2 w-3 h-6 rounded-sm shadow-lg ${
               isDisabled ? 'animate-pulse' : ''
@@ -90,7 +88,8 @@ const Slider: React.FC<SliderProps> = ({
         </div>
       </div>
       
-      <div className={`flex justify-between text-white text-sm mt-4 transition-opacity duration-300 ${
+      {/* Labels */}
+      <div className={`flex justify-between text-white text-xs sm:text-sm mt-3 transition-opacity duration-300 ${
         isDisabled ? 'opacity-50' : 'opacity-75'
       }`}>
         <span>PAST</span>
@@ -98,9 +97,10 @@ const Slider: React.FC<SliderProps> = ({
         <span>FUTURE</span>
       </div>
       
+      {/* Current year display */}
       <div className="text-center mt-2">
         <span 
-          className={`text-lg font-bold transition-opacity duration-300 ${
+          className={`text-lg sm:text-xl font-bold transition-opacity duration-300 ${
             isDisabled ? 'opacity-70' : 'opacity-100'
           }`}
           style={{ color: CONFIG.colors.accent }}
