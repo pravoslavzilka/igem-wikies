@@ -1,4 +1,5 @@
 import React from 'react';
+import References from '../../components/References';
 
 const DuckweedSafety = () => {
   return (
@@ -20,8 +21,8 @@ const DuckweedSafety = () => {
               <span style={{ fontWeight: 400 }}>Duckweed is known for its extremely </span>
               <strong>fast growth rate </strong>
               <span style={{ fontWeight: 400 }}>
-                 and, some species, have been even recognized as invasive, causing damage
-                to freshwater ecosystems (1). Aware of the risks, we treated duckweed in our
+                 and, some species have been even recognized as <b>invasive</b>, causing damage
+                to freshwater ecosystems [1]. Aware of the risks, we treated duckweed in our
                 project with a very high level of caution.
               </span>
             </p>
@@ -50,12 +51,12 @@ const DuckweedSafety = () => {
           <span style={{ fontWeight: 400 }}>
             We engaged with Prof. Andrew D. Hanson about strategies for long-term
             biosafety and identified auxotrophy as the most feasible safeguard. Among
-            possible targets for a knock-out, the THI4 gene stood out as the best option
-            due to the low cost of its substrate, thiamine. As a result,{" "}
+            possible targets for a knock-out, the thiamine synthase THI4 gene stood out as the best option
+            due to the low cost of its product, thiamine. As a result,{" "}
           </span>
           <strong>
-            duckweed that is not supplemented with thiamine would be unable to survive
-            outside of controlled cultivation systems
+            mutant line lacking thiamine synthase would be unable to survive
+            outside of controlled cultivation systems if not supplementeed with thiamine.
           </strong>
           <span style={{ fontWeight: 400 }}>. </span>
         </p>
@@ -82,7 +83,7 @@ const DuckweedSafety = () => {
       {/* Footer Reference */}
       <div className="mt-6 pt-4 border-t border-gray-200">
         <p className="text-sm text-gray-500" style={{fontFamily: 'Urbanist, sans-serif'}}>
-          (1) Reference citation placeholder
+          [1] Reference citation placeholder
         </p>
       </div>
 
@@ -90,7 +91,7 @@ const DuckweedSafety = () => {
       <div className="mt-12 mb-8">
         <div className="space-y-4 text-gray-700 leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
           <p>
-            <span style={{ fontWeight: 400 }}>Using CRISPOR (2), </span>
+            <span style={{ fontWeight: 400 }}>Using <a target='_blank' className='hover:underline text-[#6ca033]' href="https://crispor.gi.ucsc.edu/">CRISPOR</a> [2], </span>
             <strong>we designed gRNAs&nbsp; targeting THI4</strong>
             <span style={{ fontWeight: 400 }}>
               {" "}
@@ -182,7 +183,7 @@ const DuckweedSafety = () => {
             </p>
             <p>
               <span style={{ fontWeight: 400 }}>
-                We followed good laboratory practices (GLP), including sterilising benches
+                We followed good <a target='_blank' className='hover:underline text-[#6ca033]' href="https://www.oecd.org/content/dam/oecd/en/publications/reports/2005/12/good-laboratory-practice_g1gh5db5/9789264012837-en.pdf">laboratory practices </a> (GLP), including sterilising benches
                 before and after use with 70 % ethanol and sterilising flow-boxes with UV
                 light after every use.{" "}
               </span>
@@ -285,7 +286,7 @@ const DuckweedSafety = () => {
           <p>
             <span style={{ fontWeight: 400 }}>
               Professional waste management staff from the Microbial Bioengineering
-              Laboratory at Masaryk University, namely Mrs. Karolína Černá, oversaw the
+              Laboratory at Masaryk University, namely MSc. Karolína Černá, oversaw the
               collection, autoclaving, and disposal of waste, ensuring that no
               experimental material from the laboratory was left untreated.
             </span>
@@ -295,8 +296,8 @@ const DuckweedSafety = () => {
               We encourage you to read more about the safety precautions we took and
               professionals we consulted in{" "}
             </span>
-            <a target='_blank' href="https://teams.igem.org/5642/safety/safety-final-form/52ec67e6-ea29-4e3c-853f-bd5cf5864346">
-              <span style={{ fontWeight: 400, color: '#1d4ed8' }}>our Safety Form</span>
+            <a className='hover:underline text-[#6ca033]' target='_blank' href="https://teams.igem.org/5642/safety/safety-final-form/52ec67e6-ea29-4e3c-853f-bd5cf5864346">
+              <span>our Safety Form</span>
             </a>
             <span style={{ fontWeight: 400 }}>.</span>
           </p>
@@ -305,37 +306,9 @@ const DuckweedSafety = () => {
         </div>
       </div>
 
-      {/* Sources Section */}
-      <div className="mb-8">
-        <h2 className="text-2xl font-bold mb-4 text-gray-800" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
-          Sources
-        </h2>
-        
-        <div className="space-y-2 text-gray-700" style={{fontFamily: 'Urbanist, sans-serif'}}>
-          <div className="flex">
-            <span className="mr-3">(1)</span>
-            <a 
-              href="https://doi.org/10.1016/j.aquabot.2018.07.004" 
-              className="text-blue-600 hover:text-blue-800 underline break-all"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://doi.org/10.1016/j.aquabot.2018.07.004
-            </a>
-          </div>
-          <div className="flex">
-            <span className="mr-3">(2)</span>
-            <a 
-              href="https://doi.org/10.1093/nar/gky354" 
-              className="text-blue-600 hover:text-blue-800 underline break-all"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://doi.org/10.1093/nar/gky354
-            </a>
-          </div>
-        </div>
-      </div>
+
+      <References references={Reference}  />
+
 
     
 
@@ -346,3 +319,19 @@ const DuckweedSafety = () => {
 };
 
 export default DuckweedSafety;
+
+
+
+const Reference = [
+    {
+        id: 1,
+        text: "Umetsu, C. A. (2018). The case of Itanhaém Basin, São Paulo, Brazil: Aquatic plants as indicators of ecological quality in tropical rivers. Aquatic Botany. https://doi.org/10.1016/j.aquabot.2018.05.003",
+        url: "https://doi.org/10.1016/j.aquabot.2018.05.003"
+    },
+    {
+        id: 2,
+        text: "Concordet, J. P., & Haeussler, M. (2018). CRISPOR: Intuitive guide selection for CRISPR/Cas9 genome editing experiments and screens. Nucleic Acids Research, 46(W1), W242–W245. https://doi.org/10.1093/nar/gky354",
+        url: "https://doi.org/10.1093/nar/gky354"
+    },
+  
+  ]    
