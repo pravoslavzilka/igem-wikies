@@ -51,7 +51,7 @@ const Partners = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center md:col-span-1">
               <img
-                src="https://static.igem.wiki/teams/5642/images/homepage/footer/muni-sci-logo.webp"
+                src="https://static.igem.wiki/teams/5642/images/duckweedmafia/partners/sci-lg-eng-rgb.webp"
                 alt="MUNI"
                 className="max-w-full h-auto"
                 style={{ maxWidth: "600px", width: "100%", height: "auto" }}
@@ -61,7 +61,12 @@ const Partners = () => {
               
               
               <p className="text-md  leading-relaxed mb-6" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                <strong>Faculty of Science, Masaryk University (MUNI SCI)</strong> – A true strategic partner in building the Czech synthetic biology ecosystem. Thanks to the dean, prof. Tomáš Kašparovský, 15 of our team members received scholarships covering a significant part of iGEM fees and laboratory expenses. Not only that, through the MUNI SCI scholarship program, co-founder of iGEM Brno, Miroslav gained research experience at the Weizmann Institute of Science, where he worked directly on duckweed and gained important experiences and contact which helped us a lot during iGEM. <span className="text-blue-600"><Link to="https://sci.muni.cz">sci.muni.cz</Link></span>
+                <strong>Masaryk University Faculty of Science (MUNI SCI) </strong> –
+                
+                  has been a key strategic partner in our journey. Through programs like student scholarships and Start Your Business, MUNI SCI provided us with the resources to launch iGEM Brno. Their support, together with Spolek přátel MU, enabled our founding members to attend the BioInnovation Fair at the iGEM Grand Jamboree, which motivated us to establish the iGEM Brno team. MUNI SCI further supported our research through scholarships, internships, and funding that covered all iGEM fees and travel expenses. Moreover, MUNI helped us carry out PR activities for our crowdfunding campaign and funded the production of our presentation video, enabling us to tell our story in a professional way. Special thanks go to the Dean of the Faculty, Prof. Tomáš Kašparovský, for his willingness to support our activities - we truly appreciate it.                 
+                 <span className="text-blue-600">
+                  <a target="_blank" href="https://sci.muni.cz">sci.muni.cz</a>
+                </span>
               
              </p>
             </div>
@@ -584,7 +589,7 @@ const Partners = () => {
                 </span>
                 <a href="https://www.thermofisher.com/cz/en/home.html">
                       {" "}
-                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>https://www.thermofisher.com/cz/en/home.html</span>
+                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>www.thermofisher.com</span>
                     </a>
               </p>
             </div>
@@ -656,7 +661,7 @@ const Partners = () => {
                 </span>
                 <a href="https://www.dianabiotech.com/">
                       {" "}
-                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>https://www.dianabiotech.com/</span>
+                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>www.dianabiotech.com/</span>
                     </a>
               </p>
             </div>
@@ -688,7 +693,7 @@ const Partners = () => {
                 </span>
                 <a href="https://www.multiplexdx.com/">
                       {" "}
-                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>https://www.multiplexdx.com/</span>
+                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>www.multiplexdx.com/</span>
                     </a>
               </p>
             </div>
@@ -725,7 +730,7 @@ const Partners = () => {
                 </span>
                 <a href=" https://pecinov.com/domovska-stranka/">
                       {" "}
-                      <span style={{ color: '#3b82f6', fontWeight: 400 }}> https://pecinov.com/domovska-stranka/</span>
+                      <span style={{ color: '#3b82f6', fontWeight: 400 }}> pecinov.com/domovska-stranka/</span>
                     </a>
               </p>
             </div>
@@ -741,7 +746,7 @@ const Partners = () => {
                 </span>
                 <a href="https://tensor.ventures/">
                       {" "}
-                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>https://tensor.ventures/</span>
+                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>tensor.ventures/</span>
                     </a>
               </p>
             </div>
@@ -773,15 +778,49 @@ const Partners = () => {
                 </span>
                 <a href="https://www.p-lab.cz/">
                       {" "}
-                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>https://www.p-lab.cz/</span>
+                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>www.p-lab.cz/</span>
                     </a>
               </p>
+            </div>
+          </div>
+
+
+
+          <div className="grid md:grid-cols-2 gap-12 items-center mt-16">
+            <div className="md:col-span-1">
+              <p>
+                <strong>SAPMU</strong>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  (the Association of Friends and Alumni of Masaryk University) supported us twice—first by providing funding for Matúš and Miro to attend the BioInnovation Fair at the Grand Jamboree 2024, which cemented our ambition to establish an iGEM team. Secondly, they funded our initiative SynBio Discussion—a public event on the socio-economic aspects of synthetic biology and the bioeconomy—which will take place in November!
+                </span>
+                <a target="_blank" href="https://www.muni.cz/en/alumni/spolek-absolventu-a-pratel-mu/about-us/about-sapmu">
+                      {" "}
+                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>www.muni.cz/en/alumni/</span>
+                    </a>
+              </p>
+            </div>
+            <div className="flex justify-center md:col-span-1">
+              <img
+                src="https://static.igem.wiki/teams/5642/images/homepage/footer/sapmu-logo.webp"
+                alt="SAPMU"
+                className="max-w-full h-auto"
+                style={{ maxWidth: "600px", width: "100%", height: "auto" }}
+              />
             </div>
           </div>
 
           
 
           <div className="grid md:grid-cols-2 gap-12 items-center mt-16">
+            <div className="flex justify-center md:col-span-1">
+              <img
+                src="https://static.igem.wiki/teams/5642/images/homepage/footer/agronet-nesovice.webp"
+                alt="AGRONET Nesovice"
+                className="max-w-full h-auto"
+                style={{ maxWidth: "600px", width: "100%", height: "auto" }}
+              />
+            </div>
             <div className="md:col-span-1">
               <p>
                 <strong>AGRONET Nesovice</strong>
@@ -791,32 +830,73 @@ const Partners = () => {
                 </span>
                 <a href="https://agronet-nesovice-druzstvo.webnode.cz/">
                       {" "}
-                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>https://agronet-nesovice-druzstvo.webnode.cz/</span>
+                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>agronet-nesovice-druzstvo.webnode.cz/</span>
+                    </a>
+              </p>
+            </div>
+            
+          </div>
+
+
+          <div className="grid md:grid-cols-2 gap-12 items-center mt-16">
+            <div className="md:col-span-1">
+              <p>
+                <strong>MENDELu University Agriculture Enterprise in Žabčice</strong>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                  The Žabčice Agricultural Farm under Mendel University was crucial for deepening our understanding of protein feedstock, cattle, and soybeans. They kindly allowed us to shoot parts of our presentation video at their farm. We are grateful to Mr. Doležal for granting us permission and to Dr. Tučková for her assistance and valuable insights into farming.                </span>
+
+                <a target="_blank" href="https://szp.mendelu.cz/en/homepage/">
+                      {" "}
+                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>szp.mendelu.cz/</span>
                     </a>
               </p>
             </div>
             <div className="flex justify-center md:col-span-1">
               <img
-                src="https://static.igem.wiki/teams/5642/images/homepage/footer/agronet-nesovice.webp"
-                alt="AGRONET Nesovice"
+                src="https://static.igem.wiki/teams/5642/images/homepage/footer/zabcice-logo.webp"
+                alt="Žabčice Agricultural Farm"
                 className="max-w-full h-auto"
                 style={{ maxWidth: "600px", width: "100%", height: "auto" }}
               />
             </div>
           </div>
 
-          
 
-          <div className="grid md:grid-cols-2 gap-12 items-center mt-16">
-
+        <div className="grid md:grid-cols-2 gap-12 items-center mt-16">
             <div className="flex justify-center md:col-span-1">
               <img
-                src="https://static.igem.wiki/teams/5642/images/homepage/footer/vican-winery.webp"
-                alt="Vican"
+                src="https://static.igem.wiki/teams/5642/images/homepage/footer/muni-arts-logo.webp"
+                alt="MUNI ARTS"
                 className="max-w-full h-auto"
                 style={{ maxWidth: "600px", width: "100%", height: "auto" }}
               />
             </div>
+            <div className="md:col-span-1">
+              <p>
+                <strong>MUNI ARTS</strong>
+                <span style={{ fontWeight: 400 }}>
+                  {" "}
+                     The Video Crew from the Center for Information Technologies (led by Mr. Zemene) at MUNI Faculty of Arts created our promotional video pro bono and our presentation video as contractors. Irina Matusevič, Martin Ingr, Benedikt Kyselka, and Antonina Kuryanova did an amazing and highly professional job visualizing our story and work, flexibly fulfilling all our crazy cinematic requests. We are especially thankful to Mr. Zemene for his willingness to help us when we were short on time. 
+                </span>
+                <a href="https://www.phil.muni.cz/en">
+                      {" "}
+                      <span style={{ color: '#3b82f6', fontWeight: 400 }}>www.phil.muni.cz</span>
+                    </a>
+              </p>
+            </div>
+            
+          </div>
+
+
+
+          
+
+          
+
+          <div className="grid md:grid-cols-2 gap-12 items-center mt-16">
+
+            
             <div className="md:col-span-1">
               <p>
                 <strong>Vican</strong>
@@ -830,10 +910,28 @@ const Partners = () => {
                     </a>
               </p>
             </div>
+
+            <div className="flex justify-center md:col-span-1">
+              <img
+                src="https://static.igem.wiki/teams/5642/images/homepage/footer/vican-winery.webp"
+                alt="Vican"
+                className="max-w-full h-auto"
+                style={{ maxWidth: "600px", width: "100%", height: "auto" }}
+              />
+            </div>
             
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center mt-16">
+
+            <div className="flex justify-center md:col-span-1">
+              <img
+                src="https://static.igem.wiki/teams/5642/images/homepage/footer/fiftybeans.webp"
+                alt="Fiftybeans"
+                className="max-w-full h-auto"
+                style={{ maxWidth: "600px", width: "100%", height: "auto" }}
+              />
+            </div>
             
             <div className="md:col-span-1">
               <p>
@@ -849,14 +947,7 @@ const Partners = () => {
               </p>
             </div>
 
-            <div className="flex justify-center md:col-span-1">
-              <img
-                src="https://static.igem.wiki/teams/5642/images/homepage/footer/fiftybeans.webp"
-                alt="Fiftybeans"
-                className="max-w-full h-auto"
-                style={{ maxWidth: "600px", width: "100%", height: "auto" }}
-              />
-            </div>
+            
           </div>
 
           <div className="bg-gray-50 p-8 rounded-lg mt-16 text-center">
