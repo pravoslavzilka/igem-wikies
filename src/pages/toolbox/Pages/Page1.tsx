@@ -277,16 +277,20 @@ export default function Page1() {
 
                     {/* Top banner image */}
                     <div className="relative w-full text-center space-y-4">
-                        <img
-                            src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/deep-dive.webp"
-                            alt="Deep dive on duckweed"
-                            className="w-full rounded-lg object-cover"
-                        />
-                        <img
-                            src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/why-duckweed.webp"
-                            alt="Why duckweed"
-                            className="w-full rounded-lg object-cover"
-                        />
+                        <a href="/toolbox/deep-dive-on-duckweed/">
+                            <img
+                                src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/deep-dive.webp"
+                                alt="Deep dive on duckweed"
+                                className="w-full rounded-lg object-cover"
+                            />
+                        </a>
+                        <a href="/whyduckweed/">
+                            <img
+                                src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/why-duckweed.webp"
+                                alt="Why duckweed"
+                                className="w-full rounded-lg object-cover"
+                            />
+                        </a>
                     </div>
                 </div>
 
@@ -295,11 +299,13 @@ export default function Page1() {
 
                     {/* WHY PLANTS SUCK box */}
                     <div className=" overflow-hidden space-y-2">
-                        <img
-                            src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/why-plant-sucks.webp"
-                            alt="Why plants suck? And why duckweed could be the answer?"
-                            className="w-full object-cover"
-                        />
+                        <a href="/toolbox/why-plants-suck/">
+                            <img
+                                src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/why-plant-sucks.webp"
+                                alt="Why plants suck? And why duckweed could be the answer?"
+                                className="w-full object-cover"
+                            />
+                        </a>
                         <img
                             src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/plantsynbio12.webp"
                             alt="Plant synbio"
