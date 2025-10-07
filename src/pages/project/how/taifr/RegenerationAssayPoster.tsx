@@ -36,7 +36,7 @@ export default function RegenerationAssayPoster() {
             10 - 20-fold higher neomycin concentrations than the wild-type duckweeds. Although we succeeded in the first part of 
             TAIFR (transposase-assisted insertion), we did not in the second (whole transgenic frond regeneration), partly due to five 
             failed regeneration iterations caused by transformation-efficiency issues, and partly because we were 
-            unsure whether Agrobacterium tumefaciens can reach meristematic cells (which give rise to new daughter fronds).
+            unsure whether <em>Agrobacterium tumefaciens</em> can reach meristematic cells (which give rise to new daughter fronds).
           </p>
           
           <p className="mb-4">
@@ -525,7 +525,7 @@ export default function RegenerationAssayPoster() {
                 </p>
 
                 <p className='mt-4 leading-relaxed'>
-                  We discussed this question with Dr. Slotkin. He noted that, in contrast to his team’s design, where mPing was excised from a stably integrated GFP–mPing–GFP coding sequence in the Arabidopsis thaliana genome - we attempted to excise mPing from a transiently expressed sequence, freely present in duckweed nuclei due to T-DNA borders and Agrobacterium-mediated delivery. This means that restoration of YFP fluorescence in such a transient context would not be moleculary favoured state, thus it would occur too infrequently to be detectable at the whole-frond level. Therefore, we still could not determine whether PONG exhibited excision activity in the duckweed system. Dr. Slotkin advised performing the Excision Assay using PCR instead. Amplifying the region spanning the 5′ and 3′ ends of the YFP–mPing–YFP sequence would yield a single band if mPing were not excised, and two bands of different lengths if excision occurred.
+                  We discussed this question with Dr. Slotkin. He noted that, in contrast to his team’s design, where mPing was excised from a stably integrated GFP–mPing–GFP coding sequence in the <em>Arabidopsis thaliana</em> genome - we attempted to excise mPing from a transiently expressed sequence, freely present in duckweed nuclei due to T-DNA borders and <em>Agrobacterium</em>-mediated delivery. This means that restoration of YFP fluorescence in such a transient context would not be moleculary favoured state, thus it would occur too infrequently to be detectable at the whole-frond level. Therefore, we still could not determine whether PONG exhibited excision activity in the duckweed system. Dr. Slotkin advised performing the Excision Assay using PCR instead. Amplifying the region spanning the 5′ and 3′ ends of the YFP–mPing–YFP sequence would yield a single band if mPing were not excised, and two bands of different lengths if excision occurred.
                 </p>
 
             </div>
@@ -587,13 +587,13 @@ export default function RegenerationAssayPoster() {
                     element mPing with correct TTA sites at the 5' end of 0.5mPing and at the 3' end of 
                     1.0mPing. Inside the cassette, there is a fluorescent marker (GFP) and a resistance gene 
                     against neomycin (NPTII). Both GFP and NPTII are linked via a self-cleaving 2A peptide 
-                    (derived from <em>porcine teschovirus-1</em>, p2a), allowing their parallel expression. The 
-                    GFP-p2a-NPTII ORF is driven by the ubiquitin promoter from Zea mays (rZmUBI) and 
+                    (derived from porcine teschovirus-1, p2a), allowing their parallel expression. The 
+                    GFP-p2a-NPTII ORF is driven by the ubiquitin promoter from <em>Zea mays</em> (rZmUBI) and 
                     terminated by terminator sequence from Cauliflower Mosaic Virus (t35S). This design 
                     minimizes the overall cassette size, resulting in higher insertion efficiency. Expression 
-                    cassette is bordered by T-DNA allowing for Agrobacterium-mediated transformation and 
-                    lies in binary vector, allowing for replication both in E. coli and in Agrobacterium 
-                    tumefaciens.
+                    cassette is bordered by T-DNA allowing for <em>Agrobacterium</em>-mediated transformation and 
+                    lies in binary vector, allowing for replication both in <em>E. coli</em> and in <em>Agrobacterium
+                    tumefaciens</em> .
                 </p>
 
                 
@@ -616,11 +616,11 @@ export default function RegenerationAssayPoster() {
                     self-cleaving 2A peptide from <em>Thosea asigna </em>virus (t2a) with nuclear localization sequence 
                     (NLS), linked with red fluorescent protein (RFP) by a self-cleaving 2A peptide derived from 
                     porcine teschovirus-1 (p2a). Expression of PONG-p2a-RFP is driven by ubiquitin promoter 
-                    from Zea mays (rZmUBI) and terminated by terminator sequence derived from Cauliflower 
+                    from <em>Zea mays</em> (rZmUBI) and terminated by terminator sequence derived from Cauliflower 
                     Mosaic Virus (t35S). Both PONG and p2a-RFP are duckweed-codon optimized. 
-                    Expression cassette is bordered by T-DNA allowing for Agrobacterium-mediated 
-                    transformation and lies in binary vector, allowing for replication both in E.coli and in 
-                    Agrobacterium tumefaciens.
+                    Expression cassette is bordered by T-DNA allowing for <em>Agrobacterium</em>-mediated 
+                    transformation and lies in binary vector, allowing for replication both in <em>E. coli</em> and in 
+                    <em>Agrobacterium tumefaciens</em>.
                 </p>
             </div>
             <div className='col-span-1   items-center justify-center'>
@@ -694,10 +694,10 @@ export default function RegenerationAssayPoster() {
             <div className='col-span-2  items-center justify-center'>   
                  <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">TESTING – transformation</h3>
                 <p className="mb-4 leading-relaxed">
-                    We co-transformed Spirodela polyrhiza 7428 with pIB002 x pIB003 and included 5 controls:
+                    We co-transformed <em>Spirodela polyrhiza</em> 7428 with pIB002 x pIB003 and included 5 controls:
                 </p>
                 <ul className="mb-6 leading-relaxed list-disc pl-6">
-                    <li>pAMO101: positive control</li>
+                    <li><a target='_blank' className='hover:underline text-[#6ca033]' href="https://registry.igem.org/parts/bba-25dnbygj">pAMO101</a>: positive control</li>
                     <li>pIB002</li>
                     <li>pIB003</li>
                     <li>pIB002 x pIB003</li>
@@ -705,7 +705,7 @@ export default function RegenerationAssayPoster() {
 
                 <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4 mt-12">TESTING – neomycin test</h3>
                  <p className="mb-4 leading-relaxed">
-                    As we built the first functional construct to perform our regeneration assay (pIB002), we needed to design the appropriate regeneration conditions. Our design includes the NPTII gene, based on previous assessments of antibiotic effects by Dr. Ordóñez, which showed that duckweed is most sensitive to neomycin. We therefore had to determine the critical concentration at which duckweeds are killed by neomycin. In addition, we needed to evaluate whether natural neomycin sulphate is sufficient or whether synthetic G418 is required. For these purposes, we designed and performed the neomycin test. We subjected three clones of Spirodela polyrhiza (0162, 7428, and 9509) to different concentrations of neomycin sulphate and G418, ranging from 0 to 100 mg/L. All combinations were tested in biological triplicates using 12-well plates.
+                    As we built the first functional construct to perform our regeneration assay (pIB002), we needed to design the appropriate regeneration conditions. Our design includes the NPTII gene, based on previous assessments of antibiotic effects by Dr. Ordóñez, which showed that duckweed is most sensitive to neomycin. We therefore had to determine the critical concentration at which duckweeds are killed by neomycin. In addition, we needed to evaluate whether natural neomycin sulphate is sufficient or whether synthetic G418 is required. For these purposes, we designed and performed the neomycin test. We subjected three clones of <em>Spirodela polyrhiza</em> (0162, 7428, and 9509) to different concentrations of neomycin sulphate and G418, ranging from 0 to 100 mg/L. All combinations were tested in biological triplicates using 12-well plates.
                 </p>
 
 
@@ -729,11 +729,11 @@ export default function RegenerationAssayPoster() {
 
               <p className="text-base leading-relaxed">
               <strong>Figure 9.</strong> The positive control (pAMO101) showed GFP fluorescence (1), although reduced compared with 
-              DBTL 1 (<a href="#" className="text-blue-600 underline">see explanation here</a>). The improved design of pIB002, with GFP as the first gene in the 
+              DBTL 1 (<a href="#dbtl-4-learn" className='hover:underline text-[#6ca033]'>see explanation here</a>). The improved design of pIB002, with GFP as the first gene in the 
               translational unit, resulted in visible fluorescence (3) comparable to the fluorescence of positive control. The 
               new design of pIB003 produced weak expression of RFP (2), as expected since it follows the p2a linker, 
               thus confirming that the PONG transposase is expressed. Co-transformation of pIB002 with pIB003 
-              resulted in no GFP fluorescence at 6dpi (4), similar to DBTL 1. Surprisingly, 18 days post infiltration, GFP 
+              resulted in no GFP fluorescence at 6 dpi (4), similar to DBTL 1. Surprisingly, 18 days post infiltration, GFP 
               spots appeared, randomly distributed on duckweed fronds (5), probably as a result of insertion of the 
               mPing-bordered translational unit (rZmUBI-GFP-p2a-NPTII-t35S).
             </p>
@@ -752,14 +752,14 @@ export default function RegenerationAssayPoster() {
                 <div className="mb-6">
                     <p className="font-semibold mb-2">Synthetic neomycin (G418) kills duckweed at concentrations above 0.5 mg/L</p>
                     <p className="mb-4 leading-relaxed">
-                    This was observed in our neomycin test conducted on three clones of Spirodela polyrhiza (162, 7428, 9509) using both natural (sulphate) and synthetic (G418) forms of neomycin (see Fig. 11).
+                    This was observed in our neomycin test conducted on three clones of <em>Spirodela polyrhiza</em> (162, 7428, 9509) using both natural (sulphate) and synthetic (G418) forms of neomycin (see Fig. 11).
                     </p>
                 </div>
 
                 <div className="mb-6">
                     <p className="font-semibold mb-2">But wait - is our PING-PONG construct design modular and user-friendly?</p>
                     <p className="mb-4 leading-relaxed">
-                    This was a question we have been asked before beginning regeneration attempts. If we succeed in regenerating an entire transgenic frond from cells carrying our cassette containing NPTII, we would not be able to insert any additional transgenes into those duckweed transgenic lines using our TAIFR method, since it relies on neomycin selection (facilitated by the NPTII gene), which would already be present in every duckweed cell. Thus, our initial design prevented transgene stacking in duckweed.
+                    This was a question we have been asking ourselves before beginning regeneration attempts. If we succeed in regenerating an entire transgenic frond from cells carrying our cassette containing NPTII, we would not be able to insert any additional transgenes into those duckweed transgenic lines using our TAIFR method, since it relies on neomycin selection (facilitated by the NPTII gene), which would already be present in every duckweed cell. Thus, our initial design prevented transgene stacking in duckweed.
                     </p>
                 </div>
 
@@ -776,7 +776,7 @@ export default function RegenerationAssayPoster() {
             <div className='col-span-1 items-center justify-center p-2'>
                 <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure11.webp" alt="Description of image" />
                 <p className='text-base mt-8 leading-relaxed'>
-                    <b>Figure 11.</b> The neomycin sensitivity test on Spirodela polyrhiza clones (162, 7428, and 9509) showed that they are much more sensitive to the synthetic form of neomycin (G418). The response was consistent, with all fronds killed at concentrations at and above 0.5 mg/L of G418 in all three clones. The test was performed twice, each time with three biological replicates.
+                    <b>Figure 11.</b> The neomycin sensitivity test on <em>Spirodela polyrhiza</em> clones (162, 7428, and 9509) showed that they are much more sensitive to the synthetic form of neomycin (G418). The response was consistent, with all fronds killed at concentrations at and above 0.5 mg/L of G418 in all three clones. The test was performed twice, each time with three biological replicates.
 
                 </p>
             </div>
@@ -785,7 +785,7 @@ export default function RegenerationAssayPoster() {
 
           <p className="mb-4 leading-relaxed">
             <strong>There were spots of GFP fluorescence in transformed duckweeds (see Fig. 15), as a results of genomic insertion.
-            However, what if Agrobacterium is unable to reach the meristematic cells of duckweed, and the PING-PONG 
+            However, what if <em>Agrobacterium</em> is unable to reach the meristematic cells of duckweed, and the PING-PONG 
             system therefore cannot insert the transgene into cells with the sufficient capacity to give rise to a whole new 
             transgenic frond?</strong>
           </p>
@@ -793,12 +793,12 @@ export default function RegenerationAssayPoster() {
           <p className="mb-4 leading-relaxed">
             This is what our advisor, Dr. Ordóñez, proposed when we showed him the results. We could probably favour them 
             sufficiently by antibiotic (neomycin) selection to force them to give rise to a new frond. But what if this is not possible? 
-            To answer the question of whether Agrobacterium can reach and infect the meristematic cells of duckweed, we designed 
+            To answer the question of whether <em>Agrobacterium</em> can reach and infect the meristematic cells of duckweed, we designed 
             the Meristematic Assay, which we decided to run in parallel with DBTL cycle no. 4 of The Regeneration Assay. The aim of 
             the Meristematic Assay is to knock-out a previously stably inserted GFP in Spirodela polyrhiza 0162 strain and observe 
             daughter fronds not exhibiting GFP fluorescence. These stable lines were gifted to us by Ordóñez Lab. If successful, we 
-            would have certainty that Agrobacterium can indeed reach the meristematic cells. If not, we would need to develop a new 
-            strategy. Thus, we initiated DBTL cycle no. 5, termed the Meristematic Assay. <a href="#" className="text-blue-600 underline">Read more here</a>.
+            would have certainty that <em>Agrobacterium</em> can indeed reach the meristematic cells. If not, we would need to develop a new 
+            strategy. Thus, we initiated DBTL cycle no. 5, termed the Meristematic Assay. <a href="#dbtl-5" className='hover:underline text-[#6ca033]'>Read more here</a>.
           </p>
         </div>
 
@@ -808,13 +808,13 @@ export default function RegenerationAssayPoster() {
           
           <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mb-6'>
             <div className='col-span-2  items-center justify-center'>
-                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of pIB005</h3>
+                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of <a href="https://registry.igem.org/parts/bba-25460yvj" target='_blank' className='hover:underline text-[#6ca033]'>pIB005</a></h3>
                 <p className="mb-6 leading-relaxed">
                     Plasmid pIB005 contains a cassette flanked on both sides by the transposable 
                     element mPing. Inside the cassette, there is a fluorescent marker (GFP) and a resistance 
                     gene against neomycin (NPTII). Both GFP and NPTII are linked by a self-cleaving 2A 
-                    peptide (derived from <em>porcine teschovirus-1</em>), allowing their parallel expression. The 
-                    GFP-p2A-NPTII ORF is driven by the ubiquitin promoter from Zea mays (rZmUBI) and 
+                    peptide (derived from porcine teschovirus-1), allowing their parallel expression. The 
+                    GFP-p2A-NPTII ORF is driven by the ubiquitin promoter from <em>Zea mays</em> (rZmUBI) and 
                     terminated by the Cauliflower Mosaic Virus terminator sequence (t35S). This design 
                     minimizes the overall cassette size, resulting in higher insertion efficiency. The gene for 
                     GFP in the cassette is bordered by Esp3I restriction sites, allowing seamless swapping of 
@@ -827,9 +827,9 @@ export default function RegenerationAssayPoster() {
                     TAIFR method. Excision of p2A-NPTII from transgenic duckweed lines results in a mutated 
                     lox site that is no longer recognizable by Cre recombinase, thereby allowing repeated 
                     insertion of the TAIFR translational unit and excision of the selection marker (NPTII).The 
-                    entire expression cassette is bordered by T-DNA for Agrobacterium-mediated 
-                    transformation and is housed in a binary vector, allowing replication in both E. coli and 
-                    Agrobacterium tumefaciens.
+                    entire expression cassette is bordered by T-DNA for <em>Agrobacterium</em>-mediated 
+                    transformation and is housed in a binary vector, allowing replication in both <em>E. coli</em> and 
+                    <em>Agrobacterium tumefaciens</em>.
                 </p>    
             </div>
 
@@ -843,8 +843,8 @@ export default function RegenerationAssayPoster() {
 
           <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">BUILD - cloning of pIB005</h3>
           <p className="mb-4 leading-relaxed">
-            We let the whole composite part to be synthetized as clonal DNA thanks to Ansa Biotechnologies superior 
-            synthetizing capabilities. Then we used Modular Cloning based on Golden Gate to introduce the composite part binary 
+            We had the whole composite part be synthetized as clonal DNA, thanks to superior 
+            synthetizing capabilities of Ansa Biotechnologies. Then, we used Modular Cloning based on Golden Gate to introduce the composite part binary 
             vector.
           </p>
           
@@ -910,7 +910,7 @@ export default function RegenerationAssayPoster() {
           <div className=" mb-6">
             <p className="text-base leading-relaxed">
               <strong>Figure 13.</strong> 
-                Microscopy images were captured from all plates in the transformation step of the DBTL cycle 4 of Regeneration Assay using a GFP filter (excitation ~509 nm) on a ZEISS AxioZoom V16 microscope. Each transformation event consisted of two plates representing biological replicates. To normalize background signal differences between plates, two groups of fronds were selected from each: one group showing no visible fluorescence, and a second group showing any detectable fluorescence, if present. The fluorescence intensity corresponding to pixels of each individual frond was quantified using the ZEN Blue software. The graph displays the difference in mean fluorescence intensity between the two groups, averaged across both biological replicates for each treatment. These values represent changes in fluorescence intensity among different transformation events, corresponding to different constructs or construct combinations applied to Spirodela polyrhiza 7428.
+                Microscopy images were captured from all plates in the transformation step of the DBTL cycle 4 of Regeneration Assay using a GFP filter (excitation ~509 nm) on a ZEISS AxioZoom V16 microscope. Each transformation event consisted of two plates representing biological replicates. To normalize background signal differences between plates, two groups of fronds were selected from each: one group showing no visible fluorescence, and a second group showing any detectable fluorescence, if present. The fluorescence intensity corresponding to pixels of each individual frond was quantified using the ZEN Blue software. The graph displays the difference in mean fluorescence intensity between the two groups, averaged across both biological replicates for each treatment. These values represent changes in fluorescence intensity among different transformation events, corresponding to different constructs or construct combinations applied to <em>Spirodela polyrhiza</em> 7428.
 
             </p>
           </div>
@@ -981,7 +981,7 @@ export default function RegenerationAssayPoster() {
                 </span>
                 <strong>concentrations exceeded the survival threshold </strong>
                 <span style={{ fontWeight: 400 }}>
-                (0.5 mg/L) determined during the neomycin sensitivity test (see Fig. 11),
+                (0.5 mg/L) determined during the neomycin sensitivity test (see Fig 11),
                 by 10-fold and 20-fold, respectively. The majority of duckweeds died, but{" "}
                 </span>
                 <strong>
@@ -989,7 +989,7 @@ export default function RegenerationAssayPoster() {
                 at 20-fold higher G418 concentrations{" "}
                 </strong>
                 <span style={{ fontWeight: 400 }}>
-                (see Fig. Xy). However, no whole-frond GFP fluorescence was observed. Why?
+                (see Fig 16). However, no whole-frond GFP fluorescence was observed. Why?
                 </span>
             </p>
             </>
@@ -1038,7 +1038,7 @@ export default function RegenerationAssayPoster() {
 
           <p className="mb-6 leading-relaxed">
             To determine whether our translational cassette was truly inserted (as suggested by the GFP spots and survival at 
-            10 mg/L G418), we performed PCR to check for the presence of the GFP gene (using primers o128 and o129). As our advisor, Dr. Ordonez, found that Agrobacterium can survive in duckweeds for a prolonged period (up to several weeks), we aimed to eliminate the possibility of detecting GFP originating from the presence of our binary vector pIB005 in residual Agrobacterium cells within the duckweeds. First, we continuously grew the duckweeds on DPIM medium containing high concentrations (400 mg/L) of Ticarcillin and Cefotaxime, which makes it very difficult for Agrobacterium to survive. Second, at 24 days post-infiltration (6 days before DNA isolation), we washed and transferred all surviving duckweeds into fresh well plates to further minimize bacterial contamination. Third, we ran the isolated genomic DNA on a gel for 2 hours and excised only the uppermost band, thereby separating Agrobacterium DNA (smaller and thus migrating faster) from plant genomic DNA (larger and migrating more slowly). Finally, using the same DNA samples, we performed another PCR with primers o55 and o56, which are specific to Agrobacterium genomic DNA, to confirm the absence of its contamination. Our measures ensured the removal of Agrobacterium in 17 out of the 20 samples tested (see lower part of Fig. 17). We detected GFP in 9 out of 20 DNA samples from duckweed subjected to our regeneration assay, and in 7 of these, no Agrobacterium DNA was present. Thus, we confirmed that our Transposase-Assisted Insertion system is indeed capable of inserting an mPing-bounded transgene into the duckweed frond.
+            10 mg/L G418), we performed PCR to check for the presence of the GFP gene (using primers o128 and o129). As our advisor, Dr. Ordóñez, found that <em>Agrobacterium</em> can survive in duckweeds for a prolonged period (up to several weeks), we aimed to eliminate the possibility of detecting GFP originating from the presence of our binary vector pIB005 in residual <em>Agrobacterium</em> cells within the duckweeds. First, we continuously grew the duckweeds on DPIM medium containing high concentrations (400 mg/L) of ticarcillin and cefotaxime, which makes it very difficult for <em>Agrobacterium</em> to survive. Second, at 24 days post-infiltration (6 days before DNA isolation), we washed and transferred all surviving duckweeds into fresh well plates to further minimize bacterial contamination. Third, we ran the isolated genomic DNA on a gel for 2 hours and excised only the uppermost band, thereby separating <em>Agrobacterium</em> DNA (smaller and thus migrating faster) from plant genomic DNA (larger and migrating more slowly). Finally, using the same DNA samples, we performed another PCR with primers o55 and o56, which are specific to <em>Agrobacterium</em> genomic DNA, to confirm the absence of its contamination. Our measures ensured the removal of <em>Agrobacterium</em> in 17 out of the 20 samples tested (see lower part of Fig. 17). We detected GFP in 9 out of 20 DNA samples from duckweed subjected to our regeneration assay, and in 7 of these, no <em>Agrobacterium</em> DNA was present. Thus, we confirmed that our Transposase-Assisted Insertion system is indeed capable of inserting an mPing-bounded transgene into the duckweed frond.
           </p>
 
           
@@ -1046,36 +1046,36 @@ export default function RegenerationAssayPoster() {
             
           <p className='text-base leading-relaxed mb-12'>
                     <b>Figure 17. </b>
-                    Genomic DNA isolated from Spirodela polyrhiza 7428 at 30 days post co-transformation with pIB005 and pIB003 (iteration RA4.1) was separated on a gel from to avoid conceivable Agrobacterium DNA contamination, purified, and subsequently subjected to two PCR reactions. The first reaction (upper gel), using primers o128 and o129, tested for the presence of GFP - presumably inserted into the genome via PONG transposase activity from pIB003. It yielded the expected 250 bp product in 9 out of 20 samples. The second reaction (lower gel), using primers o55 and o56, tested for the presence of Agrobacterium DNA in the samples to rule out the possibility that GFP was present in the form of the binary vector pIB005 residing in Agrobacterium. This reaction produced the expected product in 3 out of 20 samples, indicating that GFP detection in 7 out of 20 samples resulted from Transposase-Assisted Insertion. The first negative control (genomic DNA from non-transformed S. polyrhiza) did not yield any bands, as expected. The second negative control (water instead of DNA) also showed no amplification. The positive control (pIB005 construct) yielded the expected 250 bp band.
+                    Genomic DNA isolated from <em>Spirodela polyrhiza</em> 7428 at 30 days post co-transformation with pIB005 and pIB003 (iteration RA4.1) was separated on a gel from to avoid conceivable <em>Agrobacterium</em> DNA contamination, purified, and subsequently subjected to two PCR reactions. The first reaction (upper gel), using primers o128 and o129, tested for the presence of GFP - presumably inserted into the genome via PONG transposase activity from pIB003. It yielded the expected 250 bp product in 9 out of 20 samples. The second reaction (lower gel), using primers o55 and o56, tested for the presence of <em>Agrobacterium</em> DNA in the samples to rule out the possibility that GFP was present in the form of the binary vector pIB005 residing in <em>Agrobacterium</em>. This reaction produced the expected product in 3 out of 20 samples, indicating that GFP detection in 7 out of 20 samples resulted from Transposase-Assisted Insertion. The first negative control (genomic DNA from non-transformed <em>S. polyrhiza</em>) did not yield any bands, as expected. The second negative control (water instead of DNA) also showed no amplification. The positive control (pIB005 construct) yielded the expected 250 bp band.
                 </p>
 
           <p className="mb-6 leading-relaxed">
             Wondering how the regeneration attempts turned out in RA3.2, 3.3, 3.4, 3.5, and 3.6? We are too… As the Wiki 
             Freeze was approaching and time was running short, we tried to speed up transformations by preparing 
-            Agrobacterium cultures for each transformation simply by inoculating fresh medium with a previously used culture 
+            <em>Agrobacterium</em> cultures for each transformation simply by inoculating fresh medium with a previously used culture 
             stored in the fridge (4 °C). This practice led to a dramatic decrease in transformation efficiency - almost to 
             zero - which we initially failed to notice because we had stopped using the positive control (pAMO101), which was 
             designed precisely to serve as a transformation efficiency control. As a result, we ended up performing five 
-            iterations of our Regeneration Assay with Agrobacterium cultures that barely contained the transgene...
+            iterations of our Regeneration Assay with <em>Agrobacterium</em> cultures that barely contained the transgene...
           </p>
 
           <p className="mb-6 leading-relaxed">
             Had we followed the proper procedure - starting each time from a glycerol stock - we would probably already 
             have completed the regeneration part of our TAIFR method by the iGEM Wiki freeze. That is also why we 
-            created the Duckweed Transformation Protocol page: so that other iGEM teams will not repeat the same mistake.
+            created the <a className='hover:underline text-[#6ca033]' href='plant#duckweed-transformation'>Duckweed Transformation Protocol page</a>: so that other iGEM teams will not repeat the same mistake.
           </p>
         </div>
 
 
         <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure17.webp" alt="Description of image" className="max-w-full h-auto mb-6" />
         <p className='text-base leading-relaxed mb-12 mt-10'>
-          <b>Figure 17. </b>After three DBTL cycles of the “PING part” (mPing-bordered cargo rZmUBI-GFP-p2a-NPTII-t35S) of our TAIFR method, we built and tested a functional and user-friendly composite part, pIB005, which-compared to pIB001 and pIB002-showed the greatest difference in fluorescence between groups of “non-shining” and “shining” duckweeds, normalized on each plate. However, the intensity of its fluorescence was approximately half that of the positive control (pAMO101). We do not yet fully understand the reason for this, but a probable explanation is a difference in the plasmid backbone, resulting in a lower copy number of the binary vector in Agrobacterium, and consequently, a smaller amount of T-DNA transferred to duckweed. Nevertheless, the fluorescence of pIB005 is clearly visible and is expressed as early as in the positive control. Combined with GFP being swappable as the CDS1 part (with no stop codon) and the excisability of the p2a-NPTII resistance marker via mutated lox71 and lox66 sites (not yet tested), this composite part represents a crucial element of our TAIFR method.
+          <b>Figure 17. </b>After three DBTL cycles of the “PING part” (mPing-bordered cargo rZmUBI-GFP-p2a-NPTII-t35S) of our TAIFR method, we built and tested a functional and user-friendly composite part, pIB005, which-compared to pIB001 and pIB002-showed the greatest difference in fluorescence between groups of “non-shining” and “shining” duckweeds, normalized on each plate. However, the intensity of its fluorescence was approximately half that of the positive control (pAMO101). We do not yet fully understand the reason for this, but a probable explanation is a difference in the plasmid backbone, resulting in a lower copy number of the binary vector in <em>Agrobacterium</em>, and consequently, a smaller amount of T-DNA transferred to duckweed. Nevertheless, the fluorescence of pIB005 is clearly visible and is expressed as early as in the positive control. Combined with GFP being swappable as the CDS1 part (with no stop codon) and the excisability of the p2a-NPTII resistance marker via mutated lox71 and lox66 sites (not yet tested), this composite part represents a crucial element of our TAIFR method.
         </p>    
 
 
         <p className="mb-4 leading-relaxed">
             <strong>There were spots of GFP fluorescence in transformed duckweeds (see Fig. 15), as a results of genomic insertion.
-            However, what if Agrobacterium is unable to reach the meristematic cells of duckweed, and the PING-PONG 
+            However, what if <em>Agrobacterium</em> is unable to reach the meristematic cells of duckweed, and the PING-PONG 
             system therefore cannot insert the transgene into cells with the sufficient capacity to give rise to a whole new 
             transgenic frond?</strong>
           </p>
@@ -1083,19 +1083,19 @@ export default function RegenerationAssayPoster() {
           <p className="mb-4 leading-relaxed">
             This is what our advisor, Dr. Ordóñez, proposed when we showed him the results. We could probably favour them 
             sufficiently by antibiotic (neomycin) selection to force them to give rise to a new frond. But what if this is not possible? 
-            To answer the question of whether Agrobacterium can reach and infect the meristematic cells of duckweed, we designed 
+            To answer the question of whether <em>Agrobacterium</em> can reach and infect the meristematic cells of duckweed, we designed 
             the Meristematic Assay, which we decided to run in parallel with DBTL cycle no. 4 of The Regeneration Assay. The aim of 
-            the Meristematic Assay is to knock-out a previously stably inserted GFP in Spirodela polyrhiza 0162 strain and observe 
+            the Meristematic Assay is to knock-out a previously stably inserted GFP in <em>Spirodela polyrhiza </em> 162 strain and observe 
             daughter fronds not exhibiting GFP fluorescence. These stable lines were gifted to us by Ordóñez Lab. If successful, we 
-            would have certainty that Agrobacterium can indeed reach the meristematic cells. If not, we would need to develop a new 
-            strategy. Thus, we initiated DBTL cycle no. 5, termed the Meristematic Assay. <a href="#" className="text-blue-600 underline">Read more here</a>.
+            would have certainty that <em>Agrobacterium</em> can indeed reach the meristematic cells. If not, we would need to develop a new 
+            strategy. Thus, we initiated DBTL cycle no. 5, termed the Meristematic Assay.
           </p>  
 
 
 
 
         {/* DBTL 5 Section */}
-        <div className="mb-12 mt-32">
+        <div id='dbtl-5' className="mb-12 mt-32">
           <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-4xl font-bold mb-6">DBTL 5</h2>
           
           <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of The Meristematic Assay</h3>
@@ -1103,37 +1103,36 @@ export default function RegenerationAssayPoster() {
             We are using plant codon optimized Cas9 to knock out GFP expression in stable lines previously established to 
             express this fluorescent protein, obtained from Ordóñez Lab. The gradual decrease of the green signal in subsequent 
             duckweed generations would confirm that Cas9 is active and that the knockout mutation is transmitted to daughter 
-            fronds. Importantly, this demonstration would provide strong evidence that Agrobacterium can reach meristematic 
+            fronds. Importantly, this demonstration would provide strong evidence that <em>Agrobacterium</em> can reach meristematic 
             cells and deliver its T-DNA–flanked payload to the progenitor tissues that give rise to those daughter fronds. Having 
             this question answeared is important for us, as the a regeneration part of our TAIFR method (Frond Regeneration) 
-            assumes, that Agrobacterium is able to reach meristematic cells of duckweed, where the PING-PONG system (<a href="#" className="text-blue-600 underline">read 
-            more here</a>) will insert transgene into duckweed nuclear genome.
+            assumes, that <em>Agrobacterium</em> is able to reach meristematic cells of duckweed, where the PING-PONG system will insert transgene into duckweed nuclear genome.
           </p>
 
           <div className="  mb-6">
             <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/meristematic-assay-copy.webp" alt="Description of image" className="max-w-full h-auto" />
           </div>
 
-          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4 mt-16">DESIGN of pIB006</h3>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4 mt-16">DESIGN of <a href="https://registry.igem.org/parts/bba-252t3xrc" target='_blank' className='hover:underline text-[#6ca033]'>pIB006</a></h3>
           
           <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mb-6'>
             <div className='col-span-2  items-center justify-center'>
                 <p className="mb-6 leading-relaxed">
                     Plasmid pIB006 contains three expression cassettes designed for rapid and 
                     customizable gene knockouts using the CRISPR/Cas9 system. The first cassette 
-                    encodes a plant codon-optimized Cas9 driven by the Zea mays ubiquitin promoter 
-                    (rZmUBI) and terminated by the Cauliflower Mosaic Virus terminator (t35S).The 
+                    encodes a plant codon-optimized Cas9 driven by the <em>Zea mays</em> ubiquitin promoter 
+                    (rZmUBI) and terminated by the Cauliflower Mosaic Virus terminator (t35S). The 
                     second cassette carries the neomycin resistance gene (NPTII) for antibiotic selection. 
                     Expression of NPTII is controlled by the nopaline synthase promoter (rNOS) from 
-                    Agrobacterium tumefaciens and terminated by the terminator sequence nopaline 
-                    synthase gene (tNOS) from Agrobacterium tumefaciens. The third cassette provides 
-                    the CRISPR guide RNA transcription unit. It consists of the Oryza sativa U6 promoter 
+                    <em>Agrobacterium tumefaciens</em> and terminated by the terminator sequence nopaline 
+                    synthase gene (tNOS) from <em>Agrobacterium tumefaciens</em>. The third cassette provides 
+                    the CRISPR guide RNA transcription unit. It consists of the <em>Oryza sativa</em> U6 promoter 
                     (rOsU6) followed by a customizable filler sequence flanked by Esp3I restriction sites, 
                     a tracrRNA scaffold, and a polyadenylation signal. This design allows seamless 
                     replacement of the filler sequence with user-defined gRNA oligonucleotides using a 
                     simple digest-and-ligate reaction with Esp3I-compatible overhangs. The entire 
-                    expression cassette is bordered by T-DNA for Agrobacterium-mediated transformation 
-                    and is housed in a binary vector, allowing replication in both E. coli and Agrobacterium 
+                    expression cassette is bordered by T-DNA for <em>Agrobacterium</em>-mediated transformation 
+                    and is housed in a binary vector, allowing replication in both <em>E. coli</em> and <em>Agrobacterium</em> 
                     tumefaciens.
                 </p>
             </div>
@@ -1147,7 +1146,7 @@ export default function RegenerationAssayPoster() {
           
           <p className="mb-2 font-semibold">Designing of gRNAs</p>
           <p className="mb-4 leading-relaxed">
-            Using the <a href="https://crispor.gi.ucsc.edu/" target='_blank' className="text-blue-600 underline">CRISPOR software</a>, we designed three pairs of gRNA oligonucleotides for GFP knock-out with Esp3I 
+            Using the <a href="http://crispor.tefor.net/" target='_blank' className='hover:underline text-[#6ca033]'>CRISPOR software</a>, we designed three pairs of gRNA oligonucleotides for GFP knock-out with Esp3I 
             compatible overhangs to be first hybridized one with the other and then inserted to pIB006:
           </p>
           <ul className="mb-6 leading-relaxed list-disc pl-6">
@@ -1159,7 +1158,7 @@ export default function RegenerationAssayPoster() {
           <p className="mb-2 font-semibold">1st iteration: replacing GFP for RFP</p>
           <p className="mb-4 leading-relaxed">
             Our first strategy was to modify Dr. Ordoñez's plasmid pAMO142. It carries a plant codon-optimized Cas9 (with 
-            introns) linked to GFP via a self-cleaving p2a peptide (from <em>porcine teschovirus-1</em>) for parallel expression, driven by 
+            introns) linked to GFP via a self-cleaving p2a peptide (from porcine teschovirus-1) for parallel expression, driven by 
             rZmUBI and terminated by t35S. Because GFP was the knock-out target and its fluorescence would confound 
             detection, we aimed to replace it with RFP. We planned to PCR-amplify pAMO142 minus eGFP using primers 
             matching the 5′/3′ ends of RFP (pB10P1, MoClo Plant Part Kit, Marillonet Lab), PCR-amplify RFP with overlaps to 
@@ -1184,19 +1183,19 @@ export default function RegenerationAssayPoster() {
           <p className="mb-4 leading-relaxed">
             To bypass the massive size of pAMO142, we split it into three overlapping fragments (~4 kb, ~5 kb, ~8 kb) 
             designed to match the previously defined RFP overhangs. The four pieces (Fragments A,B, and C + RFP) were 
-            intended for in vivo homologous recombination in E. coli.
+            intended for <em>in vivo</em> homologous recombination in <em>E. coli</em>.
           </p>
           
           <p className="mb-2 font-semibold">Steps:</p>
           <ul className="mb-4 leading-relaxed list-disc pl-6">
             <li>PCR of Fragment A with primers o36 & o74, Fragment B with o71 & o72, Fragment C with o73 & o35</li>
             <li>PCR of RFP with primers o43 & o44</li>
-            <li>Transformation for in vivo assembly</li>
+            <li>Transformation for <em>in vivo</em> assembly</li>
           </ul>
           
           <p className="mb-6 font-semibold">Outcome:</p>
           <p className="mb-6 leading-relaxed">
-            Despite multiple optimizations, no positive colonies were obtained - likely due to the drop in in vivo assembly 
+            Despite multiple optimizations, no positive colonies were obtained - likely due to the drop in <em>in vivo</em> assembly 
             efficiency when more than three fragments are assembled and when the overall construct size is as large as in our 
             case. After two failed attempts, we concluded that there had to be a simpler way to knock out a single gene in 
             duckweeds. We recognised this as an opportunity to facilitate the gene knockouts for all future teams working with 
@@ -1233,7 +1232,7 @@ export default function RegenerationAssayPoster() {
             construct pIB006_rZmUBI-pcoCas9-t35S-rNOS-NPTII-tNOS-rOsU6-filler-scaffold-polyA. The assembly was 
             confirmed by sequencing.</li>
             <li>Digestion and ligation of pIB006 with annealed GFP_KO oligonucleotides, using Esp3I restrictase, yielded 
-            pIB006 with inserted gRNA for knock-out of GFP in Spirodela polyrhiza line with stably inserted GFP.</li>
+            pIB006 with inserted gRNA for knock-out of GFP in <em>Spirodela polyrhiza</em> line with stably inserted GFP.</li>
           </ul>
 
           <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">TEST</h3>
@@ -1246,7 +1245,7 @@ export default function RegenerationAssayPoster() {
 
           <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">LEARN</h3>
           <p className="mb-6 leading-relaxed">
-            What began as an attempt to test whether Agrobacterium can reach duckweed meristematic cells led us to realize 
+            What began as an attempt to test whether <em>Agrobacterium</em> can reach duckweed meristematic cells led us to realize 
             that a ready-to-use, duckweed-optimized CRISPR construct could be a widely useful tool in duckweed research 
             and applied science. Read about our plans for pIB006 - what we did with it, and how it will support future iGEMers 
             working with duckweed - on our Programmable Duckweed and Safety pages.
@@ -1261,21 +1260,21 @@ export default function RegenerationAssayPoster() {
           <p className="mb-4 leading-relaxed">There are two possible scenarios ahead of us:</p>
           
           <div className="mb-6">
-            <p className="font-semibold mb-2">Agrobacterium can reach duckweed meristematic cells.</p>
+            <p className="font-semibold mb-2"><em>Agrobacterium</em> can reach duckweed meristematic cells.</p>
             <p className="leading-relaxed">
               If so, we (or future iGEM teams) can repeat the regeneration iterations while maximizing transformation efficiency 
               (see protocol). By testing different neomycin concentrations and application timing, as well as hormone 
-              combinations, concentrations, and timing, we can fine-tune conditions that favor Agrobacterium-transformed 
+              combinations, concentrations, and timing, we can fine-tune conditions that favor <em>Agrobacterium</em>-transformed 
               meristematic cells carrying our PING-PONG system, allowing them to regenerate into whole transgenic fronds.
             </p>
           </div>
 
           <div className="mb-6">
-            <p className="font-semibold mb-2">Agrobacterium cannot reach duckweed meristematic cells.</p>
+            <p className="font-semibold mb-2"><em>Agrobacterium</em> cannot reach duckweed meristematic cells.</p>
             <p className="leading-relaxed">
               If so, we (or future iGEM teams) can boost regeneration by transient co-expression of the morphogenic 
-              transcription factors <strong>BABY BOOM (ZmBBM)</strong> and/or <strong>WUSCHEL (ZmWUS)</strong> from Zea mays. These factors greatly 
-              enhance regeneration in recalcitrant plants - especially monocots (), including duckweed - but must be expressed 
+              transcription factors <strong>BABY BOOM (ZmBBM)</strong> and/or <strong>WUSCHEL (ZmWUS)</strong> from <em>Zea mays</em>. These factors greatly 
+              enhance regeneration in recalcitrant plants - especially monocots (18), including duckweed - but must be expressed 
               only transiently: sustained expression promotes regeneration while inhibiting differentiation. Thus, co-transforming 
               pIB005 with pIB003 would create random insertion sites in duckweed fronds (as it did also in our case); transient 
               ZmBBM/ZmWUS expression would reprogram those cells toward a meristematic fate. Combined with neomycin 

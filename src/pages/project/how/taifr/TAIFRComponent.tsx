@@ -486,7 +486,7 @@ const TAIFRComponent = () => {
                 <p>
                   <span style={{ fontWeight: 400 }}>
                     Dr. Slotkin’s lab used the so-called PING-PONG system fused with Cas9 to
-                    insert DNA into the Arabidopsis and soybean genomes site-specifically,
+                    insert DNA into the <em>Arabidopsis</em> and soybean genomes site-specifically,
                     with 37% efficiency in{" "}
                   </span>
                   <em>
