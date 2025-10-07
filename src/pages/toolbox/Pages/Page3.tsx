@@ -1,4 +1,4 @@
-import {useState} from "react";
+import React, {useState} from "react";
 import {ChevronDown, ChevronUp} from "lucide-react";
 import TransformationProtocolReduced from "./TransformationProtocolReduced.tsx";
 import VacuumInfiltrationTestingReduced from "./VacuumInfiltrationTestingReduced.tsx"; // npm install lucide-react
@@ -10,8 +10,9 @@ export default function Page3() {
 
     return (
         <div>
+            <hr className="my-8 w-3/5 mx-auto border-t-4 border-gray-400"/>
             <div
-                className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-24">
+                className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-24  mt-20">
                 {/* === Always visible section === */}
                 <div className="grid md:grid-cols-[2fr_1fr] gap-6 items-start">
                     {/* Left: text */}
@@ -99,10 +100,11 @@ export default function Page3() {
                 </div>
             </div>
 
+            <hr className="my-8 w-3/5 mx-auto border-t-4 border-gray-400"/>
             <div
                 className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-6">
                 <h2
-                    className="font-bold text-[#6ca033] mb-3"
+                    className="font-bold text-[#6ca033] mb-3 mt-14"
                     style={{
                         fontFamily: "Space Grotesk, sans-serif",
                         fontSize: window.innerWidth < 768 ? "1.5rem" : "1.9rem",

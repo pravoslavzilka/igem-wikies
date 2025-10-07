@@ -1,4 +1,4 @@
-import {useState} from "react";
+import React, {useState} from "react";
 import {ChevronDown, ChevronUp} from "lucide-react";
 import DuckweedProtocolReduced from "./DuckweedProtocolReduced.tsx";
 import MediumChangeReduced from "./MediumChangeReduced.tsx";
@@ -38,10 +38,12 @@ export default function Page4() {
                     conditions, making reproducibility a challenge. We attempted to address all of those problems with
                     duckweed.
                 </p>
-
+            </div>
+            <div
+                className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-6">
                 {/* Green subsection title */}
                 <h3
-                    className="font-bold text-[#6ca033]"
+                    className="font-bold text-[#6ca033] mt-14"
                     style={{
                         fontFamily: "Space Grotesk, sans-serif",
                         fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem",
@@ -135,12 +137,12 @@ export default function Page4() {
                 )}
             </div>
 
-
+            <hr className="my-8 w-3/5 mx-auto border-t-4 border-gray-400"/>
             <div
-                className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-8">
+                className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-6">
                 {/* === Section Header === */}
                 <h2
-                    className="font-bold text-[#6ca033]"
+                    className="font-bold text-[#6ca033] mt-16"
                     style={{
                         fontFamily: "Space Grotesk, sans-serif",
                         fontSize: window.innerWidth < 768 ? "1.6rem" : "2.2rem",
