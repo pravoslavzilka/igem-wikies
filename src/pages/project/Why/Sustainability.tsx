@@ -16,7 +16,7 @@ const SustainabilityDocument = () => {
       The <b>Sustainable Development Goals (SDGs)</b> are a set of <b>17 global objectives</b> established by the United Nations in 2015 as part of the 2030 Agenda for Sustainable Development. They aim to create a more sustainable, equitable, and peaceful world, focusing on issues like poverty, inequality, climate change, environmental degradation and responsible resource management [1].
     </p>
     <p className="text-justify leading-relaxed text-gray-800 mb-4">
-      The concepts of circular economy and sustainable agricultural practices have been at the very core of our project since its inception. As a result, our work aligns closely with several Sustainable Development Goals.
+      The concepts of circular economy and sustainable agricultural practices have been at the very our projects inception. As a result, our work aligns closely with several Sustainable Development Goals.
     </p>
   </div>
   <div className="md:w-1/2 flex flex-col gap-2 mt-4 md:mt-0 justify-center items-center m-10">
@@ -47,10 +47,10 @@ const SustainabilityDocument = () => {
                 <h2 className="text-xl font-bold text-gray-900" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Zero Hunger</h2>
               </div>
               <p className="text-justify leading-relaxed text-gray-800 mb-4">
-                The overarching objective of SDG 2 is to globally ensure food security, enhance the nutritional value of food, and promote sustainable agriculture. A major challenge in achieving this goal is ensuring sufficient protein intake. Valuable sources of protein are animal-based products, accounting for approximately 41% of total dietary protein intake globally and 60% in Europe [2]. However, producing animal protein requires a significantly larger amount of plant protein, coming mainly from soybean meal. Soybeans are often grown unsustainably on land once covered with tropical rainforests and savannahs, leading to serious soil degradation and great greenhouse gas emissions [3]. <strong>NitroDuck</strong> could become part of the solution.
+                The overarching objective of SDG 2 is to globally ensure food security, enhance the nutritional value of food, and promote sustainable agriculture. A major challenge in achieving this goal is ensuring sufficient protein intake. Valuable sources of protein are animal-based products, accounting for approximately 41% of total dietary protein intake globally and 60% in Europe [2]. However, producing animal protein requires a significantly larger amount of plant protein, coming mainly from soybean meal. Soybeans are often grown unsustainably on land once covered with tropical rainforests and savannahs, leading to serious soil degradation and great greenhouse gas emissions [3]. Our project could become part of the solution.
               </p>
               <p className="text-justify leading-relaxed text-gray-800">
-                Duckweed, a protein-rich animal feed alternative, is sustainably grown in a vertical cultivation system directly on the livestock farm. It provides an affordable and locally available feed source for both small- and large-scale farmers, owing to its easily scalable production (in line with Target 2.3). The cultivation system prevents nitrogenous substances from ever reaching the soil, thereby significantly reducing pollution. Its vertical design also minimizes the need for agricultural land, contributing to the conservation of natural ecosystems. Moreover, duckweed was shown to be a resilient crop capable to improve food security even under climate extremes [4]. All of these project contributions are in direct alignment with Target 2.4 of SDG 2.
+                Duckweed, a protein-rich animal feed alternative, is sustainably grown in a <Link className='text-blue-500 hover:underline' to="/hardware">vertical cultivation system</Link> directly on the livestock farm. It provides an affordable and locally available feed source for both small- and large-scale farmers, owing to its easily scalable production (in line with <b>Target 2.3</b>). The cultivation system prevents nitrogenous substances from ever reaching the soil, thereby significantly reducing pollution. Its vertical design also minimizes the need for agricultural land, contributing to the conservation of natural ecosystems. Moreover, duckweed was shown to be a resilient crop capable to improve food security even under climate extremes [4]. All of these project contributions are in direct alignment with <b>Target 2.4 of SDG 2</b>.
               </p>
             </div>
           </div>
@@ -65,13 +65,13 @@ const SustainabilityDocument = () => {
                 <h2 className="text-xl font-bold text-gray-900" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Clean Water and Sanitation</h2>
               </div>
               <p className="text-justify leading-relaxed text-gray-800 mb-4">
-                Agricultural runoff, especially from livestock farming, is a major cause of nutrient pollution of waters, leading to eutrophication, loss of biodiversity and ecosystem damage [5]. Duckweed, known for its high nutrient absorption capacity [6], can remove excess nitrogenous compounds from wastewater while producing a weighty biomass for animal feed. This method of nitrogen recycling can prevent contamination of water bodies and the development of algal blooms, aligning with Target 6.3. As these aspects strongly contribute to the devastation of aquatic ecosystems, such as the creation of dead zones, our project indirectly supports Target 6.6 as well.
+                Agricultural runoff, especially from livestock farming, is a major cause of nutrient pollution of waters, leading to eutrophication, loss of biodiversity and ecosystem damage [5]. Duckweed, known for its high nutrient absorption capacity [6], can remove excess nitrogenous compounds from wastewater while producing a weighty biomass for animal feed. This method of nitrogen recycling can prevent contamination of water bodies and the development of algal blooms, aligning with <b>Target 6.3</b>. As these aspects strongly contribute to the devastation of aquatic ecosystems, such as the creation of deadour projectly supports <b>Target 6.6</b> as well.
               </p>
               <p className="text-justify leading-relaxed text-gray-800 mb-4">
-                Additionally, traditional feed crops require extensive irrigation. In contrast, our controlled vertical duckweed cultivation system, aligned with Target 6.4, maximizes water-use efficiency with minimal water loss.
+                Additionally, traditional feed crops require extensive irrigation. In contrast, our <Link className='text-blue-500 hover:underline' to="/hardware">controlled vertical duckweed cultivation system</Link>, aligned with <b>Target 6.4</b>, maximizes water-use efficiency with minimal water loss.
               </p>
               <p className="text-justify leading-relaxed text-gray-800">
-                Finally, <strong>NitroDuck</strong> supports Target 6.5 by integrating agriculture, water conservation, and pollution control, promoting a more holistic approach to water management.
+                Finally, our project supports Target 6.5 by integrating agriculture, water conservation, and pollution control, promoting a more holistic approach to water management.
               </p>
             </div>
           </div>
@@ -86,7 +86,7 @@ const SustainabilityDocument = () => {
                 <h2 className="text-xl font-bold text-gray-900" style={{ fontFamily: "Space Grotesk, sans-serif" }} >Industry, Innovation, and Infrastructure</h2>
               </div>
               <p className="text-justify leading-relaxed text-gray-800">
-                The main focus of SDG 9 is promoting sustainable industrialization, building resilient infrastructure, and fostering innovation. <strong>NitroDuck</strong> integrates the power of innovation in synthetic plant biology with advanced technology in the form of a modular fully automated vertical cultivation system equipped with a predictive model optimising the duckweed harvest timing. This results in a cutting-edge precision agriculture system that is not only sustainable, resource-efficient and climate-resilient but also universally accessible and affordable, fully supporting the objectives of SDG 9 Targets 9.1 and 9.4.
+                The main focus of SDG 9 is promoting sustainable industrialization, building resilient infrastructure, and fostering innovation. Our project integrates the power of innovation in synthetic plant biology with advanced technology in the form of a modular fully automated vertical cultivation system equipped with a predictive model optimising the duckweed harvest timing. This results in a cutting-edge precision agriculture system that is not only sustainable, resource-efficient and climate-resilient but also universally accessible and affordable, fully supporting the objectives of SDG 9 Targets 9.1 and 9.4.
               </p>
             </div>
           </div>
@@ -107,7 +107,7 @@ const SustainabilityDocument = () => {
                     The circular economy, lying at the core of SDG 12, aims to create
                     closed-loop product systems in which resources are continuously reused,
                     recycled, and repurposed, thereby minimising the environmental burden of
-                    waste [7]. This model likewise underpins the NitroDuck project, which
+                    waste [7]. This model likewise underpour project which
                     targets ammonium-rich liquid manure, a waste stream that, under conventional
                     management practices, represents a significant source of nitrogen pollution
                     in aquatic ecosystems. As an alternative, we introduced the use of liquid
@@ -161,10 +161,10 @@ const SustainabilityDocument = () => {
                 <h2 className="text-xl font-bold text-gray-900" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Climate Action</h2>
               </div>
               <p className="text-justify leading-relaxed text-gray-800 mb-4">
-                Soybean meal production is closely linked to climate change, primarily as a result of substantial greenhouse gas emissions generated throughout its entire lifecycle. Most of them can be attributed to land-use change, particularly deforestation, which in turn leads to releases of CO<sub>2</sub> due to soil disturbance. Additional sources include N<sub>2</sub>O emissions from soil, fertiliser manufacturing, and the use of diesel in agricultural machinery and transportation [8]. In contrast, cultivation of the duckweed takes place in cultivation systems directly on livestock farms, without the need for land-use change, fertilisers or soil degradation. However, <strong>NitroDuck</strong> offers more than just a reduced carbon footprint. It also represents a <strong>climate-resilient agricultural approach</strong>, thanks to its minimal water requirements achieved through a recirculating system and the natural adaptability of duckweed to a wide range of climatic conditions. Duckweed cultivation is therefore not threatened by droughts or temperature extremes, thus fulfilling Target 13.1.
+                Soybean meal production is closely linked to climate change, primarily as a result of substantial greenhouse gas emissions generated throughout its entire lifecycle. Most of them can be attributed to land-use change, particularly deforestation, which in turn leads to releases of CO<sub>2</sub> due to soil disturbance. Additional sources include N<sub>2</sub>O emissions from soil, fertiliser manufacturing, and the use of diesel in agricultural machinery and transportation [8]. In contrast, cultivation of the duckweed takes place in cultivation systems directly on livestock farms, without the need for land-use change, fertilisers or soil degradation. However, our project offers more than just a reduced carbon footprint. It also represents a <strong>climate-resilient agricultural approach</strong>, thanks to its minimal water requirements achieved through a recirculating system and the natural adaptability of duckweed to a wide range of climatic conditions. Duckweed cultivation is therefore not threatened by droughts or temperature extremes, thus fulfilling Target 13.1.
               </p>
               <p className="text-justify leading-relaxed text-gray-800">
-                Additionally, through educational outreach, <strong>NitroDuck</strong> contributes to Target 13.3 by raising awareness of the climate impacts of livestock feed, nutrient cycling, and sustainable agricultural practices.
+                Additionally, through educational outreach, our project contributes to <b>Target 13.3</b> by raising awareness of the climate impacts of livestock feed, nutrient cycling, and sustainable agricultural practices.
               </p>
             </div>
           </div>
