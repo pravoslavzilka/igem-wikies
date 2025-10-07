@@ -1,4 +1,5 @@
 import { AccordionItemProps } from '../types';
+import {ReactElement} from "react";
 
 // Jednoduchá funkcia na formátovanie
 const formatText = (text: string): string => {
@@ -38,17 +39,14 @@ const AccordionItem = ({ id, title, content, isActive, onClick, showContent = fa
     
     {isActive && showContent && (
       <div className="ml-9 md:ml-13 mt-4 md:mt-6 space-y-4 md:space-y-6 animate-in slide-in-from-top-2 duration-300">
-        {content.map((paragraph: string, index: number) => (
-          <p 
+        {content.map((paragraph: ReactElement, index: number) => (
+          <div
             key={index}
-            className="text-justify leading-relaxed text-sm sm:text-base max-w-none lg:max-w-lg text-gray-700"
-            style={{ 
-              fontFamily: 'Space Grotesk, sans-serif', 
-              lineHeight: '168%',
-              color: 'rgba(23, 31, 22, 0.75)'
-            }}
-            dangerouslySetInnerHTML={{ __html: formatText(paragraph) }}
-          />
+            style={{ fontFamily: "Urbanist" }}
+            className="text-justify leading-relaxed text-lg sm:text-lg max-w-none lg:max-w-lg text-gray-900"
+          >
+              {paragraph}
+          </div>
         ))}
       </div>
     )}

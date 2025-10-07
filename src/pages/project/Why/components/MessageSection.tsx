@@ -24,11 +24,9 @@ const MessageSection = () => {
                 That's not enough
               </h2>
               <p 
-                className="text-gray-700 text-center text-sm sm:text-base leading-relaxed"
+                className="text-gray-700 text-center text-lg leading-relaxed"
                 style={{ 
-                  fontFamily: 'Space Grotesk, sans-serif',
-                  lineHeight: '168%',
-                  color: 'rgba(23, 31, 22, 0.75)'
+                  fontFamily: 'Urbanist, sans-serif',
                 }}
               >
                 There are only a few companies working with duckweed to produce food, feedstock, or remediate water. There’s also just a handful of proof-of-concept studies for recombinant protein production in duckweed. Just several visionary research groups dedicated to advancing duckweed research…
