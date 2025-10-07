@@ -74,7 +74,7 @@ export default function HumanPracticesPage3() {
                 {/* Closing paragraph */}
                 <p className="mt-8 text-lg">
                     This didn’t sound well but we needed more inputs. After sneaking in to the{" "}
-                    <span className="font-bold">Applied Synthetic Biology in Europe (ASBE)</span>
+                    <span className="font-bold">Applied Synthetic Biology in Europe (ASBE) </span>
                     conference and hearing the fascinating talk of professor{" "}
                     <span className="font-bold">Tobias Erb</span> about metabolic engineering of
                     photosynthesis, we contacted him to help us. He passed us to the fantastic{" "}
@@ -129,7 +129,7 @@ export default function HumanPracticesPage3() {
 
                         <p>
                             We were also warned about{" "}
-                            <span className="font-bold">high resistance of plant monocot species</span>
+                            <span className="font-bold">high resistance of plant monocot species </span>
                             against multiple antibiotics and were advised to try out several of those
                             to achieve effective selection. René encouraged us to try to play with
                             different methods of gene delivery but also suggested that this kind of
@@ -208,17 +208,6 @@ export default function HumanPracticesPage3() {
                         </div>
 
                         <p>
-                            We incorporated everything we learnt into our{" "}
-                            <a
-                                href="/duckweed-protocols"
-                                className="text-green-700 underline hover:text-green-900"
-                            >
-                                duckweed protocols
-                            </a>{" "}
-                            after we optimized it ourselves, so anyone can make use of this knowledge now.
-                        </p>
-
-                        <p>
                             Julia also confirmed that duckweed is becoming{" "}
                             <span className="font-bold">more and more recognized</span> in the biotech
                             and research community and might become the next plant biology chassis. She
@@ -243,9 +232,9 @@ export default function HumanPracticesPage3() {
 
                     <p>
                         But before we dived deep into more SynBio concepts, we managed to land a call
-                        with <span className="font-bold">master duckweed cultivators from <a
+                        with <span className="font-bold">duckweed farmlord from <a
                         href="https://www.plantiblefoods.com/"
-                        className="text-green-700 underline hover:text-green-900"
+                        className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                                 Plantible Foods
                             </a>{" "}. </span>

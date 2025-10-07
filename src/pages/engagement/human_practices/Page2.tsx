@@ -83,7 +83,7 @@ export default function HumanPracticesPage2() {
                         </div>
                     </div>
 
-                    <p className="mt-6">
+                    <p className="mt-6 text-lg">
                         At the same time, Prof. Hanson was{" "}
                         <span className="font-bold">excited about the problem</span> we were
                         trying to solve and encouraged us to continue. He also suggested other
@@ -106,7 +106,7 @@ export default function HumanPracticesPage2() {
                     more in{" "}
                     <a
                         href="/engagement/nitroduck"
-                        className="text-green-700 underline hover:text-green-900"
+                        className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         NitroDuck story
                     </a>

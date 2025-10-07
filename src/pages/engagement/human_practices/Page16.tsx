@@ -4,7 +4,7 @@ import ExpandablePillNoImage from "./ExpandablePillNoImage.tsx";
 
 export default function HumanPracticesPage16() {
     return (
-        <div>
+        <div className="text-lg">
             <div
                 className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-12">
 
@@ -18,7 +18,7 @@ export default function HumanPracticesPage16() {
                             Besides consulting our promoter design and{" "}
                             <a
                                 href="#"
-                                className="text-green-700 underline hover:text-green-900"
+                                className="text-[#538b5e] underline hover:text-[#25512b]"
                             >
                                 in silico workflow
                             </a>
@@ -47,7 +47,7 @@ export default function HumanPracticesPage16() {
                             and came up with the whole concept of the{" "}
                             <a
                                 href="#"
-                                className="text-green-700 underline hover:text-green-900"
+                                className="text-[#538b5e] underline hover:text-[#25512b]"
                             >
                                 programmable duckweed
                             </a>{" "}
@@ -89,7 +89,7 @@ export default function HumanPracticesPage16() {
                     initiatives addressing this issue, for instance{" "}
                     <a
                         href="#"
-                        className="text-green-700 underline hover:text-green-900"
+                        className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         Czech SynBio Node
                     </a>{" "}
@@ -98,7 +98,7 @@ export default function HumanPracticesPage16() {
                     order to help tried to help, and you can read more about it in{" "}
                     <a
                         href="#"
-                        className="text-green-700 underline hover:text-green-900"
+                        className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         Outreach
                     </a>
@@ -124,14 +124,15 @@ export default function HumanPracticesPage16() {
                             couple of people who attended this pitch{" "}
                             <span className="font-bold">started the iGEM team</span>, for the first time in
                             Prague. Since then, we took part in three meetups together and shared our
-                            experience. <span className="font-bold">They even helped us</span> by conducting{" "}
+                            experience. <span className="font-bold">They even helped us</span> by attempting{" "}
                             <a
                                 href="#"
-                                className="text-green-700 underline hover:text-green-900"
+                                className="text-[#538b5e] underline hover:text-[#25512b]"
                             >
                                 metabolomics analysis
                             </a>{" "}
-                            on our duckweeds to see whether they are a good fit for animal feed.
+                            on our duckweeds to evaluate their potential as animal feed, though the results could{" "}
+                            not be obtained in the end.
                         </p>
                     </div>
 
@@ -175,7 +176,8 @@ export default function HumanPracticesPage16() {
                 </div>
 
                 {/* Green banner footer */}
-                <div className="bg-green-700 text-white text-center rounded-2xl py-8 px-8 shadow-md">
+                <div className="text-white text-center rounded-2xl py-8 px-8 shadow-md text-2xl"
+                     style={{backgroundColor: '#6ca033'}}>
                     <p className="text-lg font-[Urbanist,sans-serif] leading-relaxed">
                         You have seen how we integrated all these conversions, encounters and experiences
                         into our project. There is still much more to learn from the real world and we

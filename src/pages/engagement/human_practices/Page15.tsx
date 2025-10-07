@@ -4,7 +4,7 @@ import ExpandableDoublePill from "./ExpandableDoublePill.tsx";
 
 export default function HumanPracticesPage15() {
     return (
-        <div>
+        <div className="text-lg">
             <div
                 className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-8">
 
@@ -55,7 +55,7 @@ export default function HumanPracticesPage15() {
                 </div>
 
                 {/* Green banner */}
-                <div className="bg-green-700 text-white text-center rounded-2xl py-6 px-8 shadow-md">
+                <div className=" text-white text-center rounded-2xl py-6 px-8 shadow-md text-2xl" style={{backgroundColor: '#6ca033'}}>
                     <p className="text-lg font-semibold">
                         Come and see our special live stage talk at Grand Jamboree to learn what we are up to!
                     </p>

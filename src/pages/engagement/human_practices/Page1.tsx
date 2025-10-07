@@ -1,9 +1,35 @@
-import React, {useState} from "react";
+import React from "react";
 import ExpandablePill from "./ExpandablePill";
+import ExpandablePillNoImage from "./ExpandablePillNoImage.tsx";
 
 export default function HumanPracticesPage1() {
-    const [hovered, setHovered] = useState<string | null>(null);
+    const circles = [
+        {
+            id: "ideation",
+            title: "IDEATION",
+            subtitle: "Our journey from nitroduckweed, through biomass-boosted duckweed, to programmable duckweed.",
+            imgSrc: "https://static.igem.wiki/teams/5642/images/toolbox/toolbox/ideation.webp",
+        },
+        {
+            id: "hacking",
+            title: "HACKING",
+            subtitle: "What did we actually have to understand to make duckweed programmable?\n",
+            imgSrc: "https://static.igem.wiki/teams/5642/images/toolbox/toolbox/hacking.webp",
+        },
+        {
+            id: "real-world-check",
+            title: "REAL WORLD CHECK",
+            subtitle: "Where does our project stand when facing the stakeholders that are affected the most?\n",
+            imgSrc: "https://static.igem.wiki/teams/5642/images/toolbox/toolbox/rwc.webp",
+        },
+    ];
 
+    const handleScroll = (id: string) => {
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({behavior: "smooth"});
+        }
+    };
     return (
         <div className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8">
             {/* Big Header */}
@@ -36,7 +62,7 @@ export default function HumanPracticesPage1() {
                             fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem",
                         }}
                     >
-                        over 50 stakeholders
+                        142 stakeholders
                     </p>
                     <p className="text-lg font-[Urbanist,sans-serif]">
                         to make something the world actually needs
@@ -52,85 +78,33 @@ export default function HumanPracticesPage1() {
                 </p>
             </div>
 
-            {/* Hover circles */}
-            <div className="grid grid-cols-3 gap-6 text-center mb-24 relative">
-                {["IDEATION", "HACKING", "REAL WORLD CHECK"].map((title) => (
+            <div className="w-full flex flex-col md:flex-row justify-center items-start gap-10 text-center mt-12 mb-20">
+                {circles.map((circle) => (
                     <div
-                        key={title}
-                        className="flex flex-col items-center relative cursor-pointer"
-                        onMouseEnter={() => setHovered(title)}
-                        onMouseLeave={() => setHovered(null)}
+                        key={circle.id}
+                        className="cursor-pointer max-w-xs mx-auto"
+                        onClick={() => handleScroll(circle.id)}
                     >
-                        {/* Link wrapper */}
-                        <a
-                            href={
-                                title === "IDEATION"
-                                    ? "#ideation"
-                                    : title === "HACKING"
-                                        ? "#hacking"
-                                        : "#real-world-check"
-                            }
-                            className="no-underline"
-                        >
-                            <p
-                                className="font-bold mb-2 transition-colors"
-                                style={{
-                                    fontFamily: "Space Grotesk, sans-serif",
-                                    fontSize: window.innerWidth < 768 ? "1.2rem" : "1.6rem",
-                                }}
-                            >
-
-                    <span
-                        className={`${
-                            hovered === title ? "text-green-700" : "text-black"
-                        }`}
-                    >
-                        {title}
-                    </span>
-                            </p>
-                        </a>
-
-                        {/* Tooltip on hover */}
-                        <div
-                            className={`absolute top-12 transition-all duration-300 ease-out transform ${
-                                hovered === title
-                                    ? "opacity-100 scale-100"
-                                    : "opacity-0 scale-75 pointer-events-none"
-                            }`}
-                        >
-                            <a
-                                href={
-                                    title === "IDEATION"
-                                        ? "#ideation"
-                                        : title === "HACKING"
-                                            ? "#hacking"
-                                            : "#real-world-check"
-                                }
-                                className="no-underline"
-                            >
-                                <div
-                                    className="h-40 w-40 rounded-full bg-gray-100 border border-gray-400 flex items-center justify-center p-4 text-sm text-center">
-                                    {title === "IDEATION" &&
-                                        "Our journey from nitroduckweed, through biomass-boosted duckweed, to programmable duckweed."}
-                                    {title === "HACKING" &&
-                                        "What did we actually have to understand to make duckweed programmable?"}
-                                    {title === "REAL WORLD CHECK" &&
-                                        "Where does our project stand when facing the stakeholders that are affected the most?"}
-                                </div>
-                            </a>
+                        <img
+                            src={circle.imgSrc}
+                            alt={circle.title}
+                            className="w-48 h-48 mx-auto rounded-full object-cover transition-transform duration-300 hover:scale-105"
+                        />
+                        <div className="mt-4">
+                            <p className="text-gray-900 font-bold text-lg">{circle.subtitle}</p>
                         </div>
-
                     </div>
                 ))}
             </div>
+
 
             {/* Ideation Section */}
             <div className="bg-white rounded-lg mb-16 max-w-6xl mx-auto">
                 {/* Green pill header - fixed width */}
                 <div
                     id="ideation"
-                    className="bg-green-300 text-gray-900 font-bold px-6 py-4 rounded-t-xl"
-                    style={{fontFamily: "Space Grotesk, sans-serif", fontSize: "2rem"}}
+                    className="bg-green-[#6ca033] text-gray-900 font-bold px-6 py-4 rounded-t-xl"
+                    style={{fontFamily: "Space Grotesk, sans-serif", fontSize: "2rem",backgroundColor: '#6ca033'}}
                 >
                     Ideation
                 </div>
@@ -155,7 +129,7 @@ export default function HumanPracticesPage1() {
                         can read more about it in our{" "}
                         <a
                             href="/engagement/entrepreneurship"
-                            className="text-green-700 underline hover:text-green-900"
+                            className="text-[#538b5e] underline hover:text-[#25512b]"
                         >
                             entrepreneurship
                         </a>{" "}
@@ -196,11 +170,11 @@ export default function HumanPracticesPage1() {
                 </p>
             </div>
 
-            <ExpandablePill
-                image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/face.webp"
+            <ExpandablePillNoImage
                 name="Ing. Jakub Neužil"
                 subtitle="South Moravian cattle farmer"
                 location="from Nesovice"
+                defaultOpen={true}
             >
                 <div className="grid md:grid-cols-2 gap-8 leading-relaxed text-lg">
                     {/* Left column */}
@@ -251,7 +225,7 @@ export default function HumanPracticesPage1() {
                         </p>
                     </div>
                 </div>
-            </ExpandablePill>
+            </ExpandablePillNoImage>
         </div>
     );
 }

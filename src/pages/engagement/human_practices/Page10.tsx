@@ -27,21 +27,15 @@ export default function HumanPracticesPage10() {
                     then use as fertilizer.
                 </p>
 
-                <p className="text-lg">
-                    We also talked with the farmers about the reasons behind their choices. They consider the <span
-                    className="font-bold">origin of the feed</span> — which is one of the reasons why <span
-                    className="font-bold">rapeseed dominates,</span> as they either grow it themselves or source it from
-                    local producers. However, at the end of the day, <span className="font-bold">price remains the deciding factor.</span>
-                </p>
 
                 <p className="text-lg">
-                    Calling and talking with 40 farmers was important for us, but we also wanted to understand the
-                    concrete details regarding protein feedstock and manure handling. That is why we visited the “most
-                    knowledgeable farm” here in the South Moravian region — the{" "}
-                    <span className="font-bold italic">
+                    Calling and talking with 40 farmers was important for us, but they often didn’t share exact figures
+                    about how much they produce or pay. However, we needed those numbers to gain a deeper understanding
+                    of protein feedstock and manure management. That’s why we visited the most knowledgeable farm in the
+                    South Moravian region — the <span className="font-bold italic">
                     Žabčice University Agricultural Farm,
-                </span>{" "}
-                    operated under the Faculty of Agronomy at Mendel University.
+                </span>{" "}, operated by the Faculty of
+                    Agronomy at Mendel University — which was willing to share valuable insights and some data with us.
                 </p>
 
                 <p className="text-lg">
@@ -120,11 +114,9 @@ export default function HumanPracticesPage10() {
                         <li>
                             So, why can’t farmers simply grow their own soybeans, as they do alfalfa? In the{" "}
                             <span className="font-bold">Czech Republic,</span> soybean yields would average only
-                            about <span className="font-bold">2 tons per hectare,</span> compared to rapeseed
-                            yields of <span className="font-bold">4 tons per hectare</span> or maize, which also
-                            sells at a higher price. In contrast, farmers with more nutritionally demanding{" "}
-                            <span className="font-bold">dairy cows</span> use a purchased external herd batch that
-                            can be stored as meal.
+                            about <span className="font-bold">2 tons per hectare,</span> compared to barley, which
+                            yields about <span className="font-bold">4 tons per hectare</span> and can be sold for a
+                            higher price than soybeans, growing soybeans would not make any sense.
                         </li>
                     </ul>
 
@@ -170,7 +162,7 @@ export default function HumanPracticesPage10() {
                                     What does all this mean? Manure - especially{" "}
                                     <span className="font-bold">liquid manure</span> - must be stored in{" "}
                                     <span className="font-bold">special tanks,</span> which are{" "}
-                                    <span className="font-bold">very expensive</span> to build and maintain. This
+                                    <span className="font-bold">expensive</span> to build and maintain. This
                                     additional cost adds to all the others, making farms{" "}
                                     <span className="font-bold">
                                     less profitable and less able to keep prices competitive
@@ -232,6 +224,7 @@ export default function HumanPracticesPage10() {
                 className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-12">
 
                 <p>
+                    That was a Czech farm - but since our team is Czechoslovak, we also visited a farm in Slovakia.
                     The <span className="font-bold">Podpoľanie region</span> has long been one of Slovakia’s
                     traditional centers of cattle breeding. The rearing of{" "}
                     <span className="font-bold">Slovak Spotted Cattle</span> here is more than just an agricultural

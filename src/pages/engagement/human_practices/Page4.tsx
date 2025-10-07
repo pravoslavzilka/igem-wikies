@@ -101,14 +101,14 @@ export default function HumanPracticesPage6() {
                     . You can read how they perfected the cultivation{" "}
                     <a
                         href="/project/how/cultivator"
-                        className="text-green-700 underline hover:text-green-900"
+                        className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         hardware
                     </a>{" "}
                     and{" "}
                     <a
                         href="/project/how/predictor/in-silico-cultivation"
-                        className="text-green-700 underline hover:text-green-900"
+                        className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         software
                     </a>{" "}
@@ -269,12 +269,6 @@ export default function HumanPracticesPage6() {
 
                                 <ul className="list-disc list-inside space-y-2">
                                     <li>
-                                        <span className="font-bold">
-                                            Agrobacterium is not accessing the duckweed meristematic cells –{" "}
-                                        </span>
-                                        therefore, new individuals cannot carry the transgene.
-                                    </li>
-                                    <li>
                                         the T-DNA is <span
                                         className="font-bold">not getting integrated into the genome. </span>
                                         Long-lasting transient expression means that duckweed
@@ -311,8 +305,8 @@ export default function HumanPracticesPage6() {
                         <p>
                             We agreed that <span className="font-bold">Arturo will send us protocols </span>
                             and we will do a brainstorming session with his lab in Vienna (read more in hacking).
-                            You can check out all the <span className="font-bold">protocols </span> after our touch
-                            here or in Arturo’s amazing paper [14]!
+                            You can check out all the <span className="font-bold">protocols </span> in Arturo’s amazing
+                            paper [14]!
                         </p>
                     </div>
                 </ExpandablePill>

@@ -3,9 +3,9 @@ import ExpandablePill from "./ExpandablePill";
 
 export default function HumanPracticesPage13() {
     return (
-        <div>
+        <div className="text-lg">
             <div
-                className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-12">
+                className="max-w-6xl mx-auto bg-white text-lg text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-12">
 
                 {/* Section Title */}
                 <h2
@@ -24,7 +24,7 @@ export default function HumanPracticesPage13() {
                     We never really buried our{" "}
                     <a
                         href="#"
-                        className="text-green-700 underline hover:text-green-900"
+                        className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         Entrepreneurship
                     </a>{" "}
@@ -51,7 +51,7 @@ export default function HumanPracticesPage13() {
                             Tsipi is the CEO of{" "}
                             <a
                                 href="#"
-                                className="text-green-700 underline hover:text-green-900"
+                                className="text-[#538b5e] underline hover:text-[#25512b]"
                             >
                                 GreenOnyx
                             </a>
@@ -83,7 +83,7 @@ export default function HumanPracticesPage13() {
                             become a sponsor of our iGEM team, so we can now proudly say that{" "}
                             <a
                                 href="#"
-                                className="text-green-700 underline hover:text-green-900"
+                                className="text-[#538b5e] underline hover:text-[#25512b]"
                             >
                                 GreenOnyx
                             </a>{" "}
@@ -96,7 +96,7 @@ export default function HumanPracticesPage13() {
 
 
             <div
-                className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-12">
+                className="max-w-6xl mx-auto bg-white text-lg text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-12">
 
                 {/* Intro paragraph */}
                 <p>
@@ -109,7 +109,7 @@ export default function HumanPracticesPage13() {
                     Research of this company and her team that is starting again, with{" "}
                     <a
                         href="#"
-                        className="text-green-700 underline hover:text-green-900"
+                        className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         Phylloceuticals
                     </a>
@@ -131,7 +131,7 @@ export default function HumanPracticesPage13() {
                             from{" "}
                             <a
                                 href="#"
-                                className="text-green-700 underline hover:text-green-900"
+                                className="text-[#538b5e] underline hover:text-[#25512b]"
                             >
                                 Phylloceuticals
                             </a>

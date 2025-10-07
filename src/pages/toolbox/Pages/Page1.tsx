@@ -259,10 +259,6 @@ export default function Page1() {
                                 Why duckweed page
                             </a>
                             ).{" "}
-                            <span className="font-bold">
-              At iGEM Brno, we have fallen in love with this potential — just like many other
-              scientists and companies.
-            </span>
                         </p>
 
 

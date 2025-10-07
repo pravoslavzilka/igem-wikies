@@ -54,10 +54,7 @@ export default function HumanPracticesPage7() {
 
                         <p>
                             We went to restart our transformation experiments with fresh cultures and guess what?{" "}
-                            <span className="font-bold">It worked!</span> Read more in{" "}
-                            <a href="#" className="text-green-700 underline hover:text-green-900">
-                                regeneration assay page
-                            </a>.
+                            <span className="font-bold">It worked!</span>
                         </p>
 
                         {/* Two-column layout: text + group photo */}
@@ -124,7 +121,7 @@ export default function HumanPracticesPage7() {
                                 We met few members of <span className="font-bold">iGEM Marburg team </span>
                                 from 2024 on the European iGEM Meetup in Frankfurt. They judged both our
                                 presentation and poster (read more on our{" "}
-                                <a href="#" className="text-green-700 underline hover:text-green-900">
+                                <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                                     Outreach page
                                 </a>
                                 ). After the event (besides having fun), we discussed our project and plants
@@ -151,11 +148,11 @@ export default function HumanPracticesPage7() {
                                     <span className="font-bold">modification of their ratiometric approach </span>
                                     in regulatory part testing and could estimate the timeline for the whole
                                     workflow well. Take a look how we implemented their advice into our{" "}
-                                    <a href="#" className="text-green-700 underline hover:text-green-900">
+                                    <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                                         in silico workflow
                                     </a>{" "}
                                     and{" "}
-                                    <a href="#" className="text-green-700 underline hover:text-green-900">
+                                    <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                                         promoter testing
                                     </a>
                                     .
@@ -185,7 +182,7 @@ export default function HumanPracticesPage7() {
                             Although Marburg workflow was very robust and user-friendly, they didn’t have
                             to face the problem of lack of transcriptomes available for one species (read
                             more about that in{" "}
-                            <a href="#" className="text-green-700 underline hover:text-green-900">
+                            <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                                 in silico promoter workflow
                             </a>
                             ). Therefore, we had to opt for{" "}
@@ -236,7 +233,7 @@ export default function HumanPracticesPage7() {
                 className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-12">
                 {/* Dr. Veronika Jedličková */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-7.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-9.webp"
                     name="Dr. Veronika Jedličková"
                     subtitle="Central European Institute of Technology"
                     location="Hormonal Crosstalk in Plant Development"
@@ -259,7 +256,7 @@ export default function HumanPracticesPage7() {
 
                 {/* Dr. Markéta Šámalová */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-9.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-7.webp"
                     name="Dr. Markéta Šámalová"
                     subtitle="Department of Experimental Plant Biology"
                     location="Plant Molecular Biology"
