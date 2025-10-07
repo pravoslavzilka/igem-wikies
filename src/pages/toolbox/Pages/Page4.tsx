@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {ChevronDown, ChevronUp} from "lucide-react";
-import DuckweedProtocol from "../predictable_duckweed/DuckweedProtocol.tsx";
-import MediumChange from "../../project/how/predictor/MediumChange.tsx";
+import DuckweedProtocolReduced from "./DuckweedProtocolReduced.tsx";
+import MediumChangeReduced from "./MediumChangeReduced.tsx";
 
 export default function Page4() {
     const [open, setOpen] = useState(false);
@@ -102,7 +102,7 @@ export default function Page4() {
 
                     {/* Expandable content */}
                     {open && (
-                        <DuckweedProtocol/>
+                        <DuckweedProtocolReduced/>
                     )}
                 </div>
             </div>
@@ -131,7 +131,7 @@ export default function Page4() {
 
                 {/* Expandable content */}
                 {open1 && (
-                    <MediumChange/>
+                    <MediumChangeReduced/>
                 )}
             </div>
 
