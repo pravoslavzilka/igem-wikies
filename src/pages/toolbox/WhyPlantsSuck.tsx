@@ -22,11 +22,11 @@ const WhyPlantsSuck = () => {
             <strong>Plants</strong> have enormous potential in biotechnology, but working with them comes with far more challenges 
             than working with microbes. Bacteria can be grown quickly, transformed in a matter of hours, and studied 
             in simple laboratory conditions. In contrast, plants grow slowly, require controlled environments, and carry 
-            genomes that are often too complex and duplicated [1]. Genetic modifications in plants are rarely 
+            genomes that are often too complex and multiplicated [1]. Genetic modifications in plants are rarely 
             straightforward, since most protocols depend on several demanding steps in tissue culture [2]. These steps 
             often cause further complications, such as poor regeneration or unintended genetic changes, which make 
             consistent results harder to achieve [3]. Despite all these difficulties, plants are worth the effort. Where 
-            microbes end, plants are only getting started — they are indispensable for solving real-world problems in 
+            microbes end, plants are only getting started - they are indispensable for solving real-world problems in 
             agriculture, nutrition, pharmaceuticals, and green technologies.
           </p>
         </div>
@@ -142,7 +142,7 @@ const WhyPlantsSuck = () => {
                 visible phenotype, because redundant copies, called paralogs, can mask the 
                 effect. In addition, plant genomes contain large amounts of repetitive DNA 
                 and mobile elements and have complex epigenetic and silencing 
-                mechanisms, all influencing gene activity (10). All of these factors add 
+                mechanisms, all influencing gene activity [10]. All of these factors add 
                 layers of unpredictability and complexity, which one wouldn't encounter 
                 working with simple bacteria.
               </p>
@@ -168,7 +168,7 @@ const WhyPlantsSuck = () => {
                 non-chimeric plant where every cell carries the same genome. Unlike bacteria, where one cell 
                 already makes a colony, plant cells have to be guided back into forming all the tissues of a new 
                 organism. This regeneration step is species-specific, slow, and highly sensitive to small changes in 
-                conditions, making it one of the hardest parts of plant biotechnology — and even when well 
+                conditions, making it one of the hardest parts of plant biotechnology - and even when well 
                 optimized, its efficiency is usually incredibly low [11].
               </p>
 
@@ -179,28 +179,28 @@ const WhyPlantsSuck = () => {
                 
                 <ul className="space-y-3 text-md text-black">
                   <li>
-                    <strong>• Callus induction</strong> – 2–4 weeks<br/>
+                    <strong>• Callus induction:</strong> 2–4 weeks<br/>
                     <span className="text-gray-700 ml-2">
                       (explants such as leaf or embryo tissue are induced to form undifferentiated callus cells)
                     </span>
                   </li>
                   
                   <li>
-                    <strong>• DNA delivery</strong> – ~1 week<br/>
+                    <strong>• DNA delivery:</strong> ~1 week<br/>
                     <span className="text-gray-700 ml-2">
                       (transformation via <em>Agrobacterium</em> infection or particle bombardment; a relatively quick step)
                     </span>
                   </li>
                   
                   <li>
-                    <strong>• Selection</strong> – 3–6 weeks<br/>
+                    <strong>• Selection:</strong> 3–6 weeks<br/>
                     <span className="text-gray-700 ml-2">
                       (growth on selective medium where only transformed cells survive antibiotics or herbicides)
                     </span>
                   </li>
                   
                   <li>
-                    <strong>• Regeneration</strong> – 4–12 weeks<br/>
+                    <strong>• Regeneration:</strong> 4–12 weeks<br/>
                     <span className="text-gray-700 ml-2">
                       (calli are guided with hormones to form shoots, then roots, and finally acclimatized to soil; this 
                       step is significantly longer with soybean)
@@ -208,7 +208,7 @@ const WhyPlantsSuck = () => {
                   </li>
                   
                   <li>
-                    <strong>• Screening (genotyping & stability check)</strong> – 2–4 weeks<br/>
+                    <strong>• Screening (genotyping & stability check):</strong> 2–4 weeks<br/>
                     <span className="text-gray-700 ml-2">
                       (PCR, qPCR, or sequencing to confirm uniform, stable transformants; sometimes requires 
                       advancing generations)
@@ -222,7 +222,7 @@ const WhyPlantsSuck = () => {
                 adaptations. <em>Arabidopsis thaliana</em> is relatively easy, since the "floral dip" method allows 
                 transformation through flowers, skipping most tissue culture steps and giving transgenic seeds in a 
                 few months [12]. Corn (<em>Zea mays</em>) usually needs young embryos to be infected with 
-                <em> Agrobacterium</em> and then grown back into plants in tissue culture — a slow process with only a few 
+                <em> Agrobacterium</em> and then grown back into plants in tissue culture - a slow process with only a few 
                 percent success [13]. Soybean (<em>Glycine max</em>) is even more difficult, with efficiencies often below 
                 1% and long regeneration times [14].
               </p>
@@ -252,7 +252,7 @@ const WhyPlantsSuck = () => {
                   <h4 className="font-bold text-md text-black">Arabidopsis floral dip</h4>
                   <p className=" text-black mt-1 text-sm">
                     The floral dip method is simple and widely used, 
-                    but efficiency is low — usually around 1–2% of 
+                    but efficiency is low - usually around 1–2% of 
                     seeds produce transformants [18].
                   </p>
                 </div>
@@ -302,7 +302,7 @@ const WhyPlantsSuck = () => {
 
           </div>
           <p className="mt-10" style={{ fontFamily: "Urbanist, sans-serif" }  }>
-              At iGEM Brno, we are developing a faster and simpler way to transform the fastest growing plant on Earth. By implementing our transposon-based transformation <Link to="/project/how/taifr/overview" className="text-blue-500" style={{ textDecoration: "underline" }}>TAIFR</Link>, we aim to generate stable, uniformly transformed lines “in-planta” more efficiently. Duckweed’s rapid growth and simple body plan make it an ideal chassis, while removing the dependence on long tissue culture steps lowers the risk of somaclonal variation. With this approach, we aim not only to unlock its unique biotechnological potential <Link to="/project/why" className="text-blue-500" style={{ textDecoration: "underline" }}>(Why)</Link>, but also to provide plant researchers with a new model system — one that enables the generation of stable engineered lines quickly, affordably, and predictably. This would accelerate plant-oriented basic research and help translate it more rapidly into meaningful impact for society.
+              At iGEM Brno, we are developing a faster and simpler way to transform the fastest growing plant on Earth. By implementing our transposon-based transformation <a href="/project/how/taifr/overview" className="text-blue-500" style={{ textDecoration: "underline" }}>TAIFR</a>, we aim to generate stable, uniformly transformed lines “in-planta” more efficiently. Duckweed’s rapid growth and simple body plan make it an ideal chassis, while removing the dependence on long tissue culture steps lowers the risk of somaclonal variation. With this approach, we aim not only to unlock its unique biotechnological potential <a href="/plant/why-duckweed" className="text-blue-500" style={{ textDecoration: "underline" }}>(Why)</a>, but also to provide plant researchers with a new model system - one that enables the generation of stable engineered lines quickly, affordably, and predictably. This would accelerate plant-oriented basic research and help translate it more rapidly into meaningful impact for society.
 
             </p>
         </div>
