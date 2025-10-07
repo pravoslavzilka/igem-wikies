@@ -89,21 +89,44 @@ export default function RegenerationAssayPoster() {
           </p>
         </div>
 
-        <div className='grid md:grid-cols-4 gap-4 mb-12 pt-12'>
+        <div className='grid md:grid-cols-4 gap-4  pt-12'>
 
             
 
             <div className='col-span-2  items-center justify-center'>
-              <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure3.webp" alt="Figure 3: Regenerated Transgenic Frond" className="max-w-full h-auto" />
+              
+                  <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure3.webp" alt="Figure 3: Regenerated Transgenic Frond" className="max-w-full h-auto" />
+                   
 
-                <p className="text-base leading-relaxed mt-10">
-                    <strong>Figure 3.</strong> Fronds of Spirodela polyrhiza 7428 (Sp7428) were co-transformed with two Agrobacterium cultures: one carrying pIB005 (mPing-bordered GFP-p2a-NPTII unit) and the other carrying pIB003 (PONG transposase). GFP fluorescence spots appeared after 12th day post-infiltration (dpi) (see Fig. 2.4). At 18 dpi, all transformed fronds were transferred to medium containing 5 mg/L G418 - ten times higher than the tolerance threshold of Sp7428 (0.5 mg/L). As a control, fronds transformed only with pIB003 (no resistance gene present) were placed on the same concentration at the same time. By 24 dpi, all non-transformed fronds had died (1), while some transformed fronds - specifically the daughter fronds - survived and appeared healthy (2), though smaller. Surprisingly, these daughter fronds showed no GFP fluorescence, not even as localized spots - that is why we performed PCR to find out if transgene was there
-                    </p>
+                   
 
             </div>
 
             <div className='col-span-2  items-center justify-center'>
               <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/taifr-pcr-simplified.webp" alt="Figure 4: PCR for GFP on Genomic DNA from Regenerated Frond" className="max-w-full h-auto" />
+                
+
+            </div>
+
+
+       </div>     
+
+
+            <div className='grid md:grid-cols-4 gap-4 mb-12 '>
+
+            
+
+            <div className='col-span-2  items-center justify-center'>
+              
+                    <p className="text-base leading-relaxed mt-10">
+                        <strong>Figure 3.</strong> Fronds of Spirodela polyrhiza 7428 (Sp7428) were co-transformed with two Agrobacterium cultures: one carrying pIB005 (mPing-bordered GFP-p2a-NPTII unit) and the other carrying pIB003 (PONG transposase). GFP fluorescence spots appeared after 12th day post-infiltration (dpi) (see Fig. 2.4). At 18 dpi, all transformed fronds were transferred to medium containing 5 mg/L G418 - ten times higher than the tolerance threshold of Sp7428 (0.5 mg/L). As a control, fronds transformed only with pIB003 (no resistance gene present) were placed on the same concentration at the same time. By 24 dpi, all non-transformed fronds had died (1), while some transformed fronds - specifically the daughter fronds - survived and appeared healthy (2), though smaller. Surprisingly, these daughter fronds showed no GFP fluorescence, not even as localized spots - that is why we performed PCR to find out if transgene was there
+                        </p>
+
+                   
+
+            </div>
+
+            <div className='col-span-2  items-center justify-center'>
                 <p className="text-base leading-relaxed mt-10">
                     <strong>Figure 4. </strong> 
                     Genomic DNA isolated from Spirodela polyrhiza 7428 at 30 days post co-transformation with pIB005 and pIB003 (iteration RA4.1) was amplified using primers o128 and o129, tested for the presence of GFP - presumably inserted into the genome via PONG transposase activity from pIB003. It yielded the expected 250 bp product in 9 out of 20 samples. The first negative control (genomic DNA from non-transformed S. polyrhiza) did not yield any bands, as expected. The second negative control (water instead of DNA) also showed no amplification. The positive control (pIB005 construct) yielded the expected 250 bp band.
@@ -120,8 +143,8 @@ export default function RegenerationAssayPoster() {
           <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-4xl font-bold mb-6" >DBTL 1</h2>
           
           <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4" >DESIGN of pIB001</h3>
-          <div className='grid grid-cols-1 md:grid-cols-5 gap-4 mb-6'>
-            <div className='col-span-4  flex items-center justify-center'>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mb-6'>
+            <div className='col-span-2  flex items-center justify-center'>
                 <p className="mb-4 leading-relaxed">
                     To test if we can insert gene using our TAIFR design, we designed construct pIB001. It 
                     contains a cassette flanked on both sides by the non-transposable element mPing. Inside 
@@ -145,7 +168,7 @@ export default function RegenerationAssayPoster() {
 
           <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold pt-8">DESIGN OF pEGe</h3>
 
-          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6'>
+          <div className='grid grid-cols-1 md:grid-cols-5 gap-4 mb-6'>
             <div className='col-span-3  flex items-center justify-center'>
                 <p className="mb-6 leading-relaxed">
                     For the mPing element or for the 5' and 3' borders of mPing-flanked cassette to move and 
@@ -157,7 +180,7 @@ export default function RegenerationAssayPoster() {
                 </p>    
 
             </div>            
-            <div className='col-span-1  flex items-center justify-center'>
+            <div className='col-span-2  flex items-center justify-center'>
                <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/pege-copy.webp" alt="Figure Y: pEGe Map" className="max-w-full h-auto" />     
             </div>
           </div>    
@@ -356,8 +379,8 @@ export default function RegenerationAssayPoster() {
          
           
 
-          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6'>
-            <div className='col-span-3 items-center justify-center'>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mb-6'>
+            <div className='col-span-2 items-center justify-center'>
                 
 
                 <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of pIB004</h3>
@@ -556,8 +579,8 @@ export default function RegenerationAssayPoster() {
         <div className="mb-12 mt-24">
           <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-4xl font-bold mb-6">DBTL 3</h2>
           
-          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6'>
-            <div className='col-span-3  items-center justify-center'>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mb-6'>
+            <div className='col-span-2  items-center justify-center'>
                 <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of pIB002</h3>
                 <p className="mb-4 leading-relaxed">
                     Plasmid pIB002 contains a cassette flanked on both sides by the non-transposable 
@@ -583,8 +606,8 @@ export default function RegenerationAssayPoster() {
           </div>
 
 
-          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6'>
-            <div className='col-span-3  items-center justify-center'>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mb-6'>
+            <div className='col-span-2  items-center justify-center'>
                 
 
                 <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN OF p003</h3>
@@ -783,8 +806,8 @@ export default function RegenerationAssayPoster() {
         <div className="mb-12 mt-32">
           <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-4xl font-bold mb-6">DBTL 4</h2>
           
-          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6'>
-            <div className='col-span-3  items-center justify-center'>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mb-6'>
+            <div className='col-span-2  items-center justify-center'>
                 <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of pIB005</h3>
                 <p className="mb-6 leading-relaxed">
                     Plasmid pIB005 contains a cassette flanked on both sides by the non-transposable 
@@ -894,7 +917,7 @@ export default function RegenerationAssayPoster() {
 
 
 
-          <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure14.webp" alt="Description of image" className="max-w-full h-auto mb-6" />
+          <img src="https://static.igem.wiki/teams/5642/images/how/taifr/figure14-14.webp" alt="Description of image" className="max-w-full h-auto mb-6" />
 
          <p className='mt-10 mb-6 leading-relaxed text-base'>
           <p>
@@ -972,10 +995,29 @@ export default function RegenerationAssayPoster() {
             </>
 
 
-          <div className='grid grid-cols-1 md:grid-cols-4 gap-8 mb-6 mt-8'>
+          <div className='grid grid-cols-1 md:grid-cols-4 gap-8 mt-8'>
             <div className='col-span-2  items-center justify-center'>
 
                  <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure14.webp" alt="Description of image" className="max-w-full h-auto mb-4" />      
+
+                      
+            </div>
+
+            <div className='col-span-2  items-center justify-center'>
+
+                 <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure16.webp" alt="Description of image" className="max-w-full h-auto mb-4 mt-10" />     
+
+            
+
+            </div>
+
+          </div>
+
+
+
+           <div className='grid grid-cols-1 md:grid-cols-4 gap-8 mb-6 '>
+            <div className='col-span-2  items-center justify-center'>
+
 
                  <p className="text-base leading-relaxed">
                     <strong>Figure 15.</strong> Co-transformation of pIB005 and pIB003 results in no detectable transient GFP fluorescence 6 days post-infiltration (see Fig. 12.3). However, between 12 and 18 dpi, randomly distributed spots of GFP fluorescence appear, probably resulting from the insertion of the mPing-bordered cassette (rZmUBI-GFP-p2a-NPTII-t35S) into the nuclear genome facilitated by the PONG transposase. To confirm this assumption, we performed PCR to determine whether the mPing-bordered cassette had been inserted into the genome.
@@ -984,7 +1026,6 @@ export default function RegenerationAssayPoster() {
 
             <div className='col-span-2  items-center justify-center'>
 
-                 <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/figure16.webp" alt="Description of image" className="max-w-full h-auto mb-4" />     
 
                 <p className="text-base leading-relaxed ">
               <strong>Figure 16.</strong> The surviving healthy Sp7428 daughter fronds (1) resulted from pIB005 × pIB003 co-transformation in RA3.1, compared with non-transformed Sp7428 dead fronds (2). Both samples were cultivated on G418: first at 0.25 mg/L for 18 days, then for 6 days at 5 mg/L, and finally for 6 days at 10 mg/L. These concentrations are 10-fold and 20-fold higher, respectively, than the survival threshold of Sp7428 (0.5mg/L of G418).
@@ -1075,8 +1116,8 @@ export default function RegenerationAssayPoster() {
 
           <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4 mt-16">DESIGN of pIB006</h3>
           
-          <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-6'>
-            <div className='col-span-3  items-center justify-center'>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mb-6'>
+            <div className='col-span-2  items-center justify-center'>
                 <p className="mb-6 leading-relaxed">
                     Plasmid pIB006 contains three expression cassettes designed for rapid and 
                     customizable gene knockouts using the CRISPR/Cas9 system. The first cassette 
