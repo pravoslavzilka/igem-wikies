@@ -118,9 +118,9 @@ export default function LimitingBiomassReduced() {
                                 <strong>Figure 21:</strong> Experimentally measured growth curves of <em>Lemna
                                 gibba</em>, <em>Lemna obscura</em>, <em>Lemna valdiviana</em>, <em>Wolffia globosa</em>,
                                 and <em>Wolffia hyalina</em>. The limiting biomass of <em>Wolffia hyalina</em> and <em>Lemna
-                                obscura</em> was explored to be around 1400 g/m<sup>2</sup>, the limiting biomass
-                                of <em>Wolffia globosa</em> was around 1500 g/m<sup>2</sup> and the limiting biomass
-                                of <em>Lemna valdiviana</em> and <em>Lemna gibba</em> was around 1700 g/m<sup>2</sup>.
+                                obscura</em> was explored to be around <b>1400 g/m<sup>2</sup></b>, the limiting biomass
+                                of <em>Wolffia globosa</em> was around <b>1500 g/m<sup>2</sup></b> and the limiting biomass
+                                of <em>Lemna valdiviana</em> and <em>Lemna gibba</em> was around <b>1700 g/m<sup>2</sup></b>.
                             </p>
                         </div>
                     </div>

@@ -242,13 +242,13 @@ export default function Page5() {
                             <div>
                                 <LimitingBiomassReduced/>
 
-                                <h1 className="text-4xl font-bold mb-12 text-gray-900"
+                                <h1 className="text-4xl font-bold mb-12 text-gray-900 text-center "
                                     style={{fontFamily: 'Space Grotesk, sans-serif'}}>
                                     Harvesting Strategy Experiment
                                 </h1>
                                 <p>
                                     The second set of experiments aimed to determine optimal harvesting strategies by
-                                    testing different harvesting frequencies and ratios to identify which combination
+                                    testing different <b>harvesting frequencies and ratios</b> to identify which combination
                                     resulted in the highest biomass yield, as duckweed grows fastest at a specific
                                     surface
                                     confluence. The goal was to maintain the long-term sustainability of the duckweed
