@@ -297,7 +297,7 @@ export default function Page3() {
                             <div className="flex flex-col justify-start items-center space-y-4">
                                 <div className="flex justify-center">
                                     <img
-                                        src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/crispr-protocol.webp"
+                                        src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/pib006-v2.webp"
                                         alt="Duckweed transformation setup"
                                         className="rounded-lg object-contain w-full max-w-xs"
                                     />
@@ -318,20 +318,7 @@ export default function Page3() {
                         </div>
 
                         <p className="text-lg leading-relaxed font-[Urbanist,sans-serif]">
-                            Unfortunately, we didn’t have the chance to test the functionality of our{" "}
-                            <span className="font-bold">pIB006 part</span>, except for digesting and ligating the gRNA
-                            into it,
-                            which we successfully performed twice. We also didn’t have the opportunity to transform{" "}
-                            <span className="font-bold">pIB006</span> into duckweed, as it was designed and built during
-                            the{" "}
-                            <span className="font-bold">fifth (final) DBTL cycle of TAIFR</span>, just as the Wiki
-                            Freeze was
-                            approaching. However, there is no logical reason it shouldn’t work, since{" "}
-                            <span className="font-bold italic">Cas9</span>, driven by the{" "}
-                            <span className="font-bold italic">rZmUBI promoter</span> and terminated by the{" "}
-                            <span className="font-bold italic">t35S terminator</span>, has been successfully used to
-                            knock out
-                            genes in duckweed.
+                            We tested the functionality of pIB006 at the level of gRNA ligation twice (see the <A href="/safety-and-security" className="hover:underline text-[#6ca033]">Safety page</A>). Unfortunately, we didn’t have the chance to transform pIB006 into duckweed, as it was designed and built during the <A href="/project/how/taifr/overview#dbtl-5" className="hover:underline text-[#6ca033]">fifth (final) DBTL cycle of TAIFR</A>, just as the Wiki Freeze was approaching. However, there is no logical reason it shouldn’t work, since <b>Cas9</b> - driven by the <b>rZmUBI</b> promoter and terminated by the <b>t35S</b> terminator - has been successfully used to knock out genes in duckweed (2).
                         </p>
                     </div>
                 )}

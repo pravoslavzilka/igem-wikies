@@ -35,7 +35,7 @@ const MediumChangeReduced = () => {
                                 </em>
                                 <span style={{fontWeight: 400}}> or </span>
                                 <em>
-                                    <span style={{fontWeight: 400}}>S. polyrhiza (0162)</span>
+                                    <span style={{fontWeight: 400}}>Spirodela polyrhiza (0162)</span>
                                 </em>
                                 <span style={{fontWeight: 400}}>
                 {" "}
@@ -75,19 +75,7 @@ const MediumChangeReduced = () => {
                          alt="Medium Change Graph" className="w-full h-auto rounded"/>
                 </div>
                 <p className="text-base text-gray-600 mt-3 p-4 text-justify" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                    <strong>Fig 17:</strong><p>
-                  <span style={{fontWeight: 400}}>
-                    Graph showing biomass growth over time for experimental (mean values from
-                    two replicates of the experiment) and control groups of{" "}
-                  </span>
-                    <em>
-                        <span style={{fontWeight: 400}}>Lemna japonica (8627)</span>
-                    </em>
-                    <span style={{fontWeight: 400}}> and </span>
-                    <em>
-                        <span style={{fontWeight: 400}}>Spirodela polyrhiza (0162)</span>
-                    </em>
-                    <span style={{fontWeight: 400}}>.</span>
+                    <p><strong>Fig 17. </strong>The graph shows biomass growth over time for experimental (mean values from two replicates) and control groups of <em>Lemna japonica </em>(8627) and <em>Spirodela polyrhiza</em> (0162). Based on the data, the optimal medium change frequency - ensuring maximal growth rate with minimal maintenance - is every 6 days, as biomass yields of the control and experimental groups begin to diverge noticeably at this point.
                 </p>
 
                 </p>

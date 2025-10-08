@@ -45,21 +45,21 @@ export default function Page5() {
                     Reliable prediction of duckweed yields for large-scale cultivation
 
                 </h3>
-                <div className="grid md:grid-cols-[2fr_1fr] gap-8 items-center">
+                <div className="grid md:grid-cols-[2fr_1fr] gap-8 text-lg items-center">
                     {/* === Left Column: Text === */}
                     <div>
 
                         <p className="text-justify mb-4">
-                            Duckweed growth rates vary widely across species, nutrient levels, and environmental
+                            Duckweed growth rates <b>vary widely </b> across species, nutrient levels, and environmental
                             conditions (4, 5, 6, 7 and 8). That’s why every duckweed company or
                             research
-                            group must overcome lengthy optimization before they can tap into the
+                            group <b>must overcome lengthy optimization</b> before they can tap into the
                             power of duckweed.
                         </p>
 
                         <p className="text-justify">
-                            We fed months of our cultivation data into our computational growth
-                            predictor that enables optimization of harvesting schedules and resource
+                            <b>We fed months of our cultivation data</b> into our <b>computational</b> growth
+                            PREDICTOR that enables optimization of harvesting schedules and resource
                             inputs and maximizes biomass yield — essential for efficient large-scale
                             cultivation.
                         </p>
@@ -201,8 +201,8 @@ export default function Page5() {
                                 <div className="space-y-4">
                                     <p className="text-justify">
                                         When we began building the model based on data available in the literature,
-                                        the results were not very consistent, as the reported values varied widely
-                                        (see Fig. 1). Therefore, we decided to conduct several cultivation experiments
+                                        the results were not very consistent, as the reported <b>values varied </b>widely
+                                        (see Fig. 19). Therefore, we decided to conduct several cultivation experiments
                                         under controlled conditions.
                                     </p>
 
@@ -212,7 +212,7 @@ export default function Page5() {
                                         limiting biomass density of several clones available to us. The{" "}
                                         <span className="font-bold">limiting biomass density</span> is a key
                                         parameter for further mathematical modelling of duckweed growth, as it
-                                        directly appears in the logistic growth equation — the most widely known
+                                        directly appears in the <b>logistic growth equation</b> — the most widely known
                                         mathematical approximation of population growth.
                                     </p>
 
@@ -230,7 +230,7 @@ export default function Page5() {
                                         />
                                         <p className="text-base  mt-2 text-gray-800 text-justify">
                                             <strong>Figure 19.</strong> Widely varying growth rates of{" "}
-                                            <em>Lemna minor</em> reported in the literature.
+                                            <em>Lemna minor</em> reported in the literature (4, 5, 6, 7 and 8).
                                         </p>
                                     </div>
                                 </div>
