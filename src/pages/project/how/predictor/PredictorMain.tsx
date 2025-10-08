@@ -362,7 +362,7 @@ const PredictorMain = () => {
                     <p className="text-gray-700 leading-relaxed mb-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
                         Our streamlined pipeline bridges computational simulations and real-world duckweed cultivation.
                         By selecting a configuration, predicting optimal cultivation strategies, and translating them
-                        into actionable steps, you can accelerate your journey toward sustainable, high-yield duckweed
+                        into practice, you can accelerate your journey toward sustainable, high-yield duckweed
                         production.
                     </p>
                 </div>
@@ -664,7 +664,7 @@ const PredictorMain = () => {
 
                 <p className="text-gray-700 leading-relaxed text-center" style={{fontFamily: 'Urbanist, sans-serif'}}>
                     Our predictor distinguishes between short-term and long-term cultivation strategies,
-                    identifying the critical parameters that optimize yield. By balancing harvest ratio,
+                    identifying the critical parameters that optimize yield for different cultivation lengths. By balancing harvest ratio,
                     period, and initial density, we uncover the sweet spot that enables sustainable and
                     scalable duckweed production.
                 </p>
@@ -688,7 +688,7 @@ const PredictorMain = () => {
                 </h2>
                 <div className="text-center max-w-3xl mx-auto px-4 py-8">
                     <p className="text-gray-700 leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                        We developed two independent modeling tools to optimize cultivation processes:
+                        We developed two independent modeling tools:
                     </p>
                     <ul className="mt-4 space-y-3 text-gray-700 leading-relaxed text-left max-w-2xl mx-auto"
                         style={{fontFamily: 'Urbanist, sans-serif'}}>
@@ -696,7 +696,7 @@ const PredictorMain = () => {
                             <A href="#GM">
                                 <span className="font-semibold text-[#6ca033] hover:underline">Growth Modeler:</span>
                             </A> Computes biomass step-by-step, enabling continuous growth modeling with user-defined
-                            cultivation periods.
+                            cultivation length.
                         </li>
                         <li>
                             <A href="#YP">
@@ -707,7 +707,7 @@ const PredictorMain = () => {
                     </ul>
                     <br/>
                     <p className="text-gray-700 leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                        Additionally we also <A href="#MONITOR"><span
+                        Additionally we also provide <A href="#MONITOR"><span
                         className="font-semibold text-[#6ca033] hover:underline">Image Processing</span></A> - based
                         cultivation monitoring toolbox
                     </p>
@@ -742,9 +742,9 @@ const PredictorMain = () => {
 
                 <div className="text-center max-w-4xl mx-auto px-4 py-6">
                     <p className="text-gray-700 leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                        Benchmarked cultivation runs validate our in-silico predictions. Time-series biomass
-                        trajectories and end-of-run comparisons across various harvesting ratios quantify performance
-                        and refine intrinsic growth parameters tailored to our species and conditions.
+                        The model's predictions were tested in practice. The model was tasked with predicting the optimal harvesting settings for long-term cultivation (60+ days).
+                        The harvesting period was set to three, and harvesting ratios of 30% and 40% (both predicted as optimal) and 50% (not predicted as optimal) were selected.
+                        Indeed, the experiment with an HR of 50% showed an unsustainable trend of decreasing biomass and the lowest total yield.
                     </p>
                 </div>
 
@@ -769,11 +769,9 @@ const PredictorMain = () => {
                 <div className="text-center max-w-4xl mx-auto px-4 py-6">
                     <p className="text-gray-700 leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
                         The <span className="text-[#6ca033] font-semibold">Growth Modeler</span> simulates duckweed
-                        cultivation by integrating user-defined and internal parameters. It starts with an
+                        cultivation by step-wise computation. It starts with an
                         initialization phase, calculating the effective growth rate and initial biomass, then progresses
-                        into a simulation loop. This loop iteratively computes biomass accumulation and harvesting
-                        dynamics, enabling accurate yield predictions across diverse strategies and environmental
-                        conditions.
+                        into a simulation loop. This loop iteratively computes biomass accumulation and harvested yield.
                     </p>
                 </div>
 
@@ -797,9 +795,9 @@ const PredictorMain = () => {
                 <div className="text-center max-w-4xl mx-auto px-4 py-6">
                     <p className="text-gray-700 leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
                         The <span className="text-[#6ca033] font-semibold">Yield Predictor</span> approaches duckweed
-                        yield prediction from a unique perspective, leveraging distinct data sources. Trained to
-                        forecast annual duckweed yield for a single cultivation year, it complements the <span
-                        className="text-[#6ca033] font-semibold">Growth Modeler</span>. Together, our integrated toolbox
+                        yield prediction from a different perspective, leveraging already available data [9]. Trained to
+                        forecast annual duckweed yield. Predicted trends are in a good agreement with the<span
+                        className="text-[#6ca033] font-semibold">Growth Modeler</span>. Together, our toolbox
                         combines both tools to validate in-silico cultivation designs from two independent perspectives.
                     </p>
                 </div>
@@ -829,7 +827,7 @@ const PredictorMain = () => {
                         interference with the cultivation process is necessary, thereby preventing the waste of
                         resources. This enables problems to be resolved quickly and stable cultivation to be
                         re-established. Moreover, in large scale scenario, using human resources would be very
-                        time-consuming
+                        time-consuming.
                     </p>
                 </div>
 
