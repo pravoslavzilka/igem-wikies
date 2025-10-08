@@ -1,3 +1,5 @@
+import A from "../../../A";
+
 const PromoterLibraryConstruction = () => {
     return (
         <div>
@@ -110,12 +112,12 @@ const PromoterLibraryConstruction = () => {
 
                     <p className="leading-relaxed mb-4">
                         Since we designed our own primers (see{" "}
-                        <a
-                            href="#primers"
+                        <A
+                            href="/toolbox/programmable-duckweed/part-collection#primer-database"
                             className="text-[#6ca033] hover:underline font-semibold"
                         >
                             them here
-                        </a>
+                        </A>
                         ), we first needed to identify the optimal annealing temperatures for given
                         primer pairs using gradient PCRs.
                     </p>
@@ -158,10 +160,10 @@ const PromoterLibraryConstruction = () => {
 
                     {/* === Promoter links === */}
                     <p className="text-[#6ca033] font-semibold mb-10 space-x-4 text-center">
-                        <a href="#" className="hover:underline">rLmUBI</a>,
-                        <a href="#" className="hover:underline">rLmAUX</a>,
-                        <a href="#" className="hover:underline">rSpUBI</a>,
-                        <a href="#" className="hover:underline">rSpWDP</a>
+                        <A href="https://registry.igem.org/parts/bba-25fq6hr0" className="hover:underline">rLmUBI</A>,
+                        <A href="https://registry.igem.org/parts/bba-25goufcy" className="hover:underline">rLmAUX</A>,
+                        <A href="https://registry.igem.org/parts/bba-25y6vxt4" className="hover:underline">rSpUBI</A>,
+                        <A href="https://registry.igem.org/parts/bba-25boso9d" className="hover:underline">rSpWDP</A>
                     </p>
 
                     {/* === Subsection Header === */}
@@ -211,12 +213,12 @@ const PromoterLibraryConstruction = () => {
                         >
                             <strong>Fig 10:</strong> The schematic representation of our visual
                             testing construct with the testing promoter + 5′ UTR sequence (
-                            <a
+                            <A
                                 href="#"
                                 className="text-[#6ca033] hover:underline font-medium"
                             >
                                 rTEST
-                            </a>
+                            </A>
                             ) driving the expression of RUBY betalain visual marker terminated by
                             t35S.
                         </p>
@@ -234,12 +236,12 @@ const PromoterLibraryConstruction = () => {
                     <p className="leading-relaxed">
                         In order to do that, we opted for a{" "}
                         <b>ratiometric approach</b>, similar to the one that{" "}
-                        <a
-                            href="#"
+                        <A
+                            href="https://2024.igem.wiki/marburg/#"
                             className="text-[#6ca033] hover:underline font-semibold"
                         >
                             iGEM Marburg 2024
-                        </a>{" "}
+                        </A>{" "}
                         employed in their project. It consists of having the fluorescence reporter
                         under the tested promoter + 5′ UTR sequence on the first transcriptional
                         unit and on the second transcriptional unit, there is the second reporter
@@ -283,7 +285,7 @@ const PromoterLibraryConstruction = () => {
                         <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: "Urbanist, sans-serif"}}>
                             <strong>Fig 11:</strong> The schematic representation of our measurement construct with
                             the testing promoter + 5′UTR sequence (
-                            <a href="#" className="text-[#6ca033] hover:underline font-medium">rTEST</a>
+                            rTEST
                             ) driving the expression of RFP which is terminated by t35S on the first transcriptional
                             unit.
                             The second transcriptional unit is used as a reference for conducting the ratiometric
@@ -425,7 +427,12 @@ const PromoterLibraryConstruction = () => {
                         the measurement construct with RFP driven by rZmUBI which we used for most
                         of our constructs in other parts of our project and is supposed to work
                         well in duckweed [33]. For RUBY under rZmUBI, we already had the{" "}
-                        <b>pAM052</b> – a construct gifted to us by Dr. Ordóñez. Hence, we had
+                        <A
+                            href="https://registry.igem.org/parts/bba-253a2zv8"
+                            className="text-[#6ca033] hover:underline font-semibold"
+                        >
+                            pAM052
+                        </A> – a construct gifted to us by Dr. Ordóñez. Hence, we had
                         these L1 constructs as the first transcriptional unit:
                     </p>
 
@@ -544,142 +551,142 @@ const PromoterLibraryConstruction = () => {
 
                             <tbody className="bg-white divide-y divide-gray-200 text-sm">
                             <tr className="hover:bg-gray-50">
-                                <td className="px-3 py-2 text-blue-600 font-semibold border-r border-gray-200">
-                                    <a href="https://parts.igem.org/Part:BBa_251IJFJ4"
-                                       className="hover:underline">BBa_251IJFJ4</a>
+                                <td className="px-3 py-2 text-[#6ca033] font-semibold border-r border-gray-200">
+                                    <A href="https://registry.igem.org/parts/bba-25i17jf4"
+                                       className="hover:underline">BBa_25I17JFJ4</A>
                                 </td>
                                 <td className="px-3 py-2 border-r border-gray-200">rSpARF</td>
                                 <td className="px-3 py-2 border-r border-gray-200">ARF guanine-nucleotide exchange
                                     factor GNOM-like
                                 </td>
-                                <td className="px-3 py-2 border-r border-gray-200 text-blue-600">
-                                    <a href="https://parts.igem.org/Part:BBa_258ST3NW"
-                                       className="hover:underline">BBa_258ST3NW</a>
+                                <td className="px-3 py-2 border-r border-gray-200 text-[#6ca033]">
+                                    <A href="https://registry.igem.org/parts/bba-2585t3nw"
+                                       className="hover:underline">BBa_2585T3NW</A>
                                 </td>
-                                <td className="px-3 py-2 text-blue-600">
-                                    <a href="https://parts.igem.org/Part:BBa_25Y8HUHL"
-                                       className="hover:underline">BBa_25Y8HUHL</a>
+                                <td className="px-3 py-2 text-[#6ca033]">
+                                    <A href="https://registry.igem.org/parts/bba-25y8huhl"
+                                       className="hover:underline">BBa_25Y8HUHL</A>
                                 </td>
                             </tr>
 
                             <tr className="hover:bg-gray-50">
-                                <td className="px-3 py-2 text-blue-600 font-semibold border-r border-gray-200">
-                                    <a href="https://parts.igem.org/Part:BBa_25BK15T"
-                                       className="hover:underline">BBa_25BK15T</a>
+                                <td className="px-3 py-2 text-[#6ca033] font-semibold border-r border-gray-200">
+                                    <A href="https://registry.igem.org/parts/bba-25bkki5t"
+                                       className="hover:underline">BBa_25BKK15T</A>
                                 </td>
                                 <td className="px-3 py-2 border-r border-gray-200">rSpPOL</td>
                                 <td className="px-3 py-2 border-r border-gray-200">DNA polymerase epsilon catalytic
                                     subunit A
                                 </td>
-                                <td className="px-3 py-2 border-r border-gray-200 text-blue-600">
-                                    <a href="https://parts.igem.org/Part:BBa_250PDDO2"
-                                       className="hover:underline">BBa_250PDDO2</a>
+                                <td className="px-3 py-2 border-r border-gray-200 text-[#6ca033]">
+                                    <A href="https://registry.igem.org/parts/bba-250pddo2"
+                                       className="hover:underline">BBa_250PDDO2</A>
                                 </td>
-                                <td className="px-3 py-2 text-blue-600">
-                                    <a href="https://parts.igem.org/Part:BBa_2517VDHR"
-                                       className="hover:underline">BBa_2517VDHR</a>
+                                <td className="px-3 py-2 text-[#6ca033]">
+                                    <A href="https://registry.igem.org/parts/bba-2517vdhr"
+                                       className="hover:underline">BBa_2517VDHR</A>
                                 </td>
                             </tr>
 
                             <tr className="hover:bg-gray-50">
-                                <td className="px-3 py-2 text-blue-600 font-semibold border-r border-gray-200">
-                                    <a href="https://parts.igem.org/Part:BBa_25Y6VXT4"
-                                       className="hover:underline">BBa_25Y6VXT4</a>
+                                <td className="px-3 py-2 text-[#6ca033] font-semibold border-r border-gray-200">
+                                    <A href="https://registry.igem.org/parts/bba-25y6vxt4"
+                                       className="hover:underline">BBa_25Y6VXT4</A>
                                 </td>
                                 <td className="px-3 py-2 border-r border-gray-200">rSpUBI</td>
                                 <td className="px-3 py-2 border-r border-gray-200">E3 ubiquitin protein-ligase</td>
-                                <td className="px-3 py-2 border-r border-gray-200 text-blue-600">
-                                    <a href="https://parts.igem.org/Part:BBa_25S6OHZT"
-                                       className="hover:underline">BBa_25S6OHZT</a>
+                                <td className="px-3 py-2 border-r border-gray-200 text-[#6ca033]">
+                                    <A href="https://registry.igem.org/parts/bba-25s6ohzt"
+                                       className="hover:underline">BBa_25S6OHZT</A>
                                 </td>
-                                <td className="px-3 py-2 text-blue-600">
-                                    <a href="https://parts.igem.org/Part:BBa_25J4RAOE"
-                                       className="hover:underline">BBa_25J4RAOE</a>
+                                <td className="px-3 py-2 text-[#6ca033]">
+                                    <A href="https://registry.igem.org/parts/bba-25j4ra0e"
+                                       className="hover:underline">BBa_25J4RA0E</A>
                                 </td>
                             </tr>
 
                             <tr className="hover:bg-gray-50">
-                                <td className="px-3 py-2 text-blue-600 font-semibold border-r border-gray-200">
-                                    <a href="https://parts.igem.org/Part:BBa_25BOSO9D"
-                                       className="hover:underline">BBa_25BOSO9D</a>
+                                <td className="px-3 py-2 text-[#6ca033] font-semibold border-r border-gray-200">
+                                    <A href="https://registry.igem.org/parts/bba-25boso9d"
+                                       className="hover:underline">BBa_25BOSO9D</A>
                                 </td>
                                 <td className="px-3 py-2 border-r border-gray-200">rSpWDP</td>
                                 <td className="px-3 py-2 border-r border-gray-200">WD domain containing protein</td>
-                                <td className="px-3 py-2 border-r border-gray-200 text-blue-600">
-                                    <a href="https://parts.igem.org/Part:BBa_25KE7JLC"
-                                       className="hover:underline">BBa_25KE7JLC</a>
+                                <td className="px-3 py-2 border-r border-gray-200 text-[#6ca033]">
+                                    <A href="https://registry.igem.org/parts/bba-25ke7jlc"
+                                       className="hover:underline">BBa_25KE7JLC</A>
                                 </td>
-                                <td className="px-3 py-2 text-blue-600">
-                                    <a href="https://parts.igem.org/Part:BBa_251AYM84"
-                                       className="hover:underline">BBa_251AYM84</a>
+                                <td className="px-3 py-2 text-[#6ca033]">
+                                    <A href="https://registry.igem.org/parts/bba-251aym84"
+                                       className="hover:underline">BBa_251AYM84</A>
                                 </td>
                             </tr>
 
                             <tr className="hover:bg-gray-50">
-                                <td className="px-3 py-2 text-blue-600 font-semibold border-r border-gray-200">
-                                    <a href="https://parts.igem.org/Part:BBa_2583VR6Z"
-                                       className="hover:underline">BBa_2583VR6Z</a>
+                                <td className="px-3 py-2 text-[#6ca033] font-semibold border-r border-gray-200">
+                                    <A href="https://registry.igem.org/parts/bba-2583vr6z"
+                                       className="hover:underline">BBa_2583VR6Z</A>
                                 </td>
                                 <td className="px-3 py-2 border-r border-gray-200">rLmACC</td>
                                 <td className="px-3 py-2 border-r border-gray-200">Acetyl-CoA carboxylase</td>
-                                <td className="px-3 py-2 border-r border-gray-200 text-blue-600">
-                                    <a href="https://parts.igem.org/Part:BBa_256ROI3"
-                                       className="hover:underline">BBa_256ROI3</a>
+                                <td className="px-3 py-2 border-r border-gray-200 text-[#6ca033]">
+                                    <A href="https://registry.igem.org/parts/bba-256r1oj3"
+                                       className="hover:underline">BBa_256R1OJ3</A>
                                 </td>
-                                <td className="px-3 py-2 text-blue-600">
-                                    <a href="https://parts.igem.org/Part:BBa_25L5ISX"
-                                       className="hover:underline">BBa_25L5ISX</a>
+                                <td className="px-3 py-2 text-[#6ca033]">
+                                    <A href="https://registry.igem.org/parts/bba-252l515x"
+                                       className="hover:underline">BBa_252L515X</A>
                                 </td>
                             </tr>
 
                             <tr className="hover:bg-gray-50">
-                                <td className="px-3 py-2 text-blue-600 font-semibold border-r border-gray-200">
-                                    <a href="https://parts.igem.org/Part:BBa_25FQ6HRO"
-                                       className="hover:underline">BBa_25FQ6HRO</a>
+                                <td className="px-3 py-2 text-[#6ca033] font-semibold border-r border-gray-200">
+                                    <A href="https://registry.igem.org/parts/bba-25fq6hr0"
+                                       className="hover:underline">BBa_25FQ6HR0</A>
                                 </td>
                                 <td className="px-3 py-2 border-r border-gray-200">rLmUBI</td>
                                 <td className="px-3 py-2 border-r border-gray-200">E3 ubiquitin protein-ligase</td>
-                                <td className="px-3 py-2 border-r border-gray-200 text-blue-600">
-                                    <a href="https://parts.igem.org/Part:BBa_25OROR0N"
-                                       className="hover:underline">BBa_25OROR0N</a>
+                                <td className="px-3 py-2 border-r border-gray-200 text-[#6ca033]">
+                                    <A href="https://registry.igem.org/parts/bba-25roor0n"
+                                       className="hover:underline">BBa_25R0OR0N</A>
                                 </td>
-                                <td className="px-3 py-2 text-blue-600">
-                                    <a href="https://parts.igem.org/Part:BBa_25WFSDZY"
-                                       className="hover:underline">BBa_25WFSDZY</a>
+                                <td className="px-3 py-2 text-[#6ca033]">
+                                    <A href="https://registry.igem.org/parts/bba-25fwsdzy"
+                                       className="hover:underline">BBa_25FWSDZY</A>
                                 </td>
                             </tr>
 
                             <tr className="hover:bg-gray-50">
-                                <td className="px-3 py-2 text-blue-600 font-semibold border-r border-gray-200">
-                                    <a href="https://parts.igem.org/Part:BBa_25GOUFCY"
-                                       className="hover:underline">BBa_25GOUFCY</a>
+                                <td className="px-3 py-2 text-[#6ca033] font-semibold border-r border-gray-200">
+                                    <A href="https://registry.igem.org/parts/bba-25goufcy"
+                                       className="hover:underline">BBa_25GOUFCY</A>
                                 </td>
                                 <td className="px-3 py-2 border-r border-gray-200">rLmAUX</td>
                                 <td className="px-3 py-2 border-r border-gray-200">Auxin transport protein</td>
-                                <td className="px-3 py-2 border-r border-gray-200 text-blue-600">
-                                    <a href="https://parts.igem.org/Part:BBa_25RBVHJQ"
-                                       className="hover:underline">BBa_25RBVHJQ</a>
+                                <td className="px-3 py-2 border-r border-gray-200 text-[#6ca033]">
+                                    <A href="https://registry.igem.org/parts/bba-25rbvhjq"
+                                       className="hover:underline">BBa_25RBVHJQ</A>
                                 </td>
-                                <td className="px-3 py-2 text-blue-600">
-                                    <a href="https://parts.igem.org/Part:BBa_251T5TQY"
-                                       className="hover:underline">BBa_251T5TQY</a>
+                                <td className="px-3 py-2 text-[#6ca033]">
+                                    <A href="https://registry.igem.org/parts/bba-251t5tqy"
+                                       className="hover:underline">BBa_251T5TQY</A>
                                 </td>
                             </tr>
 
                             <tr className="hover:bg-gray-50">
-                                <td className="px-3 py-2 text-blue-600 font-semibold border-r border-gray-200">
-                                    <a href="https://parts.igem.org/Part:BBa_25QSF5EX"
-                                       className="hover:underline">BBa_25QSF5EX</a>
+                                <td className="px-3 py-2 text-[#6ca033] font-semibold border-r border-gray-200">
+                                    <A href="https://registry.igem.org/parts/bba-25qfse2x"
+                                       className="hover:underline">BBa_25QFSE2X</A>
                                 </td>
                                 <td className="px-3 py-2 border-r border-gray-200">rZmUBI</td>
                                 <td className="px-3 py-2 border-r border-gray-200">Maize ubiquitin</td>
-                                <td className="px-3 py-2 border-r border-gray-200 text-blue-600">
-                                    <a href="https://parts.igem.org/Part:BBa_250L3FD"
-                                       className="hover:underline">BBa_250L3FD</a>
+                                <td className="px-3 py-2 border-r border-gray-200 text-[#6ca033]">
+                                    <A href="https://registry.igem.org/parts/bba-250pl3f0"
+                                       className="hover:underline">BBa_250PL3F0</A>
                                 </td>
-                                <td className="px-3 py-2 text-blue-600">
-                                    <a href="https://parts.igem.org/Part:BBa_253A2VX8"
-                                       className="hover:underline">BBa_253A2VX8</a>
+                                <td className="px-3 py-2 text-[#6ca033]">
+                                    <A href="https://registry.igem.org/parts/bba-253a2zv8"
+                                       className="hover:underline">BBa_253A2ZV8</A>
                                 </td>
                             </tr>
                             </tbody>
@@ -718,17 +725,17 @@ const PromoterLibraryConstruction = () => {
                         <b>Agrobacterium</b>-mediated transformation using{" "}
                         <em>Agrobacterium tumefaciens</em> EHA105. We delivered our L2 visual testing
                         constructs into the cells via electroporation (
-                        <a href="#" className="text-[#6ca033] hover:underline">
+                        <A href="/toolbox/agrobacterium-mediated-transformation-protocol/" className="text-[#6ca033] hover:underline">
                             read Agrobacterium electroporation protocol
-                        </a>
+                        </A>
                         ) and PCR-verified the colonies grown on our plates to confirm correct
                         construct and absence of any recombination event. Positive colonies were
                         selected for liquid pre-cultures and these were used to prepare liquid
                         cultures on the next day. Then, we transiently transformed all our promoter
                         constructs into duckweed (
-                        <a href="#" className="text-[#6ca033] hover:underline">
+                        <A href="/plant#transformation" className="text-[#6ca033] hover:underline">
                             read our Vacuum transformation protocol
-                        </a>
+                        </A>
                         ).
                     </p>
 
@@ -797,9 +804,9 @@ const PromoterLibraryConstruction = () => {
                         included in our in silico identification of the regulatory sequences.
                         However, this may not be the case for <em>Wolffia</em>, <em>Wolffiella</em> or{" "}
                         <em>Landoltia</em>. Based on the results of{" "}
-                        <a href="#" className="text-[#6ca033] hover:underline">
+                        <A href="/plant#vacuum-testing" className="text-[#6ca033] hover:underline">
                             Vacuum Infiltration Testing
-                        </a>
+                        </A>
                         , we have chosen these 3 species for transformation with our measurement
                         constructs:
                     </p>
@@ -845,13 +852,7 @@ const PromoterLibraryConstruction = () => {
                             fluorescence.
                             All pictures were taken using ZEISS AxioZoom V16 with 587 nm excitation wavelength 12 days
                             post-infiltration
-                            with our testing constructs, in this case{" "}
-                            <a
-                                href="#"
-                                className="text-[#6ca033] hover:underline"
-                            >
-                                rSpPOL
-                            </a>.
+                            with our testing constructs, in this case rSpPOL
                             No signal was observed for (A) <em>Wolffia globosa</em> 9527, (B) <em>Lemna gibba</em> 7742,
                             nor (C) <em>Spirodela polyrhiza</em> 7428.
                         </p>
@@ -867,12 +868,12 @@ const PromoterLibraryConstruction = () => {
 
                     <p className="leading-relaxed mb-4">
                         At this time, we luckily encountered{" "}
-                        <a
-                            href="#"
+                        <A
+                            href="/human-practices#prof-wang"
                             className="text-[#6ca033] hover:underline"
                         >
                             professor Kan Wang
-                        </a>, who shed light on our problem with low transformation efficiencies.
+                        </A>, who shed light on our problem with low transformation efficiencies.
                         We were using <b>old <em>Agrobacterium</em> pre-cultures</b> for inoculating the culture for
                         transformation which,
                         according to professor Wang, has <b>significant negative impact</b> on the transformation
@@ -913,14 +914,14 @@ const PromoterLibraryConstruction = () => {
                     </p>
 
                     <p className="leading-relaxed mb-4">
-                        This time, our <b>positive control (<a href="#"
-                                                               className="text-[#6ca033] hover:underline">pAM0101</a>)</b> was{" "}
+                        This time, our <b>positive control (<A href="https://registry.igem.org/parts/bba-25dnbygj"
+                                                               className="text-[#6ca033] hover:underline">pAM0101</A>)</b> was{" "}
                         <b>positive at 6 days post-infiltration</b> already and we could detect signal even at 18 days
                         post-infiltration
                         in both tested species (see Figure 16). We were very happy to see that also our{" "}
-                        <a href="#" className="text-[#6ca033] hover:underline">
+                        <A href="https://registry.igem.org/parts/bba-250pl3f0" className="text-[#6ca033] hover:underline">
                             measurement construct with rZmUBI
-                        </a>{" "}
+                        </A>{" "}
                         was producing positive signal in both <em>S. polyrhiza</em> and <em>L. gibba</em> (Figure 17),
                         although significantly
                         weaker one when compared to pAM0101. To our disappointment, none of our constructs has shown a
@@ -943,7 +944,7 @@ const PromoterLibraryConstruction = () => {
                             <strong>Figure 16:</strong> Second iteration of measurement constructs testing using
                             fluorescence.
                             These pictures are showing positive controls transformed with{" "}
-                            <a href="#" className="text-[#6ca033] hover:underline">pAM0101</a> with visible eGFP signal
+                            pAM0101 with visible eGFP signal
                             (arrows)
                             were taken using ZEISS AxioZoom V16 with 587 nm and 488 nm excitation wavelength 9 days
                             post-infiltration,
@@ -969,7 +970,7 @@ const PromoterLibraryConstruction = () => {
                             AxioZoom V16
                             with 587 nm excitation wavelength 9 days post-infiltration with our testing constructs, in
                             this case{" "}
-                            <a href="#" className="text-[#6ca033] hover:underline">rZmUBI</a>. We observed weak
+                            rZmUBI. We observed weak
                             transformation efficiency
                             but detected the RFP signal in both (A) <em>Spirodela polyrhiza</em> 7428 and (B) <em>Lemna
                             gibba</em> 7742.
@@ -1253,9 +1254,9 @@ const PromoterLibraryConstruction = () => {
                         We used this program to create our standard curves for both RFP and NPTII DNA amounts.
                         For this purpose, dilution series of triplicates starting with 25 ng going down to 0.04 ng
                         of our{" "}
-                        <a href="#" className="text-[#6ca033] hover:underline">
+                        <A href="https://registry.igem.org/parts/bba-250pl3f0" className="text-[#6ca033] hover:underline">
                             L2 plasmid with RFP under rZmUBI
-                        </a>{" "}
+                        </A>{" "}
                         was used. We obtained these standard curves:
                     </p>
 

@@ -496,8 +496,9 @@ const PromoterLibrary = () => {
 
                     <div className="bg-gray-50 rounded-lg mt-12">
                         <div className="bg-white rounded">
-                            <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/rplot02.webp"
-                                 alt="Large Tray Growth Curve" className="w-full h-auto"/>
+                            <img
+                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/2/variance-plot.avif"
+                                alt="Large Tray Growth Curve" className="w-full h-auto"/>
                         </div>
 
                         <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
@@ -1096,13 +1097,13 @@ const Reference = [
     },
     {
         id: 34,
-        text: "He Y, Zhang T, Sun H, Zhan H, Zhao Y, Liang S. The RUBY reporter enables efficient gene expression analysis and co-transformation in plants. Nat Plants. 2020;6(11):1348–1355.",
+        text: "He Y, Zhang T, Sun H, Zhan H, Zhao Y. A reporter for noninvasively monitoring gene expression and plant transformation. Hortic Res. 2020 Sep 19;7(1):152. doi: 10.1038/s41438-020-00390-1. PMID: 33024566; PMCID: PMC7502077.",
         url: "https://pubmed.ncbi.nlm.nih.gov/33024566/"
     },
     {
         id: 35,
-        text: "Jores T, Tonnier F, Brininstool G, Reyes JC. Synthetic promoter design in monocots: Challenges and perspectives. Plant Biotechnol J. 2021;19(6):1101–1114.",
-        url: ""
+        text: "Jores T, Tonnies J, Wrightsman T, Buckler ES, Cuperus JT, Fields S, Queitsch C. Synthetic promoter designs enabled by a comprehensive analysis of plant core promoters. Nat Plants. 2021 Jun;7(6):842-855. doi: 10.1038/s41477-021-00932-y. Epub 2021 Jun 3. PMID: 34083762; PMCID: PMC10246763.",
+        url: "https://pubmed.ncbi.nlm.nih.gov/34083762/"
     },
     {
         id: 36,
