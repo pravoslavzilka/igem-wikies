@@ -793,27 +793,11 @@ export default function RegenerationAssayPoster() {
 
           </div>
 
-          <p className="mb-4 leading-relaxed">
-            <strong>There were spots of GFP fluorescence in transformed duckweeds (see Fig. 15), as a results of genomic insertion.
-            However, what if <em>Agrobacterium</em> is unable to reach the meristematic cells of duckweed, and the PING-PONG 
-            system therefore cannot insert the transgene into cells with the sufficient capacity to give rise to a whole new 
-            transgenic frond?</strong>
-          </p>
-
-          <p className="mb-4 leading-relaxed">
-            This is what our advisor, Dr. Ordóñez, proposed when we showed him the results. We could probably favour them 
-            sufficiently by antibiotic (neomycin) selection to force them to give rise to a new frond. But what if this is not possible? 
-            To answer the question of whether <em>Agrobacterium</em> can reach and infect the meristematic cells of duckweed, we designed 
-            the Meristematic Assay, which we decided to run in parallel with DBTL cycle no. 4 of The Regeneration Assay. The aim of 
-            the Meristematic Assay is to knock-out a previously stably inserted GFP in Spirodela polyrhiza 0162 strain and observe 
-            daughter fronds not exhibiting GFP fluorescence. These stable lines were gifted to us by Ordóñez Lab. If successful, we 
-            would have certainty that <em>Agrobacterium</em> can indeed reach the meristematic cells. If not, we would need to develop a new 
-            strategy. Thus, we initiated DBTL cycle no. 5, termed the Meristematic Assay. <A href="#dbtl-5" className='hover:underline text-[#6ca033]'>Read more here</A>.
-          </p>
+         
         </div>
 
         {/* DBTL 4 Section */}
-        <div className="mb-12 mt-32">
+        <div className="mb-12 mt-16">
           <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-4xl font-bold mb-6">DBTL 4</h2>
           
           <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mb-6'>
@@ -1059,6 +1043,9 @@ export default function RegenerationAssayPoster() {
                     Genomic DNA isolated from <em>Spirodela polyrhiza</em> 7428 at 30 days post co-transformation with pIB005 and pIB003 (iteration RA4.1) was separated on a gel from to avoid conceivable <em>Agrobacterium</em> DNA contamination, purified, and subsequently subjected to two PCR reactions. The first reaction (upper gel), using primers o128 and o129, tested for the presence of GFP - presumably inserted into the genome via PONG transposase activity from pIB003. It yielded the expected 250 bp product in 9 out of 20 samples. The second reaction (lower gel), using primers o55 and o56, tested for the presence of <em>Agrobacterium</em> DNA in the samples to rule out the possibility that GFP was present in the form of the binary vector pIB005 residing in <em>Agrobacterium</em>. This reaction produced the expected product in 3 out of 20 samples, indicating that GFP detection in 7 out of 20 samples resulted from Transposase-Assisted Insertion. The first negative control (genomic DNA from non-transformed <em>S. polyrhiza</em>) did not yield any bands, as expected. The second negative control (water instead of DNA) also showed no amplification. The positive control (pIB005 construct) yielded the expected 250 bp band.
                 </p>
 
+
+           
+
           <p className="mb-6 leading-relaxed" id="wondering-end">
             Wondering how the regeneration attempts turned out in RA3.2, 3.3, 3.4, 3.5, and 3.6? We are too… As the Wiki 
             Freeze was approaching and time was running short, we tried to speed up transformations by preparing 
@@ -1083,14 +1070,72 @@ export default function RegenerationAssayPoster() {
         </p>    
 
 
-        <p className="mb-4 leading-relaxed">
+        <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-4xl font-bold mb-6">What about Cre/lox system?</h2>
+
+
+        <p>
+            <span style={{ fontWeight: 400 }}>
+              As second part of TAIFR method did not yet worked,{" "}
+            </span>
+            <strong>
+              we have not been able to test whether our Cre-lox system functions as
+              intended
+            </strong>
+            <span style={{ fontWeight: 400 }}>.</span>{" "}
+            <span style={{ fontWeight: 400 }}>
+              Theoretically, it should. The presence of the Cre-lox system will{" "}
+            </span>
+            <strong>enable transgene stacking</strong>
+            <span style={{ fontWeight: 400 }}>
+              {" "}
+              in duckweed lines developed either via{" "}
+            </span>
+            <strong>callus-mediated transformation</strong>
+            <span style={{ fontWeight: 400 }}> or through </span>
+            <strong>frond transformation </strong>
+            <span style={{ fontWeight: 400 }}>
+              (TAIFR). This is particularly important because both callus- and
+              frond-mediated methods currently rely on very few resistance markers (for
+              example gene for NPTII), as{" "}
+            </span>
+            <strong>duckweed is generally not very sensitive to antibiotics</strong>
+            <span style={{ fontWeight: 400 }}>
+              {" "}
+              (Marí-Ordóñez, unpublished). Moreover, the continued presence of resistance
+              genes in transgenic lines is not desirable.{" "}
+            </span>
+            <strong>Excision of the p2A-NPTII cassette</strong>
+            <span style={{ fontWeight: 400 }}>
+              {" "}
+              from transgenic duckweed lines, upon expression of Cre recombinase and
+              facilitated by{" "}
+            </span>
+            <strong>heterologous lox sites</strong>
+            <span style={{ fontWeight: 400 }}> (lox71 and lox66), will result in a </span>
+            <strong>mutated lox site (lox71/66)</strong>
+            <span style={{ fontWeight: 400 }}> that is </span>
+            <strong>no longer recognizable by Cre recombinase</strong>
+            <span style={{ fontWeight: 400 }}>. This </span>
+            <strong>
+              allows repeated insertion of transgenes delivered by the pIB005 construct
+            </strong>
+            <span style={{ fontWeight: 400 }}>
+              {" "}
+              either by frond or callus mediated transformation and consequently, repeated
+              excision of the selection marker (NPTII).
+            </span>
+          </p>
+     
+
+
+        <p className="mb-4 leading-relaxed mt-12">
             <strong>There were spots of GFP fluorescence in transformed duckweeds (see Fig. 15), as a results of genomic insertion.
             However, what if <em>Agrobacterium</em> is unable to reach the meristematic cells of duckweed, and the PING-PONG 
             system therefore cannot insert the transgene into cells with the sufficient capacity to give rise to a whole new 
             transgenic frond?</strong>
           </p>
 
-          <p className="mb-4 leading-relaxed">
+          <p className="mb-4 mt-4 leading-relaxed">
             This is what our advisor, Dr. Ordóñez, proposed when we showed him the results. We could probably favour them 
             sufficiently by antibiotic (neomycin) selection to force them to give rise to a new frond. But what if this is not possible? 
             To answer the question of whether <em>Agrobacterium</em> can reach and infect the meristematic cells of duckweed, we designed 
