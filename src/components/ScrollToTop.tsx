@@ -63,20 +63,20 @@ const ScrollToTop: React.FC = () => {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      const documentHeight = Math.max(
-        document.body.scrollHeight,
-        document.body.offsetHeight,
-        document.documentElement.clientHeight,
-        document.documentElement.scrollHeight,
-        document.documentElement.offsetHeight
-      );
+      // const documentHeight = Math.max(
+      //   document.body.scrollHeight,
+      //   document.body.offsetHeight,
+      //   document.documentElement.clientHeight,
+      //   document.documentElement.scrollHeight,
+      //   document.documentElement.offsetHeight
+      // );
       
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      const windowHeight = window.innerHeight;
-      const distanceFromBottom = documentHeight - (scrollTop + windowHeight);
-      
-      // Responsive threshold based on screen size
-      const threshold = window.innerWidth < 768 ? 800 : 1200;
+      // const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      // const windowHeight = window.innerHeight;
+      // const distanceFromBottom = documentHeight - (scrollTop + windowHeight);
+      //
+      // // Responsive threshold based on screen size
+      // const threshold = window.innerWidth < 768 ? 800 : 1200;
       
       if (document.documentElement.scrollTop > 0) {
         setIsVisible(true);

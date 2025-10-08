@@ -1,842 +1,925 @@
 import References from '../../../components/References';
 import A from "../../../A.tsx";
+import PromoterLibraryConstruction from "./PromoterLibraryConstruction.tsx";
 
 
 const PromoterLibrary = () => {
     return (
-        <div className="min-h-screen bg-white p-8 text-lg text-justify space-y-6"
-             style={{fontFamily: "Urbanist, sans-serif"}}>
+        <div>
+            <div className="min-h-screen bg-white p-8 text-lg text-justify space-y-6"
+                 style={{fontFamily: "Urbanist, sans-serif"}}>
 
 
-            <div className="max-w-6xl mx-auto">
+                <div className="max-w-6xl mx-auto">
 
-                {/* Header */}
-                <h1 className="text-4xl font-bold text-center mb-8" style={{
-                    fontFamily: "Space Grotesk, sans-serif",
-                    fontSize: "3.5rem",
-                }}>
-                    PROMOTERS
-                </h1>
-
-
-                {/* Main Image Placeholder */}
-                <div className="flex mx-auto items-center justify-content-center">
-                    <img
-                        src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/promotres-circular-copy.webp"
-                        alt="Duckweed Promoter Library" className="max-h-[400px] object-contain mx-auto"/>
-                </div>
-
-                {/* Description Text */}
-                <p
-                    className="text-center text-white font-bold text-lg leading-relaxed bg-[#6ca033] rounded-2xl px-6 py-4 inline-block mx-auto mt-12 mb-12"
-                    style={{fontFamily: 'Urbanist, sans-serif'}}
-                >
-                    We identified promoters of genes with highest and most stable expression across different
-                    duckweed species. We created 15 constructs to test and quantify their expression.
-                </p>
-
-
-                {/* Why Section */}
-                <div className="mb-8">
-                    <h2 className="text-3xl font-bold mb-4" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
-                        Why?
-                    </h2>
-
-                    {/* Dashed line */}
-                    <div className="border border-dashed border-black mb-4" style={{borderWidth: '2px'}}>
-
-                        {/* Quote box */}
-                        <div className=" pl-4 mb-4 pt-4">
-                            <p className="text-md leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                                "Long-term sustained expression of transgenes in plants is often hindered by the onset
-                                of
-                                epigenetic silencing of genetic regulatory elements, such as promoters, in response to
-                                foreign DNA
-                                sequences. For such reason, the identification of strong constitutive endogenous
-                                promoters, or
-                                sequences to build the synthetic ones, in duckweeds is a fundamental tool for future
-                                duckweed
-                                applications."
-                            </p>
-                        </div>
-                    </div>
-
-
-                </div>
-
-                {/* Author Section */}
-                <div className="flex justify-center">
-                    <div className="flex flex-col items-center justify-center">
-                        <div className="text-base text-center text-gray-600 leading-relaxed mb-8 md:ml-10 md:mr-10">
-                            <p className="mb-4" style={{fontFamily: 'Urbanist, sans-serif', fontSize: '17px'}}>
-                            </p>
-                        </div>
-                        <div className="flex items-center space-x-4 ">
-                            <div
-                                className="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
-                                <img
-                                    src="https://static.igem.wiki/teams/5642/images/homepage/261c5c2f7503581c5df39f6f0a694861db5ae9eb.webp"
-                                    alt="Dr. Arturo Marí-Ordóñez" className="rounded-full"/>
-                            </div>
-                            <div style={{fontFamily: 'Space Grotesk, sans-serif'}}>
-                                <div className="font-bold text-xl text-gray-800">Dr. Arturo Marí-Ordóñez</div>
-                                <div className="text-gray-600 mt-1">Principal Investigator</div>
-                                <div className="text-gray-600">at the Gregor Mendel Institute in Vienna</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div className="space-y-4 text-md leading-relaxed mt-16" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                    <p>
-                        It is not only hard to get the gene of interest into duckweed. The next bottleneck is achieving
-                        <b> high and stable expression</b> of the transgene. The strength and stability of protein
-                        expression is influenced by
-                        <b> genetic regulatory parts</b> such as 5'UTRs, 3'UTRs and terminators, but is mostly
-                        determined by promoters [1].
-                    </p>
-
-                    <p>
-                        Plant engineering knows a lot of these parts but they are, unsurprisingly, centered around only
-                        a few species
-                        like <em>Arabidopsis</em>, tobacco, and maize. And when it comes to duckweed, these do not work
-                        ideally. Even the
-                        most widely used promoter in plant genetic engineering, the Cauliflower mosaic virus 35S
-                        promoter (r35S), yields only weak expression [2]. This is probably a result of
-                        the <b>epigenetic silencing </b>
-                        of the foreign
-                        genetic parts in duckweed environment, which is observed also for other monocot species [3].
-                        Several
-                        monocot <b>promoters</b>, such as maize ubiquitin (rZmUBI) work decently [4], but it is
-                        reasonable to
-                        assume that
-                        <b>endogenous parts from duckweed</b> would increase both strength and stability of expression
-                        [4].
-                    </p>
-
-                    <p>
-                        After literature search, we found only <b>one native duckweed promoter</b> isolated and used in
-                        a scientific study [5].
-                        It showed higher expression compared to the r35S promoter. In our consultation with
-                        Phyllocauticals, CTO
-                        Lynn Dyckey mentioned that they also use proprietary native duckweed promoters for recombinant
-                        protein
-                        expression.
-                    </p>
-
-                    <p
-                        className="text-center text-white font-bold text-lg mb-6 leading-relaxed bg-[#6ca033] rounded-2xl px-8 py-6 max-w-4xl mx-auto"
-                        style={{fontFamily: 'Urbanist, sans-serif'}}
-                    >
-                        Therefore, we decided to empower all duckweed researchers with endogenous promoters to
-                        discard another burden in duckweed genetic engineering and we developed a duckweed promoter
-                        library.
-                    </p>
-                </div>
-
-                {/* How Section */}
-                <div className="mt-12">
-                    <h1 className="text-4xl font-bold mb-4" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
-                        How?
+                    {/* Header */}
+                    <h1 className="text-4xl font-bold text-center mb-8" style={{
+                        fontFamily: "Space Grotesk, sans-serif",
+                        fontSize: "3.5rem",
+                    }}>
+                        PROMOTERS
                     </h1>
 
-                    <p className="text-md leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                        Construction of duckweed promoter library required two crucial steps:
-                        <b> in silico identification </b>of
-                        suitable promoter sequences and their subsequent <b>characterization</b> in duckweed.
+
+                    {/* Main Image Placeholder */}
+                    <div className="flex mx-auto items-center justify-content-center">
+                        <img
+                            src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/promotres-circular-copy.webp"
+                            alt="Duckweed Promoter Library" className="max-h-[400px] object-contain mx-auto"/>
+                    </div>
+
+                    {/* Description Text */}
+                    <p
+                        className="text-center text-white font-bold text-lg leading-relaxed bg-[#6ca033] rounded-2xl px-6 py-4 inline-block mx-auto mt-12 mb-12"
+                        style={{fontFamily: 'Urbanist, sans-serif'}}
+                    >
+                        We identified promoters of genes with highest and most stable expression across different
+                        duckweed species. We created 15 constructs to test and quantify their expression.
                     </p>
-                </div>
 
 
-                <h1 className="text-4xl font-bold mb-4 mt-10" style={{fontFamily: "Space Grotesk, sans-serif"}}>In
-                    Silico Promoter Identification</h1>
-                <p className="leading-relaxed" style={{fontFamily: "Urbanist, sans-serif"}}>Initially, we tried to
-                    develop our own workflow for identification of highly expressed genes and their promoters in
-                    multiple duckweed species. We successfully identified the highest expressing genes and extracted
-                    their promoters based on transcriptomics data, isolated them and even tried to clone them in front
-                    of the RUBY reporter.
-                    However, we were not successful so we needed to refine our workflow. After extensive literature
-                    research and consultations with{" "}
-                    <A className="hover:underline text-[#6ca033]" href="/human-practices#jedlickova">
-                        Dr. Veronika Jedlíčková
-                    </A>,{" "}
-                    <A className="hover:underline text-[#6ca033]" href="/human-practices#marburg">
-                        iGEM Marburg 2024
-                    </A>{" "}
-                    team and{" "}
-                    <A className="hover:underline text-[#6ca033]" href="/human-practices#yang">
-                        Dr. Eric Yang,
-                    </A>
+                    {/* Why Section */}
+                    <div className="mb-8">
+                        <h2 className="text-3xl font-bold mb-4" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
+                            Why?
+                        </h2>
 
-                    we discovered that we made several mistakes in our in silico workflow, for example not including
-                    MoClo compatibility filtering but most importantly, not comparing data across different
-                    transcriptomes.
-                    We implemented the feedback we received and proceeded with the workflow we are presenting. You can
-                    see the graphical representation of our workflow in the scheme below.
-                    In our <em>in silico</em> promoter identification of promoter sequences, we drawn an inspiration
-                    from the
-                    brilliant workflow of the endogenous part identification in <em>Taraxacum</em> presented by the iGEM
-                    Marburg
-                    2024 team with their project Tarakate and the article by Zhou et al., 2023 [6].
-                </p>
+                        {/* Dashed line */}
+                        <div className="border border-dashed border-black mb-4" style={{borderWidth: '2px'}}>
 
-                <img
-                    src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/yellow-simple-success-flowchart-instagram-post.webp"
-                    alt="Workflow Diagram" className="my-8 mx-auto"/>
+                            {/* Quote box */}
+                            <div className=" pl-4 mb-4 pt-4">
+                                <p className="text-md leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
+                                    "Long-term sustained expression of transgenes in plants is often hindered by the
+                                    onset
+                                    of
+                                    epigenetic silencing of genetic regulatory elements, such as promoters, in response
+                                    to
+                                    foreign DNA
+                                    sequences. For such reason, the identification of strong constitutive endogenous
+                                    promoters, or
+                                    sequences to build the synthetic ones, in duckweeds is a fundamental tool for future
+                                    duckweed
+                                    applications."
+                                </p>
+                            </div>
+                        </div>
 
 
-                <h1 className="text-3xl text-justify font-bold mb-4"
-                    style={{fontFamily: "Space Grotesk, sans-serif"}}>Data Collection</h1>
+                    </div>
+
+                    {/* Author Section */}
+                    <div className="flex justify-center">
+                        <div className="flex flex-col items-center justify-center">
+                            <div className="text-base text-center text-gray-600 leading-relaxed mb-8 md:ml-10 md:mr-10">
+                                <p className="mb-4" style={{fontFamily: 'Urbanist, sans-serif', fontSize: '17px'}}>
+                                </p>
+                            </div>
+                            <div className="flex items-center space-x-4 ">
+                                <div
+                                    className="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
+                                    <img
+                                        src="https://static.igem.wiki/teams/5642/images/homepage/261c5c2f7503581c5df39f6f0a694861db5ae9eb.webp"
+                                        alt="Dr. Arturo Marí-Ordóñez" className="rounded-full"/>
+                                </div>
+                                <div style={{fontFamily: 'Space Grotesk, sans-serif'}}>
+                                    <div className="font-bold text-xl text-gray-800">Dr. Arturo Marí-Ordóñez</div>
+                                    <div className="text-gray-600 mt-1">Principal Investigator</div>
+                                    <div className="text-gray-600">at the Gregor Mendel Institute in Vienna</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
-                <p className="text-justify leading-relaxed text-gray-800 mb-4">
-                    To find <b>strong and stable promoter sequence</b> that could drive expression of the gene of
-                    interest in
-                    the whole plant, it is ideal to analyze wider set of different transcriptomic data, which can help
-                    identify genes with the desired characteristics [7]. Such characteristics include <b>high
-                    expression level</b>, <b>low expression variability</b> across
-                    tissues, <b>housekeeping</b> functions, and
-                    <b> consistent expression</b> across developmental stages. The usual approach is to compare
-                    transcriptomic data (a) from different
-                    tissues, (b) in different developmental stages of the plant, or (c) combination of both, which
-                    allows the usage of single reference genome. However, we were not able to find such comprehensive
-                    data for duckweed species; therefore, we had to search for a different approach.
+                    <div className="space-y-4 text-md leading-relaxed mt-16"
+                         style={{fontFamily: 'Urbanist, sans-serif'}}>
+                        <p>
+                            It is not only hard to get the gene of interest into duckweed. The next bottleneck is
+                            achieving
+                            <b> high and stable expression</b> of the transgene. The strength and stability of protein
+                            expression is influenced by
+                            <b> genetic regulatory parts</b> such as 5'UTRs, 3'UTRs and terminators, but is mostly
+                            determined by promoters [1].
+                        </p>
 
-                </p>
+                        <p>
+                            Plant engineering knows a lot of these parts but they are, unsurprisingly, centered around
+                            only
+                            a few species
+                            like <em>Arabidopsis</em>, tobacco, and maize. And when it comes to duckweed, these do not
+                            work
+                            ideally. Even the
+                            most widely used promoter in plant genetic engineering, the Cauliflower mosaic virus 35S
+                            promoter (r35S), yields only weak expression [2]. This is probably a result of
+                            the <b>epigenetic silencing </b>
+                            of the foreign
+                            genetic parts in duckweed environment, which is observed also for other monocot species [3].
+                            Several
+                            monocot <b>promoters</b>, such as maize ubiquitin (rZmUBI) work decently [4], but it is
+                            reasonable to
+                            assume that
+                            <b>endogenous parts from duckweed</b> would increase both strength and stability of
+                            expression
+                            [4].
+                        </p>
 
-                <div className="mb-8 flex flex-col md:flex-row md:items-start md:justify-between">
-                    <div className="md:w-1/2">
+                        <p>
+                            After literature search, we found only <b>one native duckweed promoter</b> isolated and used
+                            in
+                            a scientific study [5].
+                            It showed higher expression compared to the r35S promoter. In our consultation with
+                            Phyllocauticals, CTO
+                            Lynn Dyckey mentioned that they also use proprietary native duckweed promoters for
+                            recombinant
+                            protein
+                            expression.
+                        </p>
 
-
-                        <p className="text-justify leading-relaxed text-gray-800 mb-4">
-                            We decided to find genes that are stably expressed not across tissues, but rather across
-                            different Lemnoideae species. We gathered raw transcriptomic data and reference genomes from
-                            the Lemna.org [8] (Fig. 1) database for species L. gibba 7742, L. japonica 7182, L. minor
-                            9252 and added data of S. polyrhiza 9509 obtained from study [9] of our advisor Dr. Arturo
-                            Marí-Ordóñez. We used this dataset to proceed with further analysis.
+                        <p
+                            className="text-center text-white font-bold text-lg mb-6 leading-relaxed bg-[#6ca033] rounded-2xl px-8 py-6 max-w-4xl mx-auto"
+                            style={{fontFamily: 'Urbanist, sans-serif'}}
+                        >
+                            Therefore, we decided to empower all duckweed researchers with endogenous promoters to
+                            discard another burden in duckweed genetic engineering and we developed a duckweed promoter
+                            library.
                         </p>
                     </div>
-                    <div className="md:w-1/2 flex flex-col gap-2 mt-4 md:mt-0 justify-center items-center m-10">
+
+                    {/* How Section */}
+                    <div className="mt-12">
+                        <h1 className="text-4xl font-bold mb-4" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
+                            How?
+                        </h1>
+
+                        <p className="text-md leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
+                            Construction of duckweed promoter library required two crucial steps:
+                            <b> in silico identification </b>of
+                            suitable promoter sequences and their subsequent <b>characterization</b> in duckweed.
+                        </p>
+                    </div>
+
+
+                    <h1 className="text-4xl font-bold mb-4 mt-10" style={{fontFamily: "Space Grotesk, sans-serif"}}>In
+                        Silico Promoter Identification</h1>
+                    <p className="leading-relaxed" style={{fontFamily: "Urbanist, sans-serif"}}>Initially, we tried to
+                        develop our own workflow for identification of highly expressed genes and their promoters in
+                        multiple duckweed species. We successfully identified the highest expressing genes and extracted
+                        their promoters based on transcriptomics data, isolated them and even tried to clone them in
+                        front
+                        of the RUBY reporter.
+                        However, we were not successful so we needed to refine our workflow. After extensive literature
+                        research and consultations with{" "}
+                        <A className="hover:underline text-[#6ca033]" href="/human-practices#jedlickova">
+                            Dr. Veronika Jedlíčková
+                        </A>,{" "}
+                        <A className="hover:underline text-[#6ca033]" href="/human-practices#marburg">
+                            iGEM Marburg 2024
+                        </A>{" "}
+                        team and{" "}
+                        <A className="hover:underline text-[#6ca033]" href="/human-practices#yang">
+                            Dr. Eric Yang,
+                        </A>
+
+                        we discovered that we made several mistakes in our in silico workflow, for example not including
+                        MoClo compatibility filtering but most importantly, not comparing data across different
+                        transcriptomes.
+                        We implemented the feedback we received and proceeded with the workflow we are presenting. You
+                        can
+                        see the graphical representation of our workflow in the scheme below.
+                        In our <em>in silico</em> promoter identification of promoter sequences, we drawn an inspiration
+                        from the
+                        brilliant workflow of the endogenous part identification in <em>Taraxacum</em> presented by the
+                        iGEM
+                        Marburg
+                        2024 team with their project Tarakate and the article by Zhou et al., 2023 [6].
+                    </p>
+
+                    <img
+                        src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/yellow-simple-success-flowchart-instagram-post.webp"
+                        alt="Workflow Diagram" className="my-8 mx-auto"/>
+
+
+                    <h1 className="text-3xl text-justify font-bold mb-4"
+                        style={{fontFamily: "Space Grotesk, sans-serif"}}>Data Collection</h1>
+
+
+                    <p className="text-justify leading-relaxed text-gray-800 mb-4">
+                        To find <b>strong and stable promoter sequence</b> that could drive expression of the gene of
+                        interest in
+                        the whole plant, it is ideal to analyze wider set of different transcriptomic data, which can
+                        help
+                        identify genes with the desired characteristics [7]. Such characteristics include <b>high
+                        expression level</b>, <b>low expression variability</b> across
+                        tissues, <b>housekeeping</b> functions, and
+                        <b> consistent expression</b> across developmental stages. The usual approach is to compare
+                        transcriptomic data (a) from different
+                        tissues, (b) in different developmental stages of the plant, or (c) combination of both, which
+                        allows the usage of single reference genome. However, we were not able to find such
+                        comprehensive
+                        data for duckweed species; therefore, we had to search for a different approach.
+
+                    </p>
+
+                    <div className="mb-8 flex flex-col md:flex-row md:items-start md:justify-between">
+                        <div className="md:w-1/2">
+
+
+                            <p className="text-justify leading-relaxed text-gray-800 mb-4">
+                                We decided to find genes that are stably expressed not across tissues, but rather across
+                                different Lemnoideae species. We gathered raw transcriptomic data and reference genomes
+                                from
+                                the Lemna.org [8] (Fig. 1) database for species L. gibba 7742, L. japonica 7182, L.
+                                minor
+                                9252 and added data of S. polyrhiza 9509 obtained from study [9] of our advisor Dr.
+                                Arturo
+                                Marí-Ordóñez. We used this dataset to proceed with further analysis.
+                            </p>
+                        </div>
+                        <div className="md:w-1/2 flex flex-col gap-2 mt-4 md:mt-0 justify-center items-center m-10">
+                            <div className="bg-gray-50 rounded-lg">
+
+
+                                <div className="bg-white rounded">
+                                    <img
+                                        src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure1.webp"
+                                        alt="Large Tray Growth Curve" className="w-full h-auto"/>
+                                </div>
+
+                                <p className="text-sm text-gray-600 mt-3 p-4"
+                                   style={{fontFamily: 'Urbanist, sans-serif'}}>
+                                    <strong>Fig 1:</strong> Example of downloadable reference genome and annotation
+                                    resources from the Lemna.org database. Shown are files related to the Lemna japonica
+                                    7182 genome assembly (Le_japonica_7182-REF-CSHL-1.0), including FASTA, GFF3,
+                                    protein,
+                                    CDS and transcript datasets.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h1 className="text-3xl font-bold mb-4" style={{fontFamily: "Space Grotesk, sans-serif"}}>Raw
+                        RNA-seq
+                        Data Analysis</h1>
+                    <p className="leading-relaxed" style={{fontFamily: "Urbanist, sans-serif"}}>
+                        Raw Illumina short-read sequencing data in fastq format require proper treatment to obtain
+                        reliable
+                        expression level profile. We have used basic workflow including the RNA-seq quality assessment,
+                        trimming of adapter sequences and low-quality bases, reference-genome mapping of reads and
+                        counting
+                        the feature expression levels.
+                    </p>
+
+
+                    <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
+                        First, the quality of input data was checked using FastQC v0.12.1 [10] executed from MultiQC
+                        v1.27
+                        [11] wrapper- no alarming contents were observed. Trimming wrapper Trim Galore! (0.6.10) [12]
+                        utilizes Cutadapt (4.9) [13] engine to run thorough trimming workflow (Fig. 2). This includes
+                        omitting adapters - relicts from sequencing reads identification - low quality read-end bases
+                        and
+                        handling of pair-end reads. Again we ran FastQC on trimmed data to check for properly executed
+                        trimming shown by adapter content metric.
+
+                    </p>
+
+                    <div className="bg-gray-50 mt-5  mb-5 rounded-lg">
+
+
+                        <div className="bg-white rounded">
+                            <img
+                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure2-hq.webp"
+                                alt="Large Tray Growth Curve" className="w-full h-auto"/>
+                        </div>
+
+                        <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
+                            <strong>Fig 2:</strong> Exemplary Trim Galore! wrapper command-line execution with settings
+                        </p>
+                    </div>
+
+
+                    <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
+                        Such curated reads are prepared for mapping and assessment of expression level. Several
+                        approaches
+                        are currently available and after discussion we were considering two aligning softwares - Salmon
+                        [14] and STAR [15]. Salmon advantages from quasi-mapping of reads to transcriptome, which
+                        ensures
+                        faster calculation and lower resource dependencies. However, we have decided to use robust
+                        full-genome mapping executed by STAR (2.7.1a) software, since the transcriptome of Lemnoideae
+                        species is not reliably annotated. The STAR aligner requires index generation - preprocessing of
+                        specific files used by STAR algorithm. The reads are then aligned to reference genome (Fig. 3)
+                        and
+                        output in format of genome-read-map file BAM, that is to be analysed to quantify expression
+                        levels.
+
+                    </p>
+
+                    <div className="bg-gray-50 mt-5  mb-5 rounded-lg">
+                        <div className="bg-white rounded">
+                            <img
+                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure3-hq.webp"
+                                alt="Large Tray Growth Curve" className="w-full h-auto"/>
+                        </div>
+
+                        <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
+                            <strong>Fig 3:</strong> STAR aligner command-line settings
+                        </p>
+                    </div>
+
+                    <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
+                        FeatureCounts [16] (2.0.8) software is used for read quantification and is a common part of
+                        RNA-seq
+                        analysis workflow that utilizes STAR aligner. We have run the Rsubread::featureCount in R with
+                        feature type set to "transcript". The final feature-count table was exported in csv with
+                        expression
+                        level provided as raw counts.
+
+
+                    </p>
+                    <div className="bg-gray-50 mt-5  mb-5 rounded-lg">
+                        <div className="bg-white rounded">
+                            <img
+                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure4-hq.webp"
+                                alt="Large Tray Growth Curve" className="w-full h-auto"/>
+                        </div>
+
+                        <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
+                            <strong>Fig 4:</strong> Execution of featureCount command with settings
+
+                        </p>
+                    </div>
+
+
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-8">
+
+                        <div className="flex items-center">
+                            <p className="text-gray-700 leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
+                                The whole RNA-seq data analysis workflow is displayed step-by-step in the Fig. 5 for
+                                clarity.
+                            </p>
+                        </div>
                         <div className="bg-gray-50 rounded-lg">
 
 
                             <div className="bg-white rounded">
                                 <img
-                                    src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure1.webp"
+                                    src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure5.webp"
                                     alt="Large Tray Growth Curve" className="w-full h-auto"/>
                             </div>
 
                             <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                                <strong>Fig 1:</strong> Example of downloadable reference genome and annotation
-                                resources from the Lemna.org database. Shown are files related to the Lemna japonica
-                                7182 genome assembly (Le_japonica_7182-REF-CSHL-1.0), including FASTA, GFF3, protein,
-                                CDS and transcript datasets.
+                                <strong>Fig 5:</strong> RNA-seq expression analysis workflow scheme.
                             </p>
                         </div>
-                    </div>
-                </div>
-
-
-                <h1 className="text-3xl font-bold mb-4" style={{fontFamily: "Space Grotesk, sans-serif"}}>Raw RNA-seq
-                    Data Analysis</h1>
-                <p className="leading-relaxed" style={{fontFamily: "Urbanist, sans-serif"}}>
-                    Raw Illumina short-read sequencing data in fastq format require proper treatment to obtain reliable
-                    expression level profile. We have used basic workflow including the RNA-seq quality assessment,
-                    trimming of adapter sequences and low-quality bases, reference-genome mapping of reads and counting
-                    the feature expression levels.
-                </p>
-
-
-                <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
-                    First, the quality of input data was checked using FastQC v0.12.1 [10] executed from MultiQC v1.27
-                    [11] wrapper- no alarming contents were observed. Trimming wrapper Trim Galore! (0.6.10) [12]
-                    utilizes Cutadapt (4.9) [13] engine to run thorough trimming workflow (Fig. 2). This includes
-                    omitting adapters - relicts from sequencing reads identification - low quality read-end bases and
-                    handling of pair-end reads. Again we ran FastQC on trimmed data to check for properly executed
-                    trimming shown by adapter content metric.
-
-                </p>
-
-                <div className="bg-gray-50 mt-5  mb-5 rounded-lg">
-
-
-                    <div className="bg-white rounded">
-                        <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure2-hq.webp"
-                             alt="Large Tray Growth Curve" className="w-full h-auto"/>
-                    </div>
-
-                    <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                        <strong>Fig 2:</strong> Exemplary Trim Galore! wrapper command-line execution with settings
-                    </p>
-                </div>
-
-
-                <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
-                    Such curated reads are prepared for mapping and assessment of expression level. Several approaches
-                    are currently available and after discussion we were considering two aligning softwares - Salmon
-                    [14] and STAR [15]. Salmon advantages from quasi-mapping of reads to transcriptome, which ensures
-                    faster calculation and lower resource dependencies. However, we have decided to use robust
-                    full-genome mapping executed by STAR (2.7.1a) software, since the transcriptome of Lemnoideae
-                    species is not reliably annotated. The STAR aligner requires index generation - preprocessing of
-                    specific files used by STAR algorithm. The reads are then aligned to reference genome (Fig. 3) and
-                    output in format of genome-read-map file BAM, that is to be analysed to quantify expression levels.
-
-                </p>
-
-                <div className="bg-gray-50 mt-5  mb-5 rounded-lg">
-                    <div className="bg-white rounded">
-                        <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure3-hq.webp"
-                             alt="Large Tray Growth Curve" className="w-full h-auto"/>
-                    </div>
-
-                    <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                        <strong>Fig 3:</strong> STAR aligner command-line settings
-                    </p>
-                </div>
-
-                <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
-                    FeatureCounts [16] (2.0.8) software is used for read quantification and is a common part of RNA-seq
-                    analysis workflow that utilizes STAR aligner. We have run the Rsubread::featureCount in R with
-                    feature type set to "transcript". The final feature-count table was exported in csv with expression
-                    level provided as raw counts.
-
-
-                </p>
-                <div className="bg-gray-50 mt-5  mb-5 rounded-lg">
-                    <div className="bg-white rounded">
-                        <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure4-hq.webp"
-                             alt="Large Tray Growth Curve" className="w-full h-auto"/>
-                    </div>
-
-                    <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                        <strong>Fig 4:</strong> Execution of featureCount command with settings
-
-                    </p>
-                </div>
-
-
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-8">
-
-                    <div className="flex items-center">
-                        <p className="text-gray-700 leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                            The whole RNA-seq data analysis workflow is displayed step-by-step in the Fig. 5 for
-                            clarity.
-                        </p>
-                    </div>
-                    <div className="bg-gray-50 rounded-lg">
-
-
-                        <div className="bg-white rounded">
-                            <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure5.webp"
-                                 alt="Large Tray Growth Curve" className="w-full h-auto"/>
-                        </div>
-
-                        <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                            <strong>Fig 5:</strong> RNA-seq expression analysis workflow scheme.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <h1 className="text-3xl font-bold mb-6 mt-16"
-                    style={{fontFamily: "Space Grotesk, sans-serif"}}>Interspecies Comparability - Orthogroups</h1>
-
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-8">
-
-
-                    <div className="bg-gray-50 rounded-lg">
-
-
-                        <div className="bg-white rounded">
-                            <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure6.webp"
-                                 alt="Large Tray Growth Curve" className="w-full h-auto"/>
-                        </div>
-
-                        <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                            <strong>Fig 6:</strong> Schematic overview of the OrthoFinder 2 workflow used for orthology
-                            inference and identification of orthogroups from proteomes of Lemnoideae species (taken from
-                            OrthoFinder tutorials by David Emms (<A target='_blank' style={{color: '#3b82f6'}}
-                                                                    href="https://davidemms.github.io">https://davidemms.github.io</A>).
-                        </p>
-                    </div>
-
-                    <div className="flex items-center">
-                        <p className=" leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                            The first step needed for the direct comparison of transcriptomes of different species is
-                            the identification of orthologous genes - that is genes that share a common ancestral origin
-                            and usually perform the same or similar function across species. We decided to use
-                            OrthoFinder (OF), a software tool
-                            for phylogenetic orthology inference. Orthogroups proposed by OF consist of phylogenetically
-                            close genes, suggesting they likely share identical functions even in different species. OF
-                            uses proteomes of individual species for the analysis. We have extracted proteomes from
-                            Lemna.org and from study of Dr. Arturo Marí-Ordóñez mentioned above [9]. The analysis ran
-                            using
-                            OrthoFinder 2.5.5 with default settings.
-                            <br/><br/>
-                            Orthogroups consist not only of orthologous genes – similar genes originating from different
-                            species – but also paralogous genes, which originate from the same species and result from
-                            gene duplications or pseudogene formation. To obtain a single expression level per
-                            orthogroup, we have proposed several strategies for the treatment of paralogs. After
-                            discussion with Dr. Eric Yang and based on his publication [17], only the highest expressed
-                            gene
-                            from each species in the orthogroup was considered. This approach prevents data distortion
-                            caused by lowly expressed pseudogenes and inactive gene duplicates.
-                        </p>
 
                     </div>
 
-                </div>
 
+                    <h1 className="text-3xl font-bold mb-6 mt-16"
+                        style={{fontFamily: "Space Grotesk, sans-serif"}}>Interspecies Comparability - Orthogroups</h1>
 
-                <h1 className="text-3xl font-bold mb-6 mt-16" style={{fontFamily: "Space Grotesk, sans-serif"}}>Data
-                    Normalization</h1>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-8">
 
-                <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
-                    Before proceeding with the differential expression analysis, data normalization is an essential step
-                    in the pipeline, since transcriptomic data can differ significantly across datasets as a result of
-                    the sequencing depth, experimental method used, etc. That is why raw counts of transcripts from
-                    RNA-seq experiments are not directly comparable. To address this, we proceeded with DESeq2 size
-                    factor normalization in R, which accounts for differences in sequencing depth and RNA composition
-                    across samples. The exact normalization protocol can be found in the study by Anders and Huber
-                    (2010) [18].
-                </p>
-
-                <h1 className="text-3xl font-bold mb-6 mt-16"
-                    style={{fontFamily: "Space Grotesk, sans-serif"}}>Stability and Strength Assessment</h1>
-
-                <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
-                    The strength and stability of gene expression are crucial aspects that reflect the quality of a
-                    regulatory sequence. For the assessment of orthogroup expression strength, we calculated the mean
-                    expression level across orthogroup memebers. Variance and subsequently coefficient of variance (CV)
-                    were calculated to reflect expression stability across species.
-                </p>
-
-                <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
-                    The variance is strongly dependent on the mean of data, which does not allow for a simple
-                    calculation of averages from heterogeneous transcriptomic data. Therefore, we applied the variance
-                    stabilizing transformation (VST) from the DESeq2 R package, which reduces the dependence of variance
-                    on the mean and gets them closer to homoscedasticity.
-                </p>
-
-
-                <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
-                    For the calculation of mean expression values, we used the regularized log (rlog) transformation,
-                    which stabilizes the variance across the range of mean values, while shrinking low-count genes
-                    towards the average across samples. This transformation improves the reliability of mean estimates
-                    for genes with low expression, which are otherwise highly variable. See the plotted results in the
-                    Figure 7.
-                </p>
-
-                <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
-                    Orthogroups in the 95th percentile of expression average and CV lower than 30% were chosen as
-                    candidates for promoter search. These filtering criteria yielded a subset of 124 candidate
-                    orthogroups that were further analyzed as potential promoter sources.
-                </p>
-
-
-                <div className="bg-gray-50 rounded-lg mt-12">
-                    <div className="bg-white rounded">
-                        <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/rplot02.webp"
-                             alt="Large Tray Growth Curve" className="w-full h-auto"/>
-                    </div>
-
-                    <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                        <strong>Fig 7:</strong> VST-based coefficient of variation (VST) versus rlog-based mean (rlog)
-                        expression per orthogroup, used to evaluate stability and strength of gene expression across
-                        orthogroups.
-                    </p>
-                </div>
-
-
-                <h1 className="text-3xl font-bold mb-6 mt-16"
-                    style={{fontFamily: "Space Grotesk, sans-serif"}}>Functional Annotation</h1>
-
-                <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
-                    Candidate genes for promoter search and evaluation are the highest-expressed, but the biological
-                    context was not known. In order to reduce the noise introduced by unannotated genes, we performed
-                    functional annotation analysis using eggNOGmapper (<A className='text-blue-500 hover:underline'
-                                                                          target='_blank'
-                                                                          href="http://eggnog-mapper.embl.de/">http://eggnog-mapper.embl.de/</A>)
-                    [19] [20], a tool providing ontology-based annotation using GO terms and KEGG pathways across a wide
-                    range of species. The second reason for such analysis was to account for the fact that the ideal
-                    promoters are likely to be associated with housekeeping genes known for their stable expression.
-                </p>
-
-
-                <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
-                    Orthogroups containing only reasonably annotated (not unknown) with preference for housekeeping
-                    genes were considered. As expected, many candidates were linked to essential cellular processes such
-                    as ribosomal proteins, translation factors, or primary metabolism. The final list of 20 Orthogroups
-                    was curated manually.
-                </p>
-
-
-                {/* Genetic Data Table */}
-                <div className="mt-12">
-                    <h2 className="text-xl font-semibold text-gray-900 mb-6"
-                        style={{fontFamily: 'Space Grotesk, sans-serif'}}>
-                        Orthogroup Expression Analysis
-                    </h2>
-                    <div className="overflow-x-auto">
-                        <table className="w-full border border-gray-200 rounded-xl overflow-hidden text-xs">
-                            <thead className="bg-[#6ca033]">
-                            <tr>
-                                {[
-                                    "Orthogroup",
-                                    "mean_rlog expression",
-                                    "cv_vst",
-                                    "Le_gibba_7742",
-                                    "Le_japonica_7182",
-                                    "Le_minor_9252",
-                                    "Sp_polyrhiza_9505",
-                                    "Gene Ontology",
-                                ].map((header) => (
-                                    <th
-                                        key={header}
-                                        className="px-3 py-2 text-left font-semibold text-gray-900 border-r border-gray-300 last:border-r-0"
-                                        style={{fontFamily: "Space Grotesk, sans-serif"}}
-                                    >
-                                        {header}
-                                    </th>
-                                ))}
-                            </tr>
-                            </thead>
-
-                            <tbody className="divide-y divide-gray-200 bg-white">
-                            {[
-                                {
-                                    id: "OG00007366",
-                                    mean: "11.41",
-                                    cv: "6.07E-03",
-                                    gibba: "Lg7742Ab018g004410",
-                                    japonica: "Lj7182a18Tg004050_T001",
-                                    minor: "Lm9252a018g004250_T001",
-                                    poly: {text: "Sp9509d020g002140", color: "green"},
-                                    ontology: "Belongs to the PI3 PI4-kinase family",
-                                },
-                                {
-                                    id: "OG0005421",
-                                    mean: "10.75",
-                                    cv: "6.74E-03",
-                                    gibba: "Lg7742Ab014g003060",
-                                    japonica: {text: "Lj7182a14Tg002820_T001", color: "green"},
-                                    minor: "Lm9252a014g002730_T001",
-                                    poly: "Sp9509d016g005470",
-                                    ontology: "transposition, RNA-mediated",
-                                },
-                                {
-                                    id: "OG0004915",
-                                    mean: "11.19",
-                                    cv: "7.93E-03",
-                                    gibba: "Lg7742Ab005g000790",
-                                    japonica: "Lj7182a05Tg000730_T001",
-                                    minor: {text: "Lm9252a005g000710_T001", color: "green"},
-                                    poly: "Sp9509d003g000930",
-                                    ontology: "Serine/threonine-protein kinase smg-1",
-                                },
-                                {
-                                    id: "OG0011246",
-                                    mean: "10.82",
-                                    cv: "9.23E-03",
-                                    gibba: {text: "Lg7742Ab004g010790", color: "green"},
-                                    japonica: "Lj7182a04Tg009470_T001",
-                                    minor: "Lm9252a004g009880_T001",
-                                    poly: "Sp9509d009g002750",
-                                    ontology: "DnaJ homolog subfamily C",
-                                },
-                                {
-                                    id: "OG0005862",
-                                    mean: "11.24",
-                                    cv: "9.77E-03",
-                                    gibba: "Lg7742Ab001g005990",
-                                    japonica: "Lj7182a01Tg004710_T001",
-                                    minor: "Lm9252a001g005510_T001",
-                                    poly: {text: "Sp9509d015g004110", color: "orange"},
-                                    ontology: "E3 ubiquitin-protein ligase",
-                                },
-                                {
-                                    id: "OG0005220",
-                                    mean: "10.16",
-                                    cv: "8.94E-03",
-                                    gibba: "Lg7742Ab009g010430",
-                                    japonica: "Lj7182a09Tg007710_T001",
-                                    minor: "Lm9252a009g009270_T001",
-                                    poly: {text: "Sp9509d001g002350", color: "green"},
-                                    ontology: "ARF guanine-nucleotide exchange factor GNOM-like",
-                                },
-                                {
-                                    id: "OG0003959",
-                                    mean: "10.49",
-                                    cv: "9.38E-03",
-                                    gibba: "Lg7742Ab006g003150",
-                                    japonica: "Lj7182a06Tg002810_T001",
-                                    minor: "Lm9252a006g003330_T001",
-                                    poly: "Sp9509d008g002800",
-                                    ontology: "Alpha-glucan water dikinase",
-                                },
-                                {
-                                    id: "OG0011224",
-                                    mean: "10.75",
-                                    cv: "9.67E-03",
-                                    gibba: "Lg7742Ab011g006310",
-                                    japonica: "Lj7182a11Tg005770_T001",
-                                    minor: {text: "Lm9252a011g005920_T001", color: "green"},
-                                    poly: "Sp9509d018g005380",
-                                    ontology: "acetyl-coa carboxylase",
-                                },
-                                {
-                                    id: "OG0001029",
-                                    mean: "10.24",
-                                    cv: "9.34E-03",
-                                    gibba: "Lg7742Ab015g009220",
-                                    japonica: "Lj7182a15Tg008480_T001",
-                                    minor: "Lm9252a015g008980_T001",
-                                    poly: {text: "Sp9509d007g011980", color: "green"},
-                                    ontology:
-                                        "Belongs to the TRAFAC class myosin-kinesin ATPase superfamily. Myosin family",
-                                },
-                                {
-                                    id: "OG0007225",
-                                    mean: "10.83",
-                                    cv: "1.01E-02",
-                                    gibba: "Lg7742Ab016g000370",
-                                    japonica: "Lj7182a16Tg000230_T001",
-                                    minor: "Lm9252a016g000260_T002",
-                                    poly: "Sp9509d013g008700",
-                                    ontology: "Histone-lysine N-methyltransferase ATXR3",
-                                },
-                                {
-                                    id: "OG0000305",
-                                    mean: "10.95",
-                                    cv: "1.04E-02",
-                                    gibba: {text: "Lg7742Ab002g007900", color: "green"},
-                                    japonica: "Lj7182a02Tg005920_T001",
-                                    minor: "Lm9252a002g006650_T001",
-                                    poly: "Sp9509d014g001720",
-                                    ontology: "Chromatin structure-remodeling complex protein",
-                                },
-                                {
-                                    id: "OG0006605",
-                                    mean: "11.67",
-                                    cv: "1.15E-02",
-                                    gibba: "Lg7742Ab007g004030",
-                                    japonica: "Lj7182a07Tg003120_T002",
-                                    minor: {text: "Lm9252a007g003170_T001", color: "orange"},
-                                    poly: "Sp9509d005g007210",
-                                    ontology: "Auxin transport protein",
-                                },
-                                {
-                                    id: "OG0000129",
-                                    mean: "10.54",
-                                    cv: "1.06E-02",
-                                    gibba: "Lg7742Ab012g008460",
-                                    japonica: "Lj7182a08Mg002570_T001",
-                                    minor: {text: "Lm9252a012g002120_T001", color: "green"},
-                                    poly: "Sp9509d013g004070",
-                                    ontology: "Translation initiation factor eIF3 subunit 135",
-                                },
-                                {
-                                    id: "OG0005311",
-                                    mean: "10.34",
-                                    cv: "1.04E-02",
-                                    gibba: "Lg7742Ab011g008270",
-                                    japonica: {text: "Lj7182a11Tg007360_T001", color: "green"},
-                                    minor: "Lm9252a011g007960_T001",
-                                    poly: "Sp9509d018g007030",
-                                    ontology: "Cell division cycle and apoptosis regulator protein",
-                                },
-                                {
-                                    id: "OG0006123",
-                                    mean: "10.37",
-                                    cv: "1.05E-02",
-                                    gibba: {text: "Lg7742Ab003g002040", color: "green"},
-                                    japonica: "Lj7182a03Tg001560_T001",
-                                    minor: "Lm9252a003g001710_T001",
-                                    poly: "Sp9509d002g010680",
-                                    ontology: "atatg2, atg2",
-                                },
-                                {
-                                    id: "OG0005227",
-                                    mean: "11.48",
-                                    cv: "1.69E-02",
-                                    gibba: "Lg7742Ab009g012850",
-                                    japonica: "Lj7182a09Tg009790_T001",
-                                    minor: {text: "Lm9252a009g011520_T001", color: "orange"},
-                                    poly: "Sp9509d001g000110",
-                                    ontology: "E3 ubiquitin-protein ligase",
-                                },
-                                {
-                                    id: "OG0006436",
-                                    mean: "11.14",
-                                    cv: "1.16E-02",
-                                    gibba: "Lg7742Ab005g013530",
-                                    japonica: "Lj7182a05Tg010900_T001",
-                                    minor: "Lm9252a005g011820_T001",
-                                    poly: {text: "Sp9509d003g011520", color: "orange"},
-                                    ontology: "WD domain containing protein",
-                                },
-                                {
-                                    id: "OG0006848",
-                                    mean: "11.56",
-                                    cv: "2.70E-02",
-                                    gibba: "Lg7742Ab010g006900",
-                                    japonica: "Lj7182a10Tg005290_T002",
-                                    minor: "Lm9252a010g005620_T001",
-                                    poly: {text: "Sp9509d011g005360", color: "green"},
-                                    ontology:
-                                        "Nuclear chaperone required for maturation and nuclear export of pre-60S ribosome subunits",
-                                },
-                                {
-                                    id: "OG0008145",
-                                    mean: "10.78",
-                                    cv: "3.09E-02",
-                                    gibba: "Lg7742Ab002g017940",
-                                    japonica: "Lj7182a02Tg015180_T001",
-                                    minor: "Lm9252a002g016660_T001",
-                                    poly: {text: "Sp9509d004g000350", color: "green"},
-                                    ontology: "DNA polymerase epsilon catalytic subunit A",
-                                },
-                                {
-                                    id: "OG0001101",
-                                    mean: "10.17",
-                                    cv: "1.94E-02",
-                                    gibba: "Lg7742Ab005g007530",
-                                    japonica: "Lj7182a05Tg006230_T009",
-                                    minor: "Lm9252a005g006950_T008",
-                                    poly: "Sp9509d003g006650",
-                                    ontology: "Regulates circadian rhythms",
-                                },
-                            ].map((row, i) => (
-                                <tr
-                                    key={row.id}
-                                    className={`${
-                                        i % 2 === 0 ? "bg-gray-50 hover:bg-gray-100" : "hover:bg-gray-50"
-                                    }`}
-                                >
-                                    <td className="px-3 py-2 text-blue-600 font-semibold border-r border-gray-200">
-                                        {row.id}
-                                    </td>
-                                    <td className="px-3 py-2 border-r border-gray-200">{row.mean}</td>
-                                    <td className="px-3 py-2 border-r border-gray-200">{row.cv}</td>
-                                    {["gibba", "japonica", "minor", "poly"].map((col) => {
-                                        const value = row[col as keyof typeof row];
-                                        const isObj = typeof value === "object";
-                                        const colorClass =
-                                            isObj && value.color === "green"
-                                                ? "bg-[#538b5e]"
-                                                : isObj && value.color === "orange"
-                                                    ? "bg-orange-300"
-                                                    : "";
-                                        return (
-                                            <td
-                                                key={col}
-                                                className={`px-3 py-2 border-r border-gray-200 ${colorClass}`}
-                                            >
-                                                {isObj ? value.text : (value as string)}
-                                            </td>
-                                        );
-                                    })}
-                                    <td className="px-3 py-2">{row.ontology}</td>
-                                </tr>
-                            ))}
-                            </tbody>
-                        </table>
 
                         <div className="bg-gray-50 rounded-lg">
+
+
+                            <div className="bg-white rounded">
+                                <img
+                                    src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure6.webp"
+                                    alt="Large Tray Growth Curve" className="w-full h-auto"/>
+                            </div>
+
                             <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                                <strong>Fig 8:</strong> Summarized table of candidate genes identified by our workflow.
-                                Twenty orthogroups with rlog normalized expression mean above 10, the lowest coefficient
-                                of variance and reasonable ontology of all genes included are shown in the table. Genes
-                                with MoClo compatible promoter regions are marked green and were directly selected for
-                                experimental evaluation, all unmarked are incompatible. Orange marked genes were chosen
-                                for synthesis without BbsI restriction sites.
+                                <strong>Fig 6:</strong> Schematic overview of the OrthoFinder 2 workflow used for
+                                orthology
+                                inference and identification of orthogroups from proteomes of Lemnoideae species (taken
+                                from
+                                OrthoFinder tutorials by David Emms (<A target='_blank' style={{color: '#3b82f6'}}
+                                                                        href="https://davidemms.github.io">https://davidemms.github.io</A>).
                             </p>
                         </div>
+
+                        <div className="flex items-center">
+                            <p className=" leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
+                                The first step needed for the direct comparison of transcriptomes of different species
+                                is
+                                the identification of orthologous genes - that is genes that share a common ancestral
+                                origin
+                                and usually perform the same or similar function across species. We decided to use
+                                OrthoFinder (OF), a software tool
+                                for phylogenetic orthology inference. Orthogroups proposed by OF consist of
+                                phylogenetically
+                                close genes, suggesting they likely share identical functions even in different species.
+                                OF
+                                uses proteomes of individual species for the analysis. We have extracted proteomes from
+                                Lemna.org and from study of Dr. Arturo Marí-Ordóñez mentioned above [9]. The analysis
+                                ran
+                                using
+                                OrthoFinder 2.5.5 with default settings.
+                                <br/><br/>
+                                Orthogroups consist not only of orthologous genes – similar genes originating from
+                                different
+                                species – but also paralogous genes, which originate from the same species and result
+                                from
+                                gene duplications or pseudogene formation. To obtain a single expression level per
+                                orthogroup, we have proposed several strategies for the treatment of paralogs. After
+                                discussion with Dr. Eric Yang and based on his publication [17], only the highest
+                                expressed
+                                gene
+                                from each species in the orthogroup was considered. This approach prevents data
+                                distortion
+                                caused by lowly expressed pseudogenes and inactive gene duplicates.
+                            </p>
+
+                        </div>
+
                     </div>
-                </div>
 
 
-                <h1 className="text-3xl font-bold mb-2 mt-16" style={{fontFamily: "Space Grotesk, sans-serif"}}>Promoter
-                    Region</h1>
+                    <h1 className="text-3xl font-bold mb-6 mt-16" style={{fontFamily: "Space Grotesk, sans-serif"}}>Data
+                        Normalization</h1>
+
+                    <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
+                        Before proceeding with the differential expression analysis, data normalization is an essential
+                        step
+                        in the pipeline, since transcriptomic data can differ significantly across datasets as a result
+                        of
+                        the sequencing depth, experimental method used, etc. That is why raw counts of transcripts from
+                        RNA-seq experiments are not directly comparable. To address this, we proceeded with DESeq2 size
+                        factor normalization in R, which accounts for differences in sequencing depth and RNA
+                        composition
+                        across samples. The exact normalization protocol can be found in the study by Anders and Huber
+                        (2010) [18].
+                    </p>
+
+                    <h1 className="text-3xl font-bold mb-6 mt-16"
+                        style={{fontFamily: "Space Grotesk, sans-serif"}}>Stability and Strength Assessment</h1>
+
+                    <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
+                        The strength and stability of gene expression are crucial aspects that reflect the quality of a
+                        regulatory sequence. For the assessment of orthogroup expression strength, we calculated the
+                        mean
+                        expression level across orthogroup memebers. Variance and subsequently coefficient of variance
+                        (CV)
+                        were calculated to reflect expression stability across species.
+                    </p>
+
+                    <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
+                        The variance is strongly dependent on the mean of data, which does not allow for a simple
+                        calculation of averages from heterogeneous transcriptomic data. Therefore, we applied the
+                        variance
+                        stabilizing transformation (VST) from the DESeq2 R package, which reduces the dependence of
+                        variance
+                        on the mean and gets them closer to homoscedasticity.
+                    </p>
 
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-8">
+                    <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
+                        For the calculation of mean expression values, we used the regularized log (rlog)
+                        transformation,
+                        which stabilizes the variance across the range of mean values, while shrinking low-count genes
+                        towards the average across samples. This transformation improves the reliability of mean
+                        estimates
+                        for genes with low expression, which are otherwise highly variable. See the plotted results in
+                        the
+                        Figure 7.
+                    </p>
+
+                    <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
+                        Orthogroups in the 95th percentile of expression average and CV lower than 30% were chosen as
+                        candidates for promoter search. These filtering criteria yielded a subset of 124 candidate
+                        orthogroups that were further analyzed as potential promoter sources.
+                    </p>
 
 
-                    <div className="bg-gray-50 rounded-lg">
-
-
+                    <div className="bg-gray-50 rounded-lg mt-12">
                         <div className="bg-white rounded">
-                            <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure10.webp"
+                            <img src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/rplot02.webp"
                                  alt="Large Tray Growth Curve" className="w-full h-auto"/>
                         </div>
 
                         <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                            <strong>Fig 9:</strong> Schematic representation of a gene region showing promoter
-                            (orange), TSS (green), 5'UTR (red), start codon ATG (light blue), and the CDS (dark blue;
-                            coding sequence, gene of interest).
+                            <strong>Fig 7:</strong> VST-based coefficient of variation (VST) versus rlog-based mean
+                            (rlog)
+                            expression per orthogroup, used to evaluate stability and strength of gene expression across
+                            orthogroups.
                         </p>
                     </div>
 
-                    <div className="flex items-center">
-                        <p className=" leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                            The distance of promoter region from transcription starting site (TSS) varies strongly, from
-                            tens of bp to several kbp. The gold standard is to search for promoter sequences within 2kbp
-                            upstream of the TSS. However, it is known that the untranslated region (5'UTR), located
-                            between the TSS and the start codon (ATG), also influences gene expression levels,
-                            particularly through post-transcriptional regulation mechanisms (Dassi et al., 2024) [21].
-                            We had to, and we had to take this into account since the exact 5'UTR length is not
-                            annotated for most genes.
 
-                            <br/><br/>
-                            Therefore, we evaluated promoter sequences concatenated with the 5'UTR, which could be
-                            directly ligated to the gene during transformation experiments. For laboratory evaluation,
-                            the promoter+5'UTR regions were defined as 2 kbp upstream from the ATG (start of the coding
-                            sequence, CDS).
+                    <h1 className="text-3xl font-bold mb-6 mt-16"
+                        style={{fontFamily: "Space Grotesk, sans-serif"}}>Functional Annotation</h1>
 
-                        </p>
+                    <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
+                        Candidate genes for promoter search and evaluation are the highest-expressed, but the biological
+                        context was not known. In order to reduce the noise introduced by unannotated genes, we
+                        performed
+                        functional annotation analysis using eggNOGmapper (<A className='text-blue-500 hover:underline'
+                                                                              target='_blank'
+                                                                              href="http://eggnog-mapper.embl.de/">http://eggnog-mapper.embl.de/</A>)
+                        [19] [20], a tool providing ontology-based annotation using GO terms and KEGG pathways across a
+                        wide
+                        range of species. The second reason for such analysis was to account for the fact that the ideal
+                        promoters are likely to be associated with housekeeping genes known for their stable expression.
+                    </p>
+
+
+                    <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
+                        Orthogroups containing only reasonably annotated (not unknown) with preference for housekeeping
+                        genes were considered. As expected, many candidates were linked to essential cellular processes
+                        such
+                        as ribosomal proteins, translation factors, or primary metabolism. The final list of 20
+                        Orthogroups
+                        was curated manually.
+                    </p>
+
+
+                    {/* Genetic Data Table */}
+                    <div className="mt-12">
+                        <h2 className="text-xl font-semibold text-gray-900 mb-6"
+                            style={{fontFamily: 'Space Grotesk, sans-serif'}}>
+                            Orthogroup Expression Analysis
+                        </h2>
+                        <div className="overflow-x-auto">
+                            <table className="w-full border border-gray-200 rounded-xl overflow-hidden text-xs">
+                                <thead className="bg-[#6ca033]">
+                                <tr>
+                                    {[
+                                        "Orthogroup",
+                                        "mean_rlog expression",
+                                        "cv_vst",
+                                        "Le_gibba_7742",
+                                        "Le_japonica_7182",
+                                        "Le_minor_9252",
+                                        "Sp_polyrhiza_9505",
+                                        "Gene Ontology",
+                                    ].map((header) => (
+                                        <th
+                                            key={header}
+                                            className="px-3 py-2 text-left font-semibold text-gray-900 border-r border-gray-300 last:border-r-0"
+                                            style={{fontFamily: "Space Grotesk, sans-serif"}}
+                                        >
+                                            {header}
+                                        </th>
+                                    ))}
+                                </tr>
+                                </thead>
+
+                                <tbody className="divide-y divide-gray-200 bg-white">
+                                {[
+                                    {
+                                        id: "OG00007366",
+                                        mean: "11.41",
+                                        cv: "6.07E-03",
+                                        gibba: "Lg7742Ab018g004410",
+                                        japonica: "Lj7182a18Tg004050_T001",
+                                        minor: "Lm9252a018g004250_T001",
+                                        poly: {text: "Sp9509d020g002140", color: "green"},
+                                        ontology: "Belongs to the PI3 PI4-kinase family",
+                                    },
+                                    {
+                                        id: "OG0005421",
+                                        mean: "10.75",
+                                        cv: "6.74E-03",
+                                        gibba: "Lg7742Ab014g003060",
+                                        japonica: {text: "Lj7182a14Tg002820_T001", color: "green"},
+                                        minor: "Lm9252a014g002730_T001",
+                                        poly: "Sp9509d016g005470",
+                                        ontology: "transposition, RNA-mediated",
+                                    },
+                                    {
+                                        id: "OG0004915",
+                                        mean: "11.19",
+                                        cv: "7.93E-03",
+                                        gibba: "Lg7742Ab005g000790",
+                                        japonica: "Lj7182a05Tg000730_T001",
+                                        minor: {text: "Lm9252a005g000710_T001", color: "green"},
+                                        poly: "Sp9509d003g000930",
+                                        ontology: "Serine/threonine-protein kinase smg-1",
+                                    },
+                                    {
+                                        id: "OG0011246",
+                                        mean: "10.82",
+                                        cv: "9.23E-03",
+                                        gibba: {text: "Lg7742Ab004g010790", color: "green"},
+                                        japonica: "Lj7182a04Tg009470_T001",
+                                        minor: "Lm9252a004g009880_T001",
+                                        poly: "Sp9509d009g002750",
+                                        ontology: "DnaJ homolog subfamily C",
+                                    },
+                                    {
+                                        id: "OG0005862",
+                                        mean: "11.24",
+                                        cv: "9.77E-03",
+                                        gibba: "Lg7742Ab001g005990",
+                                        japonica: "Lj7182a01Tg004710_T001",
+                                        minor: "Lm9252a001g005510_T001",
+                                        poly: {text: "Sp9509d015g004110", color: "orange"},
+                                        ontology: "E3 ubiquitin-protein ligase",
+                                    },
+                                    {
+                                        id: "OG0005220",
+                                        mean: "10.16",
+                                        cv: "8.94E-03",
+                                        gibba: "Lg7742Ab009g010430",
+                                        japonica: "Lj7182a09Tg007710_T001",
+                                        minor: "Lm9252a009g009270_T001",
+                                        poly: {text: "Sp9509d001g002350", color: "green"},
+                                        ontology: "ARF guanine-nucleotide exchange factor GNOM-like",
+                                    },
+                                    {
+                                        id: "OG0003959",
+                                        mean: "10.49",
+                                        cv: "9.38E-03",
+                                        gibba: "Lg7742Ab006g003150",
+                                        japonica: "Lj7182a06Tg002810_T001",
+                                        minor: "Lm9252a006g003330_T001",
+                                        poly: "Sp9509d008g002800",
+                                        ontology: "Alpha-glucan water dikinase",
+                                    },
+                                    {
+                                        id: "OG0011224",
+                                        mean: "10.75",
+                                        cv: "9.67E-03",
+                                        gibba: "Lg7742Ab011g006310",
+                                        japonica: "Lj7182a11Tg005770_T001",
+                                        minor: {text: "Lm9252a011g005920_T001", color: "green"},
+                                        poly: "Sp9509d018g005380",
+                                        ontology: "acetyl-coa carboxylase",
+                                    },
+                                    {
+                                        id: "OG0001029",
+                                        mean: "10.24",
+                                        cv: "9.34E-03",
+                                        gibba: "Lg7742Ab015g009220",
+                                        japonica: "Lj7182a15Tg008480_T001",
+                                        minor: "Lm9252a015g008980_T001",
+                                        poly: {text: "Sp9509d007g011980", color: "green"},
+                                        ontology:
+                                            "Belongs to the TRAFAC class myosin-kinesin ATPase superfamily. Myosin family",
+                                    },
+                                    {
+                                        id: "OG0007225",
+                                        mean: "10.83",
+                                        cv: "1.01E-02",
+                                        gibba: "Lg7742Ab016g000370",
+                                        japonica: "Lj7182a16Tg000230_T001",
+                                        minor: "Lm9252a016g000260_T002",
+                                        poly: "Sp9509d013g008700",
+                                        ontology: "Histone-lysine N-methyltransferase ATXR3",
+                                    },
+                                    {
+                                        id: "OG0000305",
+                                        mean: "10.95",
+                                        cv: "1.04E-02",
+                                        gibba: {text: "Lg7742Ab002g007900", color: "green"},
+                                        japonica: "Lj7182a02Tg005920_T001",
+                                        minor: "Lm9252a002g006650_T001",
+                                        poly: "Sp9509d014g001720",
+                                        ontology: "Chromatin structure-remodeling complex protein",
+                                    },
+                                    {
+                                        id: "OG0006605",
+                                        mean: "11.67",
+                                        cv: "1.15E-02",
+                                        gibba: "Lg7742Ab007g004030",
+                                        japonica: "Lj7182a07Tg003120_T002",
+                                        minor: {text: "Lm9252a007g003170_T001", color: "orange"},
+                                        poly: "Sp9509d005g007210",
+                                        ontology: "Auxin transport protein",
+                                    },
+                                    {
+                                        id: "OG0000129",
+                                        mean: "10.54",
+                                        cv: "1.06E-02",
+                                        gibba: "Lg7742Ab012g008460",
+                                        japonica: "Lj7182a08Mg002570_T001",
+                                        minor: {text: "Lm9252a012g002120_T001", color: "green"},
+                                        poly: "Sp9509d013g004070",
+                                        ontology: "Translation initiation factor eIF3 subunit 135",
+                                    },
+                                    {
+                                        id: "OG0005311",
+                                        mean: "10.34",
+                                        cv: "1.04E-02",
+                                        gibba: "Lg7742Ab011g008270",
+                                        japonica: {text: "Lj7182a11Tg007360_T001", color: "green"},
+                                        minor: "Lm9252a011g007960_T001",
+                                        poly: "Sp9509d018g007030",
+                                        ontology: "Cell division cycle and apoptosis regulator protein",
+                                    },
+                                    {
+                                        id: "OG0006123",
+                                        mean: "10.37",
+                                        cv: "1.05E-02",
+                                        gibba: {text: "Lg7742Ab003g002040", color: "green"},
+                                        japonica: "Lj7182a03Tg001560_T001",
+                                        minor: "Lm9252a003g001710_T001",
+                                        poly: "Sp9509d002g010680",
+                                        ontology: "atatg2, atg2",
+                                    },
+                                    {
+                                        id: "OG0005227",
+                                        mean: "11.48",
+                                        cv: "1.69E-02",
+                                        gibba: "Lg7742Ab009g012850",
+                                        japonica: "Lj7182a09Tg009790_T001",
+                                        minor: {text: "Lm9252a009g011520_T001", color: "orange"},
+                                        poly: "Sp9509d001g000110",
+                                        ontology: "E3 ubiquitin-protein ligase",
+                                    },
+                                    {
+                                        id: "OG0006436",
+                                        mean: "11.14",
+                                        cv: "1.16E-02",
+                                        gibba: "Lg7742Ab005g013530",
+                                        japonica: "Lj7182a05Tg010900_T001",
+                                        minor: "Lm9252a005g011820_T001",
+                                        poly: {text: "Sp9509d003g011520", color: "orange"},
+                                        ontology: "WD domain containing protein",
+                                    },
+                                    {
+                                        id: "OG0006848",
+                                        mean: "11.56",
+                                        cv: "2.70E-02",
+                                        gibba: "Lg7742Ab010g006900",
+                                        japonica: "Lj7182a10Tg005290_T002",
+                                        minor: "Lm9252a010g005620_T001",
+                                        poly: {text: "Sp9509d011g005360", color: "green"},
+                                        ontology:
+                                            "Nuclear chaperone required for maturation and nuclear export of pre-60S ribosome subunits",
+                                    },
+                                    {
+                                        id: "OG0008145",
+                                        mean: "10.78",
+                                        cv: "3.09E-02",
+                                        gibba: "Lg7742Ab002g017940",
+                                        japonica: "Lj7182a02Tg015180_T001",
+                                        minor: "Lm9252a002g016660_T001",
+                                        poly: {text: "Sp9509d004g000350", color: "green"},
+                                        ontology: "DNA polymerase epsilon catalytic subunit A",
+                                    },
+                                    {
+                                        id: "OG0001101",
+                                        mean: "10.17",
+                                        cv: "1.94E-02",
+                                        gibba: "Lg7742Ab005g007530",
+                                        japonica: "Lj7182a05Tg006230_T009",
+                                        minor: "Lm9252a005g006950_T008",
+                                        poly: "Sp9509d003g006650",
+                                        ontology: "Regulates circadian rhythms",
+                                    },
+                                ].map((row, i) => (
+                                    <tr
+                                        key={row.id}
+                                        className={`${
+                                            i % 2 === 0 ? "bg-gray-50 hover:bg-gray-100" : "hover:bg-gray-50"
+                                        }`}
+                                    >
+                                        <td className="px-3 py-2 text-blue-600 font-semibold border-r border-gray-200">
+                                            {row.id}
+                                        </td>
+                                        <td className="px-3 py-2 border-r border-gray-200">{row.mean}</td>
+                                        <td className="px-3 py-2 border-r border-gray-200">{row.cv}</td>
+                                        {["gibba", "japonica", "minor", "poly"].map((col) => {
+                                            const value = row[col as keyof typeof row];
+                                            const isObj = typeof value === "object";
+                                            const colorClass =
+                                                isObj && value.color === "green"
+                                                    ? "bg-[#538b5e]"
+                                                    : isObj && value.color === "orange"
+                                                        ? "bg-orange-300"
+                                                        : "";
+                                            return (
+                                                <td
+                                                    key={col}
+                                                    className={`px-3 py-2 border-r border-gray-200 ${colorClass}`}
+                                                >
+                                                    {isObj ? value.text : (value as string)}
+                                                </td>
+                                            );
+                                        })}
+                                        <td className="px-3 py-2">{row.ontology}</td>
+                                    </tr>
+                                ))}
+                                </tbody>
+                            </table>
+
+                            <div className="bg-gray-50 rounded-lg">
+                                <p className="text-sm text-gray-600 mt-3 p-4"
+                                   style={{fontFamily: 'Urbanist, sans-serif'}}>
+                                    <strong>Fig 8:</strong> Summarized table of candidate genes identified by our
+                                    workflow.
+                                    Twenty orthogroups with rlog normalized expression mean above 10, the lowest
+                                    coefficient
+                                    of variance and reasonable ontology of all genes included are shown in the table.
+                                    Genes
+                                    with MoClo compatible promoter regions are marked green and were directly selected
+                                    for
+                                    experimental evaluation, all unmarked are incompatible. Orange marked genes were
+                                    chosen
+                                    for synthesis without BbsI restriction sites.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h1 className="text-3xl font-bold mb-2 mt-16"
+                        style={{fontFamily: "Space Grotesk, sans-serif"}}>Promoter
+                        Region</h1>
+
+
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-8">
+
+
+                        <div className="bg-gray-50 rounded-lg">
+
+
+                            <div className="bg-white rounded">
+                                <img
+                                    src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure10.webp"
+                                    alt="Large Tray Growth Curve" className="w-full h-auto"/>
+                            </div>
+
+                            <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
+                                <strong>Fig 9:</strong> Schematic representation of a gene region showing promoter
+                                (orange), TSS (green), 5'UTR (red), start codon ATG (light blue), and the CDS (dark
+                                blue;
+                                coding sequence, gene of interest).
+                            </p>
+                        </div>
+
+                        <div className="flex items-center">
+                            <p className=" leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
+                                The distance of promoter region from transcription starting site (TSS) varies strongly,
+                                from
+                                tens of bp to several kbp. The gold standard is to search for promoter sequences within
+                                2kbp
+                                upstream of the TSS. However, it is known that the untranslated region (5'UTR), located
+                                between the TSS and the start codon (ATG), also influences gene expression levels,
+                                particularly through post-transcriptional regulation mechanisms (Dassi et al., 2024)
+                                [21].
+                                We had to, and we had to take this into account since the exact 5'UTR length is not
+                                annotated for most genes.
+
+                                <br/><br/>
+                                Therefore, we evaluated promoter sequences concatenated with the 5'UTR, which could be
+                                directly ligated to the gene during transformation experiments. For laboratory
+                                evaluation,
+                                the promoter+5'UTR regions were defined as 2 kbp upstream from the ATG (start of the
+                                coding
+                                sequence, CDS).
+
+                            </p>
+
+                        </div>
 
                     </div>
+
+
+                    <h1 className="text-3xl font-bold mb-6 mt-16"
+                        style={{fontFamily: "Space Grotesk, sans-serif"}}>MoClo
+                        Compatibility Filtering</h1>
+
+                    <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
+                        Experimental evaluation of promoter strength requires the assembly of a plasmid containing the
+                        promoter sequence using the MoClo protocol. This method utilizes type IIS restriction enzymes
+                        BbsI,
+                        BsaI and SapI. Thus, any natively occurring type IIS restriction sites within the promoter+5’UTR
+                        sequence would interfere with the MoClo workflow. That is why we filtered out promoter+5’UTR
+                        sequences containing such sites and proceeded with their isolation from the genomic DNA (the
+                        highest
+                        expressing member of the orthogroup that was MoClo compatible was chosen for the isolation). For
+                        some sequences, type IIS recognition sites were removed and they were synthesized via Twist,
+                        obtaining the final set of promoter+5’UTR sequences ready for experimental evaluation (read
+                        further
+                        to see more on the isolation and synthesis).
+                    </p>
+
+                    <h1 className="text-3xl font-bold mb-6 mt-16"
+                        style={{fontFamily: "Space Grotesk, sans-serif"}}>Summary</h1>
+
+
+                    <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
+                        We analyzed transcriptomic data of four Lemnoideae species and identified candidate
+                        promoter+5’UTR
+                        regions that promise ideal properties for stable and high expression of genes of interest in
+                        duckweed. Groups of genes with similar functions interspecially were identified and used for
+                        selection of the highest and the most stably expressed ones. We annotated their function and
+                        selected the ones with presumably housekeeping functions. We extracted the MoClo compatible
+                        promoter+5’UTR sequences from these and obtained the final set of 17 sequences was used in
+                        expression assessment.
+                    </p>
+
 
                 </div>
-
-
-                <h1 className="text-3xl font-bold mb-6 mt-16" style={{fontFamily: "Space Grotesk, sans-serif"}}>MoClo
-                    Compatibility Filtering</h1>
-
-                <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
-                    Experimental evaluation of promoter strength requires the assembly of a plasmid containing the
-                    promoter sequence using the MoClo protocol. This method utilizes type IIS restriction enzymes BbsI,
-                    BsaI and SapI. Thus, any natively occurring type IIS restriction sites within the promoter+5’UTR
-                    sequence would interfere with the MoClo workflow. That is why we filtered out promoter+5’UTR
-                    sequences containing such sites and proceeded with their isolation from the genomic DNA (the highest
-                    expressing member of the orthogroup that was MoClo compatible was chosen for the isolation). For
-                    some sequences, type IIS recognition sites were removed and they were synthesized via Twist,
-                    obtaining the final set of promoter+5’UTR sequences ready for experimental evaluation (read further
-                    to see more on the isolation and synthesis).
-                </p>
-
-                <h1 className="text-3xl font-bold mb-6 mt-16"
-                    style={{fontFamily: "Space Grotesk, sans-serif"}}>Summary</h1>
-
-
-                <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
-                    We analyzed transcriptomic data of four Lemnoideae species and identified candidate promoter+5’UTR
-                    regions that promise ideal properties for stable and high expression of genes of interest in
-                    duckweed. Groups of genes with similar functions interspecially were identified and used for
-                    selection of the highest and the most stably expressed ones. We annotated their function and
-                    selected the ones with presumably housekeeping functions. We extracted the MoClo compatible
-                    promoter+5’UTR sequences from these and obtained the final set of 17 sequences was used in
-                    expression assessment.
-                </p>
-
-
-                <References references={Reference}/>
-
-
             </div>
+            <PromoterLibraryConstruction/>
+            <References references={Reference}/>
+            
         </div>
     );
 };
