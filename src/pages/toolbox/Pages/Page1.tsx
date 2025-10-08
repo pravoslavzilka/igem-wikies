@@ -157,7 +157,7 @@ export default function Page1() {
 
                         <p className="text-justify">
             <span className="font-bold">
-              “DUCKWEED BESTIE,” with an improved growth rate to be not just 3 times but at least 10 times higher than
+              <a className='hover:underline text-[#6ca033]' href="/human-practices#boosted-duckweed">“DUCKWEED BESTIE,”</a> with an improved growth rate to be not just 3 times but at least 10 times higher than
               soybean, would grow on manure, converting it into protein-rich biomass right on farms – saving farmers
               money, Brazilian nature and reducing nitrogen emissions.
             </span>{" "}
@@ -175,8 +175,7 @@ export default function Page1() {
                             inserting <span className="font-bold">plant transcription factors</span> known to increase
                             biomass yield,
                             and even to <span className="font-bold">engineering the duckweed chloroplast</span> itself.
-                            We really went
-                            quite wild!
+                            <a className='hover:underline text-[#6ca033]' href="/human-practices#ideation"> Check it out here!</a> We really went quite wild!
                         </p>
                     </div>
 
