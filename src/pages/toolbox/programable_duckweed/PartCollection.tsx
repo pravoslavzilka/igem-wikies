@@ -493,6 +493,45 @@ export default function PartCollection() {
               </p>
             </div>
 
+
+
+            <p className="mb-16 text-lg text-justify" style={{fontFamily: 'Urbanist'}}>
+              <span style={{ fontWeight: 400 }}>
+                Altogether, we made first steps for enabling construction of regulatory
+                parts library native to duckweeds. Testing{" "}
+              </span>
+              <strong>more regulatory parts</strong>
+              <span style={{ fontWeight: 400 }}> obtained from </span>
+              <strong>our </strong>
+              <A className='hover:underline text-[#6ca033]'  href="/measurement"><strong>
+                <em>in-silico </em>
+              </strong>
+              <strong>workflow</strong></A>
+              <span style={{ fontWeight: 400 }}>
+                {" "}
+                could elucidate the parts that are actually able to drive strong protein
+                expression in duckweed. With our{" "}
+              </span>
+              <span style={{ fontWeight: 400 }}>suggested workflow</span>
+              <span style={{ fontWeight: 400 }}>
+                , researchers can easily isolate and characterize also{" "}
+              </span>
+              <strong>terminator+3’UTR regulatory sequences</strong>
+              <span style={{ fontWeight: 400 }}>
+                {" "}
+                in multiple duckweed species. Eventually, our pipeline can{" "}
+              </span>
+              <strong>
+                be expanded across multiple duckweed species as more transcriptomes become
+                available
+              </strong>
+              <span style={{ fontWeight: 400 }}>
+                , opening the door to further increases in the user-friendliness of duckweed
+                genetic engineering.
+              </span>
+            </p>
+
+
             <h2 className="text-2xl font-bold mb-6 " style={{fontFamily: 'Space Grotesk'}}>
               3. Endogenous Duckweed Promoter + 5’ UTR Parts
             </h2>
