@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import A from "../A";
 
 interface Reference {
   id: number;
@@ -37,13 +38,13 @@ const References = ({
                 [{ref.id}] {ref.url ? (
                   <>
                     {ref.text.split(ref.url)[0]}
-                    <Link 
+                    <A 
                       className="text-blue-500 hover:underline break-all" 
                       target="_blank" 
-                      to={ref.url}
+                      href={ref.url}
                     >
                       {ref.url}
-                    </Link>
+                    </A>
                     {ref.text.split(ref.url)[1] || ''}
                   </>
                 ) : (

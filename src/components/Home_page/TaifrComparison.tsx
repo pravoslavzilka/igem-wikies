@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import A from "../../A.tsx";
 
 
 
@@ -79,14 +80,14 @@ const TaifrComparison = () => {
                   </span>
                 </blockquote>
               </p>
-              <Link to="/project/how/taifr/overview" onClick={() => window.scrollTo(0, 0)}>
+              <A href="/project/how/taifr/overview" onClick={() => window.scrollTo(0, 0)}>
                               <button
                                 className=" mt-4 hover:bg-green-700 text-white px-6 py-3 rounded-full font-medium transition-colors duration-200"
                                 style={{ fontFamily: "Urbanist, sans-serif", backgroundColor: "#22531C" }}
                               >
                                 See how TAIFR works 
                               </button>
-                            </Link>
+                            </A>
             </div>
             
           </div>

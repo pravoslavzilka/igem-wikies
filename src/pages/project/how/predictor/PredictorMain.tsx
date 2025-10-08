@@ -880,14 +880,14 @@ const PredictorMain = () => {
                     >
                         Visit Web Application
                     </A>
-                    <Link
-                        to="/hardware#PROBE"
+                    <A
+                        href="/hardware#PROBE"
                         rel="noopener noreferrer"
                         className="bg-red-600 text-white font-semibold text-lg py-3 px-6 rounded-lg hover:bg-red-700 transition-colors duration-200"
                         style={{fontFamily: 'Space Grotesk, sans-serif'}}
                     >
                         PROBE - an efficient alternative
-                    </Link>
+                    </A>
                 </div>
             </section>
 

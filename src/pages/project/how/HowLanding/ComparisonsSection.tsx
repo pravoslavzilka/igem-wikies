@@ -39,14 +39,14 @@ const ComparisonsSection: React.FC<ComparisonsSectionProps> = ({
           <div key={page.id} className="flex flex-col gap-2">
             {/* Page Title with Link - All Screens */}
             <div className="w-full text-center">
-              <Link 
-                to={page.pageUrl}
+              <A 
+                href={page.pageUrl}
                 onClick={() => window.scrollTo(0, 0)}
                 className="group inline-flex items-center gap-2 text-2xl sm:text-3xl font-semibold text-[#779E45] hover:text-[#5d7a33] transition-colors uppercase"
               >
                 {page.pageTitle}
                 <ExternalLink className="w-5 h-5 sm:w-6 sm:h-6 group-hover:scale-110 transition-transform" />
-              </Link>
+              </A>
             </div>
 
             {/* Desktop Layout */}

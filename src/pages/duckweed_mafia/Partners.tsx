@@ -101,7 +101,7 @@ const Partners = () => {
                 </span>
                 <strong>Dušan Brinzanik, PR Specialist at IOCB Tech Foundation</strong>
                 <span style={{ fontWeight: 400 }}>
-                    , for orchestrating our collaboration. <Link className='hover:underline text-[#6ca033]' target="_blank" to="https://iocbtech.cz">iocbtech.cz</Link>
+                    , for orchestrating our collaboration. <A className='hover:underline text-[#6ca033]' target="_blank" href="https://iocbtech.cz">iocbtech.cz</A>
                 </span>
                 </p>
 
@@ -256,7 +256,7 @@ const Partners = () => {
                 <strong>Jana Držíková, Marketing Manager at BioVendor Group</strong>
                 <span style={{ fontWeight: 400 }}>
                   , for orchestrating this collaboration and supporting us in telling our
-                  story alongside the whole iGEM Brno Team. <Link className='hover:underline text-[#6ca033]' to="https://www.biovendor.cz">biovendor.cz</Link>
+                  story alongside the whole iGEM Brno Team. <A className='hover:underline text-[#6ca033]' href="https://www.biovendor.cz">biovendor.cz</A>
                 </span>
               </p>
 

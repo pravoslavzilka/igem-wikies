@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import A from "../../../A.tsx";
 
 const DuckweedProtocolReduced = () => {
     return (
@@ -159,7 +160,7 @@ const DuckweedProtocolReduced = () => {
               finished, and we switched to autonomous cultivation. You can too - read how
               on the{" "}
             </span>
-                        <span style={{fontWeight: 400}}><Link to="/Hardware">CULTIVATOR page</Link></span>
+                        <span style={{fontWeight: 400}}><A href="/Hardware">CULTIVATOR page</A></span>
                         <span style={{fontWeight: 400}}>.</span>
                     </p>
 

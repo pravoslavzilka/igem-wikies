@@ -1,6 +1,7 @@
 import { Clock10Icon, ShieldCheck, BarChart4Icon } from "lucide-react"
 import {Link} from "react-router-dom";
 import React from "react";
+import A from "../../A.tsx";
 
 
 const CultivatorShow = () => {
@@ -32,14 +33,14 @@ const CultivatorShow = () => {
             </div>
 
             <div className="">
-              <Link to="/project/how/cultivator/" onClick={() => window.scrollTo(0, 0)}>
+              <A href="/project/how/cultivator/" onClick={() => window.scrollTo(0, 0)}>
                 <button
                   className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-medium transition-colors duration-200"
                   style={{ fontFamily: "Urbanist, sans-serif", backgroundColor: "#22531C" }}
                 >
                   See how the CULTIVATOR works
                 </button>
-              </Link>
+              </A>
             </div>
           </div>
 
