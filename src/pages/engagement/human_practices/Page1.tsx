@@ -1,5 +1,4 @@
 import React from "react";
-import ExpandablePill from "./ExpandablePill";
 import ExpandablePillNoImage from "./ExpandablePillNoImage.tsx";
 import A from "../../../A.tsx";
 
@@ -54,18 +53,28 @@ export default function HumanPracticesPage1() {
                 </div>
 
                 {/* Subhead staggered */}
-                <div className="space-y-2 mb-8">
-                    <p className="text-lg">We talked and listened to</p>
+                <div className="space-y-2 mb-8 mt-20">
+                    <p className="text-lg"
+                       style={{
+                           fontFamily: "Space Grotesk, sans-serif",
+                           fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem",
+                       }}
+                    >We talked and listened to</p>
                     <p
                         className="font-bold"
                         style={{
                             fontFamily: "Space Grotesk, sans-serif",
-                            fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem",
+                            fontSize: window.innerWidth < 768 ? "2.6rem" : "3rem",
                         }}
                     >
                         142 stakeholders
                     </p>
-                    <p className="text-lg font-[Urbanist,sans-serif]">
+                    <p className="text-lg font-[Urbanist,sans-serif]"
+                       style={{
+                           fontFamily: "Space Grotesk, sans-serif",
+                           fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem",
+                       }}
+                    >
                         to make something the world actually needs
                     </p>
                 </div>
@@ -92,7 +101,8 @@ export default function HumanPracticesPage1() {
                             className="w-48 h-48 mx-auto rounded-full object-cover transition-transform duration-300 hover:scale-105"
                         />
                         <div className="mt-4">
-                            <p className="text-gray-900 font-bold text-lg">{circle.subtitle}</p>
+                            <p className="text-gray-900 font-bold text-lg"
+                               style={{fontFamily: "Space Grotesk, sans-serif"}}>{circle.subtitle}</p>
                         </div>
                     </div>
                 ))}
@@ -105,7 +115,7 @@ export default function HumanPracticesPage1() {
                 <div
                     id="ideation"
                     className="bg-green-[#6ca033] text-gray-900 font-bold px-6 py-4 rounded-t-xl"
-                    style={{fontFamily: "Space Grotesk, sans-serif", fontSize: "2rem",backgroundColor: '#6ca033'}}
+                    style={{fontFamily: "Space Grotesk, sans-serif", fontSize: "2rem", backgroundColor: '#6ca033'}}
                 >
                     Ideation
                 </div>
