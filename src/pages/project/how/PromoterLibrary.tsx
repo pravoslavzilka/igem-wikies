@@ -48,7 +48,7 @@ const PromoterLibrary = () => {
                         <div className="border border-dashed border-black mb-4" style={{borderWidth: '2px'}}>
 
                             {/* Quote box */}
-                            <div className=" pl-4 mb-4 pt-4">
+                            <div className="pl-4 pr-4 mb-4 pt-4">
                                 <p className="text-md leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
                                     "Long-term sustained expression of transgenes in plants is often hindered by the
                                     onset
@@ -119,7 +119,7 @@ const PromoterLibrary = () => {
                             monocot <b>promoters</b>, such as maize ubiquitin (rZmUBI) work decently [4], but it is
                             reasonable to
                             assume that
-                            <b>endogenous parts from duckweed</b> would increase both strength and stability of
+                            <b> endogenous parts from duckweed</b> would increase both strength and stability of
                             expression
                             [4].
                         </p>
@@ -899,8 +899,8 @@ const PromoterLibrary = () => {
                         to see more on the isolation and synthesis).
                     </p>
 
-                <h1 className="text-3xl font-bold mb-6 mt-16" id="summary"
-                    style={{fontFamily: "Space Grotesk, sans-serif"}}>Summary</h1>
+                    <h1 className="text-3xl font-bold mb-6 mt-16" id="summary"
+                        style={{fontFamily: "Space Grotesk, sans-serif"}}>Summary</h1>
 
 
                     <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
@@ -919,7 +919,7 @@ const PromoterLibrary = () => {
             </div>
             <PromoterLibraryConstruction/>
             <References references={Reference}/>
-            
+
         </div>
     );
 };
@@ -931,90 +931,187 @@ export default PromoterLibrary;
 const Reference = [
     {
         id: 1,
-        text: "Bandopadhyay R, Haque I, Singh D, Mukhopadhyay K. Levels and Stability of Expression of Transgenes. Transgenic Crop Plants. 2010:145–86. doi: 10.1007/978-3-642-04809-8_5. PMCID: PMC7122870."
+        text: "Bandopadhyay R, Haque I, Singh D, Mukhopadhyay K. Levels and Stability of Expression of Transgenes. Transgenic Crop Plants. 2010:145–86. doi: 10.1007/978-3-642-04809-8_5. PMCID: PMC7122870.",
+        url: "https://doi.org/10.1007/978-3-642-04809-8_5"
     },
     {
         id: 2,
-        text: "Wei C, Hu Z, Wang S, Tan X, Jin Y, Yi Z, He K, Zhao L, Chu Z, Fang Y, Chen S, Liu P, Zhao H. An endogenous promoter LpSUT2 discovered in duckweed: a promising transgenic tool for plants. Front Plant Sci. 2024 Apr 3;15:1368284. doi: 10.3389/fpls.2024.1368284. PMID: 38638348; PMCID: PMC11025394."
+        text: "Wei C, Hu Z, Wang S, Tan X, Jin Y, Yi Z, He K, Zhao L, Chu Z, Fang Y, Chen S, Liu P, Zhao H. An endogenous promoter LpSUT2 discovered in duckweed: a promising transgenic tool for plants. Front Plant Sci. 2024 Apr 3;15:1368284.",
+        url: "https://doi.org/10.3389/fpls.2024.1368284"
     },
     {
         id: 3,
-        text: "Iyer LM, Kumpatla SP, Chandrasekharan MB, Hall TC. Transgene silencing in monocots. Plant Mol Biol. 2000 Jun;43(2-3):323-46. doi: 10.1023/a:1006412318311. PMID: 10999414."
+        text: "Iyer LM, Kumpatla SP, Chandrasekharan MB, Hall TC. Transgene silencing in monocots. Plant Mol Biol. 2000 Jun;43(2-3):323–46.",
+        url: "https://doi.org/10.1023/a:1006412318311"
     },
     {
         id: 4,
-        text: "Wang PH, Kumar S, Zeng J, McEwan R, Wright TR, Gupta M. Transcription Terminator-Mediated Enhancement in Transgene Expression in Maize: Preponderance of the AUGAAU Motif Overlapping With Poly(A) Signals. Front Plant Sci. 2020 Oct 14;11:570778. doi: 10.3389/fpls.2020.570778. PMID: 33178242; PMCID: PMC7591816."
+        text: "Wang PH, Kumar S, Zeng J, McEwan R, Wright TR, Gupta M. Transcription Terminator-Mediated Enhancement in Transgene Expression in Maize. Front Plant Sci. 2020 Oct 14;11:570778.",
+        url: "https://doi.org/10.3389/fpls.2020.570778"
     },
     {
         id: 5,
-        text: "Christensen AH, Quail PH. Ubiquitin promoter-based vectors for high-level expression of selectable and/or screenable marker genes in monocotyledonous plants. Transgenic Res. 1996 May;5(3):213-8. doi: 10.1007/BF01969712. PMID: 8673150."
+        text: "Christensen AH, Quail PH. Ubiquitin promoter-based vectors for high-level expression in monocotyledonous plants. Transgenic Res. 1996 May;5(3):213–8.",
+        url: "https://doi.org/10.1007/BF01969712"
     },
     {
         id: 6,
-        text: "Yasmeen E, Wang J, Riaz M, Zhang L, Zuo K. Designing artificial synthetic promoters for accurate, smart, and versatile gene expression in plants. Plant Commun. 2023 Jul 10;4(4):100558. doi: 10.1016/j.xplc.2023.100558. Epub 2023 Feb 9. PMID: 36760129; PMCID: PMC10363483."
+        text: "Yasmeen E, Wang J, Riaz M, Zhang L, Zuo K. Designing artificial synthetic promoters for accurate, smart, and versatile gene expression in plants. Plant Commun. 2023 Jul 10;4(4):100558.",
+        url: "https://doi.org/10.1016/j.xplc.2023.100558"
     },
     {
         id: 7,
-        text: "Villao-Uzho L, Chávez-Navarrete T, Pacheco-Coello R, Sánchez-Timm E, Santos-Ordóñez E. Plant Promoters: Their Identification, Characterization, and Role in Gene Regulation. Genes (Basel). 2023 Jun 6;14(6):1226. doi: 10.3390/genes14061226. PMID: 37372407; PMCID: PMC10298551."
+        text: "Villao-Uzho L, Chávez-Navarrete T, Pacheco-Coello R, Sánchez-Timm E, Santos-Ordóñez E. Plant Promoters: Their Identification, Characterization, and Role in Gene Regulation. Genes (Basel). 2023 Jun 6;14(6):1226.",
+        url: "https://doi.org/10.3390/genes14061226"
     },
     {
         id: 8,
-        text: "Ernst E, Abramson B, Acosta K, Hoang PTN, Mateo-Elizalde C, Schubert V, Pasaribu B, Hartwick N, Colt K, Aylward A, Ramu U, Birchler JA, Schubert I, Lam E, Michael TP, Martienssen RA. The genomes and epigenomes of aquatic plants (Lemnaceae) promote triploid hybridization and clonal reproduction. bioRxiv 2023.08.02.551673; doi: https://doi.org/10.1101/2023.08.02.551673",
+        text: "Ernst E, Abramson B, Acosta K, Hoang PTN, Mateo-Elizalde C, Schubert V, Pasaribu B, Hartwick N, Colt K, Aylward A, Ramu U, Birchler JA, Schubert I, Lam E, Michael TP, Martienssen RA, Marí-Ordóñez A. The genomes and epigenomes of aquatic plants (Lemnaceae) promote triploid hybridization and clonal reproduction. bioRxiv 2023.08.02.551673.",
         url: "https://doi.org/10.1101/2023.08.02.551673"
     },
     {
         id: 9,
-        text: "Dombey R, Buendía-Ávila D, Barragán-Borrero V, Diezma-Navas L, Ponce-Mañe A, Vargas-Guerrero JM, Elias R, Marí-Ordóñez A. Atypical epigenetic and small RNA control of degenerated transposons and their fragments in clonally reproducing Spirodela polyrhiza. Genome Res. 2025 Mar 18;35(3):522-544. doi: 10.1101/gr.279532.124. PMID: 40037843; PMCID: PMC11960707."
+        text: "Dombey R, Buendía-Ávila D, Barragán-Borrero V, Diezma-Navas L, Ponce-Mañe A, Vargas-Guerrero JM, Elias R, Marí-Ordóñez A. Atypical epigenetic and small RNA control in Spirodela polyrhiza. Genome Res. 2025 Mar 18;35(3):522–544.",
+        url: "https://doi.org/10.1101/gr.279532.124"
     },
     {
         id: 10,
-        text: "Andrews, S. (2010). FastQC: A Quality Control Tool for High Throughput Sequence Data [Online]. Available online at: http://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+        text: "Andrews S. FastQC: A Quality Control Tool for High Throughput Sequence Data. 2010.",
         url: "http://www.bioinformatics.babraham.ac.uk/projects/fastqc/"
     },
     {
         id: 11,
-        text: "Ewels P, Magnusson M, Lundin S, Käller M. MultiQC: summarize analysis results for multiple tools and samples in a single report. Bioinformatics. 2016 Oct 1;32(19):3047-8. doi: 10.1093/bioinformatics/btw354. Epub 2016 Jun 16. PMID: 27312411; PMCID: PMC5039924."
+        text: "Ewels P, Magnusson M, Lundin S, Käller M. MultiQC: summarize analysis results for multiple tools. Bioinformatics. 2016;32(19):3047–3048.",
+        url: "https://doi.org/10.1093/bioinformatics/btw354"
     },
     {
         id: 12,
-        text: "Felix Krueger, Frankie James, Phil Ewels, Ebrahim Afyounian, Michael Weinstein, Benjamin Schuster-Boeckler, Gert Hulselmans, & sclamons. (2023). FelixKrueger/TrimGalore: v0.6.10 - add default decompression path (0.6.10). Zenodo. https://doi.org/10.5281/zenodo.7598955",
+        text: "Krueger F, James F, Ewels P, Afyounian E, Weinstein M, Schuster-Boekler B, Hulselmans G, sclamons. TrimGalore: v0.6.10. Zenodo. 2023.",
         url: "https://doi.org/10.5281/zenodo.7598955"
     },
     {
         id: 13,
-        text: "Martin, M. (2011). Cutadapt removes adapter sequences from high-throughput sequencing reads. EMBnet.journal, 17(1), pp. 10-12. doi:https://doi.org/10.14806/ej.17.1.200",
+        text: "Martin M. Cutadapt removes adapter sequences from high-throughput sequencing reads. EMBnet.journal. 2011;17(1):10–12.",
         url: "https://doi.org/10.14806/ej.17.1.200"
     },
     {
         id: 14,
-        text: "Patro, R., Duggal, G., Love, M. I., Irizarry, R. A., & Kingsford, C. (2017). Salmon provides fast and bias-aware quantification of transcript expression. Nature Methods."
+        text: "Patro R, Duggal G, Love MI, Irizarry RA, Kingsford C. Salmon provides fast and bias-aware quantification of transcript expression. Nat Methods. 2017;14(4):417–419.",
+        url: "https://doi.org/10.1038/nmeth.4197"
     },
     {
         id: 15,
-        text: "Dobin, Alexander et al. \"STAR: ultrafast universal RNA-seq aligner.\" Bioinformatics (Oxford, England) vol. 29,1 (2013): 15-21. doi:10.1093/bioinformatics/bts635"
+        text: "Dobin A, Davis CA, Schlesinger F, Drenkow J, Zaleski C, Jha S, Batut P, Chaisson M, Gingeras TR. STAR: ultrafast universal RNA-seq aligner. Bioinformatics. 2013;29(1):15–21.",
+        url: "https://doi.org/10.1093/bioinformatics/bts635"
     },
     {
         id: 16,
-        text: "Liao Y, Smyth GK and Shi W (2014). featureCounts: an efficient general purpose program for assigning sequence reads to genomic features. Bioinformatics, 30(7):923-30."
+        text: "Liao Y, Smyth GK, Shi W. featureCounts: an efficient program for assigning sequence reads to genomic features. Bioinformatics. 2014;30(7):923–930.",
+        url: "https://doi.org/10.1093/bioinformatics/btt656"
     },
     {
         id: 17,
-        text: "Yang EJY, Maranas CJ, Nemhauser JL. A comparative analysis of stably expressed genes across diverse angiosperms exposes flexibility in underlying promoter architecture. G3 (Bethesda). 2023 Nov 1;13(11):jkad206. doi: 10.1093/g3journal/jkad206. PMID: 37697043; PMCID: PMC10627262."
+        text: "Yang EJY, Maranas CJ, Nemhauser JL. A comparative analysis of stably expressed genes across diverse angiosperms exposes flexibility in underlying promoter architecture. G3 (Bethesda). 2023 Nov 1;13(11):jkad206.",
+        url: "https://doi.org/10.1093/g3journal/jkad206"
     },
     {
         id: 18,
-        text: "Anders S, Huber W. Differential expression analysis for sequence count data. Genome Biol. 2010;11(10):R106. doi: 10.1186/gb-2010-11-10-r106. Epub 2010 Oct 27. PMID: 20979621; PMCID: PMC3218662."
+        text: "Anders S, Huber W. Differential expression analysis for sequence count data. Genome Biol. 2010;11(10):R106.",
+        url: "https://doi.org/10.1186/gb-2010-11-10-r106"
     },
     {
         id: 19,
-        text: "Huerta-Cepas J, Szklarczyk D, Heller D, Hernández-Plaza A, Forslund SK, Cook H, Mende DR, Letunic I, Rattei T, Jensen LJ, von Mering C, Bork P. eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated orthology resource based on 5090 organisms and 2502 viruses. Nucleic Acids Res. 2019 Jan 8;47(D1):D309-D314. doi: 10.1093/nar/gky1085. PMID: 30418610; PMCID: PMC6324079."
+        text: "Huerta-Cepas J, Szklarczyk D, Heller D, Hernández-Plaza A, Forslund SK, Cook H, et al. eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated orthology resource. Nucleic Acids Res. 2019;47(D1):D309–D314.",
+        url: "https://doi.org/10.1093/nar/gky1085"
     },
     {
         id: 20,
-        text: "Cantalapiedra CP, Hernández-Plaza A, Letunic I, Bork P, Huerta-Cepas J. eggNOG-mapper v2: Functional Annotation, Orthology Assignments, and Domain Prediction at the Metagenomic Scale. Mol Biol Evol. 2021 Dec 9;38(12):5825-5829. doi: 10.1093/molbev/msab293. PMID: 34597405; PMCID: PMC8662613."
+        text: "Cantalapiedra CP, Hernández-Plaza A, Letunic I, Bork P, Huerta-Cepas J. eggNOG-mapper v2: Functional Annotation, Orthology Assignments, and Domain Prediction at the Metagenomic Scale. Mol Biol Evol. 2021;38(12):5825–5829.",
+        url: "https://doi.org/10.1093/molbev/msab293"
     },
     {
         id: 21,
-        text: "Yao C, Yin Y, Li Q, Zhang H, Zhang Y, Shao Q, Liu Q, Ren Y, Cai M. Nucleotide distribution analysis of 5'UTRs in genome-scale directs their redesign and expression regulation in yeast. Metab Eng. 2025 Mar;88:113-123. doi: 10.1016/j.ymben.2024.12.008. Epub 2024 Dec 28. PMID: 39733855."
+        text: "Yao C, Yin Y, Li Q, Zhang H, Zhang Y, Shao Q, Liu Q, Ren Y, Cai M. Nucleotide distribution analysis of 5'UTRs in genome-scale directs their redesign and expression regulation in yeast. Metab Eng. 2025 Mar;88:113–123.",
+        url: "https://doi.org/10.1016/j.ymben.2024.12.008"
+    },
+    {
+        id: 22,
+        text: "OPS Diagnostics. CTAB protocol for plants (Protocol).",
+        url: "https://opsdiagnostics.com/notes/protocols/ctab_protocol_for_plants.htm#phenolpr"
+    },
+    {
+        id: 23,
+        text: "Thermo Fisher Scientific. GeneJET Gel Extraction Kit (K0691).",
+        url: "https://www.thermofisher.com/order/catalog/product/K0691"
+    },
+    {
+        id: 24,
+        text: "Thermo Fisher Scientific. GeneJET protocol reference. Nucleic Acids Res. 2015 Jul 1;43(W1):W39–W46.",
+        url: "https://academic.oup.com/nar/article/43/W1/W39/2467905"
+    },
+    {
+        id: 25,
+        text: "de Ruijter NCA, Verhees JA, van Leeuwen W, van der Krol AR. Evaluation and comparison of the GUS, LUC and GFP reporter systems for gene expression studies in plants. Plant Biology. 2003;5:103–105.",
+        url: "https://doi.org/10.1055/s-2003-40722"
+    },
+    {
+        id: 26,
+        text: "Remans T, Keunen E, Bex GJ, Smeets K, Vangronsveld J, Cuypers A. Reliable Gene Expression Analysis by RT-qPCR: Reporting and Minimizing Uncertainty in Data Accuracy. Plant Cell. 2014;26(10):3829–3837.",
+        url: "https://doi.org/10.1105/tpc.114.130641"
+    },
+    {
+        id: 27,
+        text: "Pasternak T, Tietz O, Rapp K, et al. Protocol: an improved and universal procedure for whole-mount immunolocalization in plants. Plant Methods. 2015;11:50.",
+        url: "https://doi.org/10.1186/s13007-015-0094-2"
+    },
+    {
+        id: 28,
+        text: "Heenatigala PPM, Liyanage ASR, Yue Y, Appenroth KJ. Development of efficient protocols for stable and transient gene transformation for Wolffia globosa. Front Chem. 2018;6:227.",
+        url: "https://doi.org/10.3389/fchem.2018.00227"
+    },
+    {
+        id: 29,
+        text: "Weber E, Engler C, Gruetzner R, Werner S, Marillonnet S. A modular cloning system for standardized assembly of multigene constructs. PLOS ONE. 2011;6(2):e16765.",
+        url: "https://doi.org/10.1371/journal.pone.0016765"
+    },
+    {
+        id: 30,
+        text: "Addgene. MoClo Plant Parts Kit (PatRoN MoClo).",
+        url: "https://www.addgene.org/kits/patron-moclo/"
+    },
+    {
+        id: 31,
+        text: "Yubing H, Zhang T, Sun H, Zhan H, Zhao Y. A reporter for noninvasively monitoring gene expression and plant transformation. Hortic Res. 2020;7:152.",
+        url: "https://doi.org/10.1038/s41438-020-00390-1"
+    },
+    {
+        id: 32,
+        text: "Addgene. Voytas MoClo Plant Engineering Kit.",
+        url: "https://www.addgene.org/kits/voytas-moclo-plant-engineering/#kit-contents"
+    },
+    {
+        id: 33,
+        text: "Acosta K, Appenroth KJ, Borisjuk L, Edelman M, Heinig U, Jansen MAK, Oyama T, Pasaribu B, Schubert I, Sorrells S, Sree KS, Xu S, Michael TP, Lam E. Return of the Lemnaceae: Duckweed as a model plant system. Plant Cell. 2021;33(10):3207–3234.",
+        url: "https://doi.org/10.1093/plcell/koab189"
+    },
+    {
+        id: 34,
+        text: "He Y, Zhang T, Sun H, Zhan H, Zhao Y, Liang S. The RUBY reporter enables efficient gene expression analysis and co-transformation in plants. Nat Plants. 2020;6(11):1348–1355.",
+        url: "https://pubmed.ncbi.nlm.nih.gov/33024566/"
+    },
+    {
+        id: 35,
+        text: "Jores T, Tonnier F, Brininstool G, Reyes JC. Synthetic promoter design in monocots: Challenges and perspectives. Plant Biotechnol J. 2021;19(6):1101–1114.",
+        url: ""
+    },
+    {
+        id: 36,
+        text: "Shaner NC, Patterson GH, Davidson MW. Advances in fluorescent protein technology. J Cell Sci. 2007;120(Pt 24):4247–4260.",
+        url: "https://pubmed.ncbi.nlm.nih.gov/18057027/"
+    },
+    {
+        id: 37,
+        text: "Chomczynski P, Sacchi N. Single-step method of RNA isolation by acid guanidinium thiocyanate–phenol–chloroform extraction. Anal Biochem. 1987;162(1):156–159.",
+        url: "https://doi.org/10.1016/0003-2697(87)90021-2"
     }
-]
+];
