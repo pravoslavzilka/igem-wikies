@@ -16,25 +16,38 @@ export default function Page1() {
                     The Duckweed Toolbox
                 </h2>
 
-                {/* Intro paragraphs */}
-                <div className="text-center text-lg space-y-4">
-                    <p className="font-bold text-[#6ca033]">
-                        We inserted a transgene into the nuclear genome of duckweed fronds using{" "}
-                        <span className="font-bold">transposase-assisted insertion</span> – the first achievement of its
-                        kind
-                        in plant synthetic biology.
-                    </p>
+                <div className="grid md:grid-cols-2 gap-6">
+                    <div className="grid-span-1">
+                        {/* Intro paragraphs */}
+                            <div className="text-justify text-lg mt-8 space-y-4">
+                                <p className="font-bold ">
+                                    We inserted a transgene into the nuclear genome of<span className="text-[#6ca033]"> duckweed</span> fronds using{" "}
+                                    <span className="text-[#6ca033]">transposase-assisted insertion</span>.
+                                </p>
+                                <p className="font-bold text-2xl">
+                                    <span className="text-[#6ca033]">The first </span>  achievement of its kind <span className="text-[#6ca033]">in plant synthetic biology.</span>
+                                </p>
 
-                    <p className="font-bold">
-                        We went that far to make duckweed genetic engineering user-friendly and accessible for everyone
-                        –
-                        starting with us.
-                    </p>
+                                <p className="font-bold">
+                                    We went that far <span className="text-[#6ca033]">to make duckweed genetic engineering user-friendly </span>and accessible for everyone                                    –
+                                    starting with us.
+                                </p>
 
-                    <p className="font-bold text-[#6ca033]">
-                        Even if we didn’t succeed completely, we laid a strong foundation so that future iGEM teams will
-                        have the chance to engineer many stellar use cases with duckweed!
-                    </p>
+                                <p className="font-bold ">
+                                    Even if we didn’t succeed completely, we laid a strong foundation so that <span className="text-[#6ca033]">future iGEM teams</span> will
+                                    have the chance to <span className="text-[#6ca033]">engineer many stellar use </span> cases with <span className="text-[#6ca033]">duckweed!</span>
+                                </p>
+                            </div>
+                    </div>
+                    <div className="grid-span-1">
+                        <img
+                            src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/duckweed.avif"
+                            alt="The Duckweed Toolbox"
+                            className="w-full rounded-lg object-cover"
+                        />
+
+                    </div>
+
                 </div>
 
                 {/* Section 1 */}
@@ -256,7 +269,7 @@ export default function Page1() {
                             ). Other features make duckweed a promising phytoremediation chassis, a complex
                             recombinant protein factory, and even a new model for studying monocot plants (read more
                             at{" "}
-                            <A href="/plant/why-duckweed" className='hover:underline text-[#6ca033]'>
+                            <A href="/plant/why-duckweed" className='mt-4 hover:underline text-[#6ca033]'>
                                 Why duckweed page
                             </A>
                             ).{" "}
@@ -285,11 +298,11 @@ export default function Page1() {
                                 className="w-full rounded-lg object-cover"
                             />
                         </A>
-                        <A href="/whyduckweed/">
+                        <A href="/plant/why-duckweed">
                             <img
                                 src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/why-duckweed.webp"
                                 alt="Why duckweed"
-                                className="w-full rounded-lg object-cover"
+                                className="w-full rounded-lg object-cover mt-4"
                             />
                         </A>
                     </div>
@@ -300,7 +313,7 @@ export default function Page1() {
 
                     {/* WHY PLANTS SUCK box */}
                     <div className=" overflow-hidden space-y-2">
-                        <A href="/toolbox/why-plants-suck/">
+                        <A href="/toolbox/why-plant-suck/">
                             <img
                                 src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/why-plant-sucks.webp"
                                 alt="Why plants suck? And why duckweed could be the answer?"
