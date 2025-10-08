@@ -36,12 +36,12 @@ export default function CultivatorSec5() {
                 <span className="font-bold">prof. Jansen</span>, a world-renowned
                 duckweed scientist, whose insights helped us align our system with current trends in
                 plant physiology and automation.
-                You can read more about these discussions and other expert consultations{" "}
+                You can read more about these discussions and other expert consultations on our {" "}
                 <a
-                    href="/engagement/human-practices#hw-and-cultivation"
-                    className="text-[#6ca033] font-semibold hover:text-green-700 transition-colors underline"
+                    href="/human-practices#marcel-jansen"
+                    className="hover:text-[#25512b] font-bold underline text-[#6ca033]"
                 >
-                    on our Human Practices page
+                    Human Practices page
                 </a>
                 .
             </p>

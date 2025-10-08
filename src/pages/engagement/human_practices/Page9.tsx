@@ -81,6 +81,7 @@ export default function HumanPracticesPage9() {
                 </ExpandablePill>
 
                 {/* Prof. Marcel Jansen */}
+                <div id="marcel-jansen"></div>
                 <ExpandablePill
                     image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/9-3.webp"
                     name="prof. Marcel Jansen"

@@ -68,7 +68,7 @@ export default function CultivatorIntro() {
                         a reliable prototype.{" "}
                         <span className="font-bold">
         Now, our system can save up to 2 hours of work per week for each m² of duckweed experiments,
-        making it ideal for any scientist looking to scale up their research!
+        making it ideal for any scientist looking to scale up their duckweed research!
       </span>
                     </p>
 
@@ -97,10 +97,12 @@ export default function CultivatorIntro() {
 
                 <div className="font-[Urbanist,sans-serif] text-lg leading-relaxed space-y-4">
                     <p className="text-justify">
-                        With complete documentation (<a href="" className="underline">access here</a>), build plans (<a
-                        href="" className="underline">access here</a>), and source code (
-                        <a href="" className="underline">access{" "}
-                        here</a>) available, any lab can reproduce{" "}
+                        With complete build plans (<a
+                        href="https://github.com/pravoslavzilka/igem-hardware-models" target="blank"
+                        className="underline">access here</a>) and source code (
+                        <a href="https://github.com/MartinPavella/BioReactorManager" target="blank"
+                           className="underline">access{" "}
+                            here</a>) available, any lab can reproduce{" "}
                         and adapt the cultivator for their own work –{" "}
                         <span className="font-bold">for about $1,000 in materials.</span>
                     </p>

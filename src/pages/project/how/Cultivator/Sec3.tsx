@@ -161,7 +161,9 @@ export default function CultivatorSec3() {
                             <span className="font-bold text-[#6ca033]">peristaltic pumps</span> accurately inject
                             nutrients
                             as needed. The system supports{" "}
-                            <span className="font-bold">up to four different liquid additives</span>, which can be
+                            up to <a href="/plant#duckweed-cultivation"
+                                     className="hover:text-[#25512b] font-bold underline text-[#6ca033]">four
+                            different liquid additives</a>, which can be
                             individually
                             mixed into the growth medium for precise control.
                         </p>
@@ -171,8 +173,8 @@ export default function CultivatorSec3() {
                             className="font-bold text-[#6ca033]">electrical conductivity</span> drifts
                             outside the defined range, the optimized{" "}
                             <span
-                                className="font-bold text-[#6ca033] underline">
-                                <a href="/toolbox/predictable-duckweed-protocol/">
+                                className="hover:text-[#25512b] font-bold underline text-[#6ca033]">
+                                <a href="/plant#duckweed-cultivation">
                                 Duckweed Cultivation Medium – Nitrogen (DCMN){" "}
                                 </a>
                             </span>
