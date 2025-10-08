@@ -1515,7 +1515,7 @@ export default function Outreach() {
                                 <p style={{marginBottom: '1rem'}}>
                   <span style={{fontWeight: 400}}>
                     We teamed up with dozens of science communicators to help raise awareness
-                    of SynBio even faster. We gained 750 followers and up to 180 000
+                    of SynBio even faster. We gained 720 followers and up to 180 000
                     impressions!{" "}
                   </span>
                                 </p>
