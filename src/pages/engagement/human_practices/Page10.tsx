@@ -263,7 +263,8 @@ export default function HumanPracticesPage10() {
                             each category of cattle.
                         </p>
 
-                        <div className="grid md:grid-cols-2 gap-8 items-center">
+                        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center text-lg leading-relaxed">
+                            {/* Left column */}
                             <div className="space-y-6">
                                 <p className="font-bold">Is there space for further automation?</p>
                                 <p>
@@ -285,6 +286,7 @@ export default function HumanPracticesPage10() {
                                 </p>
                             </div>
 
+                            {/* Right column */}
                             <div className="flex justify-center">
                                 <img
                                     src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/2/farm.webp"
@@ -293,6 +295,7 @@ export default function HumanPracticesPage10() {
                                 />
                             </div>
                         </div>
+
                     </div>
                 </ExpandablePillNoCircle>
             </div>
