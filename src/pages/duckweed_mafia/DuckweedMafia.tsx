@@ -112,7 +112,7 @@ const DuckweedMafiaTeam = () => {
             title: "Hipsters",
             members: [
                 {
-                    name: "Zdeňka Vilhanová",
+                    name: "Zdenka Vilhanová",
                     role: "head of offline events, junior-ish designer, duckweed dish wizard, biochemistry student",
                     description: "Zdenka is the heart of our Duckweed Hipsters team — a brilliant negotiator, a true friend, and the one who always gets things done. Whether she’s baking her legendary duckweed cookies or offering tea with a smile, she keeps everything running smoothly. Beyond iGEM, she works on     a fascinating project with hydrogen-eating bacteria. Calm, clever, and endlessly kind — we couldn’t wish for a better teammate!",
                     image: "https://static.igem.wiki/teams/5642/images/duckweedmafia/team/dsc00698.webp"
