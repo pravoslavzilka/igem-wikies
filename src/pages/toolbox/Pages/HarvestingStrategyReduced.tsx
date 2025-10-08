@@ -73,8 +73,8 @@ export default function HarvestingStrategyReduced() {
                                 className=" h-64 w-full object-cover"
                             />
                             <div className="p-4 bg-gray-50">
-                                <p className="text-sm text-gray-600" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                                    <strong>Figure 4:</strong> Weighting our duckweed bestie L. japonica (8627) for
+                                <p className="text-base text-gray-600" style={{fontFamily: 'Urbanist, sans-serif'}}>
+                                    <strong>Figure 22.:</strong> Weighting our duckweed bestie L. japonica (8627) for
                                     determination of the precise amount that should be harvested.
 
                                 </p>
@@ -89,8 +89,8 @@ export default function HarvestingStrategyReduced() {
                                 className=" h-64 w-full object-cover"
                             />
                             <div className="p-4 bg-gray-50">
-                                <p className="text-sm text-gray-600" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                                    <strong>Figure 5:</strong> Our duckweed cultivation arsenal. (1) A hand centrifuge.
+                                <p className="text-base text-justify text-gray-600" style={{fontFamily: 'Urbanist, sans-serif'}}>
+                                    <strong>Figure 23:</strong> Our duckweed cultivation arsenal. (1) A hand centrifuge.
                                     (2)
                                     Sieves for duckweed harvesting. (3) PROBE with multimeter. (4) Duckweed cultivation
                                     tray. (5) Ingredients for mixing the cultivation medium. (6) A bucket for
@@ -140,7 +140,7 @@ export default function HarvestingStrategyReduced() {
 
                 </div>
                 {/* Caption */}
-                <p className="text-sm text-gray-600 text-center italic mb-8"
+                <p className="text-base text-gray-600 text-justify  mb-8"
                    style={{fontFamily: 'Urbanist, sans-serif'}}>
                     <strong>Figure 6:</strong> Graph showing comparison between <i>L. minor</i> (5500) and <i>L.
                     japonica</i> (8627) biomass yields (averaged across all 4 cultivations run for the given species) in
@@ -191,8 +191,8 @@ export default function HarvestingStrategyReduced() {
                                 className=" h-64 w-full object-cover"
                             />
                             <div className="p-4 bg-gray-50">
-                                <p className="text-sm text-gray-600" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                                    <strong>Figure 7:</strong> Cultures of <i>Lemna japonica</i> (8627) in trays
+                                <p className="text-base text-justify text-gray-600" style={{fontFamily: 'Urbanist, sans-serif'}}>
+                                    <strong>Figure 24:</strong> Cultures of <i>Lemna japonica</i> (8627) in trays
                                     subjected
                                     to different harvesting strategies.
 
@@ -229,11 +229,11 @@ export default function HarvestingStrategyReduced() {
 
                 </div>
                 {/* Caption */}
-                <p className="text-sm text-gray-600 text-center italic mb-8"
+                <p className="text-base text-gray-600 text-justify mb-8"
                    style={{fontFamily: 'Urbanist, sans-serif'}}>
                     <p>
             <span style={{fontWeight: 400}}>
-              <b>Figure 8:</b> Graph showing the declining biomass of{" "}
+              <b>Figure 24:</b> Graph showing the declining biomass of{" "}
             </span>
                         <em>
                             <span style={{fontWeight: 400}}>Lemna japonica (8627)</span>

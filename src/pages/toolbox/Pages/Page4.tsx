@@ -267,7 +267,7 @@ export default function Page4() {
                         </div>
 
                         <p className="text-justify text-base md:text-lg">
-                            <strong>Figure 1.</strong> Any scientist can intuitively operate the cultivator
+                            <strong>Figure 18.</strong> Any scientist can intuitively operate the cultivator
                             from the{" "}
                             <strong>home screen (1)</strong> using preset modes:{" "}
                             <strong>“AUTONOMOUS CULTIVATION”</strong> (the system autonomously

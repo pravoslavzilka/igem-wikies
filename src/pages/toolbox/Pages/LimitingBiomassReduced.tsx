@@ -85,8 +85,8 @@ export default function LimitingBiomassReduced() {
                         </div>
 
                         {/* Caption */}
-                        <p className="text-sm text-gray-700 text-justify font-[Urbanist,sans-serif] leading-relaxed p-4">
-                            <strong>Fig. 2.</strong> Experimentally measured growth curve of{" "}
+                        <p className="text-base text-gray-700 text-justify font-[Urbanist,sans-serif] leading-relaxed p-4">
+                            <strong>Fig. 20.</strong> Experimentally measured growth curve of{" "}
                             <em>Lemna japonica</em> (8627), showing the mean biomass values obtained during experiments
                             conducted in both large and small trays. The curve demonstrates that the fastest growth
                             occurred
@@ -112,8 +112,8 @@ export default function LimitingBiomassReduced() {
                                 <img src="https://static.igem.wiki/teams/5642/images/how/predictor/graf-final-9.webp"
                                      alt="Multiple Species Growth Curves" className="w-full h-auto"/>
                             </div>
-                            <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                                <strong>Figure 3:</strong> Experimentally measured growth curves of <em>Lemna
+                            <p className="text-base text-justify text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
+                                <strong>Figure 21:</strong> Experimentally measured growth curves of <em>Lemna
                                 gibba</em>, <em>Lemna obscura</em>, <em>Lemna valdiviana</em>, <em>Wolffia globosa</em>,
                                 and <em>Wolffia hyalina</em>. The limiting biomass of <em>Wolffia hyalina</em> and <em>Lemna
                                 obscura</em> was explored to be around 1400 g/m<sup>2</sup>, the limiting biomass

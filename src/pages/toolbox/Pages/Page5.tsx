@@ -228,8 +228,8 @@ export default function Page5() {
                                             alt="Figure 1. Growth rate variation of Lemna minor"
                                             className="w-full max-w-sm object-contain rounded-lg"
                                         />
-                                        <p className="text-sm italic mt-2 text-gray-800 text-justify">
-                                            <strong>Figure 1.</strong> Widely varying growth rates of{" "}
+                                        <p className="text-base  mt-2 text-gray-800 text-justify">
+                                            <strong>Figure 19.</strong> Widely varying growth rates of{" "}
                                             <em>Lemna minor</em> reported in the literature.
                                         </p>
                                     </div>
