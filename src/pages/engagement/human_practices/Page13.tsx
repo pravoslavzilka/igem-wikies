@@ -24,7 +24,7 @@ export default function HumanPracticesPage13() {
                 <p>
                     We never really buried our{" "}
                     <A
-                        href="#"
+                        href="/entrepreneurship"
                         className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         Entrepreneurship
@@ -52,7 +52,8 @@ export default function HumanPracticesPage13() {
                         <p>
                             Tsipi is the CEO of{" "}
                             <A
-                                href="#"
+                                href="https://www.greenonyx.ag/"
+                                target="blank"
                                 className="text-[#538b5e] underline hover:text-[#25512b]"
                             >
                                 GreenOnyx
@@ -84,7 +85,8 @@ export default function HumanPracticesPage13() {
                             We got great insights from Tsipi and she liked our project so much, that she decided to
                             become a sponsor of our iGEM team, so we can now proudly say that{" "}
                             <A
-                                href="#"
+                                href="https://www.greenonyx.ag/"
+                                target="blank"
                                 className="text-[#538b5e] underline hover:text-[#25512b]"
                             >
                                 GreenOnyx
@@ -110,7 +112,8 @@ export default function HumanPracticesPage13() {
                     <span className="italic">Lemna</span> around 20 years ago! And we managed to speak to the Head of
                     Research of this company and her team that is starting again, with{" "}
                     <A
-                        href="#"
+                        href="https://www.phylloceuticals.com/"
+                        target="blank"
                         className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         Phylloceuticals
@@ -133,7 +136,8 @@ export default function HumanPracticesPage13() {
                             <span className="font-bold">Lynn</span> agreed to a call and brought along her colleagues
                             from{" "}
                             <A
-                                href="#"
+                                href="https://www.phylloceuticals.com/"
+                                target="blank"
                                 className="text-[#538b5e] underline hover:text-[#25512b]"
                             >
                                 Phylloceuticals

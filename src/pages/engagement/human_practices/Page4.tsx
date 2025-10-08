@@ -102,14 +102,14 @@ export default function HumanPracticesPage6() {
                     </span>
                     . You can read how they perfected the cultivation{" "}
                     <A
-                        href="/project/how/cultivator"
+                        href="/hardware"
                         className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         hardware
                     </A>{" "}
                     and{" "}
                     <A
-                        href="/project/how/predictor/in-silico-cultivation"
+                        href="/model"
                         className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         software

@@ -61,7 +61,7 @@ export default function HumanPracticesPage9() {
                             <span className="font-bold">Czech iGEM team back in 2015.</span> When he
                             heard that another one emerged ten years later, he contacted us immediately. With his
                             expertise in software, hardware and SynBio, he was helpful with perfecting our{" "}
-                            <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                            <A href="/model" className="text-[#538b5e] underline hover:text-[#25512b]">
                                 PREDICTOR
                             </A>.
                         </p>
@@ -270,13 +270,13 @@ export default function HumanPracticesPage9() {
                             }}
                             id="farmers"
                         >
-                            The soybean problem from both sides (Czech & Brazilian stakeholders)
+                            The Soybean Problem from both Sides (Czech & Brazilian)
                         </h2>
 
                         <p className="text-lg">
                             The first person from a real <span className="font-bold">world of agriculture</span> we
                             spoke to was a farmer{" "}
-                            <A href="#" className="underline hover:text-gray-700">
+                            <A href="#jakub-neuzil" className="underline hover:text-gray-700">
                                 Jakub Neužil
                             </A>
                             . He told us many valuable insights, and agreed that the problem we are focusing on has to

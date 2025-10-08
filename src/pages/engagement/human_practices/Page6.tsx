@@ -17,7 +17,8 @@ export default function HumanPracticesPage6() {
                             to get our hands on the superior plant and learn how to infiltrate it with{" "}
                             <span className="italic">Agrobacterium </span> – both with vacuum and with a syringe.
                             You can read all about it in our{" "}
-                            <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                            <A href="/plant#duckweed-transformation"
+                               className="text-[#538b5e] underline hover:text-[#25512b]">
                                 protocols page
                             </A>.
                         </p>
@@ -64,14 +65,12 @@ export default function HumanPracticesPage6() {
                     defaultOpen={false}
                 >
                     <p className="text-lg">
-                        <span className="font-bold">Dr. Moravec</span> helped us to a great extent in the beginning when
-                        we were
-                        struggling with the basics of{" "}
-                        <span className="font-bold ">plant transformations and cloning</span>.
-                        He advised us on our plasmid designs and transformation processes – read more at{" "}
-                        <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
-                            Attribution page
-                        </A>.
+                        <span className="font-bold">Tomáš</span>, a jack-of-all-trades plant scientist from Prague,
+                        helped us a lot. He gave feedback on
+                        our designs and <span className="font-bold ">proposed several improvements</span> that we
+                        implemented into the DBTL cycles. He also
+                        generously gifted us his “endless” supply of Phusion polymerase, along with several genetic
+                        parts and Agrobacterium clones.
                     </p>
                 </ExpandablePill>
 

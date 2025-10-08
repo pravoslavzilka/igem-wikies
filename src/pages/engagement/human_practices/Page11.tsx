@@ -73,7 +73,7 @@ export default function HumanPracticesPage11() {
                     <span className="font-bold">metabolomic analysis</span> of all our duckweed clones. What a help!
                     Read more about our collaboration in{" "}
                     <A
-                        href="#"
+                        href="/human-practices#czsk-community"
                         className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         Building CzechoSlovak SynBio Community from the Bottom Up

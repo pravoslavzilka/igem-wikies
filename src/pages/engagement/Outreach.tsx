@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import A from "../../A.tsx";
 
 export default function Outreach() {
     return (
