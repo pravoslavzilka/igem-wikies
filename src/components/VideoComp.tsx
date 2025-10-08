@@ -61,7 +61,7 @@ const VideoComp = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         <div className="text-center mb-6 sm:mb-8 md:mb-12 mt-4 md:mt-0">
           <h2
-            className="font-bold text-gray-800 mb-4 text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-tight px-2"
+            className="font-bold text-gray-800 mb-4 text-xl  md:text-2xl lg:text-4xl leading-tight px-2"
             style={{
               fontFamily: "Space Grotesk",
               marginTop: "0.5rem",
@@ -125,7 +125,7 @@ const VideoComp = () => {
       
       {/* Features section - skrytá na mobile */}
       <div className="hidden md:block w-full mt-4 px-4 sm:px-6 md:px-8 overflow-hidden">
-        <div className="flex flex-wrap justify-center gap-y-8 sm:gap-y-10 gap-x-6 sm:gap-x-8 md:gap-x-12 lg:gap-x-16 max-w-7xl mx-auto">
+        <div className="flex  justify-center gap-y-8 sm:gap-y-10 gap-x-6 sm:gap-x-8 md:gap-x-12 lg:gap-x-16 max-w-7xl mx-auto">
           {Features.map((feature, idx) => (
             <div
               key={idx}

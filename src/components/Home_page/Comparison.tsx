@@ -77,8 +77,8 @@ const Comparison = () => {
         className="font-bold text-center"
         style={{
           fontFamily: "Space Grotesk",
-          fontSize: window.innerWidth < 768 ? "1.5rem" : "2.0rem",
-          lineHeight: window.innerWidth < 768 ? "120%" : "normal",
+          fontSize: window.innerWidth < 800 ? "1.5rem" : "2.0rem",
+          lineHeight: window.innerWidth < 800 ? "120%" : "normal",
           marginTop: window.innerWidth < 768 ? "1.5rem" : "1.9rem",
           marginBottom: window.innerWidth < 768 ? "1.5rem" : "2rem",
         }}
@@ -140,7 +140,7 @@ const Comparison = () => {
       </div>
 
       <div className="mt-6 px-2 md:px-8" style={{ display: window.innerWidth < 768 ? 'none' : 'block' }}>
-        <div className="flex flex-wrap justify-center gap-y-10 gap-x-8 md:gap-x-16">
+        <div className="flex  justify-center gap-y-10 gap-x-8 md:gap-x-16">
           {Features.map((feature, idx) => (
             <div
               key={idx}
