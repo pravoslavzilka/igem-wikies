@@ -34,7 +34,7 @@ export default function HumanPracticesPage8() {
                     We decided to gather our own dataset for 12 clones on their growth rates and optimal cultivation
                     conditions and we
                     constructed a{" "}
-                    <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                    <A href="/model" className="text-[#538b5e] underline hover:text-[#25512b]">
                         PREDICTOR
                     </A>{" "}
                     based on them. Now, anyone can use it to conduct their experiments predictably.
@@ -42,7 +42,7 @@ export default function HumanPracticesPage8() {
 
                 <p className="text-lg">
                     But collecting our data was extremely laborious process. Thus, we built{" "}
-                    <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                    <A href="/hardware" className="text-[#538b5e] underline hover:text-[#25512b]">
                         CULTIVATOR
                     </A>{" "}
                     to automate the cultivation process for duckweed researchers and make it repeatable, controlled and
@@ -158,7 +158,7 @@ export default function HumanPracticesPage8() {
                         <p>
                             From here, we had to do real engineering, grab screwdrivers and build it. Continue reading
                             through{" "}
-                            <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                            <A href="#real-world-check" className="text-[#538b5e] underline hover:text-[#25512b]">
                                 Real World Check
                             </A>{" "}
                             to see, how <span className="font-bold">Kateřina and her colleagues</span> came to try out

@@ -123,7 +123,8 @@ export default function HumanPracticesPage7() {
                                 We met few members of <span className="font-bold">iGEM Marburg team </span>
                                 from 2024 on the European iGEM Meetup in Frankfurt. They judged both our
                                 presentation and poster (read more on our{" "}
-                                <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                                <A href="/engagement/outreach"
+                                   className="text-[#538b5e] underline hover:text-[#25512b]">
                                     Outreach page
                                 </A>
                                 ). After the event (besides having fun), we discussed our project and plants
@@ -150,12 +151,8 @@ export default function HumanPracticesPage7() {
                                     <span className="font-bold">modification of their ratiometric approach </span>
                                     in regulatory part testing and could estimate the timeline for the whole
                                     workflow well. Take a look how we implemented their advice into our{" "}
-                                    <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
-                                        in silico workflow
-                                    </A>{" "}
-                                    and{" "}
-                                    <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
-                                        promoter testing
+                                    <A href="/measurement" className="text-[#538b5e] underline hover:text-[#25512b]">
+                                        in silico workflow and promoter testing
                                     </A>
                                     .
                                 </p>
@@ -246,7 +243,11 @@ export default function HumanPracticesPage7() {
                             our first priority before attempting for the synthetic one. She also
                             helped us with{" "}
                             <span className="font-bold">
-                            designing the qPCR probes and also consulted our CRISPR construct strategy.
+                            designing the qPCR probes and also consulted our{" "}
+                                <A href="/plant#crispr" className="text-[#538b5e] underline hover:text-[#25512b]">
+                                CRISPR construct strategy
+                                </A>
+                                    .
                         </span>
                         </p>
                     </div>

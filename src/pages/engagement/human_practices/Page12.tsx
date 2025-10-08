@@ -26,7 +26,7 @@ export default function HumanPracticesPage12() {
                 {/* Intro paragraph */}
                 <p>
                     When we pivoted our project to making{" "}
-                    <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                    <A href="/plant#programmable" className="text-[#538b5e] underline hover:text-[#25512b]">
                         duckweed programmable
                     </A>
                     , we wanted to hear an opinion of the person that{" "}
@@ -71,21 +71,15 @@ export default function HumanPracticesPage12() {
                                 <p>
                                     You can take a look at our{" "}
                                     <A
-                                        href="#"
+                                        href="/safety-and-security"
                                         className="text-[#538b5e] underline hover:text-[#25512b]"
                                     >
                                         Safety
                                     </A>{" "}
                                     page to see, how we integrated this feedback into our project and are making{" "}
+                                    duckweed biosafe with our{" "}
                                     <A
-                                        href="#"
-                                        className="text-[#538b5e] underline hover:text-[#25512b]"
-                                    >
-                                        duckweed biosafe
-                                    </A>{" "}
-                                    with our{" "}
-                                    <A
-                                        href="#"
+                                        href="/plant#crispr"
                                         className="text-[#538b5e] underline hover:text-[#25512b]"
                                     >
                                         CRISPR construct!
@@ -266,7 +260,7 @@ export default function HumanPracticesPage12() {
                     But we believe this will change soon! One part of this process is higher public education about
                     GMOs and that is exactly what we tried to do with our{" "}
                     <A
-                        href="#"
+                        href="/engagement/outreach"
                         className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         Outreach
@@ -278,7 +272,7 @@ export default function HumanPracticesPage12() {
                     Thankfully, by that time, duckweed can be used for a lot of amazing things other than animal feed.
                     Read all about it in{" "}
                     <A
-                        href="#"
+                        href="/plant/why-duckweed"
                         className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         Why duckweed!

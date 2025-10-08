@@ -41,10 +41,10 @@ export default function HumanPracticesPage16() {
                             on that, we tried to construct our pages as user-friendly as possible
                             and came up with the whole concept of the{" "}
                             <A
-                                href="#"
+                                href="/plant"
                                 className="text-[#538b5e] underline hover:text-[#25512b]"
                             >
-                                programmable duckweed
+                                Plant SynBio
                             </A>{" "}
                             page, so that anyone can benefit from our work and build upon it.
                         </p>
@@ -83,7 +83,8 @@ export default function HumanPracticesPage16() {
                     region. Mostly because people don’t know it exists at all! However, there are great
                     initiatives addressing this issue, for instance{" "}
                     <A
-                        href="#"
+                        href="https://czechsynbionode.cz/"
+                        target="blank"
                         className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         Czech SynBio Node
@@ -92,7 +93,7 @@ export default function HumanPracticesPage16() {
                     <span className="font-bold">Pavel Dvořák</span>. We also came up with activities in
                     order to help tried to help, and you can read more about it in{" "}
                     <A
-                        href="#"
+                        href="/engagement/outreach"
                         className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         Outreach

@@ -130,7 +130,7 @@ export default function HumanPracticesPage1() {
                         <span className="font-bold">iGEM Startups</span> program last year (you
                         can read more about it in our{" "}
                         <A
-                            href="/engagement/entrepreneurship"
+                            href="/entrepreneurship"
                             className="text-[#538b5e] underline hover:text-[#25512b]"
                         >
                             entrepreneurship
@@ -172,6 +172,7 @@ export default function HumanPracticesPage1() {
                 </p>
             </div>
 
+            <div id="jakub-neuzil"></div>
             <ExpandablePillNoImage
                 name="Ing. Jakub Neužil"
                 subtitle="South Moravian cattle farmer"

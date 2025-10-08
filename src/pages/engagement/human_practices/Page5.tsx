@@ -144,15 +144,15 @@ export default function HumanPracticesPage9() {
                             TAIFR
                         </A>
                         , identified and created strong endogenous duckweed{" "}
-                        <A href="/project/how/promoters" className="text-[#538b5e] underline hover:text-[#25512b]">
+                        <A href="/measurement" className="text-[#538b5e] underline hover:text-[#25512b]">
                             PROMOTERS
                         </A>
                         , eased scaling of duckweed cultivation with our{" "}
-                        <A href="/project/how/cultivator" className="text-[#538b5e] underline hover:text-[#25512b]">
+                        <A href="/hardware" className="text-[#538b5e] underline hover:text-[#25512b]">
                             CULTIVATOR
                         </A>{" "}
                         and{" "}
-                        <A href="/project/how/predictor/in-silico-cultivation"
+                        <A href="/model"
                            className="text-[#538b5e] underline hover:text-[#25512b]">
                             PREDICTOR
                         </A>

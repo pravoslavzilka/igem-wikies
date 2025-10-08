@@ -107,7 +107,7 @@ export default function HumanPracticesPage2() {
                     <span className="font-bold">iGEM Startup Showcase</span> in Paris (read
                     more in{" "}
                     <A
-                        href="/engagement/nitroduck"
+                        href="/entrepreneurship"
                         className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         NitroDuck story
