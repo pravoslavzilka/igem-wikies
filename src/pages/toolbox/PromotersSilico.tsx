@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import A from "../../A.tsx";
 
 
 const PromotersSilico = () => {
@@ -265,7 +266,7 @@ const PromotersSilico = () => {
               </div>
 
               <p className="text-sm text-gray-600 mt-3 p-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                <strong>Fig 6:</strong>   Schematic overview of the OrthoFinder 2 workflow used for orthology inference and identification of orthogroups from proteomes of Lemnoideae species (taken from OrthoFinder tutorials by David Emms (<Link target='_blank' style={{ color: '#3b82f6' }} to="https://davidemms.github.io">https://davidemms.github.io</Link>).
+                <strong>Fig 6:</strong>   Schematic overview of the OrthoFinder 2 workflow used for orthology inference and identification of orthogroups from proteomes of Lemnoideae species (taken from OrthoFinder tutorials by David Emms (<A target='_blank' style={{ color: '#3b82f6' }} href="https://davidemms.github.io">https://davidemms.github.io</A>).
               </p>
             </div>
 
@@ -346,7 +347,7 @@ const PromotersSilico = () => {
         <h1 className="text-3xl font-bold mb-6 mt-16" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Functional annotation</h1>
 
         <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
-          Candidate genes for promoter search and evaluation are the highest-expressed, but the biological context was not known. In order to reduce the noise introduced by unannotated genes, we performed functional annotation analysis with eggNOGmapper (<Link className='text-blue-500 hover:underline' target='_blank' to="http://eggnog-mapper.embl.de/">http://eggnog-mapper.embl.de/</Link>) [14] [15], a tool providing ontology-based annotation with GO terms and KEGG pathways across a wide range of species. The second reason for such analysis was to account for the fact that the ideal promoters are likely to be associated with housekeeping genes known for their stable expression. 
+          Candidate genes for promoter search and evaluation are the highest-expressed, but the biological context was not known. In order to reduce the noise introduced by unannotated genes, we performed functional annotation analysis with eggNOGmapper (<A className='text-blue-500 hover:underline' target='_blank' href="http://eggnog-mapper.embl.de/">http://eggnog-mapper.embl.de/</A>) [14] [15], a tool providing ontology-based annotation with GO terms and KEGG pathways across a wide range of species. The second reason for such analysis was to account for the fact that the ideal promoters are likely to be associated with housekeeping genes known for their stable expression.
         </p>
 
 
@@ -653,7 +654,7 @@ const PromotersSilico = () => {
 
 
         <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
-          Wondering how the story goes on? Check our <Link className='text-blue-500 hover:underline' to="/wet-lab-experimental-page">Wet Lab Experimental Page </Link>.
+          Wondering how the story goes on? Check our <A className='text-blue-500 hover:underline' href="/wet-lab-experimental-page">Wet Lab Experimental Page </A>.
         </p>
 
 
@@ -686,28 +687,28 @@ const PromotersSilico = () => {
           </p>
           <p className="leading-relaxed">
             [2] The genomes and epigenomes of aquatic plants (Lemnaceae) promote triploid hybridization and clonal reproduction. Evan Ernst, Bradley Abramson, Kenneth Acosta, Phuong T.N. Hoang, Cristian Mateo-Elizalde, Veit Schubert, Buntora Pasaribu, Nolan Hartwick, Kelly Colt, Anthony Aylward, Umamaheswari Ramu, James A. Birchler, Ingo Schubert, Eric Lam, Todd P. Michael, Robert A. Martienssen
-            bioRxiv 2023.08.02.551673; doi: <Link className='text-blue-500 hover:underline' target='_blank' to="https://doi.org/10.1101/2023.08.02.551673">https://doi.org/10.1101/2023.08.02.551673</Link>
+            bioRxiv 2023.08.02.551673; doi: <A className='text-blue-500 hover:underline' target='_blank' href="https://doi.org/10.1101/2023.08.02.551673">https://doi.org/10.1101/2023.08.02.551673</A>
           </p>
           <p className="leading-relaxed">
             [3] Dombey R, Buendía-Ávila D, Barragán-Borrero V, Diezma-Navas L, Ponce-Mañe A, Vargas-Guerrero JM, Elias R, Marí-Ordóñez A. Atypical epigenetic and small RNA control of degenerated transposons and their fragments in clonally reproducing Spirodela polyrhiza. Genome Res. 2025 Mar 18;35(3):522-544. doi: 10.1101/gr.279532.124. PMID: 40037843; PMCID: PMC11960707.
           </p>
           <p className="leading-relaxed">
-            [4] Andrews, S. (2010). FastQC: A Quality Control Tool for High Throughput Sequence Data [Online]. Available online at: <Link className='text-blue-500 hover:underline' target='_blank' to="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/">http://www.bioinformatics.babraham.ac.uk/projects/fastqc/</Link>
+            [4] Andrews, S. (2010). FastQC: A Quality Control Tool for High Throughput Sequence Data [Online]. Available online at: <A className='text-blue-500 hover:underline' target='_blank' href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/">http://www.bioinformatics.babraham.ac.uk/projects/fastqc/</A>
           </p>
           <p className="leading-relaxed">
             [5] Ewels P, Magnusson M, Lundin S, Käller M. MultiQC: summarize analysis results for multiple tools and samples in a single report. Bioinformatics. 2016 Oct 1;32(19):3047-8. doi: 10.1093/bioinformatics/btw354. Epub 2016 Jun 16. PMID: 27312411; PMCID: PMC5039924.
           </p>
           <p className="leading-relaxed">
-            [6] Felix Krueger, Frankie James, Phil Ewels, Ebrahim Afyounian, Michael Weinstein, Benjamin Schuster-Boeckler, Gert Hulselmans, & sclamons. (2023). FelixKrueger/TrimGalore: v0.6.10 - add default decompression path (0.6.10). Zenodo. <Link className='text-blue-500 hover:underline' target='_blank' to="https://doi.org/10.5281/zenodo.7598955">https://doi.org/10.5281/zenodo.7598955</Link>
+            [6] Felix Krueger, Frankie James, Phil Ewels, Ebrahim Afyounian, Michael Weinstein, Benjamin Schuster-Boeckler, Gert Hulselmans, & sclamons. (2023). FelixKrueger/TrimGalore: v0.6.10 - add default decompression path (0.6.10). Zenodo. <A className='text-blue-500 hover:underline' target='_blank' href="https://doi.org/10.5281/zenodo.7598955">https://doi.org/10.5281/zenodo.7598955</A>
           </p>
           <p className="leading-relaxed">
-            [7] Martin, M. (2011). Cutadapt removes adapter sequences from high-throughput sequencing reads. EMBnet.journal, 17(1), pp. 10-12. doi:<Link className='text-blue-500 hover:underline' target='_blank' to="https://doi.org/10.14806/ej.17.1.200">https://doi.org/10.14806/ej.17.1.200</Link>
+            [7] Martin, M. (2011). Cutadapt removes adapter sequences from high-throughput sequencing reads. EMBnet.journal, 17(1), pp. 10-12. doi:<A className='text-blue-500 hover:underline' target='_blank' href="https://doi.org/10.14806/ej.17.1.200">https://doi.org/10.14806/ej.17.1.200</A>
           </p>
           <p className="leading-relaxed">
             [8] Patro, R., Duggal, G., Love, M. I., Irizarry, R. A., & Kingsford, C. (2017). Salmon provides fast and bias-aware quantification of transcript expression. Nature Methods.
           </p>
           <p className="leading-relaxed">
-            [9] Dobin, Alexander et al. “STAR: ultrafast universal RNA-seq aligner.” Bioinformatics (Oxford, England) vol. 29,1 (2013): 15-21. doi:<Link className='text-blue-500 hover:underline' target='_blank' to="https://doi.org/10.1093/bioinformatics/bts635">10.1093/bioinformatics/bts635</Link>
+            [9] Dobin, Alexander et al. “STAR: ultrafast universal RNA-seq aligner.” Bioinformatics (Oxford, England) vol. 29,1 (2013): 15-21. doi:<A className='text-blue-500 hover:underline' target='_blank' href="https://doi.org/10.1093/bioinformatics/bts635">10.1093/bioinformatics/bts635</A>
           </p>
           <p className="leading-relaxed">
             [10] Liao Y, Smyth GK and Shi W (2014). featureCounts: an efficient general purpose program for assigning sequence reads to genomic features. Bioinformatics, 30(7):923-30.

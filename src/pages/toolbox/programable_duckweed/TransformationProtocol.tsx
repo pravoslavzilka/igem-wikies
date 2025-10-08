@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import TextModal, {textSlide} from '../../../components/ui/TextModal.tsx';
 import { Link } from 'react-router-dom';
 import References from '../../../components/References.tsx';
+import A from "../../../A.tsx";
 
 
 
@@ -177,7 +178,7 @@ const TransformationProtocol = () =>  {
 
               <div className="space-y-2" style={{fontFamily: 'Urbanist'}}>
               <p className="text-gray-700"><strong>7)</strong> Put the infiltrated duckweed and Agrobacterium suspension into plates</p>
-              <p className="text-gray-700"><strong>8)</strong> Add <Link className='text-green-600 font-bold' to="/toolbox/predictable-duckweed-protocol/">DCMN</Link> (25 - 30 mL per plate). Do not seal plates.</p>
+              <p className="text-gray-700"><strong>8)</strong> Add <A className='text-green-600 font-bold' href="/toolbox/predictable-duckweed-protocol/">DCMN</A> (25 - 30 mL per plate). Do not seal plates.</p>
               
               <div className="bg-red-50 border border-red-300 p-3 mt-4">
                 <p className="text-red-800 font-medium">

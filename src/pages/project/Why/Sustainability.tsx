@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import A from "../../../A";
 
 const SustainabilityDocument = () => {
     return (
@@ -75,9 +76,9 @@ const SustainabilityDocument = () => {
                                 Our project could become part of the solution.
                             </p>
                             <p className="text-justify leading-relaxed text-gray-800">
-                                Duckweed, a protein-rich animal feed alternative, is sustainably grown in a <Link
-                                className='text-blue-500 hover:underline' to="/hardware">vertical cultivation
-                                system</Link> directly on the livestock farm. It provides an affordable and locally
+                                Duckweed, a protein-rich animal feed alternative, is sustainably grown in a <A
+                                className='text-blue-500 hover:underline' href="/hardware">vertical cultivation
+                                system</A> directly on the livestock farm. It provides an affordable and locally
                                 available feed source for both small- and large-scale farmers, owing to its easily
                                 scalable production (in line with <b>Target 2.3</b>). The cultivation system prevents
                                 nitrogenous substances from ever reaching the soil, thereby significantly reducing
@@ -114,8 +115,8 @@ const SustainabilityDocument = () => {
                             </p>
                             <p className="text-justify leading-relaxed text-gray-800 mb-4">
                                 Additionally, traditional feed crops require extensive irrigation. In contrast,
-                                our <Link className='text-blue-500 hover:underline' to="/hardware">controlled vertical
-                                duckweed cultivation system</Link>, aligned with <b>Target 6.4</b>, maximizes water-use
+                                our <A className='text-blue-500 hover:underline' href="/hardware">controlled vertical
+                                duckweed cultivation system</A>, aligned with <b>Target 6.4</b>, maximizes water-use
                                 efficiency with minimal water loss.
                             </p>
                             <p className="text-justify leading-relaxed text-gray-800">
@@ -257,18 +258,18 @@ const SustainabilityDocument = () => {
                             <p className="leading-relaxed">
                                 [1] United Nations, Department of Economic and Social Affairs Sustainable Development,
                                 'THE 17 GOALS | Sustainable Development'. Accessed: May 29, 2025. [Online].
-                                Available: <Link className='text-blue-500 hover:underline' target='_blank'
-                                                 to="https://sdgs.un.org/goals">https://sdgs.un.org/goals</Link>
+                                Available: <A className='text-blue-500 hover:underline' target='_blank'
+                                                 href="https://sdgs.un.org/goals">https://sdgs.un.org/goals</A>
                             </p>
                             <p className="leading-relaxed">
                                 [2] 'Per capita sources of protein', Our World in Data. Accessed: Jun. 01, 2025.
-                                [Online]. Available: <Link className='text-blue-500 hover:underline' target='_blank'
-                                                           to="https://ourworldindata.org/grapher/per-capita-sources-of-protein">https://ourworldindata.org/grapher/per-capita-sources-of-protein</Link>
+                                [Online]. Available: <A className='text-blue-500 hover:underline' target='_blank'
+                                                           to="https://ourworldindata.org/grapher/per-capita-sources-of-protein">https://ourworldindata.org/grapher/per-capita-sources-of-protein</A>
                             </p>
                             <p className="leading-relaxed">
                                 [3] World Wide Fund for Nature, 'Soy'. Accessed: Jun. 04, 2025. [Online].
-                                Available: <Link className='text-blue-500 hover:underline' target='_blank'
-                                                 to="https://wwf.panda.org/discover/our_focus/food_practice/sustainable_production/soy/">https://wwf.panda.org/discover/our_focus/food_practice/sustainable_production/soy/</Link>
+                                Available: <A className='text-blue-500 hover:underline' target='_blank'
+                                                 to="https://wwf.panda.org/discover/our_focus/food_practice/sustainable_production/soy/">https://wwf.panda.org/discover/our_focus/food_practice/sustainable_production/soy/</A>
                             </p>
                             <p className="leading-relaxed">
                                 [4] P. V. Femeena and R. A. Brennan, 'Lemnaceae as a resilient crop to improve food
@@ -278,9 +279,9 @@ const SustainabilityDocument = () => {
                             </p>
                             <p className="leading-relaxed">
                                 [5] European Environmental Agency, 'Cross-cutting story 4: Nutrients', European
-                                Environment Agency. Accessed: Jun. 01, 2025. [Online]. Available: <Link
+                                Environment Agency. Accessed: Jun. 01, 2025. [Online]. Available: <A
                                 className='text-blue-500 hover:underline' target='_blank'
-                                to="https://www.eea.europa.eu/publications/zero-pollution/cross-cutting-stories/nutrients">https://www.eea.europa.eu/publications/zero-pollution/cross-cutting-stories/nutrients</Link>
+                                to="https://www.eea.europa.eu/publications/zero-pollution/cross-cutting-stories/nutrients">https://www.eea.europa.eu/publications/zero-pollution/cross-cutting-stories/nutrients</A>
                             </p>
                             <p className="leading-relaxed">
                                 [6] J. Xu and G. Shen, 'Growing duckweed in swine wastewater for nutrient recovery and
@@ -295,9 +296,9 @@ const SustainabilityDocument = () => {
                             <p className="leading-relaxed">
                                 [8] R. Parajuli, Q. Langford, D. Tong, E. Moberg, and G. Thoma, 'Measuring and
                                 Mitigating GHGs: Soy | Publications | WWF', World Wildlife Fund. Accessed: Jun. 05,
-                                2025. [Online]. Available: <Link className='text-blue-500 hover:underline'
+                                2025. [Online]. Available: <A className='text-blue-500 hover:underline'
                                                                  target='_blank'
-                                                                 to="https://www.worldwildlife.org/publications/measuring-and-mitigating-ghgs-soy">https://www.worldwildlife.org/publications/measuring-and-mitigating-ghgs-soy</Link>
+                                                                 to="https://www.worldwildlife.org/publications/measuring-and-mitigating-ghgs-soy">https://www.worldwildlife.org/publications/measuring-and-mitigating-ghgs-soy</A>
                             </p>
                         </div>
                     </div>

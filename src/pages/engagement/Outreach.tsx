@@ -126,7 +126,7 @@ export default function Outreach() {
                             </p>
                         </div>
 
-                        <Link to="/engagement/crowdfunding">
+                        <A href="/engagement/crowdfunding">
                             <div
                                 className=" bg-[#538b5e] rounded-lg p-6 text-white min-w-64 flex flex-col md:flex-row items-start ">
                                 <h3 className="text-3xl font-bold mb-4 mt-10 mr-4 text-white"
@@ -138,7 +138,7 @@ export default function Outreach() {
                                     <span className="text-md text-black"><b>Bringing 21 iGEMers to Paris</b></span>
                                 </div>
                             </div>
-                        </Link>
+                        </A>
 
                         <A href="#media">
                             <div

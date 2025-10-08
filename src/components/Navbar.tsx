@@ -81,13 +81,13 @@ const Navbar = () => {
 
   return (
     <nav className="flex items-center justify-between px-4 py-4 bg-white relative z-50">
-      <Link to="/" className="flex items-center space-x-2">
+      <A href="/" className="flex items-center space-x-2">
         <img 
           style={{ height: '60px', marginLeft: '12px' }} 
           src="https://static.igem.wiki/teams/5642/icons/igem-brno-final-transparent.webp"
           alt="Logo"
         />
-      </Link>
+      </A>
 
       {/* Desktop menu centered */}
       <div className="hidden md:flex flex-1 justify-center">
@@ -140,14 +140,14 @@ const Navbar = () => {
                       {item.subItems && (
                         <div className="ml-4 mt-1 mb-2">
                           {item.subItems.map((subItem, subIndex) => (
-                            <Link
+                            <A
                               key={subIndex}
-                              to={subItem.path}
+                              href={subItem.path}
                               className="block px-4 py-1.5 text-md text-gray-600 hover:text-green-600 hover:bg-gray-50 transition-colors"
                               style={{ fontFamily: 'Urbanist, sans-serif' }}
                             >
                               {subItem.label}
-                            </Link>
+                            </A>
                           ))}
                         </div>
                       )}
@@ -203,8 +203,8 @@ const Navbar = () => {
                   <div>
                     {menu.items.map((item, index) => (
                       <div key={index}>
-                        <Link
-                          to={item.path}
+                        <A
+                          href={item.path}
                           className="block px-6 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
                           onClick={() => { setMobileOpen(false); setOpenDropdown(null); }}
                         >
@@ -212,18 +212,18 @@ const Navbar = () => {
                           {item.sublabel && (
                             <div className="text-sm text-gray-500">{item.sublabel}</div>
                           )}
-                        </Link>
+                        </A>
                         {item.subItems && (
                           <div className="ml-4">
                             {item.subItems.map((subItem, subIndex) => (
-                              <Link
+                              <A
                                 key={subIndex}
-                                to={subItem.path}
+                                href={subItem.path}
                                 className="block px-6 py-1.5 text-sm text-gray-600 hover:bg-gray-50 hover:text-green-600 transition-colors"
                                 onClick={() => { setMobileOpen(false); setOpenDropdown(null); }}
                               >
                                 {subItem.label}
-                              </Link>
+                              </A>
                             ))}
                           </div>
                         )}
