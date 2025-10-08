@@ -229,7 +229,7 @@ const PromoterLibrary = () => {
                                 We decided to find genes that are stably expressed not across tissues, but rather across
                                 different Lemnoideae species. We gathered raw transcriptomic data and reference genomes
                                 from
-                                the Lemna.org [8] (Fig. 1) database for species L. gibba 7742, L. japonica 7182, L.
+                                the Lemna.org [8] (Figure 1) database for species L. gibba 7742, L. japonica 7182, L.
                                 minor
                                 9252 and added data of S. polyrhiza 9509 obtained from study [9] of our advisor Dr.
                                 Arturo
@@ -237,7 +237,7 @@ const PromoterLibrary = () => {
                             </p>
                         </div>
                         <div className="md:w-1/2 flex flex-col gap-2 mt-4 md:mt-0 justify-center items-center m-10">
-                            <div className="bg-gray-50 rounded-lg">
+                            <div className="">
 
 
                                 <div className="bg-white rounded">
@@ -248,7 +248,7 @@ const PromoterLibrary = () => {
 
                                 <p className="text-sm text-gray-600 mt-3 p-4"
                                    style={{fontFamily: 'Urbanist, sans-serif'}}>
-                                    <strong>Fig 1:</strong> Example of downloadable reference genome and annotation
+                                    <strong>Figure 1:</strong> Example of downloadable reference genome and annotation
                                     resources from the Lemna.org database. Shown are files related to the Lemna japonica
                                     7182 genome assembly (Le_japonica_7182-REF-CSHL-1.0), including FASTA, GFF3,
                                     protein,
@@ -276,7 +276,7 @@ const PromoterLibrary = () => {
                         First, the quality of input data was checked using FastQC v0.12.1 [10] executed from MultiQC
                         v1.27
                         [11] wrapper- no alarming contents were observed. Trimming wrapper Trim Galore! (0.6.10) [12]
-                        utilizes Cutadapt (4.9) [13] engine to run thorough trimming workflow (Fig. 2). This includes
+                        utilizes Cutadapt (4.9) [13] engine to run thorough trimming workflow (Figure 2). This includes
                         omitting adapters - relicts from sequencing reads identification - low quality read-end bases
                         and
                         handling of pair-end reads. Again we ran FastQC on trimmed data to check for properly executed
@@ -294,7 +294,7 @@ const PromoterLibrary = () => {
                         </div>
 
                         <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                            <strong>Fig 2:</strong> Exemplary Trim Galore! wrapper command-line execution with settings
+                            <strong>Figure 2:</strong> Exemplary Trim Galore! wrapper command-line execution with settings
                         </p>
                     </div>
 
@@ -308,7 +308,7 @@ const PromoterLibrary = () => {
                         faster calculation and lower resource dependencies. However, we have decided to use robust
                         full-genome mapping executed by STAR (2.7.1a) software, since the transcriptome of Lemnoideae
                         species is not reliably annotated. The STAR aligner requires index generation - preprocessing of
-                        specific files used by STAR algorithm. The reads are then aligned to reference genome (Fig. 3)
+                        specific files used by STAR algorithm. The reads are then aligned to reference genome (Figure 3)
                         and
                         output in format of genome-read-map file BAM, that is to be analysed to quantify expression
                         levels.
@@ -323,7 +323,7 @@ const PromoterLibrary = () => {
                         </div>
 
                         <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                            <strong>Fig 3:</strong> STAR aligner command-line settings
+                            <strong>Figure 3:</strong> STAR aligner command-line settings
                         </p>
                     </div>
 
@@ -345,7 +345,7 @@ const PromoterLibrary = () => {
                         </div>
 
                         <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                            <strong>Fig 4:</strong> Execution of featureCount command with settings
+                            <strong>Figure 4:</strong> Execution of featureCount command with settings
 
                         </p>
                     </div>
@@ -355,11 +355,11 @@ const PromoterLibrary = () => {
 
                         <div className="flex items-center">
                             <p className="text-gray-700 leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                                The whole RNA-seq data analysis workflow is displayed step-by-step in the Fig. 5 for
+                                The whole RNA-seq data analysis workflow is displayed step-by-step in the Figure 5 for
                                 clarity.
                             </p>
                         </div>
-                        <div className="bg-gray-50 rounded-lg">
+                        <div className="">
 
 
                             <div className="bg-white rounded">
@@ -369,7 +369,7 @@ const PromoterLibrary = () => {
                             </div>
 
                             <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                                <strong>Fig 5:</strong> RNA-seq expression analysis workflow scheme.
+                                <strong>Figure 5:</strong> RNA-seq expression analysis workflow scheme.
                             </p>
                         </div>
 
@@ -382,7 +382,7 @@ const PromoterLibrary = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-8">
 
 
-                        <div className="bg-gray-50 rounded-lg">
+                        <div className="">
 
 
                             <div className="bg-white rounded">
@@ -392,7 +392,7 @@ const PromoterLibrary = () => {
                             </div>
 
                             <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                                <strong>Fig 6:</strong> Schematic overview of the OrthoFinder 2 workflow used for
+                                <strong>Figure 6:</strong> Schematic overview of the OrthoFinder 2 workflow used for
                                 orthology
                                 inference and identification of orthogroups from proteomes of Lemnoideae species (taken
                                 from
@@ -494,7 +494,7 @@ const PromoterLibrary = () => {
                     </p>
 
 
-                    <div className="bg-gray-50 rounded-lg mt-12">
+                    <div className=" mt-12">
                         <div className="bg-white rounded">
                             <img
                                 src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/2/variance-plot.avif"
@@ -502,7 +502,7 @@ const PromoterLibrary = () => {
                         </div>
 
                         <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                            <strong>Fig 7:</strong> VST-based coefficient of variation (VST) versus rlog-based mean
+                            <strong>Figure 7:</strong> VST-based coefficient of variation (VST) versus rlog-based mean
                             (rlog)
                             expression per orthogroup, used to evaluate stability and strength of gene expression across
                             orthogroups.
@@ -808,10 +808,10 @@ const PromoterLibrary = () => {
                                 </tbody>
                             </table>
 
-                            <div className="bg-gray-50 rounded-lg">
+                            <div className="">
                                 <p className="text-sm text-gray-600 mt-3 p-4"
                                    style={{fontFamily: 'Urbanist, sans-serif'}}>
-                                    <strong>Fig 8:</strong> Summarized table of candidate genes identified by our
+                                    <strong>Figure 8:</strong> Summarized table of candidate genes identified by our
                                     workflow.
                                     Twenty orthogroups with rlog normalized expression mean above 10, the lowest
                                     coefficient
@@ -836,7 +836,7 @@ const PromoterLibrary = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-8">
 
 
-                        <div className="bg-gray-50 rounded-lg">
+                        <div className="">
 
 
                             <div className="bg-white rounded">
@@ -846,7 +846,7 @@ const PromoterLibrary = () => {
                             </div>
 
                             <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                                <strong>Fig 9:</strong> Schematic representation of a gene region showing promoter
+                                <strong>Figure 9:</strong> Schematic representation of a gene region showing promoter
                                 (orange), TSS (green), 5'UTR (red), start codon ATG (light blue), and the CDS (dark
                                 blue;
                                 coding sequence, gene of interest).
