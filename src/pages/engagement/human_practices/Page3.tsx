@@ -1,5 +1,6 @@
 import React from "react";
 import ExpandablePill from "./ExpandablePill";
+import A from "../../../A";
 
 export default function HumanPracticesPage3() {
     return (
@@ -233,12 +234,12 @@ export default function HumanPracticesPage3() {
 
                     <p>
                         But before we dived deep into more SynBio concepts, we managed to land a call
-                        with <span className="font-bold">duckweed farmlord from <a
+                        with <span className="font-bold">duckweed farmlord from <A
                         href="https://www.plantiblefoods.com/"
                         className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                                 Plantible Foods
-                            </a>{" "}. </span>
+                            </A>{" "}. </span>
                         Despite the fact that we were not focusing on the right genetic bottleneck of duckweed
                         application from the start, we knew what is the technical one we needed to address –{" "}
                         <span className="font-bold">

@@ -1,5 +1,6 @@
 import React from 'react';
 import References from '../../components/References';
+import A from "../../A.tsx";
 
 const DuckweedSafety = () => {
   return (
@@ -91,7 +92,7 @@ const DuckweedSafety = () => {
       <div className="mt-12 mb-8">
         <div className="space-y-4 text-gray-700 leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
           <p>
-            <span style={{ fontWeight: 400 }}>Using <a target='_blank' className='hover:underline text-[#6ca033]' href="https://crispor.gi.ucsc.edu/">CRISPOR</a> [2], </span>
+            <span style={{ fontWeight: 400 }}>Using <A target='_blank' className='hover:underline text-[#6ca033]' href="https://crispor.gi.ucsc.edu/">CRISPOR</A> [2], </span>
             <strong>we designed gRNAs&nbsp; targeting THI4</strong>
             <span style={{ fontWeight: 400 }}>
               {" "}
@@ -183,7 +184,7 @@ const DuckweedSafety = () => {
             </p>
             <p>
               <span style={{ fontWeight: 400 }}>
-                We followed good <a target='_blank' className='hover:underline text-[#6ca033]' href="https://www.oecd.org/content/dam/oecd/en/publications/reports/2005/12/good-laboratory-practice_g1gh5db5/9789264012837-en.pdf">laboratory practices </a> (GLP), including sterilising benches
+                We followed good <A target='_blank' className='hover:underline text-[#6ca033]' href="https://www.oecd.org/content/dam/oecd/en/publications/reports/2005/12/good-laboratory-practice_g1gh5db5/9789264012837-en.pdf">laboratory practices </A> (GLP), including sterilising benches
                 before and after use with 70 % ethanol and sterilising flow-boxes with UV
                 light after every use.{" "}
               </span>
@@ -296,9 +297,9 @@ const DuckweedSafety = () => {
               We encourage you to read more about the safety precautions we took and
               professionals we consulted in{" "}
             </span>
-            <a className='hover:underline text-[#6ca033]' target='_blank' href="https://teams.igem.org/5642/safety/safety-final-form/52ec67e6-ea29-4e3c-853f-bd5cf5864346">
+            <A className='hover:underline text-[#6ca033]' target='_blank' href="https://teams.igem.org/5642/safety/safety-final-form/52ec67e6-ea29-4e3c-853f-bd5cf5864346">
               <span>our Safety Form</span>
-            </a>
+            </A>
             <span style={{ fontWeight: 400 }}>.</span>
           </p>
         </>

@@ -1,6 +1,7 @@
 import React from "react";
 import ExpandablePill from "./ExpandablePill";
 import ExpandablePillNoImage from "./ExpandablePillNoImage.tsx";
+import A from "../../../A.tsx";
 
 export default function HumanPracticesPage1() {
     const circles = [
@@ -128,12 +129,12 @@ export default function HumanPracticesPage1() {
                         startup and even took part in{" "}
                         <span className="font-bold">iGEM Startups</span> program last year (you
                         can read more about it in our{" "}
-                        <a
+                        <A
                             href="/engagement/entrepreneurship"
                             className="text-[#538b5e] underline hover:text-[#25512b]"
                         >
                             entrepreneurship
-                        </a>{" "}
+                        </A>{" "}
                         section), contrary to most of the projects that start this program only
                         after finishing the iGEM Competition. But that’s because we approached
                         iGEM from the<span className="font-bold"> ‘problem first’</span>{" "}

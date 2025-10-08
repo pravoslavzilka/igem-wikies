@@ -1,6 +1,7 @@
 import React from "react";
 import ExpandablePill from "./ExpandablePill";
 import StaticPill from "./StaticPill.tsx";
+import A from "../../../A.tsx";
 
 export default function HumanPracticesPage14() {
     return (
@@ -11,9 +12,9 @@ export default function HumanPracticesPage14() {
                 {/* Intro paragraph */}
                 <p>
                     We continued to speak to a lot of people in the{" "}
-                    <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                    <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                         biomanufacturing
-                    </a>{" "}
+                    </A>{" "}
                     field. We won’t elaborate too much on every valuable conversation, but here they are.
                 </p>
 

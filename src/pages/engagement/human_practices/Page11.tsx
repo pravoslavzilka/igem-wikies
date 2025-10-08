@@ -1,5 +1,6 @@
 import React from "react";
 import ExpandablePill from "./ExpandablePill";
+import A from "../../../A.tsx";
 
 export default function HumanPracticesPage11() {
     return (
@@ -71,12 +72,12 @@ export default function HumanPracticesPage11() {
                     <span className="font-bold">iGEMers from Prague</span> came in and helped us by conducting a{" "}
                     <span className="font-bold">metabolomic analysis</span> of all our duckweed clones. What a help!
                     Read more about our collaboration in{" "}
-                    <a
+                    <A
                         href="#"
                         className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         Building CzechoSlovak SynBio Community from the Bottom Up
-                    </a>
+                    </A>
                     !
                 </p>
             </div>

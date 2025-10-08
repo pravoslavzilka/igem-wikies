@@ -1,5 +1,6 @@
 import React from "react";
 import ExpandablePill from "./ExpandablePill";
+import A from "../../../A.tsx";
 
 export default function HumanPracticesPage8() {
     return (
@@ -33,17 +34,17 @@ export default function HumanPracticesPage8() {
                     We decided to gather our own dataset for 12 clones on their growth rates and optimal cultivation
                     conditions and we
                     constructed a{" "}
-                    <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                    <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                         PREDICTOR
-                    </a>{" "}
+                    </A>{" "}
                     based on them. Now, anyone can use it to conduct their experiments predictably.
                 </p>
 
                 <p className="text-lg">
                     But collecting our data was extremely laborious process. Thus, we built{" "}
-                    <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                    <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                         CULTIVATOR
-                    </a>{" "}
+                    </A>{" "}
                     to automate the cultivation process for duckweed researchers and make it repeatable, controlled and
                     easy.
                 </p>
@@ -148,18 +149,18 @@ export default function HumanPracticesPage8() {
                             easily and we went to build that. You can take a look how we integrated Kateřina’s insights
                             into
                             our{" "}
-                            <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                            <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                                 CULTIVATOR
-                            </a>
+                            </A>
                             .
                         </p>
 
                         <p>
                             From here, we had to do real engineering, grab screwdrivers and build it. Continue reading
                             through{" "}
-                            <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                            <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                                 Real World Check
-                            </a>{" "}
+                            </A>{" "}
                             to see, how <span className="font-bold">Kateřina and her colleagues</span> came to try out
                             our
                             finished hardware!
@@ -181,9 +182,9 @@ export default function HumanPracticesPage8() {
                         <p>
                             We reached out to <span className="font-bold">Dr. Mrázek</span> to discuss the controlling
                             system for our{" "}
-                            <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                            <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                                 CULTIVATOR
-                            </a>
+                            </A>
                             . To make it robust and simple, he suggested to use ESP32 as a microcontroller,{" "}
                             <span className="font-bold">RaspberryPi 4B</span> for server and{" "}
                             <span className="font-bold">Wi-Fi communication</span> between the components.
@@ -201,9 +202,9 @@ export default function HumanPracticesPage8() {
                         <p>
                             <span className="font-bold">Petr</span> helped us with choosing the right lights for
                             our{" "}
-                            <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                            <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                                 CULTIVATOR
-                            </a> so that our duckweeds can grow happily and produce large amounts of biomass.
+                            </A> so that our duckweeds can grow happily and produce large amounts of biomass.
                         </p>
                     </div>
                 </ExpandablePill>
@@ -245,9 +246,9 @@ export default function HumanPracticesPage8() {
                                 <span className="font-bold">sensor-controlled medium,</span> where, based on readings,
                                 nutrients are added and mixed with water with a mixing pump. We currently use this setup
                                 in our{" "}
-                                <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                                <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                                     CULTIVATOR
-                                </a>
+                                </A>
                                 . He also suggested a method of{" "}
                                 <span className="font-bold">regularly cleaning</span> the whole pipe system via pumping
                                 acid through the system.

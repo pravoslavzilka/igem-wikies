@@ -1,4 +1,6 @@
-const ThreeHParty = () => { 
+import A from "../../../A.tsx";
+
+const ThreeHParty = () => {
   return (
     <div className="min-h-screen bg-white text-lg " style={{ fontFamily: 'Urbanist, sans-serif' }}>
       {/* Header */}
@@ -104,10 +106,10 @@ const ThreeHParty = () => {
                 <span style={{ fontWeight: 400 }}>
                   , one of the few true venture capitalists in CZ/SK, from
                 </span>
-                <a style={{ color: '#4F46E5' }} href="https://www.linkedin.com/company/zakastartup/">
+                <A style={{ color: '#4F46E5' }} href="https://www.linkedin.com/company/zakastartup/">
                   {" "}
                   <strong>ZAKA VC</strong>
-                </a>
+                </A>
                 <strong>,</strong> <span style={{ fontWeight: 400 }}>Discussion</span>
                 <em>
                   <span style={{ fontWeight: 400 }}>: Why Invest in Startups</span>
@@ -119,15 +121,15 @@ const ThreeHParty = () => {
                   , an experienced startup founder and the worst nightmare of academia,
                   from
                 </span>
-                <a style={{ color: '#4F46E5' }}  href="https://www.linkedin.com/company/presto-ventures/">
+                <A style={{ color: '#4F46E5' }}  href="https://www.linkedin.com/company/presto-ventures/">
                   {" "}
                   <strong>Presto Ventures</strong>
-                </a>
+                </A>
                 <span style={{ fontWeight: 400 }}> &amp;</span>
-                <a style={{ color: '#4F46E5' }}  href="https://www.linkedin.com/company/czech-startup-association/">
+                <A style={{ color: '#4F46E5' }}  href="https://www.linkedin.com/company/czech-startup-association/">
                   {" "}
                   <strong>Czech Startup Association</strong>
-                </a>
+                </A>
                 <strong>, </strong>
                 <span style={{ fontWeight: 400 }}>Discussion</span>
                 <em>

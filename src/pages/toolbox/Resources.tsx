@@ -1,5 +1,6 @@
 import React from 'react';
 import { FileText, Video, BookOpen, ExternalLink } from 'lucide-react';
+import A from "../../A";
 
 const ToolboxResources = () => {
   const resourceCategories = [
@@ -182,18 +183,18 @@ const ToolboxResources = () => {
             <div>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">External Links</h3>
               <div className="space-y-3">
-                <a href="#" className="block p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                <A href="#" className="block p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
                   <h4 className="font-medium text-gray-800 text-sm">NCBI Duckweed Database</h4>
                   <p className="text-xs text-gray-600">Genetic information and sequences</p>
-                </a>
-                <a href="#" className="block p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                </A>
+                <A href="#" className="block p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
                   <h4 className="font-medium text-gray-800 text-sm">International Duckweed Society</h4>
                   <p className="text-xs text-gray-600">Research community and conferences</p>
-                </a>
-                <a href="#" className="block p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                </A>
+                <A href="#" className="block p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
                   <h4 className="font-medium text-gray-800 text-sm">FAO Feed Resources</h4>
                   <p className="text-xs text-gray-600">Global feed and nutrition data</p>
-                </a>
+                </A>
               </div>
             </div>
             

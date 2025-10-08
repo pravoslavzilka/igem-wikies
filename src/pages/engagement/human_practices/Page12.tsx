@@ -1,6 +1,7 @@
 import React from "react";
 import ExpandablePill from "./ExpandablePill";
 import ExpandablePillNoCircle from "./ExpandablePillNoCircle.tsx";
+import A from "../../../A.tsx";
 
 export default function HumanPracticesPage12() {
     return (
@@ -25,18 +26,18 @@ export default function HumanPracticesPage12() {
                 {/* Intro paragraph */}
                 <p>
                     When we pivoted our project to making{" "}
-                    <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                    <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                         duckweed programmable
-                    </a>
+                    </A>
                     , we wanted to hear an opinion of the person that{" "}
                     <span className="font-bold">destroyed our initial concept.</span> You know, just to be sure that
                     it won’t happen again. The one and only,{" "}
                     <span className="font-bold">professor Andrew D. Hanson.</span> Fortunately, he liked making
                     duckweed programmable! And we got a very valuable advice from him on how to ensure biosafe
                     operation of our vertical{" "}
-                    <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                    <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                         CULTIVATORs
-                    </a>{" "}
+                    </A>{" "}
                     around the world, even at farms.
                 </p>
 
@@ -70,26 +71,26 @@ export default function HumanPracticesPage12() {
                                 </p>
                                 <p>
                                     You can take a look at our{" "}
-                                    <a
+                                    <A
                                         href="#"
                                         className="text-[#538b5e] underline hover:text-[#25512b]"
                                     >
                                         Safety
-                                    </a>{" "}
+                                    </A>{" "}
                                     page to see, how we integrated this feedback into our project and are making{" "}
-                                    <a
+                                    <A
                                         href="#"
                                         className="text-[#538b5e] underline hover:text-[#25512b]"
                                     >
                                         duckweed biosafe
-                                    </a>{" "}
+                                    </A>{" "}
                                     with our{" "}
-                                    <a
+                                    <A
                                         href="#"
                                         className="text-[#538b5e] underline hover:text-[#25512b]"
                                     >
                                         CRISPR construct!
-                                    </a>
+                                    </A>
                                 </p>
                             </div>
 
@@ -265,24 +266,24 @@ export default function HumanPracticesPage12() {
                     probably not be anytime soon that our farmers will use the engineered duckweed on their farms.
                     But we believe this will change soon! One part of this process is higher public education about
                     GMOs and that is exactly what we tried to do with our{" "}
-                    <a
+                    <A
                         href="#"
                         className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         Outreach
-                    </a>{" "}
+                    </A>{" "}
                     activities.
                 </p>
 
                 <p>
                     Thankfully, by that time, duckweed can be used for a lot of amazing things other than animal feed.
                     Read all about it in{" "}
-                    <a
+                    <A
                         href="#"
                         className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         Why duckweed!
-                    </a>{" "}
+                    </A>{" "}
                     And if you want to know how we investigated what it takes to make duckweed the{" "}
                     <span className="font-bold">next biotechnology platform</span> for all kinds of applications
                     discussed on that page, continue reading here…

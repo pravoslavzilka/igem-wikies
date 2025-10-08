@@ -1,5 +1,6 @@
 import React from "react";
 import ExpandablePill from "./ExpandablePill.tsx";
+import A from "../../../A.tsx";
 
 export default function HumanPracticesPage9() {
     return (
@@ -46,9 +47,9 @@ export default function HumanPracticesPage9() {
                         in research and industry – painfully slow genetic engineering. To make it faster,
                         we had to leave callus out of the process and somehow obtain stable transformants
                         directly from fronds (more information about frond-mediated transformation at{" "}
-                        <a href="/project/how/taifr/overview" className="text-[#538b5e] underline hover:text-[#25512b]">
+                        <A href="/project/how/taifr/overview" className="text-[#538b5e] underline hover:text-[#25512b]">
                             TAIFR page
-                        </a>
+                        </A>
                         ). Why couldn’t duckweed, with its strong regeneration, produce transgenic offsprings
                         directly from adult tissue? If soybean [15], pea [16], peanut [17], or sweet potato [18]
                         can, what about duckweed? Especially when transient expression is so strong and long-lasting.
@@ -139,22 +140,22 @@ export default function HumanPracticesPage9() {
                     <p>
                         Take a look how we are building our own version of fast and reliable system for
                         duckweed transformation –{" "}
-                        <a href="/project/how/taifr/overview" className="text-[#538b5e] underline hover:text-[#25512b]">
+                        <A href="/project/how/taifr/overview" className="text-[#538b5e] underline hover:text-[#25512b]">
                             TAIFR
-                        </a>
+                        </A>
                         , identified and created strong endogenous duckweed{" "}
-                        <a href="/project/how/promoters" className="text-[#538b5e] underline hover:text-[#25512b]">
+                        <A href="/project/how/promoters" className="text-[#538b5e] underline hover:text-[#25512b]">
                             PROMOTERS
-                        </a>
+                        </A>
                         , eased scaling of duckweed cultivation with our{" "}
-                        <a href="/project/how/cultivator" className="text-[#538b5e] underline hover:text-[#25512b]">
+                        <A href="/project/how/cultivator" className="text-[#538b5e] underline hover:text-[#25512b]">
                             CULTIVATOR
-                        </a>{" "}
+                        </A>{" "}
                         and{" "}
-                        <a href="/project/how/predictor/in-silico-cultivation"
+                        <A href="/project/how/predictor/in-silico-cultivation"
                            className="text-[#538b5e] underline hover:text-[#25512b]">
                             PREDICTOR
-                        </a>
+                        </A>
                         . Watch how we made duckweed programmable and predictable!
                     </p>
                 </div>
@@ -201,9 +202,9 @@ export default function HumanPracticesPage9() {
                     <p>
                         We knew we would be using a version of TATSI for direct frond transformation of
                         duckweed and proposed a solution optimized for it –{" "}
-                        <a href="/project/how/taifr/overview" className="text-[#538b5e] underline hover:text-[#25512b]">
+                        <A href="/project/how/taifr/overview" className="text-[#538b5e] underline hover:text-[#25512b]">
                             TAIFR
-                        </a>{" "}
+                        </A>{" "}
                         (Transposase-Assisted Insertion and Frond Regeneration).
                     </p>
 

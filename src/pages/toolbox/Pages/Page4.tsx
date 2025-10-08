@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import {ChevronDown, ChevronUp} from "lucide-react";
 import DuckweedProtocolReduced from "./DuckweedProtocolReduced.tsx";
 import MediumChangeReduced from "./MediumChangeReduced.tsx";
+import A from "../../../A.tsx";
 
 export default function Page4() {
     const [open, setOpen] = useState(false);
@@ -361,12 +362,12 @@ export default function Page4() {
                         <p>
                             Read how we designed, built, and tested the{" "}
                             <span className="font-bold ">CULTIVATOR</span> on our{" "}
-                            <a
+                            <A
                                 href="/project/how/cultivator/"
                                 className="font-semibold underline text-[#6ca033] hover:text-green-700 transition-colors duration-200"
                             >
                                 Hardware page
-                            </a>
+                            </A>
                             !
                         </p>
                     </div>

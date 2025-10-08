@@ -1,5 +1,6 @@
 import React from 'react';
 import References from '../../../components/References';
+import A from "../../../A";
 
 export default function PartCollection() {
   return (
@@ -112,7 +113,7 @@ export default function PartCollection() {
               </p>
               
               <p className="mb-4">
-                Through discussions with our advisor, Dr. Ordóñez (<a href="#" className="text-blue-600 underline" target="_blank">read more here</a>), and later confirmed by our own experiments using a gifted testing construct, we verified that <strong>transient expression via standard agroinfiltration works efficiently in duckweed</strong> [7]. We therefore concluded that the bottleneck in stable transformation is not expression, but <strong>the low efficiency of <em>Agrobacterium</em> T-DNA insertion into the duckweed genome</strong>.
+                Through discussions with our advisor, Dr. Ordóñez (<A href="#" className="text-blue-600 underline" target="_blank">read more here</A>), and later confirmed by our own experiments using a gifted testing construct, we verified that <strong>transient expression via standard agroinfiltration works efficiently in duckweed</strong> [7]. We therefore concluded that the bottleneck in stable transformation is not expression, but <strong>the low efficiency of <em>Agrobacterium</em> T-DNA insertion into the duckweed genome</strong>.
               </p>
               
               <p className="mb-4">
@@ -129,11 +130,11 @@ export default function PartCollection() {
               </ul>
               
               <p className="mb-4">
-                To customize the TAIFR system, the user digests plasmid pIB005 with Esp3I, generating a 5' overhang (AATG) and a 3' overhang (TTCG) - the standard MoClo CDS1 no stop codon overhangs. The digested backbone can be purified from gel and ligated with any CDS containing correct MoClo-compatible overhangs, allowing simple integration of new genes of interest (see the protocol for ligation of your gene into pIB005 <a href="#" className="text-blue-600 underline" target="_blank">here</a>).
+                To customize the TAIFR system, the user digests plasmid pIB005 with Esp3I, generating a 5' overhang (AATG) and a 3' overhang (TTCG) - the standard MoClo CDS1 no stop codon overhangs. The digested backbone can be purified from gel and ligated with any CDS containing correct MoClo-compatible overhangs, allowing simple integration of new genes of interest (see the protocol for ligation of your gene into pIB005 <A href="#" className="text-blue-600 underline" target="_blank">here</A>).
               </p>
               
               <p className="mb-4">
-                We confirmed the functionality of the first half of our method (Transposase-Assisted Insertion) by verifying mPing-bordered cargo insertion into the duckweed nuclear genome through fluorescence and PCR analysis (see results <a href="#" className="text-blue-600 underline" target="_blank">here</a>). The second part has not yet worked due to several factors (<a href="#" className="text-blue-600 underline" target="_blank">read more here</a>), which is why we have not been able to test whether our Cre-lox system functions as intended.
+                We confirmed the functionality of the first half of our method (Transposase-Assisted Insertion) by verifying mPing-bordered cargo insertion into the duckweed nuclear genome through fluorescence and PCR analysis (see results <A href="#" className="text-blue-600 underline" target="_blank">here</A>). The second part has not yet worked due to several factors (<A href="#" className="text-blue-600 underline" target="_blank">read more here</A>), which is why we have not been able to test whether our Cre-lox system functions as intended.
               </p>
               
               <p className="mb-4">
@@ -169,63 +170,63 @@ export default function PartCollection() {
                   </thead>
                   <tbody className="text-sm">
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25fc90w0" target="_blank" rel="noopener noreferrer">BBa_25FC90W0</a></td>
+                      <td className="px-4 py-3 border-b hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25fc90w0" target="_blank" rel="noopener noreferrer">BBa_25FC90W0</A></td>
                       <td className="px-4 py-3 border-b">PONG ORF1</td>
                       <td className="px-4 py-3 border-b">Pong Transposase, ORF 1 subunit (codon-optimized for duckweed)</td>
                       <td className="px-4 py-3 border-b"><em>Oryza sativa</em></td>
                       <td className="px-4 py-3 border-b">Gene synthesis</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25fwv63m" target="_blank" rel="noopener noreferrer">BBa_25FWV63M</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25fwv63m" target="_blank" rel="noopener noreferrer">BBa_25FWV63M</A></td>
                       <td className="px-4 py-3 border-b">PONG ORF2</td>
                       <td className="px-4 py-3 border-b">Pong Transposase, ORF 2 subunit (codon-optimized for duckweed)</td>
                       <td className="px-4 py-3 border-b"><em>Oryza sativa</em></td>
                       <td className="px-4 py-3 border-b">Gene synthesis</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25n85q45" target="_blank" rel="noopener noreferrer">BBa_25N85Q45</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25n85q45" target="_blank" rel="noopener noreferrer">BBa_25N85Q45</A></td>
                       <td className="px-4 py-3 border-b">mPing</td>
                       <td className="px-4 py-3 border-b">mPing: non-autonomous transposable element</td>
                       <td className="px-4 py-3 border-b"><em>Oryza sativa</em></td>
                       <td className="px-4 py-3 border-b">Gene synthesis</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25ka0lqp" target="_blank" rel="noopener noreferrer">BBa_25KA0LQP</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25ka0lqp" target="_blank" rel="noopener noreferrer">BBa_25KA0LQP</A></td>
                       <td className="px-4 py-3 border-b">0.5mPing</td>
                       <td className="px-4 py-3 border-b">mPing Left (5') Border</td>
                       <td className="px-4 py-3 border-b"><em>Oryza sativa</em></td>
                       <td className="px-4 py-3 border-b">Gene synthesis</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25m7xiji" target="_blank" rel="noopener noreferrer">BBa_25M7XIJI</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25m7xiji" target="_blank" rel="noopener noreferrer">BBa_25M7XIJI</A></td>
                       <td className="px-4 py-3 border-b">1..0mPing</td>
                       <td className="px-4 py-3 border-b">mPing Right (3') Border</td>
                       <td className="px-4 py-3 border-b"><em>Oryza sativa</em></td>
                       <td className="px-4 py-3 border-b">Gene synthesis</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-253u11bj" target="_blank" rel="noopener noreferrer">BBa_253U11BJ</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-253u11bj" target="_blank" rel="noopener noreferrer">BBa_253U11BJ</A></td>
                       <td className="px-4 py-3 border-b">NLS</td>
                       <td className="px-4 py-3 border-b">Nuclear Localization Signal (codon-optimized for duckweed)</td>
                       <td className="px-4 py-3 border-b">Simian virus 40</td>
                       <td className="px-4 py-3 border-b">Gene synthesis</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-k649205" target="_blank" rel="noopener noreferrer">BBa_K649205</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-k649205" target="_blank" rel="noopener noreferrer">BBa_K649205</A></td>
                       <td className="px-4 py-3 border-b">Lox71</td>
                       <td className="px-4 py-3 border-b">Cre recombinase recognition site Lox71</td>
                       <td className="px-4 py-3 border-b">Bacteriophage P1</td>
                       <td className="px-4 py-3 border-b">Gene synthesis</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-k649206" target="_blank" rel="noopener noreferrer">BBa_K649206</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-k649206" target="_blank" rel="noopener noreferrer">BBa_K649206</A></td>
                       <td className="px-4 py-3 border-b">Lox66</td>
                       <td className="px-4 py-3 border-b">Cre recombinase recognition site Lox66</td>
                       <td className="px-4 py-3 border-b">Bacteriophage P1</td>
                       <td className="px-4 py-3 border-b">Gene synthesis</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25vsfer6" target="_blank" rel="noopener noreferrer">BBa_25VSFER6</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25vsfer6" target="_blank" rel="noopener noreferrer">BBa_25VSFER6</A></td>
                       <td className="px-4 py-3 border-b">Cre</td>
                       <td className="px-4 py-3 border-b">Cre recombinase</td>
                       <td className="px-4 py-3 border-b">Bacteriophage P1</td>
@@ -253,19 +254,19 @@ export default function PartCollection() {
                   </thead>
                   <tbody className="text-sm">
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25ubd3db" target="_blank" rel="noopener noreferrer">BBa_25UBD3DB</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25ubd3db" target="_blank" rel="noopener noreferrer">BBa_25UBD3DB</A></td>
                       <td className="px-4 py-3 border-b">PONG</td>
                       <td className="px-4 py-3 border-b">Pong Transposase with Nuclear Localization Sequence (codon-optimized for duckweed)</td>
                       <td className="px-4 py-3 border-b">Own assembly from basic parts</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25bd3z4p" target="_blank" rel="noopener noreferrer">BBa_25BD3Z4P</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25bd3z4p" target="_blank" rel="noopener noreferrer">BBa_25BD3Z4P</A></td>
                       <td className="px-4 py-3 border-b">pIB003</td>
                       <td className="px-4 py-3 border-b">rZmUBI-NLS-Pong-2A-RFP-t35S</td>
                       <td className="px-4 py-3 border-b">Own assembly from basic parts</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25460yvj" target="_blank" rel="noopener noreferrer">BBa_25460YVJ</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25460yvj" target="_blank" rel="noopener noreferrer">BBa_25460YVJ</A></td>
                       <td className="px-4 py-3 border-b">pIB005</td>
                       <td className="px-4 py-3 border-b">0.5mPing-rZmUBI-eGFP-lox71-p2a-NPTII-lox66-t35S-1.0mPing</td>
                       <td className="px-4 py-3 border-b">Own assembly from basic parts</td>
@@ -348,56 +349,56 @@ export default function PartCollection() {
                   </thead>
                   <tbody className="text-sm">
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25ee5kq2" target="_blank" rel="noopener noreferrer">BBa_25EE5KQ2</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25ee5kq2" target="_blank" rel="noopener noreferrer">BBa_25EE5KQ2</A></td>
                       <td className="px-4 py-3 border-b">Cas9</td>
                       <td className="px-4 py-3 border-b">Cas9 endonuclease</td>
                       <td className="px-4 py-3 border-b"><em>Streptococcus pyogenes</em></td>
                       <td className="px-4 py-3 border-b">Gifted by Dr. Helene Robert Boisivon</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-k4761029" target="_blank" rel="noopener noreferrer">BBa_K4761029</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-k4761029" target="_blank" rel="noopener noreferrer">BBa_K4761029</A></td>
                       <td className="px-4 py-3 border-b">gRNA scaffold</td>
                       <td className="px-4 py-3 border-b">tracrRNA repeats</td>
                       <td className="px-4 py-3 border-b">synthetic</td>
                       <td className="px-4 py-3 border-b">MoClo Plant Parts III: Transformation & Genome Engineering Kit by Voytas Lab</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-k4761029" target="_blank" rel="noopener noreferrer">BBa_K4761029</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-k4761029" target="_blank" rel="noopener noreferrer">BBa_K4761029</A></td>
                       <td className="px-4 py-3 border-b">Pol III terminator</td>
                       <td className="px-4 py-3 border-b">Terminator of gRNA transcription</td>
                       <td className="px-4 py-3 border-b">synthetic</td>
                       <td className="px-4 py-3 border-b">MoClo Plant Parts III: Transformation & Genome Engineering Kit by Voytas Lab</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25h0j6yd" target="_blank" rel="noopener noreferrer">BBa_25H0J6YD</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25h0j6yd" target="_blank" rel="noopener noreferrer">BBa_25H0J6YD</A></td>
                       <td className="px-4 py-3 border-b">rOsU6</td>
                       <td className="px-4 py-3 border-b">U6 promoter</td>
                       <td className="px-4 py-3 border-b"><em>Oryza sativa</em></td>
                       <td className="px-4 py-3 border-b">MoClo Plant Parts III: Transformation & Genome Engineering Kit by Voytas Lab</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25m0pci1" target="_blank" rel="noopener noreferrer">BBa_25M0PCI1</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25m0pci1" target="_blank" rel="noopener noreferrer">BBa_25M0PCI1</A></td>
                       <td className="px-4 py-3 border-b">filler</td>
                       <td className="px-4 py-3 border-b">Esp3I-flanked placeholder sequence (user-replaceable)</td>
                       <td className="px-4 py-3 border-b">synthetic</td>
                       <td className="px-4 py-3 border-b">pAMO142 from Dr. Arturo-Mari Ordóñez</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25m7nm5y" target="_blank" rel="noopener noreferrer">BBa_25M7NM5Y</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25m7nm5y" target="_blank" rel="noopener noreferrer">BBa_25M7NM5Y</A></td>
                       <td className="px-4 py-3 border-b">eGFP_KO1</td>
                       <td className="px-4 py-3 border-b">Forward gRNA oligonucleotide</td>
                       <td className="px-4 py-3 border-b">synthetic</td>
                       <td className="px-4 py-3 border-b">Identified using CRISPOR</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25lgnzag" target="_blank" rel="noopener noreferrer">BBa_25LGNZAG</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25lgnzag" target="_blank" rel="noopener noreferrer">BBa_25LGNZAG</A></td>
                       <td className="px-4 py-3 border-b">eGFP_KO2</td>
                       <td className="px-4 py-3 border-b">Forward gRNA oligonucleotide</td>
                       <td className="px-4 py-3 border-b">synthetic</td>
                       <td className="px-4 py-3 border-b">Identified using CRISPOR</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25oz9s9i" target="_blank" rel="noopener noreferrer">BBa_25OZ9S9I</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25oz9s9i" target="_blank" rel="noopener noreferrer">BBa_25OZ9S9I</A></td>
                       <td className="px-4 py-3 border-b">eGFP_KO3</td>
                       <td className="px-4 py-3 border-b">Forward gRNA oligonucleotide</td>
                       <td className="px-4 py-3 border-b">synthetic</td>
@@ -425,7 +426,7 @@ export default function PartCollection() {
                   </thead>
                   <tbody className="text-sm">
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-252t3xrc" target="_blank" rel="noopener noreferrer">BBa_252T3XRC</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-252t3xrc" target="_blank" rel="noopener noreferrer">BBa_252T3XRC</A></td>
                       <td className="px-4 py-3 border-b">pIB006</td>
                       <td className="px-4 py-3 border-b">CRISPR/Cas9-based knockout tool for monocot plants</td>
                       <td className="px-4 py-3 border-b">Own assembly from basic parts</td>
@@ -467,7 +468,7 @@ export default function PartCollection() {
             <div className="mb-8">
               <img src="https://static.igem.wiki/teams/5642/images/toolbox/partcollection/promotres-circular-copy.webp" alt="Promoter Testing Construct Design" className="w-full h-auto mb-4 rounded-lg" />
               <p className="text-base " style={{fontFamily: 'Urbanist'}}>
-                <strong>Figure 4.</strong> Schematic representation of the promoter testing construct design, which enabled a ratiometric approach for quantitative testing of promoter-driven expression (<a href="#" className="text-blue-600 underline" target="_blank">read more here</a>). Altogether, we created 14 testing constructs — seven using RUBY (an enzyme complex producing the red betalain pigment, visible to the naked eye and allowing rapid functionality checks) and seven using RFP (Red Fluorescent Protein) as the reporter gene for quantitative analysis by qPCR. Both versions of the first ORF are terminated by the Cauliflower Mosaic Virus terminator (t35S). The second ORF is identical across all 14 constructs, allowing us to directly compare the expression levels of candidate promoters with the nopaline synthase promoter (rNOS), which has previously shown reliable activity in duckweed. The rNOS promoter drives the expression of the neomycin phosphotransferase II (NPTII) gene, which is terminated by the nopaline synthase terminator (tNOS). Both rNOS and tNOS are derived from <em>Agrobacterium tumefaciens</em>. The entire expression cassette is flanked by T-DNA borders for <em>Agrobacterium</em>-mediated transformation and housed in a binary vector capable of replication in both <em>E. coli</em> and <em>Agrobacterium tumefaciens</em>.
+                <strong>Figure 4.</strong> Schematic representation of the promoter testing construct design, which enabled a ratiometric approach for quantitative testing of promoter-driven expression (<A href="#" className="text-blue-600 underline" target="_blank">read more here</A>). Altogether, we created 14 testing constructs — seven using RUBY (an enzyme complex producing the red betalain pigment, visible to the naked eye and allowing rapid functionality checks) and seven using RFP (Red Fluorescent Protein) as the reporter gene for quantitative analysis by qPCR. Both versions of the first ORF are terminated by the Cauliflower Mosaic Virus terminator (t35S). The second ORF is identical across all 14 constructs, allowing us to directly compare the expression levels of candidate promoters with the nopaline synthase promoter (rNOS), which has previously shown reliable activity in duckweed. The rNOS promoter drives the expression of the neomycin phosphotransferase II (NPTII) gene, which is terminated by the nopaline synthase terminator (tNOS). Both rNOS and tNOS are derived from <em>Agrobacterium tumefaciens</em>. The entire expression cassette is flanked by T-DNA borders for <em>Agrobacterium</em>-mediated transformation and housed in a binary vector capable of replication in both <em>E. coli</em> and <em>Agrobacterium tumefaciens</em>.
               </p>
             </div>
 
@@ -495,49 +496,49 @@ export default function PartCollection() {
                 </thead>
                 <tbody className="text-sm">
                   <tr className="hover:bg-gray-50">
-                    <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25i17jf4" target="_blank" rel="noopener noreferrer">BBa_25I17JF4</a></td>
+                    <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25i17jf4" target="_blank" rel="noopener noreferrer">BBa_25I17JF4</A></td>
                     <td className="px-4 py-3 border-b">rSpARF</td>
                     <td className="px-4 py-3 border-b">ARF guanine-nucleotide exchange factor GNOM-like</td>
                     <td className="px-4 py-3 border-b">BBa_2585T3NW</td>
                     <td className="px-4 py-3 border-b">BBa_25Y8HUHL</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
-                    <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25bkk15t" target="_blank" rel="noopener noreferrer">BBa_25BKKI5T</a></td>
+                    <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25bkk15t" target="_blank" rel="noopener noreferrer">BBa_25BKKI5T</A></td>
                     <td className="px-4 py-3 border-b">rSpPOL</td>
                     <td className="px-4 py-3 border-b">DNA polymerase epsilon catalytic subunit A</td>
                     <td className="px-4 py-3 border-b">BBa_250PDDO2</td>
                     <td className="px-4 py-3 border-b">BBa_2517VDHR</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
-                    <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25y6vxt4" target="_blank" rel="noopener noreferrer">BBa_25Y6VXT4</a></td>
+                    <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25y6vxt4" target="_blank" rel="noopener noreferrer">BBa_25Y6VXT4</A></td>
                     <td className="px-4 py-3 border-b">rSpUBI</td>
                     <td className="px-4 py-3 border-b">E3 ubiquitin protein-ligase</td>
                     <td className="px-4 py-3 border-b">BBa_25S6OHZT</td>
                     <td className="px-4 py-3 border-b">BBa_25J4RA0E</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
-                    <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25boso9d" target="_blank" rel="noopener noreferrer">BBa_25BOSO9D</a></td>
+                    <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25boso9d" target="_blank" rel="noopener noreferrer">BBa_25BOSO9D</A></td>
                     <td className="px-4 py-3 border-b">rSpWDP</td>
                     <td className="px-4 py-3 border-b">WD domain containing protein</td>
                     <td className="px-4 py-3 border-b">BBa_25KE7JLC</td>
                     <td className="px-4 py-3 border-b">BBa_251AYM84</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
-                    <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-2583vr6z" target="_blank" rel="noopener noreferrer">BBa_2583VR6Z</a></td>
+                    <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-2583vr6z" target="_blank" rel="noopener noreferrer">BBa_2583VR6Z</A></td>
                     <td className="px-4 py-3 border-b">rLmACC</td>
                     <td className="px-4 py-3 border-b">Acetyl-CoA carboxylase</td>
                     <td className="px-4 py-3 border-b">BBa_256R1OJ3</td>
                     <td className="px-4 py-3 border-b">BBa_252L515X</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
-                    <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25fq6hr0" target="_blank" rel="noopener noreferrer">BBa_25FQ6HR0</a></td>
+                    <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25fq6hr0" target="_blank" rel="noopener noreferrer">BBa_25FQ6HR0</A></td>
                     <td className="px-4 py-3 border-b">rLmUBI</td>
                     <td className="px-4 py-3 border-b">E3 ubiquitin protein-ligase</td>
                     <td className="px-4 py-3 border-b">BBa_25ROOR0N</td>
                     <td className="px-4 py-3 border-b">BBa_25FWSDZY</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
-                    <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25goufc" target="_blank" rel="noopener noreferrer">BBa_25GOUFCY</a></td>
+                    <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25goufc" target="_blank" rel="noopener noreferrer">BBa_25GOUFCY</A></td>
                     <td className="px-4 py-3 border-b">rLmAUX</td>
                     <td className="px-4 py-3 border-b">Auxin transport protein</td>
                     <td className="px-4 py-3 border-b">BBa_25RBVHJQ</td>
@@ -575,7 +576,7 @@ export default function PartCollection() {
                   </thead>
                   <tbody className="text-sm">
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25qfse2x" target="_blank" rel="noopener noreferrer">BBa_25QFSE2X</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25qfse2x" target="_blank" rel="noopener noreferrer">BBa_25QFSE2X</A></td>
                       <td className="px-4 py-3 border-b">promoter + 5' UTR</td>
                       <td className="px-4 py-3 border-b">rZmUBI</td>
                       <td className="px-4 py-3 border-b">Ubiquitin promoter + 5'UTR</td>
@@ -583,7 +584,7 @@ export default function PartCollection() {
                       <td className="px-4 py-3 border-b">MoClo Plant Parts II Infrastructure Kit deposited by Stuttmann Lab</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-259wq7y7" target="_blank" rel="noopener noreferrer">BBa_259WQ7Y7</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-259wq7y7" target="_blank" rel="noopener noreferrer">BBa_259WQ7Y7</A></td>
                       <td className="px-4 py-3 border-b">promoter + 5' UTR</td>
                       <td className="px-4 py-3 border-b">rNOS-TMV</td>
                       <td className="px-4 py-3 border-b">Nopaline synthase promoter + 5' UTR TMV</td>
@@ -591,7 +592,7 @@ export default function PartCollection() {
                       <td className="px-4 py-3 border-b">MoClo Plant Parts Kit deposited by Patron lab</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25vyq6q2" target="_blank" rel="noopener noreferrer">BBa_25VYQ6Q2</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25vyq6q2" target="_blank" rel="noopener noreferrer">BBa_25VYQ6Q2</A></td>
                       <td className="px-4 py-3 border-b">CDS</td>
                       <td className="px-4 py-3 border-b">NPTII</td>
                       <td className="px-4 py-3 border-b">Neomycin phosphotranferase II</td>
@@ -599,7 +600,7 @@ export default function PartCollection() {
                       <td className="px-4 py-3 border-b">MoClo Plant Parts II Infrastructure Kit deposited by Stuttmann Lab</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25z3hgcf" target="_blank" rel="noopener noreferrer">BBa_25Z3HGCF</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25z3hgcf" target="_blank" rel="noopener noreferrer">BBa_25Z3HGCF</A></td>
                       <td className="px-4 py-3 border-b">CDS</td>
                       <td className="px-4 py-3 border-b">eGFP</td>
                       <td className="px-4 py-3 border-b">Enhanced green fluorescent protein</td>
@@ -607,7 +608,7 @@ export default function PartCollection() {
                       <td className="px-4 py-3 border-b">MoClo Plant Parts III: Transformation & Genome Engineering Kit by Voytas Lab</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25wrnvq0" target="_blank" rel="noopener noreferrer">BBa_25WRNVQ0</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25wrnvq0" target="_blank" rel="noopener noreferrer">BBa_25WRNVQ0</A></td>
                       <td className="px-4 py-3 border-b">CDS</td>
                       <td className="px-4 py-3 border-b">RFP</td>
                       <td className="px-4 py-3 border-b">Red fluorescent protein (codon-optimized for duckweed)</td>
@@ -615,7 +616,7 @@ export default function PartCollection() {
                       <td className="px-4 py-3 border-b">Own synthesis</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25wes1bn" target="_blank" rel="noopener noreferrer">BBa_25WES1BN</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25wes1bn" target="_blank" rel="noopener noreferrer">BBa_25WES1BN</A></td>
                       <td className="px-4 py-3 border-b">terminator + 3' UTR</td>
                       <td className="px-4 py-3 border-b">AtuOCS</td>
                       <td className="px-4 py-3 border-b">Octopine synthase terminator + 3'UTR</td>
@@ -623,7 +624,7 @@ export default function PartCollection() {
                       <td className="px-4 py-3 border-b">MoClo Plant Parts Kit deposited by Patron lab</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-k3900016" target="_blank" rel="noopener noreferrer">BBa_K3900016</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-k3900016" target="_blank" rel="noopener noreferrer">BBa_K3900016</A></td>
                       <td className="px-4 py-3 border-b">terminator + 3' UTR</td>
                       <td className="px-4 py-3 border-b">t35S</td>
                       <td className="px-4 py-3 border-b">35S Terminator + 3'UTR</td>
@@ -653,35 +654,35 @@ export default function PartCollection() {
                   </thead>
                   <tbody className="text-sm">
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-252fui3p" target="_blank" rel="noopener noreferrer">BBa_252FUI3P</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-252fui3p" target="_blank" rel="noopener noreferrer">BBa_252FUI3P</A></td>
                       <td className="px-4 py-3 border-b">reporter</td>
                       <td className="px-4 py-3 border-b">pTM001</td>
                       <td className="px-4 py-3 border-b">p2a-eGFP</td>
                       <td className="px-4 py-3 border-b">Gifted by Dr. Tomáš Moravec</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25hi9lhm" target="_blank" rel="noopener noreferrer">BBa_25HI9LHM</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25hi9lhm" target="_blank" rel="noopener noreferrer">BBa_25HI9LHM</A></td>
                       <td className="px-4 py-3 border-b">reporter</td>
                       <td className="px-4 py-3 border-b">p2a-RFP</td>
                       <td className="px-4 py-3 border-b">p2a-RFP (codon-optimized for duckweed)</td>
                       <td className="px-4 py-3 border-b">Own synthesis</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-250g5ni2" target="_blank" rel="noopener noreferrer">BBa_250G5NI2</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-250g5ni2" target="_blank" rel="noopener noreferrer">BBa_250G5NI2</A></td>
                       <td className="px-4 py-3 border-b">PONG excision activity testing construct</td>
                       <td className="px-4 py-3 border-b">pIB004</td>
                       <td className="px-4 py-3 border-b">rZmUBI-5'YFP-mPing-3'YFP-t35S</td>
                       <td className="px-4 py-3 border-b">Own assembly from basic parts</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-25dnbygj" target="_blank" rel="noopener noreferrer">BBa_25DNBYGJ</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-25dnbygj" target="_blank" rel="noopener noreferrer">BBa_25DNBYGJ</A></td>
                       <td className="px-4 py-3 border-b">plasmid</td>
                       <td className="px-4 py-3 border-b">pAMO101</td>
                       <td className="px-4 py-3 border-b">rZmUBI-GFP-t35S</td>
                       <td className="px-4 py-3 border-b">Gifted by Dr. Arturo-Mari Ordóñez</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><a className='' href="https://registry.igem.org/parts/bba-253a2zv8" target="_blank" rel="noopener noreferrer">BBa_253A2ZV8</a></td>
+                      <td className="px-4 py-3 border-b  hover:bg-yellow-100"><A className='' href="https://registry.igem.org/parts/bba-253a2zv8" target="_blank" rel="noopener noreferrer">BBa_253A2ZV8</A></td>
                       <td className="px-4 py-3 border-b">plasmid</td>
                       <td className="px-4 py-3 border-b">pAMO052</td>
                       <td className="px-4 py-3 border-b">rZmUBI-RUBY-t35S</td>

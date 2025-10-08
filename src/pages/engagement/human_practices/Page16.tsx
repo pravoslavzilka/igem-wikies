@@ -1,6 +1,7 @@
 import React from "react";
 import ExpandablePill from "./ExpandablePill";
 import ExpandablePillNoImage from "./ExpandablePillNoImage.tsx";
+import A from "../../../A.tsx";
 
 export default function HumanPracticesPage16() {
     return (
@@ -16,12 +17,12 @@ export default function HumanPracticesPage16() {
                     <div className="leading-relaxed text-lg space-y-6">
                         <p>
                             Besides consulting our promoter design and{" "}
-                            <a
+                            <A
                                 href="#"
                                 className="text-[#538b5e] underline hover:text-[#25512b]"
                             >
                                 in silico workflow
-                            </a>
+                            </A>
                             , we talked with iGEM Marburg 2024 about good wiki practices,
                             prioritizing our work and team performance. This sentence resonates
                             with us the most:{" "}
@@ -45,12 +46,12 @@ export default function HumanPracticesPage16() {
                             <span className="font-bold">Plant Engineering Committee.</span> Based
                             on that, we tried to construct our pages as user-friendly as possible
                             and came up with the whole concept of the{" "}
-                            <a
+                            <A
                                 href="#"
                                 className="text-[#538b5e] underline hover:text-[#25512b]"
                             >
                                 programmable duckweed
-                            </a>{" "}
+                            </A>{" "}
                             page, so that anyone can benefit from our work and build upon it.
                         </p>
 
@@ -87,21 +88,21 @@ export default function HumanPracticesPage16() {
                     <span className="font-bold">Synthetic biology</span> is not the most popular field in our
                     region. Mostly because people don’t know it exists at all! However, there are great
                     initiatives addressing this issue, for instance{" "}
-                    <a
+                    <A
                         href="#"
                         className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         Czech SynBio Node
-                    </a>{" "}
+                    </A>{" "}
                     founded by our PI{" "}
                     <span className="font-bold">Pavel Dvořák</span>. We also came up with activities in
                     order to help tried to help, and you can read more about it in{" "}
-                    <a
+                    <A
                         href="#"
                         className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         Outreach
-                    </a>
+                    </A>
                     .
                 </p>
 
@@ -125,12 +126,12 @@ export default function HumanPracticesPage16() {
                             <span className="font-bold">started the iGEM team</span>, for the first time in
                             Prague. Since then, we took part in three meetups together and shared our
                             experience. <span className="font-bold">They even helped us</span> by attempting{" "}
-                            <a
+                            <A
                                 href="#"
                                 className="text-[#538b5e] underline hover:text-[#25512b]"
                             >
                                 metabolomics analysis
-                            </a>{" "}
+                            </A>{" "}
                             on our duckweeds to evaluate their potential as animal feed, though the results could{" "}
                             not be obtained in the end.
                         </p>
