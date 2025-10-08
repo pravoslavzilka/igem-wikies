@@ -1,5 +1,6 @@
 import React from "react";
 import ExpandablePill from "./ExpandablePill";
+import A from "../../../A.tsx";
 
 export default function HumanPracticesPage7() {
     return (
@@ -122,9 +123,9 @@ export default function HumanPracticesPage7() {
                                 We met few members of <span className="font-bold">iGEM Marburg team </span>
                                 from 2024 on the European iGEM Meetup in Frankfurt. They judged both our
                                 presentation and poster (read more on our{" "}
-                                <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                                <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                                     Outreach page
-                                </a>
+                                </A>
                                 ). After the event (besides having fun), we discussed our project and plants
                                 in general for hours and we got into{" "}
                                 <span className="font-bold">plant regulatory parts exploration. </span>
@@ -149,13 +150,13 @@ export default function HumanPracticesPage7() {
                                     <span className="font-bold">modification of their ratiometric approach </span>
                                     in regulatory part testing and could estimate the timeline for the whole
                                     workflow well. Take a look how we implemented their advice into our{" "}
-                                    <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                                    <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                                         in silico workflow
-                                    </a>{" "}
+                                    </A>{" "}
                                     and{" "}
-                                    <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                                    <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                                         promoter testing
-                                    </a>
+                                    </A>
                                     .
                                 </p>
                             </div>
@@ -183,9 +184,9 @@ export default function HumanPracticesPage7() {
                             Although Marburg workflow was very robust and user-friendly, they didn’t have
                             to face the problem of lack of transcriptomes available for one species (read
                             more about that in{" "}
-                            <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                            <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                                 in silico promoter workflow
-                            </a>
+                            </A>
                             ). Therefore, we had to opt for{" "}
                             <span className="font-bold">orthology analysis </span> – grouping genes across
                             multiple species into groups of ones with similar origin – orthogroups. From

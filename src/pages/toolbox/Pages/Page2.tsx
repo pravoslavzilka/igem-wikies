@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
-import {ChevronDown, ChevronUp} from "lucide-react"; // npm install lucide-react
+import {ChevronDown, ChevronUp} from "lucide-react";
+import A from "../../../A.tsx"; // npm install lucide-react
 
 export default function Page2() {
     const [open, setOpen] = useState(false);
@@ -207,9 +208,9 @@ export default function Page2() {
                                         <strong>pIB003</strong> construct into electropotent{" "}
                                         <em>Agrobacterium</em> cells using our{" "}
                                         <u>
-                                            <a href="/toolbox/agrobacterium-mediated-transformation-protocol/">
+                                            <A href="/toolbox/agrobacterium-mediated-transformation-protocol/">
                                                 Electroporation Protocol
-                                            </a></u>.
+                                            </A></u>.
                                     </li>
                                     <li>
                                         Select positive <em>Agrobacterium</em> colonies using primers o160 and
@@ -219,9 +220,9 @@ export default function Page2() {
                                     <li>
                                         Depending on your desired outcome and using{" "}
                                         <u>
-                                            <a href="/toolbox/programable-duckweed-protocol/">
+                                            <A href="/toolbox/programable-duckweed-protocol/">
                                                 Duckweed Transformation Protocol
-                                            </a></u>, transform duckweed with{" "}
+                                            </A></u>, transform duckweed with{" "}
                                         <em>Agrobacterium</em> containing:
                                         <ul className="list-disc list-inside ml-6 mt-2 space-y-1">
                                             <li>
@@ -326,12 +327,12 @@ export default function Page2() {
                         <p className="text-lg">
                             We performed four and half DBTL cycles to enable fast and
                             user-friendly genetic engineering of duckweed (
-                            <a
+                            <A
                                 href="#"
                                 className="underline text-gray-800 hover:text-gray-600"
                             >
                                 read more here
-                            </a>
+                            </A>
                             ).
                         </p>
 

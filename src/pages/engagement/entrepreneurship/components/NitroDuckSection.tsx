@@ -1,5 +1,6 @@
 // src/pages/engagement/entrepreneurship/components/NitroDuckSection.tsx
 import React from 'react';
+import A from "../../../../A.tsx";
 
 const NitroDuckSection: React.FC = () => {
     return (
@@ -27,12 +28,12 @@ const NitroDuckSection: React.FC = () => {
 
                     <p className="text-gray-800 leading-relaxed text-lg">
                         Either way, we took part in the{' '}
-                        <a
+                        <A
                             href="https://startups.igem.org"
                             className="text-blue-600 hover:underline"
                         >
                             iGEM Startups
-                        </a>
+                        </A>
                         {' '}BioHackathon back in March 2024. This Instagram screenshot summarizes well how it went.
                     </p>
 

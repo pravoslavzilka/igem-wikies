@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import A from "../../A.tsx";
 
 const Partners = () => {
   return (
@@ -65,7 +66,7 @@ const Partners = () => {
 
                   has been a key strategic partner in our journey. Through programs like student scholarships and Start Your Business, MUNI SCI provided us with the resources to launch iGEM Brno. Their support, together with <b>Spolek přátel MU</b>, enabled our founding members to attend the BioInnovation Fair at the iGEM Grand Jamboree, which motivated us to establish the iGEM Brno team. MUNI SCI further supported our research through scholarships, internships, and funding that covered all iGEM fees and travel expenses. Moreover, MUNI helped us carry out PR activities for our crowdfunding campaign and funded the production of our presentation video, enabling us to tell our story in a professional way. Special thanks go to the <b>Dean of the Faculty, Prof. Tomáš Kašparovský</b>, for his willingness to support our activities - we truly appreciate it.
                  <span className='hover:underline text-[#6ca033]'>
-                  <a target="_blank" href="https://sci.muni.cz"> sci.muni.cz</a>
+                  <A target="_blank" href="https://sci.muni.cz"> sci.muni.cz</A>
                 </span>
               
              </p>
@@ -157,15 +158,15 @@ const Partners = () => {
                     in our project and commitment to advancing duckweed as a real future food
                     have been invaluable.{" "}
                 </span>
-                <a className='hover:underline text-[#6ca033]' target="_blank" href="https://www.greenonyx.ag/">
+                <A className='hover:underline text-[#6ca033]' target="_blank" href="https://www.greenonyx.ag/">
                     <strong>greenonyx.ag</strong>
-                </a>  
+                </A>  
                 <span style={{ fontWeight: 400 }}>
                     . Dr. Shoham also collaborated with us on an interview for the{" "}
                 </span>
-                <a target="_blank" rel="noopener noreferrer" href="http://www.ruduckweed.org/uploads/1/0/8/9/10896289/duckweed_forum_issue_50.pdf?fbclid=PAQ0xDSwMfeHZleHRuA2FlbQIxMQABpxDMlsGrXOqInppmjlmxbeLfOPZ2g8u0vSXTmQ0KICPgfvBORU91F5cNsyML_aem_bWYQ0UdFdfLugRMv9R-QgA">
+                <A target="_blank" rel="noopener noreferrer" href="http://www.ruduckweed.org/uploads/1/0/8/9/10896289/duckweed_forum_issue_50.pdf?fbclid=PAQ0xDSwMfeHZleHRuA2FlbQIxMQABpxDMlsGrXOqInppmjlmxbeLfOPZ2g8u0vSXTmQ0KICPgfvBORU91F5cNsyML_aem_bWYQ0UdFdfLugRMv9R-QgA">
                     <span className='hover:underline text-[#6ca033]'>The Duckweed journal</span>
-                </a>
+                </A>
                 <span style={{ fontWeight: 400 }}>.</span>
                 </p>
 
@@ -198,10 +199,10 @@ const Partners = () => {
                     <span style={{ fontWeight: 400 }}>
                       , for making this collaboration possible.
                     </span>
-                    <a href="https://www.vut.cz">
+                    <A href="https://www.vut.cz">
                       {" "}
                       <span className='hover:underline text-[#6ca033]'>vut.cz</span>
-                    </a>
+                    </A>
                   </p>
 
 
@@ -307,9 +308,9 @@ const Partners = () => {
                     for their extraordinary patience, day-to-day support, and unwavering
                     assistance in overcoming countless challenges.{" "}
                   </span>
-                  <a href="http://boisivonlab.ceitec.cz">
+                  <A href="http://boisivonlab.ceitec.cz">
                     <span className='hover:underline text-[#6ca033]'>boisivonlab.ceitec.cz</span>
-                  </a>
+                  </A>
                   <span style={{ fontWeight: 400 }}>&nbsp;</span>
                 </p>
                 <p style={{ marginTop: '1rem' }}>
@@ -324,9 +325,9 @@ const Partners = () => {
                     {" "}
                     for their enormous assistance with ordering primers and consumables.{" "}
                   </span>
-                  <a href="http://rihalab.ceitec.cz">
+                  <A href="http://rihalab.ceitec.cz">
                     <span className='hover:underline text-[#6ca033]'>rihalab.ceitec.cz</span>
-                  </a>
+                  </A>
                   <span style={{ fontWeight: 400 }}>&nbsp;</span>
                 </p>
                 <p style={{ marginTop: '1rem' }}>
@@ -345,9 +346,9 @@ const Partners = () => {
                     {" "}
                     and his team for their continuous technical support.{" "}
                   </span>
-                  <a href="http://cellim.ceitec.eu">
+                  <A href="http://cellim.ceitec.eu">
                     <span className='hover:underline text-[#6ca033]'>cellim.ceitec.eu</span>
-                  </a>
+                  </A>
                 </p>
                 <p style={{ marginTop: '1rem' }}>
                   <strong>CEITEC – Plant Sciences Core Facility (Masaryk University)</strong>
@@ -358,12 +359,12 @@ const Partners = () => {
                     experiments and fine-tune our model, PREDICTOR. We are grateful to <b>Dr. Petr 
                     Mokroš</b> for his invaluable support and assistance.
                   </span>
-                  <a href="https://www.google.com/search?q=https://www.ceitec.eu/plant-sciences-core-facility/cf">
+                  <A href="https://www.google.com/search?q=https://www.ceitec.eu/plant-sciences-core-facility/cf">
                     {" "}
                     <span className='hover:underline text-[#6ca033]'>
                       www.ceitec.eu/plant-sciences-core-facility/cf
                     </span>
-                  </a>
+                  </A>
                 </p>
                 <p>&nbsp;</p>
               </>
@@ -408,9 +409,9 @@ const Partners = () => {
                   {" "}
                   for tirelessly handling autoclaving requests on demand.{" "}
                 </span>
-                <a  href="http://mik.sci.muni.cz">
+                <A  href="http://mik.sci.muni.cz">
                   <span className='hover:underline text-[#6ca033]'>mik.sci.muni.cz</span>
-                </a>
+                </A>
                 <span style={{ fontWeight: 400 }}>&nbsp;</span>
               </p>
 
@@ -470,9 +471,9 @@ const Partners = () => {
                     , reflecting the team's commitment to supporting technical projects like
                     ours.
                   </span>
-                  <a href="https://www.fme.vutbr.cz/en/fakulta/zfsi/74419#:~:text=StrojLAB%20is%20not%20only%20workshops,from%20the%20strojLAB%20student%20team">
+                  <A href="https://www.fme.vutbr.cz/en/fakulta/zfsi/74419#:~:text=StrojLAB%20is%20not%20only%20workshops,from%20the%20strojLAB%20student%20team">
                     <span className='hover:underline text-[#6ca033]'> fme.vutbr.cz</span>
-                  </a>
+                  </A>
                   <span style={{ fontWeight: 400 }}>
                     <br />
                     <br />
@@ -519,12 +520,12 @@ const Partners = () => {
                   progress. Their leadership in duckweed research has truly shaped our work
                   and ambition.
                 </span>
-                <a href="https://www.oeaw.ac.at/gmi/research/research-groups/arturo-mari-ordonez">
+                <A href="https://www.oeaw.ac.at/gmi/research/research-groups/arturo-mari-ordonez">
                   {" "}
                   <span className='hover:underline text-[#6ca033]'>
                     oeaw.ac.at/gmi/research/research-groups/arturo-mari-ordonez
                   </span>
-                </a>
+                </A>
               </p>
 
 
@@ -568,7 +569,7 @@ const Partners = () => {
               <p>
                 <strong>IBBA (CNR)</strong>
                 <span style={{ fontWeight: 400 }}>
-                  {" "}– Institute of Agricultural Biology and Biotechnology (IBBA, CNR) – The institute contributed essential duckweed clones and access to maintained collections that enabled us to fine-tune our PREDICTOR by growth rate data on 12 duckweeds clones deposited form IBBA BioBank. We thank <b>Dr. Laura Morello</b> for her generous assistance. <a className='hover:underline text-[#6ca033]' href="http://ibba.cnr.it">ibba.cnr.it</a>.
+                  {" "}– Institute of Agricultural Biology and Biotechnology (IBBA, CNR) – The institute contributed essential duckweed clones and access to maintained collections that enabled us to fine-tune our PREDICTOR by growth rate data on 12 duckweeds clones deposited form IBBA BioBank. We thank <b>Dr. Laura Morello</b> for her generous assistance. <A className='hover:underline text-[#6ca033]' href="http://ibba.cnr.it">ibba.cnr.it</A>.
                 </span>
               </p>
 
@@ -588,10 +589,10 @@ const Partners = () => {
                   {" "}
                   – The Czech branch of the global Thermo Fisher/Fisher Scientific company donated DNA extraction kits for plant and gel samples. These kits accelerated our laboratory work on experiments by streamlining plant DNA isolation. We are especially thankful to site manager <strong>Petr Střelec</strong>, who supported us in making this possible. (Thermo Fisher is a major supplier of life-science reagents and equipment, operating in the Czech Republic under Fisher Scientific).
                 </span>
-                <a href="https://www.thermofisher.com/cz/en/home.html">
+                <A href="https://www.thermofisher.com/cz/en/home.html">
                       {" "}
                       <span className='hover:underline text-[#6ca033]'>www.thermofisher.com</span>
-                    </a>
+                    </A>
               </p>
             </div>
              <div className="flex justify-center md:col-span-1">
@@ -639,10 +640,10 @@ const Partners = () => {
                   {" "}
                   (Customer Experience), who assisted with submission guidance.
                 </span>
-                <a href="https://ansabio.com?utm_source=chatgpt.com">
+                <A href="https://ansabio.com?utm_source=chatgpt.com">
                   {" "}
                   <span className='hover:underline text-[#6ca033]'>ansabio.com</span>
-                </a>
+                </A>
                 <span style={{ fontWeight: 400 }}>.</span>
               </p>
 
@@ -660,10 +661,10 @@ const Partners = () => {
                   {" "}
                   - DIANA is a Czech biotechnology company that provided us with reverse transcriptase kits essential for producing cDNA from mRNA. This crucial donation has allowed us to accurately and quantitatively evaluate our promoters, which is a vital step in our research. We are especially grateful to the CEO, <strong>Dr. Václav Navrátil</strong>, for making this collaboration possible and enabling us to accelerate our experimental work.
                 </span>
-                <a href="https://www.dianabiotech.com/">
+                <A href="https://www.dianabiotech.com/">
                       {" "}
                       <span className='hover:underline text-[#6ca033]'>www.dianabiotech.com/</span>
-                    </a>
+                    </A>
               </p>
             </div>
             <div className="flex justify-center md:col-span-1 ">
@@ -692,10 +693,10 @@ const Partners = () => {
                   {" "}
                   - A Slovak biotechnology company synthesized Taqman probes crucial for the quantitative evaluation of our promoters and provided us with invaluable consultation on PCR design. Their expert support and precise reagents ensure the highest standard of reliability and efficiency for our molecular analysis. We are grateful to the CEO, <strong>Dr. Pavol Čekan</strong>, for his direct support enabling us to accelerate our experimental work.
                 </span>
-                <a href="https://www.multiplexdx.com/">
+                <A href="https://www.multiplexdx.com/">
                       {" "}
                       <span className='hover:underline text-[#6ca033]'>www.multiplexdx.com/</span>
-                    </a>
+                    </A>
               </p>
             </div>
           </div>
@@ -729,10 +730,10 @@ const Partners = () => {
                   {" "}
                   – We are profoundly thankful to <strong>Mr. Nevřela</strong> and Farma Pecínov for their support. Farma Pecínov is a countryside retreat that combines a working farm with hotel, wellness, and event services, set in the picturesque nature near Benešov. With strong agricultural roots, their belief in our work was shown through the purchase of an official partnership in our crowdfunding campaign - a gesture that gave them the unique opportunity to name our very first <b>NitroDuckweed</b>, which we are going to develop! Curious what the name will be? So are we!
                 </span>
-                <a href=" https://pecinov.com/domovska-stranka/">
+                <A href=" https://pecinov.com/domovska-stranka/">
                       {" "}
                       <span className='hover:underline text-[#6ca033]'>pecinov.com/domovska-stranka/</span>
-                    </a>
+                    </A>
               </p>
             </div>
           </div>
@@ -745,10 +746,10 @@ const Partners = () => {
                   {" "}
                   – A Czech deep-tech venture capital firm specializing in TechBio, the intersection of biotechnology and artificial intelligence. Tensor Ventures is the official sponsor of our Bio 3H Party (hustlers-hipsters-hackers). Their focus on bridging biotech and AI strongly resonates with our vision of innovative, data-driven science. We are particularly grateful to <strong>Knarik Avanesyan, Head of Marketing</strong>, and <strong>Jan Faflík, Senior Associate</strong>, for making this collaboration possible.
                 </span>
-                <a href="https://tensor.ventures/">
+                <A href="https://tensor.ventures/">
                       {" "}
                       <span className='hover:underline text-[#6ca033]'>tensor.ventures/</span>
-                    </a>
+                    </A>
               </p>
             </div>
             <div className="flex justify-center md:col-span-1">
@@ -777,10 +778,10 @@ const Partners = () => {
                   {" "}
                   – A leading Czech laboratory-supply company that donated large sterile glass cultivation dishes and inoculation loops, enabling us to grow duckweed at larger scale under sterile conditions. This partnership was crucial in allowing us to continue experiments even before our own container system was fully developed. We are especially thankful to <strong>Tomáš Přikryl, CEO of P-LAB</strong>, for making this collaboration possible.
                 </span>
-                <a href="https://www.p-lab.cz/">
+                <A href="https://www.p-lab.cz/">
                       {" "}
                       <span className='hover:underline text-[#6ca033]'>www.p-lab.cz/</span>
-                    </a>
+                    </A>
               </p>
             </div>
           </div>
@@ -795,10 +796,10 @@ const Partners = () => {
                   {" "}
                   (the Association of Friends and Alumni of Masaryk University) supported us twice-first by providing funding for Matúš and Miro to attend the BioInnovation Fair at the Grand Jamboree 2024, which cemented our ambition to establish an iGEM team. Secondly, they funded our initiative SynBio Discussion-a public event on the socio-economic aspects of synthetic biology and the bioeconomy-which will take place in November!
                 </span>
-                <a target="_blank" href="https://www.muni.cz/en/alumni/spolek-absolventu-a-pratel-mu/about-us/about-sapmu">
+                <A target="_blank" href="https://www.muni.cz/en/alumni/spolek-absolventu-a-pratel-mu/about-us/about-sapmu">
                       {" "}
                       <span className='hover:underline text-[#6ca033]'>www.muni.cz/en/alumni/</span>
-                    </a>
+                    </A>
               </p>
             </div>
             <div className="flex justify-center md:col-span-1">
@@ -829,10 +830,10 @@ const Partners = () => {
                   {" "}
                   - helped us generously twice granting us space for filming and contributing valuable data to regarding cows feedstock and manure management. This assistance was essential for creating our promotional and presentational video and gaining a deeper understanding of real-world agronomic challenges. We are very grateful to <strong>J. Neužil</strong> for enabling this collaboration, which was vital for linking our biotechnological research with the practical agricultural environment.
                 </span>
-                <a href="https://agronet-nesovice-druzstvo.webnode.cz/">
+                <A href="https://agronet-nesovice-druzstvo.webnode.cz/">
                       {" "}
                       <span className='hover:underline text-[#6ca033]'>agronet-nesovice-druzstvo.webnode.cz/</span>
-                    </a>
+                    </A>
               </p>
             </div>
             
@@ -847,10 +848,10 @@ const Partners = () => {
                   {" "}
                   The Žabčice Agricultural Farm under Mendel University was crucial for deepening our understanding of protein feedstock, cattle, and soybeans. They kindly allowed us to shoot parts of our presentation video at their farm. We are grateful to Mr. Doležal for granting us permission and to Dr. Tučková for her assistance and valuable insights into farming.                </span>
 
-                <a target="_blank" href="https://szp.mendelu.cz/en/homepage/">
+                <A target="_blank" href="https://szp.mendelu.cz/en/homepage/">
                       {" "}
                       <span className='hover:underline text-[#6ca033]'>szp.mendelu.cz/</span>
-                    </a>
+                    </A>
               </p>
             </div>
             <div className="flex justify-center md:col-span-1">
@@ -880,10 +881,10 @@ const Partners = () => {
                   {" "}
                      The Video Crew from the Center for Information Technologies (led by Mr. Zemene) at MUNI Faculty of Arts created our promotional video pro bono and our presentation video as contractors. Irina Matusevič, Martin Ingr, Benedikt Kyselka, and Antonina Kuryanova did an amazing and highly professional job visualizing our story and work, flexibly fulfilling all our crazy cinematic requests. We are especially thankful to Mr. Zemene for his willingness to help us when we were short on time. 
                 </span>
-                <a href="https://www.phil.muni.cz/en">
+                <A href="https://www.phil.muni.cz/en">
                       {" "}
                       <span className='hover:underline text-[#6ca033]'>www.phil.muni.cz</span>
-                    </a>
+                    </A>
               </p>
             </div>
             
@@ -905,10 +906,10 @@ const Partners = () => {
                   {" "}
                   - A family winery from Mikulov, founded by film producer <strong>Tomáš Vican</strong>, which is particularly famous for its Riesling and natural orange wines. Their generous sponsorship was instrumental in helping us organize a fantastic 3H party. We are incredibly grateful for their support which made our great event possible.
                 </span>
-                <a href="https://www.vican.wine/">
+                <A href="https://www.vican.wine/">
                       {" "}
                       <span className='hover:underline text-[#6ca033]'>https://www.vican.wine/</span>
-                    </a>
+                    </A>
               </p>
             </div>
 
@@ -941,10 +942,10 @@ const Partners = () => {
                   {" "}
                   - Is a specialty coffee roastery from Brno, founded by award-winning barista <strong>Roman Nejedlý</strong>, with a focus on high-quality, ethically sourced coffee. Their generous sponsorship was instrumental in helping us organize a fantastic 3H party. Their amazing coffee was a true highlight of the event, and we can't thank them enough for their partnership.
                 </span>
-                <a href="https://fiftybeans.cz/cs/">
+                <A href="https://fiftybeans.cz/cs/">
                       {" "}
                       <span className='hover:underline text-[#6ca033]'>https://fiftybeans.cz/cs/</span>
-                    </a>
+                    </A>
               </p>
             </div>
 

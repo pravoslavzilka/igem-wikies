@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from "react";
 import {ChevronDown, ChevronUp} from "lucide-react";
 import TransformationProtocolReduced from "./TransformationProtocolReduced.tsx";
-import VacuumInfiltrationTestingReduced from "./VacuumInfiltrationTestingReduced.tsx"; // npm install lucide-react
+import VacuumInfiltrationTestingReduced from "./VacuumInfiltrationTestingReduced.tsx";
+import A from "../../../A.tsx"; // npm install lucide-react
 
 export default function Page3() {
     const [open, setOpen] = useState(false);
@@ -165,12 +166,12 @@ export default function Page3() {
 
                         <p className="text-justify">
                             Read more about pIB006 part at our{" "}
-                            <a
+                            <A
                                 href="#"
                                 className="underline hover:text-[#6ca033] transition-colors"
                             >
                                 Registry
-                            </a>
+                            </A>
                             .
                         </p>
                     </div>
@@ -253,10 +254,10 @@ export default function Page3() {
                                         Transform the obtained <span className="font-bold">
                                         modified pIB006 construct</span>{" "}
                                         into electrocompetent <i>Agrobacterium</i> cells using our{" "}
-                                        <a href="/toolbox/agrobacterium-mediated-transformation-protocol/"
+                                        <A href="/toolbox/agrobacterium-mediated-transformation-protocol/"
                                            className="underline hover:text-[#6ca033]">
                                             Electroporation Protocol
-                                        </a>
+                                        </A>
                                         .
                                     </li>
                                     <li>
@@ -270,10 +271,10 @@ export default function Page3() {
                                     <li>
                                         Finally, transform duckweed with <i>Agrobacterium</i> containing the{" "}
                                         <span className="font-bold">modified pIB006 construct</span> following our{" "}
-                                        <a href="/toolbox/programable-duckweed-protocol/"
+                                        <A href="/toolbox/programable-duckweed-protocol/"
                                            className="underline hover:text-[#6ca033]">
                                             Duckweed Transformation Protocol
-                                        </a>
+                                        </A>
                                         .
                                     </li>
                                 </ul>

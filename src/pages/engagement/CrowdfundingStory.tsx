@@ -1,4 +1,5 @@
 import React from 'react';
+import A from "../../A";
 
 export default function CrowdfundingStory() {
     return (
@@ -249,11 +250,11 @@ export default function CrowdfundingStory() {
                 </ol>
 
                 <p className="mb-12">
-                    This strategy helped us secure features in leading publications like <a
+                    This strategy helped us secure features in leading publications like <A
                     href="https://www.startitup.sk/mladi-vedci-odisli-zo-slovenska-v-brne-vyvijaju-revolucny-projekt-ktory-moze-zmenit-buducnost-polnohospodarstva/"
-                    className="text-blue-600 underline">Startitup</a> and <a
+                    className="text-blue-600 underline">Startitup</A> and <A
                     href="https://domaci.hn.cz/c1-67782400-zabincova-mafie-studenti-z-brna-vyvinuli-prevratne-krmivo-na-mezinarodni-soutez-vybiraji-od-darcu"
-                    className="text-blue-600 underline">Hospodářské noviny</a>. We were also greatly supported by Ms.
+                    className="text-blue-600 underline">Hospodářské noviny</A>. We were also greatly supported by Ms.
                     Maria Stracenska in amplifying our story within the Slovak media.
                 </p>
 

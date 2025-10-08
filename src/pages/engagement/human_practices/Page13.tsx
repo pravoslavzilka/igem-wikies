@@ -1,5 +1,6 @@
 import React from "react";
 import ExpandablePill from "./ExpandablePill";
+import A from "../../../A.tsx";
 
 export default function HumanPracticesPage13() {
     return (
@@ -22,12 +23,12 @@ export default function HumanPracticesPage13() {
                 {/* Intro paragraphs */}
                 <p>
                     We never really buried our{" "}
-                    <a
+                    <A
                         href="#"
                         className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         Entrepreneurship
-                    </a>{" "}
+                    </A>{" "}
                     ambitions and throughout our whole project, we were talking with experts about how we can make
                     programmable duckweed something that people can benefit from and how we can bring it to the
                     market. In order to do that, we consulted companies working with duckweed and plants, startup
@@ -50,12 +51,12 @@ export default function HumanPracticesPage13() {
                     <div className="leading-relaxed text-lg space-y-6">
                         <p>
                             Tsipi is the CEO of{" "}
-                            <a
+                            <A
                                 href="#"
                                 className="text-[#538b5e] underline hover:text-[#25512b]"
                             >
                                 GreenOnyx
-                            </a>
+                            </A>
                             , the company that makes{" "}
                             <span className="font-bold italic">WannaGreens.</span> This product is basically the tiniest
                             and the most nutritionally dense duckweed –{" "}
@@ -82,12 +83,12 @@ export default function HumanPracticesPage13() {
                         <p>
                             We got great insights from Tsipi and she liked our project so much, that she decided to
                             become a sponsor of our iGEM team, so we can now proudly say that{" "}
-                            <a
+                            <A
                                 href="#"
                                 className="text-[#538b5e] underline hover:text-[#25512b]"
                             >
                                 GreenOnyx
-                            </a>{" "}
+                            </A>{" "}
                             is a part of the{" "}
                             <span className="font-bold italic">duckweed mafia.</span>
                         </p>
@@ -108,12 +109,12 @@ export default function HumanPracticesPage13() {
                     <span className="font-bold">Biolex</span> produced antibodies in{" "}
                     <span className="italic">Lemna</span> around 20 years ago! And we managed to speak to the Head of
                     Research of this company and her team that is starting again, with{" "}
-                    <a
+                    <A
                         href="#"
                         className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         Phylloceuticals
-                    </a>
+                    </A>
                     .
                 </p>
 
@@ -131,12 +132,12 @@ export default function HumanPracticesPage13() {
                             read about their story. After several months,{" "}
                             <span className="font-bold">Lynn</span> agreed to a call and brought along her colleagues
                             from{" "}
-                            <a
+                            <A
                                 href="#"
                                 className="text-[#538b5e] underline hover:text-[#25512b]"
                             >
                                 Phylloceuticals
-                            </a>
+                            </A>
                             . We wanted to know, what Biolex achieved with duckweed, why did they fail and what is the
                             new company up to.
                         </p>

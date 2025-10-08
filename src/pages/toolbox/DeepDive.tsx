@@ -2,6 +2,7 @@ import React from 'react';
 import MapSVG from '../../components/DeepDive/MapSVG';
 import { LOCATIONS } from '../../components/DeepDive/locations';
 import References from '../../components/References';
+import A from "../../A.tsx";
 
 
 
@@ -167,7 +168,7 @@ export default function DuckweedDocument() {
                   <p className="mb-4">
 
                       Read more on duckweed potential and application at the{" "}
-                      <a href="/plant/why-duckweed" className="hover:underline text-[#6ca033]">Why duckweed page</a>.
+                      <A href="/plant/why-duckweed" className="hover:underline text-[#6ca033]">Why duckweed page</A>.
 
                     </p>
 

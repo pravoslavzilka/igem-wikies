@@ -3,6 +3,7 @@ import {ChevronDown, ChevronUp} from "lucide-react";
 import PredictorInteractive from "./PredictorInteractive.tsx";
 import LimitingBiomassReduced from "./LimitingBiomassReduced.tsx";
 import HarvestingStrategyReduced from "./HarvestingStrategyReduced.tsx";
+import A from "../../../A.tsx";
 
 export default function Page5() {
     const [open, setOpen] = useState(false);
@@ -102,12 +103,12 @@ export default function Page5() {
                             You can use <span className="font-bold">PREDICTOR</span> as a web
                             interface here without any additional IT knowledge, or you can
                             download our source code{" "}
-                            <a
+                            <A
                                 href="https://github.com/karatedava/DUCKTOOLS"
                                 className="underline font-semibold hover:text-[#6ca033] transition-colors duration-200"
                             >
                                 (available here)
-                            </a>{" "}
+                            </A>{" "}
                             and modify it for your own use — for example, to predict the growth
                             rate of your duckweed.
                         </p>

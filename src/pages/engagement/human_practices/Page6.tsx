@@ -1,5 +1,6 @@
 import React from "react";
 import ExpandablePill from "./ExpandablePill";
+import A from "../../../A.tsx";
 
 export default function HumanPracticesPage6() {
     return (
@@ -16,9 +17,9 @@ export default function HumanPracticesPage6() {
                             to get our hands on the superior plant and learn how to infiltrate it with{" "}
                             <span className="italic">Agrobacterium </span> – both with vacuum and with a syringe.
                             You can read all about it in our{" "}
-                            <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                            <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                                 protocols page
-                            </a>.
+                            </A>.
                         </p>
                     </div>
 
@@ -68,9 +69,9 @@ export default function HumanPracticesPage6() {
                         struggling with the basics of{" "}
                         <span className="font-bold ">plant transformations and cloning</span>.
                         He advised us on our plasmid designs and transformation processes – read more at{" "}
-                        <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                        <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                             Attribution page
-                        </a>.
+                        </A>.
                     </p>
                 </ExpandablePill>
 
@@ -122,13 +123,13 @@ export default function HumanPracticesPage6() {
                     <p className="text-lg">
                         We consulted <span className="font-bold">Dr. da Silva </span> about right conditions for
                         Gibson assembly cloning for our{" "}
-                        <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                        <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                             meristematic assay
-                        </a>{" "}
+                        </A>{" "}
                         and{" "}
-                        <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                        <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                             excision assay
-                        </a>{" "}
+                        </A>{" "}
                         in their first iterations.
                     </p>
                 </ExpandablePill>

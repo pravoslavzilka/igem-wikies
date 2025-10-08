@@ -1,3 +1,5 @@
+import A from "../../../A.tsx";
+
 export default function Page1() {
     return (
         <div>
@@ -44,44 +46,44 @@ export default function Page1() {
                             fontSize: window.innerWidth < 768 ? "1.2rem" : "1.5rem",
                         }}
                     >
-                        <a href="#programmable">
+                        <A href="#programmable">
 
                             iGEM Brno is making Duckweed Programmable
-                        </a>
+                        </A>
                     </h3>
 
                     <div className="grid md:grid-cols-3 gap-6">
                         {/* TAirF parts */}
                         <div className="text-center rounded-3xl overflow-hidden">
-                            <a href="#taifr">
+                            <A href="#taifr">
                                 <img
                                     src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/taifr-bar.webp"
                                     alt="TAirF parts"
                                     className="w-full object-cover"
                                 />
-                            </a>
+                            </A>
                         </div>
 
                         {/* Transformation protocol */}
                         <div className="text-center rounded-3xl overflow-hidden">
-                            <a href="#transformation">
+                            <A href="#transformation">
                                 <img
                                     src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/protocol-bar.webp"
                                     alt="Transformation protocol"
                                     className="w-full object-cover"
                                 />
-                            </a>
+                            </A>
                         </div>
 
                         {/* CRISPR parts */}
                         <div className="text-center rounded-3xl overflow-hidden">
-                            <a href="#crispr">
+                            <A href="#crispr">
                                 <img
                                     src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/crispr-bar.webp"
                                     alt="CRISPR parts"
                                     className="w-full object-cover"
                                 />
-                            </a>
+                            </A>
                         </div>
                     </div>
                 </div>
@@ -95,44 +97,44 @@ export default function Page1() {
                             fontSize: window.innerWidth < 768 ? "1.2rem" : "1.5rem",
                         }}
                     >
-                        <a href="#predictable">
+                        <A href="#predictable">
                             iGEM Brno is making Duckweed Predictable
-                        </a>
+                        </A>
                     </h3>
 
                     <div className="grid md:grid-cols-3 gap-6">
                         {/* Cultivation protocol */}
                         <div className="text-center rounded-3xl overflow-hidden">
-                            <a href="#cultivation">
+                            <A href="#cultivation">
                                 <img
                                     src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/cultivation-br.webp"
                                     alt="Cultivation protocol"
                                     className="w-full object-cover"
                                 />
-                            </a>
+                            </A>
                         </div>
 
                         {/* Cultivator hardware */}
                         <div className="text-center rounded-3xl overflow-hidden">
-                            <a href="#cultivator">
+                            <A href="#cultivator">
 
                                 <img
                                     src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/cultivator-bar.webp"
                                     alt="Cultivator hardware"
                                     className="w-full object-cover"
                                 />
-                            </a>
+                            </A>
                         </div>
 
                         {/* Predictor model */}
                         <div className="text-center rounded-3xl overflow-hidden">
-                            <a href="#prediction">
+                            <A href="#prediction">
                                 <img
                                     src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/predictor-bar.webp"
                                     alt="Predictor model"
                                     className="w-full object-cover"
                                 />
-                            </a>
+                            </A>
                         </div>
                     </div>
                 </div>
@@ -157,7 +159,7 @@ export default function Page1() {
 
                         <p className="text-justify">
             <span className="font-bold">
-              <a className='hover:underline text-[#6ca033]' href="/human-practices#boosted-duckweed">“DUCKWEED BESTIE,”</a> with an improved growth rate to be not just 3 times but at least 10 times higher than
+              <A className='hover:underline text-[#6ca033]' href="/human-practices#boosted-duckweed">“DUCKWEED BESTIE,”</A> with an improved growth rate to be not just 3 times but at least 10 times higher than
               soybean, would grow on manure, converting it into protein-rich biomass right on farms – saving farmers
               money, Brazilian nature and reducing nitrogen emissions.
             </span>{" "}
@@ -175,7 +177,7 @@ export default function Page1() {
                             inserting <span className="font-bold">plant transcription factors</span> known to increase
                             biomass yield,
                             and even to <span className="font-bold">engineering the duckweed chloroplast</span> itself.
-                            <a className='hover:underline text-[#6ca033]' href="/human-practices#ideation"> Check it out here!</a> We really went quite wild!
+                            <A className='hover:underline text-[#6ca033]' href="/human-practices#ideation"> Check it out here!</A> We really went quite wild!
                         </p>
                     </div>
 
@@ -225,9 +227,9 @@ export default function Page1() {
               discouraging efforts of scientists and iGEMers to engineer duckweeds to do useful stuff
             </span>{" "}
                             (read more at{" "}
-                            <a href="/toolbox/why-plants-suck/" className="underline">
+                            <A href="/toolbox/why-plants-suck/" className="underline">
                                 Why plants suck
-                            </a>
+                            </A>
                             )...
                         </p>
                     </div>
@@ -248,15 +250,15 @@ export default function Page1() {
                             source of plant-based protein with a full amino acid spectrum, which we aimed to use to
                             address the affordability of protein feedstock — is just one of duckweed’s superior
                             characteristics (read more and see references at {" "}
-                            <a href="/toolbox/deep-dive-on-duckweed/" className="underline">
+                            <A href="/toolbox/deep-dive-on-duckweed/" className="underline">
                                 Deep dive on duckweed page
-                            </a>
+                            </A>
                             ). Other features make duckweed a promising phytoremediation chassis, a complex
                             recombinant protein factory, and even a new model for studying monocot plants (read more
                             at{" "}
-                            <a href="/project/why/" className="underline">
+                            <A href="/project/why/" className="underline">
                                 Why duckweed page
-                            </a>
+                            </A>
                             ).{" "}
                         </p>
 
@@ -276,20 +278,20 @@ export default function Page1() {
 
                     {/* Top banner image */}
                     <div className="relative w-full text-center space-y-4">
-                        <a href="/toolbox/deep-dive-on-duckweed/">
+                        <A href="/toolbox/deep-dive-on-duckweed/">
                             <img
                                 src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/deep-dive.webp"
                                 alt="Deep dive on duckweed"
                                 className="w-full rounded-lg object-cover"
                             />
-                        </a>
-                        <a href="/whyduckweed/">
+                        </A>
+                        <A href="/whyduckweed/">
                             <img
                                 src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/why-duckweed.webp"
                                 alt="Why duckweed"
                                 className="w-full rounded-lg object-cover"
                             />
-                        </a>
+                        </A>
                     </div>
                 </div>
 
@@ -298,13 +300,13 @@ export default function Page1() {
 
                     {/* WHY PLANTS SUCK box */}
                     <div className=" overflow-hidden space-y-2">
-                        <a href="/toolbox/why-plants-suck/">
+                        <A href="/toolbox/why-plants-suck/">
                             <img
                                 src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/why-plant-sucks.webp"
                                 alt="Why plants suck? And why duckweed could be the answer?"
                                 className="w-full object-cover"
                             />
-                        </a>
+                        </A>
                         <img
                             src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/plantsynbio12.webp"
                             alt="Plant synbio"
@@ -360,8 +362,8 @@ export default function Page1() {
                             It grows fast, scales easily, and lacks a complex genome or strong transgene silencing.
                             This makes it perfectly positioned to provide solutions in agriculture,
                             pharmaceuticals, and even in accelerating basic plant science at lower cost{" "}
-                            (read more and see references at <a href="/project/why/" className="underline">Why{" "}
-                            duckweed page</a>){" "}
+                            (read more and see references at <A href="/project/why/" className="underline">Why{" "}
+                            duckweed page</A>){" "}
                             <span className="font-bold">
               But duckweed also has its own challenges, which we set out to address in our iGEM
               project.

@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import ExpandablePill from "./ExpandablePill";
+import A from "../../../A.tsx";
 
 export default function HumanPracticesPage9() {
     const [hovered, setHovered] = useState<string | null>(null);
@@ -37,9 +38,9 @@ export default function HumanPracticesPage9() {
                         <p>
                             <span className="font-bold">Dr. Martin Malý</span> was our regular mentor in terms of
                             material usage and material processing for different purposes in the{" "}
-                            <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                            <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                                 CULTIVATOR
-                            </a>
+                            </A>
                             , such as the structure, the plastic layers, the water jets, etc. For spraying duckweed
                             from the tubes, we encountered problems of damaged water flow. Dr. Malý{" "}
                             <span className="font-bold">suggested using very thin pipes</span> that can be used
@@ -62,9 +63,9 @@ export default function HumanPracticesPage9() {
                             <span className="font-bold">Czech iGEM team back in 2015.</span> When he
                             heard that another one emerged ten years later, he contacted us immediately. With his
                             expertise in software, hardware and SynBio, he was helpful with perfecting our{" "}
-                            <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                            <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                                 PREDICTOR
-                            </a>.
+                            </A>.
                         </p>
                         <p>
                             He assisted our Cultivation Hustlers team in{" "}
@@ -97,9 +98,9 @@ export default function HumanPracticesPage9() {
                             And <span className="font-bold">professor Jansen</span> is one of those that are constantly
                             designing new systems for its cultivation.
                             We had to get his feedback on our{" "}
-                            <a href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                            <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
                                 CULTIVATOR
-                            </a>, right?
+                            </A>, right?
                         </p>
 
                         <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -210,7 +211,7 @@ export default function HumanPracticesPage9() {
                                     href: "#platform"
                                 },
                             ].map(({label, src, href}) => (
-                                <a
+                                <A
                                     key={label}
                                     href={href}
                                     onMouseEnter={() => setHovered(label)}
@@ -225,7 +226,7 @@ export default function HumanPracticesPage9() {
                                             className="rounded-2xl max-w-xs"
                                         />
                                     </div>
-                                </a>
+                                </A>
                             ))}
                         </div>
 
@@ -243,7 +244,7 @@ export default function HumanPracticesPage9() {
                                     href: "#czsk-community"
                                 },
                             ].map(({label, src, href}) => (
-                                <a
+                                <A
                                     key={label}
                                     href={href}
                                     onMouseEnter={() => setHovered(label)}
@@ -258,7 +259,7 @@ export default function HumanPracticesPage9() {
                                             className="rounded-2xl max-w-xs"
                                         />
                                     </div>
-                                </a>
+                                </A>
                             ))}
                         </div>
                     </div>
@@ -279,9 +280,9 @@ export default function HumanPracticesPage9() {
                         <p className="text-lg">
                             The first person from a real <span className="font-bold">world of agriculture</span> we
                             spoke to was a farmer{" "}
-                            <a href="#" className="underline hover:text-gray-700">
+                            <A href="#" className="underline hover:text-gray-700">
                                 Jakub Neužil
-                            </a>
+                            </A>
                             . He told us many valuable insights, and agreed that the problem we are focusing on has to
                             be solved.
                             However, we really wanted to understand, <span className="font-bold">what other problems are farmers facing,</span>{" "}

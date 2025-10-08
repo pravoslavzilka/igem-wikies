@@ -1,4 +1,5 @@
 import React from 'react';
+import A from "../A";
 
 // ============ TYPES ============
 interface Company {
@@ -310,7 +311,7 @@ const LogoCard: React.FC<LogoCardProps> = ({ company, label, isStrategic }) => {
   return (
     <div className="group relative flex flex-col items-center justify-center w-full h-full">
       {renderLabel()}
-      <a
+      <A
         href={company.url}
         target="_blank"
         rel="noopener noreferrer"
@@ -331,7 +332,7 @@ const LogoCard: React.FC<LogoCardProps> = ({ company, label, isStrategic }) => {
             }
           }}
         />
-      </a>
+      </A>
     </div>
   );
 };
@@ -367,7 +368,7 @@ const CopyrightSection: React.FC = () => (
   <div className={`pt-6 sm:pt-8 border-t ${CONFIG.colors.border} space-y-1 sm:space-y-2`}>
     <div className="flex flex-col items-center space-y-1 sm:space-y-2">
       <div className="flex flex-col items-center justify-center gap-2 sm:gap-4">
-        <a href={CONFIG.copyright.brnoUrl} target="_blank" rel="noopener noreferrer" className="group">
+        <A href={CONFIG.copyright.brnoUrl} target="_blank" rel="noopener noreferrer" className="group">
           <img
             src={CONFIG.copyright.brnoLogoPath}
             alt="Brno Logo"
@@ -381,7 +382,7 @@ const CopyrightSection: React.FC = () => (
               }
             }}
           />
-        </a>
+        </A>
         <div
           className={`text-xs sm:text-sm md:text-base ${CONFIG.colors.textHeader} font-semibold text-center px-4`}
           style={{ fontFamily: CONFIG.fonts.primary }}
@@ -395,28 +396,28 @@ const CopyrightSection: React.FC = () => (
           style={{ fontFamily: CONFIG.fonts.secondary }}
         >
           © {CONFIG.copyright.year} - Content on this site is licensed under a{' '}
-          <a
+          <A
             href={CONFIG.copyright.licenseUrl}
             target="_blank"
             rel="noopener noreferrer"
             className={`${CONFIG.colors.link} underline transition-colors duration-200`}
           >
             Creative Commons Attribution 4.0 International license
-          </a>.
+          </A>.
         </div>
         <div
           className={`text-xs sm:text-sm ${CONFIG.colors.textTertiary} leading-relaxed`}
           style={{ fontFamily: CONFIG.fonts.secondary }}
         >
           The repository used to create this website is available at{' '}
-          <a
+          <A
             href={CONFIG.copyright.repositoryUrl}
             target="_blank"
             rel="noopener noreferrer"
             className={`${CONFIG.colors.link} underline transition-colors duration-200 break-all`}
           >
             gitlab.igem.org/2025/brno-czech-republic
-          </a>.
+          </A>.
         </div>
       </div>
     </div>

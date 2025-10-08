@@ -1,5 +1,6 @@
 import React from "react";
 import ExpandablePill from "./ExpandablePill";
+import A from "../../../A.tsx";
 
 export default function HumanPracticesPage2() {
     return (
@@ -105,12 +106,12 @@ export default function HumanPracticesPage2() {
                     had to stop thinking about the solution for a while to prepare for{" "}
                     <span className="font-bold">iGEM Startup Showcase</span> in Paris (read
                     more in{" "}
-                    <a
+                    <A
                         href="/engagement/nitroduck"
                         className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         NitroDuck story
-                    </a>
+                    </A>
                     ).
                 </p>
 

@@ -1,5 +1,6 @@
 import React from "react";
 import ExpandablePill from "./ExpandablePill";
+import A from "../../../A.tsx";
 
 export default function HumanPracticesPage6() {
     return (
@@ -100,19 +101,19 @@ export default function HumanPracticesPage6() {
                         Cultivation Hustlers
                     </span>
                     . You can read how they perfected the cultivation{" "}
-                    <a
+                    <A
                         href="/project/how/cultivator"
                         className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         hardware
-                    </a>{" "}
+                    </A>{" "}
                     and{" "}
-                    <a
+                    <A
                         href="/project/how/predictor/in-silico-cultivation"
                         className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         software
-                    </a>{" "}
+                    </A>{" "}
                     throughout our project that is now available to anyone!
                 </p>
             </div>
