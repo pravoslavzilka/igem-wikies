@@ -107,7 +107,7 @@ const DuckweedProtocolReduced = () => {
                                     src='https://static.igem.wiki/teams/5642/images/toolbox/cultivationprotocol/slide2.webp'/>
                             </div>
                             <p>
-                                <p className='text-md  mt-2 urbanist'>
+                                <p className='text-md text-justify mt-2 urbanist'>
                                     <strong>Figure 15. </strong>
                                     <span style={{fontWeight: 400}}>
                   (1) Petri dish with sterile duckweed culture kept as a backup; (2) Ø14 cm
@@ -125,7 +125,7 @@ const DuckweedProtocolReduced = () => {
                                     src='https://static.igem.wiki/teams/5642/images/toolbox/cultivationprotocol/slide1.webp'/>
                             </div>
 
-                            <p className='text-md  mt-2 urbanist'>
+                            <p className='text-md text-justify  mt-2 urbanist'>
                                 <strong>Figure 16. </strong>
                                 <span style={{fontWeight: 400}}>Culture of </span>
                                 <em>
@@ -152,7 +152,7 @@ const DuckweedProtocolReduced = () => {
                     </div>
 
 
-                    <p>
+                    <p className='text-justify'>
                         <strong>Figure 14. </strong>
                         <span style={{fontWeight: 400}}>
               The level of iGEM Brno’s duckweed cultivation at the end of summer should
@@ -191,7 +191,7 @@ const DuckweedProtocolReduced = () => {
                                         <strong>1. DISHES</strong>
                                         <span style={{fontWeight: 400}}>
                       {" "}
-                                            (Petri, Ø7 cm) with sterile solid MS medium (1) for each  duckweed clone or
+                                            (Petri, Ø7 cm) with sterile solid MS medium (3) for each  duckweed clone or
                       transgenic line. This is important because:
                     </span>
                                     </li>
@@ -237,7 +237,7 @@ const DuckweedProtocolReduced = () => {
                                     <li style={{fontWeight: 400}}>
                     <span style={{fontWeight: 400}}>
                       Even though duckweed grows fast, starting from just a few fronds in a
-                      dish takes time.If your experiments are variable, it’s best to always
+                      dish takes time. If your experiments are variable, it’s best to always
                       have plenty of duckweed ready to inoculate a whole tray.
                     </span>
                                     </li>

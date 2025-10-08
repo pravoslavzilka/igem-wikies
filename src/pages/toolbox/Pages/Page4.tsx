@@ -50,16 +50,16 @@ export default function Page4() {
 
                 {/* Intro paragraph */}
                 <p className="text-justify text-lg">
-                    Although duckweed cultivation is relatively simple, maintaining consistent and healthy cultures for
-                    experimental work requires careful optimization. For scientists and iGEM teams working with
+                    Although duckweed cultivation is relatively simple, <b>maintaining consistent and healthy cultures for
+                    experimental work requires careful optimization </b>. For scientists and iGEM teams working with
                     duckweed,
                     having fresh and reliable plant material is essential. Routine maintenance — including subculturing,
-                    watering, and monitoring growth — can be time-consuming, particularly for duckweed, the
+                    watering, and monitoring growth — <b>can be time-consuming</b>, particularly for duckweed, the
                     fastest-growing
-                    plant on Earth. Moreover, growth rates vary greatly across species, nutrient levels, and
+                    plant on Earth. Moreover, <b>growth rates vary greatly across species</b>, nutrient levels, and
                     environmental
                     conditions, making reproducibility a challenge. We attempted to address all of those problems with
-                    duckweed.
+                    duckweed(4, 5, 6, 7 and 8).
                 </p>
             </div>
             <div
@@ -84,11 +84,11 @@ export default function Page4() {
                     <p className="text-justify text-lg">
                         Duckweed cultivation is not a rocket science :) But for us iGEMers and scientists working
                         intensively
-                        with duckweed, it’s essential to always have fresh plants ready for experiments — that’s why we
+                        with duckweed, it’s essential to always have <b>fresh plants ready for experiments</b> — that’s why we
                         developed
-                        a strategy for small-scale cultivation in the lab. The protocol was greatly inspired by the work
+                        a strategy for <b>small-scale</b> cultivation in the lab. The protocol was greatly inspired by the work
                         of our
-                        advisor, Dr. Ordoñez, who shared a wealth of duckweed knowledge with us — some of it is already
+                        advisor, <b>Dr. Ordoñez</b>, who shared a wealth of duckweed knowledge with us — some of it is already
                         published (2).
                     </p>
 
@@ -197,7 +197,7 @@ export default function Page4() {
 
                         <p className="font-semibold">
                             Our autonomous duckweed cultivation system –{" "}
-                            <span className="text-[#6ca033] font-bold">CULTIVATOR</span> – changes that!
+                            <span className="text-[#6ca033] font-bold"><A href="/hardware">CULTIVATOR</A></span> – changes that!
                         </p>
 
                         <p>
@@ -246,9 +246,9 @@ export default function Page4() {
                     <div className="space-y-6">
                         {/* Description */}
                         <p className="text-justify text-base md:text-lg">
-                            With complete documentation, build plans, and source code
+                            With complete documentation, build plans, and <A target="_blank" className='hover:underline text-[#6ca033]' href="https://github.com/MartinPavella/BioReactorManager">source code </A>
                             available, any lab can reproduce and adapt the cultivator for
-                            their own work – for about <strong>$1,000 in materials</strong>.
+                            their own work – for about <strong><A href="/hardware#build-section"  className='hover:underline text-[#6ca033]'>$1,000 in materials</A></strong>.
                             Then you can use it very easily! The entire{" "}
                             <strong>CULTIVATOR</strong> can be operated through a{" "}
                             <strong>mobile app</strong>, accessible locally via the{" "}
@@ -278,7 +278,7 @@ export default function Page4() {
                             system allows up to <strong>five parallel experiments (2)</strong>,
                             each layer operating independently with separate cultivation
                             conditions and harvesting strategies.
-                            <strong>pH</strong> and <strong>EC sensors</strong> continuously
+                            <strong>pH </strong> and <strong>EC sensors</strong> continuously
                             monitor these parameters, and if values drop below or exceed the
                             threshold, the system automatically balances them by adding either
                             fresh medium or nitric acid. The entire parameter history can be
@@ -303,7 +303,7 @@ export default function Page4() {
 
                                     <p>
                                         Each layer consists of a{" "}
-                                        <strong>PROBE (PhotoResistor Occlusion-based Biomass Estimator)</strong>,
+                                        <strong><A href="/hardware#probe" className='hover:underline text-[#6ca033]'>PROBE (PhotoResistor Occlusion-based Biomass Estimator)</A></strong>,
                                         which measures the thickness of the duckweed layer by monitoring how
                                         much light is absorbed at the water surface. Based on calibration, the
                                         PROBE can <strong>accurately estimate duckweed yield (g)</strong> at
@@ -363,7 +363,7 @@ export default function Page4() {
                             Read how we designed, built, and tested the{" "}
                             <span className="font-bold ">CULTIVATOR</span> on our{" "}
                             <A
-                                href="/project/how/cultivator/"
+                                href="/hardware"
                                 className="font-semibold underline text-[#6ca033] hover:text-green-700 transition-colors duration-200"
                             >
                                 Hardware page

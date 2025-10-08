@@ -4,24 +4,24 @@ export default function LimitingBiomassReduced() {
         <div className="max-w-6xl mx-auto p-8 bg-white text-lg text-justify space-y-6"
              style={{fontFamily: 'Urbanist, sans-serif'}}>
             {/* Header */}
-            <h1 className="text-4xl font-bold mb-12 text-gray-900" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
+            <h1 className="text-4xl font-bold mb-12 text-gray-900 text-center" style={{fontFamily: 'Space Grotesk, sans-serif'}}>
                 Limiting biomass density experiment
             </h1>
 
-
+            <div className="grid grid-cols-2 gap-4 mx-auto">
             {/* Right Column - Image */}
-            <div className="lg:ml-8">
-                <div className="bg-gray-100 rounded-lg overflow-hidden max-w-lg mx-auto">
+            <div className="grid grid-span-1">
+                <div className=" rounded-lg overflow-hidden  mx-auto">
                     <img
                         src="https://static.igem.wiki/teams/5642/images/how/predictor/pxl-20250820-164200119.webp"
                         alt="Researcher conducting duckweed experiment"
-                        className="w-full h-auto"
+                        className="w-full h-auto mt-12"
                     />
                 </div>
 
             </div>
             {/* Methodology Section */}
-            <section>
+            <section className="grid grid-span-1">
                 <h2 className="text-xl font-semibold mb-4 text-gray-900"
                     style={{fontFamily: 'Space Grotesk, sans-serif'}}>
                     Methodology
@@ -63,6 +63,8 @@ export default function LimitingBiomassReduced() {
 
             </section>
 
+            </div>
+
 
             {/* Results Section - Full Width at Bottom */}
             <section className="mt-12">
@@ -72,13 +74,13 @@ export default function LimitingBiomassReduced() {
                 </h2>
 
                 {/* Combined results section */}
-                <div className="space-y-8 max-w-2xl mx-auto">
+                <div className="grid grid-cols-2 gap-4">
                     {/* Main Results Section */}
-                    <div className="bg-gray-50 max-w-2xl mx-auto rounded-lg shadow-sm">
+                    <div className=" grid grid-span-1 gap-4  mx-auto rounded-lg ">
                         {/* Image */}
                         <div className="rounded overflow-hidden">
                             <img
-                                src="https://static.igem.wiki/teams/5642/images/how/predictor/graf-final-medium-change.webp"
+                                src="https://static.igem.wiki/teams/5642/images/toolbox/limitinbiomass/graf-final-8.webp"
                                 alt="Medium Change Graph"
                                 className="w-full h-auto rounded"
                             />
@@ -100,14 +102,14 @@ export default function LimitingBiomassReduced() {
                             logarithm of the population size at each time point, plotted these values, and fitted a
                             straight
                             line to the points corresponding to the exponential phase of growth. The slope of this line
-                            represented the effective growth rate, which was <strong>r₀ = 0.21 d⁻¹</strong>.
+                            represented the effective <b>growth</b> rate, which was <strong>r₀ = 0.21 d⁻¹</strong>.
                         </p>
                     </div>
 
 
                     {/* Additional species results */}
-                    <div className="mt-12 max-w-2xl mx-auto">
-                        <div className="bg-gray-50 rounded-lg">
+                    <div className=" grid grid-span-1 gap-4 mx-auto">
+                        <div className="">
                             <div className="rounded">
                                 <img src="https://static.igem.wiki/teams/5642/images/how/predictor/graf-final-9.webp"
                                      alt="Multiple Species Growth Curves" className="w-full h-auto"/>

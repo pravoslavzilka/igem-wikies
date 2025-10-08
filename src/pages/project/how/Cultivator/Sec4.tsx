@@ -193,7 +193,7 @@ export default function CultivatorSec4() {
                         Monitoring the Biomass
                     </h2>
 
-                    <div className="grid md:grid-cols-2 gap-8 items-center">
+                    <div className="grid md:grid-cols-2 gap-8 items-center" id='probe'>
                         {/* Image placeholder */}
                         <div className="flex justify-center mb-6">
                             <img

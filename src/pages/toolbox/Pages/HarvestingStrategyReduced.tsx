@@ -142,7 +142,7 @@ export default function HarvestingStrategyReduced() {
                 {/* Caption */}
                 <p className="text-base text-gray-600 text-justify  mb-8"
                    style={{fontFamily: 'Urbanist, sans-serif'}}>
-                    <strong>Figure 6:</strong> Graph showing comparison between <i>L. minor</i> (5500) and <i>L.
+                    <strong>Figure 24:</strong> Graph showing comparison between <i>L. minor</i> (5500) and <i>L.
                     japonica</i> (8627) biomass yields (averaged across all 4 cultivations run for the given species) in
                     the first iteration of harvesting strategy experiments.
                 </p>
@@ -192,7 +192,7 @@ export default function HarvestingStrategyReduced() {
                             />
                             <div className="p-4 bg-gray-50">
                                 <p className="text-base text-justify text-gray-600" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                                    <strong>Figure 24:</strong> Cultures of <i>Lemna japonica</i> (8627) in trays
+                                    <strong>Figure 25:</strong> Cultures of <i>Lemna japonica</i> (8627) in trays
                                     subjected
                                     to different harvesting strategies.
 
@@ -233,7 +233,7 @@ export default function HarvestingStrategyReduced() {
                    style={{fontFamily: 'Urbanist, sans-serif'}}>
                     <p>
             <span style={{fontWeight: 400}}>
-              <b>Figure 24:</b> Graph showing the declining biomass of{" "}
+              <b>Figure 25:</b> Graph showing the declining biomass of{" "}
             </span>
                         <em>
                             <span style={{fontWeight: 400}}>Lemna japonica (8627)</span>
