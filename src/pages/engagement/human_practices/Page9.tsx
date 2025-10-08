@@ -196,11 +196,20 @@ export default function HumanPracticesPage9() {
                             {[
                                 {
                                     label: "The soybean problem from both side (Czech & Brazilian stakeholders)",
+                                    src: "https://static.igem.wiki/teams/5642/images/engagement/humanpractices/2/soybean.webp",
                                     href: "#farmers"
                                 },
-                                {label: "Safety & Regulations", href: "#safety"},
-                                {label: "Duckweed as a Biotechnology Platform", href: "#platform"},
-                            ].map(({label, href}) => (
+                                {
+                                    label: "Safety & Regulations",
+                                    src: "https://static.igem.wiki/teams/5642/images/engagement/humanpractices/2/safety.webp",
+                                    href: "#safety"
+                                },
+                                {
+                                    label: "Duckweed as a Biotechnology Platform",
+                                    src: "https://static.igem.wiki/teams/5642/images/engagement/humanpractices/2/platform.webp",
+                                    href: "#platform"
+                                },
+                            ].map(({label, src, href}) => (
                                 <a
                                     key={label}
                                     href={href}
@@ -209,13 +218,12 @@ export default function HumanPracticesPage9() {
                                     className="block"
                                     aria-label={label}
                                 >
-                                    <div
-                                        className={`w-40 h-40 rounded-full border border-gray-400 flex items-center justify-center 
-                      text-center p-4 text-sm leading-tight transition-colors
-                      ${hovered === label ? "bg-green-200 text-[#538b5e]" : "bg-gray-50"}`}
-                                        style={{fontFamily: "Space Grotesk, sans-serif"}}
-                                    >
-                                        {label}
+                                    <div className="flex justify-center">
+                                        <img
+                                            src={src}
+                                            alt={label}
+                                            className="rounded-2xl max-w-xs"
+                                        />
                                     </div>
                                 </a>
                             ))}
@@ -224,12 +232,17 @@ export default function HumanPracticesPage9() {
                         {/* Row 2: 3 items (centered) */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 place-items-center">
                             {[
-                                {label: "Excellence in iGEM", href: "#excellence"},
+                                {
+                                    label: "Excellence in iGEM",
+                                    src: "https://static.igem.wiki/teams/5642/images/engagement/humanpractices/2/excellence.webp",
+                                    href: "#excellence"
+                                },
                                 {
                                     label: "Building CzechoSlovak SynBio Community from the Ground Up",
+                                    src: "https://static.igem.wiki/teams/5642/images/engagement/humanpractices/2/czsk-new.webp",
                                     href: "#czsk-community"
                                 },
-                            ].map(({label, href}) => (
+                            ].map(({label, src, href}) => (
                                 <a
                                     key={label}
                                     href={href}
@@ -238,13 +251,12 @@ export default function HumanPracticesPage9() {
                                     className="block"
                                     aria-label={label}
                                 >
-                                    <div
-                                        className={`w-40 h-40 rounded-full border border-gray-400 flex items-center justify-center 
-                      text-center p-4 text-sm leading-tight transition-colors
-                      ${hovered === label ? "bg-green-200 text-[#538b5e]" : "bg-gray-50"}`}
-                                        style={{fontFamily: "Space Grotesk, sans-serif"}}
-                                    >
-                                        {label}
+                                    <div className="flex justify-center">
+                                        <img
+                                            src={src}
+                                            alt={label}
+                                            className="rounded-2xl max-w-xs"
+                                        />
                                     </div>
                                 </a>
                             ))}
@@ -254,14 +266,14 @@ export default function HumanPracticesPage9() {
                     <div className="space-y-12">
 
                         <h2
-                            className="font-bold"
+                            className="font-bold text-start"
                             style={{
                                 fontFamily: "Space Grotesk, sans-serif",
                                 fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem",
                             }}
                             id="farmers"
                         >
-                            The soybean problem from both side (Czech & Brazilian stakeholders)
+                            The soybean problem from both sides (Czech & Brazilian stakeholders)
                         </h2>
 
                         <p className="text-lg">

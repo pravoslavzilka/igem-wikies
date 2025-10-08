@@ -161,7 +161,7 @@ export default function HumanPracticesPage7() {
                             </div>
                             <div className="flex justify-center">
                                 <img
-                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-8.webp"
+                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/2/7-8.webp"
                                     alt="Second photo with iGEM Marburg"
                                     className="rounded-2xl max-w-md"
                                 />
