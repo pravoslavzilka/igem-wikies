@@ -74,7 +74,7 @@ const ProblemsSection: React.FC = () => {
     {
       title: "Deforestation caused by protein crops",
       image: "https://static.igem.wiki/teams/5642/images/what/problem-deforestation.webp",
-      quote: "15 millions hectares of Brazil’s tropical savannas of Cerrado have been lost due to soybean fields, but over the past 50 years, agribusiness has greatly improved quality of life in the region",
+      quote: "15 million hectares of Brazil’s tropical savannas of Cerrado have been lost due to soybean fields, but over the past 50 years, agribusiness has greatly improved quality of life in the region",
       author: "Prof. Carlos Klink",
       avatar: "https://static.igem.wiki/teams/5642/images/what/carlos-klink.webp"
     },

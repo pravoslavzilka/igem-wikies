@@ -92,7 +92,7 @@ const Tools = () => {
                 }}>
                 <p  >
                     Want to experiment with promoters? Try one of the <b style={{color:"#779E45"}}>7 new native 
-                    promoters</b> we've characterized
+                    promoters</b> we've characterized.
                 </p>
                 </div>
 
