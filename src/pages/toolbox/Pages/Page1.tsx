@@ -70,7 +70,7 @@ export default function Page1() {
                         <div className="text-center rounded-3xl overflow-hidden">
                             <A href="#taifr">
                                 <img
-                                    src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/taifr-bar.webp"
+                                    src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/plantsynbio/slide1.avif"
                                     alt="TAirF parts"
                                     className="w-full object-cover"
                                 />
@@ -81,7 +81,7 @@ export default function Page1() {
                         <div className="text-center rounded-3xl overflow-hidden">
                             <A href="#transformation">
                                 <img
-                                    src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/protocol-bar.webp"
+                                    src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/plantsynbio/slide1-copy.avif"
                                     alt="Transformation protocol"
                                     className="w-full object-cover"
                                 />
@@ -92,7 +92,7 @@ export default function Page1() {
                         <div className="text-center rounded-3xl overflow-hidden">
                             <A href="#crispr">
                                 <img
-                                    src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/crispr-bar.webp"
+                                    src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/plantsynbio/slide1-copy-2.avif"
                                     alt="CRISPR parts"
                                     className="w-full object-cover"
                                 />
@@ -120,7 +120,7 @@ export default function Page1() {
                         <div className="text-center rounded-3xl overflow-hidden">
                             <A href="#cultivation">
                                 <img
-                                    src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/cultivation-br.webp"
+                                    src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/plantsynbio/slide2-copy-2.avif"
                                     alt="Cultivation protocol"
                                     className="w-full object-cover"
                                 />
@@ -132,7 +132,7 @@ export default function Page1() {
                             <A href="#cultivator">
 
                                 <img
-                                    src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/cultivator-bar.webp"
+                                    src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/plantsynbio/slide2-copy.avif"
                                     alt="Cultivator hardware"
                                     className="w-full object-cover"
                                 />
@@ -143,7 +143,7 @@ export default function Page1() {
                         <div className="text-center rounded-3xl overflow-hidden">
                             <A href="#prediction">
                                 <img
-                                    src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/predictor-bar.webp"
+                                    src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/plantsynbio/slide2.avif"
                                     alt="Predictor model"
                                     className="w-full object-cover"
                                 />
