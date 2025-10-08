@@ -1,3 +1,6 @@
+import A from "../../A.tsx";
+
+
 const Tools = () => {
     return (
     <div className="p-10 min-h-screen mx-auto md:mb-40 pt-20 pb-20  md:mt-[-150px]">
@@ -39,7 +42,7 @@ const Tools = () => {
                     letterSpacing: '0px',
                     textAlign: 'center',
                     fontFamily: 'Urbanist, sans-serif'
-                    }}>just two constructs</span> and <b style={{color:"#779E45"}}>our protocol</b>, you can express any gene in duckweed - transiently in a week, <b style={{color:"#779E45"}}>stably in a month!</b>
+                    }}><b style={{color:"#779E45"}}>just two constructs</b></span> and <b style={{color:"#779E45"}}>our protocol</b>, you can express any gene in duckweed - transiently within a week, or <b style={{color:"#779E45"}}>insert it stably in two!</b>
                 </p>
                 </div>
           </div>
@@ -73,7 +76,7 @@ const Tools = () => {
           <div className="space-y-6 flex flex-col items-center">
             <div className="bg-black rounded-lg flex items-center justify-center relative overflow-hidden w-full max-w-[350px] mx-auto h-70">
               <div className="absolute items-center justify-center inset-0 bg-gradient-radial from-green-400/30 via-green-500/20 to-transparent"></div>
-              <img  src="https://static.igem.wiki/teams/5642/images/homepage/p101-transient.webp" alt="Microscopy" className="w-full h-full object-cover" />
+              <img  src="https://static.igem.wiki/teams/5642/images/homepage/promoters.webp" alt="Microscopy" className="w-full h-full object-cover" />
 
 
             </div>
@@ -88,8 +91,7 @@ const Tools = () => {
                     textAlign: 'center'
                 }}>
                 <p  >
-                    Want to fine-tune your gene's expression in 
-                    duckweed? Try one of the <b style={{color:"#779E45"}}>7 new native 
+                    Want to experiment with promoters? Try one of the <b style={{color:"#779E45"}}>7 new native 
                     promoters</b> we've characterized
                 </p>
                 </div>
@@ -98,9 +100,10 @@ const Tools = () => {
              
           </div>
           <div className="pt-4 flex justify-center lg:col-span-3">
+            <A href="/toolbox/programmable-duckweed/part-collection" >
             <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-medium transition-colors duration-200" style={{ fontFamily: 'Urbanist, sans-serif', backgroundColor: '#22531C' }}>
                   Explore our Part Collection and see how duckweed becomes programmable!
-                </button>
+                </button></A>
          </div>     
         </div>
                  

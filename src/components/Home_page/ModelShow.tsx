@@ -1,3 +1,6 @@
+import A from "../../A.tsx";
+
+
 const ModelShow = () => {
     return (
     <div className="bg-white p-8 min-h-screen md:mb-[-200px]">
@@ -35,9 +38,10 @@ const ModelShow = () => {
               </div>
 
               <div>
+                <A href="/model">
                 <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-medium transition-colors duration-200" style={{ fontFamily: 'Urbanist, sans-serif', backgroundColor: "#22531C" }}>
                   See how the PREDICTOR works
-                </button>
+                </button></A>
               </div>
             </div>
           </div>
