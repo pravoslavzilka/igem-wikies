@@ -12,7 +12,7 @@ const agrobacteriumInfection: textSlide[] = [
             "50g/l sucrose",
             "1 g/l MgCl2 (10mM final)",
             "pH 5.2 - 5.5 (measure by pH strips as there is not enough salts to properly measure by pH meter)",
-            "40 mg/l acetosyringone",
+            "40 mg/l acetosyringone (add just before use)",
         ],
     },
 ];
@@ -51,7 +51,7 @@ const TransformationProtocolReduced = () => {
     return (
         <div className="max-w-6xl mx-auto p-6 bg-white text-lg text-justify">
 
-            <div className="p-8">
+            <div className="p-8" >
                 <div className='grid grid-cols-1 md:grid-cols-4 gap-4'>
 
                     <div className='col-span-1 hidden md:block'>
@@ -102,7 +102,7 @@ const TransformationProtocolReduced = () => {
                                 />
                                 <h2 className="text-2xl font-semibold text-gray-900 mb-4"
                                     style={{fontFamily: 'Space Grotesk'}}>
-                                    Day 1 - 2 • PREPARATION OF AGROBACTERIUM
+                                    Day 1 - 2 • PREPARATION OF A<i> GROBACTERIUM</i>
                                 </h2>
                                 <div className="space-y-2" style={{fontFamily: 'Urbanist'}}>
                                     <p className="text-gray-700"><strong>1)</strong> From the glycerol stock, inoculate
@@ -136,12 +136,12 @@ const TransformationProtocolReduced = () => {
                                         to avoid stress.</p>
                                     <p className="text-gray-700"><strong>2)</strong> Resuspend pellet gently in <button
                                         onClick={() => setIsOpenagrobacteriumInfection(true)} className=" text-bold">
-                                        <span className='text-green-600'><b>AIM</b></span></button> (Agrobacterium
+                                        <span className='text-green-600'><b>AIM</b></span></button> (<i>Agrobacterium</i>
                                         Infiltration Medium).
                                     </p>
                                     <ul className="text-gray-700 space-y-1 ml-6 list-disc">
                                         <li>Resuspend to final OD₆₀₀ = 0.7</li>
-                                        <li>25-30 ml of Agrobacterium solution (OD₆₀₀ = 0.7) results in 2 plates of
+                                        <li>25-30 ml of <em>Agrobacterium </em> solution (OD₆₀₀ = 0.7) results in 2 plates of
                                             transformed duckweed (confluence 50-75 %)
                                         </li>
                                     </ul>
@@ -150,12 +150,12 @@ const TransformationProtocolReduced = () => {
                                         Incubate 1 h at 28°C, 100 rpm, protected from light.</p>
                                     <div className="bg-red-50 border border-red-300 p-3 mt-4">
                                         <p className="text-red-800 font-medium">
-                                            <strong>NOTE 2:</strong> Do not let Agrobacterium grow over OD₆₀₀ = 3.
+                                            <strong>NOTE 2:</strong> Do not let <em>Agrobacterium</em> grow over OD₆₀₀ = 3.
                                             Overgrown cells are
                                             stressed and inefficient at T-DNA transfer.
                                         </p>
                                     </div>
-                                    <p className="text-gray-700"><strong>4)</strong> Transfer fronds into Agrobacterium
+                                    <p className="text-gray-700"><strong>4)</strong> Transfer fronds into <em>Agrobacterium</em>
                                         solution. Apply vacuum (−70 kPa) for 10 minutes.</p>
                                     <p className="text-gray-700"><strong>5)</strong> Release the vacuum slowly while
                                         gently swirling.</p>
@@ -165,8 +165,8 @@ const TransformationProtocolReduced = () => {
                                         <p className="text-red-800 font-medium">
                                             <strong>NOTE 3:</strong> Swirling during vacuum infiltration ensures dorsal
                                             stomata are exposed
-                                            to Agrobacterium solution, but vigorous swirling precipitates the
-                                            Agrobacterium
+                                            to <em>Agrobacterium</em> solution, but vigorous swirling precipitates the
+                                            <em> Agrobacterium</em>
                                             and reduces efficiency.
                                         </p>
                                     </div>
@@ -179,7 +179,7 @@ const TransformationProtocolReduced = () => {
                                                     alt="Vacuum Infiltration Setup" className="h-full mb-4 rounded-lg"/>
                                             </div>
                                             <p className="text-sm text-gray-600">Falcon tubes with duckweed fronds in
-                                                fection AIM solution with Agrobacterium </p>
+                                                 AIM solution with <em>Agrobacterium</em> </p>
                                         </div>
                                         <div className="bg-gray-50 p-4 border border-gray-200">
                                             <div className=" ">
@@ -193,10 +193,10 @@ const TransformationProtocolReduced = () => {
 
                                     <div className="space-y-2" style={{fontFamily: 'Urbanist'}}>
                                         <p className="text-gray-700"><strong>7)</strong> Put the infiltrated duckweed
-                                            and Agrobacterium suspension into plates</p>
+                                            and <em> Agrobacterium</em> suspension into plates</p>
                                         <p className="text-gray-700"><strong>8)</strong> Add <A
                                             className='text-green-600 font-bold'
-                                            href="/toolbox/predictable-duckweed-protocol/">DCMN</A> (25 - 30 mL per
+                                            href="#cultivation">DCMN</A> (25 - 30 mL per
                                             plate). Do not seal plates.</p>
 
                                         <div className="bg-red-50 border border-red-300 p-3 mt-4">
@@ -222,7 +222,7 @@ const TransformationProtocolReduced = () => {
                                     <div className="bg-red-50 border border-red-300 p-3 mt-4">
                                         <p className="text-red-800 font-medium">
                                             <strong>NOTE 5:</strong> 48 h is optimal. Shorter → low transfer. Longer →
-                                            Agrobacterium overgrows and kills fronds.
+                                            <em>Agrobacterium</em> overgrows and kills fronds.
                                         </p>
                                     </div>
                                 </div>
@@ -237,7 +237,7 @@ const TransformationProtocolReduced = () => {
                                 />
                                 <h2 className="text-2xl font-semibold text-gray-900 mb-4"
                                     style={{fontFamily: 'Space Grotesk'}}>
-                                    Day 6 • ELIMINATING AGROBACTERIUM
+                                    Day 6 • ELIMINATING <em>AGROBACTERIUM</em>
                                 </h2>
                                 <div className="space-y-2" style={{fontFamily: 'Urbanist'}}>
                                     <p className="text-gray-700"><strong>1)</strong> Transfer fronds to Duckweed

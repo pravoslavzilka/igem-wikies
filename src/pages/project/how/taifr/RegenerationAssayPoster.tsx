@@ -1263,7 +1263,7 @@ export default function RegenerationAssayPoster() {
         </div>
 
         {/* What Are We Going To Do Section */}
-        <div className="mb-12 bg-blue-50 p-8 rounded-lg border-2 border-blue-500">
+        <div className="mb-12 bg-blue-50 p-8 rounded-lg border-2 border-blue-500" id='what-are-we-going-to-do'>
           <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-4xl font-bold mb-6">WHAT ARE WE GOING TO DO</h2>
           <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">to enable Frond Regeneration (FR) part of our TAIFR method?</h3>
           

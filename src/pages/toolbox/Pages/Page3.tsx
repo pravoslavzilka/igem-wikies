@@ -52,11 +52,11 @@ export default function Page3() {
                             TRANSFORMATION protocol for duckweed
                         </h2>
 
-                        <p className="text-justify">
+                        <p className="text-justify text-lg">
                             We built on the duckweed transformation approaches described by Ordoñez Lab (2){" "}
                             from the Gregor Mendel Institute{" "}
-                            in Vienna. We simplified the protocol, tested it on 12 clones, and used three{" "}
-                            <i>Agrobacterium</i> strains.
+                            in Vienna. We simplified the protocol, tested it <b>on 12 clones</b>, and used <b>three{" "}
+                            <i>Agrobacterium</i> strains</b>.
                         </p>
                     </div>
 
@@ -73,7 +73,7 @@ export default function Page3() {
                 {/* === Expandable section === */}
                 <div>
                     {/* Header with toggle */}
-                    <div
+                    <div id="transformation-section"
                         onClick={() => setOpen(!open)}
                         className="flex items-center justify-between cursor-pointer border-b border-gray-300 pb-3 mb-6"
                     >
@@ -167,8 +167,8 @@ export default function Page3() {
                         <p className="text-justify">
                             Read more about pIB006 part at our{" "}
                             <A
-                                href="#"
-                                className="underline hover:text-[#6ca033] transition-colors"
+                                href="https://registry.igem.org/parts/bba-252t3xrc"
+                                className="hover:underline text-[#6ca033] transition-colors"
                             >
                                 Registry
                             </A>
@@ -216,23 +216,34 @@ export default function Page3() {
                             <div className="space-y-4 text-base md:text-lg leading-relaxed">
                                 <ul className="list-disc list-inside space-y-2">
                                     <li>
-                                        Design, order, and anneal oligos for <span
-                                        className="font-bold">gRNAs</span>{" "}
-                                        suitable for knocking out the gene of your interest. The oligos must contain
-                                        a{" "}
-                                        <span className="font-bold">GTTG</span> overhang at the 5′ end and a{" "}
-                                        <span className="font-bold">CAAA</span> overhang at the 3′ end.
+                                        Design gRNA oligonucleotides targeting your gene of interest (GOI) using a tool such as <b><A className='hover:underline text-[#6ca033]' target="_blank" href="https://sugarcane-genome.southgreen.fr/crispor/crispor.py">CRISPOR </A></b>. The forward oligo should carry a <b>GTTG</b> overhang and the reverse oligo a <b>CAAA</b> overhang at their 5′ ends.
+    
                                     </li>
                                     <li>
-                                        Digest and ligate your annealed oligos using the{" "}
-                                        <span className="font-bold italic">Esp3I</span> enzyme. Transform the reaction
-                                        into competent <i>E. coli</i> cells, then prepare overnight cultures and isolate
-                                        plasmids.
+                                        Anneal the complementary oligonucleotides to form a <b>double-stranded gRNA</b> insert.
+                                    </li>
+                                    <li>
+                                        Digest the plasmid pIB006 with <b>Esp3I</b>. 
+                                    </li>
+                                    <li>
+                                        Run the entire digestion mixture on an agarose gel; <b>two fragments</b> will appear - 12,517 bp (linearized backbone) and 413 bp (filler sequence). 
+                                    </li>
+                                    <li>
+                                        Excise the linearized backbone and purify it from the gel.
+                                    </li>
+                                    <li>
+                                        Ligate the annealed oligonucleotide duplex with the purified linearized backbone.
+                                    </li>
+                                    <li>
+                                        Transform the ligation mixture into competent <em>E. coli</em> cells. Screen colonies by colony PCR (using primers flanking the insertion site), inoculate positive clones in liquid culture, and isolate plasmid DNA.
+                                    </li>
+                                    <li>
+                                        Confirm correct assembly by Sanger sequencing.
                                     </li>
                                 </ul>
 
                                 {/* Gray info box */}
-                                <div className="bg-gray-100 p-4 rounded-lg text-sm border border-gray-200">
+                                <div className="bg-gray-100 p-4 rounded-lg text-base border border-gray-200">
                                     You will obtain a <span className="font-bold">modified pIB006 construct</span>{" "}
                                     containing your desired <span className="font-bold">gRNA</span>. The expression of
                                     the{" "}
@@ -255,7 +266,7 @@ export default function Page3() {
                                         modified pIB006 construct</span>{" "}
                                         into electrocompetent <i>Agrobacterium</i> cells using our{" "}
                                         <A href="/toolbox/agrobacterium-mediated-transformation-protocol/"
-                                           className="underline hover:text-[#6ca033]">
+                                           className="hover:underline text-[#6ca033]">
                                             Electroporation Protocol
                                         </A>
                                         .
@@ -271,8 +282,8 @@ export default function Page3() {
                                     <li>
                                         Finally, transform duckweed with <i>Agrobacterium</i> containing the{" "}
                                         <span className="font-bold">modified pIB006 construct</span> following our{" "}
-                                        <A href="/toolbox/programable-duckweed-protocol/"
-                                           className="underline hover:text-[#6ca033]">
+                                        <A href="#duckweed-transformation"
+                                           className="hover:underline text-[#6ca033]">
                                             Duckweed Transformation Protocol
                                         </A>
                                         .
@@ -292,8 +303,8 @@ export default function Page3() {
                                     />
                                 </div>
 
-                                <p className="text-sm text-gray-600 italic text-center max-w-xs">
-                                    <span className="font-bold">Figure 1.</span> End sequences your oligos for gRNA must
+                                <p className="text-base text-gray-600  text-justify max-w-xs">
+                                    <span className="font-bold">Figure 13.</span> End sequences your oligos for gRNA must
                                     have to be insertable into our pIB006 construct (1). The simplified protocol (2) for
                                     digestion and ligation of your gene into pIB006.
                                 </p>

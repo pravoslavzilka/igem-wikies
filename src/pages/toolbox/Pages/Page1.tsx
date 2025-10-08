@@ -227,7 +227,7 @@ export default function Page1() {
               discouraging efforts of scientists and iGEMers to engineer duckweeds to do useful stuff
             </span>{" "}
                             (read more at{" "}
-                            <A href="/toolbox/why-plants-suck/" className="underline">
+                            <A  href="/toolbox/why-plant-suck"className='hover:underline text-[#6ca033]'>
                                 Why plants suck
                             </A>
                             )...
@@ -250,13 +250,13 @@ export default function Page1() {
                             source of plant-based protein with a full amino acid spectrum, which we aimed to use to
                             address the affordability of protein feedstock — is just one of duckweed’s superior
                             characteristics (read more and see references at {" "}
-                            <A href="/toolbox/deep-dive-on-duckweed/" className="underline">
+                            <A href="/toolbox/deep-dive-on-duckweed/" className='hover:underline text-[#6ca033]'>
                                 Deep dive on duckweed page
                             </A>
                             ). Other features make duckweed a promising phytoremediation chassis, a complex
                             recombinant protein factory, and even a new model for studying monocot plants (read more
                             at{" "}
-                            <A href="/project/why/" className="underline">
+                            <A href="/plant/why-duckweed" className='hover:underline text-[#6ca033]'>
                                 Why duckweed page
                             </A>
                             ).{" "}
@@ -312,7 +312,7 @@ export default function Page1() {
                             alt="Plant synbio"
                             className="w-full object-cover"
                         />
-                        <div className="bg-gray-100 rounded-2xl p-4 text-center text-gray-800 text-sm italic">
+                        <div className="bg-gray-100 rounded-2xl p-4 text-justify text-gray-800 text-base">
                             <p>
                                 <span className="font-bold">Figure 1.</span> A subjective comparison of widely used
                                 plants in plant synthetic biology in terms of their “user-friendliness” and
@@ -344,8 +344,8 @@ export default function Page1() {
             </span>{" "}
                             More bitter was the realization that, like others, we could not engineer duckweed
                             quickly and efficiently — and that cultivating duckweed, as simple as it seems, is
-                            completely unpredictable. That is why we set out to make duckweed programmable and
-                            predictable…
+                            completely unpredictable. That is why we set out to make duckweed <A className='hover:underline text-[#6ca033]' href="#programmable">programmable</A> and
+                            <A className='hover:underline text-[#6ca033]' href="#predictable"> predictable</A>…
                             <span className="font-bold">
               {" "}
                                 To finally unlock its potential, so that together with other iGEM Teams, scientists
@@ -357,12 +357,12 @@ export default function Page1() {
                         <p className="text-justify">
                             The more we worked with duckweed and other plants, the clearer it became that{" "}
                             <span className="font-bold">
-              duckweed has the fewest typical “plant problems.”
-            </span>{" "}
+              duckweed has the fewest typical “plant problems”
+            </span>{" "}(see Fig. 1).
                             It grows fast, scales easily, and lacks a complex genome or strong transgene silencing.
                             This makes it perfectly positioned to provide solutions in agriculture,
                             pharmaceuticals, and even in accelerating basic plant science at lower cost{" "}
-                            (read more and see references at <A href="/project/why/" className="underline">Why{" "}
+                            (read more and see references at <A className='hover:underline text-[#6ca033]' href="/plant/why-duckweed" >Why{" "}
                             duckweed page</A>){" "}
                             <span className="font-bold">
               But duckweed also has its own challenges, which we set out to address in our iGEM
