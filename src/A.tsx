@@ -1,17 +1,23 @@
 import React from "react";
 
-// 🌍 Define your global prefix here, or import from a config/env variable
-// const GLOBAL_PREFIX = "/brno-czech-republic";
-const GLOBAL_PREFIX = "";
-
+// 🌍 Define your global prefix here (or import from config/env)
+const GLOBAL_PREFIX = ""; // e.g. "/project/how"
 
 interface AProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
     href: string;
 }
 
 const A: React.FC<AProps> = ({href, children, ...props}) => {
-    // Ensure no double slashes
-    const fullHref = `${GLOBAL_PREFIX.replace(/\/$/, "")}/${href.replace(/^\//, "")}`;
+    // If href is external or anchor link, skip prefixing
+    const isExternal =
+        href.startsWith("http://") ||
+        href.startsWith("https://") ||
+        href.startsWith("www.") ||
+        href.startsWith("#");
+
+    const fullHref = isExternal
+        ? href
+        : `${GLOBAL_PREFIX.replace(/\/$/, "")}/${href.replace(/^\//, "")}`;
 
     return (
         <a href={fullHref} {...props}>
