@@ -16,24 +16,28 @@ export default function HumanPracticesPage6() {
                 >
                     <div className="leading-relaxed text-lg space-y-6">
                         {/* Intro with Zoom call image beside */}
-                        <div className="grid md:grid-cols-2 gap-8 items-start">
-                            <div className="space-y-4">
+                        <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+                            {/* Left text */}
+                            <div className="space-y-4 md:pr-6">
                                 <p>
-                                    <span className="font-bold">Django </span>
-                                    greeted us from a greenhouse lab in Eldorado, Texas. We started
-                                    discussing duckweed cultivation and soon realized that all of us are
-                                    crazy about duckweed – Django justified that with pulling up the
-                                    duckweed tattoo on his forehead!
+                                    <span className="font-bold">Django</span> greeted us from a greenhouse lab
+                                    in Eldorado, Texas. We started discussing duckweed cultivation and soon
+                                    realized that all of us are crazy about duckweed — Django justified that
+                                    by showing the <span className="font-bold">duckweed tattoo</span> on his
+                                    forehead!
                                 </p>
                             </div>
-                            <div className="flex justify-center">
+
+                            {/* Right image */}
+                            <div className="flex justify-center md:pl-6">
                                 <img
                                     src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/4-2.webp"
                                     alt="Zoom call with Django Mangalam"
-                                    className="rounded-2xl max-w-md"
+                                    className="rounded-2xl max-w-md w-full object-contain"
                                 />
                             </div>
                         </div>
+
 
                         {/* Findings list */}
                         <p>These are the most important findings we learnt:</p>
@@ -63,32 +67,37 @@ export default function HumanPracticesPage6() {
                         </ul>
 
                         {/* Text + Greenhouse photo side by side */}
-                        <div className="grid md:grid-cols-2 gap-8 items-start">
-                            {/* Greenhouse photo */}
-                            <div className="flex justify-center">
+                        <div className="grid md:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
+                            {/* Left: Greenhouse photo */}
+                            <div className="flex justify-center md:pr-6">
                                 <img
                                     src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/4-3.webp"
                                     alt="Plantible greenhouse ponds"
-                                    className="rounded-2xl max-w-md"
+                                    className="rounded-2xl max-w-md w-full object-contain"
                                 />
                             </div>
 
-                            <div className="space-y-4">
+                            {/* Right: text */}
+                            <div className="space-y-4 md:pl-6">
                                 <p>
-                                    <span className="font-bold">Django stressed to do the calculations </span>
+                                    <span className="font-bold">Django stressed to do the calculations</span>{" "}
                                     on our vertical system very carefully. We discussed whether they tried to
-                                    use <span className="font-bold">genetically enhanced duckweed. </span>
-                                    He said that there were some trials to boost RuBisCO content but they
-                                    failed. They would be <span className="font-bold">very interested to try out our biomass-boosted duckweed </span>
+                                    use <span className="font-bold">genetically enhanced duckweed.</span> He
+                                    said that there were some trials to boost RuBisCO content but they failed.
+                                    They would be{" "}
+                                    <span className="font-bold">
+        very interested to try out our biomass-boosted duckweed
+      </span>{" "}
                                     if we obtain one.
                                 </p>
 
                                 <p>
-                                    At the end of the call, we even got an excursion around Plantible’s
-                                    ponds! You can imagine how motivated we were after that.
+                                    At the end of the call, we even got an excursion around Plantible’s ponds!
+                                    You can imagine how motivated we were after that.
                                 </p>
                             </div>
                         </div>
+
                     </div>
                 </ExpandablePill>
 
@@ -231,7 +240,8 @@ export default function HumanPracticesPage6() {
                     </p>
                 </div>
             </div>
-            <div className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif]" id="arturo">
+            <div className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif]"
+                 id="arturo">
                 {/* Arturo pill */}
                 <ExpandablePill
                     image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/4-4.webp"
