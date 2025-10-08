@@ -625,7 +625,7 @@ const PredictorMain = () => {
 
                 {/* Three side-by-side clickable images */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                    <a href="/project/how/predictor/limiting-biomass/" className="block group">
+                    <a href="/plant#harvesting" className="block group">
                         <img
                             src="https://static.igem.wiki/teams/5642/images/how/predictor/exp-lb.webp"
                             alt="limiting biomass"
@@ -633,7 +633,7 @@ const PredictorMain = () => {
                         />
                     </a>
 
-                    <a href="/project/how/predictor/harvesting-strategy/" className="block group">
+                    <a href="/plant#harvesting" className="block group">
                         <img
                             src="https://static.igem.wiki/teams/5642/images/how/predictor/exp-hs.webp"
                             alt="harvesting strategy"
@@ -641,7 +641,7 @@ const PredictorMain = () => {
                         />
                     </a>
 
-                    <a href="/project/how/predictor/medium-change/" className="block group">
+                    <a href="/plant#media-exchange" className="block group">
                         <img
                             src="https://static.igem.wiki/teams/5642/images/how/predictor/exp-mc.webp"
                             alt="medium change"
@@ -871,7 +871,7 @@ const PredictorMain = () => {
                         View on GitHub
                     </a>
                     <a
-                        href="#"
+                        href="https://malleably-unhabituated-kristin.ngrok-free.dev"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-black text-white font-semibold text-lg py-3 px-6 rounded-lg hover:bg-gray-800 transition-colors duration-200"
@@ -880,8 +880,7 @@ const PredictorMain = () => {
                         Visit Web Application
                     </a>
                     <Link
-                        to="/project/how/Cultivator#PROBE"
-                        target="_blank"
+                        to="/hardware#PROBE"
                         rel="noopener noreferrer"
                         className="bg-red-600 text-white font-semibold text-lg py-3 px-6 rounded-lg hover:bg-red-700 transition-colors duration-200"
                         style={{fontFamily: 'Space Grotesk, sans-serif'}}
