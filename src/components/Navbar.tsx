@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import A from "../A.tsx";
 
 const Navbar = () => {
   const [hoveredMenu, setHoveredMenu] = useState(null);
@@ -121,7 +122,7 @@ const Navbar = () => {
                 >
                   {menu.items.map((item, index) => (
                     <div key={index}>
-                      <a
+                      <A
                         href={item.path}
                         className="block px-4 py-2.5 hover:bg-gray-50 transition-colors group"
                       >
@@ -135,7 +136,7 @@ const Navbar = () => {
                             {item.sublabel}
                           </div>
                         )}
-                      </a>
+                      </A>
                       {item.subItems && (
                         <div className="ml-4 mt-1 mb-2">
                           {item.subItems.map((subItem, subIndex) => (
