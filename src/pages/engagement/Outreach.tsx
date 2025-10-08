@@ -41,7 +41,7 @@ export default function Outreach() {
                 </div>
 
                 {/* Four Pillars Section */}
-                <div className="px-6 py-8">
+                <div className="px-6 py-8" style={ {fontFamily: 'Space Grotesk  , sans-serif'} }>
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
 
                         <A href="#network">
@@ -115,7 +115,7 @@ export default function Outreach() {
                         Duckweed goes viral!
                     </h2>
 
-                    <div className="flex flex-col md:flex-row gap-6 items-start">
+                    <div className="flex flex-col md:flex-row gap-6 items-start" style={ {fontFamily: 'Space Grotesk  , sans-serif'} }>
                         <div className="flex-1" style={{fontFamily: 'Urbanist, sans-serif'}}>
                             <p className="mb-4 text-lg">
                                 <strong>Offline</strong> we can reach hundreds, but <strong>online </strong>
