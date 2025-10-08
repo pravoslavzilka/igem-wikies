@@ -693,6 +693,36 @@ export default function PartCollection() {
             </div>
           </section>
 
+
+          <div id="primer-database" className="mb-8">
+            <h3 className="text-2xl font-semibold mb-4 text-gray-800" style={{fontFamily: 'Space Grotesk'}}>
+              Oligos iGEM BRNO 2025 
+            </h3>
+            
+            <div className="overflow-x-auto">
+              <table className="min-w-full bg-white border border-gray-300" style={{fontFamily: 'Urbanist'}}>
+                <thead className="bg-gray-100">
+                  <tr>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-gray-700 border-b">ID</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-gray-700 border-b">Oligonucleotide Name</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-gray-700 border-b">Type/Purpose</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-gray-700 border-b">Sequence (5' to 3')</th>
+                  </tr>
+                </thead>
+                <tbody className="text-sm">
+                  {oligoData.map((oligo) => (
+                    <tr key={oligo.id} className="hover:bg-gray-50">
+                      <td className="px-4 py-3 border-b">{oligo.id}</td>
+                      <td className="px-4 py-3 border-b font-mono text-xs">{oligo.name}</td>
+                      <td className="px-4 py-3 border-b">{oligo.type}</td>
+                      <td className="px-4 py-3 border-b font-mono text-xs break-all">{oligo.sequence}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
           <References references={Reference} />
 
           
@@ -753,4 +783,166 @@ const Reference = [
     }
 ]
 
-
+ const oligoData = [
+    { id: "1", name: "oOSEXPA8_f", type: "BBD", sequence: "TACAGTATAAATACCGAGGTG" },
+    { id: "2", name: "oOSEXPA8_r", type: "BBD", sequence: "TGCGGTACAATGATATatac" },
+    { id: "3", name: "oAtCOG1_f", type: "BBD", sequence: "AACACTATTGCTTTTCTCTC" },
+    { id: "4", name: "oAtCOG1_r", type: "BBD", sequence: "CCATAATCTTTAACTAACTTTAC" },
+    { id: "5", name: "oVvCEB1_f", type: "BBD", sequence: "GTGGAGTTATCCTATTGATG" },
+    { id: "6", name: "oVvCEB1_r", type: "BBD", sequence: "GAAGAATATTCCATTTTGGC" },
+    { id: "7", name: "oB3T_f", type: "check", sequence: "CCCACTCTGTGAAGACAATGC" },
+    { id: "8", name: "oB3T_r", type: "check", sequence: "GTTTACCCGCCAATATATCCTGTCA" },
+    { id: "9", name: "oB3T-utr_f", type: "check", sequence: "CATTCAAATATGTATCCGCTCATGAGAC" },
+    { id: "10", name: "oRFP_r", type: "check", sequence: "GAGAACACCACCATCCTCGT" },
+    { id: "11", name: "oAtCOG1-2_f", type: "BBD", sequence: "GAAACTTAATCACAACTCTCTCTTTAAT" },
+    { id: "12", name: "oAtCOG1-2_r", type: "BBD", sequence: "TCAACCAAGAAGAAACCTCATTCA" },
+    { id: "13", name: "oAtNLP7_f", type: "BBD", sequence: "CACTAATAATAACATTTTTAACGACG" },
+    { id: "14", name: "oAtNLP7_r", type: "BBD", sequence: "TAGTTTTTCGGGTTCTGAAG" },
+    { id: "15", name: "oLj1_f", type: "PDT", sequence: "CGTCCCGTCCCAAAATGC" },
+    { id: "16", name: "oLj1_r", type: "PDT", sequence: "TGCTTCGCCCTTACCTCG" },
+    { id: "17", name: "oLj2_f", type: "PDT", sequence: "CTCGTCCATGCTCTCGTTCA" },
+    { id: "18", name: "oLj2_r", type: "PDT", sequence: "AGTGCGGCGACATCATCTAC" },
+    { id: "19", name: "oLj3_f", type: "PDT", sequence: "ACTCACCACTCCTCAACGAC" },
+    { id: "20", name: "oLj3_r", type: "PDT", sequence: "CTGACCGCTCCCACAAATGG" },
+    { id: "21", name: "oSp1_f", type: "PDT", sequence: "GCCGCCGAATCAGCCTTC" },
+    { id: "22", name: "oSp1_r", type: "PDT", sequence: "TGGAGTTGCTTTTGCGACAAGTT" },
+    { id: "23", name: "oSp2_f", type: "PDT", sequence: "GAGGAGCAGTACCAGGACGA" },
+    { id: "24", name: "oSp2_r", type: "PDT", sequence: "CCAGGGTTTGGATGGCGAA" },
+    { id: "25", name: "oSp3_f", type: "PDT", sequence: "GCTTCTCACACTGGTCGTCT" },
+    { id: "26", name: "oSp3_r", type: "PDT", sequence: "GAGTGCCGAGAGAGCCATTT" },
+    { id: "27", name: "Lp1_f", type: "PDT", sequence: "GATTCATTAATGCAGCTGAGCTCCCTCTCCTTCTTCTCCT" },
+    { id: "28", name: "Lp1_r", type: "PDT", sequence: "GCCAAGCTTATGGCACTGCAGCATCTCCAATTCAGCCTCC" },
+    { id: "29", name: "o_0.5mPING-amp_mc_f", type: "TAIFR", sequence: "ggGGTCTCaGGAGggccagtcacaatgggggtt" },
+    { id: "30", name: "o_0.5mPING-amp_mc_r", type: "TAIFR", sequence: "ggGGTCTCaAGCGcggcgcgggagaa" },
+    { id: "31", name: "o_1.0mPING-amp_mc_f", type: "TAIFR", sequence: "ggGGTCTCaGGAGggattttgggtacaa" },
+    { id: "32", name: "o_1.0mPING-amp_mc_r", type: "TAIFR", sequence: "cGGTCTCtAGCGggccagtcacaa" },
+    { id: "33", name: "o_NPTII-amp_mc_f", type: "TAIFR", sequence: "gtGGTCTCaAATGattgaacaagatggatt" },
+    { id: "34", name: "o_NPTII-amp_mc_r", type: "TAIFR", sequence: "cGGTCTCaCGAAtcagaagaactcgtcaag" },
+    { id: "35", name: "o_GFP-del_fa_f", type: "TAIFR", sequence: "ggacacagatagaagcacggtaagatatcccgc" },
+    { id: "36", name: "o_GFP-del_fa_r", type: "TAIFR", sequence: "aagctcgctcatggggccaggattttcctcaac" },
+    { id: "37", name: "o_pEG-amp_fa_f", type: "TAIFR", sequence: "GTTAAACTCGACATGCAGAGTTTAGCCATCTC" },
+    { id: "38", name: "o_pEG-amp_fa_r", type: "TAIFR", sequence: "ATCAGTGTTTGACAGTACATTAAAAACGTCCG" },
+    { id: "39", name: "o_ZmUBI-out_fa_f", type: "TAIFR", sequence: "TTTAATGTACTGTCAAACACTGATAGTTTCTGC" },
+    { id: "40", name: "o_ZmUBI-out_fa_r", type: "TAIFR", sequence: "AAACTCTGCATGTCGAGTTTAACTCTTTTGGC" },
+    { id: "41", name: "o_mPING-out_spei_f", type: "TAIFR", sequence: "attACTAGTataaggccagtcacaatggg" },
+    { id: "42", name: "o_mPING-out_spei_r", type: "TAIFR", sequence: "attACTAGTattaggccagtcacaatgg" },
+    { id: "43", name: "o_RFP-amp-fa_f", type: "TAIFR", sequence: "aatcctggccccatgagcgagcttatcaaagaa" },
+    { id: "44", name: "o_RFP-amp-fa_r", type: "TAIFR", sequence: "cttaccgtgcttctatctgtgtccgagcttaga" },
+    { id: "45", name: "oGFP_ko1_f", type: "TAIFR", sequence: "GTTGGACCAGGATGGGCACCACCC" },
+    { id: "46", name: "oGFP_ko1_r", type: "TAIFR", sequence: "AAACGGGTGGTGCCCATCCTGGTC" },
+    { id: "47", name: "oGFP_ko2_f", type: "TAIFR", sequence: "GTTGCGTAGGTGAAGGTGGTCACG" },
+    { id: "48", name: "oGFP_ko2_r", type: "TAIFR", sequence: "AAACCGTGACCACCTTCACCTACG" },
+    { id: "49", name: "oGFP_ko3_f", type: "TAIFR", sequence: "GTTGGTCGCCCTCGAACTTCACCT" },
+    { id: "50", name: "oGFP_ko3_r", type: "TAIFR", sequence: "AAACAGGTGAAGTTCGAGGGCGAC" },
+    { id: "51", name: "oU6b_mc_f", type: "TAIFR", sequence: "cgGGTCTCaCTCGatgcaagaacgaactaagcc" },
+    { id: "52", name: "oU6b_mc_r", type: "TAIFR", sequence: "cgGGTCTCaACCGccatccactccaagctcttg" },
+    { id: "53", name: "oU6b_seq_f", type: "TAIFR", sequence: "ggaatcggcagcaaagg" },
+    { id: "54", name: "oU6b_seq_r", type: "TAIFR", sequence: "cccagtcacgacgttg" },
+    { id: "55", name: "oGLYa_agro_f", type: "check", sequence: "CCACCACCACGAGCACAAGTCT" },
+    { id: "56", name: "oGLYa_agro_r", type: "check", sequence: "TGCCGAGACGGACACCCGAC" },
+    { id: "57", name: "oAtCOG1_mc_short_f", type: "BBD", sequence: "CAGAAGACGTAATGATGTTTTCACAAAATCTTTTTACA" },
+    { id: "58", name: "oAtCOG1_mc_r", type: "BBD", sequence: "CAGAAGACGTCGAATAACAAGATTGACCATCGG" },
+    { id: "59", name: "oAtCOG1_mc_long_f", type: "BBD", sequence: "CAGAAGACGTAATGATGGCGACCCAAGATTC" },
+    { id: "60", name: "oOsEXPA8_mc_f", type: "BBD", sequence: "CAGAAGACGTAATGAGTGACGCGACAATGG" },
+    { id: "61", name: "oOsEXPA8_mc_r", type: "BBD", sequence: "CAGAAGACGTCGAATAGAACTGAGCCGAGG" },
+    { id: "62", name: "Sp2_mc_f", type: "PDT", sequence: "ATGAAGACGTGGAGGTTGCAGAGGGTCTCGTTGTTCCT" },
+    { id: "63", name: "Sp2_mc_r", type: "PDT", sequence: "ACGAAGACCTAGTACCACCGAGCCCATGATCAAGGAAC" },
+    { id: "64", name: "oVvCEB1_mc_f", type: "BBD", sequence: "CAGAAGACAAAATGAATTCCAATCCATCACATG" },
+    { id: "65", name: "oVvCEB1_mc_r", type: "BBD", sequence: "ACGAAGACAACGAAAAAAGAGTATCTGTTGCTG" },
+    { id: "66", name: "oZmUBI_amp_mc_f", type: "TAIFR", sequence: "gcGGTCTCaGGAGcagtgcagcgtgac" },
+    { id: "67", name: "oZmUBI_amp_mc_r", type: "TAIFR", sequence: "cgGGTCTCaCATTgtactcaaggttagagcata" },
+    { id: "68", name: "oNPTII-amp_mc_f", type: "TAIFR", sequence: "gtGGTCTCaAATGattgaacaagatggatt" },
+    { id: "69", name: "o_NPTII-amp_mc_r_2", type: "TAIFR", sequence: "CGGTCTCACGAACAGAAGAACTCGTCAAG" },
+    { id: "70", name: "o_NPTII-amp_mc_r_3", type: "TAIFR", sequence: "CGGTCTCACGAACCGAAGAACTCGTCAAG" },
+    { id: "71", name: "oFragmentB_f", type: "TAIFR", sequence: "GTCAAGTCTGCTTTTATTATTTTTAAGCGTGC" },
+    { id: "72", name: "oFragmentB_r", type: "TAIFR", sequence: "TTTATCCGTTCGTCCATTTGTATGTGC" },
+    { id: "73", name: "oFragmentC_f", type: "TAIFR", sequence: "GGACGAACGGATAAACCTTTTCACG" },
+    { id: "74", name: "oFragmentA_r", type: "TAIFR", sequence: "ATAATAAAAGCAGACTTGACCTGATAGTTTGG" },
+    { id: "75", name: "oMCL0_f", type: "check", sequence: "AATACGCAAACCGCCTCTCC" },
+    { id: "76", name: "oMCL0_r", type: "check", sequence: "ccgaaaagtgccacctgac" },
+    { id: "77", name: "oMCL1_f", type: "check", sequence: "GAACCCTGTGGTTGGCATGCACATAC" },
+    { id: "78", name: "oMCL1_r", type: "check", sequence: "CTGGTGGCAGGATATATTGTGGTG" },
+    { id: "79", name: "oMCL2_f", type: "check", sequence: "GTGGTGTAAACAAATTGACGC" },
+    { id: "80", name: "oMCL2_r", type: "check", sequence: "GGATAAACCTTTTCACGCCC" },
+    { id: "81", name: "oGFP-gb_f", type: "check", sequence: "GCGCCGTCTCGCTCGAATGGTGAGCAAGGGCGAGGA" },
+    { id: "82", name: "oGFP-gb_r", type: "check", sequence: "GCGCCGTCTCGCTCACGAACCCTTGTACAGCTCGTCCATGC" },
+    { id: "83", name: "oSp2_XhoI_f", type: "PDT", sequence: "gcgtCTCGAGGTTGCAGAGGGTCTCGTTGTTCCT" },
+    { id: "84", name: "oSp2_SpeI_r", type: "PDT", sequence: "aatcACTAGTCCACCGAGCCCATGATCAAGGAAC" },
+    { id: "85", name: "o_ZmUbi_in_f", type: "check", sequence: "TTTTAGTGTGCATGTGTTCTCC" },
+    { id: "86", name: "o_ZmUbi_in_r", type: "check", sequence: "AATAGCGTATGAAGGCAGGG" },
+    { id: "87", name: "o_ZmUbi_col_f", type: "check", sequence: "CATCGTTACAATCAACATGC" },
+    { id: "88", name: "o_ZmUbi_col_r", type: "check", sequence: "cttcgtatgagaaaagaggg" },
+    { id: "89", name: "o_pEG-split_amp_1_r", type: "TAIFR", sequence: "tttcatgcttgttcctcttggcg" },
+    { id: "90", name: "o_pEG_split_amp_2_f", type: "TAIFR", sequence: "caagaggaacaagcatgaaacc" },
+    { id: "91", name: "oZmUBi_amp_mc_2_f", type: "TAIFR", sequence: "GCGAAGACATGGAGCAGTGCAGCGTGAC" },
+    { id: "92", name: "oZmUBi_amp_mc_2_r", type: "TAIFR", sequence: "CGGAAGACATCATTGTACTCAAGGTTAGAGCA" },
+    { id: "93", name: "o_0.5mPing-L0_f", type: "TAIFR", sequence: "GCGAAGACATCTCAGGAGTTAGGCCAGTCACAA" },
+    { id: "94", name: "o_0.5mPing-L0_r", type: "TAIFR", sequence: "CGGAAGACTACTCGAGCGCGGCGCGGGA" },
+    { id: "95", name: "o_1.0mPing-L0_f", type: "TAIFR", sequence: "GCGAAGACATCTCAGGAGGGATTTTGGGT" },
+    { id: "96", name: "o_1.0mPing-L0_r", type: "TAIFR", sequence: "GCGAAGACTACTCGAGCGTAAGGCCAGTCACAA" },
+    { id: "97", name: "o_mPing-nt_f", type: "TAIFR", sequence: "gcGAAGACtaAATGtaaggccagtcacaatgg" },
+    { id: "98", name: "o_mPing-nt_r", type: "TAIFR", sequence: "cgGAAGACatACCTttaggccagtcacaat" },
+    { id: "99", name: "oZmUbi_amp_mc_2_r2", type: "TAIFR", sequence: "CGGAAGACATCATTTTCTGCAGAAGTAACACCAAAC" },
+    { id: "100", name: "oLg001_L0_fw", type: "PDT", sequence: "gcGAAGACatggagCGTTTAGGTGTGCGGC" },
+    { id: "101", name: "oLg001_L0_rev", type: "PDT", sequence: "ggGAAGACatcattGCATTTAGTTGTTAACAAATCTCG" },
+    { id: "102", name: "oLg002_L0_fw", type: "PDT", sequence: "gcGAAGACatggagGAGGGGGCCGATAGC" },
+    { id: "103", name: "oLg002_L0_rev", type: "PDT", sequence: "ggGAAGACatcattCTTTTCCCTCGCCCTTTTC" },
+    { id: "104", name: "oLg003_L0_fw", type: "PDT", sequence: "gcGAAGACatggagAACAGATGGTGTTGGAGTC" },
+    { id: "105", name: "oLg003_L0_rev", type: "PDT", sequence: "ggGAAGACatcattATCGGAGGAGGTGGC" },
+    { id: "106", name: "oLj001_L0_fw", type: "PDT", sequence: "ggGAAGACatcattCGTTGAGGGCGGAAATTTG" },
+    { id: "107", name: "oLj001_L0_rev", type: "PDT", sequence: "gcGAAGACatggagGGGAGCTCCTTAATTCTGTGG" },
+    { id: "108", name: "oLj002_L0_fw", type: "PDT", sequence: "ggGAAGACatcattCCATCTTCCTCAGCC" },
+    { id: "109", name: "oLj002_L0_rev", type: "PDT", sequence: "gcGAAGACatggagCGGTCCGCCTGC" },
+    { id: "110", name: "oLm001_L0_fw", type: "PDT", sequence: "gcGAAGACatggagAGGGGGAGAATGTC" },
+    { id: "111", name: "oLm001_L0_rev", type: "PDT", sequence: "ggGAAGACatcattATCAGTTGGGAAGGAAGG" },
+    { id: "112", name: "oLm002_L0_fw", type: "PDT", sequence: "gcGAAGACatggagGTTTCAATCCATGAAGC" },
+    { id: "113", name: "oLm002_L0_rev", type: "PDT", sequence: "ggGAAGACatcattGAATTATTCGACAAAAGGC" },
+    { id: "114", name: "oLm003_L0_fw", type: "PDT", sequence: "gcGAAGACatggagCGACAGAAGAGGCTCTTAGAGG" },
+    { id: "115", name: "oLm003_L0_rev", type: "PDT", sequence: "ggGAAGACatcattTCCCTCGGCGCGAC" },
+    { id: "116", name: "oSp001_L0_fw", type: "PDT", sequence: "gcGAAGACatggagTTTTCAGGAGAGAAACG" },
+    { id: "117", name: "oSp001_L0_rv", type: "PDT", sequence: "ggGAAGACatcattCCATCTTTTGGACTAGAC" },
+    { id: "118", name: "oSp002_L0_fw", type: "PDT", sequence: "gcGAAGACatggagTCGATGCACGCGC" },
+    { id: "119", name: "oSp002_L0_rev", type: "PDT", sequence: "ggGAAGACatcattCCCCCACACCAGATAC" },
+    { id: "120", name: "oSp003_L0_fw", type: "PDT", sequence: "gcGAAGACatggagACAGACGTGATCC" },
+    { id: "121", name: "oSp003_L0_rv", type: "PDT", sequence: "ggGAAGACatcattCGCTATTATACCGTAAAAC" },
+    { id: "122", name: "oSp004_L0_fw", type: "PDT", sequence: "gcGAAGACatggagTCAACACCTCCCGC" },
+    { id: "123", name: "oSp004_L0_rv", type: "PDT", sequence: "ggGAAGACatcattGAGGCAGAGAGTCTACG" },
+    { id: "124", name: "oSp005_L0_fw", type: "PDT", sequence: "gcGAAGACatggagAGGTCACCCGGAAAGACC" },
+    { id: "125", name: "oSp005_L0_rev", type: "PDT", sequence: "ggGAAGACatcattGCAGTAGAATGGCGGCC" },
+    { id: "126", name: "o_0.5mPing-L1-2_f", type: "TAIFR", sequence: "GGGGTCTCAGGAGTTAGGCCAGTCACAATGGGG" },
+    { id: "127", name: "o_1.0mPing-L1-2_r", type: "TAIFR", sequence: "CGGTCTCTAGCGTAAGGCCAGTCACAA" },
+    { id: "128", name: "o_GFP-check_f", type: "check", sequence: "GCTGACCCTGAAGTTCATCTGCACC" },
+    { id: "129", name: "o_GFP-check_r", type: "check", sequence: "GCTCGATGCGGTTCACCAGG" },
+    { id: "130", name: "oMusa_L0_fw", type: "PDT", sequence: "gcGAAGACatggaggaaaagaatgagcatatcgtgg" },
+    { id: "131", name: "oMusa_L0_rev", type: "PDT", sequence: "ggGAAGACatcattctgatcaaagagataaaagaagaaagg" },
+    { id: "132", name: "oCas9_mc_f", type: "TAIFR", sequence: "gcGAAGACataatgGCTCGAtcCCATGGCTCCTGCTGC" },
+    { id: "133", name: "oCas9_mc_r", type: "TAIFR", sequence: "ggGAAGACatcgaaCCGACTTTACGCTTCTTCTTTGGGTCAGC" },
+    { id: "134", name: "oEsp3I_f", type: "TAIFR", sequence: "GGTCTCaTTGTaaGTTGaGAGACGaGTTGGGTTCCAGTGCCATTG" },
+    { id: "135", name: "oEsp3I_r", type: "TAIFR", sequence: "GGTCTCaAAACaaAAACaGAGACGaGTTGAGCAAAAGCACAAACA" },
+    { id: "136", name: "oYFP-check_f", type: "TAIFR", sequence: "CAAGCTGACCCTGAAGTTCATCTG" },
+    { id: "137", name: "oYFP-check_r", type: "TAIFR", sequence: "CTGGTAGCTCAGGTAGTGGTTGTC" },
+    { id: "138", name: "o_nls-pong_mc_dp_one_f", type: "TAIFR", sequence: "GCTCCTGCTGCCAAAAGAGTTAAACTCGACatgcagagtCTCgccatc" },
+    { id: "139", name: "nls_pong_dp_two_f", type: "TAIFR", sequence: "GAAGACacAATGGCTCCTGCTGCCAAAAGAGTTAAACTCG" },
+    { id: "140", name: "pong_cds1_ns_mc_r", type: "TAIFR", sequence: "GAAGACacCGAAgtcagcaaaGAGcttttcc" },
+    { id: "141", name: "o_YFP_mPING_YFP_f", type: "TAIFR", sequence: "GGGAAGACAAAATGGTGAG" },
+    { id: "142", name: "o_YFP_mPING_YFP_r", type: "TAIFR", sequence: "CCGAAGACAAAAGCTCACTT" },
+    { id: "143", name: "oGFP_qPCR_f", type: "PDT", sequence: "ATCATGGCCGACAAGCAGAAG" },
+    { id: "144", name: "oGFP_qPCR_r", type: "PDT", sequence: "TCTCGTTGGGGTCTTTGCTC" },
+    { id: "145", name: "oNPT_qPCR_f", type: "PDT", sequence: "CTCGACGTTGTCACTGAAGC" },
+    { id: "146", name: "oNPT_qPCR_r", type: "PDT", sequence: "GCCGGATCAAGCGTATGC" },
+    { id: "147", name: "o005_seq_f", type: "PDT", sequence: "ACGCTACTAGAATTCGAGCTC" },
+    { id: "148", name: "o005_seq_r", type: "PDT", sequence: "CATGTGCATCCTCGTAAAGC" },
+    { id: "149", name: "oTHI4_KO1_f", type: "thi4 knockout", sequence: "GTTGAACGTGCCTGGCAACTTTGA" },
+    { id: "150", name: "oTHI4_KO1_r", type: "thi4 knockout", sequence: "AAACTCAAAGTTGCCAGGCACGTT" },
+    { id: "151", name: "oTHI4_KO2_f", type: "thi4 knockout", sequence: "GTTGGTGATTCACCCTCGGACAGA" },
+    { id: "152", name: "oTHI4_KO2_r", type: "thi4 knockout", sequence: "AAACTCTGTCCGAGGGTGAATCAC" },
+    { id: "153", name: "oTHI4_KO3_f", type: "thi4 knockout", sequence: "GTTGAGTACATCTGCGTGTATCTG" },
+    { id: "154", name: "oTHI4_KO1_r", type: "thi4 knockout", sequence: "AAACCAGATACACGCAGATGTACT" },
+    { id: "155", name: "oTDNA-check_f", type: "RA genotyping", sequence: "GCCTGCTTGCCGAATATCAT" },
+    { id: "156", name: "oTDNA-check_r", type: "RA genotyping", sequence: "GGTTTACCCGCCAATATATCCTGTC" },
+    { id: "157", name: "o1.0mPing-check_f", type: "RA genotyping", sequence: "GCATTTAATTGATACAAGTTGCTGGGA" },
+    { id: "158", name: "oRFP_qPCR_r", type: "PDT", sequence: "GCAACGGCCATCTTCATGC" },
+    { id: "159", name: "oRFP_qPCR_f", type: "PDT", sequence: "ACACTCTCAGATGGCTCTTAAGC" },
+    { id: "160", name: "oZmUBI-colony_f", type: "check", sequence: "GACAAACAAGTGCACGGCAT" },
+    { id: "161", name: "oZmUBI-colony_r", type: "check", sequence: "AGGGCCCGGTAGTTCTACTT" }
+  ];

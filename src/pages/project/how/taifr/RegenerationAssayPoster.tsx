@@ -138,6 +138,15 @@ export default function RegenerationAssayPoster() {
           
         </div>
 
+
+        <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg mb-10">
+              <p className="text-gray-800" style={{fontFamily: 'Urbanist'}}>
+                <strong>Throughout this page, we refer to our primers as oXY; XY being the number of every respective primer in our primer database. 
+
+                  <a className='hover:underline text-[#6ca033]' href="/toolbox/programmable-duckweed/part-collection#primer-database"> Check it out here!</a> </strong>
+              </p>
+            </div>
+
         {/* DBTL 1 Section */}
         <div className="mb-12 ">
           <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-4xl font-bold mb-6" >DBTL 1</h2>
