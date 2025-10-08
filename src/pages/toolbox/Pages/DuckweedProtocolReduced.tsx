@@ -108,7 +108,7 @@ const DuckweedProtocolReduced = () => {
                             </div>
                             <p>
                                 <p className='text-md  mt-2 urbanist'>
-                                    <strong>Figure 2. </strong>
+                                    <strong>Figure 15. </strong>
                                     <span style={{fontWeight: 400}}>
                   (1) Petri dish with sterile duckweed culture kept as a backup; (2) Ø14 cm
                   glass crystallization pot for maintaining a larger amount of duckweed,
@@ -126,7 +126,7 @@ const DuckweedProtocolReduced = () => {
                             </div>
 
                             <p className='text-md  mt-2 urbanist'>
-                                <strong>Figure 3. </strong>
+                                <strong>Figure 16. </strong>
                                 <span style={{fontWeight: 400}}>Culture of </span>
                                 <em>
                                     <span style={{fontWeight: 400}}>Spirodela polyrhiza </span>
@@ -153,7 +153,7 @@ const DuckweedProtocolReduced = () => {
 
 
                     <p>
-                        <strong>Figure 1. </strong>
+                        <strong>Figure 14. </strong>
                         <span style={{fontWeight: 400}}>
               The level of iGEM Brno’s duckweed cultivation at the end of summer should
               not be called “small-scale.” Fortunately, by then our CULTIVATOR was

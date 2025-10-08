@@ -59,10 +59,7 @@ const MediumChangeReduced = () => {
                                 <img src="https://static.igem.wiki/teams/5642/images/how/predictor/duck-08557-min.webp"
                                      alt="Duckweed Cultivation" className="w-full h-auto rounded"/>
                             </div>
-                            <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                                <strong>Fig 1:</strong> Marko, one of our cultivation hustlers, undergoing the tedious
-                                hustle of medium exchange:D
-                            </p>
+                            
                         </div>
 
                     </div>
@@ -77,8 +74,8 @@ const MediumChangeReduced = () => {
                     <img src="https://static.igem.wiki/teams/5642/images/how/predictor/graf-final-medium-change.webp"
                          alt="Medium Change Graph" className="w-full h-auto rounded"/>
                 </div>
-                <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                    <strong>Fig 2:</strong><p>
+                <p className="text-base text-gray-600 mt-3 p-4 text-justify" style={{fontFamily: 'Urbanist, sans-serif'}}>
+                    <strong>Fig 17:</strong><p>
                   <span style={{fontWeight: 400}}>
                     Graph showing biomass growth over time for experimental (mean values from
                     two replicates of the experiment) and control groups of{" "}
