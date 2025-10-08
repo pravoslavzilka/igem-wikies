@@ -122,15 +122,7 @@ export default function HumanPracticesPage6() {
                 >
                     <p className="text-lg">
                         We consulted <span className="font-bold">Dr. da Silva </span> about right conditions for
-                        Gibson assembly cloning for our{" "}
-                        <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
-                            meristematic assay
-                        </A>{" "}
-                        and{" "}
-                        <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
-                            excision assay
-                        </A>{" "}
-                        in their first iterations.
+                        Gibson assembly cloning.
                     </p>
                 </ExpandablePill>
 
@@ -163,7 +155,7 @@ export default function HumanPracticesPage6() {
                         <span className="font-bold">iGEM teams from Brno </span>, knew the struggles we
                         were going through very well. She was always helpful with{" "}
                         <span className="font-bold">designing special PCR conditions </span> and
-                        cloning strategies for excision assay and our first versions of pIB003 and pIB004.
+                        cloning strategies.
                     </p>
                 </ExpandablePill>
             </div>

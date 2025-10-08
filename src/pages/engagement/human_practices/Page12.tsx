@@ -35,10 +35,9 @@ export default function HumanPracticesPage12() {
                     <span className="font-bold">professor Andrew D. Hanson.</span> Fortunately, he liked making
                     duckweed programmable! And we got a very valuable advice from him on how to ensure biosafe
                     operation of our vertical{" "}
-                    <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
-                        CULTIVATORs
-                    </A>{" "}
-                    around the world, even at farms.
+                    <A href="/hardware" className="text-[#538b5e] underline hover:text-[#25512b]">
+                        CULTIVATOR
+                    </A>.
                 </p>
 
                 {/* Dr. Hanson Pill */}

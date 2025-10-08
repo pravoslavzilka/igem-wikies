@@ -182,12 +182,8 @@ export default function HumanPracticesPage7() {
                     <div>
                         <p>
                             Although Marburg workflow was very robust and user-friendly, they didn’t have
-                            to face the problem of lack of transcriptomes available for one species (read
-                            more about that in{" "}
-                            <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
-                                in silico promoter workflow
-                            </A>
-                            ). Therefore, we had to opt for{" "}
+                            to face the problem of lack of transcriptomes available for one species. Therefore, we had
+                            to opt for{" "}
                             <span className="font-bold">orthology analysis </span> – grouping genes across
                             multiple species into groups of ones with similar origin – orthogroups. From
                             there we had to decide on what gene out of the orthogroup should we actually

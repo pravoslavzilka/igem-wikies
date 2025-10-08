@@ -230,8 +230,8 @@ export default function HumanPracticesPage2() {
                         , especially in duckweed. We came up with several ideas that could be
                         employed – reprogramming{" "}
                         <span className="font-bold">Agrobacterium</span> to target the T-DNA to
-                        chloroplast instead of nucleus[2], using peptide-mediated transformation of
-                        protoplast[3], or PEG-mediated transformation[4].
+                        chloroplast instead of nucleus [2], using peptide-mediated transformation of
+                        protoplast [3], or PEG-mediated transformation [4].
                     </p>
                     <p>
                         All were tried out before in different plants, and so far, with{" "}
