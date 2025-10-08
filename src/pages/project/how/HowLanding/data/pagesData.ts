@@ -37,8 +37,8 @@ export const pagesData: PageData[] = [
     beforeDescription: "available to SynBio community",
     beforeDetails: "Exogenous promoters are often silenced, hindering expression.",
     afterTime: "NEW PROMOTERS",
-    afterDescription: "7 new native duckweed promoters characterised",
-    afterDetails: "Strong, stable expression with native regulatory elements.",
+    afterDescription: "Established workflow for endogenous duckweed regulatory part identification",
+    afterDetails: "7 new duckweed endogenous promoters characterized.",
     bgColor: "#F5F5F5",
     accentColor: "#779E45"
   },
