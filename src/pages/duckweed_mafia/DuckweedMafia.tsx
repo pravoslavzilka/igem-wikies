@@ -125,11 +125,11 @@ const DuckweedMafiaTeam = () => {
                 },
                 {
                     name: "Peťo Schmidt",
-                    role: "head of linkedIn, the “let´s sell the duckweed guy chief email officer, economy student",
+                    role: "head of linkedIn, the “let´s sell the duckweed“ guy chief email officer, economy student",
                     description: "Energetic and thoughtful, he's the kind of person who leads with both heart and action. Whether he's dancing, running, or deep in a book, he's always learning and growing. A graduate of leadership academies and an active force in NGOs, he's passionate about making a real impact. He just graduated from ECON MUNI — and he's only getting started!",
                     image: "https://static.igem.wiki/teams/5642/images/duckweedmafia/team/dsc05380.webp"
                 }
-            ]
+            ]   
         },
         {
             title: "Hustlers",

@@ -264,12 +264,12 @@ const SustainabilityDocument = () => {
                             <p className="leading-relaxed">
                                 [2] 'Per capita sources of protein', Our World in Data. Accessed: Jun. 01, 2025.
                                 [Online]. Available: <A className='text-blue-500 hover:underline' target='_blank'
-                                                           to="https://ourworldindata.org/grapher/per-capita-sources-of-protein">https://ourworldindata.org/grapher/per-capita-sources-of-protein</A>
+                                                           href="https://ourworldindata.org/grapher/per-capita-sources-of-protein">https://ourworldindata.org/grapher/per-capita-sources-of-protein</A>
                             </p>
                             <p className="leading-relaxed">
                                 [3] World Wide Fund for Nature, 'Soy'. Accessed: Jun. 04, 2025. [Online].
                                 Available: <A className='text-blue-500 hover:underline' target='_blank'
-                                                 to="https://wwf.panda.org/discover/our_focus/food_practice/sustainable_production/soy/">https://wwf.panda.org/discover/our_focus/food_practice/sustainable_production/soy/</A>
+                                                 href="https://wwf.panda.org/discover/our_focus/food_practice/sustainable_production/soy/">https://wwf.panda.org/discover/our_focus/food_practice/sustainable_production/soy/</A>
                             </p>
                             <p className="leading-relaxed">
                                 [4] P. V. Femeena and R. A. Brennan, 'Lemnaceae as a resilient crop to improve food
@@ -281,7 +281,7 @@ const SustainabilityDocument = () => {
                                 [5] European Environmental Agency, 'Cross-cutting story 4: Nutrients', European
                                 Environment Agency. Accessed: Jun. 01, 2025. [Online]. Available: <A
                                 className='text-blue-500 hover:underline' target='_blank'
-                                to="https://www.eea.europa.eu/publications/zero-pollution/cross-cutting-stories/nutrients">https://www.eea.europa.eu/publications/zero-pollution/cross-cutting-stories/nutrients</A>
+                                href="https://www.eea.europa.eu/publications/zero-pollution/cross-cutting-stories/nutrients">https://www.eea.europa.eu/publications/zero-pollution/cross-cutting-stories/nutrients</A>
                             </p>
                             <p className="leading-relaxed">
                                 [6] J. Xu and G. Shen, 'Growing duckweed in swine wastewater for nutrient recovery and
@@ -298,7 +298,7 @@ const SustainabilityDocument = () => {
                                 Mitigating GHGs: Soy | Publications | WWF', World Wildlife Fund. Accessed: Jun. 05,
                                 2025. [Online]. Available: <A className='text-blue-500 hover:underline'
                                                                  target='_blank'
-                                                                 to="https://www.worldwildlife.org/publications/measuring-and-mitigating-ghgs-soy">https://www.worldwildlife.org/publications/measuring-and-mitigating-ghgs-soy</A>
+                                                                 href="https://www.worldwildlife.org/publications/measuring-and-mitigating-ghgs-soy">https://www.worldwildlife.org/publications/measuring-and-mitigating-ghgs-soy</A>
                             </p>
                         </div>
                     </div>

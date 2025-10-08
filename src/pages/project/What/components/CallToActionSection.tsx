@@ -1,5 +1,6 @@
 // src/pages/project/What/components/CallToActionSection.tsx
 import React from 'react';
+import A from "../../../../A.tsx";
 
 const CallToActionSection: React.FC = () => {
   const handleLinkClick = () => {
@@ -26,13 +27,15 @@ const CallToActionSection: React.FC = () => {
         </p>
 
           {/* Call to action heading with underline */}
+          <A href="/project/how/taifr/overview" >
           <button
-            onClick={handleLinkClick}
+            
             className="w-full max-w-[784px] text-2xl sm:text-3xl lg:text-5xl font-semibold leading-[140%] text-center text-black underline cursor-pointer hover:text-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded p-2"
             style={{ fontFamily: 'Urbanist, sans-serif' }}
           >
             See how we filled the gaps!
           </button>
+          </A>
           
         </div>
       </div>
