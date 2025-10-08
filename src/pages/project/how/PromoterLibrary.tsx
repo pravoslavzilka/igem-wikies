@@ -408,33 +408,31 @@ const PromoterLibrary = () => {
 
                 <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
                     The strength and stability of gene expression are crucial aspects that reflect the quality of a
-                    promoter region and its suitability as a component of a general transformation plasmid. For the
-                    assessment of orthogroup expression strength, we calculated the mean expression level, while the
-                    coefficient of variation (CV) in each orthogroup was calculated to reflect expression stability
-                    across species.
+                    regulatory sequence. For the assessment of orthogroup expression strength, we calculated the mean
+                    expression level across orthogroup memebers. Variance and subsequently coefficient of variance (CV)
+                    were calculated to reflect expression stability across species.
                 </p>
 
                 <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
-                    The variance is strongly dependent on the mean of data, which does not allow a simple calculation of
-                    averages from heterogenous transcriptomic data. Therefore, we applied the variance stabilizing
-                    transformation (VST) from the DESeq2 python package, which reduces the dependence of the variance on
-                    the mean and makes the data more homoscedastic. This transformation is particularly useful for
-                    calculating the CV.
+                    The variance is strongly dependent on the mean of data, which does not allow for a simple
+                    calculation of averages from heterogeneous transcriptomic data. Therefore, we applied the variance
+                    stabilizing transformation (VST) from the DESeq2 R package, which reduces the dependence of variance
+                    on the mean and gets them closer to homoscedasticity.
                 </p>
 
 
                 <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
                     For the calculation of mean expression values, we used the regularized log (rlog) transformation,
-                    which stabilizes the variance across the range of mean values, while it also shrinks low-count genes
-                    towards the average across samples. This regularization improves the reliability of mean estimates
-                    for genes with low expression, which are otherwise highly variable.
+                    which stabilizes the variance across the range of mean values, while shrinking low-count genes
+                    towards the average across samples. This transformation improves the reliability of mean estimates
+                    for genes with low expression, which are otherwise highly variable. See the plotted results in the
+                    Figure 7.
                 </p>
 
                 <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
-                    Orthogroups in the 95th percentile of expression average and CV lower than 30% were picked as
-                    candidates for promoter search. As shown in Figure 7 (CV /mean expression) and Figure 8 (CV/log₂
-                    mean), these filtering criteria yielded a subset of 124 candidate genes that were further analyzed
-                    as potential promoter sources.
+                    Orthogroups in the 95th percentile of expression average and CV lower than 30% were chosen as
+                    candidates for promoter search. These filtering criteria yielded a subset of 124 candidate
+                    orthogroups that were further analyzed as potential promoter sources.
                 </p>
 
 
@@ -458,20 +456,20 @@ const PromoterLibrary = () => {
                 <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
                     Candidate genes for promoter search and evaluation are the highest-expressed, but the biological
                     context was not known. In order to reduce the noise introduced by unannotated genes, we performed
-                    functional annotation analysis with eggNOGmapper (<A className='text-blue-500 hover:underline'
-                                                                         target='_blank'
-                                                                         href="http://eggnog-mapper.embl.de/">http://eggnog-mapper.embl.de/</A>)
-                    [19] [20], a tool providing ontology-based annotation with GO terms and KEGG pathways across a wide
+                    functional annotation analysis using eggNOGmapper (<A className='text-blue-500 hover:underline'
+                                                                          target='_blank'
+                                                                          href="http://eggnog-mapper.embl.de/">http://eggnog-mapper.embl.de/</A>)
+                    [19] [20], a tool providing ontology-based annotation using GO terms and KEGG pathways across a wide
                     range of species. The second reason for such analysis was to account for the fact that the ideal
                     promoters are likely to be associated with housekeeping genes known for their stable expression.
                 </p>
 
 
                 <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
-                    Orthogroups containing only reasonably annotated (not unknown) and housekeeping genes were
-                    considered. As expected, many candidates were linked to essential cellular processes such as
-                    ribosomal proteins, translation factors, or primary metabolism. The final list of 20 Orthogroups was
-                    curated manually.
+                    Orthogroups containing only reasonably annotated (not unknown) with preference for housekeeping
+                    genes were considered. As expected, many candidates were linked to essential cellular processes such
+                    as ribosomal proteins, translation factors, or primary metabolism. The final list of 20 Orthogroups
+                    was curated manually.
                 </p>
 
 
@@ -753,8 +751,7 @@ const PromoterLibrary = () => {
                                 of variance and reasonable ontology of all genes included are shown in the table. Genes
                                 with MoClo compatible promoter regions are marked green and were directly selected for
                                 experimental evaluation, all unmarked are incompatible. Orange marked genes were chosen
-                                for synthesis without BbsI restriction sites - such synthesized promoters regions were
-                                also experimentally evaluated.
+                                for synthesis without BbsI restriction sites.
                             </p>
                         </div>
                     </div>
@@ -789,9 +786,9 @@ const PromoterLibrary = () => {
                             tens of bp to several kbp. The gold standard is to search for promoter sequences within 2kbp
                             upstream of the TSS. However, it is known that the untranslated region (5'UTR), located
                             between the TSS and the start codon (ATG), also influences gene expression levels,
-                            particularly through post-transcriptional regulation mechanisms (Dassi et al., 2024) [21],
-                            and we had to take this into account since the exact 5'UTR length is not annotated for most
-                            genes.
+                            particularly through post-transcriptional regulation mechanisms (Dassi et al., 2024) [21].
+                            We had to, and we had to take this into account since the exact 5'UTR length is not
+                            annotated for most genes.
 
                             <br/><br/>
                             Therefore, we evaluated promoter sequences concatenated with the 5'UTR, which could be
@@ -807,16 +804,18 @@ const PromoterLibrary = () => {
 
 
                 <h1 className="text-3xl font-bold mb-6 mt-16" style={{fontFamily: "Space Grotesk, sans-serif"}}>MoClo
-                    Compatibility</h1>
+                    Compatibility Filtering</h1>
 
                 <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
                     Experimental evaluation of promoter strength requires the assembly of a plasmid containing the
-                    promoter sequence using the MoClo protocol. This method utilizes restriction enzyme BbsI, which
-                    recognizes specific restriction sites artificially added upstream and downstream of the promoter
-                    part. Any natively occurring BbsI restriction site within the promoter sequence would interfere with
-                    the MoClo workflow. We have therefore filtered out promoters containing such sites, and for some
-                    promoters, BbsI recognition sites were removed and the sequences were synthesized via Twist,
-                    obtaining the final set of promoter sequences ready for experimental evaluation.
+                    promoter sequence using the MoClo protocol. This method utilizes type IIS restriction enzymes BbsI,
+                    BsaI and SapI. Thus, any natively occurring type IIS restriction sites within the promoter+5’UTR
+                    sequence would interfere with the MoClo workflow. That is why we filtered out promoter+5’UTR
+                    sequences containing such sites and proceeded with their isolation from the genomic DNA (the highest
+                    expressing member of the orthogroup that was MoClo compatible was chosen for the isolation). For
+                    some sequences, type IIS recognition sites were removed and they were synthesized via Twist,
+                    obtaining the final set of promoter+5’UTR sequences ready for experimental evaluation (read further
+                    to see more on the isolation and synthesis).
                 </p>
 
                 <h1 className="text-3xl font-bold mb-6 mt-16"
@@ -824,12 +823,13 @@ const PromoterLibrary = () => {
 
 
                 <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>
-                    We have analyzed transcriptomic data of four Lemnoideae species and identified candidate promoter
+                    We analyzed transcriptomic data of four Lemnoideae species and identified candidate promoter+5’UTR
                     regions that promise ideal properties for stable and high expression of genes of interest in
-                    transformed duckweed. Groups of genes, that bear the same functions interspecially were identified
-                    and used for picking of the highest and the most equally expressed groups. Housekeeping genes with
-                    known functions were preferred. Final amount of 17 promoter+5'UTR regions were suggested for wet lab
-                    evaluation.
+                    duckweed. Groups of genes with similar functions interspecially were identified and used for
+                    selection of the highest and the most stably expressed ones. We annotated their function and
+                    selected the ones with presumably housekeeping functions. We extracted the MoClo compatible
+                    promoter+5’UTR sequences from these and obtained the final set of 17 sequences was used in
+                    expression assessment.
                 </p>
 
 
