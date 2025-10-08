@@ -743,7 +743,7 @@ const PredictorMain = () => {
                 <div className="text-center max-w-4xl mx-auto px-4 py-6">
                     <p className="text-gray-700 leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
                         The model's predictions were tested in practice. The model was tasked with predicting the optimal harvesting settings for long-term cultivation (60+ days).
-                        The harvesting period was set to three, and harvesting ratios of 30% and 40% (both predicted as optimal) and 50% (not predicted as optimal) were selected.
+                        The harvesting period was set to 3, and harvesting ratios of 30% and 40% (both predicted as optimal) and 50% (not predicted as optimal) were selected.
                         Indeed, the experiment with an HR of 50% showed an unsustainable trend of decreasing biomass and the lowest total yield.
                     </p>
                 </div>
@@ -796,7 +796,7 @@ const PredictorMain = () => {
                     <p className="text-gray-700 leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
                         The <span className="text-[#6ca033] font-semibold">Yield Predictor</span> approaches duckweed
                         yield prediction from a different perspective, leveraging already available data [9]. Trained to
-                        forecast annual duckweed yield. Predicted trends are in a good agreement with the<span
+                        forecast annual duckweed yield. Predicted trends are in a good agreement with the <span
                         className="text-[#6ca033] font-semibold">Growth Modeler</span>. Together, our toolbox
                         combines both tools to validate in-silico cultivation designs from two independent perspectives.
                     </p>
