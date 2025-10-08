@@ -899,8 +899,8 @@ const PromoterLibrary = () => {
                         to see more on the isolation and synthesis).
                     </p>
 
-                    <h1 className="text-3xl font-bold mb-6 mt-16"
-                        style={{fontFamily: "Space Grotesk, sans-serif"}}>Summary</h1>
+                <h1 className="text-3xl font-bold mb-6 mt-16" id="summary"
+                    style={{fontFamily: "Space Grotesk, sans-serif"}}>Summary</h1>
 
 
                     <p className="leading-relaxed pt-5" style={{fontFamily: "Urbanist, sans-serif"}}>

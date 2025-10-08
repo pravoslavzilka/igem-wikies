@@ -14,7 +14,7 @@ export default function PartCollection() {
             Part collection: Programmable Duckweed
           </h1>
           <p className="text-lg" style={{fontFamily: 'Urbanist'}}>
-            The 55 parts in our collection embody our first major iGEM stride toward making duckweed genetic engineering faster and more accessible - though the journey is only beginning.
+            The <b>55 parts</b> in our collection embody our <b>first major iGEM stride</b> toward making genetic engineering of the <b>fastest growing plant on Earth</b> fast and use-friendly - though the journey is only beginning.
           </p>
         </div>
 
@@ -32,7 +32,7 @@ export default function PartCollection() {
                   12 TAIFR parts - 9 basic, 3 composite
                 </h3>
                 <p className="text-gray-700" style={{fontFamily: 'Urbanist'}}>
-                  Stable duckweed genome insertion, 5x faster than before via the customizable PING/PONG system
+                  <b>Stable duckweed genome insertion</b>, 5x faster than before via the customizable PING/PONG system
                 </p>
               </div>
               
@@ -41,16 +41,16 @@ export default function PartCollection() {
                   9 parts for our CRISPR/Cas9 tool - 8 basic, 1 composite
                 </h3>
                 <p className="text-gray-700" style={{fontFamily: 'Urbanist'}}>
-                  Gene knockouts with a single digest & ligate reaction via our adaptable pIB006 construct
+                  <b>Gene knockouts</b> with a single digest & ligate reaction via our adaptable pIB006 construct
                 </p>
               </div>
               
               <div className="bg-gradient-to-br from-amber-50 to-amber-100 p-6 rounded-lg border-l-4 border-amber-500">
                 <h3 className="text-xl font-semibold mb-2 text-amber-900" style={{fontFamily: 'Space Grotesk'}}>
-                  21 new endogenous parts with testing constructs - 7 basic, 14 composite
+                  <b>21 new endogenous</b> parts with testing constructs - 7 basic, 14 composite
                 </h3>
                 <p className="text-gray-700" style={{fontFamily: 'Urbanist'}}>
-                  New candidates for duckweed endogenous promoters + 5' UTRs: identified based on transcriptomic data and characterized by a set of measurement constructs
+                  <b>New candidates for duckweed endogenous promoters </b> + 5' UTRs: identified based on transcriptomic data and characterized by a set of measurement constructs
                 </p>
               </div>
               
@@ -65,7 +65,7 @@ export default function PartCollection() {
             </div>
 
             <div className="bg-green-50 border-l-4 border-green-600 p-6 rounded-r-lg">
-              <p className="text-gray-800 font-medium" style={{fontFamily: 'Urbanist'}}>
+              <p className="text-gray-800 font-medium text-center" style={{fontFamily: 'Urbanist'}}>
                 We assembled this collection to lower the entry barrier for future teams interested in duckweed research. With these parts, iGEMers can fulfil the massive potential of the tiny fastest growing plant on Earth.
               </p>
             </div>
@@ -77,13 +77,13 @@ export default function PartCollection() {
               What is wrong with duckweed genetic engineering?
             </h2>
             
-            <div className="prose max-w-none text-gray-700" style={{fontFamily: 'Urbanist'}}>
+            <div className="prose max-w-none text-gray-700 text-justify" style={{fontFamily: 'Urbanist'}}>
               <p className="mb-4">
-                For iGEM teams and plant researchers, the greatest bottleneck is <strong>time</strong>. Compared to bacteria or yeast, plants grow slowly, and engineering cycles can take months [1]. For non-model species, the challenges multiply: stable transformation protocols are often unreliable or missing, transient systems are inconsistent, and only a few regulatory parts are available [2]. The result is a vicious cycle – slow growth and slow transformations make iterations long, which delays part characterization, and stalls both fundamental research and practical applications [3].
+                For iGEM teams and plant researchers, the greatest bottleneck is <strong>time</strong>. Compared to bacteria or yeast, plants grow slowly, and <b>engineering cycles can take months</b> [1]. For non-model species, the challenges multiply: stable transformation protocols are often unreliable or missing, transient systems are inconsistent, and only a few regulatory parts are available [2]. <b> The result is a vicious cycle – slow growth and slow transformations make iterations long</b>, which delays part characterization, and stalls both fundamental research and practical applications [3].
               </p>
               
               <p className="mb-4">
-                To break this cycle, we turned to duckweed, <strong>the fastest-growing plant in the world</strong> [4]. With doubling time of just 48 hours and a naturally high protein content, duckweed holds enormous potential: as protein-rich feed, a phytoremediation tool, and a sustainable chassis for biomanufacturing [5]. Our original focus was next-generation cattle feed grown directly on the liquid fraction of manure. Yet, techno-economic analysis and farmer consultations revealed that current duckweeds lack agronomic traits, important for farm deployment: optimized nitrogen uptake, faster biomass accumulation, and larger fronds. Traditional breeding to introduce these traits would take decades. Genetic engineering could be faster – <strong>if the tools existed</strong>.
+                To break this cycle, we turned to duckweed, <strong>the fastest-growing plant in the world</strong> [4]. With doubling time of just 48 hours and a naturally high protein content, duckweed holds enormous potential: as protein-rich feed, a phytoremediation tool, and a sustainable chassis for biomanufacturing [5]. Our original focus was next-generation cattle feed grown directly on the liquid fraction of manure. Yet, techno-economic analysis and farmer consultations revealed that <b>current duckweeds lack agronomic traits</b>, important for farm deployment: optimized nitrogen uptake, faster biomass accumulation, and larger fronds. Traditional breeding to introduce these traits would take decades.<strong> Genetic engineering could be faster – if the tools existed</strong>.
               </p>
               
               <p className="mb-4">
@@ -91,58 +91,60 @@ export default function PartCollection() {
               </p>
               
               <p className="mb-4">
-                Our part collection was built to change that. It contains constructs necessary for generating <strong>stable transgene insertions into the duckweed nuclear genome within two weeks under non-sterile conditions</strong> using our customizable Ping/PONG TAIFR system, a tool for user-friendly CRISPR/Cas9 knock-outs, and a set of seven endogenous promoter candidates + 5' UTR parts. Endogenous parts were chosen mainly for their potential to drive more stable and potentially stronger expression in the native plant.
+                Our part collection was built to change that. It contains constructs necessary for generating <strong>stable transgene insertions into the duckweed nuclear genome within two weeks under non-sterile conditions </strong> (<A className='hover:underline text-[#6ca033]' href="/project/how/taifr/overview">read more</A>) using our customizable Ping/PONG TAIFR system, a tool for user-friendly CRISPR/Cas9 knock-outs, and a set of seven endogenous promoter candidates + 5' UTR parts. Endogenous parts were chosen mainly for their potential to drive more stable and potentially stronger expression in the native plant.
               </p>
               
-              <p className="font-medium">
+              <p className="font-bolt text-center pt-4 text-[#6ca033]"><b>
                 All in all, parts in our collection together enable faster engineering iteration to push duckweed research forward to finally unlock its true potential.
+              </b>
               </p>
             </div>
           </section>
 
 
-
-          {/* TAIFR Description */}
-            <div className="prose max-w-none text-gray-700 mb-8" style={{fontFamily: 'Urbanist'}}>
-              <h3 className="text-3xl font-semibold mb-4 text-gray-800" style={{fontFamily: 'Space Grotesk'}}>
+            <h3 className="text-3xl font-semibold mb-4 text-gray-800" style={{fontFamily: 'Space Grotesk'}}>
                 TAIFR parts
               </h3>
+
+          {/* TAIFR Description */}
+            <div className="prose max-w-none text-gray-700 text-justify mb-8" style={{fontFamily: 'Urbanist'}} >
+              
               
               <p className="mb-4">
                 <b>T</b>ransposase-<b>A</b>ssociated <b>I</b>nsertion & <b>F</b>rond <b>R</b>egeneration is a method designed to bypass the five-month process of generating stable duckweed transformants through tissue culture, where genome-insertion mutants are induced, transformed, and regenerated from calli.
               </p>
               
               <p className="mb-4">
-                Through discussions with our advisor, Dr. Ordóñez (<A href="#" className="text-blue-600 underline" target="_blank">read more here</A>), and later confirmed by our own experiments using a gifted testing construct, we verified that <strong>transient expression via standard agroinfiltration works efficiently in duckweed</strong> [7]. We therefore concluded that the bottleneck in stable transformation is not expression, but <strong>the low efficiency of <em>Agrobacterium</em> T-DNA insertion into the duckweed genome</strong>.
+                Through discussions with our advisor, Dr. Ordóñez (<A href="/human-practices#arturo" className="hover:underline text-[#6ca033]" target="_blank">read more here</A>), we concluded that the bottleneck in stable transformation is <strong> low efficiency of <em>Agrobacterium</em> T-DNA insertion into the duckweed genome</strong>.
               </p>
               
               <p className="mb-4">
-                Our strategy was to <strong>enable or to increase number of insertion events</strong>. If enough transformed cells are generated, there would be no need to go through a callus stage. Instead, <em>Agrobacterium</em> carrying our gene of interest (fused to a resistance marker) can be applied directly to duckweed fronds. By carefully adjusting the antibiotic concentration, transformed cells carrying the construct are favored to outcompete non-transformed ones and regenerate into fully transgenic fronds - using nothing more than a simple transient transformation.
+                Our strategy was to <strong>enable or to increase number of insertion events</strong>. If enough transformed cells are generated, there would be no need to go through a callus stage. Instead, <em>Agrobacterium</em> carrying our gene of interest (fused to a resistance marker) can be applied directly to duckweed fronds. By carefully adjusting the antibiotic concentration, <b>transformed cells carrying the construct are favored to outcompete non-transformed ones and regenerate into fully transgenic fronds</b> - using nothing more than a simple transient transformation.
               </p>
               
               <p className="mb-4">
-                Encouraged by its co-inventor Dr. Keith Slotkin, we adapted the PING/PONG transposon system, first described by Liu et al. in <em>Arabidopsis</em> and soybean [8]. In this system, the PONG transposase recognizes, excises, and integrates any DNA sequence bordered by mPing transposable elements. To apply this, we designed two constructs:
+                Encouraged by its co-inventor Dr. Keith Slotkin, we adapted the PING/PONG transposon system, first described by Liu et al. in <em>Arabidopsis</em> and soybean [8]. In this system, the PONG transposase recognizes, excises, and integrates DNA sequence bordered by mPing transposable elements. To apply this, we designed two constructs:
               </p>
               
               <ul className="list-disc ml-6 mb-4">
-                <li><strong>pIB003</strong> carrying the PONG transposase,</li>
-                <li><strong>pIB005</strong> carrying a swappable cassette with a gene of interest and a G418 resistance marker, flanked by mPing borders.</li>
+                <li><strong><A href="https://registry.igem.org/parts/bba-25bd3z4p" className="hover:underline text-[#6ca033]" target="_blank">pIB003</A></strong> carrying the <b>PONG transposase,</b></li>
+                <li><strong><A href="https://registry.igem.org/parts/bba-25460yvj" className="hover:underline text-[#6ca033]" target="_blank">pIB005</A></strong> carrying a swappable cassette with a gene of interest and a G418 resistance marker, flanked by <b>mPing borders</b>.</li>
               </ul>
               
               <p className="mb-4">
-                To customize the TAIFR system, the user digests plasmid pIB005 with Esp3I, generating a 5' overhang (AATG) and a 3' overhang (TTCG) - the standard MoClo CDS1 no stop codon overhangs. The digested backbone can be purified from gel and ligated with any CDS containing correct MoClo-compatible overhangs, allowing simple integration of new genes of interest (see the protocol for ligation of your gene into pIB005 <A href="#" className="text-blue-600 underline" target="_blank">here</A>).
+                To customize the TAIFR system, the user digests plasmid pIB005 with Esp3I, generating a 5' overhang <b>(AATG)</b> and a 3' overhang <b>(TTCG)</b> - the standard MoClo CDS1 no stop codon overhangs. The digested backbone can be purified from gel and ligated with any CDS containing correct MoClo-compatible overhangs, allowing simple integration of new genes of interest (see the protocol for ligation of your gene into pIB005 <A href="/plant#how-to-use-taifr" className="underline:hover text-[#6ca033]">here</A>).
               </p>
               
               <p className="mb-4">
-                We confirmed the functionality of the first half of our method (Transposase-Assisted Insertion) by verifying mPing-bordered cargo insertion into the duckweed nuclear genome through fluorescence and PCR analysis (see results <A href="#" className="text-blue-600 underline" target="_blank">here</A>). The second part has not yet worked due to several factors (<A href="#" className="text-blue-600 underline" target="_blank">read more here</A>), which is why we have not been able to test whether our Cre-lox system functions as intended.
+                <b>We confirmed the functionality of the first half of our method</b> (Transposase-Assisted Insertion) by verifying mPing-bordered cargo insertion into the duckweed nuclear genome through fluorescence and PCR analysis (<A href="/project/how/taifr/overview#dbtl-4-test" className="text-[#6ca033] hover:underline" >see results here</A>). The second part has not yet worked due to several factors (<A href="/project/how/taifr/overview#wondering-end" className="text-[#6ca033] hover:underline" >read more here</A>), which is why we have not been able to test whether our Cre-lox system functions as intended.
               </p>
               
               <p className="mb-4">
-                <em>Theoretically</em>, it should. Once the Frond Regeneration part of our method is established (see proposed strategies), the presence of the Cre-lox system will enable transgene stacking in duckweed lines developed via the TAIFR method. This is particularly important because TAIFR currently relies on a single resistance marker, as duckweed is generally not very sensitive to antibiotics. Moreover, the continued presence of resistance genes in transgenic lines is not a desirable state.
+                <em>Theoretically</em>, it should. Once the Frond Regeneration part of our method is established (<A href="/project/how/taifr/overview#what-are-we-going-to-do" className="text-[#6ca033] hover:underline">see proposed strategies</A>), the presence of the Cre-lox system will enable transgene stacking in duckweed lines developed via the TAIFR method. This is particularly important because TAIFR currently <b>relies on a single resistance marker, as duckweed is generally not very sensitive to antibiotics</b>. Moreover, the continued presence of resistance genes in transgenic lines is not a desirable state.
               </p>
               
               <p className="mb-4">
-                Excision of p2A-NPTII from transgenic duckweed lines upon expression of Cre recombinase and facilitated by heterologous lox sites (lox 71 and lox 66) will result in a mutated lox site (lox71/66) that is no longer recognizable by Cre recombinase, thereby allowing repeated insertion of the TAIFR translational unit and excision of the selection marker (NPTII).
+                Excision of p2A-NPTII from transgenic duckweed lines upon expression of Cre recombinase and facilitated by <b>heterologous lox sites (lox 71 and lox 66)</b> will result in a mutated lox site (lox71/66) that is no longer recognizable by Cre recombinase, thereby allowing repeated insertion of the TAIFR translational unit and excision of the selection marker (NPTII).
               </p>
             </div>
 
@@ -282,21 +284,31 @@ export default function PartCollection() {
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className=" p-6 rounded-lg">
                 <img src="https://static.igem.wiki/teams/5642/images/toolbox/partcollection/pib005-copy-1.webp" alt="pIB005 Diagram" className="w-full h-auto mb-4 rounded-lg" />
-                <p className="text-base text-gray-700" style={{fontFamily: 'Urbanist'}}>
+                <p className="text-base text-gray-700 text-justify" style={{fontFamily: 'Urbanist'}}>
                   <strong>Figure 1. </strong> 
-                         pIB005 contains a cassette flanked on both sides by the non-transposable element mPing. Inside the cassette, there is a fluorescent marker (GFP) and a resistance gene against neomycin (NPTII). Both GFP and NPTII are linked by a self-cleaving 2A peptide (derived from porcine teschovirus-1), allowing their parallel expression. The GFP-p2A-NPTII ORF is driven by the ubiquitin promoter from Zea mays (rZmUBI) and terminated by the Cauliflower Mosaic Virus terminator sequence (t35S). This design minimizes the overall cassette size, resulting in higher insertion efficiency. The gene for GFP in the cassette is bordered by Esp3I restriction sites, allowing seamless swapping of the first coding sequence (CDS1) in the translational unit. This design enables customization of which gene is inserted and expressed in duckweed using our TAIFR method. The second CDS of the translational unit (p2A-NPTII) is bordered by lox sites - specifically mutated sequences, with lox71 at the 5′ end and lox66 at the 3′ end. Upon expression of Cre recombinase, this design enables excision of the selection marker (NPTII) from transgenic duckweed, allowing transgene stacking in a single line using our TAIFR method. Excision of p2A-NPTII from transgenic duckweed lines results in a mutated lox site that is no longer recognizable by Cre recombinase, thereby allowing repeated insertion of the TAIFR translational unit and excision of the selection marker (NPTII).The entire expression cassette is bordered by T-DNA for Agrobacterium-mediated transformation and is housed in a binary vector, allowing replication in both E. coli and Agrobacterium tumefaciens.
+                         pIB005 contains a cassette flanked on both sides by the non-transposable element mPing. Inside the cassette, there is a fluorescent marker (GFP) and a resistance gene against neomycin (NPTII). Both GFP and NPTII are linked by a self-cleaving 2A peptide (derived from porcine teschovirus-1), allowing their parallel expression. The GFP-p2A-NPTII ORF is driven by the ubiquitin promoter from Zea mays (rZmUBI) and terminated by the Cauliflower Mosaic Virus terminator sequence (t35S). This design minimizes the overall cassette size, resulting in higher insertion efficiency. The gene for GFP in the cassette is bordered by Esp3I restriction sites, allowing seamless swapping of the first coding sequence (CDS1) in the translational unit. This design enables customization of which gene is inserted and expressed in duckweed using our TAIFR method. The second CDS of the translational unit (p2A-NPTII) is bordered by lox sites - specifically mutated sequences, with lox71 at the 5′ end and lox66 at the 3′ end. Upon expression of Cre recombinase, this design enables excision of the selection marker (NPTII) from transgenic duckweed, allowing transgene stacking in a single line using our TAIFR method. Excision of p2A-NPTII from transgenic duckweed lines results in a mutated lox site that is no longer recognizable by Cre recombinase, thereby allowing repeated insertion of the TAIFR translational unit and excision of the selection marker (NPTII).The entire expression cassette is bordered by T-DNA for <em>Agrobacterium</em>-mediated transformation and is housed in a binary vector, allowing replication in both <em>E. coli</em> and <em>Agrobacterium tumefaciens</em>.
 
                     </p>
               </div>
               
               <div className=" p-6 rounded-lg">
                 <img src="https://static.igem.wiki/teams/5642/images/toolbox/partcollection/pib003-1.webp" alt="pIB003 Diagram" className="w-full h-auto mb-4 rounded-lg" />
-                <p className="text-base text-gray-700" style={{fontFamily: 'Urbanist'}}>
-                  <strong>Figure 2.</strong> pIB003 is carrying ORFs for two PONG transposase subunits, separated by self-cleaving 2A peptide from <em>Thosea asigna</em> virus (t2a) with nuclear localization sequence (NLS), linked with red fluorescent protein (RFP) by a self-cleaving 2A peptide derived from Porcine teschovirus-1 (p2a). Expression of PONG-p2a-RFP is driven by ubiquitin promoter from <em>Zea mays</em> (rZmUBI) and terminated by terminator sequence derived from Cauliflower Mosaic Virus (t35S). Both PONG and p2a-RFP are duckweed-codon optimized. Expression cassette is bordered by T-DNA allowing for <em>Agrobacterium</em>-mediated transformation and lies in binary vector, allowing for replication both in <em>E.coli</em> and in <em>Agrobacterium tumefaciens</em>.
+                <p className="text-base text-gray-700 text-justify " style={{fontFamily: 'Urbanist'}}>
+                  <strong>Figure 2.</strong> pIB003 is carrying ORFs for two PONG transposase subunits, separated by self-cleaving 2A peptide from <em>Thosea asigna</em> virus (t2a) with nuclear localization sequence (NLS), linked with red fluorescent protein (RFP) by a self-cleaving 2A peptide derived from Porcine teschovirus-1 (p2a). Expression of PONG-p2a-RFP is driven by ubiquitin promoter from <em>Zea mays</em> (rZmUBI) and terminated by terminator sequence derived from Cauliflower Mosaic Virus (t35S). Both PONG and p2a-RFP are duckweed-codon optimized. Expression cassette is bordered by T-DNA allowing for <em>Agrobacterium</em>-mediated transformation and lies in binary vector, allowing for replication both in <em>E. coli</em> and in <em>Agrobacterium tumefaciens</em>.
                 </p>
               </div>
             </div>
           </section>
+          
+          <A href="/plant#how-to-use-taifr" >
+          <div className="p-6 bg-[#6ca033] text-[#25512b] rounded-lg mb-12">
+            <h2 className="text-3xl font-bold mb-4 text-white text-center" style={{fontFamily: 'Space Grotesk'}}>
+                See how you can use TAIFR parts !
+              </h2>
+
+          </div>
+
+          </A>
 
           {/* CRISPR/Cas9 Section */}
           <section className="mb-12">
@@ -306,7 +318,7 @@ export default function PartCollection() {
             
             <div className="prose max-w-none text-gray-700 mb-8" style={{fontFamily: 'Urbanist'}}>
               <p className="mb-4">
-                When we set out to create mutant duckweeds with a single gene knocked out for our Meristematic Assay, we discovered that assembling a gene knockout construct required multiple, relatively laborious and time-consuming cloning steps. This process was made even more difficult by the large size of the individual parts. To streamline our own work – and to spare future iGEM teams the same challenge – we designed a tool that would be as ready-to-use as possible for downstream applications: <b>pIB006</b>.
+                When we set out to create mutant duckweeds with a single gene knocked out for our <A className='hover:underline text-[#6ca033]' href="/project/how/taifr/overview#dbtl-5">Meristematic Assay</A>, we discovered that assembling a gene knockout construct <b>required multiple, relatively laborious and time-consuming cloning steps</b>. This process was made even more difficult by the large size of the individual parts. To streamline our own work – and to spare future iGEM teams the same challenge – we designed a tool that would be as ready-to-use as possible for downstream applications: <b>pIB006</b>.
               </p>
             </div>
 
@@ -317,16 +329,17 @@ export default function PartCollection() {
                     <img src="https://static.igem.wiki/teams/5642/images/toolbox/partcollection/pib006-copy.webp" alt="pIB006 Diagram" className="w-full h-auto mb-4 rounded-lg" />
               </div>
               <div className="md:col-span-1  ">
-                <p className="text-base text-gray-700" style={{fontFamily: 'Urbanist'}}>
+                <p className="text-base text-gray-700 text-justify" style={{fontFamily: 'Urbanist'}}>
                     <strong>Figure 3.</strong> pIB006 contains three expression cassettes designed for rapid and customizable gene knockouts using the CRISPR/Cas9 system. The first cassette encodes a plant codon-optimized Cas9 driven by the <em>Zea mays</em> ubiquitin promoter (rZmUBI) and terminated by the Cauliflower Mosaic Virus terminator (t35S).The second cassette carries the neomycin resistance gene (NPTII) for antibiotic selection. Expression of NPTII is controlled by the nopaline synthase promoter (rNOS) from <em>Agrobacterium tumefaciens</em> and terminated by the terminator sequence nopaline synthase gene (tNOS) from <em>Agrobacterium tumefaciens</em>. The third cassette provides the CRISPR guide RNA transcription unit. It consists of the <em>Oryza sativa</em> U6 promoter (rOsU6) followed by a customizable filler sequence flanked by Esp3I restriction sites, a tracrRNA scaffold, and a polyadenylation signal. This design allows seamless replacement of the filler sequence with user-defined gRNA oligonucleotides using a simple digest-and-ligate reaction with Esp3I-compatible overhangs. The entire expression cassette is bordered by T-DNA for <em>Agrobacterium</em>-mediated transformation and is housed in a binary vector, allowing replication in both <em>E. coli</em> and <em>Agrobacterium tumefaciens</em>.
                 </p>
 
              </div>   
             </div>
 
-            <div className="prose max-w-none text-gray-700" style={{fontFamily: 'Urbanist'}}>
+            <div className="prose max-w-none text-gray-700 text-justify" style={{fontFamily: 'Urbanist'}}>
               <p className="mb-4">
-                Unfortunately, we didn't have the chance to test the functionality of our pIB006 part, except for digesting and ligating the gRNA into it, which we successfully performed twice. We also didn't have the opportunity to transform pIB006 into duckweed, as it was designed and built during the fifth (final) DBTL cycle of TAIFR, just as the Wiki Freeze was approaching. However, there is no logical reason it shouldn't work, since Cas9, driven by the rZmUBI promoter and terminated by the t35S terminator, has been successfully used to knock out genes in duckweed.
+            We tested the functionality of pIB006 at the level of gRNA ligation twice (see the Safety page). Unfortunately, we didn’t have the chance to transform pIB006 into duckweed, as it was designed and built during the fifth (final) DBTL cycle of TAIFR, just as the Wiki Freeze was approaching. However, there is no logical reason it shouldn’t work, <b>since Cas9 - driven by the rZmUBI promoter and terminated by the t35S terminator - has been successfully used to knock out genes in duckweed</b> (10).
+
               </p>
             </div>
 
@@ -442,17 +455,17 @@ export default function PartCollection() {
 
           {/* Endogenous Promoter Section */}
           <section className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900" style={{fontFamily: 'Space Grotesk'}}>
+            <h2 className="text-3xl font-bold mb-6 text-gray-900 " style={{fontFamily: 'Space Grotesk'}}>
               3. Endogenous Duckweed Promoter + 5' UTR Parts
             </h2>
             
-            <div className="prose max-w-none text-gray-700 mb-8" style={{fontFamily: 'Urbanist'}}>
+            <div className="prose max-w-none text-gray-700 mb-8 text-justify" style={{fontFamily: 'Urbanist'}}>
               <p className="mb-4">
-                For this part of our toolbox, we were greatly inspired by iGEM Marburg 2024 and their work on dandelion. Through discussions with their team and with our advisor Dr. Arturo-Mari Ordóñez. we realized that to make duckweed engineering more attractive and accessible, it was crucial to provide <strong>endogenous regulatory parts</strong>. At present, almost no native promoters and 5' UTRs are available for duckweed, which severely limits its practical application [9].
+                For this part of our toolbox, we were greatly inspired by iGEM Marburg 2024 and their work on dandelion. Through discussions with their team and with our advisor Dr. Arturo-Mari Ordóñez. we realized that to make duckweed engineering more attractive and accessible, it was crucial to provide <strong>endogenous regulatory parts</strong>. At present, almost <b>no native promoters and 5' UTRs are available for duckweed</b>, which severely limits its practical application [9].
               </p>
               
               <p className="mb-4">
-                Guided by the approach of iGEM Marburg 2024, we analyzed <strong>publicly available transcriptomic datasets</strong> from 6 duckweed ecotypes, together with a dataset kindly provided by Dr. Ordóñez. Genes were screened based on two criteria, namely <strong>high transcript abundance</strong>, to ensure strong promoter activity and <strong>low variance of abundance across duckweed species</strong> for the broadest possible applicability across duckweed species.
+                Guided by the approach of iGEM Marburg 2024, we analyzed <strong>publicly available transcriptomic datasets</strong> from 6 duckweed ecotypes, together with a dataset kindly provided by Dr. Ordóñez. Genes were screened based on two criteria, namely <strong>high transcript abundance</strong>, to ensure strong promoter activity and <strong>low variance of abundance across duckweed species</strong> for the broadest possible applicability across duckweed species. See more on our in-silico design <A className='hover:underline text-[#6ca033]' href="/measurement">here</A>. 
               </p>
               
               <p className="mb-4">
@@ -460,21 +473,23 @@ export default function PartCollection() {
               </p>
               
               <p className="mb-4">
-                From this analysis, we selected <strong>13 candidate promoter + 5' UTRs</strong>. We attempted to isolate all from genomic DNA of the respective duckweed species by PCR, and successfully done so for 5 of them. Of these, we were able to clone three promoters into RUBY testing constructs and RFP measurement constructs. To expand this set, we ordered synthesis of the next four most promising candidates, all of which were successfully cloned.
+                From this analysis, we selected <strong>13 candidate promoter + 5' UTRs</strong>. We attempted to isolate all from genomic DNA of the respective duckweed species by PCR, and successfully done so for 5 of them. Of these, we were able to clone three promoters into RUBY testing constructs and RFP measurement constructs. To expand this set, we ordered synthesis of the next four most promising candidates, all of which were successfully cloned. See how we built the testing constructs for promoters <A className='hover:underline text-[#6ca033]' href="/measurement#summary">here</A>. 
               </p>
             </div>
 
             {/* Testing Construct Diagram */}
             <div className="mb-8">
               <img src="https://static.igem.wiki/teams/5642/images/toolbox/partcollection/promotres-circular-copy.webp" alt="Promoter Testing Construct Design" className="w-full h-auto mb-4 rounded-lg" />
-              <p className="text-base " style={{fontFamily: 'Urbanist'}}>
-                <strong>Figure 4.</strong> Schematic representation of the promoter testing construct design, which enabled a ratiometric approach for quantitative testing of promoter-driven expression (<A href="#" className="text-blue-600 underline" target="_blank">read more here</A>). Altogether, we created 14 testing constructs — seven using RUBY (an enzyme complex producing the red betalain pigment, visible to the naked eye and allowing rapid functionality checks) and seven using RFP (Red Fluorescent Protein) as the reporter gene for quantitative analysis by qPCR. Both versions of the first ORF are terminated by the Cauliflower Mosaic Virus terminator (t35S). The second ORF is identical across all 14 constructs, allowing us to directly compare the expression levels of candidate promoters with the nopaline synthase promoter (rNOS), which has previously shown reliable activity in duckweed. The rNOS promoter drives the expression of the neomycin phosphotransferase II (NPTII) gene, which is terminated by the nopaline synthase terminator (tNOS). Both rNOS and tNOS are derived from <em>Agrobacterium tumefaciens</em>. The entire expression cassette is flanked by T-DNA borders for <em>Agrobacterium</em>-mediated transformation and housed in a binary vector capable of replication in both <em>E. coli</em> and <em>Agrobacterium tumefaciens</em>.
+              <p className="text-base text-justify" style={{fontFamily: 'Urbanist'}}>
+                <strong>Figure 4.</strong> Schematic representation of the promoter testing construct design, which enabled a ratiometric approach for quantitative testing of promoter-driven expression. Altogether, we created 14 testing constructs — seven using RUBY (an enzyme complex producing the red betalain pigment, visible to the naked eye and allowing rapid functionality checks) and seven using RFP (Red Fluorescent Protein) as the reporter gene for quantitative analysis by qPCR. Both versions of the first ORF are terminated by the Cauliflower Mosaic Virus terminator (t35S). The second ORF is identical across all 14 constructs, allowing us to directly compare the expression levels of candidate promoters with the nopaline synthase promoter (rNOS), which has previously shown reliable activity in duckweed. The rNOS promoter drives the expression of the neomycin phosphotransferase II (NPTII) gene, which is terminated by the nopaline synthase terminator (tNOS). Both rNOS and tNOS are derived from <em>Agrobacterium tumefaciens</em>. The entire expression cassette is flanked by T-DNA borders for <em>Agrobacterium</em>-mediated transformation and housed in a binary vector capable of replication in both <em>E. coli</em> and <em>Agrobacterium tumefaciens</em>.
               </p>
             </div>
 
-            <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg mb-32">
-              <p className="text-gray-800" style={{fontFamily: 'Urbanist'}}>
-                <strong>Matus text about functionality</strong>
+            <div className='mt-16 mb-16 text-justify' style={{fontFamily: 'Urbanist'}}>
+              <p>
+                We managed to run several iterations of testing both visual testing constructs with RUBY reporter and our measurement constructs with RFP. We verified functionality of all of our promoter+5’UTR sequences in both <em>Spirodela polyrhiza</em> 7428 and <em>Lemna gibba </em>7742 with transcript detection via PCR on cDNA. We attempted the quantification of transcription activity with quantitative PCRs and obtained preliminary results regarding the level of their expression, which we were able to compare with conventionally used promoters. We did not confirm the protein expression being driven by the constructed  regulatory sequences and further testing is needed to evaluate the regulatory parts functionality. <A className='hover:underline text-[#6ca033]' href="/measurement">See how we performed quantification and evaluation of transcriptonic data.</A>.
+
+              Altogether, we made first steps for enabling construction of regulatory parts library native to duckweeds.
               </p>
             </div>
 
@@ -588,7 +603,7 @@ export default function PartCollection() {
                       <td className="px-4 py-3 border-b">promoter + 5' UTR</td>
                       <td className="px-4 py-3 border-b">rNOS-TMV</td>
                       <td className="px-4 py-3 border-b">Nopaline synthase promoter + 5' UTR TMV</td>
-                      <td className="px-4 py-3 border-b">Agrobacterium tumefaciens, Tobacco Mosaic Virus</td>
+                      <td className="px-4 py-3 border-b"><em>Agrobacterium</em> tumefaciens, Tobacco Mosaic Virus</td>
                       <td className="px-4 py-3 border-b">MoClo Plant Parts Kit deposited by Patron lab</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
@@ -620,7 +635,7 @@ export default function PartCollection() {
                       <td className="px-4 py-3 border-b">terminator + 3' UTR</td>
                       <td className="px-4 py-3 border-b">AtuOCS</td>
                       <td className="px-4 py-3 border-b">Octopine synthase terminator + 3'UTR</td>
-                      <td className="px-4 py-3 border-b">Agrobacterium tumefaciens</td>
+                      <td className="px-4 py-3 border-b"><em>Agrobacterium</em> tumefaciens</td>
                       <td className="px-4 py-3 border-b">MoClo Plant Parts Kit deposited by Patron lab</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
@@ -781,8 +796,16 @@ const Reference = [
         id: 9,
         text: "Wei, C., Li, Y., Li, Z., Wang, Y., Chen, X., & Sun, L. (2024). An endogenous promoter LpSUT2 discovered in duckweed. Frontiers in Plant Science, 15, 1368284.",
         url: "https://doi.org/10.3389/fpls.2024.1368284"
+    },
+    {
+        id: 10,
+        text: "Barragán-Borrero, V., de Santana Lopes, A., Batista, E. D. R., Höfer, M., Elias, R., Chakraborty, A., Ponce-Mañe, A., Descombes, C., Diezma-Navas, L., Petraki, L., Huber, M., Xu, S., & Marí-Ordóñez, A. (2025, August 28). Strain, procedures, and tools for reproducible genetic transformation and genome editing of Spirodela polyrhiza (L.) Schleid. bioRxiv. https://doi.org/10.1101/2025.08.28.672806",
+        url: "https://doi.org/10.1101/2025.08.28.672806"
     }
+    
 ]
+
+
 
  const oligoData = [
     { id: "1", name: "oOSEXPA8_f", type: "BBD", sequence: "TACAGTATAAATACCGAGGTG" },

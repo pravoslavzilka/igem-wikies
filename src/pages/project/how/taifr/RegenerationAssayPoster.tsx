@@ -872,7 +872,7 @@ export default function RegenerationAssayPoster() {
             assembly was confirmed by sequencing.</li>
           </ul>
 
-          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4 mt-24">TEST – transformation</h3>
+          <h3 id="dbtl-4-test" style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4 mt-24">TEST – transformation</h3>
           
 
           <div className='grid grid-cols-1 md:grid-cols-5 gap-6 mb-6'>
@@ -1059,7 +1059,7 @@ export default function RegenerationAssayPoster() {
                     Genomic DNA isolated from <em>Spirodela polyrhiza</em> 7428 at 30 days post co-transformation with pIB005 and pIB003 (iteration RA4.1) was separated on a gel from to avoid conceivable <em>Agrobacterium</em> DNA contamination, purified, and subsequently subjected to two PCR reactions. The first reaction (upper gel), using primers o128 and o129, tested for the presence of GFP - presumably inserted into the genome via PONG transposase activity from pIB003. It yielded the expected 250 bp product in 9 out of 20 samples. The second reaction (lower gel), using primers o55 and o56, tested for the presence of <em>Agrobacterium</em> DNA in the samples to rule out the possibility that GFP was present in the form of the binary vector pIB005 residing in <em>Agrobacterium</em>. This reaction produced the expected product in 3 out of 20 samples, indicating that GFP detection in 7 out of 20 samples resulted from Transposase-Assisted Insertion. The first negative control (genomic DNA from non-transformed <em>S. polyrhiza</em>) did not yield any bands, as expected. The second negative control (water instead of DNA) also showed no amplification. The positive control (pIB005 construct) yielded the expected 250 bp band.
                 </p>
 
-          <p className="mb-6 leading-relaxed">
+          <p className="mb-6 leading-relaxed" id="wondering-end">
             Wondering how the regeneration attempts turned out in RA3.2, 3.3, 3.4, 3.5, and 3.6? We are too… As the Wiki 
             Freeze was approaching and time was running short, we tried to speed up transformations by preparing 
             <em>Agrobacterium</em> cultures for each transformation simply by inoculating fresh medium with a previously used culture 
