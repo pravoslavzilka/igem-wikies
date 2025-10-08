@@ -8,7 +8,7 @@ const stepDescriptions = [
   },
   {
     text: (
-      <>Using <span style={{ color: '#779E45' }}>pIB005</span>, we will knock out thiamine monophosphate synthase (TH1) to prevent its release into the environment.</>
+      <>Using <span style={{ color: '#779E45' }}>pIB006</span>, we will knock out thiamine monophosphate synthase (THI4) to prevent its release into the environment.</>
     ),
   },
   {
@@ -71,10 +71,10 @@ const ToolboxShow = () => {
         {/* Header section */}
         <div className="text-center mb-12  mx-auto max-w-6xl">
           <h1 className="text-4xl font-bold text-gray-800 leading-tight mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif', lineHeight: '140%', fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem" }}>
-            We've developed the <span style={{ color: '#779E45' }}>Duckweed Toolbox </span> -<br />
+            We are developing the <span style={{ color: '#779E45' }}>Duckweed Toolbox </span> -<br />
             the first step in turning duckweed into a <span style={{ color: '#779E45' }}>crop</span>.
           </h1>
-          <p className="text-lg text-gray-600 mt-10 mb-10" style={{ fontFamily: 'Space Grotesk, sans-serif', lineHeight: '140%', fontSize: window.innerWidth < 768 ? "1.2rem" : "1.7rem" }}>Here's our next move:</p>
+          <p className="text-lg text-gray-600 mt-10 mb-10" style={{ fontFamily: 'Space Grotesk, sans-serif', lineHeight: '140%', fontSize: window.innerWidth < 768 ? "1.2rem" : "1.7rem" }}>Here’s how we plan to use it:</p>
         </div>
 
         {/* Steps timeline */}

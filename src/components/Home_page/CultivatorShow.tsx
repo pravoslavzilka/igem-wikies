@@ -33,7 +33,7 @@ const CultivatorShow = () => {
             </div>
 
             <div className="">
-              <A href="/project/how/cultivator/" onClick={() => window.scrollTo(0, 0)}>
+              <A href="/hardware">
                 <button
                   className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-medium transition-colors duration-200"
                   style={{ fontFamily: "Urbanist, sans-serif", backgroundColor: "#22531C" }}

@@ -41,7 +41,7 @@ const ChatAnimation = ({ messageDelay = 2000 }) => {
     },
     {
       sender: 'iGEM Brno',
-      text: 'Hopefully, we have SynBio. We set out to boost duckweed yields, to make the crop from the weed!',
+      text: 'Thankfully, we have SynBio. We set out to boost duckweed yields, to make the crop from the weed!',
       color: 'bg-gradient-to-r from-green-600 to-green-500',
       align: 'right',
       highlight: ['make the crop from the weed'],
