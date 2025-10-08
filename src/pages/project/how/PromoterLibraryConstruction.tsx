@@ -1017,6 +1017,333 @@ const PromoterLibraryConstruction = () => {
                 </div>
             </div>
 
+
+            <div
+                className="min-h-screen bg-white p-8 text-lg text-justify space-y-6"
+                style={{fontFamily: "Urbanist, sans-serif"}}
+            >
+                <div className="max-w-6xl mx-auto">
+
+                    {/* === LEARNING from the 2nd Iteration === */}
+                    <h2
+                        className="text-3xl font-bold mb-6 mt-12"
+                        style={{fontFamily: "Space Grotesk, sans-serif"}}
+                    >
+                        LEARNING from the 2nd Iteration
+                    </h2>
+
+                    <p className="leading-relaxed mb-4">
+                        We tried to come up with an explanation for our observations. The first one could be that our
+                        promoters simply{" "}
+                        <b>do not work</b>, which would <b>not be that unexpected</b>. It was previously shown that
+                        constructing working
+                        monocot promoters is a very hard quest and often does not yield positive results [35]. However,
+                        we were not
+                        satisfied with this explanation and tried to go deeper.
+                    </p>
+
+                    <p className="leading-relaxed mb-4">
+                        The peculiar thing is that the construct we were using as a positive control (pAM0101) has
+                        technically the{" "}
+                        <b>same architecture as our measurement one with RFP under rZmUBI</b>. The difference is in the
+                        backbone, but the
+                        backbone itself is <b>not part of the T-DNA</b> that is delivered into duckweed and therefore
+                        should not play a
+                        role in expression. Backbone could influence the amount of plasmid DNA in{" "}
+                        <em>Agrobacterium</em>, but as pH4T is optimized for replication in{" "}
+                        <em>Agrobacterium</em>, it seems <b>improbable that it would negatively affect the
+                        expression</b>.
+                    </p>
+
+                    <p className="leading-relaxed mb-4">
+                        Secondly, the constructs differ in the gene for antibiotic resistance, as pAM0101 is carrying
+                        resistance against{" "}
+                        <b>hygromycin</b> while our measurement construct harbors the gene for{" "}
+                        <b>neomycin</b> resistance. However, the <b>total T-DNA length</b> is in both cases around{" "}
+                        <b>5 kb</b>, therefore this should not be the limiting factor of the expression.
+                    </p>
+
+                    <p className="leading-relaxed mb-4">
+                        The last and the <b>most obvious difference</b> between these two constructs is the{" "}
+                        <b>reporter gene used</b> – pAM0101 carries plant codon-optimized <b>eGFP</b> and our construct
+                        carries plant codon
+                        optimized <b>RFP</b>. Both proteins are very similar in structure [36]. Most importantly,{" "}
+                        <b>expression of the reporter</b> in both constructs is{" "}
+                        <b>driven by rZmUBI and terminated by t35S</b>. Therefore, the level of transcription{" "}
+                        <b>should not differ at all</b> between these two constructs. What could differ is the
+                        translation level between
+                        eGFP and RFP as a result of several phenomena – <b>different mRNA stability, codon usage,
+                        folding</b>, etc.
+                        At the same time, RFP could be expressed but the level of expression may not be strong enough to
+                        be detected via
+                        fluorescence methods.
+                    </p>
+
+                    <p className="leading-relaxed mb-4">
+                        Hence, instead of trying out more iterations, we opted for trying to detect the RFP transcript
+                        in the samples to
+                        see whether at least transcription is present.
+                    </p>
+
+                    {/* === TESTING of Measurement Constructs === */}
+                    <h2
+                        className="text-3xl font-bold mb-6 mt-12"
+                        style={{fontFamily: "Space Grotesk, sans-serif"}}
+                    >
+                        TESTING of our Measurement Constructs Using Quantitative PCR
+                    </h2>
+
+                    <p className="leading-relaxed mb-4">
+                        To <b>detect the presence of RFP and NPTII transcripts</b> in the transformed duckweeds, we had
+                        to{" "}
+                        <b>isolate their RNA</b> first. For that, we randomly picked 10–15 fronds for each of the
+                        samples from the second
+                        iteration of the fluorescence testing. We <b>lyophilized the tissue and homogenized it</b>. We
+                        used TRIzol
+                        isolation method to isolate total RNA from duckweed [37]. Subsequently, we used the{" "}
+                        <b>DNase I treatment</b> to remove any DNA contamination in our RNA samples and could move to
+                        cDNA preparation.
+                    </p>
+
+                    <p className="leading-relaxed mb-4">
+                        For that, we used <b>DBscript cDNA Synthesis Kit</b> gifted to us by{" "}
+                        <b>DiANA Biotechnologies</b>. We used PCR with primers o145, o146 to{" "}
+                        <b>verify the presence of NPTII transcript</b> and o158, o159 for{" "}
+                        <b>RFP transcript presence verification</b>.
+                    </p>
+
+                </div>
+            </div>
+
+            <div
+                className="min-h-screen bg-white p-8 text-lg text-justify space-y-6"
+                style={{fontFamily: "Urbanist, sans-serif"}}
+            >
+                <div className="max-w-6xl mx-auto">
+
+                    {/* === Figure 18 === */}
+                    <div className="flex flex-col items-center space-y-4">
+                        <img
+                            src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure18.webp"
+                            alt="PCR verification of RFP and NPTII transcripts"
+                            className="rounded-lg w-full max-w-3xl shadow-md"
+                        />
+                        <p
+                            className="text-sm text-gray-600 text-center max-w-5xl mt-3"
+                            style={{fontFamily: "Urbanist, sans-serif"}}
+                        >
+                            <strong>Figure 18:</strong> cDNA from <em>S. polyrhiza</em> 7428 (left) and <em>L.
+                            gibba</em> 7742 (right)
+                            was used as a template for PCR reactions to verify the presence of <b>RFP (upper
+                            row)</b> and{" "}
+                            <b>NPTII (bottom row)</b> transcripts. The samples are ordered from left to right as:{" "}
+                            <b>rZmUBI - rSpARF - rSpPOL - rLmACC - rLmUBI - rLmAUX - rSpUBI - rSpWDP.</b> Pooled cDNA
+                            from all samples was
+                            used as a <b>negative control (NC)</b> to confirm successful DNase I treatment. The
+                            rZmUBI-RFP-t35S L2 plasmid
+                            was used as a positive control (PC).
+                        </p>
+                    </div>
+
+                    <p className="leading-relaxed mt-4">
+                        The PCR reaction performed on cDNA confirmed presence of both RFP and NPTII transcripts in most
+                        of the samples.
+                        Interestingly, the NPTII bands were more intense than those confirming the RFP presence,
+                        suggesting higher amount
+                        of the NPTII transcript. Visually, in <em>L. gibba</em> 7742 template samples, RFP-specific band
+                        was missing in samples
+                        with RFP under rSpARF, rSpUBI and rSpWDP promoter + 5′ UTR. The RFP-specific band was also
+                        missing in the sample
+                        from <em>S. polyrhiza</em> 7428 with RFP under rSpUBI. Having confirmed the cDNA presence in
+                        most of the samples,
+                        we could proceed with quantitative PCR.
+                    </p>
+
+                    {/* === Measurement of Promoter + 5' UTR Activity === */}
+                    <h2
+                        className="text-3xl font-bold mb-6 mt-12"
+                        style={{fontFamily: "Space Grotesk, sans-serif"}}
+                    >
+                        Measurement of Promoter + 5′ UTR Transcriptional Activity Using qPCR
+                    </h2>
+
+                    <p className="leading-relaxed mb-4">
+                        With <b>confirmed presence of both RFP and NPTII transcripts</b> in most of the samples, we
+                        could move to
+                        attempting their <b>quantification</b>. Our design allowed for <b>easy and high-throughput
+                        ratiometric method</b>.
+                        For qPCR, we used <b>KAPA SYBR FAST qPCR 2x Master Mix</b> gifted to us by <b>Dr. Ordóñez</b>.
+                        We used the same
+                        primers as for the cDNA transcript verification (o145 and o146 for NPTII quantification and o158
+                        together with o159
+                        for RFP quantification). Reaction mixes were pipetted onto a 96-well plate followed by template
+                        DNA, and the reaction
+                        ran in the <b>LightCycler® 96 Instrument</b>.
+                    </p>
+
+                    <p className="leading-relaxed mb-4">
+                        We conducted several <b>qPCR</b> reactions in which we adjusted the primer annealing
+                        temperatures and extension times,
+                        as well as optimal cDNA amounts in the reaction mixtures.
+                    </p>
+
+                    {/* === Suitable Template Amount === */}
+                    <h3
+                        className="text-2xl font-semibold mb-4 mt-10"
+                        style={{fontFamily: "Space Grotesk, sans-serif"}}
+                    >
+                        Suitable Template Amount Determination
+                    </h3>
+
+                    <p className="leading-relaxed mb-4">
+                        In our first measurement iteration, we ran dilution series of four cDNA concentrations starting
+                        at{" "}
+                        <b>25 ng of RNA equivalent per reaction</b> and ranging down to 0.2 ng of RNA equivalent per
+                        reaction.
+                        Reactions were performed in duplicates and the mean Cq parameter was used to evaluate the
+                        optimal reaction
+                        conditions. For both <em>S. polyrhiza</em> 7428 and <em>L. gibba</em> 7742 cDNA samples, the
+                        best concentration
+                        of cDNA proved to be <b>25 ng of RNA equivalent</b>, as the Cq values were consistently lower
+                        than 30 cycles and
+                        the difference between the mean Cq and mean Cq of the negative control was more than 5 cycles.
+                    </p>
+
+                    {/* === Standard Curve Construction === */}
+                    <h3
+                        className="text-2xl font-semibold mb-4 mt-10"
+                        style={{fontFamily: "Space Grotesk, sans-serif"}}
+                    >
+                        Standard Curve Construction
+                    </h3>
+
+                    <p className="leading-relaxed mb-4">
+                        In the second iteration we tried to optimize the standard curve we could use for quantification
+                        of the transcript
+                        copies in our samples. For that, we used this program:
+                    </p>
+
+                </div>
+            </div>
+
+            <div
+                className="min-h-screen bg-white p-8 text-lg text-justify space-y-6"
+                style={{fontFamily: "Urbanist, sans-serif"}}
+            >
+                <div className="max-w-6xl mx-auto">
+
+                    {/* === qPCR Program Table === */}
+                    <div className="overflow-x-auto mt-8">
+                        <table className="min-w-full border border-gray-300 text-center text-sm">
+                            <thead className="bg-[#e8f0ea] text-gray-900">
+                            <tr>
+                                <th className="border border-gray-300 px-4 py-2 font-semibold">Step</th>
+                                <th className="border border-gray-300 px-4 py-2 font-semibold">Time</th>
+                                <th className="border border-gray-300 px-4 py-2 font-semibold">Temperature</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td className="border border-gray-300 px-4 py-2 font-semibold">Preincubation</td>
+                                <td className="border border-gray-300 px-4 py-2">600 s</td>
+                                <td className="border border-gray-300 px-4 py-2">95 °C</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-gray-300 px-4 py-2 font-semibold" rowSpan={3}>
+                                    3 Step Amplification (40×)
+                                </td>
+                                <td className="border border-gray-300 px-4 py-2">3 s</td>
+                                <td className="border border-gray-300 px-4 py-2">95 °C</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-gray-300 px-4 py-2">20 s</td>
+                                <td className="border border-gray-300 px-4 py-2">60 °C</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-gray-300 px-4 py-2">10 s</td>
+                                <td className="border border-gray-300 px-4 py-2">72 °C (detection)</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-gray-300 px-4 py-2 font-semibold" rowSpan={3}>Melting</td>
+                                <td className="border border-gray-300 px-4 py-2">10 s</td>
+                                <td className="border border-gray-300 px-4 py-2">95 °C</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-gray-300 px-4 py-2">60 s</td>
+                                <td className="border border-gray-300 px-4 py-2">65 °C</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-gray-300 px-4 py-2">1 s</td>
+                                <td className="border border-gray-300 px-4 py-2">97 °C</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p
+                            className="text-sm text-gray-600 mt-3 p-4 text-center"
+                            style={{fontFamily: "Urbanist, sans-serif"}}
+                        >
+                            <strong>Figure 19:</strong> Program used for qPCR measurements.
+                        </p>
+                    </div>
+
+                    <p className="leading-relaxed mt-6">
+                        We used this program to create our standard curves for both RFP and NPTII DNA amounts.
+                        For this purpose, dilution series of triplicates starting with 25 ng going down to 0.04 ng
+                        of our{" "}
+                        <a href="#" className="text-[#6ca033] hover:underline">
+                            L2 plasmid with RFP under rZmUBI
+                        </a>{" "}
+                        was used. We obtained these standard curves:
+                    </p>
+
+                    {/* === Figure 20 (Calibration Curves) === */}
+                    <div className="flex flex-col items-center space-y-4 mt-10">
+                        <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+                            <img
+                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure20a.webp"
+                                alt="RFP calibration curve"
+                                className="rounded-lg max-w-sm shadow-md"
+                            />
+                            <img
+                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure20b.webp"
+                                alt="NPTII calibration curve"
+                                className="rounded-lg max-w-sm shadow-md"
+                            />
+                        </div>
+
+                        <p
+                            className="text-sm text-gray-600 text-center max-w-4xl mt-3"
+                            style={{fontFamily: "Urbanist, sans-serif"}}
+                        >
+                            <strong>Figure 20.</strong> Calibration curves for both (A) RFP and (B) NPTII transcript
+                            quantification.
+                            The linear equations for (A) Cq = −2.45 log₁₀(c) + 10.33, (B) Cq = −2.57 log₁₀(c) + 9.52.
+                        </p>
+                    </div>
+
+                    {/* === Equation Explanation === */}
+                    <div className="text-center mt-10">
+                        <p className="italic mb-3">We can calculate the amplification efficiency of the reaction as:</p>
+                        <p className="text-3xl font-semibold italic mb-4">
+                            E = 10<sup>−1/b</sup>
+                        </p>
+                    </div>
+
+                    <p className="leading-relaxed">
+                        Where <em>b</em> is the slope of the line. The efficiencies are E = 2.56 for RFP and E = 2.45
+                        for NPTII,
+                        which means more than 100 % amplification efficiency for both reactions, suggesting formation of
+                        non-specific products.
+                        Also other parameters of standard curves are not ideal, as R² and the standard error. These
+                        standard curves would be ideally
+                        repeated and then used for quantification; however, due to time constraints, we were unable to
+                        do so and proceeded
+                        with transcriptional level evaluation.
+                    </p>
+
+                </div>
+            </div>
+
         </div>
     );
 };
