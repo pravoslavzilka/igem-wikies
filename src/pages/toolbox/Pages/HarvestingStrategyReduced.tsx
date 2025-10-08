@@ -1,3 +1,6 @@
+import A from "../../../A.tsx";
+
+
 export default function HarvestingStrategyReduced() {
 
     return (
@@ -74,7 +77,7 @@ export default function HarvestingStrategyReduced() {
                             />
                             <div className="p-4 bg-gray-50">
                                 <p className="text-base text-gray-600" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                                    <strong>Figure 22.:</strong> Weighting our duckweed bestie L. japonica (8627) for
+                                    <strong>Figure 22.:</strong> Weighting our <em>Lemna japonica</em> (8627) for
                                     determination of the precise amount that should be harvested.
 
                                 </p>
@@ -92,7 +95,7 @@ export default function HarvestingStrategyReduced() {
                                 <p className="text-base text-justify text-gray-600" style={{fontFamily: 'Urbanist, sans-serif'}}>
                                     <strong>Figure 23:</strong> Our duckweed cultivation arsenal. (1) A hand centrifuge.
                                     (2)
-                                    Sieves for duckweed harvesting. (3) PROBE with multimeter. (4) Duckweed cultivation
+                                    Sieves for duckweed harvesting. (3) <A href="/hardware#probe" className="underline font-semibold hover:text-[#6ca033] transition-colors duration-200">PROBE</A> with multimeter. (4) Duckweed cultivation
                                     tray. (5) Ingredients for mixing the cultivation medium. (6) A bucket for
                                     preparation of the cultivation medium.
 
@@ -120,7 +123,7 @@ export default function HarvestingStrategyReduced() {
                     so that it optically covered the entire surface of the tray (such a rough starting point is in
                     itself proof that this was only the first iteration). We had
                     4 trays (2 small and 2 large) from each of the 5 clones in our collection.
-                    Subsequently, we monitored duckweed in all trays every three days and
+                    Subsequently, <b>we monitored duckweed in all trays every three days </b> and
                     harvested precisely determined amounts, specifically 20%, 30%, 40%
                     and 50% of the actual biomass. The medium change was also done
                     every three days, along with harvesting. Before each weighing, it was
@@ -174,9 +177,9 @@ export default function HarvestingStrategyReduced() {
                         <p className="text-gray-700 leading-relaxed mb-6" style={{fontFamily: 'Urbanist, sans-serif'}}>
                             After 15 days of cultivation, the cumulative biomass harvested from trays
                             with harvesting ratios 30%, 40% and 50% was 886.0 g/m<sup>2</sup>,
-                            1047.3 g/m<sup>2</sup>, and 1012.4 g/m<sup>2</sup>, respectively. The
+                            1047.3 g/m<sup>2</sup>, and 1012.4 g/m<sup>2</sup>, respectively. <b>The
                             harvesting strategy with maximum yield was thus that with hf = 3 days &
-                            hr = 40%.
+                            hr = 40%.</b>
                         </p>
 
 
