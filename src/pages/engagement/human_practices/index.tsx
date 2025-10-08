@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import HumanPracticesPage1 from "./Page1";
 import HumanPracticesPage2 from "./Page2";
 import HumanPracticesPage3 from "./Page3";
@@ -16,8 +16,36 @@ import HumanPracticesPage13 from "./Page13.tsx";
 import HumanPracticesPage14 from "./Page14.tsx";
 import HumanPracticesPage15 from "./Page15.tsx";
 import HumanPracticesPage16 from "./Page16.tsx";
+import {useLocation} from "react-router-dom";
 
 export default function HumanPractices() {
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+            const id = location.hash.replace("#", "");
+            const scrollToElement = () => {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.scrollIntoView({behavior: "smooth", block: "start"});
+                    return true;
+                }
+                return false;
+            };
+
+            // Try immediately
+            if (!scrollToElement()) {
+                // Retry a few times if the element isn’t rendered yet
+                let attempts = 0;
+                const interval = setInterval(() => {
+                    if (scrollToElement() || attempts++ > 20) {
+                        clearInterval(interval);
+                    }
+                }, 150);
+            }
+        }
+    }, [location]);
+
     return (
         <div className="text-justify">
             <HumanPracticesPage1/>
