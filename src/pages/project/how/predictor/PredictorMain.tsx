@@ -872,7 +872,7 @@ const PredictorMain = () => {
                         View on GitHub
                     </A>
                     <A
-                        href="https://malleably-unhabituated-kristin.ngrok-free.dev"
+                        href="https://unblamable-josephine-advertently.ngrok-free.dev"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-black text-white font-semibold text-lg py-3 px-6 rounded-lg hover:bg-gray-800 transition-colors duration-200"
