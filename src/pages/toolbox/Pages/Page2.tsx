@@ -483,7 +483,7 @@ export default function Page2() {
                             <strong>hormones and their combinations</strong>, but due to a flaw in the
                             transformation process, those results were lost. On our{" "}
                             <strong>Engineering page</strong>, we propose{" "}
-                            <strong><A className='hover:underline text-[#6ca033]' href="http://localhost:5173/project/how/taifr/overview#what-are-we-going-to-do">future strategies</A></strong> to complete the development of the{" "}
+                            <strong><A className='hover:underline text-[#6ca033]' href="/project/how/taifr/overview#what-are-we-going-to-do">future strategies</A></strong> to complete the development of the{" "}
                             <strong>TAIFR method</strong>, which we — or any future iGEM team — can
                             pursue.
                         </p>
