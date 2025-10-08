@@ -16,14 +16,8 @@ export default function HumanPracticesPage16() {
                 >
                     <div className="leading-relaxed text-lg space-y-6">
                         <p>
-                            Besides consulting our promoter design and{" "}
-                            <A
-                                href="#"
-                                className="text-[#538b5e] underline hover:text-[#25512b]"
-                            >
-                                in silico workflow
-                            </A>
-                            , we talked with iGEM Marburg 2024 about good wiki practices,
+                            Besides consulting our promoter design and in silico workflow, we talked with iGEM Marburg
+                            2024 about good wiki practices,
                             prioritizing our work and team performance. This sentence resonates
                             with us the most:{" "}
                             <em>
@@ -125,14 +119,9 @@ export default function HumanPracticesPage16() {
                             couple of people who attended this pitch{" "}
                             <span className="font-bold">started the iGEM team</span>, for the first time in
                             Prague. Since then, we took part in three meetups together and shared our
-                            experience. <span className="font-bold">They even helped us</span> by attempting{" "}
-                            <A
-                                href="#"
-                                className="text-[#538b5e] underline hover:text-[#25512b]"
-                            >
-                                metabolomics analysis
-                            </A>{" "}
-                            on our duckweeds to evaluate their potential as animal feed, though the results could{" "}
+                            experience. <span className="font-bold">They even helped us</span> by attempting
+                            metabolomics analysis
+                            on our duckweeds to evaluate their potential as animal feed, though the results could
                             not be obtained in the end.
                         </p>
                     </div>

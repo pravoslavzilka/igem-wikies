@@ -193,7 +193,7 @@ export default function HumanPracticesPage3() {
                                         </span>
                                     </li>
                                     <li>
-                                        always <span className="font-bold">check constructs transiently</span>
+                                        always <span className="font-bold">check constructs transiently </span>
                                         before trying the stable transformation via callus
                                     </li>
                                 </ul>

@@ -149,7 +149,7 @@ export default function HumanPracticesPage8() {
                             easily and we went to build that. You can take a look how we integrated Kateřina’s insights
                             into
                             our{" "}
-                            <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
+                            <A href="/hardware" className="text-[#538b5e] underline hover:text-[#25512b]">
                                 CULTIVATOR
                             </A>
                             .
@@ -181,11 +181,8 @@ export default function HumanPracticesPage8() {
                     <div className="leading-relaxed text-lg space-y-4">
                         <p>
                             We reached out to <span className="font-bold">Dr. Mrázek</span> to discuss the controlling
-                            system for our{" "}
-                            <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
-                                CULTIVATOR
-                            </A>
-                            . To make it robust and simple, he suggested to use ESP32 as a microcontroller,{" "}
+                            system for our CULTIVATOR. To make it robust and simple, he suggested to use ESP32 as a
+                            microcontroller,{" "}
                             <span className="font-bold">RaspberryPi 4B</span> for server and{" "}
                             <span className="font-bold">Wi-Fi communication</span> between the components.
                         </p>
@@ -202,9 +199,8 @@ export default function HumanPracticesPage8() {
                         <p>
                             <span className="font-bold">Petr</span> helped us with choosing the right lights for
                             our{" "}
-                            <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
-                                CULTIVATOR
-                            </A> so that our duckweeds can grow happily and produce large amounts of biomass.
+                            CULTIVATOR
+                            so that our duckweeds can grow happily and produce large amounts of biomass.
                         </p>
                     </div>
                 </ExpandablePill>
@@ -246,10 +242,7 @@ export default function HumanPracticesPage8() {
                                 <span className="font-bold">sensor-controlled medium,</span> where, based on readings,
                                 nutrients are added and mixed with water with a mixing pump. We currently use this setup
                                 in our{" "}
-                                <A href="#" className="text-[#538b5e] underline hover:text-[#25512b]">
-                                    CULTIVATOR
-                                </A>
-                                . He also suggested a method of{" "}
+                                CULTIVATOR. He also suggested a method of{" "}
                                 <span className="font-bold">regularly cleaning</span> the whole pipe system via pumping
                                 acid through the system.
                             </p>
