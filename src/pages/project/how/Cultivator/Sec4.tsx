@@ -168,6 +168,12 @@ export default function CultivatorSec4() {
                             The result is efficient, uniform lighting that supports strong duckweed growth
                             without unnecessary energy waste.
                         </p>
+                        <p className="text-justify">
+                            We ran
+                            <span className="font-bold text-[#6ca033]"> weeks of experiments in the cultivator</span>
+                            , mainly focusing on comparing different LED strips to try and find the most efficient and
+                            cost effective options.
+                        </p>
 
                         <div className="mt-6 flex justify-center md:justify-center">
                             <button
