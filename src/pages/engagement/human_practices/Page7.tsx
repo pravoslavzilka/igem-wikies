@@ -25,6 +25,7 @@ export default function HumanPracticesPage7() {
                 </ExpandablePill>
 
                 {/* Prof. Kan Wang pill */}
+                <div id="prof-wang"></div>
                 <ExpandablePill
                     image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-2.webp"
                     name="Prof. Kan Wang"
@@ -32,7 +33,7 @@ export default function HumanPracticesPage7() {
                     location="Plant Transformation and Genome Editing"
                     defaultOpen={true}
                 >
-                    <div className="leading-relaxed text-lg space-y-6" id="prof-wang">
+                    <div className="leading-relaxed text-lg space-y-6">
                         <p>
                             We were lucky enough to sneak in to the lecture that{" "}
                             <span className="font-bold">professor Wang </span>
