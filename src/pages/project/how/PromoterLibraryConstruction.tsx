@@ -199,7 +199,7 @@ const PromoterLibraryConstruction = () => {
                     </p>
 
                     {/* === Figure === */}
-                    <div className="bg-gray-50 rounded-lg">
+                    <div className="">
                         <div className="bg-white rounded">
                             <img
                                 src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/2/1-cropped.avif"
@@ -274,7 +274,7 @@ const PromoterLibraryConstruction = () => {
                     </p>
 
                     {/* === Figure === */}
-                    <div className="bg-gray-50 rounded-lg mb-8">
+                    <div className="mb-8">
                         <div className="bg-white rounded">
                             <img
                                 src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/2/2-cropped.avif"
@@ -283,7 +283,7 @@ const PromoterLibraryConstruction = () => {
                             />
                         </div>
                         <p className="text-sm text-gray-600 mt-3 p-4" style={{fontFamily: "Urbanist, sans-serif"}}>
-                            <strong>Fig 11:</strong> The schematic representation of our measurement construct with
+                            <strong>Figure 11:</strong> The schematic representation of our measurement construct with
                             the testing promoter + 5′UTR sequence (
                             rTEST
                             ) driving the expression of RFP which is terminated by t35S on the first transcriptional
@@ -461,7 +461,7 @@ const PromoterLibraryConstruction = () => {
                             className="text-sm text-gray-600 mt-3 p-4 text-center"
                             style={{fontFamily: "Urbanist, sans-serif"}}
                         >
-                            <strong>Figure 13:</strong> Set of our L1 constructs.
+                            <strong>Figure 12:</strong> Set of our L1 constructs.
                         </p>
                     </div>
 
@@ -698,7 +698,7 @@ const PromoterLibraryConstruction = () => {
                         className="text-sm text-gray-600 mt-3 p-4 text-center"
                         style={{fontFamily: "Urbanist, sans-serif"}}
                     >
-                        <strong>Figure 14:</strong> All the parts associated with our endogenous part testing.
+                        <strong>Figure 13:</strong> All the parts associated with our endogenous part testing.
                     </p>
 
                 </div>
@@ -725,7 +725,8 @@ const PromoterLibraryConstruction = () => {
                         <b>Agrobacterium</b>-mediated transformation using{" "}
                         <em>Agrobacterium tumefaciens</em> EHA105. We delivered our L2 visual testing
                         constructs into the cells via electroporation (
-                        <A href="/toolbox/agrobacterium-mediated-transformation-protocol/" className="text-[#6ca033] hover:underline">
+                        <A href="/toolbox/agrobacterium-mediated-transformation-protocol/"
+                           className="text-[#6ca033] hover:underline">
                             read Agrobacterium electroporation protocol
                         </A>
                         ) and PCR-verified the colonies grown on our plates to confirm correct
@@ -821,7 +822,7 @@ const PromoterLibraryConstruction = () => {
                         We evaluated RFP expression at 6, 12 and 18 days post-infiltration using
                         fluorescence microscope ZEISS Axio Zoom V16, but we did not detect any
                         positive result for neither of the constructs in none of the species (see
-                        Figure 15). The worse thing is, that we did not observe any fluorescence on
+                        Figure 14). The worse thing is, that we did not observe any fluorescence on
                         the positive control <b>pAM0101</b>, which suggested unsuccessful
                         transformation event.
                     </p>
@@ -848,7 +849,7 @@ const PromoterLibraryConstruction = () => {
                             className="text-sm text-gray-600 text-center max-w-4xl mt-3"
                             style={{fontFamily: "Urbanist, sans-serif"}}
                         >
-                            <strong>Figure 15:</strong> First iteration of measurement constructs testing using
+                            <strong>Figure 14:</strong> First iteration of measurement constructs testing using
                             fluorescence.
                             All pictures were taken using ZEISS AxioZoom V16 with 587 nm excitation wavelength 12 days
                             post-infiltration
@@ -918,17 +919,18 @@ const PromoterLibraryConstruction = () => {
                                                                className="text-[#6ca033] hover:underline">pAM0101</A>)</b> was{" "}
                         <b>positive at 6 days post-infiltration</b> already and we could detect signal even at 18 days
                         post-infiltration
-                        in both tested species (see Figure 16). We were very happy to see that also our{" "}
-                        <A href="https://registry.igem.org/parts/bba-250pl3f0" className="text-[#6ca033] hover:underline">
+                        in both tested species (see Figure 15). We were very happy to see that also our{" "}
+                        <A href="https://registry.igem.org/parts/bba-250pl3f0"
+                           className="text-[#6ca033] hover:underline">
                             measurement construct with rZmUBI
                         </A>{" "}
-                        was producing positive signal in both <em>S. polyrhiza</em> and <em>L. gibba</em> (Figure 17),
+                        was producing positive signal in both <em>S. polyrhiza</em> and <em>L. gibba</em> (Figure 16),
                         although significantly
                         weaker one when compared to pAM0101. To our disappointment, none of our constructs has shown a
                         positive signal.
                     </p>
 
-                    {/* === Figure 16 === */}
+                    {/* === Figure 15 === */}
                     <div className="flex flex-col items-center space-y-4 mt-10">
                         <div className="flex flex-col md:flex-row justify-center items-center gap-8">
                             <img
@@ -941,7 +943,7 @@ const PromoterLibraryConstruction = () => {
                             className="text-sm text-gray-600 text-center max-w-4xl mt-3"
                             style={{fontFamily: "Urbanist, sans-serif"}}
                         >
-                            <strong>Figure 16:</strong> Second iteration of measurement constructs testing using
+                            <strong>Figure 15:</strong> Second iteration of measurement constructs testing using
                             fluorescence.
                             These pictures are showing positive controls transformed with{" "}
                             pAM0101 with visible eGFP signal
@@ -953,7 +955,7 @@ const PromoterLibraryConstruction = () => {
                         </p>
                     </div>
 
-                    {/* === Figure 17 === */}
+                    {/* === Figure 16 === */}
                     <div className="flex flex-col items-center space-y-4 mt-12">
                         <div className="flex flex-col md:flex-row justify-center items-center gap-8">
                             <img
@@ -966,7 +968,7 @@ const PromoterLibraryConstruction = () => {
                             className="text-sm text-gray-600 text-center max-w-4xl mt-3"
                             style={{fontFamily: "Urbanist, sans-serif"}}
                         >
-                            <strong>Figure 17:</strong> Second iteration of measurement constructs testing using ZEISS
+                            <strong>Figure 16:</strong> Second iteration of measurement constructs testing using ZEISS
                             AxioZoom V16
                             with 587 nm excitation wavelength 9 days post-infiltration with our testing constructs, in
                             this case{" "}
@@ -1084,7 +1086,7 @@ const PromoterLibraryConstruction = () => {
             >
                 <div className="max-w-6xl mx-auto">
 
-                    {/* === Figure 18 === */}
+                    {/* === Figure 17 === */}
                     <div className="flex flex-col items-center space-y-4 mb-12">
                         <img
                             src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/2/6.avif"
@@ -1095,7 +1097,7 @@ const PromoterLibraryConstruction = () => {
                             className="text-sm text-gray-600 text-center max-w-5xl mt-3"
                             style={{fontFamily: "Urbanist, sans-serif"}}
                         >
-                            <strong>Figure 18:</strong> cDNA from <em>S. polyrhiza</em> 7428 (left) and <em>L.
+                            <strong>Figure 17:</strong> cDNA from <em>S. polyrhiza</em> 7428 (left) and <em>L.
                             gibba</em> 7742 (right)
                             was used as a template for PCR reactions to verify the presence of <b>RFP (upper
                             row)</b> and{" "}
@@ -1137,9 +1139,12 @@ const PromoterLibraryConstruction = () => {
                         ratiometric method</b>.
                         For qPCR, we used <b>KAPA SYBR FAST qPCR 2x Master Mix</b> gifted to us by <b>Dr. Ordóñez</b>.
                         We used the same
-                        primers as for the cDNA transcript verification (o145 and o146 for NPTII quantification and o158
-                        together with o159
-                        for RFP quantification). Reaction mixes were pipetted onto a 96-well plate followed by template
+                        primers as for the cDNA transcript verification (
+                        <A href="/toolbox/programmable-duckweed/part-collection#primer-database"
+                           className="text-[#6ca033] hover:underline">
+                            o145 and o146 for NPTII quantification and o158 together with o159 for RFP quantification
+                        </A>
+                        ). Reaction mixes were pipetted onto a 96-well plate followed by template
                         DNA, and the reaction
                         ran in the <b>LightCycler® 96 Instrument</b>.
                     </p>
@@ -1246,7 +1251,7 @@ const PromoterLibraryConstruction = () => {
                             className="text-sm text-gray-600 mt-3 p-4 text-center"
                             style={{fontFamily: "Urbanist, sans-serif"}}
                         >
-                            <strong>Figure 19:</strong> Program used for qPCR measurements.
+                            <strong>Figure 18:</strong> Program used for qPCR measurements.
                         </p>
                     </div>
 
@@ -1254,7 +1259,8 @@ const PromoterLibraryConstruction = () => {
                         We used this program to create our standard curves for both RFP and NPTII DNA amounts.
                         For this purpose, dilution series of triplicates starting with 25 ng going down to 0.04 ng
                         of our{" "}
-                        <A href="https://registry.igem.org/parts/bba-250pl3f0" className="text-[#6ca033] hover:underline">
+                        <A href="https://registry.igem.org/parts/bba-250pl3f0"
+                           className="text-[#6ca033] hover:underline">
                             L2 plasmid with RFP under rZmUBI
                         </A>{" "}
                         was used. We obtained these standard curves:
@@ -1279,7 +1285,7 @@ const PromoterLibraryConstruction = () => {
                             className="text-sm text-gray-600 text-center max-w-4xl mt-3"
                             style={{fontFamily: "Urbanist, sans-serif"}}
                         >
-                            <strong>Figure 20.</strong> Calibration curves for both (A) RFP and (B) NPTII transcript
+                            <strong>Figure 19.</strong> Calibration curves for both (A) RFP and (B) NPTII transcript
                             quantification.
                             The linear equations for (A) Cq = −2.45 log₁₀(c) + 10.33, (B) Cq = −2.57 log₁₀(c) + 9.52.
                         </p>
@@ -1343,16 +1349,16 @@ const PromoterLibraryConstruction = () => {
                         was higher
                         than that of RFP. This confirmed the visual observation of stronger NPTII bands when conducting
                         the regular PCR
-                        (see Figure 18). For the detailed results, see Figure 21.
+                        (see Figure 17). For the detailed results, see Figure 20.
                     </p>
 
-                    {/* === Figure 21 === */}
+                    {/* === Figure 20 === */}
                     <div className="flex flex-col items-center space-y-4 mt-10">
                         <div className="flex flex-col md:flex-row justify-center items-center gap-8">
                             <img
                                 src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/2/9-cropped.avif"
                                 alt="RFP vs NPTII ratio in Spirodela polyrhiza"
-                                className="rounded-lg max-w-6xl"
+                                className="rounded-lg max-w-6xl mx-auto"
                             />
                         </div>
 
@@ -1360,16 +1366,89 @@ const PromoterLibraryConstruction = () => {
                             className="text-sm text-gray-600 text-center max-w-4xl mt-3"
                             style={{fontFamily: "Urbanist, sans-serif"}}
                         >
-                            <strong>Figure 21.</strong> Ratio of NPTII and RFP transcript concentration in (A)
+                            <strong>Figure 20.</strong> Ratio of NPTII and RFP transcript concentration in (A)
                             <em>Spirodela polyrhiza</em> 7428 and (B) <em>Lemna gibba</em> 7742 transformed with our
                             measurement constructs.
                             All samples were evaluated in duplicates and the mean Cq was used to calculate the
                             concentrations based on the
-                            standard curves in Figure 20.
+                            standard curves in Figure 19.
                         </p>
                     </div>
 
                 </div>
+            </div>
+
+            <div
+                className="max-w-6xl mx-auto bg-white text-lgtext-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif]">
+                {/* LEARNING Section */}
+                <section className="mb-12">
+                    <h2 className="text-3xl font-bold text-[#6ca033] mb-4"
+                        style={{fontFamily: "Space Grotesk, sans-serif"}}
+                    >
+                        LEARNING from Measurement Constructs Testing Using Quantitative PCR
+                    </h2>
+
+                    <p className="mb-4 text-lg">
+                        Based on our qPCR results, it seems that all the tested promoter+5′UTRs
+                        are driving <span className="font-bold">weaker transcript production</span>
+                        than the standard rNOS, which is unexpected as especially{" "}
+                        <span className="font-bold text-green-700">rZmUBI</span> should be the
+                        regulatory part producing high amounts of transcript in duckweed. For some
+                        regulatory parts (for instance rSpPOL in{" "}
+                        <span className="italic">S. polyrrhiza</span> 7428 and rLmAUX, together with
+                        rLmACC in <span className="italic">L. gibba</span> 7742), it looks like they
+                        might be stronger than rZmUBI. As expected, rSpWDP regulatory part is{" "}
+                        <span className="font-bold">showing practically no expression</span> in both
+                        tested species, as was previously shown by regular PCR. In general, it looks
+                        like the regulatory parts with origin in{" "}
+                        <span className="italic">Spirodela</span> tend to produce higher amounts of
+                        transcript in the native species, which is also suggested for the parts
+                        originated in <span className="italic">Lemna</span>.
+                    </p>
+
+                    <p className="mb-4 text-lg">
+                        However, this assay should be{" "}
+                        <span className="font-bold">repeated with different conditions</span>, for
+                        instance higher annealing temperatures or shorter extension time to eliminate
+                        the non-specific products formation (suggested by high amplification
+                        efficiency), as well as with{" "}
+                        <span className="font-bold">more precise standard curve</span>. Therefore, no
+                        definite conclusions should be drawn out of results, yet.
+                    </p>
+                </section>
+
+                {/* Outlook Section */}
+                <section>
+                    <h3 className="text-3xl font-bold  mb-4"
+                        style={{fontFamily: "Space Grotesk, sans-serif"}}
+                    >Outlook</h3>
+
+                    <p className="mb-4 text-lg">
+                        After completing the suggested optimization steps and{" "}
+                        <span className="font-bold">fine-tuning the qPCR conditions</span>, it would
+                        be interesting to examine the difference between expression of the tested
+                        regulatory parts and rNOS, as well as between the same constructs driving the
+                        expression of different genes. For instance,{" "}
+                        <span className="font-bold">switching the coding sequences</span> between the
+                        tested constructs and rNOS to account for possible differences between the{" "}
+                        <span className="font-bold">mRNA stability</span> of the genes in duckweed
+                        environment.
+                    </p>
+
+                    <p className="text-lg">
+                        Furthermore, testing{" "}
+                        <span className="font-bold">more regulatory parts</span> obtained from our{" "}
+                        <span className="italic">in silico</span> workflow could elucidate the parts
+                        that are actually able to drive strong protein expression in duckweed. With
+                        our suggested workflow, researchers can easily isolate and characterize also{" "}
+                        <span className="font-bold">terminator+3′UTR regulatory sequences</span> in
+                        multiple duckweed species. Eventually, our pipeline can be expanded across{" "}
+                        <span className="font-bold">
+            multiple duckweed species with more available transcriptomes emerging,
+            opening doors to true user-friendliness of duckweed genetic engineering.
+          </span>
+                    </p>
+                </section>
             </div>
 
         </div>
