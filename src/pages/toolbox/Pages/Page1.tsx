@@ -51,7 +51,7 @@ export default function Page1() {
                 </div>
 
                 {/* Section 1 */}
-                <div className="space-y-6">
+                <div className="space-y-6 pt-16">
                     <h3
                         className="font-bold text-center underline"
                         style={{
@@ -65,7 +65,7 @@ export default function Page1() {
                         </A>
                     </h3>
 
-                    <div className="grid md:grid-cols-3 gap-6">
+                    <div className="pt-16 grid md:grid-cols-3 gap-6">
                         {/* TAirF parts */}
                         <div className="text-center rounded-3xl overflow-hidden">
                             <A href="#taifr">
@@ -102,7 +102,7 @@ export default function Page1() {
                 </div>
 
                 {/* Section 2 */}
-                <div className="space-y-6">
+                <div className="pt-16 space-y-6">
                     <h3
                         className="font-bold text-center underline"
                         style={{
@@ -115,7 +115,7 @@ export default function Page1() {
                         </A>
                     </h3>
 
-                    <div className="grid md:grid-cols-3 gap-6">
+                    <div className=" pt-16 grid md:grid-cols-3 gap-6">
                         {/* Cultivation protocol */}
                         <div className="text-center rounded-3xl overflow-hidden">
                             <A href="#cultivation">
@@ -154,7 +154,7 @@ export default function Page1() {
             </div>
 
 
-            <div className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif]">
+            <div className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed mt-24 p-8 font-[Urbanist,sans-serif]">
                 <div className="grid md:grid-cols-[1fr_auto_1fr] gap-6 items-center">
                     {/* LEFT COLUMN */}
                     <div className="space-y-4">
