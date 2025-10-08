@@ -1,4 +1,5 @@
 import React from 'react';
+import A from "../../../../../A.tsx";
 
 const IgemNevadaSection: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ const IgemNevadaSection: React.FC = () => {
               className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-[120%] text-black"
               style={{ fontFamily: 'Urbanist, sans-serif' }}
             >
-             <a target='_blank' href="https://2009.igem.org/Team:Nevada/Project">iGEM Nevada 2009 Team</a>
+             <A target='_blank' href="https://2009.igem.org/Team:Nevada/Project">iGEM Nevada 2009 Team</A>
             </h2>
           </div>
 

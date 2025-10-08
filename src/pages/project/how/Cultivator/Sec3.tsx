@@ -1,5 +1,6 @@
 import ImageViewer, {ImageSlide} from "../../../../components/ui/ImageViewer.tsx";
 import {useState} from "react";
+import A from "../../../../A.tsx";
 
 const nutrientSlides: ImageSlide[] = [
     {
@@ -161,9 +162,9 @@ export default function CultivatorSec3() {
                             <span className="font-bold text-[#6ca033]">peristaltic pumps</span> accurately inject
                             nutrients
                             as needed. The system supports{" "}
-                            up to <a href="/plant#duckweed-cultivation"
+                            up to <A href="/plant#duckweed-cultivation"
                                      className="hover:text-[#25512b] font-bold underline text-[#6ca033]">four
-                            different liquid additives</a>, which can be
+                            different liquid additives</A>, which can be
                             individually
                             mixed into the growth medium for precise control.
                         </p>
@@ -174,9 +175,9 @@ export default function CultivatorSec3() {
                             outside the defined range, the optimized{" "}
                             <span
                                 className="hover:text-[#25512b] font-bold underline text-[#6ca033]">
-                                <a href="/plant#duckweed-cultivation">
+                                <A href="/plant#duckweed-cultivation">
                                 Duckweed Cultivation Medium – Nitrogen (DCMN){" "}
-                                </a>
+                                </A>
                             </span>
                             is automatically injected into the reservoir.
                             The medium is divided into <span

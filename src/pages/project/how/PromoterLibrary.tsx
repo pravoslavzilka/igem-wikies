@@ -1,4 +1,5 @@
 import References from '../../../components/References';
+import A from "../../../A.tsx";
 
 
 const PromoterLibrary = () => {
@@ -261,7 +262,7 @@ const PromoterLibrary = () => {
               </div>
 
               <p className="text-sm text-gray-600 mt-3 p-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
-                <strong>Fig 6:</strong>   Schematic overview of the OrthoFinder 2 workflow used for orthology inference and identification of orthogroups from proteomes of Lemnoideae species (taken from OrthoFinder tutorials by David Emms (<a target='_blank' style={{ color: '#3b82f6' }} href="https://davidemms.github.io">https://davidemms.github.io</a>).
+                <strong>Fig 6:</strong>   Schematic overview of the OrthoFinder 2 workflow used for orthology inference and identification of orthogroups from proteomes of Lemnoideae species (taken from OrthoFinder tutorials by David Emms (<A target='_blank' style={{ color: '#3b82f6' }} href="https://davidemms.github.io">https://davidemms.github.io</A>).
               </p>
             </div>
 
@@ -342,7 +343,7 @@ const PromoterLibrary = () => {
         <h1 className="text-3xl font-bold mb-6 mt-16" style={{ fontFamily: "Space Grotesk, sans-serif" }}>Functional annotation</h1>
 
         <p className="leading-relaxed pt-5" style={{ fontFamily: "Urbanist, sans-serif" }}>
-          Candidate genes for promoter search and evaluation are the highest-expressed, but the biological context was not known. In order to reduce the noise introduced by unannotated genes, we performed functional annotation analysis with eggNOGmapper (<a className='text-blue-500 hover:underline' target='_blank' href="http://eggnog-mapper.embl.de/">http://eggnog-mapper.embl.de/</a>) [19] [20], a tool providing ontology-based annotation with GO terms and KEGG pathways across a wide range of species. The second reason for such analysis was to account for the fact that the ideal promoters are likely to be associated with housekeeping genes known for their stable expression. 
+          Candidate genes for promoter search and evaluation are the highest-expressed, but the biological context was not known. In order to reduce the noise introduced by unannotated genes, we performed functional annotation analysis with eggNOGmapper (<A className='text-blue-500 hover:underline' target='_blank' href="http://eggnog-mapper.embl.de/">http://eggnog-mapper.embl.de/</A>) [19] [20], a tool providing ontology-based annotation with GO terms and KEGG pathways across a wide range of species. The second reason for such analysis was to account for the fact that the ideal promoters are likely to be associated with housekeeping genes known for their stable expression. 
         </p>
 
 

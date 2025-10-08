@@ -1,3 +1,5 @@
+import A from "../../../../A.tsx";
+
 export default function CultivatorBuildSection() {
     const materials = [
         {name: "Aluminum support frame", amount: "30 m"},
@@ -65,23 +67,23 @@ export default function CultivatorBuildSection() {
                 <p>
                     All control software and firmware are open-source and can be found here:
                     <br/>
-                    <a
+                    <A
                         href="https://github.com/MartinPavella/BioReactorManager"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-[#6ca033] font-semibold underline hover:text-green-700"
                     >
                         → Cultivator Control Server
-                    </a>{" "}
+                    </A>{" "}
                     and{" "}
-                    <a
+                    <A
                         href="https://github.com/MartinPavella/BioReactorNode"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-[#6ca033] font-semibold underline hover:text-green-700"
                     >
                         Cultivator Firmware for ESP32
-                    </a>
+                    </A>
                     .
                 </p>
 
@@ -92,14 +94,14 @@ export default function CultivatorBuildSection() {
           </span>{" "}
                     are stored in a dedicated repository:
                     <br/>
-                    <a
+                    <A
                         href="https://github.com/pravoslavzilka/igem-hardware-models"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-[#6ca033] font-semibold underline hover:text-green-700"
                     >
                         → Cultivator Hardware & CAD Files
-                    </a>
+                    </A>
                     .
                 </p>
 

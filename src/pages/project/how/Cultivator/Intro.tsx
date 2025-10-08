@@ -1,3 +1,5 @@
+import A from "../../../../A.tsx";
+
 export default function CultivatorIntro() {
     return (
         <section className="max-w-6xl mx-auto p-8 space-y-12">
@@ -73,12 +75,12 @@ export default function CultivatorIntro() {
                     </p>
 
                     <p className="pt-2 text-center md:text-left">
-                        <a
+                        <A
                             href="#user-testing"
                             className="text-[#6ca033] font-semibold hover:underline transition-colors"
                         >
                             → See the results of our user testing
-                        </a>
+                        </A>
                     </p>
                 </div>
             </div>
@@ -97,23 +99,23 @@ export default function CultivatorIntro() {
 
                 <div className="font-[Urbanist,sans-serif] text-lg leading-relaxed space-y-4">
                     <p className="text-justify">
-                        With complete build plans (<a
+                        With complete build plans (<A
                         href="https://github.com/pravoslavzilka/igem-hardware-models" target="blank"
-                        className="underline">access here</a>) and source code (
-                        <a href="https://github.com/MartinPavella/BioReactorManager" target="blank"
+                        className="underline">access here</A>) and source code (
+                        <A href="https://github.com/MartinPavella/BioReactorManager" target="blank"
                            className="underline">access{" "}
-                            here</a>) available, any lab can reproduce{" "}
+                            here</A>) available, any lab can reproduce{" "}
                         and adapt the cultivator for their own work –{" "}
                         <span className="font-bold">for about $1,000 in materials.</span>
                     </p>
 
                     <p className="pt-2 text-center md:text-left">
-                        <a
+                        <A
                             href="#build-section"
                             className="text-[#6ca033] font-semibold hover:underline transition-colors"
                         >
                             → Learn how to build your own CULTIVATOR
-                        </a>
+                        </A>
                     </p>
                 </div>
             </div>

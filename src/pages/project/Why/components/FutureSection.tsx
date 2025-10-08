@@ -1,3 +1,5 @@
+import A from "../../../../A.tsx";
+
 interface FutureSectionProps {
     futureSectionImageUrl?: string | null;
 }
@@ -46,12 +48,12 @@ const FutureSection = ({futureSectionImageUrl}: FutureSectionProps) => {
                                     fontFamily: 'Urbanist, sans-serif',
                                 }}
                             >
-                                We are developing <b><a className="hover:underline text-[#6ca033]"
-                                                        href="/project/how/taifr/overview">TAIFR</a></b> and characterizing duckweed-native <b><a
-                                className="hover:underline text-[#6ca033]" href="/measurement">PROMOTERS</a></b>,
+                                We are developing <b><A className="hover:underline text-[#6ca033]"
+                                                        href="/project/how/taifr/overview">TAIFR</A></b> and characterizing duckweed-native <b><A
+                                className="hover:underline text-[#6ca033]" href="/measurement">PROMOTERS</A></b>,
                                 so <span style={{color: "#6ca033"}}>anyone can engineer duckweed efficiently</span>.
-                                We built the <strong><a className="hover:underline text-[#6ca033]"
-                                                        href="/hardware">CULTIVATOR</a></strong>, allowing <span
+                                We built the <strong><A className="hover:underline text-[#6ca033]"
+                                                        href="/hardware">CULTIVATOR</A></strong>, allowing <span
                                 style={{color: "#6ca033"}}>anyone to grow duckweed in their lab cheaply</span> and
                                 without labour.
                             </p>
