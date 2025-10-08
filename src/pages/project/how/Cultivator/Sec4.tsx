@@ -11,6 +11,7 @@ const lightSlides: ImageSlide[] = [
             "Intensity at water surface ~ 100 μmol/m²/s",
             "230 lm/m",
             "60 LEDs/m",
+            "We measured no growth difference compared to equally powere white LEDs"
         ],
     },
     {
@@ -22,6 +23,7 @@ const lightSlides: ImageSlide[] = [
             "Intensity at water surface ~ 100 μmol/m²/s",
             "1050 lm/m",
             "60 LEDs/m",
+            "Same results as the equally powered red-blue LEDs"
         ],
     },
     {
@@ -33,6 +35,7 @@ const lightSlides: ImageSlide[] = [
             "Intensity at water surface ~ 160 μmol/m²/s",
             "2100 lm/m",
             "120 LEDs/m",
+            "Up to 60% greater growth than the 12W LEDs"
         ],
     },
     {
@@ -44,6 +47,7 @@ const lightSlides: ImageSlide[] = [
             "Intensity at water surface ~ 170 μmol/m²/s",
             "1920 lm/m",
             "300 LEDs/m",
+            "Up to 80% greater growth than the 12W LEDs"
         ],
     },
     {
@@ -55,6 +59,7 @@ const lightSlides: ImageSlide[] = [
             "Intensity at water surface ~ 175 μmol/m²/s",
             "1920 lm/m",
             "300 LEDs/m",
+            "Up to 80% greater growth than the 12W LEDs"
         ],
     },
     {
@@ -66,6 +71,7 @@ const lightSlides: ImageSlide[] = [
             "Intensity at water surface ~ 180 μmol/m²/s",
             "1920 lm/m",
             "300 LEDs/m",
+            "Up to 90% greater growth than the 12W LEDs",
         ],
     },
 ];
@@ -89,7 +95,8 @@ const probeSlides: ImageSlide[] = [
             "First full-size PROBE",
             "The LDR casings alternate with connective pieces with 12 cm gaps.",
             "40 x 90 cm",
-            "3.5 mm jack connector"
+            "3.5 mm jack connector",
+            "Not very stable"
         ]
     },
     {
@@ -103,7 +110,8 @@ const probeSlides: ImageSlide[] = [
             "Connective pieces are 3 cm long",
             "Much more robust design",
             "40 x 90 cm",
-            "3.5 mm jack connector"
+            "3.5 mm jack connector",
+            "Significant stability improvement and easier construction"
         ]
     },
     {
@@ -114,7 +122,8 @@ const probeSlides: ImageSlide[] = [
             "Connective pieces are 4 cm long",
             "The extra overlap eliminates the need to use glue, resulting in much faster manufacturing",
             "40 x 90 cm",
-            "3.5 mm jack connector"
+            "3.5 mm jack connector",
+            "The most robust and reliable iteration"
         ]
     }
 ];
