@@ -1,5 +1,6 @@
 import React from "react";
 import ExpandablePill from "./ExpandablePill";
+import A from "../../../A.tsx";
 
 export default function HumanPracticesPage6() {
     return (
@@ -11,27 +12,32 @@ export default function HumanPracticesPage6() {
                     name="Django Mangalam"
                     subtitle="Farmlord at Plantible Foods"
                     location="Duckweed large-scale cultivation"
+                    defaultOpen={true}
                 >
                     <div className="leading-relaxed text-lg space-y-6">
                         {/* Intro with Zoom call image beside */}
-                        <div className="grid md:grid-cols-2 gap-8 items-start">
-                            <div className="space-y-4">
+                        <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+                            {/* Left text */}
+                            <div className="space-y-4 md:pr-6">
                                 <p>
-                                    <span className="font-bold">Django </span>
-                                    greeted us from a greenhouse lab in Eldorado, Texas. We started
-                                    discussing duckweed cultivation and soon realized that all of us are
-                                    crazy about duckweed – Django justified that with pulling up the
-                                    duckweed tattoo on his forehead!
+                                    <span className="font-bold">Django</span> greeted us from a greenhouse lab
+                                    in Eldorado, Texas. We started discussing duckweed cultivation and soon
+                                    realized that all of us are crazy about duckweed — Django justified that
+                                    by showing the <span className="font-bold">duckweed tattoo</span> on his
+                                    forehead!
                                 </p>
                             </div>
-                            <div className="flex justify-center">
+
+                            {/* Right image */}
+                            <div className="flex justify-center md:pl-6">
                                 <img
                                     src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/4-2.webp"
                                     alt="Zoom call with Django Mangalam"
-                                    className="rounded-2xl max-w-md"
+                                    className="rounded-2xl max-w-md w-full object-contain"
                                 />
                             </div>
                         </div>
+
 
                         {/* Findings list */}
                         <p>These are the most important findings we learnt:</p>
@@ -61,32 +67,37 @@ export default function HumanPracticesPage6() {
                         </ul>
 
                         {/* Text + Greenhouse photo side by side */}
-                        <div className="grid md:grid-cols-2 gap-8 items-start">
-                            {/* Greenhouse photo */}
-                            <div className="flex justify-center">
+                        <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+                            {/* Left: Greenhouse photo */}
+                            <div className="flex justify-center md:pr-6">
                                 <img
                                     src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/4-3.webp"
                                     alt="Plantible greenhouse ponds"
-                                    className="rounded-2xl max-w-md"
+                                    className="rounded-2xl max-w-md w-full object-contain"
                                 />
                             </div>
 
-                            <div className="space-y-4">
+                            {/* Right: text */}
+                            <div className="space-y-4 md:pl-6">
                                 <p>
-                                    <span className="font-bold">Django stressed to do the calculations </span>
+                                    <span className="font-bold">Django stressed to do the calculations</span>{" "}
                                     on our vertical system very carefully. We discussed whether they tried to
-                                    use <span className="font-bold">genetically enhanced duckweed. </span>
-                                    He said that there were some trials to boost RuBisCO content but they
-                                    failed. They would be <span className="font-bold">very interested to try out our biomass-boosted duckweed </span>
+                                    use <span className="font-bold">genetically enhanced duckweed.</span> He
+                                    said that there were some trials to boost RuBisCO content but they failed.
+                                    They would be{" "}
+                                    <span className="font-bold">
+        very interested to try out our biomass-boosted duckweed
+      </span>{" "}
                                     if we obtain one.
                                 </p>
 
                                 <p>
-                                    At the end of the call, we even got an excursion around Plantible’s
-                                    ponds! You can imagine how motivated we were after that.
+                                    At the end of the call, we even got an excursion around Plantible’s ponds!
+                                    You can imagine how motivated we were after that.
                                 </p>
                             </div>
                         </div>
+
                     </div>
                 </ExpandablePill>
 
@@ -95,26 +106,23 @@ export default function HumanPracticesPage6() {
                     We knew that the <span className="font-bold">duckweed cultivation </span>
                     was going to be a pain. That’s why we dedicated the whole subteam to this quest –
                     our{" "}
-                    <a
-                        href="/cultivation/hustlers"
-                        className="text-green-700 underline hover:text-green-900"
-                    >
+                    <span className="font-bold">
                         Cultivation Hustlers
-                    </a>
+                    </span>
                     . You can read how they perfected the cultivation{" "}
-                    <a
-                        href="/cultivation/hardware"
-                        className="text-green-700 underline hover:text-green-900"
+                    <A
+                        href="/hardware"
+                        className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         hardware
-                    </a>{" "}
+                    </A>{" "}
                     and{" "}
-                    <a
-                        href="/cultivation/software"
-                        className="text-green-700 underline hover:text-green-900"
+                    <A
+                        href="/model"
+                        className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         software
-                    </a>{" "}
+                    </A>{" "}
                     throughout our project that is now available to anyone!
                 </p>
             </div>
@@ -232,13 +240,15 @@ export default function HumanPracticesPage6() {
                     </p>
                 </div>
             </div>
-            <div className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif]">
+            <div className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif]"
+                 id="arturo">
                 {/* Arturo pill */}
                 <ExpandablePill
                     image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/4-4.webp"
                     name="Dr. Arturo Mari-Ordóñez"
                     subtitle="PI at Gregor Mendel Institute Vienna"
                     location="Transposons and gene silencing in duckweed"
+                    defaultOpen={true}
                 >
                     <div className="leading-relaxed text-lg space-y-6">
                         <p>
@@ -257,35 +267,32 @@ export default function HumanPracticesPage6() {
                         </p>
 
                         {/* Two-column layout with bullets + image + text */}
-                        <div className="grid md:grid-cols-2 gap-8 items-start">
+                        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
                             {/* Left column */}
                             <div className="space-y-4">
                                 <p>
-                                    <span className="font-bold">
-                                        Frond-mediated stable transformation{" "}
-                                    </span>
-                                    (<span className="italic">in planta</span> transformation and
-                                    subsequent regeneration into transgenic organism) reported in some
-                                    articles [12] does not work at all! (we were relying on these papers
-                                    quite heavily). The problems might be that:
+                                    <span className="font-bold">Frond-mediated stable transformation </span>
+                                    (<span className="italic">in planta</span> transformation and subsequent
+                                    regeneration into transgenic organism) reported in some articles [12] does
+                                    not work at all! (we were relying on these papers quite heavily). The
+                                    problems might be that:
                                 </p>
 
                                 <ul className="list-disc list-inside space-y-2">
                                     <li>
+                                        the T-DNA is{" "}
                                         <span className="font-bold">
-                                            Agrobacterium is not accessing the duckweed meristematic cells –{" "}
-                                        </span>
-                                        therefore, new individuals cannot carry the transgene.
-                                    </li>
-                                    <li>
-                                        the T-DNA is <span
-                                        className="font-bold">not getting integrated into the genome. </span>
-                                        Long-lasting transient expression means that duckweed
-                                        (<span className="italic">Spirodela</span>) doesn’t have the typical
+          not getting integrated into the genome.{" "}
+        </span>
+                                        Long-lasting transient expression means that duckweed (
+                                        <span className="italic">Spirodela</span>) doesn’t have the typical
                                         RNAi-mediated silencing (read more in Arturo’s paper [13]).
                                     </li>
                                     <li>
-                                        calli transformation is <span className="font-bold">huge pain and lasts for too long </span>
+                                        calli transformation is{" "}
+                                        <span className="font-bold">
+          huge pain and lasts for too long{" "}
+        </span>
                                     </li>
                                 </ul>
                             </div>
@@ -304,18 +311,22 @@ export default function HumanPracticesPage6() {
                                     He also told us that
                                     <span className="font-bold"> some native duckweed promoters </span>
                                     would be a huge help for his research as the
-                                    <span className="font-bold"> conventional ones (35S) almost do not work </span>
-                                    and maize ubiquitin gives a somehow solid expression. And a fun fact,
-                                    they have <span className="font-bold">duckweed that flowers! </span>
+                                    <span className="font-bold">
+        {" "}
+                                        conventional ones (35S) almost do not work{" "}
+      </span>
+                                    and maize ubiquitin gives a somehow solid expression. And a fun fact, they
+                                    have <span className="font-bold">duckweed that flowers! </span>
                                 </p>
                             </div>
                         </div>
 
+
                         <p>
                             We agreed that <span className="font-bold">Arturo will send us protocols </span>
                             and we will do a brainstorming session with his lab in Vienna (read more in hacking).
-                            You can check out all the <span className="font-bold">protocols </span> after our touch
-                            here or in Arturo’s amazing paper [14]!
+                            You can check out all the <span className="font-bold">protocols </span> in Arturo’s amazing
+                            paper [14]!
                         </p>
                     </div>
                 </ExpandablePill>

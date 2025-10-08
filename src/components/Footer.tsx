@@ -1,4 +1,5 @@
 import React from 'react';
+import A from "../A";
 
 // ============ TYPES ============
 interface Company {
@@ -229,10 +230,37 @@ const PARTNERS_DATA = {
     },
     {
       company: {
+        name: "SAPMU",
+        logo: "https://static.igem.wiki/teams/5642/images/homepage/footer/sapmu-logo.webp",
+        alt: "SAPMU Logo",
+        url: "https://www.muni.cz/en/alumni/spolek-absolventu-a-pratel-mu/about-us/about-sapmu",
+        category: "Special Partner"
+      }
+    },
+    {
+      company: {
         name: "Agronet Nesovice",
         logo: "https://static.igem.wiki/teams/5642/images/homepage/footer/agronet-nesovice.webp",
         alt: "Agronet Nesovice Logo",
         url: "https://agronet-nesovice-druzstvo.webnode.cz/",
+        category: "Special Partner"
+      }
+    },
+        {
+      company: {
+        name: "Zabcice",
+        logo: "https://static.igem.wiki/teams/5642/images/homepage/footer/zabcice-logo.webp",
+        alt: "Zabcice Logo",
+        url: "https://szp.mendelu.cz/en/homepage/",
+        category: "Special Partner"
+      }
+    },
+        {
+      company: {
+        name: "MUNI Arts",
+        logo: "https://static.igem.wiki/teams/5642/images/homepage/footer/muni-arts-logo.webp",
+        alt: "MUNI Arts Logo",
+        url: "https://www.phil.muni.cz/en/",
         category: "Special Partner"
       }
     },
@@ -283,7 +311,7 @@ const LogoCard: React.FC<LogoCardProps> = ({ company, label, isStrategic }) => {
   return (
     <div className="group relative flex flex-col items-center justify-center w-full h-full">
       {renderLabel()}
-      <a
+      <A
         href={company.url}
         target="_blank"
         rel="noopener noreferrer"
@@ -304,7 +332,7 @@ const LogoCard: React.FC<LogoCardProps> = ({ company, label, isStrategic }) => {
             }
           }}
         />
-      </a>
+      </A>
     </div>
   );
 };
@@ -326,7 +354,7 @@ const PartnersSection: React.FC<PartnersSectionProps> = ({ title, partners, isSt
         {partners.map(({ company, label }, index) => (
           <div
             key={`${title || 'partners'}-${index}`}
-            className={`flex items-center justify-center min-h-0 ${isSpecialPartners ? 'w-24 sm:w-32 md:w-36' : ''}`}
+            className={`flex items-center justify-center min-h-0 ${isSpecialPartners ? 'w-20 sm:w-24 md:w-27' : ''}`}
           >
             <LogoCard company={company} label={label} isStrategic={isStrategic} />
           </div>
@@ -340,7 +368,7 @@ const CopyrightSection: React.FC = () => (
   <div className={`pt-6 sm:pt-8 border-t ${CONFIG.colors.border} space-y-1 sm:space-y-2`}>
     <div className="flex flex-col items-center space-y-1 sm:space-y-2">
       <div className="flex flex-col items-center justify-center gap-2 sm:gap-4">
-        <a href={CONFIG.copyright.brnoUrl} target="_blank" rel="noopener noreferrer" className="group">
+        <A href={CONFIG.copyright.brnoUrl} target="_blank" rel="noopener noreferrer" className="group">
           <img
             src={CONFIG.copyright.brnoLogoPath}
             alt="Brno Logo"
@@ -354,7 +382,7 @@ const CopyrightSection: React.FC = () => (
               }
             }}
           />
-        </a>
+        </A>
         <div
           className={`text-xs sm:text-sm md:text-base ${CONFIG.colors.textHeader} font-semibold text-center px-4`}
           style={{ fontFamily: CONFIG.fonts.primary }}
@@ -368,28 +396,28 @@ const CopyrightSection: React.FC = () => (
           style={{ fontFamily: CONFIG.fonts.secondary }}
         >
           © {CONFIG.copyright.year} - Content on this site is licensed under a{' '}
-          <a
+          <A
             href={CONFIG.copyright.licenseUrl}
             target="_blank"
             rel="noopener noreferrer"
             className={`${CONFIG.colors.link} underline transition-colors duration-200`}
           >
             Creative Commons Attribution 4.0 International license
-          </a>.
+          </A>.
         </div>
         <div
           className={`text-xs sm:text-sm ${CONFIG.colors.textTertiary} leading-relaxed`}
           style={{ fontFamily: CONFIG.fonts.secondary }}
         >
           The repository used to create this website is available at{' '}
-          <a
+          <A
             href={CONFIG.copyright.repositoryUrl}
             target="_blank"
             rel="noopener noreferrer"
             className={`${CONFIG.colors.link} underline transition-colors duration-200 break-all`}
           >
             gitlab.igem.org/2025/brno-czech-republic
-          </a>.
+          </A>.
         </div>
       </div>
     </div>

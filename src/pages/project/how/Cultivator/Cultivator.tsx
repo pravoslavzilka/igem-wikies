@@ -8,33 +8,39 @@ import CultivatorSec3 from "./Sec3.tsx";
 import CultivatorSec4 from "./Sec4.tsx";
 import CultivatorSec5 from "./Sec5.tsx";
 import CultivatorSec6 from "./Sec6.tsx";
+import CultivatorBuildSection from "./BillOfMaterials.tsx";
 
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import {useEffect} from 'react';
+import {useLocation} from 'react-router-dom';
 
 
 export default function LivingLayers() {
-    
+
     const location = useLocation();
 
     useEffect(() => {
         if (location.hash) {
-        const element = document.getElementById(location.hash.substring(1));
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
+            const element = document.getElementById(location.hash.substring(1));
+            if (element) {
+                element.scrollIntoView({behavior: 'smooth'});
+            }
         }
     }, [location]);
 
     return (
         <div className="bg-white text-gray-900 leading-relaxed text-justify font-[Urbanist,sans-serif] text-lg">
-            {/* Full-width hero image with floating title */}
-            <CultivatorHeader/>
+            <style>
+                {`
+          html {
+            scroll-behavior: smooth;
+          }
+        `}
+            </style>
 
+            <CultivatorHeader/>
             <CultivatorIntro/>
 
             <hr className="my-8 w-1/2 mx-auto border-t-2 border-gray-400"/>
-
 
             <CultivatorSec1/>
             <CultivatorSec2/>
@@ -42,8 +48,9 @@ export default function LivingLayers() {
             <CultivatorSec4/>
             <CultivatorSec5/>
             <CultivatorSec6/>
+            <CultivatorBuildSection/>
 
-            <div className="max-w-4xl mx-auto text-center py-12">
+            <div className="max-w-4xl mx-auto text-center py-12 space-y-12">
                 {/* Heading */}
                 <h2 className="text-2xl font-bold text-green-600 mb-6"
                     style={{
@@ -56,13 +63,14 @@ export default function LivingLayers() {
                 {/* Video embed */}
                 <div className="relative w-full aspect-video max-w-6xl mx-auto rounded-lg overflow-hidden shadow-lg">
                     <iframe
-                        className="absolute inset-0 w-full h-full"
-                        src="https://www.youtube.com/watch?v=0VAylWxDQfk"
-                        title="Duckweed Cultivator Demo"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        title="Brno Czech Republic: Routine of Duckweed Scientist (2025) [English]"
+                        src="https://video.igem.org/videos/embed/hzm6HwsSLh8cFgNbbXwcck"
+                        className="absolute top-0 left-0 w-full h-full"
+                        sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
                         allowFullScreen
                     ></iframe>
                 </div>
+
             </div>
 
 

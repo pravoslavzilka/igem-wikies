@@ -8,7 +8,8 @@ const harvestingSlides: ImageSlide[] = [
         rightNote: [
             "Densely packed jets near the harvesting edge to push the duckweed over.",
             "Sparse jets at the back to evenly re-distribute the duckweed.",
-            "1mm jet diameter."
+            "1mm jet diameter.",
+            "Suboptimal results as the jets near the harvesting edge disrupt the flow of duckweed."
         ]
     },
     {
@@ -16,7 +17,9 @@ const harvestingSlides: ImageSlide[] = [
         title: "Iteration 2",
         rightNote: [
             "Uniformly spaced jets at a shallow 30° angle, to gently push the duckweed forward while raising the water level.",
-            "1mm jet diameter."
+            "1mm jet diameter.",
+            "Improvement over the last generation.",
+            "A disadvantage is that the duckweed is being pushed together in the center a lot."
         ]
     },
     {
@@ -25,7 +28,8 @@ const harvestingSlides: ImageSlide[] = [
         rightNote: [
             "Jets at a shallow 30° angle, to gently push the duckweed forward while raising the water level.",
             "Front jets targeted to push duckweed over the edge with maximum force.",
-            "1mm jet diameter."
+            "1mm jet diameter.",
+            "The front jets were aimed too close to the harvesting edge, so the water currents were hitting the wall, turning around, and pushing the duckweed back."
         ]
     },
     {
@@ -33,7 +37,9 @@ const harvestingSlides: ImageSlide[] = [
         title: "Iteration 4",
         rightNote: [
             "Uniformly spaced jets at a steep 45° angle, to push the duckweed forward more quickly.",
-            "1mm jet diameter."
+            "1mm jet diameter.",
+            "A significant improvement.",
+            "The jets near the harvesting edge were still more distributive than helpful."
         ]
     },
     {
@@ -42,7 +48,8 @@ const harvestingSlides: ImageSlide[] = [
         rightNote: [
             "45° angled jets but only at the back, to create a steady current that pushes the duckweed over the edge.",
             "No jets in the front to avoid distributing the flowing duckweed.",
-            "1mm jet diameter."
+            "1mm jet diameter.",
+            "Great at harvesting low to medium densities."
         ]
     },
     {
@@ -50,7 +57,9 @@ const harvestingSlides: ImageSlide[] = [
         title: "Iteration 6",
         rightNote: [
             "45° angled sparsely placed jets with a larger throughput",
-            "3mm jet diameter."
+            "3mm jet diameter.",
+            "This design achieves the most consistent harvesting even at the highest biomass densities.",
+            "It's ability to harvest a layer completely (until there is no duckweed left) is not optimal though."
         ]
     },
 ];
@@ -201,7 +210,7 @@ export default function CultivatorSec2() {
                     <div className="mt-6 flex justify-center md:justify-center">
                         <button
                             onClick={() => setIsOpenHarvestingSlides(true)}
-                            className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
+                            className="text-green-600 hover:text-green-800 font-semibold text-2xl underline"
                         >
                             See the design iterations we went through
                         </button>
@@ -210,8 +219,6 @@ export default function CultivatorSec2() {
 
 
             </div>
-
-
 
 
             <div
@@ -254,7 +261,7 @@ export default function CultivatorSec2() {
                     <div className="mt-6 flex justify-center md:justify-center">
                         <button
                             onClick={() => setIsOpenCycleSlides(true)}
-                            className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
+                            className="text-green-600 hover:text-green-800 font-semibold text-2xl underline"
                         >
                             See the whole water circulation system.
                         </button>
@@ -271,7 +278,7 @@ export default function CultivatorSec2() {
                 </div>
 
             </div>
-                {/* Fullscreen image viewer */}
+            {/* Fullscreen image viewer */}
             <ImageViewer
                 slides={waterCycleSlides}
                 isOpen={isOpenCycleSlides}

@@ -1,5 +1,6 @@
 import React from "react";
 import ExpandablePill from "./ExpandablePill";
+import A from "../../../A";
 
 export default function HumanPracticesPage3() {
     return (
@@ -40,23 +41,25 @@ export default function HumanPracticesPage3() {
                         </p>
 
                         {/* Two-column layout with image beside paragraph */}
-                        <div className="grid md:grid-cols-2 gap-8 items-center">
-                            <div className="space-y-4">
+                        <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+                            <div className="space-y-4 md:pr-6">
                                 <p>
                                     Both ladies emphasized that, if we want to try to transform chloroplasts,
                                     we need to achieve{" "}
-                                    <span className="font-bold">homoplasmy</span> – state where all the
-                                    chloroplasts in the organism are transgenic[6].
+                                    <span className="font-bold">homoplasmy</span> – the state where all the
+                                    chloroplasts in the organism are transgenic [6].
                                 </p>
                             </div>
-                            <div className="flex justify-center">
+
+                            <div className="flex justify-center md:pl-6">
                                 <img
                                     src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/3-2.webp"
                                     alt="Zoom call with Karen McDonald and Tressa Smalley"
-                                    className="rounded-2xl max-w-md"
+                                    className="rounded-2xl max-w-md w-full object-contain"
                                 />
                             </div>
                         </div>
+
 
                         <p>
                             Currently, they focus on{" "}
@@ -74,7 +77,7 @@ export default function HumanPracticesPage3() {
                 {/* Closing paragraph */}
                 <p className="mt-8 text-lg">
                     This didn’t sound well but we needed more inputs. After sneaking in to the{" "}
-                    <span className="font-bold">Applied Synthetic Biology in Europe (ASBE)</span>
+                    <span className="font-bold">Applied Synthetic Biology in Europe (ASBE) </span>
                     conference and hearing the fascinating talk of professor{" "}
                     <span className="font-bold">Tobias Erb</span> about metabolic engineering of
                     photosynthesis, we contacted him to help us. He passed us to the fantastic{" "}
@@ -108,28 +111,32 @@ export default function HumanPracticesPage3() {
                         </p>
 
                         {/* Two-column layout with text + image */}
-                        <div className="grid md:grid-cols-2 gap-8 items-center">
-                            <div className="space-y-4">
+                        <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+                            {/* Left: text */}
+                            <div className="space-y-4 md:pr-6">
                                 <p>
-                                    We discussed, whether we can{" "}
-                                    <span className="font-bold">knock-out an essential gene</span>
-                                    in duckweed nucleus (e.g. arginine synthase) and co-deliver it
-                                    with the gene of interest into chloroplast via particle
-                                    bombardment transformation.
+                                    We discussed whether we can{" "}
+                                    <span className="font-bold">knock out an essential gene</span> in the
+                                    duckweed nucleus (e.g., arginine synthase) and co-deliver it with the
+                                    gene of interest into chloroplasts via particle bombardment
+                                    transformation.
                                 </p>
                             </div>
-                            <div className="flex justify-center">
+
+                            {/* Right: image */}
+                            <div className="flex justify-center md:pl-6">
                                 <img
                                     src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/3-4.webp"
                                     alt="Zoom call with René Inckemann"
-                                    className="rounded-2xl max-w-md"
+                                    className="rounded-2xl max-w-md w-full object-contain"
                                 />
                             </div>
                         </div>
 
+
                         <p>
                             We were also warned about{" "}
-                            <span className="font-bold">high resistance of plant monocot species</span>
+                            <span className="font-bold">high resistance of plant monocot species </span>
                             against multiple antibiotics and were advised to try out several of those
                             to achieve effective selection. René encouraged us to try to play with
                             different methods of gene delivery but also suggested that this kind of
@@ -156,67 +163,60 @@ export default function HumanPracticesPage3() {
             </div>
 
 
-            <div className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif]">
+            <div id="julia-eva-fortmueller" className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif]">
                 {/* Julia-Eva Fortmueller pill */}
                 <ExpandablePill
                     image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/3-5.webp"
                     name="Julia-Eva Fortmueller"
                     subtitle="Ph.D. candidate at Weizmann Institute of Science"
                     location="Duckweed genetic engineering and protein production"
+                    defaultOpen={true}
                 >
                     <div className="leading-relaxed text-lg space-y-6">
                         {/* Two-column layout with text + image */}
-                        <div className="grid md:grid-cols-2 gap-8 items-start">
+                        <div className="grid md:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
                             {/* Left text */}
-                            <div className="space-y-4">
+                            <div className="space-y-4 md:pr-6">
                                 <p>
                                     Julia does fascinating stuff with duckweed – she produces{" "}
-                                    <span className="font-bold">spider silk proteins</span> in it
-                                    and tries to make them secreted into the medium.
+                                    <span className="font-bold">spider silk proteins</span> in it and tries to
+                                    make them secreted into the medium.
                                 </p>
 
-                                <p>
-                                    We learnt so much from her, mainly that we should:
-                                </p>
+                                <p>We learnt so much from her, mainly that we should:</p>
 
                                 <ul className="list-disc list-inside space-y-2">
-                                    <li>use <span className="font-bold">monocot promoters</span> for all constructs</li>
-                                    <li>use <span className="font-bold">fluorescence reporters</span> (avoid using GUS
-                                        reporter assay)
+                                    <li>
+                                        use <span className="font-bold">monocot promoters</span> for all constructs
+                                    </li>
+                                    <li>
+                                        use <span className="font-bold">fluorescence reporters</span> (avoid using
+                                        GUS reporter assay)
                                     </li>
                                     <li>
                                         start preparing calli as early as possible, because{" "}
                                         <span className="font-bold">
-                                            stable transformation of duckweed takes a very long time
-                                        </span>
+          stable transformation of duckweed takes a very long time
+        </span>
                                     </li>
                                     <li>
-                                        always <span className="font-bold">check constructs transiently</span>
-                                        before trying the stable transformation via callus
+                                        always{" "}
+                                        <span className="font-bold">check constructs transiently</span> before
+                                        trying the stable transformation via callus
                                     </li>
                                 </ul>
                             </div>
 
                             {/* Right image */}
-                            <div className="flex justify-center">
+                            <div className="flex justify-center md:pl-6">
                                 <img
                                     src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/3-6.webp"
                                     alt="Meeting with Julia-Eva Fortmueller"
-                                    className="rounded-2xl max-w-md"
+                                    className="rounded-2xl max-w-md w-full object-contain"
                                 />
                             </div>
                         </div>
 
-                        <p>
-                            We incorporated everything we learnt into our{" "}
-                            <a
-                                href="/duckweed-protocols"
-                                className="text-green-700 underline hover:text-green-900"
-                            >
-                                duckweed protocols
-                            </a>{" "}
-                            after we optimized it ourselves, so anyone can make use of this knowledge now.
-                        </p>
 
                         <p>
                             Julia also confirmed that duckweed is becoming{" "}
@@ -243,12 +243,12 @@ export default function HumanPracticesPage3() {
 
                     <p>
                         But before we dived deep into more SynBio concepts, we managed to land a call
-                        with <span className="font-bold">master duckweed cultivators from <a
+                        with <span className="font-bold">duckweed farmlord from <A
                         href="https://www.plantiblefoods.com/"
-                        className="text-green-700 underline hover:text-green-900"
+                        className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                                 Plantible Foods
-                            </a>{" "}. </span>
+                            </A>{" "}. </span>
                         Despite the fact that we were not focusing on the right genetic bottleneck of duckweed
                         application from the start, we knew what is the technical one we needed to address –{" "}
                         <span className="font-bold">

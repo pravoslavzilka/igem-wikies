@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import ExpandablePill from "./ExpandablePill";
+import A from "../../../A.tsx";
 
 export default function HumanPracticesPage9() {
     const [hovered, setHovered] = useState<string | null>(null);
@@ -37,10 +38,8 @@ export default function HumanPracticesPage9() {
                         <p>
                             <span className="font-bold">Dr. Martin Malý</span> was our regular mentor in terms of
                             material usage and material processing for different purposes in the{" "}
-                            <a href="#" className="text-green-700 underline hover:text-green-900">
-                                CULTIVATOR
-                            </a>
-                            , such as the structure, the plastic layers, the water jets, etc. For spraying duckweed
+                            CULTIVATOR, such as the structure, the plastic layers, the water jets, etc. For spraying
+                            duckweed
                             from the tubes, we encountered problems of damaged water flow. Dr. Malý{" "}
                             <span className="font-bold">suggested using very thin pipes</span> that can be used
                             as water jets to make the water flow as smoothly as possible, which turned out to be
@@ -62,9 +61,9 @@ export default function HumanPracticesPage9() {
                             <span className="font-bold">Czech iGEM team back in 2015.</span> When he
                             heard that another one emerged ten years later, he contacted us immediately. With his
                             expertise in software, hardware and SynBio, he was helpful with perfecting our{" "}
-                            <a href="#" className="text-green-700 underline hover:text-green-900">
+                            <A href="/model" className="text-[#538b5e] underline hover:text-[#25512b]">
                                 PREDICTOR
-                            </a>.
+                            </A>.
                         </p>
                         <p>
                             He assisted our Cultivation Hustlers team in{" "}
@@ -81,11 +80,13 @@ export default function HumanPracticesPage9() {
                 </ExpandablePill>
 
                 {/* Prof. Marcel Jansen */}
+                <div id="marcel-jansen"></div>
                 <ExpandablePill
                     image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/9-3.webp"
                     name="prof. Marcel Jansen"
                     subtitle="University College Cork"
                     location="Duckweed cultivation for applied research"
+                    defaultOpen={true}
                 >
                     <div className="leading-relaxed text-lg space-y-6">
                         <p>
@@ -95,50 +96,49 @@ export default function HumanPracticesPage9() {
                             And <span className="font-bold">professor Jansen</span> is one of those that are constantly
                             designing new systems for its cultivation.
                             We had to get his feedback on our{" "}
-                            <a href="#" className="text-green-700 underline hover:text-green-900">
-                                CULTIVATOR
-                            </a>, right?
+                            CULTIVATOR.
                         </p>
 
-                        <div className="grid md:grid-cols-2 gap-8 items-center">
+                        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center text-lg leading-relaxed">
                             {/* Left column */}
                             <div className="space-y-4">
                                 <p>
                                     We showed him pictures of our system and he was pretty impressed! He liked all the
                                     features of automation and said{" "}
-                                    <span className="font-bold">the harvesting strategy is very clever. </span>
-                                    The only thing he was concerned about was mixing the medium in the individual trays,
-                                    as our current setup could disrupt duckweed layer on the which might hinder
-                                    duckweeds’ growth.
+                                    <span className="font-bold">the harvesting strategy is very clever.</span> The only
+                                    thing
+                                    he was concerned about was mixing the medium in the individual trays, as our current
+                                    setup
+                                    could disrupt the duckweed layer, which might hinder its growth.
                                 </p>
                                 <p>
                                     That’s why we{" "}
-                                    <span
-                                        className="font-bold">submerged our pipe-based harvesting under the surface. </span>
-                                    This way, duckweed won’t be harmed and can do what it is best at – grow extremely
+                                    <span className="font-bold">
+        submerged our pipe-based harvesting system under the surface.
+      </span>{" "}
+                                    This way, duckweed won’t be harmed and can do what it does best – grow extremely
                                     fast.
                                 </p>
                             </div>
 
-                            {/* Right column: image */}
+                            {/* Right column */}
                             <div className="space-y-4">
                                 <div className="flex justify-center">
                                     <img
                                         src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/9-4.webp"
-                                        alt="Call with prof. Marcel Jansen"
+                                        alt="Call with Prof. Marcel Jansen"
                                         className="rounded-2xl max-w-md"
                                     />
                                 </div>
                                 <p>
-                                    Professor was also excited about our{" "}
-                                    <span className="font-bold">photoresistor based system (PROBE)</span> for measuring
-                                    biomass
-                                    growth in real time.
+                                    The professor was also excited about our{" "}
+                                    <span className="font-bold">photoresistor-based system (PROBE)</span> for measuring
+                                    biomass growth in real time.
                                 </p>
                                 <p>
-                                    His sentence <span
-                                    className="font-bold">‘You’re probably onto a perfect setup…’ </span>
-                                    sticked with us and motivated us even further.
+                                    His sentence{" "}
+                                    <span className="font-bold">‘You’re probably onto a perfect setup…’</span>{" "}
+                                    stuck with us and motivated us even further.
                                 </p>
                             </div>
                         </div>
@@ -146,21 +146,39 @@ export default function HumanPracticesPage9() {
 
                     </div>
                 </ExpandablePill>
+
+                <ExpandablePill
+                    image="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/bartak.webp"
+                    name="Prof. Miloš Barták, PhD"
+                    subtitle="Masaryk University Brno"
+                    location="Photosynthesis"
+                >
+                    <div className="leading-relaxed text-lg space-y-4">
+                        <p>
+                            <span className="font-bold">Professor Barták</span> is a world-renowned
+                            expert on chlorophyll fluorescence and the light-dependent reactions of photosynthesis. We
+                            reached out to him regarding the design of our duckweed lighting experiment. He helped us
+                            with the experimental design and lent us his PAR meter, which we used to better understand
+                            the light available to us.
+                        </p>
+                    </div>
+                </ExpandablePill>
             </div>
 
 
-            <div className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed font-[Urbanist,sans-serif]">
+            <div
+                className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed font-[Urbanist,sans-serif] space-y-4">
                 {/* Green Header */}
                 <div
                     id="real-world-check"
-                    className="bg-green-300 text-gray-900 font-bold px-6 py-4 rounded-t-xl"
-                    style={{fontFamily: "Space Grotesk, sans-serif", fontSize: "2rem"}}
+                    className="text-gray-900 font-bold px-6 py-4 rounded-t-xl"
+                    style={{fontFamily: "Space Grotesk, sans-serif", fontSize: "2rem", backgroundColor: '#6ca033'}}
                 >
                     Real World Check
                 </div>
 
                 {/* Intro text */}
-                <div className="p-8 text-lg leading-relaxed">
+                <div className="p-8 text-lg leading-relaxed space-y-6">
                     <p className="mb-6">
                         We built complicated and sophisticated stuff. But for what? To apply it in a real
                         world! And that’s why we were constantly checking whether we are really building
@@ -172,14 +190,25 @@ export default function HumanPracticesPage9() {
                     {/* Hover circles (4 on top, 3 centered below) */}
                     <div className="flex flex-col items-center space-y-6 mb-12">
                         {/* Row 1: 4 items */}
-                        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 place-items-center">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
                             {[
-                                {label: "Farmers & Agriculture Specialists", href: "#farmers"},
-                                {label: "Safety & Regulations", href: "#safety"},
-                                {label: "Duckweed as a Biotechnology Platform", href: "#platform"},
-                                {label: "CULTIVATOR User Testing", href: "#cultivator-testing"},
-                            ].map(({label, href}) => (
-                                <a
+                                {
+                                    label: "The soybean problem from both side (Czech & Brazilian stakeholders)",
+                                    src: "https://static.igem.wiki/teams/5642/images/engagement/humanpractices/2/soybean.webp",
+                                    href: "#farmers"
+                                },
+                                {
+                                    label: "Safety & Regulations",
+                                    src: "https://static.igem.wiki/teams/5642/images/engagement/humanpractices/2/safety.webp",
+                                    href: "#safety"
+                                },
+                                {
+                                    label: "Duckweed as a Biotechnology Platform",
+                                    src: "https://static.igem.wiki/teams/5642/images/engagement/humanpractices/2/platform.webp",
+                                    href: "#platform"
+                                },
+                            ].map(({label, src, href}) => (
+                                <A
                                     key={label}
                                     href={href}
                                     onMouseEnter={() => setHovered(label)}
@@ -187,29 +216,32 @@ export default function HumanPracticesPage9() {
                                     className="block"
                                     aria-label={label}
                                 >
-                                    <div
-                                        className={`w-40 h-40 rounded-full border border-gray-400 flex items-center justify-center 
-                      text-center p-4 text-sm leading-tight transition-colors
-                      ${hovered === label ? "bg-green-200 text-green-700" : "bg-gray-50"}`}
-                                        style={{fontFamily: "Space Grotesk, sans-serif"}}
-                                    >
-                                        {label}
+                                    <div className="flex justify-center">
+                                        <img
+                                            src={src}
+                                            alt={label}
+                                            className="rounded-2xl max-w-xs"
+                                        />
                                     </div>
-                                </a>
+                                </A>
                             ))}
                         </div>
 
                         {/* Row 2: 3 items (centered) */}
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 place-items-center">
                             {[
-                                {label: "Entrepreneurship", href: "#entrepreneurship"},
-                                {label: "Excellence in iGEM", href: "#excellence"},
+                                {
+                                    label: "Excellence in iGEM",
+                                    src: "https://static.igem.wiki/teams/5642/images/engagement/humanpractices/2/excellence.webp",
+                                    href: "#excellence"
+                                },
                                 {
                                     label: "Building CzechoSlovak SynBio Community from the Ground Up",
-                                    href: "#community"
+                                    src: "https://static.igem.wiki/teams/5642/images/engagement/humanpractices/2/czsk-new.webp",
+                                    href: "#czsk-community"
                                 },
-                            ].map(({label, href}) => (
-                                <a
+                            ].map(({label, src, href}) => (
+                                <A
                                     key={label}
                                     href={href}
                                     onMouseEnter={() => setHovered(label)}
@@ -217,51 +249,75 @@ export default function HumanPracticesPage9() {
                                     className="block"
                                     aria-label={label}
                                 >
-                                    <div
-                                        className={`w-40 h-40 rounded-full border border-gray-400 flex items-center justify-center 
-                      text-center p-4 text-sm leading-tight transition-colors
-                      ${hovered === label ? "bg-green-200 text-green-700" : "bg-gray-50"}`}
-                                        style={{fontFamily: "Space Grotesk, sans-serif"}}
-                                    >
-                                        {label}
+                                    <div className="flex justify-center">
+                                        <img
+                                            src={src}
+                                            alt={label}
+                                            className="rounded-2xl max-w-xs"
+                                        />
                                     </div>
-                                </a>
+                                </A>
                             ))}
                         </div>
                     </div>
 
-                    {/* Farmers & Agriculture Specialists section */}
-                    <section id="farmers">
+                    <div className="space-y-12">
+
                         <h2
-                            className="font-bold mb-4"
+                            className="font-bold text-start"
                             style={{
                                 fontFamily: "Space Grotesk, sans-serif",
                                 fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem",
                             }}
+                            id="farmers"
                         >
-                            Farmers & Agriculture Specialists
+                            The Soybean Problem from both Sides (Czech & Brazilian)
                         </h2>
-                    </section>
 
-                    <p>
-                        The first person from a real world we spoke to was a farmer{" "}
-                        <a
-                            href="#"
-                            className="text-green-700 underline hover:text-green-900"
-                        >
-                            Jakub Neužil
-                        </a>
-                        . He told us that the problem we want to focus on needs to be solved, besides many
-                        more insights. However, we really wanted to understand, what other problems are
-                        farmers facing, how does the operation on the farm look like regarding their manure
-                        treatment and feed they are using. Of course, we asked what would it mean to
-                        implement our solution on their farm and use duckweed as a next protein crop for
-                        feeding their livestock.
-                    </p>
+                        <p className="text-lg">
+                            The first person from a real <span className="font-bold">world of agriculture</span> we
+                            spoke to was a farmer{" "}
+                            <A href="#jakub-neuzil" className="underline hover:text-gray-700">
+                                Jakub Neužil
+                            </A>
+                            . He told us many valuable insights, and agreed that the problem we are focusing on has to
+                            be solved.
+                            However, we really wanted to understand, <span className="font-bold">what other problems are farmers facing,</span>{" "}
+                            how does the operation on the farm look like regarding their{" "}
+                            <span className="font-bold">manure treatment and the kind of feed they are using.</span>
+                        </p>
 
-                    <p className="mt-6">
-                        Anyway, read further to see what we were asking and what we found out!
-                    </p>
+                    </div>
+                    <div className="space-y-12">
+
+                        <p className="text-lg">
+                            To gain a comprehensive perspective, we spoke (by phone) with <span className="font-bold">40 farmers</span> from
+                            the Czech Republic and Slovakia. Curious what we were asking and what did we find out?
+                        </p>
+
+                        <h2
+                            className="font-bold"
+                            style={{
+                                fontFamily: "Space Grotesk, sans-serif",
+                                fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem",
+                            }}>
+                            What type of feed do you use as a source of protein?
+                        </h2>
+
+                        <p className="text-lg">
+                            Our research showed that 50% of the surveyed farms use <span
+                            className="font-bold">soy</span> at least partly as a
+                            protein source. However, only 15% rely on it as their main protein source, primarily due to
+                            its{" "}
+                            <span className="font-bold">high cost.</span> The most common protein source is <span
+                            className="font-bold">rapeseed,</span>{" "}
+                            used by 30% of the farms. Another 7.5% combine <span
+                            className="font-bold">rapeseed and soy</span> in a 1:1 ratio.
+                            Around 20% of the farms operate organically, with their cattle grazing freely on{" "}
+                            <span className="font-bold">pastures.</span>
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </div>

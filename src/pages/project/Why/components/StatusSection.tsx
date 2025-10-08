@@ -77,10 +77,9 @@ const StatusSection = ({
           <div className="w-full lg:w-1/2 order-2">
             <div className="space-y-6 lg:space-y-10">
               <p 
-                className="text-gray-500 text-base lg:text-lg font-semibold"
+                className="text-gray-900 text-lg lg:text-lg font-semibold"
                 style={{ 
                   fontFamily: 'Urbanist, sans-serif',
-                  color: 'rgba(27, 27, 27, 0.5)'
                 }}
               >
                 But What is a current status quo of duckweed application?

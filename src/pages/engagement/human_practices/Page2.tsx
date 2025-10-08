@@ -1,5 +1,6 @@
 import React from "react";
 import ExpandablePill from "./ExpandablePill";
+import A from "../../../A.tsx";
 
 export default function HumanPracticesPage2() {
     return (
@@ -51,6 +52,7 @@ export default function HumanPracticesPage2() {
                     name="Dr. Andrew D. Hanson"
                     subtitle="Professor at University of Florida"
                     location="Biochemistry and plant metabolism"
+                    defaultOpen={true}
                 >
                     <div className="grid md:grid-cols-2 gap-8 leading-relaxed text-lg">
                         {/* Left column */}
@@ -83,7 +85,7 @@ export default function HumanPracticesPage2() {
                         </div>
                     </div>
 
-                    <p className="mt-6">
+                    <p className="mt-6 text-lg">
                         At the same time, Prof. Hanson was{" "}
                         <span className="font-bold">excited about the problem</span> we were
                         trying to solve and encouraged us to continue. He also suggested other
@@ -104,12 +106,12 @@ export default function HumanPracticesPage2() {
                     had to stop thinking about the solution for a while to prepare for{" "}
                     <span className="font-bold">iGEM Startup Showcase</span> in Paris (read
                     more in{" "}
-                    <a
-                        href="/engagement/nitroduck"
-                        className="text-green-700 underline hover:text-green-900"
+                    <A
+                        href="/entrepreneurship"
+                        className="text-[#538b5e] underline hover:text-[#25512b]"
                     >
                         NitroDuck story
-                    </a>
+                    </A>
                     ).
                 </p>
 
@@ -157,6 +159,7 @@ export default function HumanPracticesPage2() {
                         fontFamily: "Space Grotesk, sans-serif",
                         fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem",
                     }}
+                    id="boosted-duckweed"
                 >
                     Biomass-boosted Duckweed
                 </h2>
@@ -227,8 +230,8 @@ export default function HumanPracticesPage2() {
                         , especially in duckweed. We came up with several ideas that could be
                         employed – reprogramming{" "}
                         <span className="font-bold">Agrobacterium</span> to target the T-DNA to
-                        chloroplast instead of nucleus[2], using peptide-mediated transformation of
-                        protoplast[3], or PEG-mediated transformation[4].
+                        chloroplast instead of nucleus [2], using peptide-mediated transformation of
+                        protoplast [3], or PEG-mediated transformation [4].
                     </p>
                     <p>
                         All were tried out before in different plants, and so far, with{" "}

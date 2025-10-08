@@ -5,7 +5,7 @@ import { ChevronUp } from 'lucide-react';
 const bounceStyle = `
 @keyframes bounce-slow {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
+  50% { transform: translateY(-12px); }
 }
 
 /* Responsive styles for the button */
@@ -63,22 +63,22 @@ const ScrollToTop: React.FC = () => {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      const documentHeight = Math.max(
-        document.body.scrollHeight,
-        document.body.offsetHeight,
-        document.documentElement.clientHeight,
-        document.documentElement.scrollHeight,
-        document.documentElement.offsetHeight
-      );
+      // const documentHeight = Math.max(
+      //   document.body.scrollHeight,
+      //   document.body.offsetHeight,
+      //   document.documentElement.clientHeight,
+      //   document.documentElement.scrollHeight,
+      //   document.documentElement.offsetHeight
+      // );
       
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      const windowHeight = window.innerHeight;
-      const distanceFromBottom = documentHeight - (scrollTop + windowHeight);
+      // const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      // const windowHeight = window.innerHeight;
+      // const distanceFromBottom = documentHeight - (scrollTop + windowHeight);
+      //
+      // // Responsive threshold based on screen size
+      // const threshold = window.innerWidth < 768 ? 800 : 1200;
       
-      // Responsive threshold based on screen size
-      const threshold = window.innerWidth < 768 ? 800 : 1200;
-      
-      if (distanceFromBottom <= threshold && scrollTop > 100) {
+      if (document.documentElement.scrollTop > 0) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -113,14 +113,14 @@ const ScrollToTop: React.FC = () => {
         onClick={scrollToTop}
         className={`
           scroll-to-top-btn
-          fixed z-50
-          bg-white hover:bg-green-50 
-          text-green-600 hover:text-green-800
+          fixed z-100
+          bg-green-700 hover:bg-green-900 
+          text-white 
           rounded-full shadow-lg hover:shadow-xl
           flex items-center justify-center cursor-pointer
-          border-2 border-green-200 hover:border-green-400
+          border-2 border-white hover:border-green-200
           transition-all duration-300 ease-in-out
-          hover:scale-105
+          hover:scale-130
           ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}
         `}
         style={{

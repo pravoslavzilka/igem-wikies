@@ -1,5 +1,6 @@
 // src/pages/project/What/components/StruggleSection.tsx
 import React from 'react';
+import A from "../../../../A.tsx";
 
 const StruggleSection: React.FC = () => {
   return (
@@ -26,10 +27,7 @@ const StruggleSection: React.FC = () => {
               className="text-base sm:text-lg leading-[168%] text-black/75 text-justify"
               style={{ fontFamily: 'Space Grotesk, sans-serif' }}
             >
-              We had ideas on what to do with duckweed, like engineering it to 
-              <span className="underline font-bold"> uptake ammonium faster for manure remediation </span> 
-              or to 
-              <span className="underline font-bold"> grow faster and bigger </span>.
+              We had ideas on what to do with duckweed, like engineering it to <span className="underline font-bold text-[#6ca033]"><A href="/human-practices#ideation">uptake ammonium faster for manure remediation</A></span> or to <span className="underline font-bold text-[#6ca033]"><A href="/human-practices#boosted-duckweed">grow faster and bigger</A></span>.
             </p>
 
               {/* Second paragraph - highlighted */}

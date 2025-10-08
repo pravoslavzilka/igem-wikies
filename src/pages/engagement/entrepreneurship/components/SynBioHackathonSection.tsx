@@ -1,5 +1,6 @@
 // src/pages/engagement/entrepreneurship/components/SynBioHackathonSection.tsx
 import React from 'react';
+import A from "../../../../A.tsx";
 
 const SynBioHackathonSection: React.FC = () => {
   return (
@@ -20,12 +21,13 @@ const SynBioHackathonSection: React.FC = () => {
         <p>
           This meant creating a completely{' '}
           <span className="font-bold">new scientific approach</span> to our project so we had to sit down and hack. That&apos;s where{' '}
-          <a 
-            href="https://synbee.eu/activity/european-synbio-hackaton" 
+          <A
+            href="https://synbee.eu/activity/european-synbio-hackaton"
+            target="blank"
             className="text-blue-600 hover:underline"
           >
             SynBee Read-Write-Grow Hackathon
-          </a>
+          </A>
           {' '}came in handy. We were going through the literature on chloroplast engineering and presented a modification of our initial concept there. We were{' '}
           <span className="font-bold">awarded with 3rd place</span> and again received a lot of insights that helped us on our way.
         </p>

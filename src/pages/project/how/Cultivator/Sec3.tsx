@@ -1,5 +1,6 @@
 import ImageViewer, {ImageSlide} from "../../../../components/ui/ImageViewer.tsx";
 import {useState} from "react";
+import A from "../../../../A.tsx";
 
 const nutrientSlides: ImageSlide[] = [
     {
@@ -71,35 +72,42 @@ const iterationSlides: ImageSlide[] = [
         src: "https://static.igem.wiki/teams/5642/images/how/cultivator/watercycle/station-1.webp",
         title: "Iteration #1",
         rightNote: [
-            "TODO Pravo"
+            "The Snap Lock mechanism secured the bottle from the front and back",
+            "We found out it wouldn’t be tight enough to handle the whole bottle, and it would also be hard to operate as the rotation axis was located behind the 'head'"
         ]
     },
     {
         src: "https://static.igem.wiki/teams/5642/images/how/cultivator/watercycle/station-2.webp",
         title: "Iteration #2",
         rightNote: [
-            "TODO Pravo"
+            "We placed the rotation axis above rather than behind the head",
+            "We used a design for small bottles for faster prototyping",
+            "After several adjustments, this was the correct approach"
         ]
     },
     {
         src: "https://static.igem.wiki/teams/5642/images/how/cultivator/watercycle/station-3.webp",
         title: "Iteration #3",
         rightNote: [
-            "TODO Pravo"
+            "We switched to sizes for regular additive bottles",
+            "We had problems with the bottle securing, as the payload was too heavy for this type of design that used front and back “jaws” to secure the bottle",
+            "We built the first tower for the bottle, which was too impractical to have in 2 parts"
         ]
     },
     {
         src: "https://static.igem.wiki/teams/5642/images/how/cultivator/watercycle/station-4.webp",
         title: "Iteration #4",
         rightNote: [
-            "TODO Pravo"
+            "Snap Lock mechanism changed design to secure the bottle from the sides not from front and back, resulting in better carrying capacity",
+            "However, the jaws were too small, so it often resulted in jaws with a bottle neck being stuck in the system",
+            "We also switched to a different upper part in which the Snap Lock mechanism is installed"
         ]
     },
     {
         src: "https://static.igem.wiki/teams/5642/images/how/cultivator/watercycle/station-5.webp",
         title: "Iteration #5",
         rightNote: [
-            "TODO Pravo"
+            "We used wider jaws with deeper 'teeth' that are permanently mounted in the head, making the system robust to handle heavy payloads and also easy to operate thanks to the working Snap Lock mechanism"
         ]
     },
 ];
@@ -154,7 +162,9 @@ export default function CultivatorSec3() {
                             <span className="font-bold text-[#6ca033]">peristaltic pumps</span> accurately inject
                             nutrients
                             as needed. The system supports{" "}
-                            <span className="font-bold">up to four different liquid additives</span>, which can be
+                            up to <A href="/plant#duckweed-cultivation"
+                                     className="hover:text-[#25512b] font-bold underline text-[#6ca033]">four
+                            different liquid additives</A>, which can be
                             individually
                             mixed into the growth medium for precise control.
                         </p>
@@ -162,12 +172,12 @@ export default function CultivatorSec3() {
                         <p>
                             When the water’s <span
                             className="font-bold text-[#6ca033]">electrical conductivity</span> drifts
-                            outside the defined range, our optimized{" "}
+                            outside the defined range, the optimized{" "}
                             <span
-                                className="font-bold text-[#6ca033] underline">
-                                <a href="/toolbox/predictable-duckweed-protocol/">
+                                className="hover:text-[#25512b] font-bold underline text-[#6ca033]">
+                                <A href="/plant#duckweed-cultivation">
                                 Duckweed Cultivation Medium – Nitrogen (DCMN){" "}
-                                </a>
+                                </A>
                             </span>
                             is automatically injected into the reservoir.
                             The medium is divided into <span
@@ -205,7 +215,7 @@ export default function CultivatorSec3() {
                         <div className="mt-6 flex justify-center md:justify-center">
                             <button
                                 onClick={() => setIsOpenNutrientSlides(true)}
-                                className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
+                                className="text-green-600 hover:text-green-800 font-semibold text-2xl underline"
                             >
                                 See how our nutrient system works in detail.
                             </button>
@@ -226,7 +236,7 @@ export default function CultivatorSec3() {
                         <div className="mt-6 flex justify-center md:justify-center">
                             <button
                                 onClick={() => setIsOpenIterationSlides(true)}
-                                className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
+                                className="text-green-600 hover:text-green-800 font-semibold text-2xl underline"
                             >
                                 See all 4 design iterations of the additive station
                             </button>

@@ -1,5 +1,5 @@
 import React from 'react';
-import References from '../../../../components/References';
+import A from "../../../../A.tsx";
 
 
 const TAIFRComponent = () => {
@@ -25,13 +25,13 @@ const TAIFRComponent = () => {
         {/* Figure 2 - Full width centered */}
         <section className="mb-8 md:mt-24">
           <div className="text-center mb-6">
-            <div className="rounded-lg h-96 mb-4 flex items-center justify-center mx-auto">
-              <img src="https://static.igem.wiki/teams/5642/images/homepage/maingifs/igem-graf-video-updated-ezgif-com-video-to-webp-converter.webp" alt="Figure 1 - TAIFR Cover" className='md:h-[700px]' style={{  }} />
+            <div className="rounded-lg md:h-96 mb-4 flex items-center justify-center mx-auto">
+              <img src="https://static.igem.wiki/teams/5642/images/homepage/maingifs/igem-taifr-2.webp" alt="Figure 1 - TAIFR Cover" className=' ' style={{  }} />
             </div>
           </div>
           
-          <p>
-                <strong style={{ fontWeight: 700, fontSize: '1.5rem' }}>To enable any biotechnological application based on <span style={{ color: '#6ca033' }}>duckweed</span> </strong>
+          <p className='md:mt-32'>
+                <strong style={{ fontWeight: 700, fontSize: '1.5rem' }}>To enable any biotechnological application based on <span style={{ color: '#6ca033' }}>duckweed</span></strong>
                 <strong></strong>
                 <span style={{ fontWeight: 400 }}>
                     , the fastest-growing higher plant, we had to develop a method for its rapid
@@ -57,7 +57,7 @@ const TAIFRComponent = () => {
                 </span>
                 <span style={{ fontWeight: 400 }}>
                     , and leveraging duckweed unique regeneration ability to produce new
-                    transgenic fronds in planta.
+                    transgenic fronds <em>in planta</em>.
                 </span>
                 </p>
 
@@ -73,7 +73,7 @@ const TAIFRComponent = () => {
               <p>
                 <strong>Figure 2. </strong>
                 <span style={{ fontWeight: 400 }}>
-                    TAIFR is a system that uses PONG transposase to deliver the gene of interest (GOI) into a duckweed nucleus. The GOI is flanked by two halves of PONG’s target - the mPing transposon. PONG cleaves this construct, and it performs a random double-strand break (DSB) in the genomic DNA in TAA sites and then inserts the construct into this site. Then, selection pressure favours the transformed cells, which propagate more and give rise to a new transformed generation of duckweeds, thanks to duckweed unique capability for rapid asexual propagation. 
+                    TAIFR is a system that uses PONG transposase to deliver the gene of interest (GOI) into duckweed nucleus. The GOI is flanked by two halves of PONG’s target - the mPing transposon. PONG cleaves this construct, and it performs a random double-strand break (DSB) in the genomic DNA in TAA sites and then inserts the construct into this site. Then, selection pressure favours the transformed cells, which propagate more and give rise to a new transformed generation of duckweeds, thanks to duckweed unique capability for rapid asexual propagation. 
                 </span>
                 </p>
 
@@ -91,25 +91,23 @@ const TAIFRComponent = () => {
           <p className="text-gray-700 leading-relaxed text-justify" style={{ fontFamily: 'Urbanist, sans-serif' }}>
             <p>
                 <strong>Figure 3. </strong>
-                <p>
+                
                   <span style={{ fontWeight: 400 }}>
-                    Transformation of construct pIB005 (mPing bordered GFP linked to NPTII) into
+                    Transformation of construct pIB005 (mPing-bordered GFP linked to NPTII) into
                     wild-type{" "}
                   </span>
                   <em>
                     <span style={{ fontWeight: 400 }}>Spirodela polyrhiza </span>
                   </em>
                   <span style={{ fontWeight: 400 }}>
-                    results in transient GFP expression (1). Its co-transformation with pIB003
-                    (PONG transposase ) results in no transient GFP expression (2), but 12 - 18
-                    days post infiltration spots of GFP fluorescence appea  rs (3) as results of
-                    insertion of mPing bordered cassette into duckweed nuclear genome. Insertion
-                    was further confirmed by PCR/Western blot (4).{" "}
+                    7428 results in transient GFP expression (1). Its co-transformation with pIB003
+                    (PONG transposase) results in no transient GFP expression (2), but 12 - 18
+                    days post infiltration spots of GFP fluorescence appears (3) as results of
+                    insertion of mPing-bordered cassette into duckweed nuclear genome. Insertion was further confirmed by PCR.
                   </span>
-                  <span style={{ fontWeight: 400 }}>Read more here</span>
+                  <span style={{ fontWeight: 400 }}> <A className='hover:underline text-[#6ca033]' href="#dbtl-4-learn">Read more here</A></span>
                   <span style={{ fontWeight: 400 }}>.</span>
-                </p>
-
+               
                 </p>
 
             </p>
@@ -118,7 +116,7 @@ const TAIFRComponent = () => {
         <section className="mb-8">
           <div className="text-center py-6 px-8 bg-green-100 rounded-lg">
             <h2 className="text-2xl font-bold text-green-800" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-              Discover how you can use our TAIFR parts and protocol engineer duckweed
+              <A className='hover:underline text-[#6ca033]' href="/plant#how-to-use-taifr">Discover how you can use our TAIFR parts and protocol engineer duckweed</A>
             </h2>
           </div>
         </section>
@@ -135,7 +133,7 @@ const TAIFRComponent = () => {
                <p>
                   <span style={{ fontWeight: 400 }}>
                       Most of the genetic engineering in plant biotechnology is mediated by callus
-                      - dedifferentiated plant tissue that is more susceptible to infection by{" "}
+                      - de-differentiated plant tissue that is more susceptible to infection by{" "}
                   </span>
                   <em>
                       <span style={{ fontWeight: 400 }}>Agrobacterium tumefaciens </span>
@@ -187,7 +185,7 @@ const TAIFRComponent = () => {
                 <img style={{  width: 'auto' }} src="https://static.igem.wiki/teams/5642/images/how/taifr/figure-4.webp" alt="Figure 4" className="" />
               </div>
               <p>
-                <p className='text-sm text-gray-700 text-justify' style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                <p className='text-baseFigure  text-gray-700 text-justify' style={{ fontFamily: 'Urbanist, sans-serif' }}>
                   <strong>Figure 4. Calli of wild-type&nbsp; </strong>
                   <em>
                     <span style={{ fontWeight: 400 }}>Spirodela polyrhiza</span>
@@ -232,7 +230,7 @@ const TAIFRComponent = () => {
                 {" "}
                 and then selecting meristematic cells carrying the transgene and
                 resistance gene to give rise to a new shoot of fully transgenic plants.
-                This is called in-planta mediated genetic engineering (5). It has been
+                This is called <em>in-planta</em> mediated genetic engineering (5). It has been
                 demonstrated in pea (6), peanut (7), soybean (8), and sweet potato
                 (9).&nbsp;
                 </span>
@@ -248,7 +246,7 @@ const TAIFRComponent = () => {
                      <p>
                         <br />
                         <span style={{ fontWeight: 400 }}>
-                        So, we in iGEM Brno thought: let’s try in-planta mediated transformation
+                        So, we in iGEM Brno thought: let’s try <em>in-planta</em> mediated transformation
                         in duckweed as well! We even found in the literature that it had already
                         been attempted a few times and was called frond-mediated transformation
                         (10), (11), (12) - since one duckweed “leaf” is called a frond. We
@@ -257,7 +255,7 @@ const TAIFRComponent = () => {
                         even contacting their authors, but was not able to replicate any of
                         them...{" "}
                         </span>
-                        <span style={{ fontWeight: 400 }}>Read more at Human Practices page</span>
+                        <span style={{ fontWeight: 400 }}><A className='hover:underline text-[#6ca033]' href="/human-practices#arturo">Read more at Human Practices page</A></span>
                         <span style={{ fontWeight: 400 }}>.</span>
                     </p>
                 </div>
@@ -267,7 +265,7 @@ const TAIFRComponent = () => {
                     <div className="rounded-lg h-48 mb-2 flex items-center justify-center">
                         <img style={{ height: '200px', width: 'auto' }} src="https://static.igem.wiki/teams/5642/images/how/taifr/arturo.webp" alt="Figure 6" className="" />
                     </div>
-                    <p className="text-sm text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                    <p className="text-baseFigure  text-gray-700" style={{ fontFamily: 'Urbanist, sans-serif' }}>
                      <p>
                         <strong>Figure 5. </strong>
                         <span style={{ fontWeight: 400 }}>
@@ -427,9 +425,9 @@ const TAIFRComponent = () => {
             {/* Second column (4/5 width) */}
             <div className="col-span-1  p-4 rounded">
                 <div className=' flex items-center justify-center'>
-                    <img style={{ height: '200px', width: 'auto' }} src="https://static.igem.wiki/teams/5642/images/how/taifr/figure-6.webp" alt="Figure 6" className="" />
+                    <img src="https://static.igem.wiki/teams/5642/images/how/taifr/figure-6.webp" alt="Figure 6" className="" />
                 </div>
-                <p className='text-sm mt-4'>
+                <p className='text-baseFigure  mt-4'>
                     <p>
                       <strong>Figure 6. </strong>
                       <span style={{ fontWeight: 400 }}>
@@ -481,15 +479,15 @@ const TAIFRComponent = () => {
                     But could they also be used for inserting DNA into the plant nuclear
                     genome? Of course, yes! Meeting Dr. Ordóñez was a pure luck, but we were
                     about to get even luckier… Less than a year ago, Dr. Slotkin published an
-                    amazing article in Nature: Transposase-assisted target-site integration
-                    for efficient plant genome engineering (16).
+                    amazing article in Nature: <A target='_blank' className='hover:underline text-[#6ca033]' href="https://www.nature.com/articles/s41586-024-07613-8">Transposase-assisted target-site integration
+                    for efficient plant genome engineering</A> (16).
                   </span>
                 </p>
                 <p>&nbsp;</p>
                 <p>
                   <span style={{ fontWeight: 400 }}>
                     Dr. Slotkin’s lab used the so-called PING-PONG system fused with Cas9 to
-                    insert DNA into the Arabidopsis and soybean genomes site-specifically,
+                    insert DNA into the <em>Arabidopsis</em> and soybean genomes site-specifically,
                     with 37% efficiency in{" "}
                   </span>
                   <em>
@@ -509,7 +507,7 @@ const TAIFRComponent = () => {
                     <div className="w-64 h-64 overflow-hidden rounded-lg">
                       <img src="https://static.igem.wiki/teams/5642/images/how/taifr/dsc05068-3527973337.webp" alt="Figure 7" className="w-full h-full object-cover rounded-full" />
                     </div>
-                    <p className="text-sm text-gray-700 mt-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
+                    <p className="text-baseFigure  text-gray-700 mt-4" style={{ fontFamily: 'Urbanist, sans-serif' }}>
                       <p>
                         <strong>Figure 7. </strong>
                         <span style={{ fontWeight: 400 }}>
@@ -585,96 +583,4 @@ const TAIFRComponent = () => {
 };
 
 export default TAIFRComponent;
-
-
-
-const Reference = [
-    {
-        id: 1,
-        text: "Gelvin, S. B. (2017). Integration of Agrobacterium T-DNA into the plant genome. Annual Review of Genetics, 51, 195–217.",
-        url: "https://doi.org/10.1146/annurev-genet-120215-035320"
-    },
-    {
-        id: 2,
-        text: "Long, Y., Liu, Q., Rong, S., Li, J., & Guo, S. (2022). New insights into tissue culture plant-regeneration mechanisms. Frontiers in Plant Science, 13, 926752.",
-        url: "https://doi.org/10.3389/fpls.2022.926752"
-    },
-    {
-        id: 3,
-        text: "Wang, K.-T., Wang, C.-S., Chang, C.-C., & Huang, H.-J. (2021). Agrobacterium-mediated genetic transformation of Lemna aequinoctialis. Plants, 10(8), 1576.",
-        url: "https://doi.org/10.3390/plants10081576"
-    },
-    {
-        id: 4,
-        text: "Ziegler, P., Appenroth, K. J., & Sree, K. S. (2023). Survival strategies of duckweeds, the world's smallest angiosperms. Plants, 12(11), 2215.",
-        url: "https://doi.org/10.3390/plants12112215"
-    },
-    {
-        id: 5,
-        text: "Bélanger, J.-G., Nivelle, M.-A., & Tardif, M. (2024). A comprehensive review of in planta stable transformation strategies. Plant Methods, 20, 70.",
-        url: "https://doi.org/10.1186/s13007-024-01200-8"
-    },
-    {
-        id: 6,
-        text: "Sharma, K. K., Ananda Kumar, P., & Thorpe, T. A. (1996). In planta transformation of chickpea (Cicer arietinum L.) and pea (Pisum sativum L.) using Agrobacterium tumefaciens. Plant Cell Reports, 15(11), 737–741.",
-        url: "https://doi.org/10.1007/BF00232442"
-    },
-    {
-        id: 7,
-        text: "Rohini, V. K., & Rao, K. S. (2001). Agrobacterium-mediated transformation of peanut (Arachis hypogaea L.) through in planta infiltration of embryos. Plant Science, 161(6), 917–923.",
-        url: "https://doi.org/10.1016/S0168-9452(01)00477-9"
-    },
-    {
-        id: 8,
-        text: "Olhoft, P. M., Flagel, L. E., Donovan, C. M., & Somers, D. A. (2003). Efficient soybean transformation using Agrobacterium and sonication-assisted in planta protocol. Plant Cell Reports, 22(7), 478–482.",
-        url: "https://doi.org/10.1007/s00299-003-0713-6"
-    },
-    {
-        id: 9,
-        text: "Mei, G., Chen, A., Wang, Y., Li, S., Wu, M., Hu, Y., Liu, X., & Hou, X. (2024). A simple and efficient in planta transformation method based on the active regeneration capacity of plants. Plant Communications, 5(4), 100822.",
-        url: "https://doi.org/10.1016/j.xplc.2024.100822"
-    },
-    {
-        id: 10,
-        text: "Yang, G.-L., Fang, Y., Xu, Y.-L., Tan, L., Li, Q., Liu, Y., Lai, F., Jin, Y.-L., Du, A.-P., He, K.-Z., Ma, X.-R., & Zhao, H. (2018). Frond transformation system mediated by Agrobacterium tumefaciens for Lemna minor. Plant Molecular Biology, 98(1–2), 119–131.",
-        url: "https://doi.org/10.1007/s11103-018-0778-x"
-    },
-    {
-        id: 11,
-        text: "Ko, S.-M., Sun, H.-J., Oh, M. J., Song, I.-J., Kim, M.-J., Sin, H.-S., Goh, C.-H., Kim, Y.-W., Lim, P.-O., Lee, H.-Y., & Kim, S. W. (2011). Expression of the protective antigen for PEDV in transgenic duckweed, Lemna minor. Plant Biotechnology Reports, 5(2), 185–191.",
-        url: "https://doi.org/10.1007/s13580-011-0007-x"
-    },
-    {
-        id: 12,
-        text: "Parthasarathy, B., Satheeshkumar, P. K., Venkataraman, K., & Vijayalakshmi, M. A. (2018). Expression of anti-tumor necrosis factor alpha (TNFα) single chain variable fragment (scFv) in Spirodela punctata plants transformed with Agrobacterium tumefaciens. Biotechnology and Applied Biochemistry, 65(6), 823–830.",
-        url: "https://doi.org/10.1002/bab.1373"
-    },
-    {
-        id: 13,
-        text: "Cramer, P. (2019). Organization and regulation of gene transcription. Nature, 573(7772), 45–54.",
-        url: "https://doi.org/10.1038/s41586-019-1517-4"
-    },
-    {
-        id: 14,
-        text: "Hickman, A. B., & Dyda, F. (2015). Mechanisms of DNA transposition. Microbiology Spectrum, 3(2), MDNA3-0034-2014.",
-        url: "https://doi.org/10.1128/microbiolspec.MDNA3-0034-2014"
-    },
-    {
-        id: 15,
-        text: "Kumar, A., & Hirochika, H. (2001). Applications of retrotransposons as genetic tools in plant biology. Trends in Plant Science, 6(3), 127–134.",
-        url: "https://doi.org/10.1016/S1360-1385(01)01861-2"
-    },
-    {
-        id: 16,
-        text: "Liu, P., Panda, K., Edwards, S. A., Swanson, R., Yi, H., Pandesha, P., Hung, Y.-H., Klaas, G., Ye, X., Collins, M. V., Renken, K. N., Gilbertson, L. A., Veena, V., Hancock, C. N., & Slotkin, R. K. (2024). Transposase-assisted target-site integration for efficient plant genome engineering. Nature, 631, 593–600.",
-        url: "https://doi.org/10.1038/s41586-024-07613-8"
-    },
-    {
-        id: 17,
-        text: "Hancock, C. N., Zhang, X., Wessler, S. R., & Zhou, T. (2010). Transposition of the Tourist-MITE mPing in yeast. Molecular and Cellular Biology, 30(20), 3851–3861.",
-        url: "https://doi.org/10.1128/MCB.00415-10"
-    }
-]
-
-
 

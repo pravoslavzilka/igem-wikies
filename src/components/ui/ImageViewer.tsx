@@ -23,13 +23,10 @@ const ImageViewer: React.FC<ImageViewerProps> = ({
                                                  }) => {
     const [current, setCurrent] = useState(startIndex);
 
-    // Reset when opening
+    // Reset index when opening
     useEffect(() => {
         if (isOpen) {
-            const safeIndex = Math.min(
-                Math.max(startIndex, 0),
-                slides.length - 1
-            );
+            const safeIndex = Math.min(Math.max(startIndex, 0), slides.length - 1);
             setCurrent(safeIndex);
         }
     }, [isOpen, startIndex, slides.length]);
@@ -50,8 +47,7 @@ const ImageViewer: React.FC<ImageViewerProps> = ({
 
     if (!isOpen) return null;
 
-    const prev = () =>
-        setCurrent((i) => (i - 1 + slides.length) % slides.length);
+    const prev = () => setCurrent((i) => (i - 1 + slides.length) % slides.length);
     const next = () => setCurrent((i) => (i + 1) % slides.length);
 
     const {src, title, leftNote, rightNote, bottomNote} = slides[current];
@@ -95,13 +91,11 @@ const ImageViewer: React.FC<ImageViewerProps> = ({
                         ‹
                     </button>
 
-                    {/* Left note */}
+                    {/* Left note (desktop only) */}
                     {leftNote && (
                         <div className="hidden md:block text-white text-lg max-w-[15vw] text-right space-y-2">
                             {Array.isArray(leftNote)
-                                ? leftNote.map((line, idx) => (
-                                    <p key={idx}>• {line}</p>
-                                ))
+                                ? leftNote.map((line, idx) => <p key={idx}>• {line}</p>)
                                 : leftNote}
                         </div>
                     )}
@@ -113,13 +107,11 @@ const ImageViewer: React.FC<ImageViewerProps> = ({
                         className="max-h-[70vh] max-w-[60vw] object-contain rounded-lg shadow-lg"
                     />
 
-                    {/* Right note */}
+                    {/* Right note (desktop) */}
                     {rightNote && (
                         <div className="hidden md:block text-white text-lg max-w-[15vw] text-left space-y-2">
                             {Array.isArray(rightNote)
-                                ? rightNote.map((line, idx) => (
-                                    <p key={idx}>• {line}</p>
-                                ))
+                                ? rightNote.map((line, idx) => <p key={idx}>• {line}</p>)
                                 : rightNote}
                         </div>
                     )}
@@ -133,6 +125,15 @@ const ImageViewer: React.FC<ImageViewerProps> = ({
                         ›
                     </button>
                 </div>
+
+                {/* Right note (mobile only — appears below image) */}
+                {rightNote && (
+                    <div className="block md:hidden text-white text-base mt-4 text-center space-y-1 max-w-[80vw]">
+                        {Array.isArray(rightNote)
+                            ? rightNote.map((line, idx) => <p key={idx}>• {line}</p>)
+                            : rightNote}
+                    </div>
+                )}
 
                 {/* Bottom note */}
                 {bottomNote && (

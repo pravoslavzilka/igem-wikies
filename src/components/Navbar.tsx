@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import A from "../A.tsx";
 
 const Navbar = () => {
   const [hoveredMenu, setHoveredMenu] = useState(null);
@@ -13,8 +14,8 @@ const Navbar = () => {
     project: {
       title: 'Project',
       items: [
-        { label: 'Why', sublabel: 'Description', path: '/project/why' },
-        { label: 'What', sublabel: 'Contribution', path: '/project/what' },
+        { label: 'Why', sublabel: 'Description', path: '/project/description' },
+        { label: 'What', sublabel: 'Contribution', path: '/contribution' },
         { label: 'How', sublabel: 'Engineering', path: '/engineering' }
       ]
     },
@@ -22,21 +23,21 @@ const Navbar = () => {
       title: 'Duckweed Toolbox',
       items: [
         
-        { label: 'Plant SynBio', path: '/toolbox/programmable-duckweed/plant-synbio' },
+        { label: 'Plant SynBio', path: '/plant' },
         { 
           label: 'Programmable Duckweed', 
-          path: '/toolbox/programmable-duckweed',
+          path: '/plant#programmable',
           subItems: [
             { label: 'Part Collection', path: '/toolbox/programmable-duckweed/part-collection' },
-            { label: 'Protocols', path: '/toolbox/protocols' }
+            { label: 'Measurement', path: '/measurement' }
           ]
         },
         { 
           label: 'Predictable Duckweed', 
-          path: '/toolbox/predictable-duckweed',
+          path: '/plant#predictable',
           subItems: [
-            { label: 'Hardware', path: '/toolbox/predictable-duckweed/hardware' },
-            { label: 'Model', path: '/toolbox/predictable-duckweed/model' }
+            { label: 'Hardware', path: '/hardware' },
+            { label: 'Model', path: '/model' }
           ]
         }
       ]
@@ -44,10 +45,10 @@ const Navbar = () => {
     engagement: {
       title: 'Engagement',
       items: [
-        { label: 'Human Practices', path: '/engagement/human-practices' },
-        { label: 'Entrepreneurship', path: '/engagement/entrepreneurship' },
+        { label: 'Human Practices', path: '/human-practices' },
+        { label: 'Entrepreneurship', path: '/entrepreneurship' },
         { label: 'Outreach', path: '/engagement/outreach' },
-        { label: 'Sustainability', path: '/engagement/sustainability' }
+        { label: 'Sustainability', path: '/sustainability' }
       ]
     },
     'duckweed-mafia': {
@@ -55,8 +56,8 @@ const Navbar = () => {
       items: [
         { label: 'Team', path: '/duckweed-mafia/team' },
         { label: 'Partners', path: '/duckweed-mafia/partners' },
-        { label: 'Attributions', path: '/duckweed-mafia/attributions' },
-        { label: 'Safety', path: '/duckweed-mafia/safety' }
+        { label: 'Attributions', path: '/attributions' },
+        { label: 'Safety', path: '/safety-and-security' }
       ]
     }
   };
@@ -80,13 +81,13 @@ const Navbar = () => {
 
   return (
     <nav className="flex items-center justify-between px-4 py-4 bg-white relative z-50">
-      <Link to="/" className="flex items-center space-x-2">
+      <A href="/" className="flex items-center space-x-2">
         <img 
           style={{ height: '60px', marginLeft: '12px' }} 
           src="https://static.igem.wiki/teams/5642/icons/igem-brno-final-transparent.webp"
           alt="Logo"
         />
-      </Link>
+      </A>
 
       {/* Desktop menu centered */}
       <div className="hidden md:flex flex-1 justify-center">
@@ -121,8 +122,8 @@ const Navbar = () => {
                 >
                   {menu.items.map((item, index) => (
                     <div key={index}>
-                      <Link
-                        to={item.path}
+                      <A
+                        href={item.path}
                         className="block px-4 py-2.5 hover:bg-gray-50 transition-colors group"
                       >
                         <div className="font-semibold text-gray-900 group-hover:text-green-600 transition-colors" 
@@ -135,18 +136,18 @@ const Navbar = () => {
                             {item.sublabel}
                           </div>
                         )}
-                      </Link>
+                      </A>
                       {item.subItems && (
                         <div className="ml-4 mt-1 mb-2">
                           {item.subItems.map((subItem, subIndex) => (
-                            <Link
+                            <A
                               key={subIndex}
-                              to={subItem.path}
+                              href={subItem.path}
                               className="block px-4 py-1.5 text-md text-gray-600 hover:text-green-600 hover:bg-gray-50 transition-colors"
                               style={{ fontFamily: 'Urbanist, sans-serif' }}
                             >
                               {subItem.label}
-                            </Link>
+                            </A>
                           ))}
                         </div>
                       )}
@@ -202,8 +203,8 @@ const Navbar = () => {
                   <div>
                     {menu.items.map((item, index) => (
                       <div key={index}>
-                        <Link
-                          to={item.path}
+                        <A
+                          href={item.path}
                           className="block px-6 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
                           onClick={() => { setMobileOpen(false); setOpenDropdown(null); }}
                         >
@@ -211,18 +212,18 @@ const Navbar = () => {
                           {item.sublabel && (
                             <div className="text-sm text-gray-500">{item.sublabel}</div>
                           )}
-                        </Link>
+                        </A>
                         {item.subItems && (
                           <div className="ml-4">
                             {item.subItems.map((subItem, subIndex) => (
-                              <Link
+                              <A
                                 key={subIndex}
-                                to={subItem.path}
+                                href={subItem.path}
                                 className="block px-6 py-1.5 text-sm text-gray-600 hover:bg-gray-50 hover:text-green-600 transition-colors"
                                 onClick={() => { setMobileOpen(false); setOpenDropdown(null); }}
                               >
                                 {subItem.label}
-                              </Link>
+                              </A>
                             ))}
                           </div>
                         )}

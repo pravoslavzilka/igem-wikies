@@ -27,7 +27,7 @@ export default function VacuumInfiltrationTesting() {
       </div>
 
       {/* Figure 1 and Protocol Callout */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
         <div className="col-span-2">
           <div className="border-2 border-gray-300 rounded-lg p-4 bg-gray-50">
             <div className="w-full  h-64  rounded overflow-hidden">
@@ -137,7 +137,7 @@ export default function VacuumInfiltrationTesting() {
             <div className='col-span-2'>
                 <p className="text-sm text-gray-600">
                   <strong>Figure 2.</strong> Transient transformation of <em>Lemna gibba</em> 7742 by AtEHA105 with 
-                  the pAM052 construct (rZmUBI-RUBY) resulted in RUBY being expressed in 
+                  the pAMO052 construct (rZmUBI-RUBY) resulted in RUBY being expressed in
                   some fronds after 5 minutes of vacuuming followed by co-cultivation 
                   under light (1), no expression after 5 minutes of vacuuming followed by co-
                   cultivation in darkness (2), and decreased efficiency of transformation 

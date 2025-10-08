@@ -6,26 +6,33 @@ import { ChevronDown, Plus } from 'lucide-react';
 const accordionData = [
   {
     title: "Running a farm is less and less profitable",
-    content: [
-      "Czech - and more broadly - European livestock production is heavily reliant on imported high-protein feeds. 66 % of the EU's high‑protein animal feed is imported, and the most widely used source - soybean - accounts for 96 % (1). That is roughly 33 million tons of soy products, at the cost of costing around 14 billion euros (2).",
-      "Rising feed costs are hitting farmers hard—feed makes up 55 % of the production cost in poultry, 32% in pigs, and over 14% in cattle (3). Even though meat and milk prices are high, livestock producers continue to see shrinking profit margins (4).",
-      "Quality protein feed is becoming less affordable. Read more on the farmers' burden - Human Practices Page"
+    content: [ <>
+      <p className='mt-4'>Czech - and more broadly - European livestock production is heavily reliant on imported high-protein feeds. <b>66 % of the EU's high‑protein animal feed is imported</b>, and the most widely used source - <b>soybean - accounts for 96 %</b> (1). That is roughly <b>33 million tons</b> of soy products, at the cost of costing around <b>14 billion euros</b> (2)., <br/> </p>
+      <p className='mt-4'>Rising feed costs are hitting farmers hard - feed makes up 55 % of the production cost in poultry, 32% in pigs, and over 14% in cattle (3). Even though meat and milk prices are high, livestock producers continue to see <b>shrinking profit margins</b> (4).,  <br/> </p>
+      
+      <p className='mt-4'><b>Quality protein feed is becoming less affordable. </b></p>
+
+      </>
     ]
   },
   {
     title: "And the costs go far beyond just money",
     content: [
-      "Conservationists emphasized that Europe's demand for animal feed is a major driver of deforestation abroad, with approximately 75% of global soybean production used for animal feed and its cultivation directly linked to large-scale environmental degradation (5)..",
-      "In Brazil alone, over 5 million hectares of Key Biodiversity Areas – particularly within the tropical savannas of the Cerrado region – have been cleared to make way for soybean monocultures (6).",
-      "These vast soybean plantations not only threaten biodiversity, but agribusinesses themselves rely on natural resources like water and soil - resources now at risk from unsustainable practices. In response, a new business model is emerging in the Cerrado, where stakeholders aim to boost productivity sustainably through improved practices and new technologies."
+      <>
+      <p className='mt-4'>Conservationists emphasized that Europe's demand for animal feed is a major driver of deforestation abroad, with approximately <b>75% of global soybean production used for animal feed</b> and its cultivation <b>directly linked to large-scale environmental degradation</b> (5). </p>
+      <p className='mt-4'>In Brazil alone, <b>over 5 million hectares of Key Biodiversity Areas </b> – particularly within the tropical savannas of the Cerrado region – <b>have been cleared to make way for soybean </b> monocultures (6). </p>
+      <p className='mt-4'>These vast soybean plantations not only <b>threaten biodiversity</b>, but agribusinesses themselves rely on natural resources like water and soil - resources now at risk from unsustainable practices. In response, a new business model is emerging in the Cerrado, where stakeholders aim to boost productivity sustainably through improved practices and new technologies.</p>
+    </>
     ]
   },
   {
     title: "The whole value chain is linear – it should be a cycle",
     content: [
-      "Most nitrogen excreted in manure is lost because it's too concentrated for plants to absorb efficiently (8). As a result, over 50% of nitrogen from livestock production never returns to the soil (9).",
-      "Instead, it's washed away by rain, polluting rivers, lakes, and coastal zones. This causes eutrophication — excessive nutrient enrichment of waters that triggers algal blooms, depletes oxygen, and kills aquatic life.",
-      "Beyond harming ecosystems, nitrogen loss also means farmers lose the fertilizer value of manure, while society bears the costs of water treatment, health impacts, and greenhouse gas emissions. In Europe alone, nitrogen pollution from agriculture causes losses of about €70 billion annually (10)."
+      <>
+      <p className="mt-4"><b>Most nitrogen excreted in manure is lost</b> because it's too concentrated for plants to absorb efficiently (8). As a result, over 50% of nitrogen from livestock production never returns to the cycle (9).</p>
+      <p className="mt-4">Instead, it's washed away by rain, <b>polluting rivers, lakes, and coastal zones</b>. This causes <b>eutrophication</b> — excessive nutrient enrichment of waters that triggers algal blooms, depletes oxygen, and <b>kills aquatic life</b>.</p>
+      <p className="mt-4">Beyond harming ecosystems, nitrogen loss also means farmers lose the fertilizer value of manure, while society bears the costs of water treatment, health impacts, and greenhouse gas emissions. In Europe alone, <b>nitrogen pollution from agriculture causes losses of about €70 billion annually</b> (10).</p>
+    </>
     ]
   }
 ];
@@ -61,14 +68,13 @@ const AccordionSection: React.FC = () => {
                       {openItems[index] || (index === 0 && openItems[0] !== false) ? (
                         <div className="w-2 sm:w-3 h-0.5 bg-green-800"></div>
                       ) : (
-                        <Plus size={10} className="text-gray-600 sm:w-3 sm:h-3" />
+                        <Plus size={10} className=" sm:w-3 sm:h-3" />
                       )}
                     </div>
                     
                     {/* Title */}
                     <h3 
-                      className={`flex-1 text-lg sm:text-xl lg:text-2xl font-semibold leading-tight pr-2 ${
-                        index === 2 ? 'text-green-800' : 'text-gray-900'
+                      className={`flex-1 text-lg sm:text-xl lg:text-2xl font-semibold leading-tight pr-2 text-gray-900'
                       }`} 
                       style={{ fontFamily: 'Urbanist, sans-serif' }}
                     >
@@ -79,7 +85,7 @@ const AccordionSection: React.FC = () => {
                     <div className="flex-shrink-0">
                       <ChevronDown
                         size={16}
-                        className={`text-gray-600 transform transition-transform duration-300 ${
+                        className={` transform transition-transform duration-300 ${
                           openItems[index] || (index === 0 && openItems[0] !== false) ? 'rotate-180' : ''
                         }`}
                       />

@@ -11,6 +11,7 @@ const lightSlides: ImageSlide[] = [
             "Intensity at water surface ~ 100 μmol/m²/s",
             "230 lm/m",
             "60 LEDs/m",
+            "We measured no growth difference compared to equally powere white LEDs"
         ],
     },
     {
@@ -22,6 +23,7 @@ const lightSlides: ImageSlide[] = [
             "Intensity at water surface ~ 100 μmol/m²/s",
             "1050 lm/m",
             "60 LEDs/m",
+            "Same results as the equally powered red-blue LEDs"
         ],
     },
     {
@@ -33,6 +35,7 @@ const lightSlides: ImageSlide[] = [
             "Intensity at water surface ~ 160 μmol/m²/s",
             "2100 lm/m",
             "120 LEDs/m",
+            "Up to 60% greater growth than the 12W LEDs"
         ],
     },
     {
@@ -44,6 +47,7 @@ const lightSlides: ImageSlide[] = [
             "Intensity at water surface ~ 170 μmol/m²/s",
             "1920 lm/m",
             "300 LEDs/m",
+            "Up to 80% greater growth than the 12W LEDs"
         ],
     },
     {
@@ -55,6 +59,7 @@ const lightSlides: ImageSlide[] = [
             "Intensity at water surface ~ 175 μmol/m²/s",
             "1920 lm/m",
             "300 LEDs/m",
+            "Up to 80% greater growth than the 12W LEDs"
         ],
     },
     {
@@ -66,6 +71,7 @@ const lightSlides: ImageSlide[] = [
             "Intensity at water surface ~ 180 μmol/m²/s",
             "1920 lm/m",
             "300 LEDs/m",
+            "Up to 90% greater growth than the 12W LEDs",
         ],
     },
 ];
@@ -89,7 +95,8 @@ const probeSlides: ImageSlide[] = [
             "First full-size PROBE",
             "The LDR casings alternate with connective pieces with 12 cm gaps.",
             "40 x 90 cm",
-            "3.5 mm jack connector"
+            "3.5 mm jack connector",
+            "Not very stable"
         ]
     },
     {
@@ -98,11 +105,13 @@ const probeSlides: ImageSlide[] = [
         rightNote: [
             "The Light Dependent Resistors are mounted directly into the plastic tubes",
             "22 cm tubes",
+            "Full grid layout",
             "50% fewer 3D printed parts",
             "Connective pieces are 3 cm long",
             "Much more robust design",
             "40 x 90 cm",
-            "3.5 mm jack connector"
+            "3.5 mm jack connector",
+            "Significant stability improvement and easier construction"
         ]
     },
     {
@@ -113,7 +122,8 @@ const probeSlides: ImageSlide[] = [
             "Connective pieces are 4 cm long",
             "The extra overlap eliminates the need to use glue, resulting in much faster manufacturing",
             "40 x 90 cm",
-            "3.5 mm jack connector"
+            "3.5 mm jack connector",
+            "The most robust and reliable iteration"
         ]
     }
 ];
@@ -162,7 +172,7 @@ export default function CultivatorSec4() {
                         <div className="mt-6 flex justify-center md:justify-center">
                             <button
                                 onClick={() => setIsOpenLightSlides(true)}
-                                className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
+                                className="text-green-600 hover:text-green-800 font-semibold text-2xl underline"
                             >
                                 See which lights we experimented with.
                             </button>
@@ -182,55 +192,52 @@ export default function CultivatorSec4() {
 
                 {/* === Biomass Monitoring Section === */}
                 <section id="PROBE">
-                <h2
-                    className="font-bold text-green-700 mb-4 text-center"
-                    style={{
-                        fontFamily: "Space Grotesk, sans-serif",
-                        fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem",
-                    }}
-                >
-                    Monitoring the Biomass
-                </h2>
+                    <h2
+                        className="font-bold text-green-700 mb-4 text-center"
+                        style={{
+                            fontFamily: "Space Grotesk, sans-serif",
+                            fontSize: window.innerWidth < 768 ? "1.6rem" : "2rem",
+                        }}
+                    >
+                        Monitoring the Biomass
+                    </h2>
 
-                <div className="grid md:grid-cols-2 gap-8 items-center">
-                    {/* Image placeholder */}
-                    <div className="flex justify-center">
-                        <div
-                            className="bg-gray-200 border-2 border-dashed border-gray-400 h-64 w-full flex items-center justify-center rounded-lg">
-                            <div className="text-center text-gray-600">
-                                <div className="text-sm mb-2">📸 IMAGE PLACEHOLDER</div>
-                                <div className="text-xs italic">(Duckweed + light flux diagram)</div>
+                    <div className="grid md:grid-cols-2 gap-8 items-center" id='probe'>
+                        {/* Image placeholder */}
+                        <div className="flex justify-center mb-6">
+                            <img
+                                src="https://static.igem.wiki/teams/5642/images/how/cultivator/probe/probe-idea-new.webp"
+                                className="max-w-x rounded-lg object-contain"
+                            />
+                        </div>
+
+                        {/* Text */}
+                        <div className="space-y-4">
+                            <p className="text-justify">
+                                To maintain <span className="font-bold">optimal growth conditions</span>, it’s
+                                crucial to monitor the duckweed biomass on each layer. Since the plant grows most
+                                efficiently when the surface is fully covered, we developed a custom sensor system
+                                to track its density.
+                            </p>
+                            <p className="text-justify">
+                                This system, called{" "}
+                                <span className="font-bold text-[#6ca033]">PROBE — the PhotoResistor Occlusion-based Biomass Estimator</span>,
+                                measures the <span className="font-bold">thickness of the duckweed layer</span> by
+                                monitoring how much light is absorbed at the water surface.
+                            </p>
+
+                            <div className="mt-6 flex justify-center md:justify-center">
+                                <button
+                                    onClick={() => setIsOpenPROBESlides(true)}
+                                    className="text-green-600 hover:text-green-800 font-semibold text-2xl underline"
+                                >
+                                    See the design iterations we went through.
+                                </button>
                             </div>
                         </div>
+
+
                     </div>
-
-                    {/* Text */}
-                    <div className="space-y-4">
-                        <p className="text-justify">
-                            To maintain <span className="font-bold">optimal growth conditions</span>, it’s
-                            crucial to monitor the duckweed biomass on each layer. Since the plant grows most
-                            efficiently when the surface is fully covered, we developed a custom sensor system
-                            to track its density.
-                        </p>
-                        <p className="text-justify">
-                            This system, called{" "}
-                            <span className="font-bold text-[#6ca033]">PROBE — the PhotoResistor Occlusion-based Biomass Estimator</span>,
-                            measures the <span className="font-bold">thickness of the duckweed layer</span> by
-                            monitoring how much light is absorbed at the water surface.
-                        </p>
-
-                        <div className="mt-6 flex justify-center md:justify-center">
-                            <button
-                                onClick={() => setIsOpenPROBESlides(true)}
-                                className="text-green-600 hover:text-green-800 font-semibold text-lg underline"
-                            >
-                                See the design iterations we went through.
-                            </button>
-                        </div>
-                    </div>
-
-
-                </div>
                 </section>
 
                 {/* === Probe System Details === */}

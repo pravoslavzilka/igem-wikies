@@ -19,14 +19,14 @@ const MarketCustomerSection: React.FC = () => {
       >
         <p>
           We thought of a bunch of names for the product and could not really find any good ones. However, using it as{' '}
-          <span className="font-bold">a wastewater treatment solution for farms</span> as duckweed is great at sucking up the nitrogen from the manure (1), and the second, fostering mainly on protein feed supplement market as production as duckweed is exceptionally high in protein.
+          <span className="font-bold">a wastewater treatment solution for farms</span> as duckweed is great at sucking up the nitrogen from the manure [1], and the second, fostering mainly on protein feed supplement market as production as duckweed is exceptionally high in protein.
         </p>
         
         <p>
           We looked at{' '}
           <span className="font-bold">market sizes</span> for each of the products and the answer was clear. Manure and agricultural wastewater treatment market was valued around{' '}
-          <span className="font-bold">$2.7 billion dollars (8)</span>, while feed protein supplement market is valued at{' '}
-          <span className="font-bold">around $30 billion</span> annually around the globe (9). Taking at least small fraction of this market would mean huge returns!
+          <span className="font-bold">$2.7 billion dollars [8]</span>, while feed protein supplement market is valued at{' '}
+          <span className="font-bold">around $30 billion</span> annually around the globe [9]. Taking at least small fraction of this market would mean huge returns!
         </p>
         
         <p>

@@ -76,7 +76,7 @@ const HeroSection = ({ heroImageUrl }: HeroSectionProps = {}) => {
         {/* Subtitle text - moved out from image, centered */}
         <div className="flex justify-center">
           <p 
-            className="text-sm sm:text-base lg:text-lg leading-[140%] text-black/75 max-w-3xl text-center text-justify"
+            className="text-sm sm:text-lg lg:text-lg leading-[140%] text-black/75 max-w-3xl text-center text-justify"
             style={{ fontFamily: 'Urbanist, sans-serif' }}
           >
             The smallest flowering plant on Earth hides a lot of potential – all of it waiting to be unlocked.

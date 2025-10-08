@@ -2,6 +2,7 @@ import React from 'react';
 import MapSVG from '../../components/DeepDive/MapSVG';
 import { LOCATIONS } from '../../components/DeepDive/locations';
 import References from '../../components/References';
+import A from "../../A.tsx";
 
 
 
@@ -11,39 +12,39 @@ export default function DuckweedDocument() {
     <div className="max-w-6xl mx-auto p-8 bg-white text-gray-900 leading-relaxed text-lg text-justify" style={{ fontFamily: 'Urbanist, serif' }}>
       {/* Header */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>Get to know duckweed better</h1>
+        <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>Deep Dive on Duckweed</h1>
       </div>
 
       {/* Introduction */}
       <div className="mb-8">
         <p className="mb-10">
           <span style={{ fontWeight: 400 }}>
-            Duckweeds are small, free-floating, monocotyledonous aquatic plants
+              Duckweeds are small, free-floating, <b>monocotyledonous aquatic plants </b>
             belonging to the family{" "}
           </span>
           <em>
             <span style={{ fontWeight: 400 }}>Araceae</span>
           </em>
           <span style={{ fontWeight: 400 }}>
-            , subfamily Lemnoidae. This family includes five genera:{" "}
+              , subfamily <em>Lemnoidae</em>. This family includes five genera:{" "}
           </span>
           <em>
-            <span style={{ fontWeight: 400 }}>Spirodela</span>
+            <span className="font-bold" style={{ fontWeight: 400 }}><b>Spirodela</b></span>
           </em>
           <span style={{ fontWeight: 400 }}>, </span>
           <em>
-            <span style={{ fontWeight: 400 }}>Landoltia,</span>
+            <span className="font-bold" style={{ fontWeight: 400 }}><b>Landoltia</b>,</span>
           </em>{" "}
           <em>
-            <span style={{ fontWeight: 400 }}>Lemna</span>
+            <span className="font-bold" style={{ fontWeight: 400 }}><b>Lemna</b></span>
           </em>
           <span style={{ fontWeight: 400 }}>, </span>
           <em>
-            <span style={{ fontWeight: 400 }}>Wolffiella</span>
+            <span className="font-bold" style={{ fontWeight: 400 }}><b>Wolffiella</b></span>
           </em>
           <span style={{ fontWeight: 400 }}>, and </span>
           <em>
-            <span style={{ fontWeight: 400 }}>Wolffia </span>
+            <span className="font-bold" style={{ fontWeight: 400 }}><b>Wolffia</b> </span>
           </em>
           <span style={{ fontWeight: 400 }}>
             [1], comprising a total of 36 recognized species [2].
@@ -59,9 +60,9 @@ export default function DuckweedDocument() {
         <div className="flex flex-col md:flex-row items-start gap-6 mb-6">
           <div className="flex-1">
             <div className="bg-green-50 border-l-4 border-green-500 p-4 mb-4">
-              <p className="text-lg italic">
-                The duckweed was supposedly named based on the observation that it often serves as food for 
-                ducks. The name appears in Middle English as <em>dokemete</em>, literally "duck meat" or duck food [3]
+              <p className="text-lg">
+                <b>The duckweed</b> was supposedly named based on the observation that it often serves as <b>food for
+                ducks</b> . The name appears in Middle English as <em>dokemete</em>, literally <b>"duck meat" or duck food</b> [3]
               </p>
             </div>
           </div>
@@ -72,10 +73,10 @@ export default function DuckweedDocument() {
           <div className="flex-1">
             <p className="mb-4">
               All of them share a common, highly reduced and simplified body plan. Instead of the stems and true 
-              leaves, duckweeds are growing as one or a few flat bodies called fronds, measuring from under 1 mm in 
-              <em>W. angusta</em> to around 15 mm in <em>S. polyrrhiza</em> in diameter. Frond shape is genus-specific, 
+              leaves, duckweeds are growing as one or a few flat bodies called <b>fronds</b>, measuring from under 1 mm in
+              <em> W. angusta</em> to around 15 mm in <em>S. polyrrhiza</em> in diameter. Frond shape is genus-specific, 
               ranging from oval to hemispherical, boat-shaped, or tongue-shaped [4]. While <em>Wolffiella</em> and 
-              <em>Wolffia</em> species are often rootless, others produce adventitious roots [5].
+              <em> Wolffia</em> species are often rootless, others produce adventitious roots [5].
             </p>
           </div>
           {/* Anatomy diagram placeholder */}
@@ -98,14 +99,13 @@ export default function DuckweedDocument() {
           <div className="col-span-3">
             <p className="mb-4">
               Duckweeds primarily reproduce vegetatively with daughter fronds emerging from lateral budding 
-              pouches on the mother frond [6]. Newly formed fronds may later detach, resulting in strains of 
-              genetically identical individuals, or clones. Therefore, "growth" in duckweed encompasses three processes: 
+              pouches on the mother frond [6]. Therefore, "growth" in duckweed encompasses three processes:
               an increase in the number of individuals in the population, the production of daughter fronds by each 
               plant and enlargement of individual cells [4].
             </p>
 
             <p className="mb-4">
-              Despite their structural simplicity, duckweeds are among the fastest-growing flowering plants, capable 
+                Despite their structural simplicity, duckweeds are among the <b>fastest-growing flowering plants</b>, capable
               of doubling their biomass within 1.22 to 4.54 days under optimal conditions [7], [8]. Duckweeds can also 
               reproduce sexually by flowering, however, it is rare in nature [9].
             </p>
@@ -155,13 +155,20 @@ export default function DuckweedDocument() {
                     <h2 className="text-3xl font-bold mb-8">Why duckweed?</h2>
 
                     <p className="mb-4">
-                      Duckweed combines several advantageous traits: its compact size, simple body plan, floating lifestyle that facilitates harvesting, rapid clonal propagation, and resilience to a wide range of environmental conditions, including fluctuating light, temperature, pH, and variable nutrient levels [12], [13], [14]. In addition, duckweeds possess comparatively small genomes for monocot plants, with a marked reduction in gene numbers and absence of RNA silencing mechanisms [15]. Together, these features render duckweed an optimal model organism for genetic engineering applications and large-scale cultivation.
+                        Duckweed combines several advantageous traits: its compact size, simple body plan, floating lifestyle that facilitates harvesting, rapid clonal propagation, and resilience to a wide range of environmental conditions, including fluctuating light, temperature, pH, and variable nutrient levels [12], [13], [14]. In addition, <b>duckweeds possess comparatively small genomes for monocot plants</b>, with a marked reduction in gene numbers and absence of RNA silencing mechanisms [15]. Together, these features render duckweed an optimal model organism for genetic engineering applications and large-scale cultivation.
 
                     </p>
 
                     <p className="mb-4">
 
-                      Moreover, duckweeds can reach high levels of protein [16] or starch [17] content and generally exhibit an outstanding capacity to absorb substances from their surroundings [18]. Taken together, these traits open the door to a wide range of potential applications. Each genus, however, as well as each individual strain, possesses distinct strengths and limitations with respect to practical applications.
+                        Moreover, duckweeds can reach <b>high levels of protein</b> [16] or starch [17] content and generally exhibit an outstanding capacity to absorb substances from their surroundings [18]. Taken together, these traits open the door to a wide range of potential applications. Each genus, however, as well as each individual strain, possesses distinct strengths and limitations with respect to practical applications.
+
+                    </p>
+
+                  <p className="mb-4">
+
+                      Read more on duckweed potential and application at the{" "}
+                      <A href="/plant/why-duckweed" className="hover:underline text-[#6ca033]">Why duckweed page</A>.
 
                     </p>
 
@@ -190,11 +197,11 @@ export default function DuckweedDocument() {
           <div className="flex flex-col md:flex-row gap-6 items-start">
             <div className="flex-1">
               <p>
-                Spirodela occupies a basal position within the Lemnoidae. Despite having the largest body plan among 
+                  Spirodela occupies a basal position within the <em>Lemnoidae</em>. Despite having the largest body plan among
                 duckweeds, it is characterised by a remarkably small genome size and one of the most reduced gene 
                 repertoires of any known plant. <em>S. polyrrhiza</em> possesses a genome of approximately 158 Mb, 
                 comprising 19,623 protein-coding genes [19], which is roughly 30% less than reported for 
-                <em>Arabidopsis thaliana</em>. As a result, Spirodela serves as an excellent model for genomic research 
+                <em>Arabidopsis thaliana</em>. As a result, <em>Spirodela</em> serves as an excellent model for genomic research
                 and the study of highly conserved core pathways in plants.
               </p>
             </div>
@@ -206,11 +213,11 @@ export default function DuckweedDocument() {
 
         {/* Landoltia */}
         <div className="border-l-4 border-green-500 pl-6">
-          <h2 className="text-2xl font-bold text-green-700 mb-2">Landoltia (1 species)</h2>
+          <h2 className="text-2xl font-bold text-green-700 mb-2"><em>Landoltia</em> (1 species)</h2>
           <div className="flex flex-col md:flex-row gap-6 items-start">
             <div className="flex-1">
               <p>
-                <em>Landoltia punctata</em> is the sole representative of the genus Landoltia. It has shown remarkable 
+                <em>Landoltia punctata</em> is the sole representative of the genus <em>Landoltia</em>. It has shown remarkable
                 ability to rapidly accumulate a high starch content (about 45 – 60 % of dry weight) under optimised 
                 cultivation conditions [20], [21], making it a promising candidate for bioethanol production.
               </p>
@@ -223,16 +230,16 @@ export default function DuckweedDocument() {
 
         {/* Lemna */}
         <div className="border-l-4 border-yellow-500 pl-6">
-          <h2 className="text-2xl font-bold text-yellow-700 mb-2">Lemna (12 species)</h2>
+          <h2 className="text-2xl font-bold text-yellow-700 mb-2"><em>Lemna</em> (12 species)</h2>
           <div className="flex flex-col md:flex-row gap-6 items-start">
             <div className="flex-1">
               <p>
-                Lemna is the most widely distributed duckweed genus worldwide. Some species colonise new areas so 
-                successfully that they are considered invasive. The most notorious of them is <em>L. minuta</em> [4]. 
+                <em>Lemna</em> is the most widely distributed duckweed genus worldwide. Some species colonise new areas so
+                  successfully that they are <b>considered invasive</b>. The most notorious of them is <em>L. minuta</em> [4].
                 This very ubiquity has ensured that members of this genus, particularly <em>L. minor</em> and 
-                <em>L. gibba</em>, are already used in a range of practical applications. Examples include their use 
-                in the phytoremediation of polluted water bodies [22] and as model organisms in ecotoxicological 
-                testing [23].
+                <em> L. gibba</em>, are already used in a range of practical applications. Examples include their use
+                  in the <b>phytoremediation of polluted water bodies</b> [22] and as <b>model organisms in ecotoxicological{" "}
+                testing</b> [23].
               </p>
             </div>
            
@@ -244,19 +251,19 @@ export default function DuckweedDocument() {
 
         {/* Wolffia */}
         <div className="border-l-4 border-red-500 pl-6">
-          <h2 className="text-2xl font-bold text-red-700 mb-2">Wolffia (11 species)</h2>
+          <h2 className="text-2xl font-bold text-red-700 mb-2"><em>Wolffia</em> (11 species)</h2>
           <div className="flex flex-col md:flex-row gap-6 items-start">
             <div className="flex-1">
               <p className="mb-4">
-                Members of the genus Wolffia are known for their use as animal feed. In Northern Thailand, Laos, and 
+                  Members of the genus <em>Wolffia</em> are known for their use as <b>animal feed</b>. In Northern Thailand, Laos, and
                 Myanmar, <em>W. globosa</em> is even a part of traditional diet of local people [24], [25]. Their 
-                suitability for human consumption is further supported by their excellent protein composition, rich 
-                phytosterol content [26], and the fact that, unlike other duckweed genera, Wolffia species do not 
+                suitability for human consumption is further supported by their excellent protein composition, <b>rich{" "}
+                  phytosterol content</b> [26], and the fact that, unlike other duckweed genera, <em>Wolffia</em> species do not
                 accumulate oxalates as calcium oxalate crystals, which may pose health risks [27]. Top-scoring specie 
                 is however <em>W. microscopica</em> (clone 2005) with its optimal amino acid profile, dietary 
                 stearidonic acid presence [26] and record doubling time of 29.3 hours, gaining it a title of a 
                 fastest-growing angiosperm. Similarly rapid propagation is observed in <em>Wolffia globosa</em> clone 
-                9498 exhibiting a doubling time of 29.8 hours [8].
+                  9498 exhibiting <b>a doubling time of 29.8 hours</b> [8].
               </p>
               <p>
                 Another interesting specie is <em>W. australiana</em>, which has the smallest genome within the genus 
@@ -272,13 +279,13 @@ export default function DuckweedDocument() {
 
         {/* Wolffiella */}
         <div className="border-l-4 border-purple-500 pl-6">
-          <h2 className="text-2xl font-bold text-purple-700 mb-2">Wolffiella (10 species)</h2>
+          <h2 className="text-2xl font-bold text-purple-700 mb-2"><em>Wolffiella</em> (10 species)</h2>
           <div className="flex flex-col md:flex-row gap-6 items-start">
             <div className="flex-1">
               <p>
-                Wolffiella shares several characteristics with the genus Wolffia. The plant forms extremely small fronds, 
+                <em>Wolffiella</em> shares several characteristics with the genus <em>Wolffia</em>. The plant forms extremely small fronds,
                 lacks roots, and certain species, in particular <em>W. hyalina</em>, have been proposed as a potential 
-                food source for humans due to their high protein content (35%) and favourable amino acid composition [25].
+                food source for humans due to their <b>high protein content (35%)</b> and favourable amino acid composition [25].
               </p>
             </div>
             <div className=" w-full md:w-48  flex items-center justify-center rounded-lg">

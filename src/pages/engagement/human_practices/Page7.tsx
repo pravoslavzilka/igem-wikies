@@ -1,5 +1,6 @@
 import React from "react";
 import ExpandablePill from "./ExpandablePill";
+import A from "../../../A.tsx";
 
 export default function HumanPracticesPage7() {
     return (
@@ -12,7 +13,7 @@ export default function HumanPracticesPage7() {
                     name="Dr. Tereza Přerovská"
                     subtitle="Chromatin Molecular Complexes Laboratory"
                     location="Plant Developmental Biology"
-                    defaultOpen={true}
+                    defaultOpen={false}
                 >
                     <p className="text-lg">
                         <span className="font-bold">Dr. Přerovská </span>
@@ -24,6 +25,7 @@ export default function HumanPracticesPage7() {
                 </ExpandablePill>
 
                 {/* Prof. Kan Wang pill */}
+                <div id="prof-wang"></div>
                 <ExpandablePill
                     image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-2.webp"
                     name="Prof. Kan Wang"
@@ -54,14 +56,12 @@ export default function HumanPracticesPage7() {
 
                         <p>
                             We went to restart our transformation experiments with fresh cultures and guess what?{" "}
-                            <span className="font-bold">It worked!</span> Read more in{" "}
-                            <a href="#" className="text-green-700 underline hover:text-green-900">
-                                regeneration assay page
-                            </a>.
+                            <span className="font-bold">It worked!</span>
                         </p>
 
                         {/* Two-column layout: text + group photo */}
-                        <div className="grid md:grid-cols-2 gap-8 items-center">
+                        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+                            {/* Left column */}
                             <div className="space-y-4">
                                 <p>
                                     Professor Wang left us with a sentence: ‘Hacking duckweed is a very important and
@@ -76,6 +76,7 @@ export default function HumanPracticesPage7() {
                                 </p>
                             </div>
 
+                            {/* Right column */}
                             <div className="flex justify-center">
                                 <img
                                     src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-3.webp"
@@ -84,6 +85,7 @@ export default function HumanPracticesPage7() {
                                 />
                             </div>
                         </div>
+
                     </div>
                 </ExpandablePill>
             </div>
@@ -112,10 +114,12 @@ export default function HumanPracticesPage7() {
                 </p>
 
                 {/* iGEM Marburg 2024 pill */}
+                <div id="marburg"></div>
                 <ExpandablePill
                     image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-5.webp"
                     name="iGEM Marburg 2024"
                     subtitle="European iGEM Meetup in Frankfurt"
+                    defaultOpen={true}
                 >
                     <div className="leading-relaxed text-lg space-y-10">
 
@@ -124,9 +128,10 @@ export default function HumanPracticesPage7() {
                                 We met few members of <span className="font-bold">iGEM Marburg team </span>
                                 from 2024 on the European iGEM Meetup in Frankfurt. They judged both our
                                 presentation and poster (read more on our{" "}
-                                <a href="#" className="text-green-700 underline hover:text-green-900">
+                                <A href="/engagement/outreach"
+                                   className="text-[#538b5e] underline hover:text-[#25512b]">
                                     Outreach page
-                                </a>
+                                </A>
                                 ). After the event (besides having fun), we discussed our project and plants
                                 in general for hours and we got into{" "}
                                 <span className="font-bold">plant regulatory parts exploration. </span>
@@ -151,19 +156,15 @@ export default function HumanPracticesPage7() {
                                     <span className="font-bold">modification of their ratiometric approach </span>
                                     in regulatory part testing and could estimate the timeline for the whole
                                     workflow well. Take a look how we implemented their advice into our{" "}
-                                    <a href="#" className="text-green-700 underline hover:text-green-900">
-                                        in silico workflow
-                                    </a>{" "}
-                                    and{" "}
-                                    <a href="#" className="text-green-700 underline hover:text-green-900">
-                                        promoter testing
-                                    </a>
+                                    <A href="/measurement" className="text-[#538b5e] underline hover:text-[#25512b]">
+                                        in silico workflow and promoter testing
+                                    </A>
                                     .
                                 </p>
                             </div>
                             <div className="flex justify-center">
                                 <img
-                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-8.webp"
+                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/2/7-8.webp"
                                     alt="Second photo with iGEM Marburg"
                                     className="rounded-2xl max-w-md"
                                 />
@@ -173,6 +174,7 @@ export default function HumanPracticesPage7() {
                 </ExpandablePill>
 
                 {/* Dr. Eric Yang pill */}
+                <div id="yang"></div>
                 <ExpandablePill
                     image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-6.webp"
                     name="Dr. Eric Yang"
@@ -180,15 +182,11 @@ export default function HumanPracticesPage7() {
                     location="Synthetic Biology and Genetic Circuits"
                 >
                     {/* Text LEFT, selfie RIGHT */}
-                    <div>
+                    <div className="text-lg space-y-6">
                         <p>
                             Although Marburg workflow was very robust and user-friendly, they didn’t have
-                            to face the problem of lack of transcriptomes available for one species (read
-                            more about that in{" "}
-                            <a href="#" className="text-green-700 underline hover:text-green-900">
-                                in silico promoter workflow
-                            </a>
-                            ). Therefore, we had to opt for{" "}
+                            to face the problem of lack of transcriptomes available for one species. Therefore, we had
+                            to opt for{" "}
                             <span className="font-bold">orthology analysis </span> – grouping genes across
                             multiple species into groups of ones with similar origin – orthogroups. From
                             there we had to decide on what gene out of the orthogroup should we actually
@@ -196,13 +194,14 @@ export default function HumanPracticesPage7() {
                         </p>
 
 
-                        <div className="grid md:grid-cols-2 gap-8 items-center text-lg leading-relaxed">
+                        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center text-lg leading-relaxed">
+                            {/* Left column */}
                             <div className="space-y-6">
                                 <p>
                                     He suggested to look only at the{" "}
                                     <span className="font-bold">highest expressings </span>
-                                    ones for each species in the orthogroup and then proceed with the workflow from
-                                    Marburg. He confirmed the strategy we wanted to pursue.
+                                    ones for each species in the orthogroup and then proceed with the workflow
+                                    from Marburg. He confirmed the strategy we wanted to pursue.
                                 </p>
 
                                 <p>
@@ -210,10 +209,9 @@ export default function HumanPracticesPage7() {
                                     <span className="font-bold">engineering problem, </span>
                                     as there are not precise workflows established in the promoter discovery.
                                 </p>
-
-
                             </div>
 
+                            {/* Right column */}
                             <div className="flex justify-center">
                                 <img
                                     src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-4.webp"
@@ -222,6 +220,7 @@ export default function HumanPracticesPage7() {
                                 />
                             </div>
                         </div>
+
 
                         <p>
                             If the promoter works, then great.{" "}
@@ -235,8 +234,9 @@ export default function HumanPracticesPage7() {
             <div
                 className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-12">
                 {/* Dr. Veronika Jedličková */}
+                <div id="jedlickova"></div>
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-7.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-9.webp"
                     name="Dr. Veronika Jedličková"
                     subtitle="Central European Institute of Technology"
                     location="Hormonal Crosstalk in Plant Development"
@@ -251,7 +251,11 @@ export default function HumanPracticesPage7() {
                             our first priority before attempting for the synthetic one. She also
                             helped us with{" "}
                             <span className="font-bold">
-                            designing the qPCR probes and also consulted our CRISPR construct strategy.
+                            designing the qPCR probes and also consulted our{" "}
+                                <A href="/plant#crispr" className="text-[#538b5e] underline hover:text-[#25512b]">
+                                CRISPR construct strategy
+                                </A>
+                                    .
                         </span>
                         </p>
                     </div>
@@ -259,7 +263,7 @@ export default function HumanPracticesPage7() {
 
                 {/* Dr. Markéta Šámalová */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-9.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-7.webp"
                     name="Dr. Markéta Šámalová"
                     subtitle="Department of Experimental Plant Biology"
                     location="Plant Molecular Biology"

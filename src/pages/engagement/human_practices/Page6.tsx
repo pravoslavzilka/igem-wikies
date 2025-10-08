@@ -1,5 +1,6 @@
 import React from "react";
 import ExpandablePill from "./ExpandablePill";
+import A from "../../../A.tsx";
 
 export default function HumanPracticesPage6() {
     return (
@@ -16,16 +17,17 @@ export default function HumanPracticesPage6() {
                             to get our hands on the superior plant and learn how to infiltrate it with{" "}
                             <span className="italic">Agrobacterium </span> – both with vacuum and with a syringe.
                             You can read all about it in our{" "}
-                            <a href="#" className="text-green-700 underline hover:text-green-900">
+                            <A href="/plant#duckweed-transformation"
+                               className="text-[#538b5e] underline hover:text-[#25512b]">
                                 protocols page
-                            </a>.
+                            </A>.
                         </p>
                     </div>
 
                     {/* Right column: image */}
                     <div className="flex justify-center">
                         <img
-                            src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-1.webp"
+                            src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-2.webp"
                             alt="Hands-on session at GMI with duckweed infiltration"
                             className="rounded-2xl max-w-md"
                         />
@@ -33,7 +35,8 @@ export default function HumanPracticesPage6() {
                 </div>
 
                 {/* Green highlight divider */}
-                <div className="bg-green-700 text-white font-bold text-center px-6 py-4 rounded mb-12 text-lg">
+                <div className="text-white font-bold text-center px-6 py-4 rounded mb-12 text-2xl"
+                     style={{backgroundColor: '#6ca033'}}>
                     Continue reading and watch, how we kept learning from all the amazing scientists to improve our
                     work.
                 </div>
@@ -53,30 +56,51 @@ export default function HumanPracticesPage6() {
             <div
                 className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-8">
 
+                {/* Dr. Moravec pill */}
+                <ExpandablePill
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-3.webp"
+                    name="Dr. Tomáš Moravec"
+                    subtitle="Institute of Experimental Botany"
+                    location="Plant Transformations and Molecular Biology"
+                    defaultOpen={false}
+                >
+                    <p className="text-lg">
+                        <span className="font-bold">Tomáš</span>, a jack-of-all-trades plant scientist from Prague,
+                        helped us a lot. He gave feedback on
+                        our designs and <span className="font-bold ">proposed several improvements</span> that we
+                        implemented into the DBTL cycles. He also
+                        generously gifted us his “endless” supply of Phusion polymerase, along with several genetic
+                        parts and Agrobacterium clones.
+                    </p>
+                </ExpandablePill>
+
+
                 {/* Dr. Boisivon pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-2.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-4.webp"
                     name="Dr. Hélène Robert Boisivon"
                     subtitle="Central European Institute of Technology"
                     location="Plant Synthetic Biology"
-                    defaultOpen={true}
+                    defaultOpen={false}
                 >
                     <p className="text-lg">
-                        <span className="font-bold">Dr. Boisivon </span>
-                        addressed multiple questions from us regarding plant biology. We made great use of her
-                        knowledge in the space of <span className="font-bold">plant hormones </span> when we were
-                        designing different conditions for enhanced frond regeneration of duckweed throughout
-                        selection with hormone additions.
+                        <span className="font-bold">Dr. Boisivon </span> addressed multiple questions from us regarding
+                        plant biology. We made great use of
+                        her knowledge in the space of <span className="font-bold">plant hormones </span> when we were
+                        designing different conditions for
+                        enhanced frond regeneration of duckweed throughout selection with hormone additions. Besides
+                        this, Dr. Boisivon helped us immensely by providing lab space, lab consumables and tolerating
+                        our sometimes, too intense iGEM work. Read more at Attribution page.
                     </p>
                 </ExpandablePill>
 
                 {/* Matúš Pešta pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-3.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-8.webp"
                     name="MSc. Matúš Pešta"
                     subtitle="Microbial Bioengineering Laboratory"
                     location="Bacterial Synthetic Biology"
-                    defaultOpen={true}
+                    defaultOpen={false}
                 >
                     <p className="text-lg">
                         <span className="font-bold">Matúš </span>
@@ -89,23 +113,15 @@ export default function HumanPracticesPage6() {
 
                 {/* Dr. Miguel da Silva pill */}
                 <ExpandablePill
-                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-4.webp"
+                    image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-7.webp"
                     name="Dr. Miguel da Silva"
                     subtitle="Microbial Bioengineering Laboratory"
                     location="Bacterial Metabolic Engineering"
-                    defaultOpen={true}
+                    defaultOpen={false}
                 >
                     <p className="text-lg">
                         We consulted <span className="font-bold">Dr. da Silva </span> about right conditions for
-                        Gibson assembly cloning for our{" "}
-                        <a href="#" className="text-green-700 underline hover:text-green-900">
-                            meristematic assay
-                        </a>{" "}
-                        and{" "}
-                        <a href="#" className="text-green-700 underline hover:text-green-900">
-                            excision assay
-                        </a>{" "}
-                        in their first iterations.
+                        Gibson assembly cloning.
                     </p>
                 </ExpandablePill>
 
@@ -115,7 +131,7 @@ export default function HumanPracticesPage6() {
                     name="Dr. Anastasiia Ieremenko"
                     subtitle="Microbial Bioengineering Laboratory"
                     location="Bacterial Metabolic Engineering"
-                    defaultOpen={true}
+                    defaultOpen={false}
                 >
                     <p className="text-lg">
                         <span className="font-bold">Dr. Ieremenko </span>
@@ -131,14 +147,14 @@ export default function HumanPracticesPage6() {
                     name="MSc. Barbora Jankovičová"
                     subtitle="Microbial Bioengineering Laboratory"
                     location="Bacterial Metabolic Engineering"
-                    defaultOpen={true}
+                    defaultOpen={false}
                 >
                     <p className="text-lg">
                         <span className="font-bold">Baru </span>, as a student leader of two previous{" "}
                         <span className="font-bold">iGEM teams from Brno </span>, knew the struggles we
                         were going through very well. She was always helpful with{" "}
                         <span className="font-bold">designing special PCR conditions </span> and
-                        cloning strategies for excision assay and our first versions of p004 and p003.
+                        cloning strategies.
                     </p>
                 </ExpandablePill>
             </div>

@@ -1,3 +1,5 @@
+import A from "../../../../A.tsx";
+
 export default function CultivatorIntro() {
     return (
         <section className="max-w-6xl mx-auto p-8 space-y-12">
@@ -60,15 +62,25 @@ export default function CultivatorIntro() {
                 >
                     We tested the system with four duckweed researchers.
                 </h2>
+
                 <div className="font-[Urbanist,sans-serif] text-lg leading-relaxed space-y-4">
-                    <p>
+                    <p className="text-justify">
                         Throughout development, we refined its design around researchers’ needs. Their feedback
                         shaped features like water reuse, nutrient control, and real-time monitoring, helping us build
                         a reliable prototype.{" "}
                         <span className="font-bold">
-          Now, our system can save up to 2 hours of work per week for each m² of duckweed experiments,
-          making it ideal for any scientist looking to scale up their research!
-        </span>
+        Now, our system can save up to 2 hours of work per week for each m² of duckweed experiments,
+        making it ideal for any scientist looking to scale up their duckweed research!
+      </span>
+                    </p>
+
+                    <p className="pt-2 text-center md:text-left">
+                        <A
+                            href="#user-testing"
+                            className="text-[#6ca033] font-semibold hover:underline transition-colors"
+                        >
+                            → See the results of our user testing
+                        </A>
                     </p>
                 </div>
             </div>
@@ -84,14 +96,30 @@ export default function CultivatorIntro() {
                 >
                     To make this accessible, we’ve released the full design as open-source.
                 </h2>
+
                 <div className="font-[Urbanist,sans-serif] text-lg leading-relaxed space-y-4">
-                    <p>
-                        With complete documentation, build plans, and source code available, any lab can reproduce
+                    <p className="text-justify">
+                        With complete build plans (<A
+                        href="https://github.com/pravoslavzilka/igem-hardware-models" target="blank"
+                        className="underline">access here</A>) and source code (
+                        <A href="https://github.com/MartinPavella/BioReactorManager" target="blank"
+                           className="underline">access{" "}
+                            here</A>) available, any lab can reproduce{" "}
                         and adapt the cultivator for their own work –{" "}
-                        <span className="font-bold">for about $800 in materials.</span>
+                        <span className="font-bold">for about $1,000 in materials.</span>
+                    </p>
+
+                    <p className="pt-2 text-center md:text-left">
+                        <A
+                            href="#build-section"
+                            className="text-[#6ca033] font-semibold hover:underline transition-colors"
+                        >
+                            → Learn how to build your own CULTIVATOR
+                        </A>
                     </p>
                 </div>
             </div>
+
         </section>
 
     );

@@ -1,5 +1,6 @@
 import React from "react";
 import ExpandablePill from "./ExpandablePill.tsx";
+import A from "../../../A.tsx";
 
 export default function HumanPracticesPage9() {
     return (
@@ -21,7 +22,8 @@ export default function HumanPracticesPage9() {
                 </p>
 
                 {/* Green highlight box */}
-                <div className="bg-green-200 text-green-900 font-bold text-center px-6 py-4 rounded-lg mb-8 text-lg">
+                <div className=" text-white font-bold text-center px-6 py-4 rounded-lg mb-8 text-2xl"
+                     style={{backgroundColor: '#6ca033'}}>
                     To engineer duckweed to make more biomass and to ultimately make it a crop of the future,
                     we had to make it <span className="font-bold">programmable first. </span>
                 </div>
@@ -45,9 +47,9 @@ export default function HumanPracticesPage9() {
                         in research and industry – painfully slow genetic engineering. To make it faster,
                         we had to leave callus out of the process and somehow obtain stable transformants
                         directly from fronds (more information about frond-mediated transformation at{" "}
-                        <a href="#" className="text-green-700 underline hover:text-green-900">
+                        <A href="/project/how/taifr/overview" className="text-[#538b5e] underline hover:text-[#25512b]">
                             TAIFR page
-                        </a>
+                        </A>
                         ). Why couldn’t duckweed, with its strong regeneration, produce transgenic offsprings
                         directly from adult tissue? If soybean [15], pea [16], peanut [17], or sweet potato [18]
                         can, what about duckweed? Especially when transient expression is so strong and long-lasting.
@@ -73,6 +75,7 @@ export default function HumanPracticesPage9() {
                     name="Dr. Keith Slotkin"
                     subtitle="PI at Donald Danforth Plant Science Center"
                     location="Transposons and DNA methylation in plants"
+                    defaultOpen={true}
                 >
                     <div className="leading-relaxed text-lg space-y-6">
                         <p>
@@ -103,9 +106,6 @@ export default function HumanPracticesPage9() {
                             <li>no one can tell whether this will work in duckweed but <span className="font-bold">it’s worth a try </span>
                             </li>
                             <li>we should adapt the system for duckweed <span className="font-bold">in terms of promoters used </span>
-                            </li>
-                            <li>trying out whether PONG transposase can excise mPING in the duckweed environment is a
-                                need
                             </li>
                             <li>
                                 Dr. Slotkin also confirmed Arturo’s observation about
@@ -140,36 +140,34 @@ export default function HumanPracticesPage9() {
                     <p>
                         Take a look how we are building our own version of fast and reliable system for
                         duckweed transformation –{" "}
-                        <a href="#" className="text-green-700 underline hover:text-green-900">
+                        <A href="/project/how/taifr/overview" className="text-[#538b5e] underline hover:text-[#25512b]">
                             TAIFR
-                        </a>
+                        </A>
                         , identified and created strong endogenous duckweed{" "}
-                        <a href="#" className="text-green-700 underline hover:text-green-900">
+                        <A href="/measurement" className="text-[#538b5e] underline hover:text-[#25512b]">
                             PROMOTERS
-                        </a>
+                        </A>
                         , eased scaling of duckweed cultivation with our{" "}
-                        <a href="#" className="text-green-700 underline hover:text-green-900">
+                        <A href="/hardware" className="text-[#538b5e] underline hover:text-[#25512b]">
                             CULTIVATOR
-                        </a>{" "}
+                        </A>{" "}
                         and{" "}
-                        <a href="#" className="text-green-700 underline hover:text-green-900">
+                        <A href="/model"
+                           className="text-[#538b5e] underline hover:text-[#25512b]">
                             PREDICTOR
-                        </a>
-                        . Watch how we made
-                        <a href="#" className="text-green-700 underline hover:text-green-900">
-                            duckweed programmable and predictable!
-                        </a>
+                        </A>
+                        . Watch how we made duckweed programmable and predictable!
                     </p>
                 </div>
             </div>
 
 
-            <div className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed font-[Urbanist,sans-serif]">
+            <div className="max-w-6xl mx-auto text-gray-900 leading-relaxed font-[Urbanist,sans-serif]">
                 {/* Hacking header */}
                 <div
                     id="hacking"
-                    className="bg-green-300 text-gray-900 font-bold px-6 py-4 rounded-t-xl"
-                    style={{fontFamily: "Space Grotesk, sans-serif", fontSize: "2rem"}}
+                    className="bg-green-[#6ca033] text-gray-900 font-bold px-6 py-4 rounded-t-xl"
+                    style={{fontFamily: "Space Grotesk, sans-serif", fontSize: "2rem", backgroundColor: '#6ca033'}}
                 >
                     Hacking
                 </div>
@@ -204,35 +202,10 @@ export default function HumanPracticesPage9() {
                     <p>
                         We knew we would be using a version of TATSI for direct frond transformation of
                         duckweed and proposed a solution optimized for it –{" "}
-                        <a href="#" className="text-green-700 underline hover:text-green-900">
+                        <A href="/project/how/taifr/overview" className="text-[#538b5e] underline hover:text-[#25512b]">
                             TAIFR
-                        </a>{" "}
+                        </A>{" "}
                         (Transposase-Assisted Insertion and Frond Regeneration).
-                    </p>
-
-                    <p>
-                        The original version comprised the{" "}
-                        <a href="#" className="text-green-700 underline hover:text-green-900">
-                            excision assay
-                        </a>{" "}
-                        that should test the ability of transposase PONG to{" "}
-                        <span className="font-bold">recognize and excise </span>
-                        the transposable element mPING in duckweed cellular environment, as well as
-                        the possibility of mPING{" "}
-                        <span className="font-bold">being recognized </span>
-                        by native duckweed transposases.
-                    </p>
-
-                    <p>
-                        We also designed{" "}
-                        <a href="#" className="text-green-700 underline hover:text-green-900">
-                            regeneration assay
-                        </a>
-                        , that is meant to insert the gene of interest into the duckweed genome, together
-                        with the resistance against antibiotic. Then, we wanted to apply the selection pressure
-                        on duckweed fronds and make use of{" "}
-                        <span className="font-bold">higher insertion efficiency </span>
-                        and regenerate completely transgenic individuals.
                     </p>
 
                     <p>
@@ -252,6 +225,7 @@ export default function HumanPracticesPage9() {
                     name="Research group of Dr. Arturo Mari-Ordóñez"
                     subtitle="GMI Vienna"
                     location="Mechanisms of recognition and silencing of transposons in plants"
+                    defaultOpen={true}
                 >
                     <div className="leading-relaxed text-lg space-y-6">
                         <p>
@@ -304,47 +278,20 @@ export default function HumanPracticesPage9() {
                         {/* --- New meristematic assay section --- */}
                         <p>
                             Except these great insights, we also discussed our design. They loved the concept
-                            and suggested more ideas how to improve it. The most interesting is definitely the
-                            <span className="font-bold"> addition of the meristematic assay </span> into our concept.
-                            Why?
-                        </p>
-
-                        <p>
-                            One of the possible bottlenecks of duckweed frond transformation might be, that{" "}
-                            <span className="italic">Agrobacterium </span> might
-                            <span className="font-bold"> not be able to access duckweed meristematic cells! </span>
-                            In order to develop new transgenic individuals, these cells have to be transformed.
-                            How can that be tested?
+                            and suggested more ideas how to improve it.
                         </p>
 
                         {/* Two-column layout with image + text */}
-                        <div className="grid md:grid-cols-2 gap-8 items-start">
+                        <div className="grid md:grid-cols-2 gap-8 items-center">
                             <div className="flex justify-center">
                                 <img
-                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/5-5.webp"
+                                    src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/6-1.webp"
                                     alt="Team photo at GMI Vienna"
-                                    className="rounded-2xl max-w-md"
+                                    className="rounded-2xl max-w-sm"
                                 />
                             </div>
 
                             <div className="space-y-4">
-                                <p>
-                                    At GMI, they have <span className="italic">Spirodela </span> line with
-                                    single insertion of GFP. If we transform it with Cas9 guided to knockout
-                                    the GFP, <span className="font-bold">we can prove that we are able to edit
-                                    the genome of meristematic cells using Agrobacterium. </span>
-                                </p>
-
-                                <p>
-                                    So, if <span className="font-bold">we observe some duckweeds in the next
-                                    generations lose fluorescence, this is a signal that our next assays make sense. </span>
-                                    Read more about our meristematic assay{" "}
-                                    <a href="#" className="text-green-700 underline hover:text-green-900">
-                                        here
-                                    </a>
-                                    .
-                                </p>
-
                                 <p>
                                     This was an amazing experience! Look how excited and ready to jump into work we were
                                     here.

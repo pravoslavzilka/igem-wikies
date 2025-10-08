@@ -15,7 +15,7 @@ interface HowLandingProps {
 
 const HowLanding: React.FC<HowLandingProps> = ({
   transformationImageUrl = "https://static.igem.wiki/teams/5642/images/how/howlanding/igem-graf-02.webp",
-  promotersImageUrl = "https://static.igem.wiki/teams/5642/images/how/promoters-how.webp",
+  promotersImageUrl = "https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/promotres-circular-copy.webp",
   cultivationImageUrl = "https://static.igem.wiki/teams/5642/images/how/howlanding/cultivator.webp",
   optimizationImageUrl = "https://static.igem.wiki/teams/5642/images/how/howlanding/predictor-how-graf.webp"
 }) => {
