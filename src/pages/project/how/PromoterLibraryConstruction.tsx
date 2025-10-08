@@ -15,7 +15,7 @@ const PromoterLibraryConstruction = () => {
                     </h1>
 
                     {/* === Bullet Points Summary === */}
-                    <div className="bg-gray-50 rounded-2xl p-6 mb-10">
+                    <div className="bg-gray-50 rounded-2xl p-6 mb-10 border-[#6ca033] border-2">
                         <ul className="list-disc list-inside space-y-3 text-gray-800 leading-relaxed">
                             <li>
                                 We isolated or synthesized <b>7 endogenous duckweed promoters.</b>
@@ -166,7 +166,7 @@ const PromoterLibraryConstruction = () => {
 
                     {/* === Subsection Header === */}
                     <h2
-                        className="text-3xl font-bold mb-4"
+                        className="text-3xl font-bold mb-4 text-[#6ca033]"
                         style={{fontFamily: "Space Grotesk, sans-serif"}}
                     >
                         DESIGN of Promoter + 5′ UTR Performance Measurement
@@ -192,7 +192,7 @@ const PromoterLibraryConstruction = () => {
                     <p className="leading-relaxed mb-8">
                         To easily assess its functionality, we{" "}
                         <b>cloned the RUBY reporter</b> under our testing promoters. This way, it
-                        is possible to observe <b>betalaim production</b> as a result of the
+                        is possible to observe <b>betalain production</b> as a result of the
                         promoter + 5′ UTR sequence driving expression.
                     </p>
 
@@ -200,7 +200,7 @@ const PromoterLibraryConstruction = () => {
                     <div className="bg-gray-50 rounded-lg">
                         <div className="bg-white rounded">
                             <img
-                                src=""
+                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/2/1-cropped.avif"
                                 alt="Testing construct schematic"
                                 className="w-full h-auto"
                             />
@@ -263,15 +263,7 @@ const PromoterLibraryConstruction = () => {
                         and very sensitivity. On the other hand, we are sacrificing the
                         quantification of the final protein expression.
                     </p>
-                </div>
-            </div>
 
-
-            <div
-                className="min-h-screen bg-white p-8 text-lg text-justify space-y-6"
-                style={{fontFamily: "Urbanist, sans-serif"}}
-            >
-                <div className="max-w-6xl mx-auto">
 
                     <p className="leading-relaxed mb-4">
                         We had to design our measurement constructs with the need for reference in mind.
@@ -283,7 +275,7 @@ const PromoterLibraryConstruction = () => {
                     <div className="bg-gray-50 rounded-lg mb-8">
                         <div className="bg-white rounded">
                             <img
-                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure11.webp"
+                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/2/2-cropped.avif"
                                 alt="Ratiometric measurement construct schematic"
                                 className="w-full h-auto"
                             />
@@ -370,7 +362,7 @@ const PromoterLibraryConstruction = () => {
                         <b>7 correct constructs were obtained and verified by whole plasmid sequencing:</b>
                     </p>
 
-                    <ul className="list-disc list-inside space-y-1 text-gray-800 mb-10">
+                    <ul className="list-disc list-inside space-y-1 text-gray-800">
                         <li>pG2T_rLmACC, pG2T_rLmUBI and pG2T_rLmAUX</li>
                         <li>pG2T_rSpARF, pG2T_rSpPOL, pG2T_rSpUBI and pG2T_rSpWDP</li>
                     </ul>
@@ -382,13 +374,6 @@ const PromoterLibraryConstruction = () => {
                         building the Level 1 constructs.
                     </p>
 
-                </div>
-            </div>
-            <div
-                className="min-h-screen bg-white p-8 text-lg text-justify space-y-6"
-                style={{fontFamily: "Urbanist, sans-serif"}}
-            >
-                <div className="max-w-6xl mx-auto">
 
                     {/* === Section Header === */}
                     <h2
@@ -522,7 +507,7 @@ const PromoterLibraryConstruction = () => {
                     {/* === Table === */}
                     <div className="overflow-x-auto bg-gray-50 rounded-lg shadow-sm">
                         <table className="min-w-full border border-gray-200">
-                            <thead className="bg-green-100">
+                            <thead className="bg-[#6ca033]">
                             <tr>
                                 <th
                                     className="border border-gray-200 px-3 py-2 text-xs font-semibold text-gray-900 text-left"
@@ -714,7 +699,7 @@ const PromoterLibraryConstruction = () => {
 
                     {/* === Section Header === */}
                     <h1
-                        className="text-4xl font-bold mb-8 text-[#6ca033] text-center"
+                        className="text-4xl font-bold mb-8 text-[#6ca033] text-left"
                         style={{fontFamily: "Space Grotesk, sans-serif"}}
                     >
                         TESTING of Visual Testing Constructs
@@ -760,7 +745,7 @@ const PromoterLibraryConstruction = () => {
 
                     {/* === LEARNING Section === */}
                     <h2
-                        className="text-3xl font-bold mb-6 mt-12"
+                        className="text-3xl font-bold mb-6 mt-12 text-[#6ca033] "
                         style={{fontFamily: "Space Grotesk, sans-serif"}}
                     >
                         LEARNING from the Visual Testing Constructs Transformation
@@ -779,7 +764,7 @@ const PromoterLibraryConstruction = () => {
 
                     {/* === TESTING the Measurement Constructs === */}
                     <h2
-                        className="text-3xl font-bold mb-6 mt-12"
+                        className="text-3xl font-bold mb-6 mt-12  text-[#6ca033] "
                         style={{fontFamily: "Space Grotesk, sans-serif"}}
                     >
                         TESTING the Measurement Constructs Using Fluorescence
@@ -845,21 +830,10 @@ const PromoterLibraryConstruction = () => {
 
                     {/* === Figure Section === */}
                     <div className="flex flex-col items-center space-y-4">
-                        <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+                        <div className="flex flex-col md:flex-row justify-center items-center">
                             <img
-                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure15a.webp"
+                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/2/3-light.avif"
                                 alt="Wolffia globosa fluorescence test"
-                                className="rounded-full w-64 h-64 object-cover"
-                            />
-                            <img
-                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure15b.webp"
-                                alt="Lemna gibba fluorescence test"
-                                className="rounded-full w-64 h-64 object-cover"
-                            />
-                            <img
-                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure15c.webp"
-                                alt="Spirodela polyrhiza fluorescence test"
-                                className="rounded-full w-64 h-64 object-cover"
                             />
                         </div>
 
@@ -885,7 +859,7 @@ const PromoterLibraryConstruction = () => {
 
                     {/* === Learning Section === */}
                     <h2
-                        className="text-3xl font-bold mb-6 mt-12"
+                        className="text-3xl font-bold mb-6 mt-12 text-[#6ca033]"
                         style={{fontFamily: "Space Grotesk, sans-serif"}}
                     >
                         LEARNING from the 1st Iteration
@@ -899,7 +873,7 @@ const PromoterLibraryConstruction = () => {
                         >
                             professor Kan Wang
                         </a>, who shed light on our problem with low transformation efficiencies.
-                        We were using <b>old Agrobacterium pre-cultures</b> for inoculating the culture for
+                        We were using <b>old <em>Agrobacterium</em> pre-cultures</b> for inoculating the culture for
                         transformation which,
                         according to professor Wang, has <b>significant negative impact</b> on the transformation
                         efficiency.
@@ -957,14 +931,8 @@ const PromoterLibraryConstruction = () => {
                     <div className="flex flex-col items-center space-y-4 mt-10">
                         <div className="flex flex-col md:flex-row justify-center items-center gap-8">
                             <img
-                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure16a.webp"
+                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/2/4-light.avif"
                                 alt="Spirodela polyrhiza 7428 fluorescence with pAM0101"
-                                className="rounded-full w-64 h-64 object-cover"
-                            />
-                            <img
-                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure16b.webp"
-                                alt="Lemna gibba 7742 fluorescence with pAM0101"
-                                className="rounded-full w-64 h-64 object-cover"
                             />
                         </div>
 
@@ -988,14 +956,8 @@ const PromoterLibraryConstruction = () => {
                     <div className="flex flex-col items-center space-y-4 mt-12">
                         <div className="flex flex-col md:flex-row justify-center items-center gap-8">
                             <img
-                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure17a.webp"
+                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/2/5-light.avif"
                                 alt="Spirodela polyrhiza 7428 rZmUBI RFP signal"
-                                className="rounded-full w-64 h-64 object-cover"
-                            />
-                            <img
-                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure17b.webp"
-                                alt="Lemna gibba 7742 rZmUBI RFP signal"
-                                className="rounded-full w-64 h-64 object-cover"
                             />
                         </div>
 
@@ -1026,7 +988,7 @@ const PromoterLibraryConstruction = () => {
 
                     {/* === LEARNING from the 2nd Iteration === */}
                     <h2
-                        className="text-3xl font-bold mb-6 mt-12"
+                        className="text-3xl font-bold mb-6 mt-12 text-[#6ca033]"
                         style={{fontFamily: "Space Grotesk, sans-serif"}}
                     >
                         LEARNING from the 2nd Iteration
@@ -1087,7 +1049,7 @@ const PromoterLibraryConstruction = () => {
 
                     {/* === TESTING of Measurement Constructs === */}
                     <h2
-                        className="text-3xl font-bold mb-6 mt-12"
+                        className="text-3xl font-bold mb-6 mt-12 text-[#6ca033]"
                         style={{fontFamily: "Space Grotesk, sans-serif"}}
                     >
                         TESTING of our Measurement Constructs Using Quantitative PCR
@@ -1122,11 +1084,11 @@ const PromoterLibraryConstruction = () => {
                 <div className="max-w-6xl mx-auto">
 
                     {/* === Figure 18 === */}
-                    <div className="flex flex-col items-center space-y-4">
+                    <div className="flex flex-col items-center space-y-4 mb-12">
                         <img
-                            src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure18.webp"
+                            src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/2/6.avif"
                             alt="PCR verification of RFP and NPTII transcripts"
-                            className="rounded-lg w-full max-w-3xl shadow-md"
+                            className="rounded-lg w-full max-w-3xl"
                         />
                         <p
                             className="text-sm text-gray-600 text-center max-w-5xl mt-3"
@@ -1200,7 +1162,8 @@ const PromoterLibraryConstruction = () => {
                         at{" "}
                         <b>25 ng of RNA equivalent per reaction</b> and ranging down to 0.2 ng of RNA equivalent per
                         reaction.
-                        Reactions were performed in duplicates and the mean Cq parameter was used to evaluate the
+                        Reactions were performed in duplicates and the mean Cq (quantification cycle) parameter was used
+                        to evaluate the
                         optimal reaction
                         conditions. For both <em>S. polyrhiza</em> 7428 and <em>L. gibba</em> 7742 cDNA samples, the
                         best concentration
@@ -1235,7 +1198,7 @@ const PromoterLibraryConstruction = () => {
                     {/* === qPCR Program Table === */}
                     <div className="overflow-x-auto mt-8">
                         <table className="min-w-full border border-gray-300 text-center text-sm">
-                            <thead className="bg-[#e8f0ea] text-gray-900">
+                            <thead className="bg-[#6ca033] text-gray-900">
                             <tr>
                                 <th className="border border-gray-300 px-4 py-2 font-semibold">Step</th>
                                 <th className="border border-gray-300 px-4 py-2 font-semibold">Time</th>
@@ -1300,14 +1263,14 @@ const PromoterLibraryConstruction = () => {
                     <div className="flex flex-col items-center space-y-4 mt-10">
                         <div className="flex flex-col md:flex-row justify-center items-center gap-8">
                             <img
-                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure20a.webp"
+                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/2/7.avif"
                                 alt="RFP calibration curve"
-                                className="rounded-lg max-w-sm shadow-md"
+                                className="rounded-lg max-w-lg"
                             />
                             <img
-                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure20b.webp"
+                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/2/8.avif"
                                 alt="NPTII calibration curve"
-                                className="rounded-lg max-w-sm shadow-md"
+                                className="rounded-lg max-w-lg"
                             />
                         </div>
 
@@ -1323,7 +1286,7 @@ const PromoterLibraryConstruction = () => {
 
                     {/* === Equation Explanation === */}
                     <div className="text-center mt-10">
-                        <p className="italic mb-3">We can calculate the amplification efficiency of the reaction as:</p>
+                        <p className="mb-3">We can calculate the amplification efficiency of the reaction as:</p>
                         <p className="text-3xl font-semibold italic mb-4">
                             E = 10<sup>−1/b</sup>
                         </p>
@@ -1386,14 +1349,9 @@ const PromoterLibraryConstruction = () => {
                     <div className="flex flex-col items-center space-y-4 mt-10">
                         <div className="flex flex-col md:flex-row justify-center items-center gap-8">
                             <img
-                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure21a.webp"
+                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/2/9-cropped.avif"
                                 alt="RFP vs NPTII ratio in Spirodela polyrhiza"
-                                className="rounded-lg max-w-sm shadow-md"
-                            />
-                            <img
-                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure21b.webp"
-                                alt="RFP vs NPTII ratio in Lemna gibba"
-                                className="rounded-lg max-w-sm shadow-md"
+                                className="rounded-lg max-w-6xl"
                             />
                         </div>
 
@@ -1402,7 +1360,7 @@ const PromoterLibraryConstruction = () => {
                             style={{fontFamily: "Urbanist, sans-serif"}}
                         >
                             <strong>Figure 21.</strong> Ratio of NPTII and RFP transcript concentration in (A)
-                            <em>Spirodela polyrhiza 7428</em> and (B) <em>Lemna gibba 7742</em> transformed with our
+                            <em>Spirodela polyrhiza</em> 7428 and (B) <em>Lemna gibba</em> 7742 transformed with our
                             measurement constructs.
                             All samples were evaluated in duplicates and the mean Cq was used to calculate the
                             concentrations based on the
