@@ -626,7 +626,7 @@ const PredictorMain = () => {
 
                 {/* Three side-by-side clickable images */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                    <A href="/plant#harvesting" className="block group">
+                    <A href="/plant#limit_biomass" className="block group">
                         <img
                             src="https://static.igem.wiki/teams/5642/images/how/predictor/exp-lb.webp"
                             alt="limiting biomass"

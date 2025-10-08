@@ -19,6 +19,11 @@ export default function Page5() {
                 const el = document.getElementById("harvesting");
                 if (el) el.scrollIntoView({behavior: "smooth", block: "start"});
             }
+            if (e.detail === "limit_biomass") {
+                setOpen1(true);
+                const el = document.getElementById("limit_biomass");
+                if (el) el.scrollIntoView({behavior: "smooth", block: "start"});
+            }
         };
 
         window.addEventListener("openSection", openHandler as EventListener);
@@ -180,7 +185,7 @@ export default function Page5() {
                     <h2
                         className="font-bold text-2xl md:text-3xl"
                         style={{fontFamily: "Space Grotesk, sans-serif"}}
-                        id="harvesting"
+                        id="limit_biomass"
                     >
                         How we developed the <span className="underline">PREDICTOR</span>?
                     </h2>
@@ -241,9 +246,8 @@ export default function Page5() {
 
                             <div>
                                 <LimitingBiomassReduced/>
-
                                 <h1 className="text-4xl font-bold mb-12 text-gray-900 text-center "
-                                    style={{fontFamily: 'Space Grotesk, sans-serif'}}>
+                                 style={{fontFamily: 'Space Grotesk, sans-serif'}} id="harvesting">
                                     Harvesting Strategy Experiment
                                 </h1>
                                 <p>
@@ -254,7 +258,6 @@ export default function Page5() {
                                     confluence. The goal was to maintain the long-term sustainability of the duckweed
                                     culture.
                                 </p>
-
 
                                 <HarvestingStrategyReduced/>
                             </div>
