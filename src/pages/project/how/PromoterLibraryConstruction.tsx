@@ -802,7 +802,7 @@ const PromoterLibraryConstruction = () => {
                         <b>three duckweed species</b> to see whether our regulatory sequences drive
                         expression in multiple duckweed species. This is reasonable to assume for{" "}
                         <em>Spirodela</em> and <em>Lemna</em> species, as these are the ones that were
-                        included in our in silico identification of the regulatory sequences.
+                        included in our <em>in silico</em> identification of the regulatory sequences.
                         However, this may not be the case for <em>Wolffia</em>, <em>Wolffiella</em> or{" "}
                         <em>Landoltia</em>. Based on the results of{" "}
                         <A href="/plant#vacuum-testing" className="text-[#6ca033] hover:underline">
@@ -1442,7 +1442,7 @@ const PromoterLibraryConstruction = () => {
                     <p className="text-lg">
                         Furthermore, testing{" "}
                         <span className="font-bold">more regulatory parts</span> obtained from our{" "}
-                        <span className="italic">in silico</span> workflow could elucidate the parts
+                        <span className="italic"><em>in silico</em></span> workflow could elucidate the parts
                         that are actually able to drive strong protein expression in duckweed. With
                         our suggested workflow, researchers can easily isolate and characterize also{" "}
                         <span className="font-bold">terminator+3′UTR regulatory sequences</span> in
