@@ -136,7 +136,7 @@ const ContentPanel: React.FC<ContentPanelProps> = ({ currentYear }) => {
       };
     } else if (currentYear <= 2023) {
       return {
-        tagline: "15 MILLIONS",
+        tagline: "15 MILLION",
         headline: "hectares of Brazil's tropical savannas of Cerrado is lost",
         quote: "Since 2000, those savannas have been converted into soybean fields",
         author: "The expansion of soybean production",
