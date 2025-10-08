@@ -367,7 +367,7 @@ export default function RegenerationAssayPoster() {
         </div>
 
         {/* DBTL 2 Section */}
-        <div className="mb-12 mt-24">
+        <div className="mb-12 mt-24" id="dbtl-2">
           <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-4xl font-bold mb-6">DBTL 2</h2>
           
           <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of The Excision Assay</h3>

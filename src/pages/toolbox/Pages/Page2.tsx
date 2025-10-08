@@ -114,13 +114,26 @@ export default function Page2() {
                                 className="w-full object-contain"
                             />
                             <p className="text-base mt-2 text-justify text-gray-700">
-                                <span className="font-bold">Figure 3.</span> Co-transformation of <A className='hover:underline text-[#6ca033]' target="_blank" href="https://registry.igem.org/parts/bba-25460yvj">pIB005</A> and <A className='hover:underline text-[#6ca033]' target="_blank" href="https://registry.igem.org/parts/bba-25bd3z4p">pIB003 </A>
-                                results in
-                                randomly
-                                distributed spots of GFP fluorescence, confirming successful insertion of the construct
-                                into the
-                                nuclear
-                                genome facilitated by PONG transposase. The insertion was further confirmed by PCR (see Fig. 9).
+                                <p>
+                                    <strong>Figure 3.1</strong>
+                                    <span style={{ fontWeight: 400 }}> Co-transformation of </span>
+                                    <a className='hover:underline text-[#6ca033]' href="https://registry.igem.org/parts/bba-25460yvj">
+                                        <span style={{ fontWeight: 400 }}>pIB005</span>
+                                    </a>
+                                    <span style={{ fontWeight: 400 }}> (PING) and </span>
+                                    <a className='hover:underline text-[#6ca033]' href="https://registry.igem.org/parts/bba-25bd3z4p">
+                                        <span style={{ fontWeight: 400 }}>pIB003</span>
+                                    </a>
+                                    <span style={{ fontWeight: 400 }}>
+                                        {" "}
+                                        (PONG) results in randomly distributed spots of GFP fluorescence two to
+                                        three weeks after infiltration, suggesting a successful insertion of mPing
+                                        bordered cassette (GFP-p2a-NPTII) into the nuclear genome facilitated by
+                                        PONG transposase. The insertion was further confirmed by PCR (see Fig. 3.1
+                                        and Fig.9).
+                                    </span>
+                                    </p>
+
                             </p>
                         </div>
                     </div>
@@ -141,7 +154,31 @@ export default function Page2() {
                             to a new transformed generation of duckweeds. Our TAIFR method builds on the TATSI method
                             developed by Slotkin's Lab (1).
                         </p>
+
+                         <img className="mt-10" src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/taifr-pcr-simplified.webp" />
+                         <p className="text-base mt-2 text-justify text-gray-700">
+                            <p>
+                                <strong>Figure 3.2</strong>
+                                <span style={{ fontWeight: 400 }}> Genomic DNA isolated from </span>
+                                <em>
+                                    <span style={{ fontWeight: 400 }}>Spirodela polyrhiza 7428</span>
+                                </em>
+                                <span style={{ fontWeight: 400 }}>
+                                    {" "}
+                                    at 30 days post co-transformation with pIB005 and pIB003 was amplified using
+                                    primers o128 and o129, tested for the presence of GFP. It yielded the
+                                    expected 250 bp product in some samples (
+                                </span>
+                                <span style={{ fontWeight: 400 }}>read about PCR analysis below</span>
+                                <span style={{ fontWeight: 400 }}>).</span>
+                                </p>
+
+                            
+                            
+                            </p>                       
                     </div>
+
+                   
                 </div>
 
 
@@ -347,23 +384,27 @@ export default function Page2() {
 
                         {/* Figure description */}
                         <p className="text-base text-gray-800 text-justify">
-                            <strong>Figure 5.</strong> After three DBTL cycles of the “PING part”
-                            (mPing-bordered cargo rZmUBI-GFP-p2a-NPTII-t35S) of our TAIFR method,
-                            we built and tested a functional and user-friendly composite part,
-                            pIB005, which — compared to pIB001 and pIB002 — showed the greatest
-                            difference in fluorescence between groups of “non-shining” and
-                            “shining” duckweeds, normalized on each plate. However, the intensity
-                            of its fluorescence was approximately half of the positive control
-                            (pAMO101). We do not yet fully understand the reason for this, but a
-                            probable explanation is a difference in the plasmid backbone,
-                            resulting in a lower copy number of the binary vector in
-                            <em> Agrobacterium</em>, and consequently, a smaller amount of
-                            T-DNA transferred to duckweed. Nevertheless, the fluorescence of
-                            pIB005 is clearly visible and expressed as early as in the positive
-                            control. Combined with GFP being swappable as the CDS1 part (with no
-                            stop codon) and the excisability of the p2a-NPTII resistance marker
-                            via mutated lox71 and lox66 sites (not yet tested), this composite
-                            part represents a crucial element of our TAIFR method.
+                            <p>
+                                <strong>Figure 5.</strong>
+                                <span style={{ fontWeight: 400 }}>
+                                    {" "}
+                                    After three DBTL cycles of the “PING part” (mPing-bordered cargo
+                                    rZmUBI-GFP-p2a-NPTII-t35S) of our TAIFR method, we built and tested a
+                                    functional and user-friendly composite part, pIB005, which — compared to
+                                    pIB001 and pIB002 — showed the greatest difference in fluorescence between
+                                    groups of “non-shining” and “shining” duckweeds, compared to positive
+                                    control (pAMO101). Each transformation event consisted of two plates
+                                    representing biological replicates. To normalize background signal
+                                    differences between plates, two groups of fronds were selected from each:
+                                    one group showing no visible fluorescence, and a second group showing any
+                                    detectable fluorescence, if present. The fluorescence intensity
+                                    corresponding to pixels of each individual frond was quantified using the
+                                    ZEN Blue software. The graph displays the difference in mean fluorescence
+                                    intensity between the two groups, averaged across both biological replicates
+                                    for each treatment.
+                                </span>
+                                </p>
+
                         </p>
                         <img
                             src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/figure2.webp"
@@ -387,16 +428,54 @@ export default function Page2() {
                                     mPing-bordered translational unit into the duckweed nuclear genome (4).
                                 </p>
 
-                                <p className="text-base  text-gray-800 text-justify">
-                                    <strong>Figure 7.</strong> To determine the threshold concentration of
-                                    neomycin that would kill duckweeds, thus providing a selection
-                                    pressure for presence of mPing cargo (containing gene for NPTII),
-                                    we performed the neomycin test. Sensitivity tests on{" "}
-                                    <em>Spirodela polyrhiza</em> clones (162, 7428, and 9509) showed that
-                                    they are much more sensitive to synthetic form of neomycin (G418) than than to natural form of neomycin (sulphate), with all fronds
-                                    killed at ≥ 0.5 mg/L of G418 in all three clones. These tests were
-                                    performed twice, each time with three biological replicates.
-                                </p>
+
+
+                                        <p className="text-lg  text-justify text-gray-800 text-justify">
+                                        <strong>
+                                            To ensure that the PONG transposase is truly excising the mPing-bordered
+                                            cassette
+                                        </strong>
+                                        <span style={{ fontWeight: 400 }}>
+                                            {" "}
+                                            in the duckweed context, we performed an{" "}
+                                        </span>
+                                        <strong>Excision Assay</strong>
+                                        <span style={{ fontWeight: 400 }}>. In the assay, the full </span>
+                                        <strong>
+                                            mPing sequence is inserted within the yellow fluorescent protein (
+                                        </strong>
+                                        <span style={{ fontWeight: 400 }}>
+                                            YFP) reporter gene, disrupting its function and preventing fluorescence. If
+                                            the PONG transposase is active in duckweed, it will excise mPing, restoring
+                                            the intact YFP coding sequence. Successful excision therefore results in YFP
+                                            expression and detectable fluorescence under a microscope. The outcome can
+                                            also be{" "}
+                                        </span>
+                                        <strong>confirmed by PCR</strong>
+                                        <span style={{ fontWeight: 400 }}>
+                                            {" "}
+                                            on isolated T-DNA using primers at the 5′ and 3′ ends of YFP: a{" "}
+                                        </span>
+                                        <strong>band matching the YFP length</strong>
+                                        <span style={{ fontWeight: 400 }}> indicates excision, </span>
+                                        <strong>while a longer band</strong>
+                                        <span style={{ fontWeight: 400 }}>
+                                            {" "}
+                                            (YFP + mPing) indicates failure. We confirmed the activity of PONG by PCR
+                                            (<A className="hover:underline text-[#6ca033]" href="/project/how/taifr/overview#dbtl-2">see results here</A>). As there were{" "}
+                                        </span>
+                                        <strong>spots of GFP fluorescence visible only after the 12th dpi</strong>
+                                        <span style={{ fontWeight: 400 }}>
+                                            , we suspected that these were due to the insertion of the mPing-bordered
+                                            cassette (GFP-p2a-NPTII) by PONG, that activity we just confirmed. To
+                                            confirm this, we attempted regeneration using G418 (a synthetic form of
+                                            neomycin) and PCR.
+                                        </span>
+                                        </p>
+
+
+
+                                
 
                                 <img
                                     src="https://static.igem.wiki/teams/5642/images/toolbox/toolbox/figure16.webp"
@@ -418,6 +497,19 @@ export default function Page2() {
                                     by PCR testing.
                                 </p>
 
+                                <p className="text-lg  text-justify text-gray-800 text-justify"    >
+                                <strong>We already had three proofs</strong>
+                                <span style={{ fontWeight: 400 }}>
+                                    {" "}
+                                    (ability of PONG to excise, delayed and spotted fluorescence after
+                                    co-transformation and surviving on toxic neomycin concentration) that our
+                                    transposase assisted system can insert transgene into genome.{" "}
+                                </span>
+                                <strong>But we wanted to be truly sure.</strong>
+                                <span style={{ fontWeight: 400 }}> That why we proceed into PCR assay.</span>
+                                </p>
+
+
 
                             </div>
 
@@ -428,6 +520,17 @@ export default function Page2() {
                                     alt="G418 sensitivity chart"
                                     className="w-full object-contain"
                                 />
+
+                                <p className="text-base pt-4  text-gray-800 text-justify">
+                                    <strong>Figure 7.</strong> To determine the threshold concentration of
+                                    neomycin that would kill duckweeds, thus providing a selection
+                                    pressure for presence of mPing cargo (containing gene for NPTII),
+                                    we performed the neomycin test. Sensitivity tests on{" "}
+                                    <em>Spirodela polyrhiza</em> clones (162, 7428, and 9509) showed that
+                                    they are much more sensitive to synthetic form of neomycin (G418) than than to natural form of neomycin (sulphate), with all fronds
+                                    killed at ≥ 0.5 mg/L of G418 in all three clones. These tests were
+                                    performed twice, each time with three biological replicates.
+                                </p>
                             </div>
                         </div>
 
