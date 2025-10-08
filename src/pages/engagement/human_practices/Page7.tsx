@@ -110,6 +110,7 @@ export default function HumanPracticesPage7() {
                 </p>
 
                 {/* iGEM Marburg 2024 pill */}
+                <div id="marburg"></div>
                 <ExpandablePill
                     image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-5.webp"
                     name="iGEM Marburg 2024"
@@ -169,6 +170,7 @@ export default function HumanPracticesPage7() {
                 </ExpandablePill>
 
                 {/* Dr. Eric Yang pill */}
+                <div id="yang"></div>
                 <ExpandablePill
                     image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-6.webp"
                     name="Dr. Eric Yang"
@@ -227,6 +229,7 @@ export default function HumanPracticesPage7() {
             <div
                 className="max-w-6xl mx-auto bg-white text-gray-900 leading-relaxed p-8 font-[Urbanist,sans-serif] space-y-12">
                 {/* Dr. Veronika Jedličková */}
+                <div id="jedlickova"></div>
                 <ExpandablePill
                     image="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-9.webp"
                     name="Dr. Veronika Jedličková"
