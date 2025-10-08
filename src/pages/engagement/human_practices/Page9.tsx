@@ -99,45 +99,46 @@ export default function HumanPracticesPage9() {
                             CULTIVATOR.
                         </p>
 
-                        <div className="grid md:grid-cols-2 gap-8 items-center">
+                        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center text-lg leading-relaxed">
                             {/* Left column */}
                             <div className="space-y-4">
                                 <p>
                                     We showed him pictures of our system and he was pretty impressed! He liked all the
                                     features of automation and said{" "}
-                                    <span className="font-bold">the harvesting strategy is very clever. </span>
-                                    The only thing he was concerned about was mixing the medium in the individual trays,
-                                    as our current setup could disrupt duckweed layer on the which might hinder
-                                    duckweeds’ growth.
+                                    <span className="font-bold">the harvesting strategy is very clever.</span> The only
+                                    thing
+                                    he was concerned about was mixing the medium in the individual trays, as our current
+                                    setup
+                                    could disrupt the duckweed layer, which might hinder its growth.
                                 </p>
                                 <p>
                                     That’s why we{" "}
-                                    <span
-                                        className="font-bold">submerged our pipe-based harvesting under the surface. </span>
-                                    This way, duckweed won’t be harmed and can do what it is best at – grow extremely
+                                    <span className="font-bold">
+        submerged our pipe-based harvesting system under the surface.
+      </span>{" "}
+                                    This way, duckweed won’t be harmed and can do what it does best – grow extremely
                                     fast.
                                 </p>
                             </div>
 
-                            {/* Right column: image */}
+                            {/* Right column */}
                             <div className="space-y-4">
                                 <div className="flex justify-center">
                                     <img
                                         src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/9-4.webp"
-                                        alt="Call with prof. Marcel Jansen"
+                                        alt="Call with Prof. Marcel Jansen"
                                         className="rounded-2xl max-w-md"
                                     />
                                 </div>
                                 <p>
-                                    Professor was also excited about our{" "}
-                                    <span className="font-bold">photoresistor based system (PROBE)</span> for measuring
-                                    biomass
-                                    growth in real time.
+                                    The professor was also excited about our{" "}
+                                    <span className="font-bold">photoresistor-based system (PROBE)</span> for measuring
+                                    biomass growth in real time.
                                 </p>
                                 <p>
-                                    His sentence <span
-                                    className="font-bold">‘You’re probably onto a perfect setup…’ </span>
-                                    sticked with us and motivated us even further.
+                                    His sentence{" "}
+                                    <span className="font-bold">‘You’re probably onto a perfect setup…’</span>{" "}
+                                    stuck with us and motivated us even further.
                                 </p>
                             </div>
                         </div>

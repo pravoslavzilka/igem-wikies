@@ -67,7 +67,7 @@ export default function HumanPracticesPage6() {
                         </ul>
 
                         {/* Text + Greenhouse photo side by side */}
-                        <div className="grid md:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
+                        <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
                             {/* Left: Greenhouse photo */}
                             <div className="flex justify-center md:pr-6">
                                 <img
@@ -267,29 +267,32 @@ export default function HumanPracticesPage6() {
                         </p>
 
                         {/* Two-column layout with bullets + image + text */}
-                        <div className="grid md:grid-cols-2 gap-8 items-start">
+                        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
                             {/* Left column */}
                             <div className="space-y-4">
                                 <p>
-                                    <span className="font-bold">
-                                        Frond-mediated stable transformation{" "}
-                                    </span>
-                                    (<span className="italic">in planta</span> transformation and
-                                    subsequent regeneration into transgenic organism) reported in some
-                                    articles [12] does not work at all! (we were relying on these papers
-                                    quite heavily). The problems might be that:
+                                    <span className="font-bold">Frond-mediated stable transformation </span>
+                                    (<span className="italic">in planta</span> transformation and subsequent
+                                    regeneration into transgenic organism) reported in some articles [12] does
+                                    not work at all! (we were relying on these papers quite heavily). The
+                                    problems might be that:
                                 </p>
 
                                 <ul className="list-disc list-inside space-y-2">
                                     <li>
-                                        the T-DNA is <span
-                                        className="font-bold">not getting integrated into the genome. </span>
-                                        Long-lasting transient expression means that duckweed
-                                        (<span className="italic">Spirodela</span>) doesn’t have the typical
+                                        the T-DNA is{" "}
+                                        <span className="font-bold">
+          not getting integrated into the genome.{" "}
+        </span>
+                                        Long-lasting transient expression means that duckweed (
+                                        <span className="italic">Spirodela</span>) doesn’t have the typical
                                         RNAi-mediated silencing (read more in Arturo’s paper [13]).
                                     </li>
                                     <li>
-                                        calli transformation is <span className="font-bold">huge pain and lasts for too long </span>
+                                        calli transformation is{" "}
+                                        <span className="font-bold">
+          huge pain and lasts for too long{" "}
+        </span>
                                     </li>
                                 </ul>
                             </div>
@@ -308,12 +311,16 @@ export default function HumanPracticesPage6() {
                                     He also told us that
                                     <span className="font-bold"> some native duckweed promoters </span>
                                     would be a huge help for his research as the
-                                    <span className="font-bold"> conventional ones (35S) almost do not work </span>
-                                    and maize ubiquitin gives a somehow solid expression. And a fun fact,
-                                    they have <span className="font-bold">duckweed that flowers! </span>
+                                    <span className="font-bold">
+        {" "}
+                                        conventional ones (35S) almost do not work{" "}
+      </span>
+                                    and maize ubiquitin gives a somehow solid expression. And a fun fact, they
+                                    have <span className="font-bold">duckweed that flowers! </span>
                                 </p>
                             </div>
                         </div>
+
 
                         <p>
                             We agreed that <span className="font-bold">Arturo will send us protocols </span>

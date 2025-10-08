@@ -82,24 +82,30 @@ export default function HumanPracticesPage8() {
                         {/* Image beside bullet list */}
                         <div>
 
-                            <div className="grid md:grid-cols-2 gap-8 items-center">
+                            {/* First section */}
+                            <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center text-lg leading-relaxed">
+                                {/* Left column */}
                                 <div className="space-y-4">
-                                    <p>While watching the mesmerizing flow of duckweed inside the system we discussed
-                                        how to
-                                        make our own one even better:</p>
+                                    <p>
+                                        While watching the mesmerizing flow of duckweed inside the system, we discussed
+                                        how to make our own one even better:
+                                    </p>
                                     <ul className="list-disc pl-6 space-y-2">
-                                        <li>we can probably go as low as 5 centimeters with the water level in
-                                            individual
-                                            layers
+                                        <li>
+                                            we can probably go as low as 5 centimeters with the water level in
+                                            individual layers
                                         </li>
-                                        <li>their system is unnecessarily large which makes it hard to work with</li>
-                                        <li>we need to make sure that algae are not overgrowing in our setup, so we
-                                            should
-                                            make layers dark or at least avoid transparent materials
+                                        <li>
+                                            their system is unnecessarily large which makes it hard to work with
                                         </li>
-
+                                        <li>
+                                            we need to make sure that algae are not overgrowing in our setup, so we
+                                            should make layers dark or at least avoid transparent materials
+                                        </li>
                                     </ul>
                                 </div>
+
+                                {/* Right column */}
                                 <div className="flex justify-center">
                                     <img
                                         src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/8-2.webp"
@@ -109,7 +115,10 @@ export default function HumanPracticesPage8() {
                                 </div>
                             </div>
 
-                            <div className="grid md:grid-cols-2 gap-8 items-center">
+                            {/* Second section */}
+                            <div
+                                className="grid md:grid-cols-2 gap-12 md:gap-16 items-center text-lg leading-relaxed mt-12">
+                                {/* Left column (image) */}
                                 <div className="flex justify-center items-center">
                                     <img
                                         src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/8-3.webp"
@@ -117,28 +126,29 @@ export default function HumanPracticesPage8() {
                                         className="rounded-2xl max-w-md"
                                     />
                                 </div>
+
+                                {/* Right column (text) */}
                                 <div className="space-y-4">
                                     <ul className="list-disc pl-6 space-y-2">
                                         <li>
                                             <span className="font-bold">water should be ideally moving</span> to avoid
-                                            algae
-                                            growth and ensure even distribution of nutrients
+                                            algae growth and ensure even distribution of nutrients
                                         </li>
-                                        <li>they are adding nutrients only twice a month due to the laboriousness of the
+                                        <li>
+                                            they are adding nutrients only twice a month due to the laboriousness of the
                                             process. Ideally, we have nutrient levels constant throughout the whole
                                             cultivation
                                         </li>
-                                        <li>they are harvesting the whole system manually to about 80% of surface
-                                            coverage
-                                            but that is only an estimate. If we would be able to develop a system for
-                                            monitoring duckweed biomass and surface coverage in real time, that would be
-                                            a
-                                            huge help
+                                        <li>
+                                            they are harvesting the whole system manually to about 80% of surface
+                                            coverage but that is only an estimate. If we would be able to develop a
+                                            system for monitoring duckweed biomass and surface coverage in real time,
+                                            that would be a huge help
                                         </li>
                                     </ul>
                                 </div>
-
                             </div>
+
 
                         </div>
 

@@ -59,7 +59,8 @@ export default function HumanPracticesPage7() {
                         </p>
 
                         {/* Two-column layout: text + group photo */}
-                        <div className="grid md:grid-cols-2 gap-8 items-center">
+                        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+                            {/* Left column */}
                             <div className="space-y-4">
                                 <p>
                                     Professor Wang left us with a sentence: ‘Hacking duckweed is a very important and
@@ -74,6 +75,7 @@ export default function HumanPracticesPage7() {
                                 </p>
                             </div>
 
+                            {/* Right column */}
                             <div className="flex justify-center">
                                 <img
                                     src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-3.webp"
@@ -82,6 +84,7 @@ export default function HumanPracticesPage7() {
                                 />
                             </div>
                         </div>
+
                     </div>
                 </ExpandablePill>
             </div>
@@ -178,7 +181,7 @@ export default function HumanPracticesPage7() {
                     location="Synthetic Biology and Genetic Circuits"
                 >
                     {/* Text LEFT, selfie RIGHT */}
-                    <div>
+                    <div className="text-lg space-y-6">
                         <p>
                             Although Marburg workflow was very robust and user-friendly, they didn’t have
                             to face the problem of lack of transcriptomes available for one species. Therefore, we had
@@ -190,13 +193,14 @@ export default function HumanPracticesPage7() {
                         </p>
 
 
-                        <div className="grid md:grid-cols-2 gap-8 items-center text-lg leading-relaxed">
+                        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center text-lg leading-relaxed">
+                            {/* Left column */}
                             <div className="space-y-6">
                                 <p>
                                     He suggested to look only at the{" "}
                                     <span className="font-bold">highest expressings </span>
-                                    ones for each species in the orthogroup and then proceed with the workflow from
-                                    Marburg. He confirmed the strategy we wanted to pursue.
+                                    ones for each species in the orthogroup and then proceed with the workflow
+                                    from Marburg. He confirmed the strategy we wanted to pursue.
                                 </p>
 
                                 <p>
@@ -204,10 +208,9 @@ export default function HumanPracticesPage7() {
                                     <span className="font-bold">engineering problem, </span>
                                     as there are not precise workflows established in the promoter discovery.
                                 </p>
-
-
                             </div>
 
+                            {/* Right column */}
                             <div className="flex justify-center">
                                 <img
                                     src="https://static.igem.wiki/teams/5642/images/engagement/humanpractices/7-4.webp"
@@ -216,6 +219,7 @@ export default function HumanPracticesPage7() {
                                 />
                             </div>
                         </div>
+
 
                         <p>
                             If the promoter works, then great.{" "}
