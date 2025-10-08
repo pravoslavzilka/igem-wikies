@@ -1294,12 +1294,16 @@ const PromoterLibraryConstruction = () => {
                     {/* === Equation Explanation === */}
                     <div className="text-center mt-10">
                         <p className="mb-3">We can calculate the amplification efficiency of the reaction as:</p>
-                        <p className="text-3xl font-semibold italic mb-4">
-                            E = 10<sup>−1/b</sup>
-                        </p>
+                        <div className="bg-white rounded max-w-xs mx-auto">
+                            <img
+                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/2/equation-2.avif"
+                                alt="Testing construct schematic"
+                                className="w-full h-auto"
+                            />
+                        </div>
                     </div>
 
-                    <p className="leading-relaxed">
+                    <p className="leading-relaxed mt-3">
                         Where <em>b</em> is the slope of the line. The efficiencies are E = 2.56 for RFP and E = 2.45
                         for NPTII,
                         which means more than 100 % amplification efficiency for both reactions, suggesting formation of
