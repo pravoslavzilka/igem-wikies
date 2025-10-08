@@ -129,8 +129,8 @@ const PromoterLibrary = () => {
                             in
                             a scientific study [5].
                             It showed higher expression compared to the r35S promoter. In our consultation with
-                            Phyllocauticals, CTO
-                            Lynn Dyckey mentioned that they also use proprietary native duckweed promoters for
+                            Phylloceuticals, CTO
+                            Lynn Dickey mentioned that they also use proprietary native duckweed promoters for
                             recombinant
                             protein
                             expression.
@@ -154,14 +154,14 @@ const PromoterLibrary = () => {
 
                         <p className="text-md leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
                             Construction of duckweed promoter library required two crucial steps:
-                            <b> in silico identification </b>of
+                            <b> <em>in silico</em> identification </b>of
                             suitable promoter sequences and their subsequent <b>characterization</b> in duckweed.
                         </p>
                     </div>
 
 
-                    <h1 className="text-4xl font-bold mb-4 mt-10" style={{fontFamily: "Space Grotesk, sans-serif"}}>In
-                        Silico Promoter Identification</h1>
+                    <h1 className="text-4xl font-bold mb-4 mt-10" style={{fontFamily: "Space Grotesk, sans-serif"}}><em>In
+                        Silico</em> Promoter Identification</h1>
                     <p className="leading-relaxed" style={{fontFamily: "Urbanist, sans-serif"}}>Initially, we tried to
                         develop our own workflow for identification of highly expressed genes and their promoters in
                         multiple duckweed species. We successfully identified the highest expressing genes and extracted
@@ -171,7 +171,7 @@ const PromoterLibrary = () => {
                         However, we were not successful so we needed to refine our workflow. After extensive literature
                         research and consultations with{" "}
                         <A className="hover:underline text-[#6ca033]" href="/human-practices#jedlickova">
-                            Dr. Veronika Jedlíčková
+                            Dr. Veronika Jedličková
                         </A>,{" "}
                         <A className="hover:underline text-[#6ca033]" href="/human-practices#marburg">
                             iGEM Marburg 2024
@@ -181,7 +181,7 @@ const PromoterLibrary = () => {
                             Dr. Eric Yang,
                         </A>
 
-                        we discovered that we made several mistakes in our in silico workflow, for example not including
+                        we discovered that we made several mistakes in our <em>in silico</em> workflow, for example not including
                         MoClo compatibility filtering but most importantly, not comparing data across different
                         transcriptomes.
                         We implemented the feedback we received and proceeded with the workflow we are presenting. You

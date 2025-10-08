@@ -634,7 +634,7 @@ const PredictorMain = () => {
                         />
                     </A>
 
-                    <A href="/plant#harvesting" className="block group">
+                    <A href="/plant#harvesting-experiment" className="block group">
                         <img
                             src="https://static.igem.wiki/teams/5642/images/how/predictor/exp-hs.webp"
                             alt="harvesting strategy"

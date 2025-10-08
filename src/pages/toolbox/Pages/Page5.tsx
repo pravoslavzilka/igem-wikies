@@ -10,14 +10,29 @@ export default function Page5() {
     const [open1, setOpen1] = useState(false);
     const [open2, setOpen2] = useState(false);
     const [open3, setOpen3] = useState(false);
+
+
+    const [pendingScroll, setPendingScroll] = useState<string | null>(null);
+    useEffect(() => {
+        if (open1 && pendingScroll) {
+            const el = document.getElementById(pendingScroll);
+            if (el) {
+                el.scrollIntoView({behavior: "smooth", block: "start"});
+            }
+            setPendingScroll(null); // clear
+        }
+    }, [open1, pendingScroll]);
+
     useEffect(() => {
         // Listen for custom event from main page
         const openHandler = (e: CustomEvent) => {
-
             if (e.detail === "harvesting") {
                 setOpen1(true);
-                const el = document.getElementById("harvesting");
-                if (el) el.scrollIntoView({behavior: "smooth", block: "start"});
+                setPendingScroll("harvesting");
+            }
+            if (e.detail === "harvesting-experiment") {
+                setOpen1(true);
+                setPendingScroll("harvesting-experiment");
             }
             if (e.detail === "limit_biomass") {
                 setOpen1(true);
@@ -247,12 +262,14 @@ export default function Page5() {
                             <div>
                                 <LimitingBiomassReduced/>
                                 <h1 className="text-4xl font-bold mb-12 text-gray-900 text-center "
-                                 style={{fontFamily: 'Space Grotesk, sans-serif'}} id="harvesting">
+                                    id="harvesting-experiment"
+                                    style={{fontFamily: 'Space Grotesk, sans-serif'}}>
                                     Harvesting Strategy Experiment
                                 </h1>
                                 <p>
                                     The second set of experiments aimed to determine optimal harvesting strategies by
-                                    testing different <b>harvesting frequencies and ratios</b> to identify which combination
+                                    testing different <b>harvesting frequencies and ratios</b> to identify which
+                                    combination
                                     resulted in the highest biomass yield, as duckweed grows fastest at a specific
                                     surface
                                     confluence. The goal was to maintain the long-term sustainability of the duckweed
