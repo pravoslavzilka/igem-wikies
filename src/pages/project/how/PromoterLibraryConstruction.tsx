@@ -1343,6 +1343,75 @@ const PromoterLibraryConstruction = () => {
 
                 </div>
             </div>
+            <div
+                className="min-h-screen bg-white p-8 text-lg text-justify space-y-6"
+                style={{fontFamily: "Urbanist, sans-serif"}}
+            >
+                <div className="max-w-6xl mx-auto">
+
+                    {/* === Transcriptional Level Evaluation === */}
+                    <h2
+                        className="text-3xl font-bold mb-6 mt-12"
+                        style={{fontFamily: "Space Grotesk, sans-serif"}}
+                    >
+                        Transcriptional Level Evaluation
+                    </h2>
+
+                    <p className="leading-relaxed mb-4">
+                        Despite non-ideal results from our standard curves preparation, we moved to attempting to
+                        evaluate the
+                        level of transcription. We used the same reaction conditions as previously for the reactions
+                        with cDNA
+                        templates and concentration of 25 ng for both <em>Spirodela polyrhiza</em> 7428 and
+                        <em> Lemna gibba</em> 7742 transformed with our measurement constructs.
+                    </p>
+
+                    <p className="leading-relaxed mb-4">
+                        Based on the standard curves for both RFP and NPTII, we calculated initial concentrations of
+                        both transcripts
+                        in the cDNA samples and also calculated the ratio between the RFP and NPTII transcripts.
+                        This is how we technically calculated how many times stronger the tested promoter + 5′ UTR was
+                        than rNOS.
+                    </p>
+
+                    <p className="leading-relaxed mb-4">
+                        Or we should rather say weaker. To our surprise, for all the tested samples, NPTII concentration
+                        was higher
+                        than that of RFP. This confirmed the visual observation of stronger NPTII bands when conducting
+                        the regular PCR
+                        (see Figure 18). For the detailed results, see Figure 21.
+                    </p>
+
+                    {/* === Figure 21 === */}
+                    <div className="flex flex-col items-center space-y-4 mt-10">
+                        <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+                            <img
+                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure21a.webp"
+                                alt="RFP vs NPTII ratio in Spirodela polyrhiza"
+                                className="rounded-lg max-w-sm shadow-md"
+                            />
+                            <img
+                                src="https://static.igem.wiki/teams/5642/images/toolbox/promoterssilico/figure21b.webp"
+                                alt="RFP vs NPTII ratio in Lemna gibba"
+                                className="rounded-lg max-w-sm shadow-md"
+                            />
+                        </div>
+
+                        <p
+                            className="text-sm text-gray-600 text-center max-w-4xl mt-3"
+                            style={{fontFamily: "Urbanist, sans-serif"}}
+                        >
+                            <strong>Figure 21.</strong> Ratio of NPTII and RFP transcript concentration in (A)
+                            <em>Spirodela polyrhiza 7428</em> and (B) <em>Lemna gibba 7742</em> transformed with our
+                            measurement constructs.
+                            All samples were evaluated in duplicates and the mean Cq was used to calculate the
+                            concentrations based on the
+                            standard curves in Figure 20.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
 
         </div>
     );
