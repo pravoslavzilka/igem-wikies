@@ -23,8 +23,8 @@ export const pagesData: PageData[] = [
     beforeDescription: "to get a stable line of transgenic duckweed",
     beforeDetails: "Duckweed genetic engineering is painfully slow, laborious and unpredictable.",
     afterTime: "1 month",
-    afterDescription: "transposase-assisted insertion & frond regeneration",
-    afterDetails: "Our method for 5× faster genetic engineering of duckweed.",
+    afterDescription: "transposase-assisted insertion",
+    afterDetails: "Our method aims for 5× faster genetic engineering of duckweed.",
     bgColor: "#F5F5F5",
     accentColor: "#779E45"
   },
