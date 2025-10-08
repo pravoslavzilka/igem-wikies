@@ -80,13 +80,6 @@ const DuckweedSafety = () => {
       </div>
 
 
-      
-      {/* Footer Reference */}
-      <div className="mt-6 pt-4 border-t border-gray-200">
-        <p className="text-sm text-gray-500" style={{fontFamily: 'Urbanist, sans-serif'}}>
-          [1] Reference citation placeholder
-        </p>
-      </div>
 
       {/* CRISPR Section */}
       <div className="mt-12 mb-8">
