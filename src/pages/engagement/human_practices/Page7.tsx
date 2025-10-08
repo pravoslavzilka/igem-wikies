@@ -32,7 +32,7 @@ export default function HumanPracticesPage7() {
                     location="Plant Transformation and Genome Editing"
                     defaultOpen={true}
                 >
-                    <div className="leading-relaxed text-lg space-y-6">
+                    <div className="leading-relaxed text-lg space-y-6" id="prof-wang">
                         <p>
                             We were lucky enough to sneak in to the lecture that{" "}
                             <span className="font-bold">professor Wang </span>

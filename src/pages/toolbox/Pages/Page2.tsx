@@ -43,19 +43,19 @@ export default function Page2() {
 
                 {/* Intro paragraph */}
                 <p className="text-justify text-lg">
-                    Generating stable transgenic lines remains a laborious, time-consuming, and often unpredictable
-                    process.
+                    Generating duckweed stable transgenic lines remains <A className='hover:underline text-[#6ca033]' href="/human-practices#julia-eva-fortmueller">a laborious, time-consuming, and often unpredictable
+                    process </A>.
                     Moreover, several duckweed species have not yet been successfully transformed, and most available
                     genetic
-                    parts are designed primarily for dicotyledonous plants, thus rendering them ineffective in
+                    parts are designed primarily for dicotyledonous plants, <A className='hover:underline text-[#6ca033]' href="/human-practices#arturo">thus rendering them ineffective in
                     duckweeds, as
-                    monocot plants. To address this limitation, we developed a specialized part collection containing
+                    monocot plants </A>. To address this limitation, we developed a specialized part collection containing
                     constructs
                     for strong transient expression within a week, inserting transgene within two to three weeks, under
                     unsterile
-                    conditions using our customizable{" "}
-                    <span className="font-bold ">PING/PONG TAIFR system</span>. This toolkit also includes
-                    user-friendly <span className="font-bold">CRISPR/Cas9 knock-out components</span>.
+                    conditions using <A className='hover:underline text-[#6ca033]' href="#how-to-use-taifr">our customizable{" "}
+                    <span className="font-bold ">PING/PONG TAIFR system</span></A>. This toolkit also includes
+                    <A className='hover:underline text-[#6ca033]' href="#crispr"> user-friendly <span className="font-bold">CRISPR/Cas9 knock-out components</span></A>.
                 </p>
             </div>
             <div
@@ -99,11 +99,11 @@ export default function Page2() {
                             TAIFR method —{" "}
                             the <span className="font-bold ">transposase-assisted insertion</span> of a
                             transgene into
-                            the duckweed genome directly in the frond (see Fig. xy, and results here). However, we did
+                            the duckweed genome directly in the frond (see Fig. 3, and results below). However, we did
                             not succeed with
                             the second part — frond regeneration. Although we have identified a probable solution for
-                            frond
-                            regeneration (see here), we are not including this step in our current workflow for{" "}
+                            <b> frond
+                            regeneration </b>(<A className='hover:underline text-[#6ca033]' href="/project/how/taifr/overview#what-are-we-going-to-do">see here</A>), we are not including this step in our current workflow for{" "}
                             <span className="font-bold">rapid transient genetic engineering of duckweed</span>.
                         </p>
                         {/* Second image */}
@@ -113,14 +113,14 @@ export default function Page2() {
                                 alt="TAIFR co-transformation results"
                                 className="w-full object-contain"
                             />
-                            <p className="text-sm italic mt-2 text-center text-gray-700">
-                                <span className="font-bold">Figure 2.</span> Co-transformation of pIB005 and pIB003
+                            <p className="text-base mt-2 text-justify text-gray-700">
+                                <span className="font-bold">Figure 3.</span> Co-transformation of <A className='hover:underline text-[#6ca033]' target="_blank" href="https://registry.igem.org/parts/bba-25460yvj">pIB005</A> and <A className='hover:underline text-[#6ca033]' target="_blank" href="https://registry.igem.org/parts/bba-25bd3z4p">pIB003 </A>
                                 results in
                                 randomly
                                 distributed spots of GFP fluorescence, confirming successful insertion of the construct
                                 into the
                                 nuclear
-                                genome facilitated by PONG transposase.
+                                genome facilitated by PONG transposase. The insertion was further confirmed by PCR (see Fig. 9).
                             </p>
                         </div>
                     </div>
@@ -132,8 +132,8 @@ export default function Page2() {
                             alt="TAIFR transposase method diagram"
                             className="w-full object-contain"
                         />
-                        <p className="text-sm italic mt-2 text-center text-gray-700">
-                            <span className="font-bold">Figure 1.</span> TAIFR is a system that uses PONG transposase to
+                        <p className="text-base mt-2 text-justify text-gray-700">
+                            <span className="font-bold">Figure 2.</span> TAIFR is a system that uses PONG transposase to
                             deliver the gene of interest (GOI) into a duckweed nucleus. The GOI is flanked by two halves
                             of PONG’s target – the mPing transposon. PONG cleaves this construct, performs a
                             double-strand break (DSB) in the genomic DNA, and inserts the construct into this site.
@@ -173,21 +173,21 @@ export default function Page2() {
                     <div className="justify-center">
                         <div className="grid md:grid-cols-[2fr_1fr] gap-10 items-start">
                             {/* === LEFT: TEXT === */}
-                            <div className="space-y-4 text-base md:text-lg">
+                            <div className="space-y-4 text-base md:text-lg text-justify">
                                 <ol className="list-decimal list-inside space-y-3">
                                     <li>
                                         Amplify or synthesize your target coding sequence so that its ends
                                         contain restriction sites enabling cleavage by <strong>Esp3I</strong>,
                                         which will result in an <strong>AATG</strong> overhang on the 5′ end
                                         and a <strong>TTCG</strong> overhang on the 3′ end. See these overhangs
-                                        in Fig. Xy.
+                                        in Fig. 4.
                                     </li>
                                     <li>
                                         Digest and ligate your sequence with our composite part{" "}
                                         <strong>pIB005</strong> using the <strong>Esp3I enzyme</strong> and
                                         transform the reaction into competent <em>E. coli</em> cells.
                                         Incubate overnight, prepare overnight cultures, and isolate plasmids
-                                        using conventional protocols. See Fig. Xy for the exact digestion
+                                        using conventional protocols. See Fig. 4 for the exact digestion
                                         protocol.
                                     </li>
                                 </ol>
@@ -208,19 +208,19 @@ export default function Page2() {
                                         <strong>pIB003</strong> construct into electropotent{" "}
                                         <em>Agrobacterium</em> cells using our{" "}
                                         <u>
-                                            <A href="/toolbox/agrobacterium-mediated-transformation-protocol/">
+                                            <A className='hover:underline text-[#6ca033]' href="/toolbox/agrobacterium-mediated-transformation-protocol/">
                                                 Electroporation Protocol
                                             </A></u>.
                                     </li>
                                     <li>
-                                        Select positive <em>Agrobacterium</em> colonies using primers o160 and
-                                        o161 for all three constructs. Inoculate a pre-culture, prepare
+                                        Select positive <em>Agrobacterium</em> colonies using primers <A className='hover:underline text-[#6ca033]' href="http://localhost:5173/toolbox/programmable-duckweed/part-collection#primer-database">o160 and
+                                        o161 </A>  for all three constructs. Inoculate a pre-culture, prepare
                                         glycerol stocks, and establish a main culture.
                                     </li>
                                     <li>
                                         Depending on your desired outcome and using{" "}
                                         <u>
-                                            <A href="/toolbox/programable-duckweed-protocol/">
+                                            <A className='hover:underline text-[#6ca033]' href="#transformation-section">
                                                 Duckweed Transformation Protocol
                                             </A></u>, transform duckweed with{" "}
                                         <em>Agrobacterium</em> containing:
@@ -255,7 +255,7 @@ export default function Page2() {
                                                 <ul className="list-disc list-inside ml-6 mt-1">
                                                     <li>
                                                         Wait about 12 days for PONG transposase from pIB003 to excise
-                                                        and move the mPing cassette into the nuclear genome.
+                                                        and move the mPing cassette into the nuclear genome. Check for red fluorescence (excitation at 587 nm) as a marker of PONG expression.
                                                     </li>
                                                 </ul>
                                             </li>
@@ -272,8 +272,8 @@ export default function Page2() {
                                     alt="pIB003 diagram 1"
                                     className="w-full max-w-xs object-contain"
                                 />
-                                <p className="text-sm italic text-center  max-w-xs text-gray-700">
-                                    <strong>Figure 1.</strong> End sequences your gene of interest must have to be
+                                <p className="text-base  text-justify  max-w-xs text-gray-700">
+                                    <strong>Figure 4.</strong> End sequences your gene of interest must have to be
                                     swappable with GFP in our pIB005 construct (1). Green codon (ATG) represent start
                                     codon of your gene. The simplified protocol for digestion and ligation of your gene
                                     into pIB005 (2).
@@ -328,8 +328,8 @@ export default function Page2() {
                             We performed four and half DBTL cycles to enable fast and
                             user-friendly genetic engineering of duckweed (
                             <A
-                                href="#"
-                                className="underline text-gray-800 hover:text-gray-600"
+                                href="/engineering"
+                                className='hover:underline text-[#6ca033]'
                             >
                                 read more here
                             </A>
@@ -346,8 +346,8 @@ export default function Page2() {
                         </div>
 
                         {/* Figure description */}
-                        <p className="text-sm italic text-gray-800 text-justify">
-                            <strong>Figure 1.</strong> After three DBTL cycles of the “PING part”
+                        <p className="text-base text-gray-800 text-justify">
+                            <strong>Figure 5.</strong> After three DBTL cycles of the “PING part”
                             (mPing-bordered cargo rZmUBI-GFP-p2a-NPTII-t35S) of our TAIFR method,
                             we built and tested a functional and user-friendly composite part,
                             pIB005, which — compared to pIB001 and pIB002 — showed the greatest
@@ -376,8 +376,8 @@ export default function Page2() {
                             <div className="flex flex-col items-center space-y-4">
 
 
-                                <p className="text-sm italic text-gray-800 text-justify">
-                                    <strong>Figure 2.</strong> Transformation of pIB005 (mPing-bordered
+                                <p className="text-base  text-gray-800 text-justify">
+                                    <strong>Figure 6.</strong> Transformation of pIB005 (mPing-bordered
                                     rZmUBI-GFP-p2a-NPTII-t35S) into wild-type{" "}
                                     <em>Spirodela polyrhiza 7428</em> (1) results in transient expression
                                     of GFP (2). Co-transformation with pIB003 (PONG transposase) leads to
@@ -387,13 +387,13 @@ export default function Page2() {
                                     mPing-bordered translational unit into the duckweed nuclear genome (4).
                                 </p>
 
-                                <p className="text-sm italic text-gray-800 text-justify">
-                                    <strong>Figure 3.</strong> To determine the threshold concentration of
+                                <p className="text-base  text-gray-800 text-justify">
+                                    <strong>Figure 7.</strong> To determine the threshold concentration of
                                     neomycin that would kill duckweeds, thus providing a selection
                                     pressure for presence of mPing cargo (containing gene for NPTII),
                                     we performed the neomycin test. Sensitivity tests on{" "}
                                     <em>Spirodela polyrhiza</em> clones (162, 7428, and 9509) showed that
-                                    they are much more sensitive to G418 than expected, with all fronds
+                                    they are much more sensitive to synthetic form of neomycin (G418) than than to natural form of neomycin (sulphate), with all fronds
                                     killed at ≥ 0.5 mg/L of G418 in all three clones. These tests were
                                     performed twice, each time with three biological replicates.
                                 </p>
@@ -403,8 +403,8 @@ export default function Page2() {
                                     alt="figure 4 part 1"
                                     className="w-full md:w-5/6 object-contain mb-3"
                                 />
-                                <p className="text-sm italic text-gray-800 text-justify">
-                                    <strong>Figure 4.</strong> Fronds of
+                                <p className="text-base  text-gray-800 text-justify">
+                                    <strong>Figure 8.</strong> Fronds of
                                     <em> Spirodela polyrhiza 7428 (Sp7428)</em> were co-transformed with two{" "}
                                     <em>Agrobacterium</em> cultures: one carrying pIB005 (mPing-bordered{" "}
                                     GFP-p2a-NPTII unit) and the other carrying pIB003 (PONG transposase).
@@ -412,7 +412,7 @@ export default function Page2() {
                                     transformed fronds were transferred
                                     to medium containing 5 mg/L G418 – ten times higher than the tolerance threshold
                                     of Sp7428 (0.5 mg/L).
-                                    Transformed fronds survived, while controls died within 24 days. Some
+                                    Transformed fronds survived, while controls died within 12 days. Some
                                     transformed daughter fronds remained
                                     healthy yet smaller, indicating potential stable integration – confirmed later
                                     by PCR testing.
@@ -440,8 +440,8 @@ export default function Page2() {
                                     alt="figure 4 part 2"
                                     className="w-full md:w-5/6 object-contain mb-3"
                                 />
-                                <p className="text-sm italic text-gray-800 text-justify max-w-[90%]">
-                                    <strong>Figure 5.</strong> Genomic DNA isolated from <em>Spirodela polyrhiza
+                                <p className="text-base  text-gray-800 text-justify max-w-[90%]">
+                                    <strong>Figure 9.</strong> Genomic DNA isolated from <em>Spirodela polyrhiza
                                     7428</em> at 30 days post
                                     co-transformation with pIB005 and pIB003 (iteration RA4.1) was separated on a
                                     gel to avoid conceivable{" "}
@@ -483,9 +483,9 @@ export default function Page2() {
                             <strong>hormones and their combinations</strong>, but due to a flaw in the
                             transformation process, those results were lost. On our{" "}
                             <strong>Engineering page</strong>, we propose{" "}
-                            <strong>future strategies</strong> to complete the development of the{" "}
+                            <strong><A className='hover:underline text-[#6ca033]' href="http://localhost:5173/project/how/taifr/overview#what-are-we-going-to-do">future strategies</A></strong> to complete the development of the{" "}
                             <strong>TAIFR method</strong>, which we — or any future iGEM team — can
-                            pursue (see more here).
+                            pursue.
                         </p>
                     </div>
                 )}

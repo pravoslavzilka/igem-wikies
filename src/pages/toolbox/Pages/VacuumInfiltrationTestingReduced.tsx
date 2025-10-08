@@ -1,4 +1,5 @@
 import React from 'react';
+import A from "../../../A.tsx";
 
 
 export default function VacuumInfiltrationTestingReduced() {
@@ -12,7 +13,7 @@ export default function VacuumInfiltrationTestingReduced() {
                 <p className="mb-4">
                     Testing infiltration conditions was crucial for achieving transient transformation efficiency in
                     our <span className="font-medium">Regeneration Assay</span>.
-                    We had a protocol from the <strong>Ordoñez Lab (1)</strong>, developed for <em>Spirodela</em>. Since
+                    We had a protocol from the <strong>Ordoñez Lab (2)</strong>, developed for <em>Spirodela</em>. Since
                     our work also included <em>Lemna</em>, <em>Wolffia</em>,
                     and <em>Wolffiella</em> species, we sought to apply it to a broader range of duckweed species and
                     clones. Because we
@@ -30,33 +31,19 @@ export default function VacuumInfiltrationTestingReduced() {
             </div>
 
             {/* Figure 1 and Protocol Callout */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
-                <div className="col-span-2">
-                    <div className="border-2 border-gray-300 rounded-lg p-4 bg-gray-50">
-                        <div className="w-full  h-64  rounded overflow-hidden">
-                            <img
-                                src="https://static.igem.wiki/teams/5642/images/toolbox/vacumtesting/duckweed-08365-min.webp"
-                                alt="In vitro calli of Spirodela polyrhiza 162 expressing RUBY"
-                                className=" object-cover"/>
-                        </div>
-                        <div className="mt-4 bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-lg">
-                            <h3 className="font-['Space_Grotesk'] font-bold text-lg text-blue-800 mb-2">
-                                Look at our simplified duckweed transformation protocol for transient expression!
-                            </h3>
-                        </div>
-                    </div>
-                </div>
+            <div className="flex grid-cols-1 md:grid-cols-4 gap-4 items-center">
+                
 
                 <div className="col-span-2">
-                    <div className="border-2 border-gray-300 rounded-lg p-4 bg-gray-50">
-                        <div className="w-full  h-64  rounded overflow-hidden">
+                    <div className="border-2 border-gray-300  p-4 bg-gray-50">
+                        <div className="w-full  h-[450px]  rounded overflow-hidden">
                             <img
                                 src="https://static.igem.wiki/teams/5642/images/toolbox/vacumtesting/vacuum-pics-copy-2.webp"
                                 alt="In vitro calli of Spirodela polyrhiza 162 expressing RUBY"
                                 className=" object-cover"/>
                         </div>
                         <p className="text-md mt-4 text-gray-600">
-                            <strong>Figure 1.</strong> An example of stable expression of RUBY resulting in red coloring
+                            <strong>Figure 10.</strong> An example of stable expression of RUBY resulting in red coloring
                             from betalain in calli of <em>Spirodela polyrhiza</em> 162
                         </p>
                     </div>
@@ -87,9 +74,9 @@ export default function VacuumInfiltrationTestingReduced() {
                     As genotypes vary in susceptibility, we tested <strong>12 duckweed clones</strong> deposited to us
                     by <strong>Dr. Morello from IBBA
                     BioBank</strong>, our enablement partner. <strong>Clones at our collection:</strong> <em>Spirodela
-                    polyrhiza</em> 162, <em>Spirodela polyrhiza</em> 7498,
-                    <em>Spirodela polyrhiza</em> 9509, <em>Lemna minor</em> 5500, <em>Lemna minor</em> 5930, <em>Lemna
-                    minor</em> 8623´, <em>Lemna japonica</em> 8627, <em>Lemna
+                    polyrhiza</em> 162, <em>Spirodela polyrhiza</em> 7428, 
+                    <em> Spirodela polyrhiza</em> 9509, <em>Lemna minor</em> 5500, <em>Lemna minor</em> 5930, <em>Lemna
+                    minor</em> 8623, <em>Lemna japonica</em> 8627, <em>Lemna
                     gibba</em> 7742, <em>Lemna obscura</em> 9342, <em>Lemna valdiviana</em> 9382, <em>Wolffia
                     globosa</em> 9527, <em>Wolffia hyalina</em> 9525
                 </p>
@@ -135,7 +122,7 @@ export default function VacuumInfiltrationTestingReduced() {
                     ability of strains to infect different duckweed
                     clones. All <em>Agrobacterium</em> strains successfully transiently transformed duckweed
                     clones <strong>Sp7428, Sp9509, Sp162,
-                    Lg7742, and Wg9522</strong> (confirmed visually by the red appearance of fronds caused by RUBY),
+                    Lg7742, and Wg9522</strong> (confirmed visually by the red appearance of fronds caused by expression of RUBY),
                     with the highest
                     transformation efficiency observed in <strong>Sp7428</strong>.
                 </p>
@@ -167,8 +154,8 @@ export default function VacuumInfiltrationTestingReduced() {
                          className=" object-cover col-span-5 md:h-64"/>
 
                     <div className='col-span-2'>
-                        <p className="text-sm text-gray-600">
-                            <strong>Figure 2.</strong> Transient transformation of <em>Lemna gibba</em> 7742 by AtEHA105
+                        <p className="text-base text-gray-600">
+                            <strong>Figure 11.</strong> Transient transformation of <em>Lemna gibba</em> 7742 by AtEHA105
                             with
                             the pAMO052 construct (rZmUBI-RUBY) resulted in RUBY being expressed in
                             some fronds after 5 minutes of vacuuming followed by co-cultivation
@@ -201,7 +188,7 @@ export default function VacuumInfiltrationTestingReduced() {
                     could not identify
                     the reasons for the drop in transformation efficiency (basically from <strong>90% to almost
                     0%</strong>) until we met <strong>Prof.
-                    Wang</strong> (read more on the Human Practices page).
+                    Wang</strong> (<A className='hover:underline text-[#6ca033]' href="/human-practices#prof-wang">read more on the Human Practices page</A>).
                 </p>
                 <p className="mb-4">
                     We were then strongly advised to <strong>create multiple glycerol stocks</strong> from
@@ -226,8 +213,8 @@ export default function VacuumInfiltrationTestingReduced() {
                          className=" object-cover col-span-5 md:h-64"/>
 
                     <div className='col-span-2'>
-                        <p className="text-sm text-gray-600">
-                            <strong>Figure 3.</strong> Transient expression of GFP driven by the pAMO101 construct
+                        <p className="text-base text-justify text-gray-600">
+                            <strong>Figure 12.</strong> Transient expression of GFP driven by the pAMO101 construct
                             (rZmUBI-GFP) in <em>Spirodela polyrhiza</em> 7428 decreased from 90% efficiency
                             (1) using <em>Agrobacterium</em> culture created from glycerol stock, to 10%
                             (2) when using the same culture kept for a week at 4 °C for inoculation of
