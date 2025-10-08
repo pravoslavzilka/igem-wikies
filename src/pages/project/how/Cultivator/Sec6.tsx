@@ -1,3 +1,5 @@
+import A from "../../../../A.tsx";
+
 export default function CultivatorSec5() {
     return (
         <div
@@ -37,12 +39,12 @@ export default function CultivatorSec5() {
                 duckweed scientist, whose insights helped us align our system with current trends in
                 plant physiology and automation.
                 You can read more about these discussions and other expert consultations on our {" "}
-                <a
+                <A
                     href="/human-practices#marcel-jansen"
                     className="hover:text-[#25512b] font-bold underline text-[#6ca033]"
                 >
                     Human Practices page
-                </a>
+                </A>
                 .
             </p>
 

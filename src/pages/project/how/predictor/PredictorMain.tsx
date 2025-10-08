@@ -1,6 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {Link} from 'react-router-dom';
 import Chart from 'chart.js/auto';
+import A from "../../../../A";
 
 const PredictorMain = () => {
 
@@ -384,7 +385,7 @@ const PredictorMain = () => {
 
                 <div className="text-center max-w-4xl mx-auto px-4 py-6">
                     <p className="text-gray-700 leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                        Explore how our <a href="#GM"><span className="text-[#6ca033] font-semibold hover:underline">Growth Modeler</span></a> works.
+                        Explore how our <A href="#GM"><span className="text-[#6ca033] font-semibold hover:underline">Growth Modeler</span></A> works.
                         This interactive window provides simple controls for harvesting parameters.
                         Visualisations show how biomass changes during cultivation and the amount of yield harvested at
                         each stage. Feel free to experiment.
@@ -588,7 +589,7 @@ const PredictorMain = () => {
 
                     {/* Buttons */}
                     <div className="col-span-1 lg:col-span-2 flex justify-center gap-4 mt-6">
-                        <a
+                        <A
                             href="https://github.com/karatedava/DUCKTOOLS"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -596,8 +597,8 @@ const PredictorMain = () => {
                             style={{fontFamily: "Space Grotesk, sans-serif"}}
                         >
                             View on GitHub
-                        </a>
-                        <a
+                        </A>
+                        <A
                             href="https://malleably-unhabituated-kristin.ngrok-free.dev"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -605,7 +606,7 @@ const PredictorMain = () => {
                             style={{fontFamily: "Space Grotesk, sans-serif"}}
                         >
                             Visit Web Application
-                        </a>
+                        </A>
                     </div>
                 </div>
 
@@ -625,29 +626,29 @@ const PredictorMain = () => {
 
                 {/* Three side-by-side clickable images */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                    <a href="/plant#harvesting" className="block group">
+                    <A href="/plant#harvesting" className="block group">
                         <img
                             src="https://static.igem.wiki/teams/5642/images/how/predictor/exp-lb.webp"
                             alt="limiting biomass"
                             className="group-hover:opacity-90 transition"
                         />
-                    </a>
+                    </A>
 
-                    <a href="/plant#harvesting" className="block group">
+                    <A href="/plant#harvesting" className="block group">
                         <img
                             src="https://static.igem.wiki/teams/5642/images/how/predictor/exp-hs.webp"
                             alt="harvesting strategy"
                             className="group-hover:opacity-90 transition"
                         />
-                    </a>
+                    </A>
 
-                    <a href="/plant#media-exchange" className="block group">
+                    <A href="/plant#media-exchange" className="block group">
                         <img
                             src="https://static.igem.wiki/teams/5642/images/how/predictor/exp-mc.webp"
                             alt="medium change"
                             className="group-hover:opacity-90 transition"
                         />
-                    </a>
+                    </A>
                 </div>
             </section>
 
@@ -692,22 +693,22 @@ const PredictorMain = () => {
                     <ul className="mt-4 space-y-3 text-gray-700 leading-relaxed text-left max-w-2xl mx-auto"
                         style={{fontFamily: 'Urbanist, sans-serif'}}>
                         <li>
-                            <a href="#GM">
+                            <A href="#GM">
                                 <span className="font-semibold text-[#6ca033] hover:underline">Growth Modeler:</span>
-                            </a> Computes biomass step-by-step, enabling continuous growth modeling with user-defined
+                            </A> Computes biomass step-by-step, enabling continuous growth modeling with user-defined
                             cultivation periods.
                         </li>
                         <li>
-                            <a href="#YP">
+                            <A href="#YP">
                                 <span className="font-semibold text-[#6ca033] hover:underline">Yield Predictor:</span>
-                            </a> A compact neural network trained on large-scale duckweed cultivation data, delivering a
+                            </A> A compact neural network trained on large-scale duckweed cultivation data, delivering a
                             single biomass prediction for a one-year period.
                         </li>
                     </ul>
                     <br/>
                     <p className="text-gray-700 leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
-                        Additionally we also <a href="#MONITOR"><span
-                        className="font-semibold text-[#6ca033] hover:underline">Image Processing</span></a> - based
+                        Additionally we also <A href="#MONITOR"><span
+                        className="font-semibold text-[#6ca033] hover:underline">Image Processing</span></A> - based
                         cultivation monitoring toolbox
                     </p>
                 </div>
@@ -844,9 +845,9 @@ const PredictorMain = () => {
                         <span className="font-semibold text-[#6ca033]">IMAGES AS OUR INPUTS</span>
                         - To reduce the need for human resources, we came up with the idea of using an automatic camera
                         monitoring of the cultivation trays. Images taken at regular intervals would then be evaluated
-                        for duckweed biomass. We designed two independent image processing systems: <a href="#DS"><span
-                        className="font-semibold text-[#6ca033] hover:underline">water surface density estimation system</span></a> and <a
-                        href="#BM"><span className="font-semibold text-[#6ca033] hover:underline">biomass prediction system</span></a>
+                        for duckweed biomass. We designed two independent image processing systems: <A href="#DS"><span
+                        className="font-semibold text-[#6ca033] hover:underline">water surface density estimation system</span></A> and <A
+                        href="#BM"><span className="font-semibold text-[#6ca033] hover:underline">biomass prediction system</span></A>
                     </p>
                     <br/>
                     <p className="text-gray-700 leading-relaxed" style={{fontFamily: 'Urbanist, sans-serif'}}>
@@ -861,7 +862,7 @@ const PredictorMain = () => {
 
                 {/* Buttons */}
                 <div className="col-span-1 lg:col-span-2 flex justify-center gap-4 mt-6">
-                    <a
+                    <A
                         href="https://github.com/karatedava/DUCKEYE"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -869,8 +870,8 @@ const PredictorMain = () => {
                         style={{fontFamily: 'Space Grotesk, sans-serif'}}
                     >
                         View on GitHub
-                    </a>
-                    <a
+                    </A>
+                    <A
                         href="https://malleably-unhabituated-kristin.ngrok-free.dev"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -878,7 +879,7 @@ const PredictorMain = () => {
                         style={{fontFamily: 'Space Grotesk, sans-serif'}}
                     >
                         Visit Web Application
-                    </a>
+                    </A>
                     <Link
                         to="/hardware#PROBE"
                         rel="noopener noreferrer"
@@ -936,55 +937,55 @@ const PredictorMain = () => {
                     style={{fontFamily: 'Urbanist, sans-serif'}}>
                     <li>
                         [1] Smith, J., & Brown, T. (2005). Aquatic plant ecology: A review. <i>Aquatic Botany, 81</i>(3),
-                        245-260. <a href="https://doi.org/10.1016/j.aquabot.2004.12.002" target="_blank"
+                        245-260. <A href="https://doi.org/10.1016/j.aquabot.2004.12.002" target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-blue-600 hover:underline">https://doi.org/10.1016/j.aquabot.2004.12.002</a>
+                                    className="text-blue-600 hover:underline">https://doi.org/10.1016/j.aquabot.2004.12.002</A>
                     </li>
                     <li>
                         [2] Johnson, L., & Lee, M. (2014). Plant biology and adaptation. <i>Plant Biology, 16</i>(2),
-                        123-135. <a href="https://doi.org/10.1111/plb.12184" target="_blank" rel="noopener noreferrer"
-                                    className="text-blue-600 hover:underline">https://doi.org/10.1111/plb.12184</a>
+                        123-135. <A href="https://doi.org/10.1111/plb.12184" target="_blank" rel="noopener noreferrer"
+                                    className="text-blue-600 hover:underline">https://doi.org/10.1111/plb.12184</A>
                     </li>
                     <li>
-                        [3] Davis, R., & Wilson, K. (1979). Wetland plant dynamics. <i>Aquatic Botany, 6</i>, 57-74. <a
+                        [3] Davis, R., & Wilson, K. (1979). Wetland plant dynamics. <i>Aquatic Botany, 6</i>, 57-74. <A
                         href="https://doi.org/10.1016/0304-3770(79)90028-7" target="_blank" rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline">https://doi.org/10.1016/0304-3770(79)90028-7</a>
+                        className="text-blue-600 hover:underline">https://doi.org/10.1016/0304-3770(79)90028-7</A>
                     </li>
                     <li>
                         [4] Taylor, P., & Green, S. (2000). Submerged vegetation studies. <i>Aquatic Botany, 68</i>(1),
-                        13-25. <a href="https://doi.org/10.1016/S0304-3770(00)00131-5" target="_blank"
+                        13-25. <A href="https://doi.org/10.1016/S0304-3770(00)00131-5" target="_blank"
                                   rel="noopener noreferrer"
-                                  className="text-blue-600 hover:underline">https://doi.org/10.1016/S0304-3770(00)00131-5</a>
+                                  className="text-blue-600 hover:underline">https://doi.org/10.1016/S0304-3770(00)00131-5</A>
                     </li>
                     <li>
                         [5] Clark, H., & Adams, J. (2006). Water treatment technologies. <i>Water Research, 40</i>(15),
-                        2874-2882. <a href="https://doi.org/10.1016/j.watres.2006.05.026" target="_blank"
+                        2874-2882. <A href="https://doi.org/10.1016/j.watres.2006.05.026" target="_blank"
                                       rel="noopener noreferrer"
-                                      className="text-blue-600 hover:underline">https://doi.org/10.1016/j.watres.2006.05.026</a>
+                                      className="text-blue-600 hover:underline">https://doi.org/10.1016/j.watres.2006.05.026</A>
                     </li>
                     <li>
                         [6] He, K., Zhang, X., Ren, S., & Sun, J. (2015). Deep residual learning for image
-                        recognition. <i>arXiv</i>. <a href="https://arxiv.org/abs/1512.03385" target="_blank"
+                        recognition. <i>arXiv</i>. <A href="https://arxiv.org/abs/1512.03385" target="_blank"
                                                       rel="noopener noreferrer"
-                                                      className="text-blue-600 hover:underline">https://arxiv.org/abs/1512.03385</a>
+                                                      className="text-blue-600 hover:underline">https://arxiv.org/abs/1512.03385</A>
                     </li>
                     <li>
                         [7] Evans, C., & Patel, R. (2007). Advances in water purification. <i>Water Research, 41</i>(16),
-                        3541-3550. <a href="https://doi.org/10.1016/j.watres.2007.01.059" target="_blank"
+                        3541-3550. <A href="https://doi.org/10.1016/j.watres.2007.01.059" target="_blank"
                                       rel="noopener noreferrer"
-                                      className="text-blue-600 hover:underline">https://doi.org/10.1016/j.watres.2007.01.059</a>
+                                      className="text-blue-600 hover:underline">https://doi.org/10.1016/j.watres.2007.01.059</A>
                     </li>
                     <li>
                         [8] Kumar, S., & Singh, A. (2022). Environmental impacts of aquatic systems. <i>Heliyon, 8</i>(12),
-                        e12194. <a href="https://doi.org/10.1016/j.heliyon.2022.e12194" target="_blank"
+                        e12194. <A href="https://doi.org/10.1016/j.heliyon.2022.e12194" target="_blank"
                                    rel="noopener noreferrer"
-                                   className="text-blue-600 hover:underline">https://doi.org/10.1016/j.heliyon.2022.e12194</a>
+                                   className="text-blue-600 hover:underline">https://doi.org/10.1016/j.heliyon.2022.e12194</A>
                     </li>
                     <li>
                         [9] Lopez, M., & Garcia, E. (2021). Sustainable water management. <i>Journal of Cleaner
-                        Production, 317</i>, 129120. <a href="https://doi.org/10.1016/j.jclepro.2021.129120"
+                        Production, 317</i>, 129120. <A href="https://doi.org/10.1016/j.jclepro.2021.129120"
                                                         target="_blank" rel="noopener noreferrer"
-                                                        className="text-blue-600 hover:underline">https://doi.org/10.1016/j.jclepro.2021.129120</a>
+                                                        className="text-blue-600 hover:underline">https://doi.org/10.1016/j.jclepro.2021.129120</A>
                     </li>
                 </ul>
             </section>

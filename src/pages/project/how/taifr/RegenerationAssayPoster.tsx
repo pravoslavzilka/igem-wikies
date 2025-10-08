@@ -1,4 +1,5 @@
 import React from 'react';
+import A from "../../../../A.tsx";
 
 export default function RegenerationAssayPoster() {
   return (
@@ -14,9 +15,9 @@ export default function RegenerationAssayPoster() {
         <div className="mb-12 mt-24 text-lg leading-relaxed">
           <p className="mb-4">
             Duckweed, the fastest-growing higher plant, holds great promise for biotechnological applications, but its genetic 
-            engineering has been slow and inefficient (<a href="/toolbox/why-plants-suck" className='hover:underline text-[#6ca033]'>read more here</a>). To overcome this, we developed <strong>TAIFR (Transposase 
+            engineering has been slow and inefficient (<A href="/toolbox/why-plants-suck" className='hover:underline text-[#6ca033]'>read more here</A>). To overcome this, we developed <strong>TAIFR (Transposase 
             Assisted Insertion and Frond Regeneration)</strong>, a method that aims to reduce the time to generate stable transgenic 
-            duckweed lines from 5 months to just 1 month (<a href="#" className='hover:underline text-[#6ca033]'>read more here</a>).
+            duckweed lines from 5 months to just 1 month (<A href="#" className='hover:underline text-[#6ca033]'>read more here</A>).
           </p>
           
           <p className="mb-4">
@@ -31,8 +32,8 @@ export default function RegenerationAssayPoster() {
           
           <p className="mb-4">
             To develop TAIFR, we performed the Regeneration Assay, consisting of four and half DBTL cycles, which resulted in a 
-            pair of customizable parts that enable anyone to insert any gene into the duckweed nuclear genome (<a target='_blank' href="https://registry.igem.org/collections/018233cf-683e-4523-920f-688cde419bed" className='hover:underline text-[#6ca033]'>discover more 
-            about parts here</a>). We confirmed stable insertion of our transgene into the duckweed nuclear genome by observing fluorescence signal (see Fig. 2), PCR (see Fig. 3) and by the fact that fronds transformed by the TAIFR method survived 
+            pair of customizable parts that enable anyone to insert any gene into the duckweed nuclear genome (<A target='_blank' href="https://registry.igem.org/collections/018233cf-683e-4523-920f-688cde419bed" className='hover:underline text-[#6ca033]'>discover more 
+            about parts here</A>). We confirmed stable insertion of our transgene into the duckweed nuclear genome by observing fluorescence signal (see Fig. 2), PCR (see Fig. 3) and by the fact that fronds transformed by the TAIFR method survived 
             10 - 20-fold higher neomycin concentrations than the wild-type duckweeds. Although we succeeded in the first part of 
             TAIFR (transposase-assisted insertion), we did not in the second (whole transgenic frond regeneration), partly due to five 
             failed regeneration iterations caused by transformation-efficiency issues, and partly because we were 
@@ -42,7 +43,7 @@ export default function RegenerationAssayPoster() {
           <p className="mb-4">
             To answer the second question, we designed the fifth DBTL cycle - <strong>The Meristematic Assay</strong> (stay tuned for results in 
             Paris). To address the first problem, we will repeat regeneration iterations (RA4.2 - 4.6) with properly transformed 
-            duckweed and, in parallel, propose <a href="/plant#how-to-use-taifr" className='hover:underline text-[#6ca033]'>new strategy</a> - usable by us or by future iGEM teams working with 
+            duckweed and, in parallel, propose <A href="/plant#how-to-use-taifr" className='hover:underline text-[#6ca033]'>new strategy</A> - usable by us or by future iGEM teams working with 
             duckweed - to help unlock its full potential. As iGEM has taught us the hard way, pursuing parallel approaches to a single 
             problem dramatically increases the chances of solving it within a reasonable timeframe.
           </p>
@@ -143,7 +144,7 @@ export default function RegenerationAssayPoster() {
               <p className="text-gray-800" style={{fontFamily: 'Urbanist'}}>
                 <strong>Throughout this page, we refer to our primers as oXY; XY being the number of every respective primer in our primer database. 
 
-                  <a className='hover:underline text-[#6ca033]' href="/toolbox/programmable-duckweed/part-collection#primer-database"> Check it out here!</a> </strong>
+                  <A className='hover:underline text-[#6ca033]' href="/toolbox/programmable-duckweed/part-collection#primer-database"> Check it out here!</A> </strong>
               </p>
             </div>
 
@@ -151,7 +152,7 @@ export default function RegenerationAssayPoster() {
         <div className="mb-12 ">
           <h2 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-4xl font-bold mb-6" >DBTL 1</h2>
 
-          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4" >DESIGN of <a className='hover:underline text-[#6ca033]' href="https://registry.igem.org/parts/bba-25zfdow5" target="_blank" rel="noopener noreferrer">pIB001</a></h3>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4" >DESIGN of <A className='hover:underline text-[#6ca033]' href="https://registry.igem.org/parts/bba-25zfdow5" target="_blank" rel="noopener noreferrer">pIB001</A></h3>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mb-6'>
             <div className='col-span-2  flex items-center justify-center'>
                 <p className="mb-4 leading-relaxed">
@@ -392,7 +393,7 @@ export default function RegenerationAssayPoster() {
             <div className='col-span-2 items-center justify-center'>
                 
 
-                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of <a className='hover:underline text-[#6ca033]' href="https://registry.igem.org/parts/bba-250g5ni2" target="_blank" rel="noopener noreferrer">pIB004</a></h3>
+                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of <A className='hover:underline text-[#6ca033]' href="https://registry.igem.org/parts/bba-250g5ni2" target="_blank" rel="noopener noreferrer">pIB004</A></h3>
                 <p className="mb-6 leading-relaxed">
                     Construct pIB004 is carrying a gene for yellow fluorescent protein (YFP), interrupted in the middle by the transposon element mPing from Oryza sativa. Expression of the interrupted YFP is driven by ubiquitin promoter from <em>Zea mays</em> (rZmUBI) and terminated by t35S, terminator with polyadenylation signal, derived from Cauliflower mosaic virus. Expression cassette is bordered by T-DNA allowing for ,<em>Agrobacterium</em>-mediated transformation and lies in binary vector, allowing for replication both in <em>E. coli</em> and <em>Agrobacterium tumefaciens</em>.
                 </p>
@@ -590,7 +591,7 @@ export default function RegenerationAssayPoster() {
           
           <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mb-6'>
             <div className='col-span-2  items-center justify-center'>
-                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of <a className='hover:underline text-[#6ca033]' href="https://registry.igem.org/parts/bba-256srz3e" target="_blank" rel="noopener noreferrer">pIB002</a></h3>
+                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of <A className='hover:underline text-[#6ca033]' href="https://registry.igem.org/parts/bba-256srz3e" target="_blank" rel="noopener noreferrer">pIB002</A></h3>
                 <p className="mb-4 leading-relaxed">
                     Plasmid pIB002 contains a cassette flanked on both sides by the transposable 
                     element mPing with correct TTA sites at the 5' end of 0.5mPing and at the 3' end of 
@@ -619,7 +620,7 @@ export default function RegenerationAssayPoster() {
             <div className='col-span-2  items-center justify-center'>
                 
 
-                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN OF <a className='hover:underline text-[#6ca033]' href="https://registry.igem.org/parts/bba-25bd3z4p" target="_blank" rel="noopener noreferrer">pIB003</a></h3>
+                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN OF <A className='hover:underline text-[#6ca033]' href="https://registry.igem.org/parts/bba-25bd3z4p" target="_blank" rel="noopener noreferrer">pIB003</A></h3>
                 <p className="mb-6 leading-relaxed">
                     Plasmid pIB003 is carrying ORFs for two PONG transposase subunits, separated by 
                     self-cleaving 2A peptide from <em>Thosea asigna </em>virus (t2a) with nuclear localization sequence 
@@ -706,7 +707,7 @@ export default function RegenerationAssayPoster() {
                     We co-transformed <em>Spirodela polyrhiza</em> 7428 with pIB002 x pIB003 and included 5 controls:
                 </p>
                 <ul className="mb-6 leading-relaxed list-disc pl-6">
-                    <li><a target='_blank' className='hover:underline text-[#6ca033]' href="https://registry.igem.org/parts/bba-25dnbygj">pAMO101</a>: positive control</li>
+                    <li><A target='_blank' className='hover:underline text-[#6ca033]' href="https://registry.igem.org/parts/bba-25dnbygj">pAMO101</A>: positive control</li>
                     <li>pIB002</li>
                     <li>pIB003</li>
                     <li>pIB002 x pIB003</li>
@@ -738,7 +739,7 @@ export default function RegenerationAssayPoster() {
 
               <p className="text-base leading-relaxed">
               <strong>Figure 9.</strong> The positive control (pAMO101) showed GFP fluorescence (1), although reduced compared with 
-              DBTL 1 (<a href="#dbtl-4-learn" className='hover:underline text-[#6ca033]'>see explanation here</a>). The improved design of pIB002, with GFP as the first gene in the 
+              DBTL 1 (<A href="#dbtl-4-learn" className='hover:underline text-[#6ca033]'>see explanation here</A>). The improved design of pIB002, with GFP as the first gene in the 
               translational unit, resulted in visible fluorescence (3) comparable to the fluorescence of positive control. The 
               new design of pIB003 produced weak expression of RFP (2), as expected since it follows the p2a linker, 
               thus confirming that the PONG transposase is expressed. Co-transformation of pIB002 with pIB003 
@@ -807,7 +808,7 @@ export default function RegenerationAssayPoster() {
             the Meristematic Assay is to knock-out a previously stably inserted GFP in Spirodela polyrhiza 0162 strain and observe 
             daughter fronds not exhibiting GFP fluorescence. These stable lines were gifted to us by Ordóñez Lab. If successful, we 
             would have certainty that <em>Agrobacterium</em> can indeed reach the meristematic cells. If not, we would need to develop a new 
-            strategy. Thus, we initiated DBTL cycle no. 5, termed the Meristematic Assay. <a href="#dbtl-5" className='hover:underline text-[#6ca033]'>Read more here</a>.
+            strategy. Thus, we initiated DBTL cycle no. 5, termed the Meristematic Assay. <A href="#dbtl-5" className='hover:underline text-[#6ca033]'>Read more here</A>.
           </p>
         </div>
 
@@ -817,7 +818,7 @@ export default function RegenerationAssayPoster() {
           
           <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mb-6'>
             <div className='col-span-2  items-center justify-center'>
-                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of <a href="https://registry.igem.org/parts/bba-25460yvj" target='_blank' className='hover:underline text-[#6ca033]'>pIB005</a></h3>
+                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4">DESIGN of <A href="https://registry.igem.org/parts/bba-25460yvj" target='_blank' className='hover:underline text-[#6ca033]'>pIB005</A></h3>
                 <p className="mb-6 leading-relaxed">
                     Plasmid pIB005 contains a cassette flanked on both sides by the transposable 
                     element mPing. Inside the cassette, there is a fluorescent marker (GFP) and a resistance 
@@ -1071,7 +1072,7 @@ export default function RegenerationAssayPoster() {
           <p className="mb-6 leading-relaxed">
             Had we followed the proper procedure - starting each time from a glycerol stock - we would probably already 
             have completed the regeneration part of our TAIFR method by the iGEM Wiki freeze. That is also why we 
-            created the <a className='hover:underline text-[#6ca033]' href='plant#duckweed-transformation'>Duckweed Transformation Protocol page</a>: so that other iGEM teams will not repeat the same mistake.
+            created the <A className='hover:underline text-[#6ca033]' href='plant#duckweed-transformation'>Duckweed Transformation Protocol page</A>: so that other iGEM teams will not repeat the same mistake.
           </p>
         </div>
 
@@ -1122,7 +1123,7 @@ export default function RegenerationAssayPoster() {
             <img src="https://static.igem.wiki/teams/5642/images/how/taifr/regenerationassay/meristematic-assay-copy.webp" alt="Description of image" className="max-w-full h-auto" />
           </div>
 
-          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4 mt-16">DESIGN of <a href="https://registry.igem.org/parts/bba-252t3xrc" target='_blank' className='hover:underline text-[#6ca033]'>pIB006</a></h3>
+          <h3 style={{ fontFamily: 'Space Grotesk, sans-serif' }} className="text-2xl font-bold mb-4 mt-16">DESIGN of <A href="https://registry.igem.org/parts/bba-252t3xrc" target='_blank' className='hover:underline text-[#6ca033]'>pIB006</A></h3>
           
           <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mb-6'>
             <div className='col-span-2  items-center justify-center'>
@@ -1155,7 +1156,7 @@ export default function RegenerationAssayPoster() {
           
           <p className="mb-2 font-semibold">Designing of gRNAs</p>
           <p className="mb-4 leading-relaxed">
-            Using the <a href="http://crispor.tefor.net/" target='_blank' className='hover:underline text-[#6ca033]'>CRISPOR software</a>, we designed three pairs of gRNA oligonucleotides for GFP knock-out with Esp3I 
+            Using the <A href="http://crispor.tefor.net/" target='_blank' className='hover:underline text-[#6ca033]'>CRISPOR software</A>, we designed three pairs of gRNA oligonucleotides for GFP knock-out with Esp3I 
             compatible overhangs to be first hybridized one with the other and then inserted to pIB006:
           </p>
           <ul className="mb-6 leading-relaxed list-disc pl-6">

@@ -1,3 +1,4 @@
+import A from "../../../../A";
 import {AccordionData} from "../types";
 
 export const getAccordionData = (
@@ -107,10 +108,10 @@ export const getStatusAccordionData = (
         content: [
             <p key="food-1">
                 Early efforts are already underway. Startups like{" "}
-                <strong><a className="hover:underline text-[#6ca033]" href="https://www.greenonyx.ag/"
-                           target="blank">GreenOnyx</a></strong> and <strong><a
+                <strong><A className="hover:underline text-[#6ca033]" href="https://www.greenonyx.ag/"
+                           target="blank">GreenOnyx</A></strong> and <strong><A
                 className="hover:underline text-[#6ca033]" href="https://www.plantiblefoods.com/"
-                target="blank">PlantibleFoods</a></strong> are
+                target="blank">PlantibleFoods</A></strong> are
                 pioneers in duckweed cultivation for human use. With superior vegan
                 greens and proteins that have egg-like properties, duckweed-based foods
                 are slowly making their way into gastronomy.
@@ -135,8 +136,8 @@ export const getStatusAccordionData = (
                 uptake and tolerate glyphosate, a widely used herbicide [20].
             </p>,
             <p key="ps-2">
-                Startups like <strong><a className="hover:underline text-[#6ca033]" href="https://www.fyto.us/"
-                                         target="blank">Fyto</a></strong> are using duckweed to convert cow
+                Startups like <strong><A className="hover:underline text-[#6ca033]" href="https://www.fyto.us/"
+                                         target="blank">Fyto</A></strong> are using duckweed to convert cow
                 manure into protein-rich biomass, which is then fed back to cows
                 directly on the farm.
             </p>,
@@ -156,11 +157,11 @@ export const getStatusAccordionData = (
                 influenza virus H5N1 antigens in <em>Lemna minor</em> [23].
             </p>,
             <p key="bio-2">
-                Companies like <strong><a className="hover:underline text-[#6ca033]"
+                Companies like <strong><A className="hover:underline text-[#6ca033]"
                                           href="https://www.phylloceuticals.com/"
-                                          target="blank">Phylloceuticals</a></strong> and{" "}
-                <strong><a className="hover:underline text-[#6ca033]" href="https://www.algentech.com/"
-                           target="blank">AlgenTech</a></strong> claim they are successfully producing growth
+                                          target="blank">Phylloceuticals</A></strong> and{" "}
+                <strong><A className="hover:underline text-[#6ca033]" href="https://www.algentech.com/"
+                           target="blank">AlgenTech</A></strong> claim they are successfully producing growth
                 factors and antigens in duckweed species.
             </p>,
         ],
@@ -180,12 +181,12 @@ export const getStatusAccordionData = (
             </p>,
             <p key="br-2">
                 Germplasm collections such as those at the{" "}
-                <strong><a className="hover:underline text-[#6ca033]" href="http://www.ruduckweed.org/" target="blank">Rutgers
+                <strong><A className="hover:underline text-[#6ca033]" href="http://www.ruduckweed.org/" target="blank">Rutgers
                     Duckweed Stock
-                    Cooperative</a></strong> and{" "}
-                <strong><a className="hover:underline text-[#6ca033]" href="https://www.ipk-gatersleben.de/"
+                    Cooperative</A></strong> and{" "}
+                <strong><A className="hover:underline text-[#6ca033]" href="https://www.ipk-gatersleben.de/"
                            target="blank">IPK
-                    Gatersleben</a></strong> preserve a wide diversity of clones
+                    Gatersleben</A></strong> preserve a wide diversity of clones
                 across species.
             </p>,
         ],

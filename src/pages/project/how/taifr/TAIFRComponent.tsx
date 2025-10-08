@@ -1,4 +1,5 @@
 import React from 'react';
+import A from "../../../../A.tsx";
 
 
 const TAIFRComponent = () => {
@@ -104,7 +105,7 @@ const TAIFRComponent = () => {
                     days post infiltration spots of GFP fluorescence appears (3) as results of
                     insertion of mPing-bordered cassette into duckweed nuclear genome. Insertion was further confirmed by PCR.
                   </span>
-                  <span style={{ fontWeight: 400 }}> <a className='hover:underline text-[#6ca033]' href="#dbtl-4-learn">Read more here</a></span>
+                  <span style={{ fontWeight: 400 }}> <A className='hover:underline text-[#6ca033]' href="#dbtl-4-learn">Read more here</A></span>
                   <span style={{ fontWeight: 400 }}>.</span>
                
                 </p>
@@ -115,7 +116,7 @@ const TAIFRComponent = () => {
         <section className="mb-8">
           <div className="text-center py-6 px-8 bg-green-100 rounded-lg">
             <h2 className="text-2xl font-bold text-green-800" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-              <a className='hover:underline text-[#6ca033]' href="/plant#how-to-use-taifr">Discover how you can use our TAIFR parts and protocol engineer duckweed</a>
+              <A className='hover:underline text-[#6ca033]' href="/plant#how-to-use-taifr">Discover how you can use our TAIFR parts and protocol engineer duckweed</A>
             </h2>
           </div>
         </section>
@@ -254,7 +255,7 @@ const TAIFRComponent = () => {
                         even contacting their authors, but was not able to replicate any of
                         them...{" "}
                         </span>
-                        <span style={{ fontWeight: 400 }}><a className='hover:underline text-[#6ca033]' href="/human-practices#arturo">Read more at Human Practices page</a></span>
+                        <span style={{ fontWeight: 400 }}><A className='hover:underline text-[#6ca033]' href="/human-practices#arturo">Read more at Human Practices page</A></span>
                         <span style={{ fontWeight: 400 }}>.</span>
                     </p>
                 </div>
@@ -478,8 +479,8 @@ const TAIFRComponent = () => {
                     But could they also be used for inserting DNA into the plant nuclear
                     genome? Of course, yes! Meeting Dr. Ordóñez was a pure luck, but we were
                     about to get even luckier… Less than a year ago, Dr. Slotkin published an
-                    amazing article in Nature: <a target='_blank' className='hover:underline text-[#6ca033]' href="https://www.nature.com/articles/s41586-024-07613-8">Transposase-assisted target-site integration
-                    for efficient plant genome engineering</a> (16).
+                    amazing article in Nature: <A target='_blank' className='hover:underline text-[#6ca033]' href="https://www.nature.com/articles/s41586-024-07613-8">Transposase-assisted target-site integration
+                    for efficient plant genome engineering</A> (16).
                   </span>
                 </p>
                 <p>&nbsp;</p>

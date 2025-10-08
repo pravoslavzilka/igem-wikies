@@ -3,6 +3,7 @@ import { ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { pagesData } from "./data/pagesData";
 import ComparisonCard from "./components/ComparisonCard";
+import A from "../../../../A.tsx";
 
 interface ComparisonsSectionProps {
   transformationImageUrl?: string;
@@ -61,7 +62,7 @@ const ComparisonsSection: React.FC<ComparisonsSectionProps> = ({
               {/* Center Image */}
               <div className="w-[484px] h-[280px] rounded-xl flex items-center justify-center overflow-hidden">
                 {imageUrls[index] ? (
-                    <a
+                    <A
                       href={page.pageUrl}
                       rel="noopener noreferrer"
                       className="block w-full h-full"
@@ -75,7 +76,7 @@ const ComparisonsSection: React.FC<ComparisonsSectionProps> = ({
                           e.currentTarget.style.display = 'none';
                         }}
                       />
-                    </a>
+                    </A>
 
 
                 ) : (
